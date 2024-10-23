@@ -2,7 +2,7 @@
 title: Administración de Sistemas Informáticos en Red - Primer año
 description: Página principal de ASIR 1º Año
 published: true
-date: 2024-10-23T18:06:29.016Z
+date: 2024-10-23T18:08:10.661Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-22T17:14:23.269Z
@@ -24,4 +24,6 @@ A continuación podrá dirigirse a los módulos que prefiera:
 [Planificación y administración de redes](/es/asir/asir1/Planificacion_Redes/redes_pagina)
 
 ## Opiniónes y consejos
-Este año conlleva una gran dificultad, principalmente por que es el primer contacto de Informatica para muchos, 
+Este año conlleva una gran dificultad, principalmente por que es el primer contacto de Informatica para muchos. Y eso puede provocar nerviosismo o incluso miedo en algunos casos, es cierto que gracias a vuestro desempeño se puede obtener un mejor o peor trabajo. Sin embargo, todo es posible.
+
+Recomendable es mantener los apuntes y aprender todo lo posible ahora, ya que el segundo año es similar al primero pero con menor dificultad. 
