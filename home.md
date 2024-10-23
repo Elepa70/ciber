@@ -1,8 +1,8 @@
 ---
 title: Pagina Inicio
-description: Bienvenido a la página web de Pablo Sánchez Hidalgo. Donde están todos sus estudios
+description: Apuntes
 published: true
-date: 2024-10-23T17:41:18.847Z
+date: 2024-10-23T17:42:50.476Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-22T16:29:34.270Z
