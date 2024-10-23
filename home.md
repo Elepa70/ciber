@@ -2,7 +2,7 @@
 title: Pagina Inicio
 description: Bienvenido a la página web de Pablo Sánchez Hidalgo. Donde están todos sus estudios
 published: true
-date: 2024-10-23T17:39:33.735Z
+date: 2024-10-23T17:41:18.847Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-22T16:29:34.270Z
@@ -30,5 +30,5 @@ Me parece util tener una zona donde pueda recoger toda la información que he ap
 
 ## Tengo sugerencias o quiero preguntar algo
 En este caso, sientete libre de escribirme via LinkedIn o correo:
-- [LinkedIn] (https://www.linkedin.com/in/pablosanchezhidalgo/)
+- [LinkedIn](https://www.linkedin.com/in/pablosanchezhidalgo/)
 - Correo: pablosanhid2003@proton.me
