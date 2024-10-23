@@ -2,7 +2,7 @@
 title: Administración de sistemas informáticos en red - General
 description: Pagina de inicio de ASIR
 published: true
-date: 2024-10-23T18:00:28.115Z
+date: 2024-10-23T18:00:49.299Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-22T17:12:14.529Z
@@ -10,7 +10,7 @@ dateCreated: 2024-10-22T17:12:14.529Z
 
 # Administración de sistemas informáticos en red - General
 ## ¿Qué es?
-La FP Superior de Administración de Sistemas Informáticos en Red, es una de las 3 FPs (A fecha de Marzo de 2024), pertenecientes a la rama de Informatica en la categoría superior
+La FP Superior de Administración de Sistemas Informáticos en Red (ASIR), es una de las 3 FPs (A fecha de Marzo de 2024), pertenecientes a la rama de Informatica en la categoría superior
 
 Este ciclo esta dedicado a la actividad de aquellas empresas o entidades que tengan o necesiten de sistemas para la gestión de datos o infraestructuras de red. Es decir, esta dedicado para el control de la información de la información mediante las bases de datos y también para aquellos que necesiten un mantenimiento y gestión de Internet, Intranet o Extranet. 
 
