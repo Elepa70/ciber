@@ -2,7 +2,7 @@
 title: Introducción al hacking ético
 description: Primer tema de la asignatura "Hacking Ético"
 published: true
-date: 2024-10-29T12:13:49.057Z
+date: 2024-10-29T12:24:38.093Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-29T11:54:23.119Z
@@ -43,4 +43,21 @@ Ahora comenzaremos a describir los conecptos mas básicos de la ciberseguridad, 
 - Seguridad: Es aquella ausencia de peligro, daño o riesgo.
 - Información: Conjuto organizado de datos que forman un mensaje.
 
-Por lo tanto, la seguridad de la información sería aquel conjunto de medidas de prevención, detección y correción.
+Por lo tanto, la seguridad de la información sería aquel conjunto de medidas de prevención, detección y correción. Estas tres palabras tendrán importancia adelante ya que son los principios de la seguridad de la información.
+
+Actualmente existen dos tipos de seguridades:
+- Seguridad defensiva: Serían aquellas medidas encargadas de proteger la información y recursos de la organización.
+- Seguridad ofensiva: Será totalmente lo contrario, consiste en intentar vulnerar los controles de seguridad y poner en riesgo alguno de los principios mencionado. 
+
+Es normal que las empresas tengan tanto equipo de seguridad defensiva como ofensiva, ya que para intentar arreglar una vulnerabilidad, es necesario primero encontrarla. 
+
+### Principios de la seguridad de la información
+Desde un punto de la vista de la información hay tres principios básicos para garantizar su seguridad:
+- Condifencialidad: Encargado de garantizar que la información solo puede ser conocida por las personasa autorizadas.
+- Integridad: Encargado de que la información no sea alterada o modificada sin permisos o de forma accidental.
+- Disponibilidad: Garantiza que la información es accesible siempre que los usuarios autorizados la necesiten.
+
+A estos principios básicos, podemos añadirle dos principios esenciales, siempre y cuando la información sea compartida por distintos medios. Estos son:
+- Autenticación: Garantizar quien es la persona que ha realizado la información, mediante factores de autenticación (Contraseñas). Esto nos sirve para saber que realmente esa persona ha sido quien ha enviado el mensaje.
+- No repudio: Ni el emisor (No repudio de origen) ni el receptor (No repudio de destino), pueden negar que la información ha sido enviada.
+
