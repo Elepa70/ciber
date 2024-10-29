@@ -2,7 +2,7 @@
 title: Introducción al hacking ético
 description: Primer tema de la asignatura "Hacking Ético"
 published: true
-date: 2024-10-29T12:24:38.093Z
+date: 2024-10-29T13:18:49.081Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-29T11:54:23.119Z
@@ -61,3 +61,32 @@ A estos principios básicos, podemos añadirle dos principios esenciales, siempr
 - Autenticación: Garantizar quien es la persona que ha realizado la información, mediante factores de autenticación (Contraseñas). Esto nos sirve para saber que realmente esa persona ha sido quien ha enviado el mensaje.
 - No repudio: Ni el emisor (No repudio de origen) ni el receptor (No repudio de destino), pueden negar que la información ha sido enviada.
 
+### Clasificación de las medidas de seguridad
+Existen una serie de medidas para la seguridad de la información, estas medidas se pueden diferenciar en distintos criterios.
+Al momento de actuación.
+- Seguridad activa: Consiste en aquellas que previenen algún daño en un sistema informatico. Ejemplo, un Firewall
+- Seguridad pasiva: Medidas capaces de reparar o minimar un daño producido en un sistema informatico. Ejemplo, copias de seguridad.
+
+También tenemos en función al elemento a proteger:
+- Seguridad física: Consiste en la protección del hardware. Ya sea provocado o por desastres naturales.
+- Seguridad lógica: Medidas que tratan de proteger el software de los datos de los sistemas informáticos. 
+### Hacking: definición y aspectos legales
+La RAE define Hacker o Jáquer como:
+- Pirata informatico que accede ilegalmente a un sistema informático ajeno.
+- Persona con grandes habilidades en el manejo de computadoras.
+
+Esta ultima definición habilita la labor del hacker ético. Ya que solo había una visión puramente negativa aunque exista la labor del hacker ético.
+
+La clasificación dentro de los hackers depende de sus intenciones:
+- White hat hacker: Tiene como intención mejorar la seguridad, buscando abugueros de seguridad y informando a los encargados. Este profesional es contratado por una empresa u organización y tiene permisos para buscar vulnerabilidades y fallos.
+- Black hat hacker: Es un ciberdelincuente, donde usa sus conocimientos para fines negativos o dañinos.
+- Gray hat hacker: Es un hacker que está entre ambos casos anteriores, esto puede ser dado por distintos valores: Hacktivistas (Grupos que realizan las acciones de hackeo para logar a un proposito definido, normalmente aultruista), personas se sombrero blanco que deja un acceso para ellos, personas con sombrero negro que buscan y denuncian determinados delitos.
+
+También existen los script kiddies, personas sin conicimentos ni habilidades que atacan a los sistemas por herramientas creadas por hackers. 
+
+En el código penal español se recoge los siguientes artículos respecto a un hacker:
+- Artículo 197bis.1. El que por cualquier medio o procedimiento, vulnera la seguridad establecidas y sin debidamente estar autorizado, acceda a un sistema de informatico.
+- Artículo 197nis.2. Mediante el uso de artificios o instrumentos sin estar autorizado, intercepte trasmisiones no publicos de datos infromaticos.
+- Articulo 197ter. Será castiago con pena de prisión o multa a aquel que sin autorización produzca, adquiera, importe o facilite la comision de algunos de los delitos mencionado anteriormente.
+
+Aquí podemos observar la grandisima importancia que recae la autorización expresa para poder ser un buen hacker ético. Ya que aunque se haga sin maldad, cabe la posibilidad de que la empresa o organización tome medidas en contra de la persona autora de los hechos. 
