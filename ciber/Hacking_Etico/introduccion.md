@@ -2,7 +2,7 @@
 title: Introducción al hacking ético
 description: Primer tema de la asignatura "Hacking Ético"
 published: true
-date: 2024-10-29T11:54:23.119Z
+date: 2024-10-29T12:13:49.057Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-29T11:54:23.119Z
@@ -33,3 +33,14 @@ La delincuencia ha crecido enormemente desde el COVID-19, ya que durante estos a
 (Insertar imagen o grafico de estadisticas de ciberdelitos (oedi.es)
 
 Ejemplo de grandes hackeos están a la orden del día como puede ser en octubre de 2021 a la plataforma multimendia Twitch, o un ataque de ransomware al CSIC (Consejo Superior de Investigaciones Científicas). Uno de los peores que han afectado a España, es el uso del software espía Pegasus, que ha afectado a los telefonos del Gobierno de España.
+
+El uso de Ransomware, malware que cifra toda la información y no se devuelve hasta que no se haga un rescate, provocá que las empresas cedan ante los ciberdelincuentes provocando que no haya freno. Esto viene dado porque las empresas, muy amenudo, no tiene ningún plan de securización o protección de los datos. Es por ello que existen organos o empresas, como AEPD (Agencia Española de Protección de Datos), que dictimina una serie de reglas y obligaciones para la protección de datos personales. También es encargado de sancionar a aquellas empresas que no realicen o cumplan las reglas.
+
+Debido a todo esto, la demanda del profesional formado en ciberseguridad ha crecido enormenmente hasta llegar a la cifra de 83.000 puestos necesarios según INCIBE (Instituto Nacional de Ciberseguridad de España).
+
+## Conceptos básicos
+Ahora comenzaremos a describir los conecptos mas básicos de la ciberseguridad, y para ello necesitamos definir dos terminos primoridales:
+- Seguridad: Es aquella ausencia de peligro, daño o riesgo.
+- Información: Conjuto organizado de datos que forman un mensaje.
+
+Por lo tanto, la seguridad de la información sería aquel conjunto de medidas de prevención, detección y correción.
