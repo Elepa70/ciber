@@ -2,7 +2,7 @@
 title: Introducción al hacking ético
 description: Primer tema de la asignatura "Hacking Ético"
 published: true
-date: 2024-10-29T13:18:49.081Z
+date: 2024-11-01T17:57:43.975Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-29T11:54:23.119Z
@@ -90,3 +90,80 @@ En el código penal español se recoge los siguientes artículos respecto a un h
 - Articulo 197ter. Será castiago con pena de prisión o multa a aquel que sin autorización produzca, adquiera, importe o facilite la comision de algunos de los delitos mencionado anteriormente.
 
 Aquí podemos observar la grandisima importancia que recae la autorización expresa para poder ser un buen hacker ético. Ya que aunque se haga sin maldad, cabe la posibilidad de que la empresa o organización tome medidas en contra de la persona autora de los hechos. 
+
+## Amenazas a la seguridad de la información
+Una amenaza, en el ambito de la seguridad de la información, es cualquier suceso que atenta contra el buen funcionamiento del sistema y puede afectar a los activos. MAGERIT (Metodología de Análisis y Gestión de Riesgos para los Sistemas de Información), establece una serie de tipos de amenazas:
+- De origen natural: Accidentes naturales como terremotos o inundaciones.
+- Del entorno: Cortes de suministro o contaminación.
+- Defectos de las aplicaciones: Fallos o vulnerabilidades en los sistemas por errores.
+- Causadas por las personas de forma accidental: Ingeniería social.
+- Causadas por las personas de forma deliberada: Ataques de unas personas de forma deliberada para obtener algún beneficio.
+
+### Tipos de intrusos y motivaciones
+Anteriormente hemos descrito que hay varios tipos de hackers según sus intenciones, ahora toca el apartado para los distintos tipos de intrusos. Estos son:
+- Cracker: Busca provocar daños y obtener beneficios de forma ilegal.
+- Phreaker: Busca acceder a Internet de forma gratuita.
+- Spammer: Realiza envío masivo de mensajes de correo electrónico.
+- Lamer: Es aquel hacker sin conocimientos expandidos en el tema que intenta aprender. Se le puede decir también wannabe o script-kiddie.
+- Insider: Persona que trabaja dentro de una empresa y busca su desbenificio.
+- Exempleado: Antiguo trabajador con motivación similar a Insider.
+- Hacktivist: Busca relevacia política mediante lucha contra injusticias o protección de derechos humanos. 
+- State-Sponsored hacker: Ciberdelicuentes que trabajan para una nación o Estado. 
+
+### Código dañinos: Malware
+Un Malware es aquel programa informático que ha sido desarrollado para introducirse en un sistema. Lo mas comunes son lo robos de la información, pérdida de datos o espionaje.
+Existe una gran cantidad de forma de propagación de malware, desde programas que vengan en un archivo comprimido con contraseña, tiendas de aplicaciones, oculto en ficheros (Stegomalware, oculto en imagenes o videos),fireless o in-memmory malware entre otros (Malware que solo existen en el momento de ejecución).
+
+La clasificación de los malwares es basante amplio, tenemos lo siguiente:
+- Exploit: Malware que aprovecha vulnerabilidades del software para compremeter el sistema, su acción maliciosa se conoce como Payload.
+- Virus: Existe una gran cantidad de virus, pero su funcion es reproducirse y propragarse para hacer el maximo impacto posible.
+- Ransomware: Una vez infecta un sistema, encripta la información y solicita un rescate. 
+- Spyware: Recopila actividad que realiza el usuario.
+- Adware: Malware que muestra constantemente anuncios.
+- Troyano: Programa que deja una puerta abierta a los atacantes.
+- Rootkit: Malware que proporciona acceso y control remoto del equipo infectado.
+- Keylogger: Registra toda las teclas pusada en el sistema, logrando obtener contraseñas.
+- Gusano: Busca su autopropagación en la red.
+- Bacteria: Busca reproducirse para consumir memoria.
+- Bomba lógica: Malware oculto hasta el momento de la ejecución.
+- Cryptojacking: Malware que mina criptomonedas. 
+
+Alguno de los malwares existentes fueron: Brain, Stoned, Jerusalem o Viernes 13, Gusano de Morris, Michelangelo, Concept, Laroux, AccesiV, Strange Brew, Chernobyl o CIH, Melissa, Loveletter o I Love You, Stuxnet o WannaCry.
+
+### Tipos de ataques
+Existe númerosos tipos de ataques, y según descrito por INCIBE, tenemos: 
+- Ataque a contraseñas: El objetivo es obtener las credenciales de acceso a un sistema. Ya sea mediante fuerza bruta (Probar 1 a 1 la contraseña) o con diccionarios de contraseñas existentes en la red.
+- Ataques de Ingeniería social: Usa la manipulación de los usuarios mediante el engaño. Aquí los más comunes son: Fraude Online, Phising, vishing, smishing, baiting, shoulder surfing (Mirar por encima del ojo) o dumpster diving (Rebuscar en la basura).
+- Ataques a las conexiones: Consiste en ataques que se realizan a las redes que estan interconectadas. Los más comunes son: Ataques DDoS (denegación de servicio), Man in the Middle (Estar en medio), Spoofing (Suplantación), Sniffing (Escucha de conexiones) y Redes Trampa.
+- Ataques a la cadena de suministro: Busca una vulnerabilidad en el hardware o software que pertenece a un tercero y es usado por la compañia objetivo. 
+- Ataques invisibles en el código fuente: Se hace uso de código invisible para los editores de textos, para cambiar la funcionalidad del software. 
+
+Todos estos ataques son altamente peligrosos y para evitarlo, se implanta un modelo llamado Zero Trust Security, donde se desconfia de todos siempre y todo se comprueba.
+
+
+### Vulnerabilidades
+Una vulnerabilidad o bug, es un fallo de diseño que pertenece a un sistema poniendo en riesgo su funcionamiento. El primer bug, pertenece a la universidad de Harvard, donde se coló una polilla o bicho en uno de los relés del computador. 
+
+Hoy en dia este tipo de vulnerabilidades es bastante mas distintos a este que hemos mencionado anteriormente. Estas nuevas vulnerabilidades, vienen de un fallo provocado por el diseño o implementación del software, debido a que un sistema informatico se comporta por Software y Hardware, podemos diferenciar entre:
+- Vulnerabilidad de Software: Afectan a los programas informáticos y ocurren habitualmente, por errores de programación en su código fuente. Debemos revisar no solo el software que usemos, si no que aplicaciones de tercero usa, ya que es posible que mediante el uso de alguna de estas aplicaciones de tercero, nuestro equipo corra riesgo. 
+
+- Vulnerabilidades hardware: En este caso el atacante requiere tener acceso al equipo en fisico para poder saltarse todas los niveles de seguridad y crear daños. 
+
+Existen plataformas como Zerodium, que ofrecen recompensas para las personas que encuentre alguna vulnerabilidad, con un ranking de precios o pagos según la vulnerabilidad.
+
+Para clasificar una vulnerabilidad se hace uso del CVE (Common Vulnerabilities and Exposures), es un sistema que ofrece un identificador numérico a una vulnerabilidad de seguridad, se compone de tres elementos:
+- CVE
+- XXXX -> El año correspendiente
+- YYYY -> Número de la vulnerabilidad.
+
+Es por ello que la vulnerabilidad CVV-2024-2000, pertenecerá al año 2024 y es la vulnerabilidad 2000 de ese mismo año. Las vulnerabilidades son medidas en el CVSS (Common Vulnerability Scoring System), este sistema hace uso de una serie de métricas en diferentes.
+
+Dentro de las vulnerabilidades del CVSS podemos encontrar:
+- Attack Vector: Como se realizá el ataque
+- Attack Complexity: DIficultad del ataque
+- Privileges Required: Requisitos minimos
+- User Interaction: Interaccion del usuario o administrador.
+- Scope: Capacidad de saltar a otras aplicaciones.
+- Confidencialidad: Si afecta a este aspecto de la seguridad.
+- Integridad: Si afecta a este aspecto de la seguridad.
+- Disponibilidad: Si afecta a este aspecto de la seguridad.
