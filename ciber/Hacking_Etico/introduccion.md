@@ -2,7 +2,7 @@
 title: Introducción al hacking ético
 description: Primer tema de la asignatura "Hacking Ético"
 published: true
-date: 2024-11-03T11:00:26.550Z
+date: 2024-11-03T12:28:31.867Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-29T11:54:23.119Z
@@ -243,4 +243,64 @@ La ejecución de esta metodología está en 4 fases que son:
 
 #### Metodologías del OWASP (Open Web Application Security Project)
 OWASP (Open Web Application Security Project) dispone de trés grandes guías para la evaluación de seguridad según la aplicación.
-- OWASP Web Security Teting Guide (WSTG): Será vista en el apartado 4.
+- OWASP Web Security Teting Guide (WSTG): Será vista en el apartado 4. Esta completamente dedicado a las aplicaciones web y a sus auditorías.
+
+- OWASP Mobile Application Security Testing Guide (MASTG): Es un manual para realizar las pruebas de seguridad e ingeniería inversa de aplicaciones moviles.
+- OWASP Firmware Security Testing Methodology (FSTM): Firmware responsable del funcionamiento del funcionamiento de cualquier dispositivo embebido, y se busca securizar el acceso no autorizado.
+
+#### Otras metodologías
+Es interesante conocer algunas otras metodologias, se describiran brevemente:
+- PCI DSS (Payment Card Industry Data Security Standard): Protege los sistemas de pago.
+- PTF (Penetration Testing Framewerk): Recoge información util con respecto al pentesting.
+- NIST SP 800-115 (Technical Guide to Information Security and Assessment): Aquí se recoge recomendaciones prácticas, para diseñar e implementar las medidas de seguridad en nuestras aplicaciones.
+- CAF (The Cyber Assessment Framework): Diseñado por el NCSC (National Cyber Security Center) de Reino Unido.
+
+### Equipos de seguridad
+Suele haber dos eqipos de seguridad:
+- Red Team: Realiza las labores de seguridad ofensivas.
+- Blue Team: Realiza las labores defensivas.
+
+Los Red Team siempre intentarán continuamente vulnerar las defensas de los sistemas de información, para poder tener acceso o provocar algún tipo de daño. Es por ello que el trabajo del Blue Team es que no tengan exitó, y asi trabajar en conjunto en una perfecta o buena forma de proteger los sistemas.
+
+Actualmente ha empezado a surgir el Purple Team, que busca la unión de ambos teams. También se ha empezado a surgir otro tipo de teams como Yellow (Builders o los desarrolladores de sistemas), Orange (Mezcla entre Red Team y Yello) o el Green (Mezcla entre Red Team y Yellow).
+
+## Cómo convertirse en hacker
+En este apartado se van a haber algunos consejos y laboratorios para poder aprender a convertirse en hacker. Hay que tener en cuenta que no es un trabajo sencillo, puesto que debes tener un gran conocimiento de todas las cosas, y para ello es necesario tener bastante experiencia. De momento vamos a comenzar con la descripción de un buen hacker o ciberinvestigador:
+- Arquitectura de computadoras y lenguaje ensamblador: Son aquellos elementos del funcionamiento hardware y software de los sistemas informaticos.
+- Redes de ordenadores y protocolos de red: Diferentes tipos de arquitectura, tipos de redes, dispositivos de las redes de comunicaciones, protocolos TPC/IP y OSI.
+- Administrador de sisteams operativos: Instalar, configurar, elementos, permisos, roles y administrador de servicios en sistemas operativos.
+- Gestión y administración de base de datos: Conocer los diferentes lenguajes de modelos de datos, diferentes sistemas gestores de bases de datos, estructura y comandos de administración.
+- Lenguajes de programación: Conocimiento en lenguajes tanto bajo nivel (C, C++), orientados a objetos (Java), aplicaciones moviles (Android), tecnologias web (javascript) o scripting (Powershell).
+- Criptografia: Conocimineto de los funcionamientos algoritmicos criptográficos y aplicación práctica.
+
+Es importante tener una base en todos los aspectos anteriores, ya que será dificil poder avanzar sin conocimiento previo de esto. 
+
+### Capture The Flag
+Uno de los mejores metodos para aprender, es mediante el uso de retos en capturar la bandera, donde se deja un código oculto (FLAG), que sirve para demostrar que has conseguido vulnerar la máquina. Existen una series de reglas como, no mostrar la solución para que todo el mundo intente conseguirlo por métodologia propia. 
+
+Existen tres tipos de categorías:
+- Retos (Challenges): Suelen consistir en un tipo de habilidad técnica o vulnerabilidad concreta. Suelen ser los más comunes en retos o challenges. 
+- Máquinas (Boxes): Consiste en explotar una máquina a través de algún servicio vulnerable o mal configurado.
+- Redes: Es un entorno que simula una red empresarial con distintas máquinas y se intenta pivotar entre las máquinas.
+
+Para realizar estos retos disponemos de una grandisima cantidad de sitios webs donde se pueden realizar como: Atenea, Academia Hacker, Una al mes, PicoCTF, CTF Time, Hack The Box, Try hack me, VulnHub HackMyVM o Proving Ground entre otras.
+
+También es posible buscar tanto información como youtubers que tengan ampliso conocimientos en el tema, por ello podremos ver guías como: The Journey to Try Harder o The Cyber Mentor. Entre otros youtubers interesantes a observar tenemos: Ippsec, John Hammond, LiverOverflow, HackerSploit, s4vitar, Hack4u etc etc
+
+### Certificados de ciberseguridad
+Hay una grandisima cantidad de certificaciones de ciberseguridad, donde los mas importantes son: CEH, PenTest+, eJPT, eCPPT, HTB CpTS, PNPT, OSCP. 
+
+### Bug bounty
+Los bug bounty, son recompensas proporcionadas por las organizaciones a aquellas personas que logrén encontrar un bug en sus sistemas. Sin embargo, algunas platadormas intermediarias también existen para hacer este servicio, en el que encontramos: Bugcrowd, HackerOne, Intigriti, Immunefi.
+
+### Herramientas para el pentesting
+Se recomienda el uso de Kali Linux, ParrotOS, BlackArch o CommandoVM para hacer pruebas de pentesting, ya qué estas herramientas suelen traer muchos software con la misma finalidad.
+
+### Mantenerse informado
+Para poder estar informado, es necesario tener conocimiento de en que páginas webs podremos encontrar todo, por ello se recomienda acudir a sitios web como: una al día, un informático en el lado del mal, flu project, hackplayers, the hacker way, hacking articles, google project zero o ars technica. 
+
+Además de sitios webs. Existen númerosas conferencias donde se hablan sobre temas de ciberseguridad donde encontramos: BlackHat, DEFCON, RootedCON, Navaja Negra, DragonJar, H-CON, No cON Name, Congreso C1b3rWall o Jornadas STIC del CCN-CERT.
+
+
+
+En el libro se habla de realizar una series de prácticas como Reto basico en la plataforma de Atenea o practicas en Hack The Box.
