@@ -2,7 +2,7 @@
 title: Pagina Inicio
 description: Apuntes
 published: true
-date: 2024-10-23T17:42:50.476Z
+date: 2024-11-03T19:18:15.654Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-22T16:29:34.270Z
