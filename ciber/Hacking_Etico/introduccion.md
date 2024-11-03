@@ -2,7 +2,7 @@
 title: Introducción al hacking ético
 description: Primer tema de la asignatura "Hacking Ético"
 published: true
-date: 2024-11-01T17:57:43.975Z
+date: 2024-11-03T11:00:26.550Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-29T11:54:23.119Z
@@ -167,3 +167,80 @@ Dentro de las vulnerabilidades del CVSS podemos encontrar:
 - Confidencialidad: Si afecta a este aspecto de la seguridad.
 - Integridad: Si afecta a este aspecto de la seguridad.
 - Disponibilidad: Si afecta a este aspecto de la seguridad.
+
+## Test de instrusión o pentest
+Los test de intrusión son acciones legítimas de hackers que intentan hacerse el control de un sistema. En este test, se analiza los estados de seguridad de los servicios de una empresa, para la busqueda activa de vulnerabilidades que puedan ser utilizadas en contra de la empresa.
+Después de este test, se presenta un informe con el test a la empresa o corporaciones para que modifiquen o reparen la seguridad.
+
+Hay varios tipos de auditorias en los test de intrusión:
+- Auditoría de caja negra: El hacker no tiene conocimiento de la organización.
+- Auditoría de caja blanca: El hacker tiene acceso completo a la organización, sirve principalmente para revisar software o configuraciones.
+- Auditoría de caja gris: El auditor tiene conocimiento parcial donde se intenta acceder a otro lado con permisos limitados.
+
+Tambien se puede medir con respecto a la situación de los recursos:
+- Auditoría perimetral: El auditor asume un papel de hacker buscando una forma de acceso a los sistemas internos.
+- Auditoria interna: El hacker tiene rol de empleado y se realiza desde dentro.
+- Auditoria interna con privilegios: El auditor tiene total permiso.
+
+Y por ultimo según los servicios o recursos que quieren ser auditados:
+- Auditoría web: La seguridad de una pagina web.
+- Auditoría de aplicaciones web: Conoce el grado de seguridad de la empresa a nivel de app.
+- Auditoría wireless y VoIP: Permite el conocimiento de estados de seguridad de comunicaciones inalambricas.
+- Prueba de estrés DoS/DDoS: Se comprueba la resistencia a altas cargas.
+
+Partiendo de estas formas de evaluar, la empresa decide que quieren comprobar y nosotros nos adaptaremos a este tipo de auditoria.
+### Fases de un test de intrusión
+Existen numerosas formas de realizar un test de intrusión, a continuación veremos la forma más generales de estos test:
+1. Fase de reconocimento o footprinting: En este punto intentamos recoger toda la información posible de forma completamente externa.
+1. Fase de enumeración o fingerprinting: Aquí ya empezamos a actuar con el activo en busqueda.
+1. Fase de explotación: En este punto con la información recopilada en ambas fases anteriores, comenzamos a intentar vulnerar la aplicación buscando el vector de ataque.
+1. Fase de posexplotación: Se comprueban los privilegios que poseen y analizar el sistema una vez ya accedido a los sistemas del objetivo. 
+1. Fase de documentación: Se debe elaborar un informe con los detalles recogidos anteriormente, se suele realizar dos documentos uno para los directivos y otro para el personal IT.
+
+Los ciberdelincuentes realizan un papel similar excluyendo la ultima parte donde se instalá herramientas como rootkits para mantener el acceso dentro de la aplicación o dispositivo.
+
+### Contrato de test de intrusión
+En el contrato del test de intrusión, es donde se establecen las reglas respecto a la auditoría. Estas reglas suelen venir regidas por las siguientes preguntas:
+- ¿En qué horario debe realizarse el pentest? ¿Hay servicios críticos donde la carga de trabajo no puede superar un cierto umbral?
+- ¿Se van a realizar pruebas de denegación de servicio?
+- ¿Está permitida la Ingeniería social a empleados?
+- ¿El personal de la organización o el personal de IT tendrá conocimiento del test?
+- ¿Está permitido instalar backdoors o usar exploits peligrosos?
+
+### Metodologías de pentesting
+Existen una gran cantidad de metodologias elaboradas como referencia para ayudar con la calidad de los procesos. Se recomienda consultar a páginas como Web Security Testing Guide, para poder elaborar un buen documento. El documento está enfocado a la auditoría de aplicaciones web.
+
+A continuación se va a explicar de forma extensa las metódologias mas utilizadas.
+
+#### PTES (Penetration Testing Execution Standard)
+Esta metódologia fue realizada alrededor del 2009, donde todavía esta en fase 1.0, y se esperá la salida de la 2.0. En esta metodología encontramos siete fases:
+1. Interacciones previas: Se ofrece información sobre aspectos como estimación de tiempo y coste, basicamente el contrato.
+2. Recopilación de inteligencia: En esta fase se intenta obtener información del objetivo más valiosa, donde se pueden establecer tres niveles: L1 donde se obtiene información sin esfuerzo, L2 donde se puede obtener información con el uso de herramientas del primer nivel y L3 donde se busca información del objetivo mediante herramientas más elaboradas.
+1. Modelado de amenazas: En esta fase se elabora un modelo de amenazas identificando aquellos activos que la empresa prefiera proteger.
+1. Análisis de vulnerabilidades: Se buscan los fallos en los sistemas que pueden ser aprovechados por el atacante.
+1. Explotación: Busca tener el acceso a los sistemas de la organización, evitando cualquier restricción de seguridad.
+1. Posexplotación: En esta fase se debe valorar el sistema comprometido y garantizar accesos a futuros. 
+1. Informe: Redacción de lo realizado y obtenido.
+
+#### OSSTMM (Open Source Security Testing Methodology Manual)
+Fue publicada en el 2001 y actualmente esta en su versión 3.0, publicada en diciembre de 2010.
+En esta metodología se hace uso del estadar rav, para medir la exposición de la empresa. Esta medida se representa de dos maneras:
+- Valor positivo o negativo, donde el positivo indica exceso de controles y el negativo falta de controles.
+- Mide lo mismo que antes, se mide mediante el uso de un logaritmo en base 10 donde el 100 es la medida de balance perfecta. 
+
+Esta metodologia trae 5 canales que son los siguientes:
+- Seguridad humana: Consiste en cubrir aquellas interacciones con las personas, como puede ser ingeneria social.
+- Seguridad física: Se mide la forma de vulnerarlo mediante elementos físicos en el sistema.
+- Seguridad en las comunicaciones inalámbricas: En este canal se cubre comunicaciones del objetivo en un rango del proximidad cercano.
+- Seguridad en las telecomunicaciones: Es todo aquello con respecto a red cableada y comunicaciones telefonicas o digitales.
+- Seguridad en las redes de datos: Cubre la comunicaciones entre redes de computadoras y sistemas operativos en red.
+
+La ejecución de esta metodología está en 4 fases que son:
+1. Fase de inducción: La auditoría comienza con la compresión de requisitos, ámbito y restricciones.
+2. Fase de interración: Donde se conocen los diferentes sistemas y interacciones entre ellos.
+3. Fase de encuesta: Donde el auditor descubra información desconocida.
+4. Fase de intervención: Última fase de la auditoría para probar la penetración de los servicios.
+
+#### Metodologías del OWASP (Open Web Application Security Project)
+OWASP (Open Web Application Security Project) dispone de trés grandes guías para la evaluación de seguridad según la aplicación.
+- OWASP Web Security Teting Guide (WSTG): Será vista en el apartado 4.
