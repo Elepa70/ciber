@@ -2,7 +2,7 @@
 title: Introducción al hacking ético
 description: Primer tema de la asignatura "Hacking Ético"
 published: true
-date: 2024-11-04T19:06:10.383Z
+date: 2024-11-04T19:06:27.340Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-29T11:54:23.119Z
@@ -301,4 +301,5 @@ Para poder estar informado, es necesario tener conocimiento de en qué páginas 
 
 Además de sitios web. Existen numerosas conferencias donde se hablan sobre temas de ciberseguridad donde encontramos: BlackHat, DEFCON, RootedCON, Navaja Negra, DragonJar, H-CON, No cON Name, Congreso C1b3rWall o Jornadas STIC del CCN-CERT.
 
+En el libro se habla de realizar una serie de prácticas como Reto básico en la plataforma de Atenea o prácticas en Hack The Box.
 
