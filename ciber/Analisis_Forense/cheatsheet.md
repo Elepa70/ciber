@@ -2,7 +2,7 @@
 title: CheatSheet
 description: 
 published: true
-date: 2024-11-11T18:09:52.405Z
+date: 2024-11-11T18:10:56.653Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-11T18:09:52.405Z
@@ -71,7 +71,7 @@ El hash se realiza para poder tener una prueba de que no ha sido modificado. Par
 sha512sum (Archivo)
 ```
 > Si nuestro los datos a comprobar son menores a los que debemos examinar. (Hemos copiado un disco de 20GB a uno de 50GB), deberemos usar el siguiente comando.
-{.is-warning}
+{.is-info}
 
 ```bash
 dd if=(Archivo) count= (Cantidad de sectores) bs= (Base del bloque) | sha512sum (Archivo)
