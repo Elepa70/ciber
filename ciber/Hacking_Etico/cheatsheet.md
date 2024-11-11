@@ -2,7 +2,7 @@
 title: CheatSheet
 description: Cheatsheet de todos los comandos usados en Hacking
 published: true
-date: 2024-11-11T16:04:31.197Z
+date: 2024-11-11T16:09:52.824Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-11T14:26:03.405Z
@@ -55,7 +55,7 @@ Cuando intentemos hacer una escalada de privilegios, deberemos tener en cuenta q
 ```bash
 sudo -l
 ```
-Los datos obtenidos deberemos compararlos en: [GtFobins](gtfobins.github.io)
+Los datos obtenidos deberemos compararlos en: [GtFobins](https://gtfobins.github.io)
 
 ## Ingeniería inversa
 Cuando tengamos un archivo .exe, deberemos intentar poder descompilarlo. Para ello podemos usar el siguiente comando.
