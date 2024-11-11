@@ -2,7 +2,7 @@
 title: Analisis Forense Informatico
 description: 
 published: true
-date: 2024-11-11T16:24:06.415Z
+date: 2024-11-11T16:24:36.292Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-22T17:27:29.151Z
@@ -29,4 +29,4 @@ Como se ha mencionado anteriormente, esta asignatura, esta dividida en 7 temas d
 ### Cheatsheet
 Aquí podrá ver una página dedicada a comandos útiles. [Cheatsheet](/ciber/Analisis_Forense/introduccion)
 ## Docente
-Esta asignatura fue enseñada por José Luis Berenguel, en el centro I.E.S. Zaidín Vergeles 2024/2025. Recomendación del libro [Hacking ético](https://www.paraninfo.es/catalogo/9788428362672/hacking-etico)
+Esta asignatura fue enseñada por José Luis Navarro, en el centro I.E.S. Zaidín Vergeles 2024/2025.
