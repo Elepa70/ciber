@@ -2,7 +2,7 @@
 title: Analisis Forense Informatico
 description: 
 published: true
-date: 2024-11-11T16:24:36.292Z
+date: 2024-11-11T16:27:10.042Z
 tags: 
 editor: markdown
 dateCreated: 2024-10-22T17:27:29.151Z
@@ -27,6 +27,6 @@ Como se ha mencionado anteriormente, esta asignatura, esta dividida en 7 temas d
 [Análisis de E-Mails]()
 
 ### Cheatsheet
-Aquí podrá ver una página dedicada a comandos útiles. [Cheatsheet](/ciber/Analisis_Forense/introduccion)
+Aquí podrá ver una página dedicada a comandos útiles. [Cheatsheet](/ciber/Analisis_Forense/cheatsheet)
 ## Docente
 Esta asignatura fue enseñada por José Luis Navarro, en el centro I.E.S. Zaidín Vergeles 2024/2025.
