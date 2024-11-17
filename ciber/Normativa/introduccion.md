@@ -2,7 +2,7 @@
 title: Introducció a la normativa de ciberseguridad
 description: 
 published: true
-date: 2024-11-17T14:03:12.685Z
+date: 2024-11-17T16:52:59.518Z
 tags: 
 editor: markdown
 dateCreated: 2024-11-17T14:03:12.685Z
@@ -133,3 +133,16 @@ Las responsabilidades del Compliance Officer en Espaá, parten del deber de info
 Todas las responsabiliades mencionadas, son importantes para la empresa en general. Es por ello que este cargo debe tener valores como integridad, compromiso, liderazgo, comunicación efectiva, habilidad de insistir y convencer sobre la aceptación de recomendaciones y conocimiento profundo al cumplimiento normativo. El incumplimiento de estas responsabilidades, afectará tanto a la empresa como al responsable de forma personal por no ejercer su deber. 
 Aunqué en España no haya sucedido ningún prodecimiento judicial, en Alemania ha habido un caso donde hubo omisiones respecto al deber de un Compliance Officer, resultando en multa al trabajador.
 # Compliance y tereceras partes
+El Código penal establece que la persona jurídica es responsable de determinados hechos delictivos, cometidos por sus repreentantes legales. Sin embargo, toda empresa tiene una proyección externa que interviene en el tráfico mercantil, lo que puede afectar tambien a los terceros en el perimetro de su dominio social (Autonomos, trabajadores subcontratados, clientes, proveedores o socios de negocio). Es decir, todo acto realizado por un tercero relacionado con una empresa, puede afectar a la empresa.
+
+Por lo tanto las empresas deberán conseguir que los terceros respeten tambíen sus politicas o no se vean envueltas en ellos, lo que se llama riesgo de Contaminación o contagio.
+
+Los procedimientos de "dilegencia debida", procura una adecuada selección y supervisión de las personas relacionadas con la empresa, y ajustando los principios y valores a la misma. El cumplimiento de un proceso se distingue en tres etapas:
+1. Adecuada selección del tercero con la que se tendrá relación. Se valorá la información a recibir.
+2. Formalización de relación con el tercero a través de un contrato donde se muestran las clausulas y los compromisos del Compliance.
+3. Seguimiento y evolución del tercero valorando y actualizando periodicamente la información.
+
+## Gestionar diligencias a través de un sistema de gestión compliance
+Las contaminaciones o riesgos debe ser controlados debidamente, para ello es esencial la primera etapa del conocimiento acerca del otro. 
+
+La debida deligencia es el proceso que procura una correcta y acertada selección de aquellas personas, proveedores u otros agentes con los que se relacionan. El objetivo final es que su comportamiento y actuaciones estén alineadas legal y éticamente con las suyas. La implantación de un sistema de gestión compliance, permitirá categorizar estos procesos en etapas. Estas etapas son las mencionadas anteriormente.
