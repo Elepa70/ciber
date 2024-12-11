@@ -2,7 +2,7 @@
 title: Practica de pivotaje
 description: En está pagina vamos a explicar como se hizo el pivotaje
 published: true
-date: 2024-12-11T17:47:05.082Z
+date: 2024-12-11T18:55:20.308Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-11T17:47:05.082Z
@@ -112,4 +112,17 @@ nano /etc/proxychains4.conf
 Deberemos fijarnos que en la primera zonas de texto, esté presente **strict_chain** y después al final deberemos comentar la linea **socks4 127.0.0.1 9050**, y escribiremos en su lugar **socks5 127.0.0.1 1080**.
 ![image.png](/image.png)
 
-Luego en la herramienta de 
+Luego en la herramienta de FoxyProxy, vamos a añadir una nueva entrada con lo siguiente:
+![imagen_hacking_pivotaje_2.png](/imagen_hacking_pivotaje_2.png)
+
+Tras esto, tendremos listo un proxy que puede analizar todas las peticiones como si estuvieramos viendolo desde el seridor DVWA.
+
+Lo siguiente que haremos será establecer la conexión con chisel para poder, para ello en Kali escribiremos: 
+```console
+./chisel server -p 4000 --reverse --socks5
+```
+
+
+```console
+./chisel client (ip kali):4000 R:8000:127.0.0.1:8000
+```
