@@ -2,7 +2,7 @@
 title: Hacking de aplicaciones web
 description: En este tema vamos a ver todo lo relacionado a Hacking Web
 published: true
-date: 2024-12-15T12:13:49.014Z
+date: 2024-12-15T14:04:47.482Z
 tags: hacking, web
 editor: markdown
 dateCreated: 2024-12-05T16:41:03.095Z
@@ -123,16 +123,55 @@ Además tiene desarrollado OWASP Top 10, que vamos a ver a continuación.
 ### OWASP Top 10
 El proyecto OWASP Top 10, recopila las 10 categorías de vulnerabilidades más importantes presentes en aplicaciones web. Se renueva con cierta periocidad, siendo la última versión de 2021 (Fecha Junio 2023).
 
-Este top se hace mediante los datos cedidos por empresas de seguridad por todo el mundo desde un año en especifico (en este caso 2017) y se va haciendo un recuento de cada CWE (Common Weakness Enumeration) presente en cada aplicación. 
-### Aplicacines web vulnerables
-## Principales vulnerabilidades web y su explotación
-### Local File Inclusion (LFI) y Remote File Inclusion (RFI)
-### File upload vulnerabilities
-### Access control vulnerabilities (IDOR)
-### SQL Injection (SQLi)
-### Cross Site Scripting (XSS)
-### Cross Site Request Foregy (CSRF)
-### Server Side Request Forgery (SSRF)
-### Server-Side Template Injection (SSTI)
-### XML External Entity (XXE) Injection
-### OS Command Injetion
+Este top se hace mediante los datos cedidos por empresas de seguridad por todo el mundo desde un año en especifico (en este caso 2017) y se va haciendo un recuento de cada CWE (Common Weakness Enumeration) presente en cada aplicación.  Tras eso se pondera las CVSS de los CVE  asociados a los CWE encontrados, y con ello se hacen las primeras 8 categorías. Las dos ultimas, son vulnerabilidades antiguas bastante importantes votadas por la comunidad de OWASP, esto sirve para dar a luz antiguas vulnerabilidades y recordar lo que pasó y como se mejoró.
+
+Para poder interpretar las 10 vulnerabilidades más comunes según OWASP, es neesarió conocer una serie de terminos:
+- CWE mapeadas: Cantidad de númeors CEW asignados a la categoría.
+- Tasa de incidencia: Porcentaje de población de aplicaciones que tiene una instancia de un tipo de vulnerabilidad.
+- Impacto ponderado: Ponderación que se hace basado en la puntuación de impactos CVSS de los CVE asignados.
+- Explotabilidad ponderada: Igual que el impacto ponderado pero con la puntuación de CVSS
+- Cobertura de las pruebas: Porcentaje de aplicaciones analizadas por cada organización para una determinada vulnerabilidad
+- Total de ocurrencia: Total de aplicaciones en la que ha encontrado alguna ocurrencia de CWE asociado.
+
+Ahora vamos a describir brevemente cada vulnerabilidad de OWASP Top 10 2021.
+#### AO1:2021 Broken Access Control (Pérdida de control de acceso)
+Consiste en que el usuario puede realizar acciones que no deberían estar asignadas, vulnerabilidades comunes:
+- CWE-35: Path Traversal.
+- CWE-352: Cross-Site Request Fogery (CSRF)
+- CWE-284: Improper Access Control.
+#### AO2:2021 Cryptographic Failures (Errores criptográficos)
+Consiste en la exposición de datos confidenciales o del compromiso del sistema por parte de un fallo criptografico, vulnerabilidades asociadas:
+- CWE-328: Use of Weak Hash
+- CWE-261: Weak Encoding for Password
+- CWE-326: Inadequate Encryption Strength
+#### AO3:2021 Injection (Inyección)
+Las vulnerabilidades de este estilo, surgen cuando no se sanean la entrada de usuario sin codificar los parámetros y permitiendo su modificación o cuando es posible.
+- CWE-89: Inyección SQL
+- CWE-78: Inyección de comandos de sistemas operativos
+- CWE-79: XSS
+#### AO4:2021 Insecure design (Diseño inseguro)
+Existe debido a un mal diseño de la aplicación, vienen por diseño de software. Vulnerabilidades comunes son:
+- CWE-653: Aislamiento o compartición inadecuados.
+- CWE-656: Confianza en la seguridad por oscuridad.
+#### AO5:2021 Security Misconfiguration (Configuración de seguridad incorrecta)
+Relacionado con deficiencias o insuficiencias en la configuración del software del entorno. Puede ser ocasionado por falta de bastionado, dejar habilitadas funcones innecesarias, no enviar cabeceras o directivas de seguridad.
+- CWE-260 Contraseñas en ficheros de configuración
+- CWE-1004: Cookie sensible
+- 
+#### AO6:2021 Vulnerable and Outdated Components
+Esta categoría hace referencia al riesgo al que se expone una aplicación debido a un componente por no estar suficientemente actualizado. Podemos encontrar:
+- CWE-1104: Uso de componentes de terceros sin mantener
+#### AO7:2021 Identification and Authentication Failures (Fallos en identificación y autenticación)
+Aquí contemplamos los ataques relacionados con la identidad, la autenticación y la gestión de sesiones de usuarios. Como puede ser permitir ataques de fuerza bruta, contraseñas debiles o bien conocidas. DEbemos encontrar:
+- CWE-613: Expiración insuficiente de sesión
+- CWE-620: Cambios de contraseña sin verificar
+#### AO8:2021 Software and Data Integrity Failures (Fallos en el software y en la integridad de los datos)
+Las vulnerabilidades de está categoria es por el uso de plugins o aplicaciones no confiables que puede permitir un acceso no autorizado a atacantes. Podemos encontrar:
+- CWE-829: Inclusion de funcionalidad de terceros no confiables
+- CWE-494: Descarga de código sin verificación de integridad
+- CWE-502: Deserialización de datos no confiables.
+#### AO9:2021 Security Logging and Monitoring Failures
+Trata de deficiencias en el monitoreo y registro del sistema, provocando una lenta actuación del equipo de seguridad y no pudiendo realizar bien la funciones, ya que están ciegos ante ataques.
+#### A10:2021 Server-Side Request Forgery (SSRF)
+Esta dedicado a la vulnerabilidad a una unica debilidad:
+- CWE-918: Server-Side Request Forgery
