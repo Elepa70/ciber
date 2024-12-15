@@ -2,7 +2,7 @@
 title: Hacking de aplicaciones web
 description: En este tema vamos a ver todo lo relacionado a Hacking Web
 published: true
-date: 2024-12-15T12:12:18.202Z
+date: 2024-12-15T12:13:49.014Z
 tags: hacking, web
 editor: markdown
 dateCreated: 2024-12-05T16:41:03.095Z
@@ -60,17 +60,17 @@ En HTTP hay un conjunto de cabeceras de petición y respuesta orientadas a mejor
 Herramientas de analisis, pueden detectar como vulnerable la falta de estas etiquetas, sin embargo, es importante que el pentester verifique manualmente si realmente es una vulnerabilidad, ya que muchas funciones de estas cabeceras de seguridad pueden chocar directamente con la función del servidor.
 
 El protocolo envía una cabecera HTTP con el formato que vimos anteriormente:
-Set-Cookie: \Cookies>=<Cookies\>; Expires=\<Expires>; Domain=\<Dominio>; Path=\<path>; Atributos de seguridad
+Set-Cookie: \<Cookies>=<Cookies\>; Expires=\<Expires>; Domain=\<Dominio>; Path=\<path>; Atributos de seguridad
 
 Las primera linea es para el atributo Path y Domain, ya que permite restringir dónde se enviará esa cookie. Sin embargo, se dispone además de los llamados atributos de seguridad, que permiten indicar características para proteger la cookie. Estos protocolos son SameSite, Secure y HTTPOnly.
 
 - Atributo SameSite: Antes de la aparición de este protocolo, el navegador enviaba todas las cookies que fueron enviadas por ese servidor independientemente si esa solicitud fue realizada por otro dominio. Para evitar esto, se desarrollo el atributo SameSite, donde se controla el comportamiento de estas cookies con: None (Siempre envia todas las cookies al servidor), Lax (El navegador enviara las cookies si es mediante una peticion GET y si fue porque el usuario hizo click) y Strict (El navegador no enviará las cookies en solicitudes Cross-Site, que no sean mismo dominio, mismo protocolo y mismo puerto).
-Set-Cookie: \Cookies>=<Cookies\>; SameSite=Strict/Lax/None
+Set-Cookie: \<Cookies>=<Cookies\>; SameSite=Strict/Lax/None
 
 - Atributo Secure: Si está presente indica que la cookie solo puede ser enviada con una comunicación segura como HTTPs.
-Set-Cookie: \Cookies>=<Cookies\>; Secure
+Set-Cookie: \<Cookies>=<Cookies\>; Secure
 - Atributo HttpOnly: Evita que el cliente pueda acceder a la cookie mediante Javascript, ya que delimita que la cookie pueda ser recibida mediante Http.
-Set-Cookie: \Cookies>=<Cookies\>; HttpOnly
+Set-Cookie: \<Cookies>=<Cookies\>; HttpOnly
 ### HTTP Access Control (CORS)
 CORS es un protoclo de seguridad empleado por los navegadores, cuando se intenta solicitar un recurso de un origen distinto al origen del primer recurso solicitado. 
 
