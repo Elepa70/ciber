@@ -2,7 +2,7 @@
 title: Hacking de aplicaciones web
 description: En este tema vamos a ver todo lo relacionado a Hacking Web
 published: true
-date: 2024-12-15T14:04:47.482Z
+date: 2024-12-15T17:06:33.628Z
 tags: hacking, web
 editor: markdown
 dateCreated: 2024-12-05T16:41:03.095Z
@@ -11,11 +11,31 @@ dateCreated: 2024-12-05T16:41:03.095Z
 # Hacking de aplicaciones web
 En este tema vamos a ver el protoclo HTTP y sus caracteristicas a la seguridad. Se verán las principales vulnerabilidades mediante OWASP Top 10.
 ## Protocolo HTTP
-HTTP (Hypertext Transfer Protocol, protocolo de transferencia de hipertexto), es un protocolo existente en la capa de aplicación usado para la transmisión de hipertextos (Contenido enriquecido con carácteristicas especiales).
+HTTP (Hypertext Transfer Protocol, protocolo de transferencia de hipertexto), es un protocolo existente en la capa de aplicación usado para la transmisión de hipertextos (Contenido enriquecido con carácteristicas especiales). 
+
+Fue desarrollado por Tim Berners-Lee en el CERN en 1989. En su rimera versión (HTTP/0.9), solo admitía el método GET. Tras esot evolucinó al HTTP/1.0, el cual traeria los métodos POST y HEAD, además de las cabeceras HTTP. El protocolo más tarde evolucinó a HTTP/2 en 2015 por SPDY, donde se buscama una transmisión en binaria en vez de texto plano, y finalmente en 2021 saló la versión HTTP/3, con el protoclo QUIC para mejorar la velocidad y la seguridad integrando el TLS.
 
 Este protocolo es cliente-servidor, y se realiza mediante peticiones, el cliente manda una petición (HTTP Request) al servidor que responderá con un (HTTP Response). El protocolo HTTP ha ido mejorando en versiones y se ha ido reforzando para ser más seguro y a ser mas eficiente, es por ello que actualmente tenemos en desarrollo el protocolo HTTP 3.0, mientras que al principio teniamos la version 1.1.
 
 El cambio de versiones, provoca un cambio en las sintaxis, a como se establecen las conexiones o como se organizan las peticiones y respuestas. Sin embargo la semantica se ha ido manteniendo desde la version 1.1.
+
+Los métodos más comunes que conocemos son:
+- GET: Solicitar recursos.
+- HEAD: Similar a GET pero el servidor no devuelve los recursos dados, si no las cabeceras de repuesta.
+- POST: Envíar datos.
+- PUT: Reemplazar recursos.
+- DELETE: Eliminar recursos.
+- PATCH: Modificar parctialmente recursos.
+- OPTIONS: Describe opciones de comunicación.
+- TRACE: Realiza una comunicación de prueba.
+- CONNECT: Establece un túnel con el servidor identificado por el recurso solicitado.
+
+
+El protocoló también trae una sere de indicadores para mostrar el estado de una petición que están organizadas en:
+- 2XX Mensaje de éxito: 200 OK (Petición exitosa), 201 CREATED (Petición se ha completado y se ha creado el recurso)
+- 3XX Mensaje de redirección: 301 Moved Permanently (EL recurso ha cambiado de ubicación a otra de forma permanente, se usa la respueta Location)
+- 4XX Mensaje de error del cliente: 400 Bad Request (Error en la sintaxis de la petición), 403 Forbidden (El servidor no quiere dar respuesta a la petición y 404 Not Found (No se ha encontrado el recurso)
+- 5XX Mensaje de error del servidor: 500 Internal Server Error (Error genérico del servidor)
 
 ### HTTP cookies
 HTTP es por diseño un protocolo sin estado, es decir, no es capaz de identificar si una petición viene de un usuario o otro, ni cuantas peticiones hace cada uno.
@@ -54,6 +74,8 @@ El protocolo TLS actúa justo después de la conexión TCP para iniciar una comu
 Esta es la norma general, pero puede variar según la versión de TLS.
 
 Esta seguridad de TLS se complementea con otros mecanismos añadidos por el protocolo HTTP.
+
+
 ### Cabeceras de seguridad
 En HTTP hay un conjunto de cabeceras de petición y respuesta orientadas a mejorar la seguridad de la transferencia. Vamos a repasar el uso seguro de HTTP Cookies y el funcionamiento de CORS (HTTP Access Control).
 
