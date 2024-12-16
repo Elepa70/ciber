@@ -2,7 +2,7 @@
 title: Hacking de aplicaciones web
 description: En este tema vamos a ver todo lo relacionado a Hacking Web
 published: true
-date: 2024-12-15T17:06:33.628Z
+date: 2024-12-16T15:28:54.446Z
 tags: hacking, web
 editor: markdown
 dateCreated: 2024-12-05T16:41:03.095Z
@@ -117,7 +117,7 @@ Las solicitudes simples son aquellas que cumplen los siguientes requisitos:
 En esta situación el navegador simplemente enviará la cabecera HTTP Origin en la solicitud indicando el origen del recurso principal y tras eso, mirará la cabecera de respuesta Access-Control-Allow-Origin, dependiendo de su valor lo aceptará o lo bloqueará.
 
 Los valores de la cabecera Access-Control-Allow-Origin pueden ser:
-- * : Comodín indicando que desde cualquier origen.
+- "*" : Comodín indicando que desde cualquier origen.
 - Origen especifico: Solo se puede compartir a ese origen.
 
 En las solicitudes preflighted, debe ser cuando no se produzcan ninguna de las condiciones de las simple, es decir:
