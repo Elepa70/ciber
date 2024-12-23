@@ -2,7 +2,7 @@
 title: Política de Privacidad
 description: Página dedicada al tratamiento de datos.
 published: true
-date: 2024-12-23T15:39:15.861Z
+date: 2024-12-23T15:49:41.320Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-23T15:39:15.861Z
@@ -18,6 +18,9 @@ Cuando te registras e inicias sesión mediante **Discord OAuth2**, recopilamos l
 - **Nombre de usuario de Discord:** Para mostrar en tu perfil.
 - **Correo electrónico (si está disponible):** Para identificación y notificaciones.
 - **Avatar de Discord (opcional):** Para mostrar en tu perfil.
+
+#### ¿Y el aviso de servidores?
+Este aviso está creado porque Wiki.js trabaja para poder saber si perteneces a un servidor especifico para tener privilegios, sin embargo este dato no está guardado en la plataforma.
 
 ### ¿Cómo utilizamos tus datos?
 
