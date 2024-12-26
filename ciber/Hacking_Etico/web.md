@@ -2,10 +2,10 @@
 title: Hacking de aplicaciones web
 description: En este tema vamos a ver todo lo relacionado a Hacking Web
 published: true
-date: 2024-12-16T19:52:46.802Z
+date: 2024-12-26T15:52:57.872Z
 tags: hacking, web
 editor: markdown
-dateCreated: 2024-12-05T16:41:03.095Z
+dateCreated: 2024-12-20T19:30:12.869Z
 ---
 
 # Hacking de aplicaciones web
