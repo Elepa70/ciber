@@ -2,10 +2,10 @@
 title: Diseño de Planes de Securización
 description: 
 published: true
-date: 2024-11-11T13:55:04.172Z
+date: 2024-12-26T15:50:20.023Z
 tags: 
 editor: markdown
-dateCreated: 2024-11-11T13:55:04.172Z
+dateCreated: 2024-12-20T19:29:31.032Z
 ---
 
 # Diseño de Planes de Securización
