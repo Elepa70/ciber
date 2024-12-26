@@ -2,7 +2,7 @@
 title: Normativa
 description: 
 published: true
-date: 2024-12-26T15:59:43.272Z
+date: 2024-12-26T15:59:59.273Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:26:59.482Z
@@ -16,7 +16,7 @@ Esta asignatura tiene una total de X temas.
 Se recomienda tener cierto conocimiento de algunas normativas como la LOPDGDD.
 ### Temarios
 Como se ha mencionado anteriormente, esta asignatura, esta dividida en X temas distintos. Vamos a mencionarlos a continuación con su respectiva redirección:
-[Introducción a la normativa de ciberseguridad](Normativa/introduccion)
+[Introducción a la normativa de ciberseguridad](introduccion)
 [Sistema de gestión de compliance]()
 
 ## Docente
