@@ -2,10 +2,10 @@
 title: Implantación de Aplicaciones Web
 description: 
 published: true
-date: 2024-11-04T18:02:12.884Z
+date: 2024-12-26T16:12:20.401Z
 tags: 
 editor: markdown
-dateCreated: 2024-10-22T17:21:36.807Z
+dateCreated: 2024-12-20T19:28:35.603Z
 ---
 
 # Header
