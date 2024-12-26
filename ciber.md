@@ -2,10 +2,10 @@
 title: Ciberseguridad
 description: Bienvenido
 published: true
-date: 2024-11-04T18:08:03.560Z
+date: 2024-12-26T15:42:59.257Z
 tags: 
 editor: markdown
-dateCreated: 2024-10-22T17:11:44.929Z
+dateCreated: 2024-12-20T19:25:44.504Z
 ---
 
 # Curso de Especialización en Ciberseguridad en Entornos de las Tecnologías de la Información
@@ -17,12 +17,12 @@ En este curso va orientado a realizar una actividad en las empresas que requiera
 Es decir, asegurar la información de la empresa
 
 ## Acceso a los módulos del curso
-[Analisis Forense](/es/ciber/Analisis_Forense)
-[Bastionado de Redes](/es/ciber/Bastionado_Redes)
-[Hacking ético](/es/ciber/Hacking_Etico)
-[Incidencia de Redes](/es/ciber/Incidentes_Ciberseguridad)
-[Normativa de Ciberseguridad](/es/ciber/Normativa)
-[Puesto en Producción de Seguridad](/es/ciber/Produccion_Segura)
+[Analisis Forense](apuntes//ciber/Analisis_Forense)
+[Bastionado de Redes](apuntes/ciber/Bastionado_Redes)
+[Hacking ético](apuntes/ciber/Hacking_Etico)
+[Incidencia de Redes](apuntes/ciber/Incidentes_Ciberseguridad)
+[Normativa de Ciberseguridad](apuntes/ciber/Normativa)
+[Puesto en Producción de Seguridad](apuntes/ciber/Produccion_Segura)
 
 ## ¿De qué podría trabajar?
 Los trabajos ideales que podrías desarrollar serían:
