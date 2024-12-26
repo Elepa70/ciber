@@ -2,7 +2,7 @@
 title: Política de Privacidad
 description: Página dedicada al tratamiento de datos.
 published: true
-date: 2024-12-26T12:17:02.238Z
+date: 2024-12-26T15:35:56.603Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-23T15:39:15.861Z
