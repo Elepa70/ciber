@@ -2,7 +2,7 @@
 title: Hacking Etico
 description: 
 published: true
-date: 2024-12-26T15:55:16.382Z
+date: 2024-12-26T15:55:58.122Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:26:42.326Z
@@ -18,10 +18,10 @@ Esta asignatura está dividido en 7 temas, cada uno tendra una explicación y su
 Se recomienda tener conocimientos en general de Informatica, ya que se hablará de terminos avanzados de informatica y no se hará tanto incapie en las explicaciones.
 ### Temarios
 Como se ha mencionado anteriormente, esta asignatura, esta dividida en 7 temas distintos. Vamos a mencionarlos a continuación con su respectiva redirección:
-[Introducción al hacking ético](apuntes/ciber/Hacking_Etico/introduccion)
+[Introducción al hacking ético](introduccion)
 [Recopilación de información o footprinting](a)
 [Enumeración de servicios o fingerprinting](a)
-[Hacking de aplicaciones web](apuntes/ciber/Hacking_Etico/web)
+[Hacking de aplicaciones web](web)
 [Hacking de redes y sistemas informáticos](a)
 [Mantenimiento del acceso, escalada de privilegios y pivotaje](a)
 [Hacking de redes inalámbricas](a)
