@@ -2,7 +2,7 @@
 title: Bastionado de Redes
 description: 
 published: true
-date: 2024-12-26T15:48:30.364Z
+date: 2024-12-26T15:49:23.630Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:26:33.014Z
