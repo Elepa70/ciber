@@ -2,7 +2,7 @@
 title: Hacking Etico
 description: 
 published: true
-date: 2024-12-26T15:55:58.122Z
+date: 2024-12-26T15:56:13.403Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:26:42.326Z
@@ -27,6 +27,6 @@ Como se ha mencionado anteriormente, esta asignatura, esta dividida en 7 temas d
 [Hacking de redes inalámbricas](a)
 
 ### Cheatsheet
-Aquí podrá ver una página dedicada a comandos útiles. [Cheatsheet](apuntes/ciber/Hacking_Etico/cheatsheet)
+Aquí podrá ver una página dedicada a comandos útiles. [Cheatsheet](cheatsheet)
 ## Docente
 Esta asignatura fue enseñada por José Luis Berenguel, en el centro I.E.S. Zaidín Vergeles 2024/2025. Recomendación del libro [Hacking ético](https://www.paraninfo.es/catalogo/9788428362672/hacking-etico)
