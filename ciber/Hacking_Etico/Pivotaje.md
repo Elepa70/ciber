@@ -2,10 +2,10 @@
 title: Practica de pivotaje
 description: En está pagina vamos a explicar como se hizo el pivotaje
 published: true
-date: 2024-12-16T20:16:33.815Z
+date: 2024-12-26T15:53:07.302Z
 tags: 
 editor: markdown
-dateCreated: 2024-12-11T17:47:05.082Z
+dateCreated: 2024-12-20T19:29:42.236Z
 ---
 
 # Práctica pivotaje
