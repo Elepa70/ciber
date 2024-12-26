@@ -2,7 +2,7 @@
 title: Políticas de Cookies
 description: Descripción de las políticas en cookies
 published: true
-date: 2024-12-23T15:35:40.697Z
+date: 2024-12-26T12:16:26.435Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-23T15:35:40.697Z
@@ -10,12 +10,17 @@ dateCreated: 2024-12-23T15:35:40.697Z
 
 ## Política de Cookies
 
-Este sitio utiliza únicamente cookies esenciales para:
+Este sitio utiliza únicamente **cookies esenciales** para garantizar su correcto funcionamiento. Estas cookies se utilizan para:
 
-- Mantener activa tu sesión.
-- Garantizar la seguridad de la plataforma.
-- Recordar tus preferencias de idioma y apariencia.
+- **Mantener activa tu sesión.**  
+- **Garantizar la seguridad de la plataforma.**  
+- **Recordar tus preferencias de idioma y apariencia.**  
 
-Estas cookies no recopilan información personal ni se utilizan con fines publicitarios.
+Estas cookies **no recopilan información personal** ni se utilizan con **fines publicitarios o analíticos**.
 
-Si tienes alguna pregunta, contáctanos.
+Al continuar navegando en este sitio, aceptas el uso de estas cookies esenciales.
+
+Para más detalles sobre el tratamiento de tus datos, consulta nuestra [Política de Privacidad](/privacy-policy).
+
+Si tienes alguna pregunta, contáctanos en:  
+📧 **ciberapuntes.correo@gmail.com**
