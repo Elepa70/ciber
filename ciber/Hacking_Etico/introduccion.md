@@ -2,10 +2,10 @@
 title: Introducción al hacking ético
 description: Primer tema de la asignatura "Hacking Ético"
 published: true
-date: 2024-11-04T19:06:27.340Z
+date: 2024-12-26T15:52:53.703Z
 tags: 
 editor: markdown
-dateCreated: 2024-10-29T11:54:23.119Z
+dateCreated: 2024-12-20T19:30:04.660Z
 ---
 
 # Introducción al hacking ético
