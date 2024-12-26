@@ -2,31 +2,20 @@
 title: Pagina Inicio
 description: Apuntes
 published: true
-date: 2024-12-26T13:56:00.372Z
+date: 2024-12-26T14:25:20.460Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:25:54.305Z
 ---
 
 # ¡Bienvenido!
-Bienvenido a mi página web donde podrá observar los apuntes o cosas de lo aprendido a lo largo de mis estudios en Informática.
-Actualmente esto acoge únicamente los ciclos de:
-- ASIR (Administrador de Sistemas Informáticos en Red)
-- CIBER (Ciberseguridad en entornos de la Información)
+Bienvenido a mi aplicación web, aquí podrá tener información con respecto a los cursos de ASIR y CIBER, además de algunos proyectos que he hecho para poder ayudarte al día dia. ¡O si eres estudiante y no sabes que hacer, puedes usarlo!
 
 ## ¿Quién soy?
-Soy Pablo Sánchez Hidalgo, estudiante de CIBER y en cierta medida, un "friki" que le gusta las redes, la seguridad, los videojuegos y escuchar música.
-
-Nací en 2003 en la ciudad andaluza de Málaga, viví la niñez y adolescencia en un municipio llamado Estepona. Allí es donde comencé a tener mis grandes amistades, y donde curse Primaria, ESO y Bachillerato.
-Tras esto, tenía dos puertas abiertas: La Universidad o la FP.
-
-Como se deduce, escogí la FP, y aunque había FP de informática en mi ciudad, decidí elegir ASIR por lo que tuve que empezar a acudir a Marbella, concretamente al I.E.S. Guadalpín.
-
-Una vez finalizado, decidí continuar con mis estudios entrando en el Cursos de Especialización de Ciberseguridad y entornos de la Información, o comúnmente dicho, FP de Ciberseguridad.
-Para que todos nos entendamos, sería la equivalencia de Máster para las FP.
+Soy Pablo Sánchez Hidalgo, estudiante de CIBER y en cierta medida, un "friki" que le gusta las redes, la seguridad, los videojuegos y escuchar música. Si quieres saber algo más sobre mi, te invito a hacer click en Sobre Mí.
 
 ## ¿Y está página web?
-Pues básicamente sería como mi "Cloud", donde almacenaría todo lo que aprendí en ASIR y lo que estoy aprendiendo en CIBER. Hay que tener en cuenta que no está completo y es un hobbie, por lo que se irá completando y rellenando poco a poco.
+En esta página va a poder tener apuntes con respecto a Administración de Sistemas Informaticos en Red y de Ciberseguridad en Entornos de la Información. A su vez, habrá ejercicios planteados y resueltos, y también podrá encontrar algunos proyectos que he hecho o estoy desarrollando.
 ## Contactos
 Para contactar conmigo tienes los siguientes métodos:
 - [LinkedIn](https://www.linkedin.com/in/pablosanchezhidalgo/)
