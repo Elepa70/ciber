@@ -2,7 +2,7 @@
 title: Bastionado de Redes
 description: 
 published: true
-date: 2024-12-26T15:48:06.685Z
+date: 2024-12-26T15:48:30.364Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:26:33.014Z
@@ -15,8 +15,8 @@ Esta materia se encarga, según "Real Decreto 479/2020": Definir e implementar e
 
 ### Temarios
 En este módulo tenemos 8 temas distintos, los cuales son:
-[Introducción a la ciberseguridad](ciber/Bastionado_Redes/introduccion)
-[Diseño de planes de securización](ciber/Bastionado_Redes/securizacion)
+[Introducción a la ciberseguridad](Bastionado_Redes/introduccion)
+[Diseño de planes de securización](Bastionado_Redes/securizacion)
 [Configuración de dispositivos y sistemas informáticos](a)
 [Diseño de redes de computadores seguras](a)
 [Sistemas de control de acceso y autenticación](a)
