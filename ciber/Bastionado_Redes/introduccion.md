@@ -2,10 +2,10 @@
 title: Introducción
 description: 
 published: true
-date: 2024-11-06T19:37:48.159Z
+date: 2024-12-26T15:49:50.750Z
 tags: 
 editor: markdown
-dateCreated: 2024-11-06T19:37:48.159Z
+dateCreated: 2024-12-20T19:29:21.673Z
 ---
 
 # Introducción de bastionado de sistemas
