@@ -2,7 +2,7 @@
 title: Administración de Sistemas Informáticos en Red - Primer año
 description: Página principal de ASIR 1º Año
 published: true
-date: 2024-12-26T16:06:41.043Z
+date: 2024-12-26T16:07:03.630Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:26:05.237Z
@@ -16,12 +16,12 @@ No es necesario acudir de un ciclo medio de Informatica para poder saber que hac
 
 ## Módulos
 A continuación podrá dirigirse a los módulos que prefiera:
-[Gestión de bases de datos](apuntes/asir/asir1/Base_Datos)
-[Formación y orientación laboral](apuntes/asir/asir1/Formacion_Profesional)
-[Fundamentos de Hardware](apuntes/asir/asir1/Hardware)
-[Implantación de sistemas operativos](apuntes/asir/asir1/ISO)
-[Lenguajes de marcas y sistemas de gestión de información](apuntes/asir/asir1/Lenguaje_Marcas)
-[Planificación y administración de redes](apuntes/asir/asir1/Planificacion_Redes)
+[Gestión de bases de datos](/apuntes/asir/asir1/Base_Datos)
+[Formación y orientación laboral](/apuntes/asir/asir1/Formacion_Profesional)
+[Fundamentos de Hardware](/apuntes/asir/asir1/Hardware)
+[Implantación de sistemas operativos](/apuntes/asir/asir1/ISO)
+[Lenguajes de marcas y sistemas de gestión de información](/apuntes/asir/asir1/Lenguaje_Marcas)
+[Planificación y administración de redes](/apuntes/asir/asir1/Planificacion_Redes)
 
 ## Opiniónes y consejos
 Este año conlleva una gran dificultad, principalmente por que es el primer contacto de Informatica para muchos. Y eso puede provocar nerviosismo o incluso miedo en algunos casos, es cierto que gracias a vuestro desempeño se puede obtener un mejor o peor trabajo. Sin embargo, todo es posible.
