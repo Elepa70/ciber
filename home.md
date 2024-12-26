@@ -2,7 +2,7 @@
 title: Pagina Inicio
 description: Inicio de la página web.
 published: true
-date: 2024-12-26T14:50:04.793Z
+date: 2024-12-26T14:50:23.316Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:25:54.305Z
@@ -23,7 +23,3 @@ Soy Pablo Sánchez Hidalgo, estudiante de CIBER y en cierta medida, un "friki" q
 
 ## ¿Y está página web?
 En esta página va a poder tener apuntes con respecto a Administración de Sistemas Informaticos en Red y de Ciberseguridad en Entornos de la Información. A su vez, habrá ejercicios planteados y resueltos, y también podrá encontrar algunos proyectos que he hecho o estoy desarrollando.
-## Contactos
-Para contactar conmigo tienes los siguientes métodos:
-- [LinkedIn](https://www.linkedin.com/in/pablosanchezhidalgo/)
-- Correo: pablosanhid2003@proton.me
