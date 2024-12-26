@@ -2,7 +2,7 @@
 title: Políticas de Cookies
 description: Descripción de las políticas en cookies
 published: true
-date: 2024-12-26T12:16:26.435Z
+date: 2024-12-26T15:34:21.045Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-23T15:35:40.697Z
