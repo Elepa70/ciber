@@ -2,10 +2,10 @@
 title: Introducció a la normativa de ciberseguridad
 description: 
 published: true
-date: 2024-11-17T16:52:59.518Z
+date: 2024-12-26T15:58:30.490Z
 tags: 
 editor: markdown
-dateCreated: 2024-11-17T14:03:12.685Z
+dateCreated: 2024-12-20T19:30:24.575Z
 ---
 
 # Introducción a la normativa de ciberseguridad
