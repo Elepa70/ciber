@@ -2,7 +2,7 @@
 title: Hacking Etico
 description: 
 published: true
-date: 2024-12-26T15:52:47.390Z
+date: 2024-12-26T15:55:16.382Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:26:42.326Z
@@ -18,15 +18,15 @@ Esta asignatura está dividido en 7 temas, cada uno tendra una explicación y su
 Se recomienda tener conocimientos en general de Informatica, ya que se hablará de terminos avanzados de informatica y no se hará tanto incapie en las explicaciones.
 ### Temarios
 Como se ha mencionado anteriormente, esta asignatura, esta dividida en 7 temas distintos. Vamos a mencionarlos a continuación con su respectiva redirección:
-[Introducción al hacking ético](Hacking_Etico/introduccion)
+[Introducción al hacking ético](apuntes/ciber/Hacking_Etico/introduccion)
 [Recopilación de información o footprinting](a)
 [Enumeración de servicios o fingerprinting](a)
-[Hacking de aplicaciones web](Hacking_Etico/web)
+[Hacking de aplicaciones web](apuntes/ciber/Hacking_Etico/web)
 [Hacking de redes y sistemas informáticos](a)
 [Mantenimiento del acceso, escalada de privilegios y pivotaje](a)
 [Hacking de redes inalámbricas](a)
 
 ### Cheatsheet
-Aquí podrá ver una página dedicada a comandos útiles. [Cheatsheet](Hacking_Etico/cheatsheet)
+Aquí podrá ver una página dedicada a comandos útiles. [Cheatsheet](apuntes/ciber/Hacking_Etico/cheatsheet)
 ## Docente
 Esta asignatura fue enseñada por José Luis Berenguel, en el centro I.E.S. Zaidín Vergeles 2024/2025. Recomendación del libro [Hacking ético](https://www.paraninfo.es/catalogo/9788428362672/hacking-etico)
