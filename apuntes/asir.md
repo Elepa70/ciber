@@ -2,7 +2,7 @@
 title: Administración de sistemas informáticos en red - General
 description: Pagina de inicio de ASIR
 published: true
-date: 2024-12-26T15:41:07.915Z
+date: 2024-12-26T15:41:31.863Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:25:35.614Z
@@ -17,8 +17,8 @@ Este ciclo esta dedicado a la actividad de aquellas empresas o entidades que ten
 Ejemplo práctico: Tienes una empresa y necesitas informatizarla, lo ideal es contactar con un administrador de sistemas, ya que esta es la persona que idealizará un plan de red, indicando los puntos de acceso (Wi-Fi) y la gestión de datos (Bases de datos).
 
 ## Acceso a ASIR
-[ASIR - Primer año](/es/asir/asir1)
-[ASIR - Segundo año](/es/asir/asir2)
+[ASIR - Primer año](apuntes/asir/asir1)
+[ASIR - Segundo año](apuntes/asir/asir2)
 
 ## ¿De qué podría trabajar?
 Los trabajos ideales que podrías desarrollar serían:
