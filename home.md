@@ -2,7 +2,7 @@
 title: Pagina Inicio
 description: Inicio de la página web.
 published: true
-date: 2024-12-26T14:25:43.925Z
+date: 2024-12-26T14:26:54.986Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:25:54.305Z
