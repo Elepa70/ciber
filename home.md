@@ -2,7 +2,7 @@
 title: Pagina Inicio
 description: Apuntes
 published: true
-date: 2024-12-26T12:15:50.334Z
+date: 2024-12-26T13:56:00.372Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:25:54.305Z
@@ -27,7 +27,6 @@ Para que todos nos entendamos, sería la equivalencia de Máster para las FP.
 
 ## ¿Y está página web?
 Pues básicamente sería como mi "Cloud", donde almacenaría todo lo que aprendí en ASIR y lo que estoy aprendiendo en CIBER. Hay que tener en cuenta que no está completo y es un hobbie, por lo que se irá completando y rellenando poco a poco.
-
 ## Contactos
 Para contactar conmigo tienes los siguientes métodos:
 - [LinkedIn](https://www.linkedin.com/in/pablosanchezhidalgo/)
