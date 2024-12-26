@@ -2,10 +2,10 @@
 title: Analisis Forense Informatico
 description: 
 published: true
-date: 2024-11-11T16:27:10.042Z
+date: 2024-12-26T15:43:46.712Z
 tags: 
 editor: markdown
-dateCreated: 2024-10-22T17:27:29.151Z
+dateCreated: 2024-12-20T19:26:24.045Z
 ---
 
 # Analisis Forense Informaticos
@@ -17,7 +17,7 @@ Esta asignatura está dividido en 8 temas, cada uno tendra una explicación y su
 Se recomienda tener conocimientos en general de Informatica, ya que se hablará de terminos avanzados de informatica y no se hará tanto incapie en las explicaciones.
 ### Temarios
 Como se ha mencionado anteriormente, esta asignatura, esta dividida en 7 temas distintos. Vamos a mencionarlos a continuación con su respectiva redirección:
-[Introducción a la informática forense](/ciber/Analisis_Forense/introduccion)
+[Introducción a la informática forense](apuntes/ciber/Analisis_Forense/introduccion)
 [La metodología forense]()
 [Documentación y elaboración de informes de análisis forenses]()
 [Análisis de sistemas Windows]()
@@ -27,6 +27,6 @@ Como se ha mencionado anteriormente, esta asignatura, esta dividida en 7 temas d
 [Análisis de E-Mails]()
 
 ### Cheatsheet
-Aquí podrá ver una página dedicada a comandos útiles. [Cheatsheet](/ciber/Analisis_Forense/cheatsheet)
+Aquí podrá ver una página dedicada a comandos útiles. [Cheatsheet](apuntes/ciber/Analisis_Forense/cheatsheet)
 ## Docente
 Esta asignatura fue enseñada por José Luis Navarro, en el centro I.E.S. Zaidín Vergeles 2024/2025.
