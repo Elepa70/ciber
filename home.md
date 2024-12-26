@@ -2,14 +2,14 @@
 title: Pagina Inicio
 description: Apuntes
 published: true
-date: 2024-12-22T19:39:41.869Z
+date: 2024-12-26T12:15:10.341Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:25:54.305Z
 ---
 
 # ¡Bienvenido!
-Bienvenido a mi página web donde podrá observar los apuntes o cosas de lo aprendido a lo largo de mis estudios en Informática.
+Bienvenido a mi página web donde podrá observar los apuntes o cosas de lo aprendido a lo largo de mis estudios en Informática.aaa
 Actualmente esto acoge únicamente los ciclos de:
 - ASIR (Administrador de Sistemas Informáticos en Red)
 - CIBER (Ciberseguridad en entornos de la Información)
@@ -27,7 +27,7 @@ Para que todos nos entendamos, sería la equivalencia de Máster para las FP.
 
 ## ¿Y está página web?
 Pues básicamente sería como mi "Cloud", donde almacenaría todo lo que aprendí en ASIR y lo que estoy aprendiendo en CIBER. Hay que tener en cuenta que no está completo y es un hobbie, por lo que se irá completando y rellenando poco a poco.
-
+aa
 ## Contactos
 Para contactar conmigo tienes los siguientes métodos:
 - [LinkedIn](https://www.linkedin.com/in/pablosanchezhidalgo/)
