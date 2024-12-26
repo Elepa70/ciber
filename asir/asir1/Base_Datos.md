@@ -2,10 +2,10 @@
 title: Gestión de bases de datos
 description: 
 published: true
-date: 2024-11-04T17:58:11.330Z
+date: 2024-12-26T16:04:33.183Z
 tags: 
 editor: markdown
-dateCreated: 2024-10-22T17:18:50.916Z
+dateCreated: 2024-12-20T19:27:16.014Z
 ---
 
 # Header
