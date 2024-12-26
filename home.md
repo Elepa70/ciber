@@ -1,8 +1,8 @@
 ---
 title: Pagina Inicio
-description: Apuntes
+description: Inicio de la página web.
 published: true
-date: 2024-12-26T14:25:20.460Z
+date: 2024-12-26T14:25:43.925Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:25:54.305Z
