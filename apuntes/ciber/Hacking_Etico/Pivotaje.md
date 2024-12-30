@@ -2,7 +2,7 @@
 title: Practica de pivotaje
 description: En está pagina vamos a explicar como se hizo el pivotaje
 published: true
-date: 2024-12-29T21:18:40.118Z
+date: 2024-12-30T11:44:25.381Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:29:42.236Z
@@ -155,7 +155,7 @@ ip a
 
 Y una vez sepamos el rango de la IP, en mi caso 10.0.0.6/24. Vamos a poner un pequeño script en la máquina DVWA para detectar el resto de IPs, el escript es el siguiente:
 ```bash
-for j in $(seq 1 10);do ping -c 10.0.3.$j > /dev/null && echo "host activo 10.0.3.$j";done
+for j in $(seq 1 10);do ping -c 1 10.0.3.$j > /dev/null && echo "host activo 10.0.3.$j";done
 ```
 Esto nos devolverá un listado grande de IPs por lo que deberemos deducir cuál es el server, para ello podemos hacer uso de nmpa con:
 ```bash
