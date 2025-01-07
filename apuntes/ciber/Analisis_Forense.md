@@ -2,7 +2,7 @@
 title: Analisis Forense Informatico
 description: 
 published: true
-date: 2025-01-07T16:25:07.041Z
+date: 2025-01-07T16:46:39.270Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:26:24.045Z
@@ -28,5 +28,4 @@ Como se ha mencionado anteriormente, esta asignatura, esta dividida en 7 temas d
 
 ### Cheatsheet
 Aquí podrá ver una página dedicada a comandos útiles. [Cheatsheet](cheatsheet)
-## Docente
 
