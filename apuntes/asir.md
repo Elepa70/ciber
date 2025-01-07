@@ -2,7 +2,7 @@
 title: Administración de sistemas informáticos en red - General
 description: Pagina de inicio de ASIR
 published: true
-date: 2025-01-07T16:17:47.354Z
+date: 2025-01-07T16:17:55.075Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:25:35.614Z
@@ -18,7 +18,7 @@ Ejemplo práctico: Tienes una empresa y necesitas informatizarla, lo ideal es co
 
 ## Acceso a ASIR
 [ASIR - Primer año](asir1)
-[ASIR - Segundo año](asi2)
+[ASIR - Segundo año](asir2)
 
 ## ¿De qué podría trabajar?
 Los trabajos ideales que podrías desarrollar serían:
