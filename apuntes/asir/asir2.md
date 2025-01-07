@@ -1,8 +1,8 @@
 ---
 title: Administración de Sistemas Informáticos en Red - Segundo Año
 description: 
-published: true
-date: 2024-12-26T16:10:57.337Z
+published: false
+date: 2025-01-07T15:30:39.614Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:26:14.465Z
