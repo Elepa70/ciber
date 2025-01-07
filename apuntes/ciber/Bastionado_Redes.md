@@ -2,7 +2,7 @@
 title: Bastionado de Redes
 description: 
 published: true
-date: 2024-12-26T15:49:23.630Z
+date: 2025-01-07T15:29:20.720Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:26:33.014Z
@@ -24,4 +24,3 @@ En este módulo tenemos 8 temas distintos, los cuales son:
 [Configuración de dispositivos para la instalación de sistemas](a)
 [Configuración de los sistemas informáticos](a)
 ## Docente
-Esta asignatura fue enseñada por Manuel Moreno Domínguez, en el centro I.E.S. Zaidín Vergeles 2024/2025
