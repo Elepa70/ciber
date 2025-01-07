@@ -2,7 +2,7 @@
 title: Analisis Forense Informatico
 description: 
 published: true
-date: 2024-12-26T15:46:36.831Z
+date: 2025-01-07T15:29:01.701Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:26:24.045Z
@@ -29,4 +29,4 @@ Como se ha mencionado anteriormente, esta asignatura, esta dividida en 7 temas d
 ### Cheatsheet
 Aquí podrá ver una página dedicada a comandos útiles. [Cheatsheet](Analisis_Forense/cheatsheet)
 ## Docente
-Esta asignatura fue enseñada por José Luis Navarro, en el centro I.E.S. Zaidín Vergeles 2024/2025.
+
