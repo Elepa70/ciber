@@ -2,7 +2,7 @@
 title: Pagina Inicio
 description: Inicio de la página web.
 published: true
-date: 2025-01-07T16:16:36.320Z
+date: 2025-01-07T16:16:50.992Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:25:54.305Z
@@ -11,7 +11,7 @@ dateCreated: 2024-12-20T19:25:54.305Z
 # ¡Bienvenido!
 Bienvenido a mi aplicación web, aquí podrá tener información con respecto a los cursos de ASIR y CIBER, además de algunos proyectos que he hecho para poder ayudarte al día dia. ¡O si eres estudiante y no sabes que hacer, puedes usarlo!
 ## Enlaces directos
-- [**Apuntes**](/es/apuntes)
+- [**Apuntes**](/apuntes)
 - [**Proyectos**](/proyectos)
 - [**Políticas legales**](/politicas)
 - [**Sobre Mí**](/mio)
