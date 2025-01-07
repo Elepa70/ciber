@@ -2,7 +2,7 @@
 title: Ciberseguridad
 description: Bienvenido
 published: true
-date: 2024-12-26T16:01:09.286Z
+date: 2025-01-07T16:20:48.072Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:25:44.504Z
@@ -12,7 +12,7 @@ dateCreated: 2024-12-20T19:25:44.504Z
 ## ¿Qué es?
 Esta FP, es una de las 3 FPs disponibles de la rama de Informática y a nivel de Especialización. Aunqué se tiene pensado ampliar a 4. (Redactado a fecha de Noviembre de 2024).
 
-En este curso va orientado a realizar una actividad en las empresas que requieran de protección de los sistemas de información y redes de comunicaciones. 
+En este curso va orientado a realizar una actividad en las empresas que requieran de protección de los sistema de información y redes de comunicaciones. 
 
 Es decir, asegurar la información de la empresa
 
