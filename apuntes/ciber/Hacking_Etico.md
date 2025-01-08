@@ -2,7 +2,7 @@
 title: Hacking Etico
 description: 
 published: true
-date: 2025-01-07T16:26:30.363Z
+date: 2025-01-08T15:11:33.027Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:26:42.326Z
@@ -12,6 +12,13 @@ dateCreated: 2024-12-20T19:26:42.326Z
 ## Introducción
 Bienvenido a la asignatura de Hacking Ético. En esta asignatura, se va a enseñar las herramientas y los metodos para realizar un buena evaluación de un sistema unicamente con propositos de protección.
 Bajo ningún concepto se deberán usar estos conocimientos para provocar daños a otros.
+
+> Todos los apuntes que se ven en los temarios, son resumenes del libro Hacking ético de José L. Berenguel y Pablo Esteban Sánchez
+{.is-info}
+
+Si desea ampliar conocimiento, le recomiendo adquirir el libro. Puede encontrar el libro dandole click a [este enlace](https://www.paraninfo.es/catalogo/9788428362672/hacking-etico)
+
+
 ## Como está dividido
 Esta asignatura está dividido en 7 temas, cada uno tendra una explicación y sus enlaces de intereses.
 ## Recomendaciones
@@ -29,4 +36,4 @@ Como se ha mencionado anteriormente, esta asignatura, esta dividida en 7 temas d
 ### Cheatsheet
 Aquí podrá ver una página dedicada a comandos útiles. [Cheatsheet](cheatsheet)
 ## Docente
-Recomendación del libro [Hacking ético](https://www.paraninfo.es/catalogo/9788428362672/hacking-etico)
+Esta asignatura fue enseñada por José Luis Berenguel, en el centro I.E.S. Zaidín Vergeles 2024/2025.  
