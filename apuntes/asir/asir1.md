@@ -1,8 +1,8 @@
 ---
 title: Administración de Sistemas Informáticos en Red - Primer año
 description: Página principal de ASIR 1º Año
-published: false
-date: 2025-01-07T15:30:24.007Z
+published: true
+date: 2025-01-09T12:55:46.457Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:26:05.237Z
