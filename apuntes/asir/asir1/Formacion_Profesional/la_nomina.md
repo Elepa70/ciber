@@ -2,15 +2,15 @@
 title: La nomina
 description: 
 published: true
-date: 2025-01-14T11:31:04.412Z
+date: 2025-01-14T11:34:04.454Z
 tags: fol, nomina
 editor: markdown
 dateCreated: 2025-01-14T11:31:04.412Z
 ---
 
-# Tema 7: Estructura del salario
+# Tema 6: Estructura del salario
 
-# Componentes del salario
+## Componentes del salario
 1. **Salario base:** No puede ser inferior al **Salario Mínimo Interprofesional (SMI)**.
 2. **Complementos salariales o pluses:**
    - Antigüedad.
@@ -18,7 +18,7 @@ dateCreated: 2025-01-14T11:31:04.412Z
    - Resultados.
 3. **Percepciones extrasalariales:** Compensación de gastos (ej. transporte).
 
-# Formas de salario
+## Formas de salario
 - **Por forma de pago:**
   - **Dineraria:** En dinero.
   - **En especie:** No puede superar el **30%** del salario.
@@ -27,11 +27,11 @@ dateCreated: 2025-01-14T11:31:04.412Z
   - **Unidad de obra:** Según ventas o producción.
   - **Mixto:** Parte fija y parte variable.
 
-# SMI e IPREM
+## SMI e IPREM
 - **SMI:** Salario Mínimo Interprofesional, establece el salario mínimo para todos los trabajadores.
 - **IPREM:** Índice para la concesión de ayudas económicas.
 
-# Nómina
+## Nómina
 1. **Devengos:**
    - Se calcula el salario bruto sumando todos los conceptos salariales y extrasalariales.
    - Resultado: **Total Devengado**.
