@@ -2,7 +2,7 @@
 title: Temario Windows
 description: 
 published: true
-date: 2025-01-14T12:18:30.583Z
+date: 2025-01-14T12:18:52.278Z
 tags: iso, windows
 editor: markdown
 dateCreated: 2025-01-14T12:18:30.583Z
@@ -10,45 +10,7 @@ dateCreated: 2025-01-14T12:18:30.583Z
 
 # TEMARIO DE WINDOWS
 
----
 
-## ÍNDICE DE CONTENIDOS
-1. **MBR**  
-   - Acerca del Windows Server 2008
-   - Arranque del ordenador
-   - El sector de arranque maestro (MBR)
-   - GPT
-   - Particiones
-   - Tipos de particiones
-   - Utilización de las particiones primarias y lógicas
-   - Estructura de particiones
-2. **BCD y Bootrec**  
-   - Elementos de arranque
-   - El BCD
-   - Bootrec
-3. **Registro**  
-   - Registro virtualizado
-   - Registro transaccional
-   - Copias de seguridad
-   - Modificaciones del registro
-4. **MSI**  
-   - Actualizaciones
-   - Instalación de software
-5. **SCRIPT**
-   - ONLINE
-   - OFFLINE
-6. **TODOS LOS COMANDOS**
-   - MBR
-   - BCD y Bootrec
-   - Registro
-   - MSI
-7. **Preguntas algo rebuscadas**
-   - MBR
-   - BCD y Bootrec
-   - Registro
-   - MSI
-
----
 
 ## 1. MBR
 
