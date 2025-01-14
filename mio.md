@@ -2,7 +2,7 @@
 title: Sobre Mí
 description: Información relevante al administrador
 published: true
-date: 2024-12-26T15:30:44.255Z
+date: 2025-01-14T12:06:09.768Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-26T15:30:44.255Z
@@ -38,7 +38,7 @@ Tengo varias certificaciones entre ellas puedo incluir:
 Actualmente mi ambición es aprender todo lo posible relacionado al mundo de Nube, sin embargo tengo cierto interes en aprender mas de informatica en general. Es por ello, que es posible que una vez finalice los estudios en Ciberseguridad, comience propiamente dicha la carrera de Informatica o Ciberseguridad, independientemente de ello tengo pensado adquirir más certificaciones.
 ## Contactame
 Si quieres contactar conmigo, tienes a continuación mi correo y mi linkedin, el cúal no tengo problema en que useis para contactar conmigo.
-- pablosanhid2003@proton.me
+- pablocontacto.next101@slmails.com
 - [LinkedIn](https://www.linkedin.com/in/pablosanchezhidalgo)
 
 Muchisimas gracias por leer todo.
