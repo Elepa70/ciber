@@ -2,7 +2,7 @@
 title: Temario Windows
 description: 
 published: true
-date: 2025-01-14T12:18:52.278Z
+date: 2025-01-14T12:20:40.725Z
 tags: iso, windows
 editor: markdown
 dateCreated: 2025-01-14T12:18:30.583Z
