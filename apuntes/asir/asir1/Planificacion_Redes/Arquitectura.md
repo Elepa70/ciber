@@ -2,13 +2,13 @@
 title: Arquitectura de redes
 description: 
 published: true
-date: 2025-01-14T12:23:57.063Z
+date: 2025-01-15T17:03:58.350Z
 tags: iso, osi
 editor: markdown
 dateCreated: 2025-01-14T12:23:57.063Z
 ---
 
-# TEMA 2: Arquitectura de redes
+# Arquitectura de redes
 
 
 ## Jerarquía de protocolos
