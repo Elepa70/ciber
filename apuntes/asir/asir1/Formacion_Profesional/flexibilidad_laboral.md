@@ -2,13 +2,13 @@
 title: La flexibilidad laboral
 description: 
 published: true
-date: 2025-01-14T11:29:42.085Z
+date: 2025-01-15T16:44:55.523Z
 tags: fol
 editor: markdown
 dateCreated: 2025-01-14T11:29:42.085Z
 ---
 
-# Tema 6: Formas de organización y flexibilización laboral
+# Formas de organización y flexibilización laboral
 
 Las formas de organización y flexibilización laboral incluyen:
 1. **Modificación del número de horas:** Ajustes en el calendario laboral.
