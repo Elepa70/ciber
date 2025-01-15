@@ -1,8 +1,8 @@
 ---
 title: Formación y orientación laboral
 description: 
-published: false
-date: 2025-01-15T16:41:06.309Z
+published: true
+date: 2025-01-15T16:47:43.957Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:27:24.148Z
@@ -29,4 +29,3 @@ A continuación tendrá todos los enlaces hacia los apuntes.
 [Prevencion y protección en el trabajo](Prevencion_proteccion)
 [Formas de gestión de la prevención](/apuntes/asir/asir1/Formacion_Profesional/gestion_prevencion)
 [Gestión de conflictos](/apuntes/asir/asir1/Formacion_Profesional/gestion_conflictos)
-## Docente
