@@ -2,13 +2,13 @@
 title: Configuración de conmutadores y VLAN
 description: 
 published: true
-date: 2025-01-14T12:41:05.187Z
+date: 2025-01-15T17:04:58.730Z
 tags: 
 editor: markdown
 dateCreated: 2025-01-14T12:41:05.187Z
 ---
 
-# Tema 8: Configuración de Conmutadores y VLAN
+# Configuración de Conmutadores y VLAN
 
 ## Configuración de un Conmutador
 - Trabajan en el nivel de enlace, elaborando una tabla de direcciones MAC.
