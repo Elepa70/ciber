@@ -2,13 +2,13 @@
 title: Medios fisicos de transmision
 description: 
 published: true
-date: 2025-01-14T12:36:02.014Z
+date: 2025-01-15T17:04:18.425Z
 tags: 
 editor: markdown
 dateCreated: 2025-01-14T12:36:02.014Z
 ---
 
-# Tema 3: Medios Físicos de Transmisión
+# Medios Físicos de Transmisión
 
 ## Fundamentos matemáticos y físicos
 - **Superposición:** El efecto causado por la suma de señales equivale a la suma de los efectos producidos por cada señal individualmente: `f(x+y) = f(x) + f(y)`.
