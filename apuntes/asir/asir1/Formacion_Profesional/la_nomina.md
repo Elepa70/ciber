@@ -2,13 +2,13 @@
 title: La nomina
 description: 
 published: true
-date: 2025-01-14T11:34:04.454Z
+date: 2025-01-15T16:45:25.135Z
 tags: fol, nomina
 editor: markdown
 dateCreated: 2025-01-14T11:31:04.412Z
 ---
 
-# Tema 6: Estructura del salario
+# Estructura del salario
 
 ## Componentes del salario
 1. **Salario base:** No puede ser inferior al **Salario Mínimo Interprofesional (SMI)**.
