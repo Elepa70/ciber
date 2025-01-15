@@ -2,13 +2,13 @@
 title: Cableado estructurado
 description: 
 published: true
-date: 2025-01-14T12:36:56.646Z
+date: 2025-01-15T17:04:34.136Z
 tags: 
 editor: markdown
 dateCreated: 2025-01-14T12:36:56.646Z
 ---
 
-# Tema 4: Cableado Estructurado
+# Cableado Estructurado
 
 ## Introducción
 - Evitar compartir canalizaciones de cableado eléctrico y de red.
