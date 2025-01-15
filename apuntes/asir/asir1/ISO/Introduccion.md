@@ -1,8 +1,8 @@
 ---
-title: Caracterización de sistemas operatitvos
+title: Caracterización de sistemas operativos
 description: 
 published: true
-date: 2025-01-14T12:20:13.705Z
+date: 2025-01-15T16:59:10.688Z
 tags: introduccion, iso
 editor: markdown
 dateCreated: 2025-01-14T12:11:40.198Z
