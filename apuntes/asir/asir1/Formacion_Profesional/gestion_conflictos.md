@@ -2,13 +2,13 @@
 title: Gestion de conflictos
 description: 
 published: true
-date: 2025-01-14T11:45:34.662Z
+date: 2025-01-15T16:45:38.518Z
 tags: 
 editor: markdown
 dateCreated: 2025-01-14T11:45:34.662Z
 ---
 
-# FOL: Tema 16 - Gestión de Conflictos
+# Gestión de Conflictos
 
 ## ¿Qué es un conflicto?
 Un **conflicto** es una situación en la que personas o grupos defienden posturas opuestas, compitiendo por el mismo objetivo.
