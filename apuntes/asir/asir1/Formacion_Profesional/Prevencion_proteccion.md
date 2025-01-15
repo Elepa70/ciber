@@ -2,13 +2,13 @@
 title: Prevencion y protección en el trabajo
 description: 
 published: true
-date: 2025-01-14T11:43:36.046Z
+date: 2025-01-15T16:46:02.173Z
 tags: fol, prevencion, proteccion
 editor: markdown
 dateCreated: 2025-01-14T11:43:36.045Z
 ---
 
-# Tema 12: Las técnicas de prevención y de protección
+# Las técnicas de prevención y de protección
 
 ## Prevención
 La **prevención** consiste en el conjunto de medidas adoptadas en todas las fases de la actividad de la empresa, dirigidas a evitar la aparición de riesgos laborales.
