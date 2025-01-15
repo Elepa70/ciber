@@ -1,8 +1,8 @@
 ---
 title: Implantación de sistemas operativos
 description: a
-published: false
-date: 2025-01-15T16:59:18.028Z
+published: true
+date: 2025-01-15T17:00:03.277Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:27:41.590Z
