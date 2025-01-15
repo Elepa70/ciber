@@ -2,13 +2,13 @@
 title: Caracterización de redes
 description: 
 published: true
-date: 2025-01-14T12:22:49.863Z
+date: 2025-01-15T17:03:46.351Z
 tags: redes
 editor: markdown
 dateCreated: 2025-01-14T12:22:49.863Z
 ---
 
-# TEMA 1: Caracterización de redes
+# Caracterización de redes
 
 ## Tipos de Transmisión
 Existen varios tipos de transmisión que se diferencian por su forma de comunicarse:
