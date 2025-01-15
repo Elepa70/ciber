@@ -2,13 +2,13 @@
 title: Formas de gestión de la prevención
 description: 
 published: true
-date: 2025-01-14T11:44:36.711Z
+date: 2025-01-15T16:45:54.496Z
 tags: 
 editor: markdown
 dateCreated: 2025-01-14T11:44:36.711Z
 ---
 
-# Tema 13: Formas de gestión de la prevención
+# Formas de gestión de la prevención
 
 ## Gestión de la prevención
 El empresario puede desarrollar personalmente la actividad de prevención si se cumplen las siguientes condiciones:
