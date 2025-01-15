@@ -1,8 +1,8 @@
 ---
 title: Fundamentos de Hardware
-description: a
-published: false
-date: 2025-01-15T16:51:39.807Z
+description: 
+published: true
+date: 2025-01-15T16:52:02.228Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:27:32.967Z
