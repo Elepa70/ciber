@@ -2,13 +2,13 @@
 title: Elementos de redes
 description: 
 published: true
-date: 2025-01-14T12:38:10.221Z
+date: 2025-01-15T17:04:46.044Z
 tags: 
 editor: markdown
 dateCreated: 2025-01-14T12:38:10.221Z
 ---
 
-# Tema 5: Elementos de Redes
+# Elementos de Redes
 
 ## Módem
 - Los primeros módems utilizaban una red telefónica conmutada (RTC), transmitiendo señales analógicas de hasta 56 kbps.
