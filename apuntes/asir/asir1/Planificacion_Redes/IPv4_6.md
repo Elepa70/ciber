@@ -2,13 +2,13 @@
 title: IPv4 y IPv6
 description: 
 published: true
-date: 2025-01-14T13:15:46.960Z
+date: 2025-01-15T17:05:11.006Z
 tags: 
 editor: markdown
 dateCreated: 2025-01-14T13:15:08.538Z
 ---
 
-# Tema 6 Parte 2
+# Parte 2
 
 ## IPv6
 
