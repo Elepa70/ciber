@@ -1,8 +1,8 @@
 ---
-title: Seguridad Pasiva
+title: Seguridad pasiva de hardware
 description: 
 published: true
-date: 2025-01-18T18:07:39.093Z
+date: 2025-01-18T18:08:52.543Z
 tags: 
 editor: markdown
 dateCreated: 2025-01-18T18:07:39.093Z
@@ -11,10 +11,10 @@ dateCreated: 2025-01-18T18:07:39.093Z
 # TEMA 2: Seguridad pasiva Hardware y Almacenamiento  
 
 
-# Ubicación física y protección física
+## Ubicación física y protección física
 Para garantizar la seguridad de un servidor, lo primero es decidir **dónde** instalarlo. Es fundamental proteger el hardware de desastres naturales, inundaciones, sobrecargas eléctricas, robos y otras amenazas. Para ello, se aplican barreras físicas y procedimientos de control, prevención y contramedidas.
 
-## ¿Dónde ubicar un CPD?
+### ¿Dónde ubicar un CPD?
 Se deben evitar lugares como:
 
 - **Primeras plantas o sótanos**: Para reducir el riesgo de inundaciones.  
@@ -22,7 +22,7 @@ Se deben evitar lugares como:
 - **Fuentes de interferencia de radiofrecuencia**.  
 - **Zonas cercanas a maquinarias pesadas** o áreas con elevado riesgo.
 
-## Distribución de un CPD
+### Distribución de un CPD
 Al diseñar la distribución física de un CPD, es necesario contemplar varias salas, cada una con un propósito específico:
 
 - **Sala de control**:  
@@ -43,7 +43,7 @@ Al diseñar la distribución física de un CPD, es necesario contemplar varias s
 - **Sala de reparaciones**:  
   - Facilita la labor de pruebas, montaje y reparaciones de equipos sin interferir en la actividad principal.
 
-## Controles de acceso
+### Controles de acceso
 Dependiendo de la instalación y la inversión, se pueden implementar diversos sistemas de seguridad:
 
 - Personal de seguridad.  
@@ -51,7 +51,7 @@ Dependiendo de la instalación y la inversión, se pueden implementar diversos s
 - Sistemas biométricos.  
 - Detectores de presencia.
 
-## Sistemas de climatización
+### Sistemas de climatización
 Los equipos generan gran cantidad de calor, de ahí la necesidad de refrigerarlos manteniendo **temperaturas** y **humedad** adecuadas:
 
 - **Temperatura**: Entre 18°C y 22°C (crítico estar por debajo de 10°C o por encima de 30°C).  
