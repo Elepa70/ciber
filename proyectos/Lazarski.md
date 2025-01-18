@@ -1,8 +1,8 @@
 ---
-title: Lazarski
+title: Proyecto ASIR
 description: 
 published: true
-date: 2025-01-18T18:45:28.187Z
+date: 2025-01-18T18:48:29.703Z
 tags: 
 editor: markdown
 dateCreated: 2025-01-18T18:45:28.187Z
@@ -10,9 +10,11 @@ dateCreated: 2025-01-18T18:45:28.187Z
 
 # Proyecto ASIR
 
-# Introducción y explicación.
+## Introducción y explicación.
 
 Este proyecto fue entregado para finalizar mi curso de ASIR. Esta tarea fue realizada durante mis prácticas de empresa en  [Lazarski](https://www.lazarski.pl/en) (Universidad de Varsovia, Polonia). 
+
+Este proyecto consiste en la configuración de un **Promox**, el cúal tiene 3 redes internas, cada una tiene configurado distintos softwares para hacer una simulación de un ambiente empresarial. En este ejercicio se va a observar la configuración de **Proxmox,Palo Alto, Fortinet, Zabbix y WikiJs**.
 
 Adjunto una imagen para poder guiar respecto a la distribución.
 
