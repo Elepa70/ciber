@@ -2,13 +2,13 @@
 title: Impuestos
 description: 
 published: true
-date: 2025-01-18T17:59:53.655Z
+date: 2025-01-18T18:00:17.789Z
 tags: empresas
 editor: markdown
 dateCreated: 2025-01-18T17:59:53.654Z
 ---
 
-# Tema 8
+# Impuestos
 
 ## Introducción
 Todo ingreso público recibido por la Administración se denomina **tributo**. Se exigen por ley a ciudadanos y empresas para financiar servicios públicos. Existen diferentes clases:
