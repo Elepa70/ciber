@@ -2,7 +2,7 @@
 title: Financiacion
 description: 
 published: true
-date: 2025-01-18T17:55:52.457Z
+date: 2025-01-18T17:58:48.128Z
 tags: empresas
 editor: markdown
 dateCreated: 2025-01-18T17:55:52.457Z
