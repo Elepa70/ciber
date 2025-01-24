@@ -2,7 +2,7 @@
 title: Write-Up Chill Hack
 description: Write-Up sobre la máquina Chill Hack de TryHackMe
 published: true
-date: 2025-01-24T15:53:57.054Z
+date: 2025-01-24T15:54:56.270Z
 tags: tryhackme
 editor: markdown
 dateCreated: 2025-01-24T11:20:08.121Z
@@ -334,7 +334,7 @@ su anurodh
 ```
 Y cuando nos pregunte la contraseña ponemos que la hemos obtenido anteriormente.
 ![imagen_hacking_chill-hack_49anurodh.png](/imagen_hacking_chill-hack_49anurodh.png)
-## Anurodh
+### Anurodh
 Ahora somos otro usuario, pero ¿Tenemos los permisos suficientes para entrar como root?
 Si hacemos un id;sudo -l, vamos a encontrar algo interesante
 ```bash
