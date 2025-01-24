@@ -2,7 +2,7 @@
 title: Write-Up Chill Hack
 description: Write-Up sobre la máquina Chill Hack de TryHackMe
 published: false
-date: 2025-01-24T15:02:17.198Z
+date: 2025-01-24T15:03:36.280Z
 tags: tryhackme
 editor: markdown
 dateCreated: 2025-01-24T11:20:08.121Z
@@ -105,7 +105,7 @@ Lo primero que haremos será securizar la shell, para ello vamos a poner los sig
 ```bash
 python3 -c "import pty;pty.spawn('/bin/bash')"
 ```
-Tras esto hacemos<kbd>CTRL</kbd> + <kbd>Z</kbd>.
+Tras esto hacemos <kbd>CTRL</kbd> + <kbd>Z</kbd>.
 Y escribimos los siguientes comandos:
 ```
 stty raw -echo;
