@@ -2,7 +2,7 @@
 title: Pagina Inicio
 description: Inicio de la página web.
 published: true
-date: 2025-01-07T16:16:50.992Z
+date: 2025-01-27T15:27:00.530Z
 tags: 
 editor: markdown
 dateCreated: 2024-12-20T19:25:54.305Z
@@ -23,3 +23,6 @@ Soy Pablo Sánchez Hidalgo, estudiante de CIBER y en cierta medida, un "friki" q
 
 ## ¿Y está página web?
 En esta página va a poder tener apuntes con respecto a Administración de Sistemas Informaticos en Red y de Ciberseguridad en Entornos de la Información. A su vez, habrá ejercicios planteados y resueltos, y también podrá encontrar algunos proyectos que he hecho o estoy desarrollando.
+## Enlaces interesantes
+Os recomiendo enormemente visitar los siguientes enlaces, si quieres más conocimientos.
+- [Sproffes](https://sproffes.github.io/resources/): Página web con recursos relacionas con Hacking o Forense, entre otras cosas.
