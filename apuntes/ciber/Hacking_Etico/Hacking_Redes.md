@@ -2,7 +2,7 @@
 title: Hacking de redes inalámbricas
 description: En este tema se va a abarcar a temas relacionados a redes inalámbricas.
 published: true
-date: 2025-03-14T17:17:29.604Z
+date: 2025-03-14T17:35:33.390Z
 tags: hacking, redes
 editor: markdown
 dateCreated: 2025-03-14T16:06:22.960Z
@@ -55,4 +55,17 @@ Rango de frencuencia que va desde 2400 Mhz a 2483 Mhz. Este espacio se divide en
 Dentro de sus ventajas tenemos su extensa cobertura pero con una perdida de velocidades de red.
 
 #### 5GHz
-La banda de los 5GHz se encuentra entra 5180Mhz y 5825Mhz
+La banda de los 5GHz se encuentra entra 5180Mhz y 5825Mhz. Es posible tener mas o menos canales según el canal elegido. La ventaja que trae esta banda con respecto a la de 2.4GHz es la velocidad de transmisión superior pero con una cobertura menor y menor poder de penetración.
+
+Es posible que según tu región tenga restricciones de uso, por ejemplo en Europa solo el rango de 36 y 48 es posible usarlo libremente, el resto son canales DFS o TPC.
+
+- DFS (Dynamic Frequency Selection): son usados por servicios como, radares de defensas,  aeropuertos o servicios meteorlogícos. En caso de que un router ocupe una canal de estas caracteristicas, estará 60 segundos esperando algúna señal similar, y si la recibe saldra del canal en 10 segundos.
+- TCP (Transmit Power Control): Son canales empleados por potencia de transmisiones, los routers deben esperar hasta 10 minutos para su conexión es por ello que comercailemtne no es viable.
+
+
+### Protocolos de seguridad
+Debemos intentar que cuando implementamos una red, cumplir la autenticidad (Que cualquiera no pueda conectarse a la red), Integridad (Un terceno puede alterar datos en tránsito) y confidencialidad (Los datos transmitidos no sean entendibles por un tercero).
+
+El primer protoclo que vamos a ver es el **WEB** (Wired Equivalent Privacy), para las redes WLAN. Surgue en 1997 con las primeras versiones de Wi-Fi. Ofreciendo dos tipos de autenticación:
+- Abierta: Donde no se solicitan credenciales
+- Clave compartida: Usa algoritmos de desafío- respuesta en cuatro fases para autenticar al cliente.
