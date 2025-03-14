@@ -2,7 +2,7 @@
 title: Hacking de redes inalámbricas
 description: En este tema se va a abarcar a temas relacionados a redes inalámbricas.
 published: true
-date: 2025-03-14T17:35:33.390Z
+date: 2025-03-14T19:15:59.519Z
 tags: hacking, redes
 editor: markdown
 dateCreated: 2025-03-14T16:06:22.960Z
@@ -69,3 +69,77 @@ Debemos intentar que cuando implementamos una red, cumplir la autenticidad (Que 
 El primer protoclo que vamos a ver es el **WEB** (Wired Equivalent Privacy), para las redes WLAN. Surgue en 1997 con las primeras versiones de Wi-Fi. Ofreciendo dos tipos de autenticación:
 - Abierta: Donde no se solicitan credenciales
 - Clave compartida: Usa algoritmos de desafío- respuesta en cuatro fases para autenticar al cliente.
+
+Para el cifrado se utiliza un algoritmo RC4, con claves al principio de 64 bits y después de 128 bits.  El IV es una secuencia aleatoria generada dinámicamente para cada tramo que está en transito, y su objetivo es dificultar la obtención de la clave secreta.
+
+Debido a fallos de seguridad se retiró oficialmente y se considera obsoleto.
+
+### WPA y WPA2
+WPA (Wi-Fi Protected Access) surguió en 2003 para sustituir a WEP, la intención era que los dispositivos que usaban WEP pudieran ser actualizados a WPA. En este caso se usa un algoritmo TKIP. Con este algoritmo se mejora el cifrado ya que emplea una clave temporal PTK (Pairwise Transient Key), que es generada durante la tansmisiones unicast entre un cliente determinado y un punto de acceso.
+
+Además esta tecnologia trae dos modelos de autenticación.
+- WPA Personal: Llamado WPA PSK (Pre-Shared Key), consiste en el uso de una clave compartida entre punto de acceso y los clientes, común en hogares.
+- WAP Enterprise: Los clientes utilizan sus credenciales propias para poder autenticarse, apoyado por el estandar IEEE 802.1X.
+
+WPA2 fue publicado en 2004 como 802.11i-2004 y establecido como requisito obligatorio por la Wi-Fi Allience para todo router a partir del 2006. Respecto al cifrado se usa CCMP basado en AES, ya que TKIP ha pasado a ser inseguro.
+
+
+### WPA3
+Aparece en 2018, e incorpora nuevas mejoras sobre WPA2, una de ellas es OWE (Opportunist Wireless Encryption), para cirar comunicaciónes de redes abiertas. 
+## Ataques a redes Wi-Fi
+Las comunicaciones pueden ser interceptadas por cualquiera dentro del rango de la señal inalambrica, por ello es importante la protección de la información y con una mala configuración es posible darle entrada a los atacantes de la empresa.
+
+### Metodología OWISAM
+La metodología OWISAM (Open Wireless Security Assessment Methodology), fue creada por una empresa española llamada Tarlogic en 2013. Esta metodología tiene una serie de controles que se deben llevar a cabo para analizar el riesgo de seguridad, estos tienen diez categorias que son:
+- OWISAM-TR-001: Red de comunicaciones Wi-Fi abierta.
+- OWISAM-TR-002: Presencia de cirado WEP en redes de comunicaiones.
+- OWISAM-TR-003: Algoritmo de generación de claves del dispositivos inseguro.
+- OWISAM-TR-004: Clave WEP/WPA/WPA2 basada en diccionario.
+- OWISAM-TR-005: Mecanismo de autenticación inseguros.
+- OWISAM-TR-006: Dispositivos con soporte de Wi-Fi protected setup PIN activo.
+- OWISAM-TR-007: Red Wi-Fi no autorizada por la organización.
+- OWISAM-TR-008: Portal hotspot inseguro.
+- OWISAM-TR-009: Cliente intentando conectar a red insegura.
+- OWISAM-TR-010: Rango de cobertura de la red demasiado extenso.
+
+Aparte también enemos en cuenta los diez riesgos que afectan a las redes inalámbricas y que OWISAM las clasifica en un top 10.
+
+- OWISAM-DI: Descubrimiento de dispositivos, recopilación sobre la información de las redes inalámbricas.
+- OWISAM-FP: Fingerprinting, analisis de las funcionalidades de los disposiivos de comunicaciones.
+- OWISAM-AU: Pruebas sobre la autenticación, análisis de los mecanismos de autenticación.
+- OWISAM-CP: Cifrado de las comunicaciones, análisis de los mecanismos de cifrado de  información.
+- OWISAM-CF: Configuración de la plataforma, verificación de la configuración de las redes.
+- OWISAM-IF: Pruebas de infraestructura, controles de seguridad sobre la infraestructura wireless.
+- OWISAM-DS: Pruebas de denegación de servicio, controles orientados a verificar la disponibilidad del entorno.
+- OWISAM-GD: Pruebas sobre directivas y normativas, análisis de aspectos normativos que aplican al uso de las redes Wi-Fi.
+- OWISAM-CT: Pruebas sobre los clientes inalámbricos, ataques contra clientes inalámbricos.
+- OWISAM-HS: Pruebas sobre hotsposts y portales cautivos, debilidades que afectan al uso de portales cautivos.
+Para poder realizar ataques es necesario que la tarjeta de red pase a modo monitor, para poder leer todo el tráfico inalámbrico e inyectar paquetes.
+
+### Suite aircrack-ng
+La suite aircrack-ng, es un conjunto de herramientas para realizar audotirías de redes inalámbricas. Esa disponible para Windows y Linux y consta con las siguientes herramientas:
+- airmon-ng: Permite cambiar el modo de trabajo de la tarjeta inalámbrica a modo monitor.
+- airodump-ng: Aplicación que permite escuchar todo el tráfico.
+- airbase-ng: Permite abarcar a los clientes inalámbricos asociados a un puno de acceso.
+- aircrack-ng: Herramienta que permite realizar ataques de fuerza bruta.
+- airdecap-ng: Habilita descifrar capturas de tráfico cifrados con WEP y WPA.
+- airdecloack-ng: Elimina paquetes de tipo WEP cloacking, frames que insertan algunos puntos de acceso para dificultar el ataque estadístico.
+- aireplay-ng: Permite realizar ataques sobre los putnos de acceso inyectando frames.
+- airolib-ng: Permite crear un servidor wireless.
+- airtun-ng: Permite crear interfaces virtuales empleadas para monitorización de tráfic cifrado.
+
+### Ataques a los protocolos de seguridad
+A continuación vamos a comentar acerca de las primeras investigaciones sobre vulnerabilidades en el protocolo 802.11 que han permitido diseñas los ataques para poder obtener claves utilizadas en las comunicaciones. Los más importantes son:
+- WEP: Korek ChopChop Attack, Fragmentation Attack, PTW Attack.
+- WPA: Ohigashi-Mori Attack, Michael Attack, Hole196 vulnerability.
+- WPA2: Krack Attacks, Kr00k.
+- WPA3: Dragonblood bugs.
+
+
+En **WEP**, como comentamos se hace uso de IV, que es generado en texto plano. Este IV (Vector de inicialización) usa 24 bits, por lo que si hay mucho trafico en una red, es posible sacar mediante estadistica cuál es el vector usado para generar los códigos aleatorios. 
+
+En **WPA** y **WPA2**, el ataque se centra más en el handshake entre un equipo y un punto de acceso, ya que una obtenido este handshake es posible mediante un ataque de fuerza bruta sacar la contraseña. Es por ello que en este tipo de redes, la seguridad reside en la contraseña.
+
+En **WPS**, es un software cómodo y rápido para que los dispositivos se conecten a una red Wi-Fi sin necesidad de establecer contraseñas constantemente. Normalmente se hace mediante un PIN, NFC, USB o un botón del dispositivo. Es un metodo altamente inseguro, ya que las contraseñas están precompartidas.
+
+
