@@ -2,10 +2,10 @@
 title: Hacking Etico
 description: 
 published: true
-date: 2025-01-08T15:11:33.027Z
+date: 2025-03-17T18:07:17.100Z
 tags: 
 editor: markdown
-dateCreated: 2024-12-20T19:26:42.326Z
+dateCreated: 2025-03-16T21:43:02.891Z
 ---
 
 # Hacking Ético
@@ -29,7 +29,7 @@ Como se ha mencionado anteriormente, esta asignatura, esta dividida en 7 temas d
 [Recopilación de información o footprinting](footprinting)
 [Enumeración de servicios o fingerprinting](fingerprinting)
 [Hacking de aplicaciones web](web)
-[Hacking de redes y sistemas informáticos](redes)
+[Hacking de redes y sistemas informáticos](Hacking_Redes)
 [Mantenimiento del acceso, escalada de privilegios y pivotaje](pivotaje)
 [Hacking de redes inalámbricas](inalambrica)
 
