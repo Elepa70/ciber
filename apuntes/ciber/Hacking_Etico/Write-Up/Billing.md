@@ -2,7 +2,7 @@
 title: Billing
 description: Write Up máquina Billing de Try Hack Me
 published: true
-date: 2025-05-06T15:50:35.080Z
+date: 2025-05-06T15:58:54.503Z
 tags: write up
 editor: markdown
 dateCreated: 2025-05-06T15:23:46.118Z
@@ -75,7 +75,7 @@ Vamos a entrar en la base de datos para ver si podemos acceder al website.
 
 Antes vamos a securizar la shell mediante:
 ```
-python3 -c "iport pty;pty.spawn('/bin/bash')"
+python3 -c "import pty;pty.spawn('/bin/bash')"
 ```
 
 Tras esto hacemoz Ctrl + Z y ponemos stty raw -echo;fg
