@@ -1,11 +1,11 @@
 ---
-title: Write-Up Chill Hack
+title: Chill Hack
 description: Write-Up sobre la máquina Chill Hack de TryHackMe
 published: true
-date: 2025-01-24T15:54:56.270Z
+date: 2025-05-06T16:08:26.831Z
 tags: tryhackme
 editor: markdown
-dateCreated: 2025-01-24T11:20:08.121Z
+dateCreated: 2025-03-16T21:57:18.468Z
 ---
 
 # Write Up
