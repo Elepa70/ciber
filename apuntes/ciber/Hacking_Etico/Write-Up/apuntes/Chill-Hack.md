@@ -2,7 +2,7 @@
 title: Chill Hack
 description: Write-Up sobre la máquina Chill Hack de TryHackMe
 published: true
-date: 2025-05-06T16:08:26.831Z
+date: 2025-05-08T15:39:58.181Z
 tags: tryhackme
 editor: markdown
 dateCreated: 2025-03-16T21:57:18.468Z
