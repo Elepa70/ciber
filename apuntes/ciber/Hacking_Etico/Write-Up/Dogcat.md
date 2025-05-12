@@ -2,7 +2,7 @@
 title: Dogcat
 description: Write Up de DogCat de la plataforma tryhackme
 published: true
-date: 2025-05-09T15:23:21.888Z
+date: 2025-05-12T17:28:56.725Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-06T15:56:05.414Z
@@ -49,11 +49,11 @@ Para ello abriremos nuestro Burpsuite, ya que debemos modificar una serie de cos
 
 Con ello podemos empezar a haz log poisoning dentro del website
 
-![Log Poisoning](/imágenes/dogcat_6.png)
+![Log Poisoning](/imagenes/dogcat_6.png)
 
 Como resultado obtenemos
 
-![Funciona!](/images/dogcat_7.png)
+![Funciona!](/imagenes/dogcat_7.png)
 
 Ahora vamos a intentar hacer una shell reversa con [Revshells](https://www.revshells.com). En mi caso mi ip es la 10.9.3.114 con el puerto 9000. Sin embargo hay que tener en cuenta que deberemos pasarlo codificado en URL.
 
