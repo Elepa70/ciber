@@ -2,14 +2,14 @@
 title: Write-Ups
 description: Write-Ups de Hacking
 published: true
-date: 2025-05-12T17:11:31.526Z
+date: 2025-05-12T17:12:03.234Z
 tags: 
 editor: markdown
 dateCreated: 2025-05-12T17:11:31.526Z
 ---
 
 # Write-Ups
-- [**Billing - TryHackMe**](write-up/billing)
+- [**Billing - TryHackMe**](Write-Up/billing)
 - [**Kenobi - TryHackMe**](write-up/Kenobi)
 - [**Dogcat - TryHackMe**](write-up/Dogcat)
 - [**HighSchool - TryHackMe**](write-up/HighSchool)
