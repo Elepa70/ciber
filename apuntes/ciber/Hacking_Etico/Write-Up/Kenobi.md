@@ -2,7 +2,7 @@
 title: Kenobi
 description: Write Up de Kenobi TryHackMe
 published: true
-date: 2025-05-12T15:30:47.552Z
+date: 2025-05-12T15:31:56.389Z
 tags: write up
 editor: markdown
 dateCreated: 2025-05-06T15:51:34.674Z
@@ -175,4 +175,5 @@ Ahora simplemente deberemos ejecutar de nuevo el script, pero esta vez indicamos
 ![Ejecución del exploit](/imagenes/kenobi_18.png)
 
 Ya somos root, ahora podemos ir al directorio home y obtener la ultima flag.
+
 ![Flag](/imagenes/kenobi_19.png)
