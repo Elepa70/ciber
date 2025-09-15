@@ -2,7 +2,7 @@
 title: Ingeniería Informática
 description: 
 published: true
-date: 2025-09-15T12:11:29.114Z
+date: 2025-09-15T12:16:08.449Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-15T12:08:16.146Z
@@ -21,15 +21,13 @@ En este caso, los apuntes se harán de la UGR (Universidad de Granada), España.
 [4º Año](Cuarto)
 
 ## ¿De qué podría trabajar?
-Los trabajos ideales que podrías desarrollar serían:
-- Experto/a en ciberseguridad.
-- Auditor/a de ciberseguridad.
-- Consultor/a de ciberseguridad.
-- Hacker ético.
+Con estos estudios tienes acceso a una gran cantidad de puestos de trabajo, tales como:
+- Desarrollador de software.
+- Análista de Datos.
+- Administrador de Sistemas.
 
 ## ¿Y si quiero seguir estudiando?
-Debido a que es la última etapa educativa en las FPs, lo siguiente solo sería:
-- Universidad con posibilidad de convalidar módulos profesionales.
+El siguiente estudio superior son los masters universitarios.
 
 ## URL de interes
-[Página de TodoFP en CIBER](https://www.todofp.es/que-estudiar/familias-profesionales/informatica-comunicaciones/ce-ciberseguridad-entornos-tecnologias-informacion.html)
+[Información Grado de Ingeniería Informática](https://www.ugr.es/estudiantes/grados/grado-ingenieria-informatica)
