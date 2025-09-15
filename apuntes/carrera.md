@@ -2,7 +2,7 @@
 title: Ingeniería Informática
 description: 
 published: true
-date: 2025-09-15T14:08:38.731Z
+date: 2025-09-15T14:09:22.273Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-15T12:08:16.146Z
@@ -13,6 +13,8 @@ dateCreated: 2025-09-15T12:08:16.146Z
 Son estudios universitarios, donde se enfoca el aprendizaje de la ciencia de la computación, electrónica y software.
 
 En este caso, los apuntes se harán de la UGR (Universidad de Granada), España.
+> No van a estar todas las asignaturas/módulos disponibles, ya que se han convalidado gracias a la FP
+{.is-warning}
 
 ## Acceso a los apuntes.
 [1º Año](Primero)
