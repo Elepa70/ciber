@@ -2,7 +2,7 @@
 title: Ingeniería Informática
 description: 
 published: true
-date: 2025-09-15T12:16:08.449Z
+date: 2025-09-15T14:08:38.731Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-15T12:08:16.146Z
@@ -27,7 +27,7 @@ Con estos estudios tienes acceso a una gran cantidad de puestos de trabajo, tale
 - Administrador de Sistemas.
 
 ## ¿Y si quiero seguir estudiando?
-El siguiente estudio superior son los masters universitarios.
+El siguiente estudio superior son los masteres universitarios.
 
 ## URL de interes
 [Información Grado de Ingeniería Informática](https://www.ugr.es/estudiantes/grados/grado-ingenieria-informatica)
