@@ -2,7 +2,7 @@
 title: Primer año de Ingeniería Informática
 description: 
 published: true
-date: 2025-09-15T14:08:00.943Z
+date: 2025-09-15T16:55:56.752Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-15T14:07:08.654Z
@@ -22,3 +22,6 @@ En está sección encontrarás los enlaces hacia las asignaturas dividida en pri
 [Lógica y Métodos Discretos](lmd)
 [Metodología de la Programación](mp)
 [Tecnología y Organización de los Computadores](toc)
+
+## Información adicional
+Todo los apuntes son tomados en base a lo dado de los profesores, son de apoyo, no se puede considerar sustitución.
