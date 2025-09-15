@@ -2,7 +2,7 @@
 title: Primer año de Ingeniería Informática
 description: 
 published: true
-date: 2025-09-15T14:07:08.654Z
+date: 2025-09-15T14:08:00.943Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-15T14:07:08.654Z
