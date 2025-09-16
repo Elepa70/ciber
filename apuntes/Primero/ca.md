@@ -2,7 +2,7 @@
 title: Cálculo
 description: 
 published: true
-date: 2025-09-15T15:16:30.846Z
+date: 2025-09-16T15:02:54.726Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-15T15:16:30.846Z
