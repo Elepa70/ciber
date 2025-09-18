@@ -2,17 +2,17 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T19:21:52.954Z
+date: 2025-09-18T19:23:06.483Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
 ---
 
 # Tema 1 - Números Reales
-Las funciones están definidas en un conjunto de números, usualmente reales. Pero debemos antes de tocar las funciones, saber que son los números reales y como se interpreta o escribe en formato matématico.
+Las funciones están definidas en un conjunto de números, usualmente reales. Pero debemos antes de tocar las funciones, saber que son los números reales y como se interpreta o escribe en formato matemático.
 
 ## Definición de los Números Reales (ℝ)
-Los números reales consisnten en el conjunto de todos los números que pueden representarse en una recta númerica. **Incluyendo** los números racionales y irracionales.
+Los números reales consisten en el conjunto de todos los números que pueden representarse en una recta numérica. **Incluyendo** los números racionales y irracionales.
 
 ## Propiedades de ℝ y sus operaciones
 Los números reales poseen dos operaciones fundamentales:
