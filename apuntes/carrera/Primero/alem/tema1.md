@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T23:09:10.015Z
+date: 2025-09-18T23:19:31.028Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -85,5 +85,11 @@ Definimos dos conjuntos como $A = \{0,2,3,5\}$ y $B = \{1,2,4,8\}$. La diferenci
 #### Diferencia simétrica de conjuntos
 Definimos dos conjuntos como $A = \{0,2,3,5\}$ y $B = \{1,2,4,8\}$. La diferencia de ambos sería $A \Delta B =\{0,3,4,5,8\}$.
 
+Podemos describirlo como: $A \Delta B = (A \cup B) \setminus (A \cap B) = (A \setminus B) \cup ( B \setminus A)$
 > En la diferencia de conjuntos, no se cumple con la asociatividad en general.
 {.is-warning}
+
+#### Complementario de conjuntos
+Dado un conjunto de referencia, que llamaremos **universo** o **espacio muestral**, todas las operaciones que realicemos serán entre subconjuntos del mismo.
+
+Sea $X$ un universo y $A$ un conjunto (Subconjunto de $X$), definimos el complementario de $A$, como todos los valores de $X$ que no pertenezcan a $A$.
