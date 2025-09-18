@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T22:20:26.618Z
+date: 2025-09-18T22:36:48.591Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -44,3 +44,10 @@ En este caso, estamos indicando que los números que son naturales y inferior a 
 Otro ejemplo podría ser, dado el conjunto $(1,3]$, como: $(1,3]= \{m\in\mathbb{R} : 1<m\leq 3\}$
 
 Dos conjuntos son **iguales** si y solo si, todos los elementos son iguales.
+
+> En una igualdad, no se le da importancia al orden de los elementos en los conjunto. Ejemplo $X = \{3,2,1\}$, sería igual a $Y = \{1,2,3\}$
+{.is-info}
+
+
+Cuando todo elemento de un conjunto está dentro de otro, decimos que es un subconjunto. 
+Ejemplo con la cadena de inclusiones: $\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}\subset\mathbb{C}$
