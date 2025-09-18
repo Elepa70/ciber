@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T21:54:20.539Z
+date: 2025-09-18T22:00:21.445Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -28,4 +28,6 @@ Uno de los conjuntos más importante o especiales, es el **conjunto vacío**, y 
 Un conjunto queda determinado por sus **elementos** y debe ser escritas mediantes llaves, por ejemplo:
 - Dado un conjunto $X$ cuyos elementos son 3, 5 y 8, quedará escrito: $X =\{3,5,8\}$
 
-Hay que tener en cuenta, que nos podemos encontrar conjuntos que pertenece a otro conjunto mayor, este tipo de conjuntos lo llamaremos **subconjuntos**.
+Dado un conjunto, podemos crear un conjunto con elementos del conjunto anterior, creando lo que llamamos un  **subconjunto**.
+
+
