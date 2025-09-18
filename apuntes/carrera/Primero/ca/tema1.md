@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T17:57:52.304Z
+date: 2025-09-18T17:58:46.397Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -134,3 +134,5 @@ Podemos encontrar los siguientes intervalos:
 Ahora en vez de decir "definido", vamos a usar la palabra matematica ideal. Acotado.
 
 Cuando un intervalo está acotado superiormente, significa que existe un valor que siempre está debajo de todo el intervalo. Al igual, decimos que un valor está acotado inferiormente, cuando encontramos un valor que siempre está por debajo del intervalo.
+
+∃M∈R, a⩽M, 
