@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T17:30:44.521Z
+date: 2025-09-18T21:47:09.289Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -21,3 +21,6 @@ Tras haber definido conjunto, debemos explayarnos más, por lo que:
 Supongamos que tenemos un conjunto llamado *X*, y un objeto de ese conjunto se llama *a*. Por lo tanto podemos escribir como *a ∈ X*, y se leería a pertenece a X.
 
 Este objeto puede ser lo que necesitemos que sea, desde cosas cotidianas hasta letras o numeros, incluso nuestra imaginación.
+
+
+Uno de los conjuntos más importante o especiales, es el **conjunto vacío**, y se escribe como $\emptyset$ o $\{\}$, también cabe destacar la existencia de los conjuntos $\mathbb{N}$ (los números naturales), $\mathbb{Z}$ (los números enteros), $\mathbb{Q}$ (los números racionales), $\mathbb{C}$ (los números complejos) y $\mathbb{R}$ (los números reales)
