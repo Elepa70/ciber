@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T23:40:07.864Z
+date: 2025-09-18T23:42:53.299Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -106,3 +106,4 @@ Para ello vamos a imponer que $X$ es un conjunto que hace papel de **universo**,
 Conmutatividad de la unión e intersección: $A \cup B = B \cup A ,\quad A\cap B = B \cap A$
 Identidad de la unión e intersección: $A \cup A = A ,\quad A \cap A = A$
 $A \cup (A \cap B) = A ,\quad A \cap (A \cup B) = A$
+Distributiva de la unión e intersección: $A \cup (B \cap C) = (A \cup B) \cap (A \cup) ,\quad A \cap(B\cup C) = (A\cap B) \cup (A \cap C)$
