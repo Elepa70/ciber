@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T19:54:09.726Z
+date: 2025-09-18T19:59:30.078Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -102,9 +102,7 @@ Estos números pueden ser: pi (π), raiz de 2 (√2), euler (e) o el número de 
 
 
 ## Intervalo y acotar
-Un intervalo es aquel consiste en aquel espacio que contiene una series de números. (Explicación alumno).
-
-"Un conjunto A ⊂ R es un intervalo si dados x e y ∈ A, se cumple que (x, y) ⊂ A "
+Un intervalo con extremos $a$, $b$, con $a\leq b$, es el conjunto de todos los números comprendidos entre ambos valores
 
 Para poder definir los tipos de intervalos, vamos a establecer la siguiente regla:
 - Sean a, b ∈ ℝ, a < b. (Sean a y b, dos valores pertenecientes a los números reales y siendo b mayor que a)
