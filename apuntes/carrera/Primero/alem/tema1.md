@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T23:34:41.148Z
+date: 2025-09-18T23:35:26.672Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -101,4 +101,4 @@ $\bar{A} = X \setminus A = \{x \in X : x \notin A \}$
 ### Identidades entre conjuntos
 Existe una serie de identidades entre conjuntos.
 
-Para ello vamos a poner 
+Para ello vamos a imponer que $X$ es un conjunto que hace papel de **universo**, y $A,B,C$, son tres subconjuntos de este universo. Por lo tanto:
