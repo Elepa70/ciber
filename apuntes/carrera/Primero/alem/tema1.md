@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T22:53:37.471Z
+date: 2025-09-18T22:55:09.393Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -61,3 +61,5 @@ Dado un conjunto $X$, definimos el conjunto potencia como el conjunto de **todos
 
 Como ejemplos calcularemos $\mathcal{P}(X)$, donde $X=\{1,2,3\}$ entonces:
 $\mathcal{P}(X) = \{\emptyset,\{1\},\{2\},\{3\},\{1,2\},\{1,3\},\{2,3\},\{1,2,3\}\}$
+
+Como podemos observar, hemos añadido el conjunto vacío, ya que el conjunto vacío siempre va a ser subconjunto de cualquiera.
