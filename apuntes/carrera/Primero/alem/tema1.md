@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T23:38:45.013Z
+date: 2025-09-18T23:40:07.864Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -104,4 +104,5 @@ Existe una serie de identidades entre conjuntos.
 Para ello vamos a imponer que $X$ es un conjunto que hace papel de **universo**, y $A,B \text{ y }C$, son tres subconjuntos de este universo. Por lo tanto:
 
 Conmutatividad de la unión e intersección: $A \cup B = B \cup A ,\quad A\cap B = B \cap A$
-Identidad de la unión e intersección: $A \cup A = A ,\quad A \cap A = A$ 
+Identidad de la unión e intersección: $A \cup A = A ,\quad A \cap A = A$
+$A \cup (A \cap B) = A ,\quad A \cap (A \cup B) = A$
