@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T18:40:49.168Z
+date: 2025-09-18T19:15:25.165Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -79,7 +79,7 @@ Durante el curso se verá el simbolo ℝ, acompañado de varios números o otros
 ℝ^*^ U ℝ^-^ U {0}= ℝ     : La unión de todos los números reales mayores que cero, menores que cero y cero, forman todos los números reales.
 ℝ^*^ = {x ∈ ℝ : x ≠ 0} : Todos los números reales distintos de 0.
 ℝ^+^~0~ = {x ∈ ℝ : x ≥ 0} : Todos los números reales mayores que 0, incluyendo el 0.
-ℝ^-^~0~ = {x ∈ ℝ : x ≤ 0} : Todos los números reales menores que 0, incluyendo el 0
+$ℝ^{-}_{0}$ = {x ∈ ℝ : x ≤ 0} : Todos los números reales menores que 0, incluyendo el 0
 
 Con esto explicado podemos dar paso a los subconjuntos de ℝ
 ### Naturales ℕ
