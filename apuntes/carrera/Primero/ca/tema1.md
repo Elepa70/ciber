@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: false
-date: 2025-09-18T10:02:53.566Z
+date: 2025-09-18T10:03:10.550Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -93,4 +93,4 @@ Podemos decir que son aquellos números que tienen decimales FINITOS.
 ℚ = {p/q : p ∈ ℤ, q ∈ ℕ}
 ### Irracionales ℝ\ℚ
 Podemos decir que son aquellos números que no son racionales.
-Estos números pueden ser: pi (π), raiz de 2 (√2), euler (e) o el número de oro (φ) o ().
+Estos números pueden ser: pi (π), raiz de 2 (√2), euler (e) o el número de oro (φ) o (Ø).
