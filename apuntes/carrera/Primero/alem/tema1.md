@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T23:28:49.115Z
+date: 2025-09-18T23:34:41.148Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -97,3 +97,8 @@ $\bar{A} = X \setminus A = \{x \in X : x \notin A \}$
 
 > Ahora irían las tablas de pertenencia, sin embargo no se van a escribir en estos apuntes, para más información de como funcionan, consultar apuntes del docente o Internet (Fuentes fiables).
 {.is-info}
+
+### Identidades entre conjuntos
+Existe una serie de identidades entre conjuntos.
+
+Para ello vamos a poner 
