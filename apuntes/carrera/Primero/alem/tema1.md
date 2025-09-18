@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T23:48:16.047Z
+date: 2025-09-18T23:54:36.793Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -113,4 +113,4 @@ Para ello vamos a imponer que $X$ es un conjunto que hace papel de **universo**,
 
 - Propiedades del complementario: $A \cup \bar{A}=X , \quad A \cap \bar{A} = \emptyset$
 
-- Leyes de Morgan: $\overline{A\cup B}$
+- Leyes de Morgan: $\overline{A\cup B} = \bar{A} \cap \bar{B}$
