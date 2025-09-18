@@ -1,8 +1,8 @@
 ---
 title: Cálculo
 description: 
-published: false
-date: 2025-09-18T09:13:16.045Z
+published: true
+date: 2025-09-18T17:30:57.016Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-15T15:16:30.846Z
