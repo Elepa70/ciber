@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T18:06:32.753Z
+date: 2025-09-18T18:07:22.778Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -149,3 +149,7 @@ Al igual, decimos que un intervalo está acotado, si esté está acotado superio
 Por último, podemos decir, que en un intervalo existe un máximo de un conjunto, cuando un valor perteneciente al conjunto definido es superior a todo los valores del conjunto dado. 
 > Similar a la cota inferior, existe un mínimo del conjunto, debemos dijarnos que está definido.
 {.is-info}
+
+## Valor absoluto
+
+El valor absoluto de un número real x es su distancia al cero. Algebraicamente es una función a trozos.
