@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T17:50:04.454Z
+date: 2025-09-18T17:53:30.694Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -103,3 +103,19 @@ Un intervalo es aquel consiste en aquel espacio que contiene una series de núme
 
 Para poder definir los tipos de intervalos, vamos a establecer la siguiente regla:
 - Sean a, b ∈ ℝ, a < b. (Sean a y b, dos valores pertenecientes a los números reales y siendo b mayor que a)
+
+Con la regla mencioanda anteriormente podemos ver los dos tipos de intervalos:
+### Recta
+
+En este intervalo encotramos aquellos que están definidos entre dos valores fijos, es decir a y b.
+
+Un ejemplo puede ser [1,3], en este intervalo tenemos a 1 y 3, y todos los números intermedios.
+
+Vamos a poner los distintos intervalos que podemos encontrar en la recta.
+[a, b] = {x ∈ R : a ⩽ x ⩽ b}.
+(a, b] o ]a, b] = {x ∈ R : a ⩽ x ⩽ b}.
+[a, b) o [a, b[ = {x ∈ R : a ⩽ x ⩽ b}.
+(a, b) o ]a, b[ = {x ∈ R : a ⩽ x ⩽ b}.
+
+
+### Semirrectas
