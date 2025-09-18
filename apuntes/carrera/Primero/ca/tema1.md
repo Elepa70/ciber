@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: false
-date: 2025-09-18T09:30:15.773Z
+date: 2025-09-18T09:31:16.663Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -42,6 +42,7 @@ a · b = b · a, ∀ a, b ∈ R
 - Elemento neutro: Para cualquier valor de *a*, siempre que le multipliquemos 1 es *a*.
 a · 1 = a, ∀ a ∈ R
 
-- Elemento opuesto: Dado un valor *a*, existe un valor único, *-a*, tal que:
-a + (-a) = 0
+- Elemento inverso: Si a es un número real distinto de 0, existe el inverso que a por su inverso es 1.
+1/a = a −1, tal que a ·1 a = 1. (MODIFICAR)
+
 
