@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T23:01:05.468Z
+date: 2025-09-18T23:02:12.306Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -67,6 +67,11 @@ Como podemos observar, hemos añadido el conjunto vacío, ya que el conjunto vac
 A continuación, veremos las distintas operaciones que podemos realizar con los conjuntos.
 #### Unión de conjuntos
 Definimos dos conjuntos como $A = \{0,2,3,5\}$ y $B = \{1,2,4,8\}$. La unión de ambos sería $A \cup B =\{0,1,2,3,4,5,8\}$.
+
+
+Debido a que la unión es una operación asociativa, podemos poner: $A \cup B \cup C = (A \cup B) \cup C = A \cup (B \cup C)$
+#### Intersección de conjuntos
+Definimos dos conjuntos como $A = \{0,2,3,5\}$ y $B = \{1,2,4,8\}$. La intersección de ambos sería $A \cap B =\{2\}$.
 
 
 Debido a que la unión es una operación asociativa, podemos poner: $A \cup B \cup C = (A \cup B) \cup C = A \cup (B \cup C)$
