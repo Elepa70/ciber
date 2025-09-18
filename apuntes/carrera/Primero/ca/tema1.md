@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: false
-date: 2025-09-18T09:59:45.927Z
+date: 2025-09-18T10:01:34.115Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -88,9 +88,9 @@ Podemos decir que son aquellos números que son positivos y no tienen decimales.
 ### Enteros ℤ
 Podemos decir que son aquellos números que son positivos y negativos, que no tienen decimales. Sin embargo aquí incluimos el 0.
 ℤ = {-4,-3,-2,-1,0,1,2,3,4...}
-### Racionales ℕ
-Podemos decir que son aquellos números que son positivos y negativos, que no tienen decimales. Sin embargo aquí incluimos el 0.
-Z = {-4,-3,-2,-1,0,1,2,3,4...}
 ### Racionales ℚ
-Podemos decir que son aquellos números que son positivos y negativos, que no tienen decimales. Sin embargo aquí incluimos el 0.
+Podemos decir que son aquellos números que tienen decimales FINITOS.
+ℚ = {p/q : p ∈ ℤ, q ∈ ℕ}
+### Irracionales ℝ\ℚ
+Podemos decir que son aquellos números que no son racionales.
 Z = {-4,-3,-2,-1,0,1,2,3,4...}ℚ
