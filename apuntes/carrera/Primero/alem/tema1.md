@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T22:09:24.029Z
+date: 2025-09-18T22:11:00.082Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -38,7 +38,7 @@ La otra forma de definir un conjunto es **indicando que debe cumplir** para pert
 
 Por ejemplo, podemos definir el conjunto $Z$, como: $Z = \{ n \in \mathbb{N} : n < 10000 \}$
 
-
+En este caso, estamos indicando que los números que son naturales y inferior a 10000, pertenecen al conjunto $Z$.
 
 
 
