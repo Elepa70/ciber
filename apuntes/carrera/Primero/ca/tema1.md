@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T18:03:57.365Z
+date: 2025-09-18T18:04:58.972Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -142,4 +142,4 @@ En lenguaje matemático: A ⊂ ℝ, ∃ M ∈ R, a⩽M, ∀a∈A
 Al igual, decimos que un intervalo está acotado, si esté está acotado superiormente **y** inferiormente.
 
 
-Por último, podemos decir, que en un intervalo existe un máximo de un conjunto, 
+Por último, podemos decir, que en un intervalo existe un máximo de un conjunto, cuando un valor perteneciente al conjunto definido es superior a todo los valores del conjunto dado. Pasa igual con un mínimo en un conjunto, sin embargo buscamos el menor.
