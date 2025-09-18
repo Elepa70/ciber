@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T18:04:58.972Z
+date: 2025-09-18T18:06:32.753Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -139,7 +139,13 @@ Cuando un intervalo está acotado superiormente, significa que existe un valor q
 
 En lenguaje matemático: A ⊂ ℝ, ∃ M ∈ R, a⩽M, ∀a∈A
 
+> Ojo también existe la cota inferior, simplemente debemos encontrar un valor que sea siempre menor al conjunto dado.
+{.is-info}
+
+
 Al igual, decimos que un intervalo está acotado, si esté está acotado superiormente **y** inferiormente.
 
 
-Por último, podemos decir, que en un intervalo existe un máximo de un conjunto, cuando un valor perteneciente al conjunto definido es superior a todo los valores del conjunto dado. Pasa igual con un mínimo en un conjunto, sin embargo buscamos el menor.
+Por último, podemos decir, que en un intervalo existe un máximo de un conjunto, cuando un valor perteneciente al conjunto definido es superior a todo los valores del conjunto dado. 
+> Similar a la cota inferior, existe un mínimo del conjunto, debemos dijarnos que está definido.
+{.is-info}
