@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T18:07:22.778Z
+date: 2025-09-18T18:25:06.368Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -153,3 +153,8 @@ Por último, podemos decir, que en un intervalo existe un máximo de un conjunto
 ## Valor absoluto
 
 El valor absoluto de un número real x es su distancia al cero. Algebraicamente es una función a trozos.
+
+|x| = dist(x,0) = { x, si x⩾0, -x, si x<0}.
+
+
+### Propiedades del valor absoluto
