@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T22:11:00.082Z
+date: 2025-09-18T22:15:09.528Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -41,5 +41,6 @@ Por ejemplo, podemos definir el conjunto $Z$, como: $Z = \{ n \in \mathbb{N} : n
 En este caso, estamos indicando que los números que son naturales y inferior a 10000, pertenecen al conjunto $Z$.
 
 
+Otro ejemplo podría ser, dado el conjunto $(1,3]$, como: $(1,3]= \{m\in\mathbb{R} \mid  1<m\leq 3\}$
 
 
