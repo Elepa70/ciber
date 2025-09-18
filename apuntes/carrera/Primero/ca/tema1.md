@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: false
-date: 2025-09-18T09:54:55.035Z
+date: 2025-09-18T09:59:45.927Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -83,4 +83,14 @@ Durante el curso se verá el simbolo ℝ, acompañado de varios números o otros
 
 Con esto explicado podemos dar paso a los subconjuntos de ℝ
 ### Naturales ℕ
+Podemos decir que son aquellos números que son positivos y no tienen decimales. OJO: No está el 0
 ℕ = {1,2,3,4...,n,n+1}
+### Enteros ℤ
+Podemos decir que son aquellos números que son positivos y negativos, que no tienen decimales. Sin embargo aquí incluimos el 0.
+ℤ = {-4,-3,-2,-1,0,1,2,3,4...}
+### Racionales ℕ
+Podemos decir que son aquellos números que son positivos y negativos, que no tienen decimales. Sin embargo aquí incluimos el 0.
+Z = {-4,-3,-2,-1,0,1,2,3,4...}
+### Racionales ℚ
+Podemos decir que son aquellos números que son positivos y negativos, que no tienen decimales. Sin embargo aquí incluimos el 0.
+Z = {-4,-3,-2,-1,0,1,2,3,4...}ℚ
