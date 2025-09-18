@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: false
-date: 2025-09-18T09:37:08.796Z
+date: 2025-09-18T09:38:44.507Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -51,8 +51,15 @@ a(b + c) = ab + ac, ∀ a, b, c ∈ R
 ### Orden
 El orden nos sirve para poder determinar que valor es mayor que el otro.
 - Propiedad reflexica: Un valor tiene el mismo orden que si mismo.
+a ⩽ a
 - Propiedad antisimétrica: Un valor "a" que sea superior a "b", y el mismo valor "b" es superior a "a", podemos decir que ambos valores son iguales.
+a ⩽ b, b ⩽ a =⇒ a = b
+
 - Propiedad transitiva: Siendo un valor "a", mayor que "b", y el mismo valor "b", mayor que "c". Podemos decir que el valor "a", también es mayor que "c".
+{a ⩽ b} {b ⩽ c1  }=⇒ a ⩽ c
+
 - Total: Dados dos valores "a" y "b" pertenecientes a los números reales, podemos decir que "a" es mayor que "b" o que "b" es mayor que "a".
 - Orden y suma: Dado dos valores donde uno es mayor que el otro, si ambos son sumados por el mismo valor, se mantendrá el orden.
+a ⩽ b =⇒ a + c ⩽ b + c
 - Orden y producto:Dado dos valores donde uno es mayor que el otro, si ambos son multiplicados por el mismo valor, se mantendrá el orden.
+a ⩽ b, c ⩾ 0 =⇒ ac ⩽ bc
