@@ -1,8 +1,8 @@
 ---
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
-published: false
-date: 2025-09-18T13:13:07.671Z
+published: true
+date: 2025-09-18T17:30:44.521Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
