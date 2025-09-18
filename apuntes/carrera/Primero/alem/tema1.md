@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T22:00:21.445Z
+date: 2025-09-18T22:04:00.631Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -29,5 +29,8 @@ Un conjunto queda determinado por sus **elementos** y debe ser escritas mediante
 - Dado un conjunto $X$ cuyos elementos son 3, 5 y 8, quedará escrito: $X =\{3,5,8\}$
 
 Dado un conjunto, podemos crear un conjunto con elementos del conjunto anterior, creando lo que llamamos un  **subconjunto**.
+
+También cabe la posibilidad de que no seamos capaces de poder describir la totalidad del conjunto, como puede ser el caso de densidad de elementos que tiene.
+Un ejemplo lo podemos ver con $\mathbb{N,Z,Q,R\text{ o }C}$
 
 
