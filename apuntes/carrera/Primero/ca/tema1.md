@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T18:29:52.961Z
+date: 2025-09-18T18:31:00.069Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -166,5 +166,5 @@ Tenemos 6 propiedades:
 - |x| ⩽ y ⇔ -y ⩽ x ⩽ y
 - |x + y| ⩽ |x| + |y|
 - |x - y| ⩽ ||x|| - ||y||
-- |xy| = |x| · |y|, |x/y| = |x|/|y|
+- |xy| = |x| · |y|, |x/y| = |x|/|y| $frac{x}{y}
 
