@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T22:44:09.483Z
+date: 2025-09-18T22:47:49.913Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -54,3 +54,7 @@ Ejemplo con la cadena de inclusiones: $\mathbb{N}\subset\mathbb{Z}\subset\mathbb
 
 
 Tal y como hemos definido la igualdad y la inclusión, se tiene que $X=Y\Leftrightarrow X \subseteq Y \text{ e } Y \subseteq X$
+
+
+### Conjunto potencia
+Dado un conjunto $X$, definimos el conjunto potencia como el conjunto de **todos** los subconjuntos posibles del conjunto $X$, también llamado las partes de $X$
