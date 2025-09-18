@@ -2,7 +2,7 @@
 title: Álgebra Lineal y Estructuras Matemáticas
 description: 
 published: false
-date: 2025-09-18T12:57:21.054Z
+date: 2025-09-18T13:00:46.380Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-15T16:54:18.342Z
@@ -17,5 +17,5 @@ En está página web podrá encontrar los distintos temarios que corresponden a 
 
 
 ## Docente
-El temario fue dado por María Pilar Muñoz Rivas
+El temario fue dado por Jesús García Miranda
 
