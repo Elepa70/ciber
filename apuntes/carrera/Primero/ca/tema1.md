@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: false
-date: 2025-09-18T09:32:19.745Z
+date: 2025-09-18T09:33:29.369Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -47,3 +47,6 @@ a · 1 = a, ∀ a ∈ R
 
 - Propiedad distributiva: Un mismo valor puede afectar a ambos lados dentro de un parentesis (Explicación del alumno)
 a(b + c) = ab + ac, ∀ a, b, c ∈ R
+
+### Orden
+El orden nos sirve para poder determinar que valor es mayor que el otro.
