@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T23:46:34.679Z
+date: 2025-09-18T23:48:16.047Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -112,3 +112,5 @@ Para ello vamos a imponer que $X$ es un conjunto que hace papel de **universo**,
 - Distributiva de la unión e intersección: $A \cup (B \cap C) = (A \cup B) \cap (A \cup C ) ,\quad A \cap(B\cup C) = (A\cap B) \cup (A \cap C)$
 
 - Propiedades del complementario: $A \cup \bar{A}=X , \quad A \cap \bar{A} = \emptyset$
+
+- Leyes de Morgan: $\overline{A\cup B}$
