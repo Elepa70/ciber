@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T18:34:01.694Z
+date: 2025-09-18T18:40:49.168Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -163,8 +163,10 @@ El valor absoluto de un número real x es su distancia al cero. Algebraicamente 
 Tenemos 6 propiedades:
 - |x| ⩾ 0
 - |x| = 0 ⇔ x = 0
-- |x| ⩽ y ⇔ -y ⩽ x ⩽ y
-- |x + y| ⩽ |x| + |y|
+- |x| ⩽ y ⇔ -y ⩽ x ⩽ y 
+- |x + y| ⩽ |x| + |y|  
 - |x - y| ⩽ ||x|| - ||y||
 - |xy| = |x| · |y|, $\frac{|x|}{|y|}$ = $\frac{|x|}{|y|}$ 
+> Según la profesora, ni la 4 ni la 5, se le debería tomar importancia para lo que daremos en el curso. NO SIGNIFICA QUE NO SEAN IMPORTANTES PARA EL APRENDIZAJE!!!
+{.is-warning}
 
