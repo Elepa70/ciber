@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: false
-date: 2025-09-18T09:50:16.624Z
+date: 2025-09-18T09:50:55.733Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -77,5 +77,5 @@ Durante el curso se verá el simbolo ℝ, acompañado de varios números o otros
 ℝ+ = {x ∈ ℝ : x > 0}
 ℝ- = {x ∈ ℝ : x < 0}
 ℝ+ U ℝ- U {0}= ℝ
-ℝ* = {x ∈ ℝ : x =/= 0}
-ℝ+0 = {x ∈ ℝ : x > 0}
+ℝ* = {x ∈ ℝ : x ≠ 0}
+ℝ+0 = {x ∈ ℝ : x  0}
