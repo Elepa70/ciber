@@ -2,7 +2,7 @@
 title: Ingeniería Informática
 description: 
 published: true
-date: 2025-09-15T14:09:22.273Z
+date: 2025-09-18T23:29:29.369Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-15T12:08:16.146Z
@@ -16,6 +16,9 @@ En este caso, los apuntes se harán de la UGR (Universidad de Granada), España.
 > No van a estar todas las asignaturas/módulos disponibles, ya que se han convalidado gracias a la FP
 {.is-warning}
 
+
+> Es posible que las tareas practicas no se publiquen, los profesores deberán dar el visto bueno.
+{.is-warning}
 ## Acceso a los apuntes.
 [1º Año](Primero)
 [2º Año](Segundo)
