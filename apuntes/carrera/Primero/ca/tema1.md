@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: false
-date: 2025-09-18T09:35:29.485Z
+date: 2025-09-18T09:36:23.464Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -53,6 +53,6 @@ El orden nos sirve para poder determinar que valor es mayor que el otro.
 - Propiedad reflexica: Un valor tiene el mismo orden que si mismo.
 - Propiedad antisimétrica: Un valor "a" que sea superior a "b", y el mismo valor "b" es superior a "a", podemos decir que ambos valores son iguales.
 - Propiedad transitiva: Siendo un valor "a", mayor que "b", y el mismo valor "b", mayor que "c". Podemos decir que el valor "a", también es mayor que "c".
-- Total:
-- Orden y suma
+- Total: Dados dos valores "a" y "b" pertenecientes a los números reales, podemos decir que "a" es mayor que "b" o que "b" es mayor que "a".
+- Orden y suma: 
 - Orden y producto
