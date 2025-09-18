@@ -1,8 +1,8 @@
 ---
 title: Álgebra Lineal y Estructuras Matemáticas
 description: 
-published: false
-date: 2025-09-18T13:02:28.382Z
+published: true
+date: 2025-09-18T17:30:31.858Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-15T16:54:18.342Z
