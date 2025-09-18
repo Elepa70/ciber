@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T18:00:39.697Z
+date: 2025-09-18T18:01:51.949Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -135,4 +135,6 @@ Ahora en vez de decir "definido", vamos a usar la palabra matematica ideal. Acot
 
 Cuando un intervalo está acotado superiormente, significa que existe un valor que siempre está debajo de todo el intervalo. Al igual, decimos que un valor está acotado inferiormente, cuando encontramos un valor que siempre está por debajo del intervalo.
 
-A tiene una cota superior en ℝ, si y solo si, A ⊂ ℝ ∃M∈R, a⩽M, ∀a∈A
+*A* tiene una cota superior en ℝ, si y solo si,existe un valor *M*, que pertenece a los números reales que es mayor que *a* para todo el conjunto de *A*.
+
+En lenguaje matemático: A ⊂ ℝ, ∃ M ∈ R, a⩽M, ∀a∈A
