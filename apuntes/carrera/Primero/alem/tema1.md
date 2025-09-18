@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T21:47:21.383Z
+date: 2025-09-18T21:50:35.304Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -24,3 +24,4 @@ Este objeto puede ser lo que necesitemos que sea, desde cosas cotidianas hasta l
 
 
 Uno de los conjuntos más importante o especiales, es el **conjunto vacío**, y se escribe como $\emptyset$ o $\{\}$, también cabe destacar la existencia de los conjuntos $\mathbb{N}$ (los números naturales), $\mathbb{Z}$ (los números enteros), $\mathbb{Q}$ (los números racionales), $\mathbb{C}$ (los números complejos) y $\mathbb{R}$ (los números reales).
+
