@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: false
-date: 2025-09-18T09:38:44.507Z
+date: 2025-09-18T09:40:53.842Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -63,3 +63,8 @@ a ⩽ b, b ⩽ a =⇒ a = b
 a ⩽ b =⇒ a + c ⩽ b + c
 - Orden y producto:Dado dos valores donde uno es mayor que el otro, si ambos son multiplicados por el mismo valor, se mantendrá el orden.
 a ⩽ b, c ⩾ 0 =⇒ ac ⩽ bc
+
+
+Dados dos subconjuntos "A" y "B", y verificando que a ⩽ b, donde "a" es un valor perteneciente a "A", y "b" es un valor perteneciente a "B", existe un valor "c" perteneciente a los números reales que debe estar entre "a" y "b".
+
+**Dados A, B ⊂ R verificando que a ⩽ b para cualquier a ∈ A, b ∈ B, existe c ∈ R tal que a ⩽ c ⩽ b, ∀a ∈ A, ∀b ∈ B.**
