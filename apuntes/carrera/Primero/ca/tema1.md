@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T17:48:33.924Z
+date: 2025-09-18T17:50:04.454Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -101,4 +101,5 @@ Un intervalo es aquel consiste en aquel espacio que contiene una series de núme
 
 "Un conjunto A ⊂ R es un intervalo si dados x e y ∈ A, se cumple que (x, y) ⊂ A "
 
-
+Para poder definir los tipos de intervalos, vamos a establecer la siguiente regla:
+- Sean a, b ∈ ℝ, a < b. (Sean a y b, dos valores pertenecientes a los números reales y siendo b mayor que a)
