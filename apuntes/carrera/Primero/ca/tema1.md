@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T17:34:48.016Z
+date: 2025-09-18T17:48:33.924Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -94,3 +94,11 @@ Podemos decir que los numeros racionales son aquellos valores decimales que pode
 ### Irracionales ℝ\ℚ
 Podemos decir que son aquellos números que no son racionales.
 Estos números pueden ser: pi (π), raiz de 2 (√2), euler (e) o el número de oro (φ) o (Ø).
+
+
+## Intervalo
+Un intervalo es aquel consiste en aquel espacio que contiene una series de números. (Explicación alumno).
+
+"Un conjunto A ⊂ R es un intervalo si dados x e y ∈ A, se cumple que (x, y) ⊂ A "
+
+
