@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T22:49:15.564Z
+date: 2025-09-18T22:53:37.471Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -57,4 +57,7 @@ Tal y como hemos definido la igualdad y la inclusión, se tiene que $X=Y\Leftrig
 
 
 ### Conjunto potencia
-Dado un conjunto $X$, definimos el conjunto potencia como el conjunto de **todos** los subconjuntos posibles del conjunto $X$, también llamado las partes de $X$ y se denota por como $\mathcal{P}(X)$
+Dado un conjunto $X$, definimos el conjunto potencia como el conjunto de **todos** los subconjuntos posibles del conjunto $X$, también llamado las partes de $X$ y se denota por como $\mathcal{P}(X)$.
+
+Como ejemplos calcularemos $\mathcal{P}(X)$, donde $X=\{1,2,3\}$ entonces:
+$\mathcal{P}(X) = \{\emptyset,\{1\},\{2\},\{3\},\{1,2\},\{1,3\},\{2,3\},\{1,2,3\}\}$
