@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T19:18:20.926Z
+date: 2025-09-18T19:20:37.520Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -86,7 +86,7 @@ Con esto explicado podemos dar paso a los subconjuntos de ℝ
 Podemos decir que son aquellos números que son positivos y no tienen decimales. OJO: No está el 0
 ℕ = {1,2,3,4...,n,n+1}.
 ### Enteros ℤ
-Podemos decir que son aquellos números que son positivos y negativos, que no tienen decimales. Sin embargo aquí incluimos el 0.
+Diremos que los números enteros son los naturales, los opuestos y el cero.
 ℤ = {-4,-3,-2,-1,0,1,2,3,4...}.
 ### Racionales ℚ
 Podemos decir que los numeros racionales son aquellos valores decimales que podemos expresar en forma de fracción.
