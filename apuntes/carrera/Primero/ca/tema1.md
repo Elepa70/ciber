@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T19:47:56.539Z
+date: 2025-09-18T19:51:51.655Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -87,8 +87,8 @@ Con esto explicado podemos dar paso a los subconjuntos de ℝ
 ### Naturales ℕ
 De forma intuitiva definimos los números naturales como aquellos que usamos para contar. Cabe destacar que el cero NO está incluido en los naturales. Sin embargo, los algebristas consideran el cero como natural por conveniencia.
 
+$\mathbb{N}=\{1,2,3,4,\dots\}$
 
-ℕ = {1,2,3,4...,n,n+1}.
 ### Enteros ℤ
 Diremos que los números enteros son los naturales, los opuestos y el cero.
 ℤ = {-4,-3,-2,-1,0,1,2,3,4...}.
