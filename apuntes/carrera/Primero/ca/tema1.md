@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T17:53:30.694Z
+date: 2025-09-18T17:55:39.244Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -96,7 +96,7 @@ Podemos decir que son aquellos números que no son racionales.
 Estos números pueden ser: pi (π), raiz de 2 (√2), euler (e) o el número de oro (φ) o (Ø).
 
 
-## Intervalo
+## Intervalo y acotar
 Un intervalo es aquel consiste en aquel espacio que contiene una series de números. (Explicación alumno).
 
 "Un conjunto A ⊂ R es un intervalo si dados x e y ∈ A, se cumple que (x, y) ⊂ A "
@@ -107,7 +107,7 @@ Para poder definir los tipos de intervalos, vamos a establecer la siguiente regl
 Con la regla mencioanda anteriormente podemos ver los dos tipos de intervalos:
 ### Recta
 
-En este intervalo encotramos aquellos que están definidos entre dos valores fijos, es decir a y b.
+En este intervalo encontramos aquellos que están definidos entre dos valores fijos, es decir a y b.
 
 Un ejemplo puede ser [1,3], en este intervalo tenemos a 1 y 3, y todos los números intermedios.
 
@@ -119,3 +119,15 @@ Vamos a poner los distintos intervalos que podemos encontrar en la recta.
 
 
 ### Semirrectas
+Sin embargo en este tipo de intervalos, encontraremos aquellos que no tienen porque están definidos en un valor fijo.
+
+Esto pueden ser por ejemplo:
+Un intervalo entre [1, ∞), ya que el valor infinito, no podemos definirlo exactamente.
+
+Podemos encontrar los siguientes intervalos:
+[a, +∞) = {x ∈ R : a ⩽ x}.
+(a, +∞) = {x ∈ R : a < x}.
+(−∞, b] = {x ∈ R : x ⩽ b}.
+(−∞, b) = {x ∈ R : x < b}.
+
+### Acotación
