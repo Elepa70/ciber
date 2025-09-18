@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T19:59:30.078Z
+date: 2025-09-18T20:00:01.764Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -108,7 +108,7 @@ Para poder definir los tipos de intervalos, vamos a establecer la siguiente regl
 - Sean a, b ∈ ℝ, a < b. (Sean a y b, dos valores pertenecientes a los números reales y siendo b mayor que a)
 
 Con la regla mencioanda anteriormente podemos ver los dos tipos de intervalos:
-### Recta
+### Segmento
 
 En este intervalo encontramos aquellos que están definidos entre dos valores fijos, es decir a y b.
 
