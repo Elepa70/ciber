@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: false
-date: 2025-09-18T10:03:10.550Z
+date: 2025-09-18T17:28:58.308Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -84,13 +84,13 @@ Durante el curso se verá el simbolo ℝ, acompañado de varios números o otros
 Con esto explicado podemos dar paso a los subconjuntos de ℝ
 ### Naturales ℕ
 Podemos decir que son aquellos números que son positivos y no tienen decimales. OJO: No está el 0
-ℕ = {1,2,3,4...,n,n+1}
+ℕ = {1,2,3,4...,n,n+1}.
 ### Enteros ℤ
 Podemos decir que son aquellos números que son positivos y negativos, que no tienen decimales. Sin embargo aquí incluimos el 0.
-ℤ = {-4,-3,-2,-1,0,1,2,3,4...}
+ℤ = {-4,-3,-2,-1,0,1,2,3,4...}.
 ### Racionales ℚ
-Podemos decir que son aquellos números que tienen decimales FINITOS.
-ℚ = {p/q : p ∈ ℤ, q ∈ ℕ}
+Podemos decir que los numeros racionales son aquellos valores decimales que podemos expresar en forma de fracción.
+ℚ = {p/q : p ∈ ℤ, q ∈ ℕ}.
 ### Irracionales ℝ\ℚ
 Podemos decir que son aquellos números que no son racionales.
 Estos números pueden ser: pi (π), raiz de 2 (√2), euler (e) o el número de oro (φ) o (Ø).
