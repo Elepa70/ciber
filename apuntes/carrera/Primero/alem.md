@@ -1,12 +1,21 @@
 ---
-title: Álgebra Lineal y Entornos Matematicos
+title: Álgebra Lineal y Estructuras Matemáticas
 description: 
 published: false
-date: 2025-09-16T15:02:25.723Z
+date: 2025-09-18T12:57:21.054Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-15T16:54:18.342Z
 ---
 
-# Header
-Your content here
+# Álgebra Lineal y Estructuras Matemáticas
+En está página web podrá encontrar los distintos temarios que corresponden a esta asignatura.
+
+- [Números Reales](tema1)
+
+
+
+
+## Docente
+El temario fue dado por María Pilar Muñoz Rivas
+
