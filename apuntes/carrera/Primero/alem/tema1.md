@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T23:57:39.661Z
+date: 2025-09-18T23:59:04.169Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -114,3 +114,5 @@ Para ello vamos a imponer que $X$ es un conjunto que hace papel de **universo**,
 - Propiedades del complementario: $A \cup \bar{A}=X , \quad A \cap \bar{A} = \emptyset$
 
 - Leyes de Morgan: $\overline{A\cup B} = \bar{A} \cap \bar{B} \quad \overline{A\cap B}= \bar{A} \cup \bar{B} \quad A \setminus (B\cap C) = (A\setminus B)\cup (A\setminus C) \quad A \setminus (B\cup C) = (A\setminus B)\cap (A\setminus C)$
+
+### Producto cartesiano
