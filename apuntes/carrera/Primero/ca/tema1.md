@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T17:59:05.214Z
+date: 2025-09-18T18:00:10.807Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -112,10 +112,10 @@ En este intervalo encontramos aquellos que están definidos entre dos valores fi
 Un ejemplo puede ser [1,3], en este intervalo tenemos a 1 y 3, y todos los números intermedios.
 
 Vamos a poner los distintos intervalos que podemos encontrar en la recta.
-[a, b] = {x ∈ R : a ⩽ x ⩽ b}.
-(a, b] o ]a, b] = {x ∈ R : a ⩽ x ⩽ b}.
-[a, b) o [a, b[ = {x ∈ R : a ⩽ x ⩽ b}.
-(a, b) o ]a, b[ = {x ∈ R : a ⩽ x ⩽ b}.
+[a, b] = {x ∈ ℝ : a ⩽ x ⩽ b}.
+(a, b] o ]a, b] = {x ∈ ℝ : a ⩽ x ⩽ b}.
+[a, b) o [a, b[ = {x ∈ ℝ : a ⩽ x ⩽ b}.
+(a, b) o ]a, b[ = {x ∈ ℝ : a ⩽ x ⩽ b}.
 
 
 ### Semirrectas
@@ -125,14 +125,14 @@ Esto pueden ser por ejemplo:
 Un intervalo entre [1, ∞), ya que el valor infinito, no podemos definirlo exactamente.
 
 Podemos encontrar los siguientes intervalos:
-[a, +∞) = {x ∈ R : a ⩽ x}.
-(a, +∞) = {x ∈ R : a < x}.
-(−∞, b] = {x ∈ R : x ⩽ b}.
-(−∞, b) = {x ∈ R : x < b}.
+[a, +∞) = {x ∈ ℝ : a ⩽ x}.
+(a, +∞) = {x ∈ ℝ : a < x}.
+(−∞, b] = {x ∈ ℝ : x ⩽ b}.
+(−∞, b) = {x ∈ ℝ : x < b}.
 
 ### Acotación
 Ahora en vez de decir "definido", vamos a usar la palabra matematica ideal. Acotado.
 
 Cuando un intervalo está acotado superiormente, significa que existe un valor que siempre está debajo de todo el intervalo. Al igual, decimos que un valor está acotado inferiormente, cuando encontramos un valor que siempre está por debajo del intervalo.
 
-∃M∈R, a⩽M, ∀a∈A
+A ⊂ℝ ∃M∈R, a⩽M, ∀a∈A
