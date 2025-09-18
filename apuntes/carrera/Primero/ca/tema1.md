@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T19:21:14.433Z
+date: 2025-09-18T19:21:52.954Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -168,5 +168,6 @@ Tenemos 6 propiedades:
 - |x - y| ⩽ ||x| - |y||
 - |xy| = |x| · |y|, $\frac{|x|}{|y|}$ = $\frac{|x|}{|y|}$ 
 > Según la profesora, ni la 4 ni la 5, se le debería tomar importancia para lo que daremos en el curso. NO SIGNIFICA QUE NO SEAN IMPORTANTES PARA EL APRENDIZAJE!!!
-{.is-warning}
+>{.is-danger}
+
 
