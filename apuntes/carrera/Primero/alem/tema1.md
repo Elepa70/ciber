@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T23:03:58.584Z
+date: 2025-09-18T23:09:10.015Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -76,8 +76,14 @@ Definimos dos conjuntos como $A = \{0,2,3,5\}$ y $B = \{1,2,4,8\}$. La intersecc
 
 Debido a que la intersección es una operación asociativa, podemos poner: $A \cap B \cap C = (A \cap B) \cap C = A \cap (B \cap C)$
 
-#### Intersección de conjuntos
-Definimos dos conjuntos como $A = \{0,2,3,5\}$ y $B = \{1,2,4,8\}$. La intersección de ambos sería $A \cap B =\{2\}$.
+#### Diferencia de conjuntos
+Definimos dos conjuntos como $A = \{0,2,3,5\}$ y $B = \{1,2,4,8\}$. La diferencia de ambos sería $A \setminus B =\{0,3,5\}$.
 
+> En la diferencia de conjuntos, no se cumple con la asociatividad en general.
+{.is-warning}
 
-Debido a que la unión es una operación asociativa, podemos poner: $A \cup B \cup C = (A \cup B) \cup C = A \cup (B \cup C)$
+#### Diferencia simétrica de conjuntos
+Definimos dos conjuntos como $A = \{0,2,3,5\}$ y $B = \{1,2,4,8\}$. La diferencia de ambos sería $A \Delta B =\{0,3,4,5,8\}$.
+
+> En la diferencia de conjuntos, no se cumple con la asociatividad en general.
+{.is-warning}
