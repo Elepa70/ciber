@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: false
-date: 2025-09-18T09:42:01.810Z
+date: 2025-09-18T09:47:36.951Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -70,4 +70,7 @@ Dados dos subconjuntos "A" y "B", y verificando que a ⩽ b, donde "a" es un val
 **Dados A, B ⊂ ℝ verificando que a ⩽ b para cualquier a ∈ A, b ∈ B, existe c ∈ ℝ tal que a ⩽ c ⩽ b, ∀a ∈ A, ∀b ∈ B.**
 
 ## Subconjuntos o conjuntos dentro de ℝ
-Hemos podido analizar algunas propiedades dentro de 
+Hemos podido analizar algunas propiedades dentro de los números reales, sin embargo es esencial poder describir algunos de sus conjuntos para poder comprender la magnitud de los números reales.
+
+### Importante
+Durante el curso se verá 
