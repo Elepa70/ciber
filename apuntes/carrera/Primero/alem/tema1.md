@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T22:04:00.631Z
+date: 2025-09-18T22:05:15.515Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -24,7 +24,7 @@ Este objeto puede ser lo que necesitemos que sea, desde cosas cotidianas hasta l
 
 
 Uno de los conjuntos más importante o especiales, es el **conjunto vacío**, y se escribe como $\emptyset$ o $\{\}$, también cabe destacar la existencia de los conjuntos $\mathbb{N}$ (los números naturales), $\mathbb{Z}$ (los números enteros), $\mathbb{Q}$ (los números racionales), $\mathbb{C}$ (los números complejos) y $\mathbb{R}$ (los números reales).
-
+### Definir conjuntos
 Un conjunto queda determinado por sus **elementos** y debe ser escritas mediantes llaves, por ejemplo:
 - Dado un conjunto $X$ cuyos elementos son 3, 5 y 8, quedará escrito: $X =\{3,5,8\}$
 
@@ -32,5 +32,10 @@ Dado un conjunto, podemos crear un conjunto con elementos del conjunto anterior,
 
 También cabe la posibilidad de que no seamos capaces de poder describir la totalidad del conjunto, como puede ser el caso de densidad de elementos que tiene.
 Un ejemplo lo podemos ver con $\mathbb{N,Z,Q,R\text{ o }C}$
+
+
+
+
+
 
 
