@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T19:23:06.483Z
+date: 2025-09-18T19:44:14.171Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -14,6 +14,8 @@ Las funciones están definidas en un conjunto de números, usualmente reales. Pe
 ## Definición de los Números Reales (ℝ)
 Los números reales consisten en el conjunto de todos los números que pueden representarse en una recta numérica. **Incluyendo** los números racionales y irracionales.
 
+Definiremos los números reales como la unión de los números racionales y los irracionales. Geométricamente, lo definiremos como una recta numérica, la conocida recta real. Que cumplen axiomáticamente las propiedades de un anillo conmutativo, es decir, un cuerpo, y que tienen una relación de orden.
+
 ## Propiedades de ℝ y sus operaciones
 Los números reales poseen dos operaciones fundamentales:
 - Suma
@@ -22,9 +24,9 @@ Los números reales poseen dos operaciones fundamentales:
 Cada una de estas tienen propiedades que las distinguen de las otras.
 
 ### Suma
-La suma ( a + b ), resulta en una operación "básica", las cuales tienen las siguientes propiedades:
-- Conmutativa: Da igual el orden de los valores, el resultado es el mismo.
-a + b = b + a, ∀ a, b ∈ R
+La suma $a+b$, resulta en una operación "básica", las cuales tienen las siguientes propiedades:
+- Conmutatividad: Da igual el orden de los valores, el resultado es el mismo.
+$a+b=b+a\quad\forall a,b\in\mathbb{R}$
 - Asociativa: Da igual el orden de 3 valores, podemos reorganizarlo para que de el mismo resultado.
  (a + b) + c = a + (b + c), ∀ a, b, c ∈ R
 - Elemento neutro: Para cualquier valor de *a*, siempre que le sumemos 0 es *a*.
@@ -70,7 +72,7 @@ Dados dos subconjuntos "A" y "B", y verificando que a ⩽ b, donde "a" es un val
 **Dados A, B ⊂ ℝ verificando que a ⩽ b para cualquier a ∈ A, b ∈ B, existe c ∈ ℝ tal que a ⩽ c ⩽ b, ∀a ∈ A, ∀b ∈ B.**
 
 ## Subconjuntos o conjuntos dentro de ℝ
-Hemos podido analizar algunas propiedades dentro de los números reales, sin embargo es esencial poder describir algunos de sus conjuntos para poder comprender la magnitud de los números reales.
+Hemos podido analizar algunas propiedades dentro de los números reales, sin embargo es esencial poder describir algunos de sus conjuntos para poder comprender la magnitud de los números reales. Vamos a describir a continuación los subconjuntos más notables de $\mathbb{R}$
 
 ### Importante
 Durante el curso se verá el simbolo ℝ, acompañado de varios números o otros simbolos, para poder entenderlo:
