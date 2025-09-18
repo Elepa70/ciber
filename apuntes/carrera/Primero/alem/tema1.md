@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T23:19:31.028Z
+date: 2025-09-18T23:24:50.676Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -92,4 +92,4 @@ Podemos describirlo como: $A \Delta B = (A \cup B) \setminus (A \cap B) = (A \se
 #### Complementario de conjuntos
 Dado un conjunto de referencia, que llamaremos **universo** o **espacio muestral**, todas las operaciones que realicemos serán entre subconjuntos del mismo.
 
-Sea $X$ un universo y $A$ un conjunto (Subconjunto de $X$), definimos el complementario de $A$, como todos los valores de $X$ que no pertenezcan a $A$.
+Sea $X$ un universo y $A$ un conjunto (Subconjunto de $X$), definimos el complementario de $A$, como todos los valores de $X$ que no pertenezcan a $A$. Lo denotaremos como $\bar{A}, A'\text{ o }A^{c} = X \setminus A$
