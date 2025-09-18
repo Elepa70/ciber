@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T23:26:32.691Z
+date: 2025-09-18T23:26:54.734Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -94,4 +94,4 @@ Dado un conjunto de referencia, que llamaremos **universo** o **espacio muestral
 
 Sea $X$ un universo y $A$ un conjunto (Subconjunto de $X$), definimos el complementario de $A$, como todos los valores de $X$ que no pertenezcan a $A$. Lo denotaremos como $\bar{A}, A'\text{ o }A^{c}$
 
-$\bar{A} = X \setminus A = \{x \in X : X \notin A \}$ 
+$\bar{A} = X \setminus A = \{x \in X : x \notin A \}$ 
