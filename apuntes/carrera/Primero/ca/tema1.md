@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T17:31:09.179Z
+date: 2025-09-18T17:34:02.750Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -74,12 +74,12 @@ Hemos podido analizar algunas propiedades dentro de los números reales, sin emb
 
 ### Importante
 Durante el curso se verá el simbolo ℝ, acompañado de varios números o otros simbolos, para poder entenderlo:
-ℝ+ = {x ∈ ℝ : x > 0} : Todos los números reales mayor que 0.
-ℝ- = {x ∈ ℝ : x < 0} : Todos los números reales menores que 0.
-ℝ+ U ℝ- U {0}= ℝ     : La unión de todos los números reales mayores que cero, menores que cero y cero, forman todos los números reales.
-ℝ* = {x ∈ ℝ : x ≠ 0} : Todos los números reales distintos de 0.
-ℝ+0 = {x ∈ ℝ : x ≥ 0} : Todos los números reales mayores que 0, incluyendo el 0.
-ℝ-0 = {x ∈ ℝ : x ≤ 0} : Todos los números reales menores que 0, incluyendo el 0
+ℝ^+^ = {x ∈ ℝ : x > 0} : Todos los números reales mayor que 0.
+ℝ^-^ = {x ∈ ℝ : x < 0} : Todos los números reales menores que 0.
+ℝ^*^ U ℝ^-^ U {0}= ℝ     : La unión de todos los números reales mayores que cero, menores que cero y cero, forman todos los números reales.
+ℝ^*^ = {x ∈ ℝ : x ≠ 0} : Todos los números reales distintos de 0.
+ℝ^+^0 = {x ∈ ℝ : x ≥ 0} : Todos los números reales mayores que 0, incluyendo el 0.
+ℝ^-^0 = {x ∈ ℝ : x ≤ 0} : Todos los números reales menores que 0, incluyendo el 0
 
 Con esto explicado podemos dar paso a los subconjuntos de ℝ
 ### Naturales ℕ
