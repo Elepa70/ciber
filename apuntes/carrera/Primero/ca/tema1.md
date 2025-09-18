@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T18:25:06.368Z
+date: 2025-09-18T18:26:04.130Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -156,5 +156,9 @@ El valor absoluto de un número real x es su distancia al cero. Algebraicamente 
 
 |x| = dist(x,0) = { x, si x⩾0, -x, si x<0}.
 
+> Ojito, la raíz de x, es el valor absoluto de x: √x = |x\|
+{.is-warning}
 
 ### Propiedades del valor absoluto
+
+
