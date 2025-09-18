@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T20:00:01.764Z
+date: 2025-09-18T20:01:16.214Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -92,7 +92,6 @@ $\mathbb{N}=\{1,2,3,4,\dots\}$
 ### Enteros ℤ
 Diremos que los números enteros son los naturales, los opuestos y el cero.
 $\mathbb{Z}=\{\dots,-2,-1,0,1,2,\dots\}$
-ℤ = {-4,-3,-2,-1,0,1,2,3,4...}.
 ### Racionales ℚ
 Podemos decir que los numeros racionales son aquellos valores decimales que podemos expresar en forma de fracción.
 ℚ = {p/q : p ∈ ℤ, q ∈ ℕ}.
