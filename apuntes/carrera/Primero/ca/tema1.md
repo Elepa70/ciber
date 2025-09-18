@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T20:02:01.192Z
+date: 2025-09-18T20:02:25.345Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
