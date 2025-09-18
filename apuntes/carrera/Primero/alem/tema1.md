@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T22:56:26.635Z
+date: 2025-09-18T22:58:33.782Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -66,3 +66,4 @@ Como podemos observar, hemos añadido el conjunto vacío, ya que el conjunto vac
 ### Operaciones de conjuntos
 A continuación, veremos las distintas operaciones que podemos realizar con los conjuntos.
 #### Unión de conjuntos
+Definimos dos conjuntos como $A = \{0,2,3,5\}$ y $B = \{1,2,4,8\}$. La unión de ambos sería $A \cup B =\{0,1,2,3,4,5,8\}$ 
