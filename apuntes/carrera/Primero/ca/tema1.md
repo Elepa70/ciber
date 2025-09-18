@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T18:33:39.962Z
+date: 2025-09-18T18:34:01.694Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -43,7 +43,7 @@ a · b = b · a, ∀ a, b ∈ R
 a · 1 = a, ∀ a ∈ R
 
 - Elemento inverso: Si a es un número real distinto de 0, existe el inverso que a por su inverso es 1.
-$\frac{1}{a}$ = a ^−1^, tal que a ^-1^ a = 1.
+$\frac{1}{a}$ = a ^−1^, tal que a ^-1^ · a = 1.
 
 - Propiedad distributiva: Un mismo valor puede afectar a ambos lados dentro de un parentesis (Explicación del alumno)
 a(b + c) = ab + ac, ∀ a, b, c ∈ R
