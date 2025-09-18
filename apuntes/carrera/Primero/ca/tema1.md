@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: false
-date: 2025-09-18T09:25:55.828Z
+date: 2025-09-18T09:30:15.773Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -33,5 +33,15 @@ a + 0 = a, ∀ a ∈ R
 - Elemento opuesto: Dado un valor *a*, existe un valor único, *-a*, tal que:
 a + (-a) = 0
 
+### Producto
+El producto (a . b), resulta en la operación de multiplicar valores:
+- Conmutativa: Da igual el orden de los valores, el resultado es el mismo.
+a · b = b · a, ∀ a, b ∈ R
+- Asociativa: Da igual el orden de 3 valores, podemos reorganizarlo para que de el mismo resultado.
+ (a · b) · c = a · (b · c), ∀ a, b, c ∈ R
+- Elemento neutro: Para cualquier valor de *a*, siempre que le multipliquemos 1 es *a*.
+a · 1 = a, ∀ a ∈ R
 
+- Elemento opuesto: Dado un valor *a*, existe un valor único, *-a*, tal que:
+a + (-a) = 0
 
