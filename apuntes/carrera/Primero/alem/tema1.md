@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T23:35:52.157Z
+date: 2025-09-18T23:37:15.242Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -102,3 +102,5 @@ $\bar{A} = X \setminus A = \{x \in X : x \notin A \}$
 Existe una serie de identidades entre conjuntos.
 
 Para ello vamos a imponer que $X$ es un conjunto que hace papel de **universo**, y $A,B \text{ y }C$, son tres subconjuntos de este universo. Por lo tanto:
+
+Conmutatividad de la unión e intersección: $A \cup B = B \cup A$
