@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T18:26:04.130Z
+date: 2025-09-18T18:27:03.902Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -160,5 +160,11 @@ El valor absoluto de un número real x es su distancia al cero. Algebraicamente 
 {.is-warning}
 
 ### Propiedades del valor absoluto
-
+Tenemos 6 propiedades:
+- |x| ⩾ 0
+- |x| = 0 x = 0
+- |x|
+- |x|
+- |x|
+- |x|
 
