@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T18:01:51.949Z
+date: 2025-09-18T18:03:57.365Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T09:14:28.603Z
@@ -138,3 +138,8 @@ Cuando un intervalo está acotado superiormente, significa que existe un valor q
 *A* tiene una cota superior en ℝ, si y solo si,existe un valor *M*, que pertenece a los números reales que es mayor que *a* para todo el conjunto de *A*.
 
 En lenguaje matemático: A ⊂ ℝ, ∃ M ∈ R, a⩽M, ∀a∈A
+
+Al igual, decimos que un intervalo está acotado, si esté está acotado superiormente **y** inferiormente.
+
+
+Por último, podemos decir, que en un intervalo existe un máximo de un conjunto, 
