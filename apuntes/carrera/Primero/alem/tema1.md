@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T00:12:55.939Z
+date: 2025-09-19T00:13:20.382Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -125,7 +125,7 @@ Ojo las parejas $(0,2) \text{ y } (2,0)$, el orden tiene relevancia, ya que cabe
 
 El producto cartesiano de un mismo conjunto se denota de la siguiente manera $A^{2} = A \times A$.
 
-Por ejemplo, recuperando el conjunto $A$, $A^{2}$ quedaría de la siguiente manera: $A^{2} = A \times A=\{(0,0),(0,1),(0,2),(1,0),(1,1),(1,2),(2,0),(2,1),(2,2)\}$
+Por ejemplo, recuperando el conjunto $A$, $A^{2}$ quedaría de la siguiente manera: $A^{2} = A \times A = \{ (0,0),(0,1),(0,2),(1,0),(1,1),(1,2),(2,0),(2,1),(2,2) \}$
 
 
 
