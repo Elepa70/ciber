@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T08:50:53.312Z
+date: 2025-09-19T09:06:20.656Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -161,3 +161,5 @@ También debemos pasar que hubiera elementos del dominio, que no se le pueda asi
 Imaginaos una aplicación que cuando $f(3)= \frac{0}{0}$, este valor no existe, por lo que no podría estar definido **si**, nuestro codominio fuera $\mathbb{R}$.
 
 
+Otro ejemplo donde podemos darnos cuenta que falla la aplicación es el siguiente:
+$f:\mathbb{Q} \rightarrow \mathbb{Q} \text{ como } f(\frac{a}{b})=\frac{a+b}{2}$
