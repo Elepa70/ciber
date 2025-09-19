@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T08:38:04.306Z
+date: 2025-09-19T08:39:19.956Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -152,4 +152,6 @@ Y aunque aparienta que no tiene sentido, en realidad si porque hay una expresió
 {.is-warning}
 
 Cuando queremos definir una aplicación. Debemos asegurarnos que lo estamos definiendo realmente es una aplicación.
+
 Un ejemplo $f:\mathbb{N} \rightarrow \mathbb{N}$, la aplicación dada es $f(x)=x^{2}-60x+800$
+En este caso, estamos indicando que el codominio es $\mathbb{N}$, es decir los números naturales, sin embargo encontramos varios números como $f(25)=-75$, donde **NO** se cumple la aplicación.
