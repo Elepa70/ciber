@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T09:36:40.357Z
+date: 2025-09-19T09:41:37.852Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -177,4 +177,8 @@ Ejemplo, si $f \colon \mathbb{N} \rightarrow \mathbb{N}$, es la aplicación dada
 
 También debemos podemos "vincular" o asociar, un elemento de un conjunto a otro, y tras esto a otro.
 Ejemplo:
-Sea $f\colon \mathbb{N} \rightarrow \mathbb{N}$ y $g \colon \mathbb{N} \rightarrow \mathbb{N}$, y las aplicaciones dadas son $f(n) = n^{2} \text{ y } g(n) = n+3$ 
+Sea $f\colon \mathbb{N} \rightarrow \mathbb{N}$ y $g \colon \mathbb{N} \rightarrow \mathbb{N}$, y las aplicaciones dadas son $f(n) = n^{2} \text{ y } g(n) = n+3$
+Si cogemos el número natural $5$, la aplicación $f$ le asocia el número $25$, y tras esto la aplicación $g$ le asociará el número $28$.
+
+Podemos expresarlo también de la siguiente manera:
+$(g \circ f)(5)=f(f(5))=g(25)=28$
