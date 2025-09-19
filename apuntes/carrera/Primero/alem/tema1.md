@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T00:04:53.991Z
+date: 2025-09-19T00:05:53.294Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -121,5 +121,5 @@ Tenemos los dos conjuntos, para definiremos el producto cartesiano como un nuevo
 Ejemplo: Teniendo los conjuntos $A =\{0,1,2\} \text{ y } B=\{0,2,4\}$, entonces el producto cartesiano es :
 $A\times B = \{(0,0),(0,2),(0,4),(1,0),(1,2),(1,4),(2,0),(2,2),(2,4)\}$
 
-Ojo las parejas $(0,2) \text{ y } (2,0)$, el orden tiene relevancia.
+Ojo las parejas $(0,2) \text{ y } (2,0)$, el orden tiene relevancia, ya que cabe por ejemplo, existe el $(0,4)$ pero no existe el $(4,0)$.
 
