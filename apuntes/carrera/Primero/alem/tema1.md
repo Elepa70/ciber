@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T09:09:35.293Z
+date: 2025-09-19T09:16:35.765Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -166,3 +166,6 @@ $f\colon \mathbb{Q} \rightarrow \mathbb{Q} \text{ como } f(\frac{a}{b})=\frac{a+
 
 En este caso podemos asignar valores como $\frac{1}{2} = 0,5$, sin embargo $0,5$ puede valer también $\frac{2}{4}=\frac{3}{6}=\frac{4}{8}$, y para cada valor de estos, nos cambia el resultado que obtenemos en $f$.
 Ojo, como nuestro codominio es $\mathbb{Q}$, que debe estar dado en fracción con números enteros, en el caso de $f(\frac{2}{4})=3$, por lo tanto no se cumple esta aplicación.
+
+### Grafo de aplicación
+Sean $X \text{ e }Y$ dos conjuntos y $f\colon X \rightarrow Y$ una aplicación. Definimos el frado de la aplicación $f$ como el siguiente subconjunto $X \times Y$.
