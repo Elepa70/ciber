@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T08:28:55.276Z
+date: 2025-09-19T08:32:15.080Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -140,3 +140,8 @@ Para dar una aplicación hay que especificar:
 
 Por ejemplo:
 Dada la aplicación $g : \mathbb{N} \rightarrow \mathbb{Z}$, dada por $g(n) = 2n$, es distinto a $f : \mathbb{N} \rightarrow \mathbb{N}$ con la aplicación $f(n)=2n \text{ para } n \in \mathbb{N}$. Ya que el codominio cambia.
+
+
+También podemos expresar una aplicación dando explícitamente las imágenes de los elementos del dominio. 
+Ejemplo:
+Sea $X=\{0,1,2,3\}$ y $f : X \rightarrow \mathbb{N}$, la aplicación dada por: $f(0)=2,f(1)=7,f(2)=1,f(3)=9$.
