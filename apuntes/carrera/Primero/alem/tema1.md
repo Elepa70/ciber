@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T00:05:53.294Z
+date: 2025-09-19T00:06:43.674Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -123,3 +123,4 @@ $A\times B = \{(0,0),(0,2),(0,4),(1,0),(1,2),(1,4),(2,0),(2,2),(2,4)\}$
 
 Ojo las parejas $(0,2) \text{ y } (2,0)$, el orden tiene relevancia, ya que cabe por ejemplo, existe el $(0,4)$ pero no existe el $(4,0)$.
 
+El producto cartesiano de un mismo conjunto se denota de la siguiente manera $A^{2} = A \times A$ 
