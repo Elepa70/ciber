@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T08:24:15.196Z
+date: 2025-09-19T08:28:55.276Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -138,3 +138,5 @@ Para dar una aplicación hay que especificar:
 2. Un conjunto $Y$ que será el codominio. ¡ Podría ser el mismo conjunto $X$!
 3. Una regla que asigna cada elemento del dominio un elemento del codominio.
 
+Por ejemplo:
+Dada la aplicación $g : \mathbb{N} \rightarrow \mathbb{Z}$, dada por $g(n) = 2n$, es distinto a $f : \mathbb{N} \rightarrow \mathbb{N}$ con la aplicación $f(n)=2n \text{ para } n \in \mathbb{N}$. Ya que el codominio cambia.
