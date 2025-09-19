@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T00:13:20.382Z
+date: 2025-09-19T08:22:59.567Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -128,4 +128,8 @@ El producto cartesiano de un mismo conjunto se denota de la siguiente manera $A^
 Por ejemplo, recuperando el conjunto $A$, $A^{2}$ quedaría de la siguiente manera: $A^{2} = A \times A = \{ (0,0),(0,1),(0,2),(1,0),(1,1),(1,2),(2,0),(2,1),(2,2) \}$
 
 
+## Aplicaciones
+Definimos la aplicación como: "Sean $X$ e $Y$ dos conjunttos. Una aplicación de $X$ en $Y$ es una forma de asignarle (o asociarle) a cada eelemento de $X$ un elemento (y sólo uno) del conjunto $Y$"
+
+Si $f$ es una aplicación de $X$ e $Y$, escribiremos $f:X \rightarrow Y\text{ o }X \underrightarrow{f} Y$: al conjunto $X$ se llama dominio de la aplicación y al conjunto $Y$, codominio.
 
