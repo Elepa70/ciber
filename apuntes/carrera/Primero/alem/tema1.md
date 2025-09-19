@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T08:43:10.753Z
+date: 2025-09-19T08:50:53.312Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -131,7 +131,7 @@ Por ejemplo, recuperando el conjunto $A$, $A^{2}$ quedaría de la siguiente mane
 ## Aplicaciones
 Definimos la aplicación como: "Sean $X$ e $Y$ dos conjunttos. Una aplicación de $X$ en $Y$ es una forma de asignarle (o asociarle) a cada eelemento de $X$ un elemento (y sólo uno) del conjunto $Y$"
 
-Si $f$ es una aplicación de $X$ e $Y$, escribiremos $f:X \rightarrow Y\text{ o }X \underrightarrow{f} Y$: al conjunto $X$ se llama dominio de la aplicación y al conjunto $Y$, codominio.
+Si $f$ es una aplicación de $X$ e $Y$, escribiremos $f:X \rightarrow Y\text{ o }X \overset{ f }{\longrightarrow} Y$: al conjunto $X$ se llama dominio de la aplicación y al conjunto $Y$, codominio.
 
 Para dar una aplicación hay que especificar:
 1. Un conjunto $X$ que será el dominio.
@@ -159,3 +159,5 @@ En este caso, estamos indicando que el codominio es $\mathbb{N}$, es decir los n
 
 También debemos pasar que hubiera elementos del dominio, que no se le pueda asignar ningun elemento. (Aunque suene confuso tiene sentido).
 Imaginaos una aplicación que cuando $f(3)= \frac{0}{0}$, este valor no existe, por lo que no podría estar definido **si**, nuestro codominio fuera $\mathbb{R}$.
+
+
