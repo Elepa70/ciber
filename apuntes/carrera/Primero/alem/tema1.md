@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T08:39:19.956Z
+date: 2025-09-19T08:43:10.753Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -155,3 +155,7 @@ Cuando queremos definir una aplicación. Debemos asegurarnos que lo estamos defi
 
 Un ejemplo $f:\mathbb{N} \rightarrow \mathbb{N}$, la aplicación dada es $f(x)=x^{2}-60x+800$
 En este caso, estamos indicando que el codominio es $\mathbb{N}$, es decir los números naturales, sin embargo encontramos varios números como $f(25)=-75$, donde **NO** se cumple la aplicación.
+
+
+También debemos pasar que hubiera elementos del dominio, que no se le pueda asignar ningun elemento. (Aunque suene confuso tiene sentido).
+Imaginaos una aplicación que cuando $f(3)= \frac{0}{0}$, este valor no existe, por lo que no podría estar definido **si**, nuestro codominio fuera $\mathbb{R}$.
