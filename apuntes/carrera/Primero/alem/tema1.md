@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T08:33:12.050Z
+date: 2025-09-19T08:36:03.763Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -146,4 +146,4 @@ También podemos expresar una aplicación dando explícitamente las imágenes de
 Ejemplo:
 Sea $X=\{0,1,2,3\}$ y $f : X \rightarrow \mathbb{N}$, la aplicación dada por: $f(0)=2,f(1)=7,f(2)=1,f(3)=9$.
 
-Y aunque aparienta que no tiene sentido, en realidad si porque hay una expresión que responde a está aplicación. En este caslo la aplicación $f$ responde a $f(x)=$
+Y aunque aparienta que no tiene sentido, en realidad si porque hay una expresión que responde a está aplicación. En este caslo la aplicación $f$ responde a $f(x)=\frac{25x^{3}-108x^{2}+113x+12}{6}$
