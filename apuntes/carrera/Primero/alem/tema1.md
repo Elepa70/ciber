@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T09:41:37.852Z
+date: 2025-09-19T09:42:31.854Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -182,3 +182,6 @@ Si cogemos el número natural $5$, la aplicación $f$ le asocia el número $25$,
 
 Podemos expresarlo también de la siguiente manera:
 $(g \circ f)(5)=f(f(5))=g(25)=28$
+
+La expresión de la aplicación la podemos dar como:
+$(g \circ f)(n)=f(f(n))=g(n^{2})=n^{2}+3$
