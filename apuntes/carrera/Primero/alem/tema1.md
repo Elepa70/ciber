@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T09:16:35.765Z
+date: 2025-09-19T09:27:43.761Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -169,3 +169,5 @@ Ojo, como nuestro codominio es $\mathbb{Q}$, que debe estar dado en fracción co
 
 ### Grafo de aplicación
 Sean $X \text{ e }Y$ dos conjuntos y $f\colon X \rightarrow Y$ una aplicación. Definimos el frado de la aplicación $f$ como el siguiente subconjunto $X \times Y$.
+
+Ejemplo, si $f \colon \mathbb{N} \rightarrow \mathbb{N}$, es la aplicación dada por $f(n)=2n$, entonces el grafo de $f$ es: $G(f)={(0,0),(1,2),(2,4),(3,6)\dots)}$
