@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-18T23:59:04.169Z
+date: 2025-09-19T00:04:07.936Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -116,3 +116,7 @@ Para ello vamos a imponer que $X$ es un conjunto que hace papel de **universo**,
 - Leyes de Morgan: $\overline{A\cup B} = \bar{A} \cap \bar{B} \quad \overline{A\cap B}= \bar{A} \cup \bar{B} \quad A \setminus (B\cap C) = (A\setminus B)\cup (A\setminus C) \quad A \setminus (B\cup C) = (A\setminus B)\cap (A\setminus C)$
 
 ### Producto cartesiano
+Tenemos los dos conjuntos, para definiremos el producto cartesiano como un nuevo conjunto, cuyos elementos son parejas donde la primera coordenada pertenece a un conjunto y la segunda pertenecerá al otro.
+
+Ejemplo: Teniendo los conjuntos $A =\{0,1,2\} \text{ y } B=\{0,2,4\}$, entonces el producto cartesiano es :
+$A\times B = \{(0,0),(0,2),(0,4),(1,0),(1,2),(1,4),(2,0),(2,2),(2,4)\}$
