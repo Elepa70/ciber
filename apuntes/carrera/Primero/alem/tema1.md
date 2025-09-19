@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T09:28:47.367Z
+date: 2025-09-19T09:36:40.357Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -174,3 +174,7 @@ Ejemplo, si $f \colon \mathbb{N} \rightarrow \mathbb{N}$, es la aplicación dada
 
 > Es como otra forma de escribir resultados en una tabla. (Alumno)
 {.is-success}
+
+También debemos podemos "vincular" o asociar, un elemento de un conjunto a otro, y tras esto a otro.
+Ejemplo:
+Sea $f\colon \mathbb{N} \rightarrow \mathbb{N}$ y $g \colon \mathbb{N} \rightarrow \mathbb{N}$, y las aplicaciones dadas son $f(n) = n^{2} \text{ y } g(n) = n+3$ 
