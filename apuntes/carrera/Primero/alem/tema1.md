@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T08:22:59.567Z
+date: 2025-09-19T08:24:15.196Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -132,4 +132,9 @@ Por ejemplo, recuperando el conjunto $A$, $A^{2}$ quedaría de la siguiente mane
 Definimos la aplicación como: "Sean $X$ e $Y$ dos conjunttos. Una aplicación de $X$ en $Y$ es una forma de asignarle (o asociarle) a cada eelemento de $X$ un elemento (y sólo uno) del conjunto $Y$"
 
 Si $f$ es una aplicación de $X$ e $Y$, escribiremos $f:X \rightarrow Y\text{ o }X \underrightarrow{f} Y$: al conjunto $X$ se llama dominio de la aplicación y al conjunto $Y$, codominio.
+
+Para dar una aplicación hay que especificar:
+1. Un conjunto $X$ que será el dominio.
+2. Un conjunto $Y$ que será el codominio. ¡ Podría ser el mismo conjunto $X$!
+3. Una regla que asigna cada elemento del dominio un elemento del codominio.
 
