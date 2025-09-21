@@ -2,7 +2,7 @@
 title: Conceptos básicos
 description: 
 published: true
-date: 2025-09-21T19:39:40.803Z
+date: 2025-09-21T19:41:41.825Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-21T19:17:32.178Z
@@ -18,6 +18,8 @@ Aplicamos la ley de Kirchhoff de Tensiones, que establece: En un circuito cerrad
 Es importante la ley de ohm, la cúal es:
 - $V= I * R$
 
+La formula para el calculo del voltaje de salida es:
+$V_{out}=V_{in}* \frac{R_{2}}{R_{1}+R_{2}}$
 ## Simbología
 Ahora vamos a ver varios terminos sobre simbología básica.
 ### Resistencia (R)
