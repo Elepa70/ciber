@@ -2,7 +2,7 @@
 title: Conceptos básicos
 description: 
 published: true
-date: 2025-09-21T19:43:07.834Z
+date: 2025-09-21T19:52:30.295Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-21T19:17:32.178Z
@@ -20,7 +20,7 @@ Ahora vamos a ver varios terminos sobre simbología básica.
 ### Resistencia (R)
 El simbolo de la resistencia se representa como un zig-zag.
 Para el calculo de la resistencia total:
-- En serie: $R_{e}=R_{1}+R_{2}\ldots+R_{n}$
+- En serie: $R_{e}=R_{1}+R_{2}\ldots+R_{n}$.
 - En paralelo: $\frac{1}{R_{e}}=\frac{1}{R_{1}}+\frac{1}{R_{2}}+\ldots\frac{1}{R_{n}}$
 ### Condensador (C)
 El simbolo del consensador es con dos lineas paralelas para indicar las placas.
