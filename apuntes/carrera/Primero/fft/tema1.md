@@ -2,24 +2,19 @@
 title: Conceptos básicos
 description: 
 published: true
-date: 2025-09-21T19:41:41.825Z
+date: 2025-09-21T19:43:07.834Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-21T19:17:32.178Z
 ---
 
 # Conceptos básicos generales de circuitos
+## Definiciones
 Decimos que un circuito equivalente de uno dado es otro circuito ficticio que, visto desde su terminales se comporta eléctricamente igual que el original.
 
 Decimos que tenemos elementos en serie, cuando hay dos o más elementos pasivos están conectadas sucesivamente una de la otra.
 
-Aplicamos la ley de Kirchhoff de Tensiones, que establece: En un circuito cerrado, la suma algebraica de todas las diferencias de potencial (tensiones) alrededor de cualquier lazo es igual a cero.
 
-Es importante la ley de ohm, la cúal es:
-- $V= I * R$
-
-La formula para el calculo del voltaje de salida es:
-$V_{out}=V_{in}* \frac{R_{2}}{R_{1}+R_{2}}$
 ## Simbología
 Ahora vamos a ver varios terminos sobre simbología básica.
 ### Resistencia (R)
@@ -42,3 +37,19 @@ El simbolo de la impedancia es un rectangulo.
 Para el calculo de:
 - En serie: $Z_{e}=Z_{1}+Z_{2}\ldots+Z_{n}$
 - En paralelo: $\frac{1}{Z_{e}}=\frac{1}{Z_{1}}+\frac{1}{Z_{2}}+\ldots\frac{1}{Z_{n}}$
+
+## Formulas y leyes
+Aplicamos la ley de Kirchhoff de Tensiones, que establece: En un circuito cerrado, la suma algebraica de todas las diferencias de potencial (tensiones) alrededor de cualquier lazo es igual a cero.
+
+Es importante la ley de ohm, la cúal es:
+- $V= I * R$
+
+La formula para el calculo del voltaje de salida es:
+$V_{out}=V_{in}* \frac{R_{2}}{R_{1}+R_{2}}$
+
+## Circuitos
+Circuitos esenciales
+
+- Divisor de tensión: Usado comunmente para dividir tensiones.
+
+
