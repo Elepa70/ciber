@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-19T09:44:31.377Z
+date: 2025-09-22T18:43:00.643Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -185,3 +185,10 @@ $(g \circ f)(5)=g(f(5))=g(25)=28$
 
 La expresión de la aplicación la podemos dar como:
 $(g \circ f)(n)=g(f(n))=g(n^{2})=n^{2}+3$
+
+> Hay que tener en cuenta que $(f \circ g)$ y $(g \circ f)$, no son lo mismo.
+{.is-warning}
+
+### Composición de aplicaciones
+Teniendo tres conjuntos como pueden ser $Z,X,Y$, si para cada elemento de $X$, tenemos uno de $Y$, y para cada elemento de $Y$, tenemos uno de $Z$. Podemos entonces asociar cada elemento de $X$ a $Z$. Esto es la composición de aplicaciones.
+
