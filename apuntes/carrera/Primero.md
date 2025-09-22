@@ -2,7 +2,7 @@
 title: Primer año de Ingeniería Informática
 description: 
 published: true
-date: 2025-09-18T23:29:13.550Z
+date: 2025-09-22T10:13:10.608Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-15T14:07:08.654Z
@@ -12,11 +12,11 @@ dateCreated: 2025-09-15T14:07:08.654Z
 En esta sección encontrarás los enlaces hacia las asignaturas dividida en primer o segundo cuatrimestre.
 
 ## Primer cuatrimestre
-[Algebra Lineal y Estructura Matemáticas](alem)
-[Calculo](ca)
-[Fundamentos Físicos y Tecnológicos](fft)
-[Fundamentos de Programación](fp)
-
+- [Algebra Lineal y Estructura Matemáticas](alem)
+- [Calculo](ca)
+- [Fundamentos Físicos y Tecnológicos](fft)
+- [Fundamentos de Programación](fp)
+  {.links-list}
 ## Segundo cuatrimestre
 [Estadística](es)
 [Lógica y Métodos Discretos](lmd)
