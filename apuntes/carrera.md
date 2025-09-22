@@ -2,7 +2,7 @@
 title: Ingeniería Informática
 description: 
 published: true
-date: 2025-09-22T10:12:21.904Z
+date: 2025-09-22T10:12:44.535Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-15T12:08:16.146Z
@@ -26,11 +26,11 @@ En este caso, los apuntes se harán de la UGR (Universidad de Granada), España.
 
 
 ## Acceso a los apuntes.
-[1º Año](Primero)
-[2º Año](Segundo)
-[3º Año](Tercero)
-[4º Año](Cuarto)
-
+- [1º Año](Primero)
+- [2º Año](Segundo)
+- [3º Año](Tercero)
+- [4º Año](Cuarto)
+  {.links-list}
 ## ¿De qué podría trabajar?
 Con estos estudios tienes acceso a una gran cantidad de puestos de trabajo, tales como:
 - Desarrollador de software.
