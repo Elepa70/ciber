@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-22T18:43:00.643Z
+date: 2025-09-22T19:14:24.880Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -191,4 +191,54 @@ $(g \circ f)(n)=g(f(n))=g(n^{2})=n^{2}+3$
 
 ### Composición de aplicaciones
 Teniendo tres conjuntos como pueden ser $Z,X,Y$, si para cada elemento de $X$, tenemos uno de $Y$, y para cada elemento de $Y$, tenemos uno de $Z$. Podemos entonces asociar cada elemento de $X$ a $Z$. Esto es la composición de aplicaciones.
+
+Rigiendonos en la composición de aplicaciones, podemos poner en este caso $(f \circ g)$ y $(g \circ f)$ que nos dará lo mismo.
+
+Poniendo como ejemplo que $X,Y,Z,T$ son cuatro conjutnos y $f:X \rightarrow Y,g:Y \rightarrow Z \text{ y } h:Z \rightarrow T,$Las propiedades que podemos encontrar son:
+- La aplicación identidad es un elemento neutro para la composición. $f \circ Id_{x}=f$
+- Es asociativa, $h \circ (g \circ f) = (h \circ g) \circ f$.
+
+
+### Tipos de aplicaciones
+Tenemos varios tipos de aplicaciones según lo que vayamos a utilizar.
+
+#### Inyectivas
+Las aplicaciones Inyectivas, son aquellas donde dado dos conjuntos y una aplicación, cada elemento de un dominio tiene un unico elemento del codominio, y que distinto o unico con respecto al resto de elementos. Por ejemplo: DNI y Persona.
+
+
+Para cualquier conjunto, la aplicación de $Id_{x}$ es inyectiva.
+
+Para la composición de aplicaciones, poniendo de ejemplo $X,Y,Z$ son cuatro conjuntos y $f:X \rightarrow Y\text{ y }g:Y \rightarrow Z$
+
+- Si f y g son inyectivas, entonces $g \circ f$ también lo será.
+- Si $g \circ f$ son inyectivas, entonces $f$ es inyectiva, pero $g$ no tiene porqué serlo.
+- Si $f$ es inyectiva, entonces existe $h:Y \rightarrow X$ tal que $h \circ f = Id_{x}$. Esto se le conoce como inversa por la izquierda.
+
+
+#### Sobreyectivas
+Las aplicaciones Sobreyectivas, son aquellas donde dado dos conjuntos y una aplicación, cada elemento de un dominio tiene uno o más elemento del codominio.
+
+Para cualquier conjunto, la aplicación de $Id_{x}$ es sobreyectiva.
+
+Para la composición de aplicaciones, poniendo de ejemplo $X,Y,Z$ son cuatro conjuntos y $f:X \rightarrow Y\text{ y }g:Y \rightarrow Z$
+
+- Si f y g son sobreyectivas, entonces $g \circ f$ también lo es.
+- Si $g \circ f$ es sobreyectiva, entocnes $g$ lo es, pero $f$ no tiene porqué serlo.
+- Si $f$ es sobreyectiva, entonces existe $h: Y \rightarrow X$, que provoca $f \circ h = Id_{y}$. En este caso decimos que es una inversa por la derecha.
+
+
+
+#### Biyectivas
+Las aplicaciones biyectivas, son aquellas donde dado dos conjuntos y una aplicación, la aplicación es inyectiva y sobreyectiva.
+
+Para la composición de aplicaciones, poniendo de ejemplo $X,Y,Z$ son cuatro conjuntos y $f:X \rightarrow Y\text{ y }g:Y \rightarrow Z$
+
+- Si f y g son biyectivas, entonces $g \circ f$ también lo es.
+- Si $g \circ f$ es biyectiva, entocnes $f$ es inyectiva y $g$ es sobreyectiva.
+- Si $f$ es biyectiva, entonces existe $h: Y \rightarrow X$, que provoca $f \circ h = Id_{y}$. En este caso solo hay una aplicación que puede cumplir esto, y se denomina la inversa de f, llamada $f^{-1}$.
+- Si f y g son biyectivas, su inversa se expresa como $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$.
+
+> Dudas
+{.is-warning}
+
 
