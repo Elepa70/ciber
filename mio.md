@@ -2,17 +2,17 @@
 title: Sobre Mí
 description: Información relevante al administrador
 published: true
-date: 2025-01-14T12:06:09.768Z
+date: 2025-09-23T20:20:26.811Z
 tags: 
 editor: markdown
-dateCreated: 2024-12-26T15:30:44.255Z
+dateCreated: 2025-03-16T21:41:11.981Z
 ---
 
 # Sobre Mí
 Mi nombre es Pablo Sánchez Hidalgo, soy actualmente (A fecha de 2024/2025), estudiante del Curso de Especialización de Ciberseguridad, en el centro I.E.S. Zaidín Vergeles.
 
 ## Un poco de contexto
-La informatica me empezó a atraer ya de bien pequeño, cuando mi primo comenzo a enseñarme el pequeño mundo de Youtube por aquel entonces. Esto era magia para mi, a la vez que WhappsApp. ¿Como erá posible que pudiera enviar mensajes a otros lados en un cacharro tan pequeño?
+La informatica me empezó a atraer ya de bien pequeño, cuando mi primo comenzo a enseñarme el pequeño mundo de Youtube por aquel entonces. Esto era magia para mi, a la vez que WhatsApp. ¿Como erá posible que pudiera enviar mensajes a otros lados en un cacharro tan pequeño?
 
 Si bien, solo era curiosidad, mi primer contacto con el mundo de Informatica y concretamente el mundo de Administración, fue la creación de un pequeño servidor de Minecraft que hice a mano y configuré algunos plugins. En ese momento ya empecé a entender poco a poco, como funcionaba la lógica y los equipos, gracias a los comandos que traia el propio juego.
 
