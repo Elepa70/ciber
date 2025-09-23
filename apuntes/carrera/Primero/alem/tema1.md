@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-22T19:14:24.880Z
+date: 2025-09-23T07:34:39.406Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -216,7 +216,7 @@ Para la composición de aplicaciones, poniendo de ejemplo $X,Y,Z$ son cuatro con
 
 
 #### Sobreyectivas
-Las aplicaciones Sobreyectivas, son aquellas donde dado dos conjuntos y una aplicación, cada elemento de un dominio tiene uno o más elemento del codominio.
+Las aplicaciones Sobreyectivas, son aquellas donde dado dos conjuntos y una aplicación, cada elemento del codominio, puede tener uno o varios elementos del dominio. Ejemplo, la función $f(x)=x^2$
 
 Para cualquier conjunto, la aplicación de $Id_{x}$ es sobreyectiva.
 
