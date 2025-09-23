@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2025-09-23T19:16:25.162Z
+date: 2025-09-23T19:48:47.507Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-23T18:58:15.193Z
@@ -55,4 +55,41 @@ Estas instrucciones pueden ser básicas como:
 - Entrada y salida: Información que viaja entre los perifericos y la memoria del equipo.
 - Instrucción de calculo: Operaciones aritmetícas y lógicas que realizan los equipos.
 - Instrucción de control: Modificar la secuencia de ejecución de control y flujo.
+
+## Especificación de programar
+Ahora si vamos a entrar con la programación propiamente dicha.
+
+Un programar se realiza en uno o varios ficheros, siendo editado según la sintaxis determinada del lenguaje de programación.
+
+Según los errores, podemos encontrar tres situaciones:
+- Compilación: Error de escritura y no es posible que el programa se convierta en binario.
+- Ejecución: El programa está mal escrito, resultando en errores al ejecutarse.
+- Lógicas/Semánticas: El programa realiza una acción la cuál no es la deseada.
+
+Una vez visto los errores, vamos a ver una estructura básica para evitar que suceda:
+- En la primera cabecerá vamos a tener la inclusión de librerias, siendo esto utilidades al programa normalmente diseñado por las comunidades de programadores.
+- La segunda cabecerá suele estar reservada para las variables que definamos.
+- Por último tenemos las funciones principales (Definida como: int main(){ return 0 }). Return 0, es usado para asegurarnos que hemos obtenido un fin de codigo sin errores.
+
+## Datos y variables
+Los datos consiste en la unidad de información que podemos representar en el ordenador.
+
+Hay que tener en cuenta que a la hora de programar, según nuestro lenguaje, podemos encontrar una diferencia entre tipado y no tipado.
+- Los lenguajes tipados: Son aquellos donde los datos son necesarios definirlos.
+- Los lenguajes no tipados: Son aquellos donde, debido al contexto, no es necesario definirlo.
+
+Esto es importante ya que podemos encontrar varios errores graves, como expresar $2$ como número o como caracter alfanúmerico.
+
+Otra caracteristica de los datos es que podemos encontrar:
+- Los datos basicos: Integrados por los lenguajes de programación, como es numero, caracter o booleano.
+- Los datos definidos por los usuarios: Donde es el usuario o el programador, el que le da un significado.
+- Punteros: Este tipo de datos es especial, ya que se encarga de apuntar a la memoria, más adelante en el curso se le dará la importancia necesaria.
+
+
+Algunos ejemplos de tipos de datos son:
+- Numeros enteros, donde podemos encontrar los int(Enteros), short(Enteros en un rango menor a int), long (Enteros mayor a int) o el termino unsigned, usado delante de los demás terminos para indicar que solo se tomarán valores positivos. (No se aclará si el 0 entra)
+
+- Reales, aquellos números donde podemos tener decimales, ya sean simples o dobles. Se aconsejan usar siempre dobles.
+
+- Booleano, este tipo de datos, solo puede tomar dos valores, verdadero (1) o falso (0)
 
