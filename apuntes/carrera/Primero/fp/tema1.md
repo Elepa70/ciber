@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2025-09-23T19:48:47.507Z
+date: 2025-09-23T19:50:58.575Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-23T18:58:15.193Z
@@ -93,3 +93,5 @@ Algunos ejemplos de tipos de datos son:
 
 - Booleano, este tipo de datos, solo puede tomar dos valores, verdadero (1) o falso (0)
 
+## Operador y expresión
+> Continuará
