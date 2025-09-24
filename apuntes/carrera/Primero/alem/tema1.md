@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-24T20:48:54.976Z
+date: 2025-09-24T21:00:08.997Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -292,3 +292,34 @@ Con esto descrito, podemos decir que una relación $R$ es de equivalencia cuando
 Podemos denotar las relaciones de equivalencia de la siguiente manera $[x]_{R}$. Por ejemplo:
 
 Sea $X=\{0,1,2,3,4\}$ y $R$ la relación en $X$ está dada como $xRy$ si $x+2y$ es múltiplo de 3.
+
+Para el caso de $[0]$, vamos comparando uno a uno para comprobar que funciona:
+- $¿0R0?$: En este caso sí, por lo que $0 \in [0]$
+- $¿1R0?$: No, por lo que $1 \notin [0]$
+- $¿2R0?$: No, por lo que $2 \notin [0]$
+- $¿3R0?$: En este caso sí, por lo que $3 \in [0]$
+- $¿4R0?$: No, por lo que $4 \notin [0]$
+
+Por lo tanto definiremos $[0] =\{0,3\}$.
+
+Esto lo podemos hacer por cada elemento del conjunto y ir obteniendo las relaciones.
+
+Algunas caracteristicas son:
+- Para cada $x \in X, [x]_{R} \neq \emptyset$.
+- Si $xRy$, entonces $[x]_{R}=[y]_{R}$.
+
+
+
+### Relación de congruencia
+Sea $m$ un número entero, se ha definido la $R_{m}$, como:
+$x\equiv y \text{ mód m si }y-x$ es múltiplo de m.
+
+En el caso de m=0, siempre se cumple, al igual que con m=1.
+
+Sin embargo en el caso de m=2, ya debemos en tener en cuenta que debe o no ser par para poder cumplir la relación que hemos establecido, es por ello que tenemos 2 formas: O par o Impar.
+
+Esto lo escribimos de la siguiente manera
+$[0]_{2}= \{\dots -2,0,2 \dots\}$.
+
+> Por completar
+{.is-warning}
