@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-23T07:34:39.406Z
+date: 2025-09-24T20:48:54.976Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -238,7 +238,57 @@ Para la composición de aplicaciones, poniendo de ejemplo $X,Y,Z$ son cuatro con
 - Si $f$ es biyectiva, entonces existe $h: Y \rightarrow X$, que provoca $f \circ h = Id_{y}$. En este caso solo hay una aplicación que puede cumplir esto, y se denomina la inversa de f, llamada $f^{-1}$.
 - Si f y g son biyectivas, su inversa se expresa como $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$.
 
-> Dudas
+# Relaciones
+Vamos a definir las relaciomes con el siguiente ejemplo:
+
+Consiremos un conjunto $X = \{0,1,2,3,4\}$ y dados $x,y \in X$ vamos a decir que $x$ está relacionado con $y$ si como $x + 2y$ es múltiplo de 4. Si llamamos R a está relación, la definiremos como: $0R0$ (0 está relacionado con 0, ya que si x=0 y y=0, el resultado es múltiplo de 4, que es 0.
+
+Este tipo de relaciónes, las llamaremos relaciónes binarias, ya que pueden o no ser.
+
+## Binario
+Las relaciones binarias son aquellas donde se pueden dar dos casos, o es correcto o es falso lo que se plantea. Es decir, se cumple o no.
+
+Con el ejemplo anterior, podemos describir las relaciónes de la siguiente manera:
+$R = \{(0,0),(0,3),(3,0),(3,3),(1,1),(1,4),(4,1),(4,4),(2,2)\}$.
+
+Observando bien los elementos obtenidos, podemos también hacer unos subconjuntos de la relación, en este caso obervamos que tenemos el $\{0,3\}$,$\{1,4\}$ y $\{2\}$.
+
+Podemos decir por lo tanto que hemos creado subconjuntos de $X$, en tres subconjuntos $\{0,3\}$,$\{1,4\}$ y $\{2\}$. Se conoce como una partición del conjunto $X$.
+
+Las particiones de un conjunto, tienen una serie de cualidades:
+- $A_{i}= \emptyset$: Una partición con un valor, no puede ser un conjunto vació.
+- $A_{1} \cup A_{2}\dots \cup A_{n}= X$ : La unión de todos las particiones da como resultado el conjunto.
+- Si $i \neq j$ entonces $A_{i} \cap A_{j}$ : La intersacción de dos particiones es el conjunto vacío.
+
+
+Una relación binaria se define como dado un conjunto $X$, una relación binaria de este conjunto es un subconjunto de $X \times X$.
+
+Si dado un conjunto $X$, y una relación $R \subseteq X \times X$, cuando $(x,y) \in R$, diremos que $y$, estña relacionado con $x$, de la siguiente manera: $xRy$, en caso contrario diremos $xR/y$ 
+> Debe ser la raya enmedio de la R, sin embargo no he encontrado de momento ese simbolo.
+{.is-danger}
+
+
+Dentro de las relaciones binarias, podemos encontrar subrelaciones.
+> A revisar por el profesor
 {.is-warning}
 
+Estas son:
+- Relación de igualdad: Donde dado una relación, ambos valores son el mismo.
+- Relación de orden natural: Un valor va a ser superior a otro.
+- Relación de divisibilidad: Si y es múltiplo de x, o x divide a y.
+- Relación de inclusión: Si dentro del espacio de $X$, el conjunto $A \subseteq B$, ambos pertenecientes a $X$.
+- Relación de congruencia: Se explicará en detalle.
 
+
+Ahora vamos a clasificar las relaciones binarias en:
+- Reflexiva: El mismo valor pertenece a la relación.
+- Simétrica: Ambos valores se pertenecen en la relación.
+- Antisimétrica: Ambos valores en realidad es el mismo valor.
+- Transitiva: Si un valor está relacionado con uno y este último está relacionado a otro, decimos que el primero está relacionado con el último.
+
+### Relaciones de equivalencia
+Con esto descrito, podemos decir que una relación $R$ es de equivalencia cuando cumple que es: reflexiva, simétrica y transitiva.
+
+Podemos denotar las relaciones de equivalencia de la siguiente manera $[x]_{R}$. Por ejemplo:
+
+Sea $X=\{0,1,2,3,4\}$ y $R$ la relación en $X$ está dada como $xRy$ si $x+2y$ es múltiplo de 3.
