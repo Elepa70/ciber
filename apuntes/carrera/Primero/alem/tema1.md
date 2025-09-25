@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-25T18:43:41.499Z
+date: 2025-09-25T18:54:05.453Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -335,3 +335,11 @@ O lo que es lo mismo:
 Y para saber donde pertenecerá un valor a uno de estas relaciones, solo deberemos dividir el valor con el número a relacionar, por ejemplo, dividimos $145$ entre $3$ y nos dara cociente $48$ y resto $1$, por lo que pertenece a $[1]_{3}$
 
 Con esto podemos ver que siempre que tengamos un número, podemos encontrar la relación de congruencia hasta ese mismo valor. Es decir dado n, vamos a tener $[0]_{n},[1]_{n},[2]_{n},[3]_{n},[4]_{n}\dots[n-1]_{n}$
+
+### Relación de orden
+Una relación de orden, la describimos como una relación binaria dodne se comple que es **reflexiva,antisimétrica y transitiva.**
+
+Cuando nos referemios a una relación $R$, diremos que $(X,R)$ es un conjunto ordenado. Sin embargo, cuando hablamos de una relación de orden, usaremos otros simbolos para indicarla como $\leq,\mid,\subseteq$. Por ejemplo $(X,\mid)$.
+
+Sea $(X,\mid)$, un conjunto ordenado, y para dos elementos cualquiera perteneciente a $X$, como son $x$ e $y$, si tenemos que $x\leq y$ o $y \leq x$, diremos que es un conjunto totalmente ordenado. Un ejemplo puede ser los números naturales ($\mathbb{N}$), donde el 2 es menor a 3, y así sucesivamente, hay un orden.
+
