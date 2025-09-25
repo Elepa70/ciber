@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-24T21:00:08.997Z
+date: 2025-09-25T18:43:41.499Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -29,7 +29,7 @@ Un conjunto queda determinado por sus **elementos** y debe ser escritas mediante
 Dado un conjunto, podemos crear un conjunto con elementos del conjunto anterior, creando lo que llamamos un  **subconjunto**.
 
 También cabe la posibilidad de que no seamos capaces de poder describir la totalidad del conjunto, como puede ser el caso de densidad de elementos que tiene.
-Un ejemplo lo podemos ver con $\mathbb{N,Z,Q,R\text{ o }C}$
+Un ejemplo lo podemos ver con $\mathbb{N,Z,Q,R\text{ o }C}$.
 
 
 La otra forma de definir un conjunto es **indicando que debe cumplir** para pertenecer a él.
@@ -320,6 +320,18 @@ Sin embargo en el caso de m=2, ya debemos en tener en cuenta que debe o no ser p
 
 Esto lo escribimos de la siguiente manera
 $[0]_{2}= \{\dots -2,0,2 \dots\}$.
+$[1]_{2}= \{\dots -3,-1,1,3 \dots\}$.
 
-> Por completar
-{.is-warning}
+¿Porque es así? Porque si ponemos que $X=0$, es decir $[0]$, nos saldrá que el módulo de $y$ tiene que ser múltiplo de 2, y esto son todos los números pares. Por otro lado con $[1]$, le estaríamos restando 1 a todos los valores que tome $y$, es por ello que serían los impares.
+
+
+Ahora probamos con el número 3, tendriamos los múltiplos de 3 o $[0]_{3}$, aquellos cuya división entre 3 de un resto de 1, es decir $[1]_{3}$ y por último los que cuando hagamos una división entre 3, su resto sea 2 $[2]_{3}$.
+
+O lo que es lo mismo:
+- $[0]_{3} = \{x \in \mathbb{Z} : 0  \equiv x\text{ } mód \text{ } 3\} = \{x \in \mathbb{Z}:x \text{ es múltiplo de }3.\}$.
+- $[1]_{3} = \{x \in \mathbb{Z} : 1  \equiv x\text{ } mód \text{ } 3\} = \{x \in \mathbb{Z}:x-1 \text{ es múltiplo de }3.\}$.
+- $[2]_{3} = \{x \in \mathbb{Z} : 2  \equiv x\text{ } mód \text{ } 3\} = \{x \in \mathbb{Z}:x-2 \text{ es múltiplo de }3.\}$.
+
+Y para saber donde pertenecerá un valor a uno de estas relaciones, solo deberemos dividir el valor con el número a relacionar, por ejemplo, dividimos $145$ entre $3$ y nos dara cociente $48$ y resto $1$, por lo que pertenece a $[1]_{3}$
+
+Con esto podemos ver que siempre que tengamos un número, podemos encontrar la relación de congruencia hasta ese mismo valor. Es decir dado n, vamos a tener $[0]_{n},[1]_{n},[2]_{n},[3]_{n},[4]_{n}\dots[n-1]_{n}$
