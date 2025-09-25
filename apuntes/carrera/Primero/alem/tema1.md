@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-25T18:54:05.453Z
+date: 2025-09-25T19:43:10.570Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-18T13:04:27.935Z
@@ -341,5 +341,38 @@ Una relación de orden, la describimos como una relación binaria dodne se compl
 
 Cuando nos referemios a una relación $R$, diremos que $(X,R)$ es un conjunto ordenado. Sin embargo, cuando hablamos de una relación de orden, usaremos otros simbolos para indicarla como $\leq,\mid,\subseteq$. Por ejemplo $(X,\mid)$.
 
-Sea $(X,\mid)$, un conjunto ordenado, y para dos elementos cualquiera perteneciente a $X$, como son $x$ e $y$, si tenemos que $x\leq y$ o $y \leq x$, diremos que es un conjunto totalmente ordenado. Un ejemplo puede ser los números naturales ($\mathbb{N}$), donde el 2 es menor a 3, y así sucesivamente, hay un orden.
+Sea $(X,\mid)$, un conjunto ordenado, y para dos elementos cualquiera perteneciente a $X$, como son $x$ e $y$, si tenemos que $x\leq y$ o $y \leq x$, diremos que es un conjunto totalmente ordenado. Un ejemplo puede ser los números naturales ($\mathbb{N}$), donde el 2 es menor a 3, y así sucesivamente, hay un orden total.
 
+
+Sin embargo,en caso de que lo contrario no se cumpla, diremos que tenemos un orden parcial o parcialmente ordenado.
+
+
+
+#### Diagrama de Hasse
+
+Podemos representar los orden establecidos anteriormente de manera grafica, esto lo podemos hacer con flechas, pero lamentablemente no puedo continuar describiendolo en estos apuntes ya que el software no me lo permite. Recomiendo consultar el siguiente vídeo [Diagrama de Hasse de una relacion binaria de orden | 16/23 | UPV - Universitat Politècnica de València - UPV](https://www.youtube.com/watch?v=I7AepBaZ0Q8)
+
+
+Sin embargo vamos a seguir describiendolo.
+
+Podemos describir el orden entre varios números de forma ascendiente y sin redundancia, esto lo hacemos eliminando aquellos elementos que nos sea repetitivos o por el hecho de que es transitiva, no nos hace falta.
+
+> Ojo
+{.is-warning}
+
+El diagrama de Hasse del conjunto $(X,\leq)$ es un grafo cuyo conjunto de véritces es el conjunto $X$, y dados dos elementos $x,y \in X$, hay un lado que une $x$ con $y$ si $x < y$ y no existe $z$ tal que $x < z< y$.
+
+Ahora definiremos algunos elementos notables.
+Sea $(X,\leq)$ un conjunto ordenado, y sea $x \in X$.
+- Definimos que x es maximal (en $X$) si no existe $y \in X$ tal que $x < y$.
+- Definimos que x es máximo (en $X$) si para cualquier $y \in X$ se tiene que $y \leq x$.
+- Definimos que x es minima (en $X$) si no existe $y \in X$ tal que $y < x$.
+- Definimos que x es mínimo (en $X$) si para cualquier $y \in X$ se tiene que $x \leq y$.
+
+
+
+Sea $(X,\leq)$ un conjunto ordenado,$Y \sybseteq X$ un subconjunto de $X$ no vacío y $x \in X$.
+- Decimos que x es cota superior de $Y$ si $y\leq x$ para cualqueri $y \in Y$.
+- Decimos que x es el supremo de Y si es el mínimo del conjunto de las cotas superiores de Y.
+- Decimos que x es cota inferior de $Y$ si $x\leq y$ para cualqueri $y \in Y$.
+- Decimos que x es el ínfimo de Y si es el máximo del conjunto de las cotas inferiores de Y.
