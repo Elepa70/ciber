@@ -2,10 +2,10 @@
 title: Ingeniería Informática
 description: 
 published: true
-date: 2025-09-22T10:12:44.535Z
+date: 2025-09-27T09:16:15.739Z
 tags: 
 editor: markdown
-dateCreated: 2025-09-15T12:08:16.146Z
+dateCreated: 2025-09-25T11:11:12.296Z
 ---
 
 # Ingeniería Informática
@@ -17,7 +17,7 @@ En este caso, los apuntes se harán de la UGR (Universidad de Granada), España.
 {.is-warning}
 
 
-> Es posible que las tareas practicas no se publiquen, los profesores deberán dar el visto bueno.
+> Es posible que las tareas practicas no se publiquen, los profesores deberán dar el visto bueno
 {.is-warning}
 
 
