@@ -2,7 +2,7 @@
 title: Administración de sistemas informáticos en red - General
 description: Pagina de inicio de ASIR
 published: true
-date: 2025-09-27T09:15:36.980Z
+date: 2025-09-27T09:15:40.867Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-25T11:11:09.714Z
@@ -14,7 +14,7 @@ La FP Superior de Administración de Sistemas Informáticos en Red (ASIR), es un
 
 Este ciclo esta dedicado a la actividad de aquellas empresas o entidades que tengan o necesiten de sistemas para la gestión de datos o infraestructuras de red. Es decir, esta dedicado para el control de la información de la información mediante las bases de datos y también para aquellos que necesiten un mantenimiento y gestión de Internet, Intranet o Extranet. 
 
-Ejemplo práctico: Tienes una empresa y necesitas informatizarla, lo ideal es contactar con un administrador de sistemas, ya que esta es la persona que idealizará un plan de red, indicando los puntos de acceso (Wi-Fi) y la gestión de datos (Bases de datos)
+Ejemplo práctico: Tienes una empresa y necesitas informatizarla, lo ideal es contactar con un administrador de sistemas, ya que esta es la persona que idealizará un plan de red, indicando los puntos de acceso (Wi-Fi) y la gestión de datos (Bases de datos).
 
 ## Acceso a ASIR
 [ASIR - Primer año](asir1)
