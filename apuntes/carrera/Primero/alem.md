@@ -2,14 +2,14 @@
 title: Álgebra Lineal y Estructuras Matemáticas
 description: 
 published: true
-date: 2025-09-18T17:30:31.858Z
+date: 2025-09-27T09:16:49.703Z
 tags: 
 editor: markdown
-dateCreated: 2025-09-15T16:54:18.342Z
+dateCreated: 2025-09-25T11:12:36.074Z
 ---
 
 # Álgebra Lineal y Estructuras Matemáticas
-En está página web podrá encontrar los distintos temarios que corresponden a esta asignatura.
+En está página web podrá encontrar los distintos temarios que corresponden a esta asignatura
 
 - [Conjunto, aplicaciones y relaciones](tema1)
 
