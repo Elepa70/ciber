@@ -2,17 +2,17 @@
 title: Primer año de Ingeniería Informática
 description: 
 published: true
-date: 2025-09-22T10:14:12.867Z
+date: 2025-09-27T09:16:34.940Z
 tags: 
 editor: markdown
-dateCreated: 2025-09-15T14:07:08.654Z
+dateCreated: 2025-09-25T11:11:43.477Z
 ---
 
 # Primer Año de Ingeniería Informática
 En esta sección encontrarás los enlaces hacia las asignaturas dividida en primer o segundo cuatrimestre.
 
 ## Primer cuatrimestre
-> Hasta que no estemos proximos a fechas de examenes, todos los contenidos pueden tener erratas o fallos en contenido.
+> Hasta que no estemos proximos a fechas de examenes, todos los contenidos pueden tener erratas o fallos en contenido
 {.is-warning}
 
 - [Algebra Lineal y Estructura Matemáticas](alem)
