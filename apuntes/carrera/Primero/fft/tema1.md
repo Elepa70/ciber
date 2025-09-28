@@ -2,10 +2,10 @@
 title: Conceptos básicos
 description: 
 published: true
-date: 2025-09-21T19:52:30.295Z
+date: 2025-09-28T10:54:20.485Z
 tags: 
 editor: markdown
-dateCreated: 2025-09-21T19:17:32.178Z
+dateCreated: 2025-09-25T11:15:04.332Z
 ---
 
 # Conceptos básicos generales de circuitos
