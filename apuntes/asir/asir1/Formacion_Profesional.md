@@ -2,15 +2,15 @@
 title: Formación y orientación laboral
 description: 
 published: true
-date: 2025-01-15T16:47:43.957Z
+date: 2025-09-29T19:39:24.111Z
 tags: 
 editor: markdown
-dateCreated: 2024-12-20T19:27:24.148Z
+dateCreated: 2025-09-29T19:29:15.847Z
 ---
 
 # Formación y orientación laboral
 ## Introducción
-En este módulo va a encontrar información con respecto a nuestro futuro laboral, los derechos de los trabajadores o como entender algunas cosas como puede ser la nómina.
+En este módulo va a encontrar información con respecto a nuestro futuro laboral, los derechos de los trabajadores o como entender algunas cosas como puede ser la nómina
 
 
 ## Como está dividido
