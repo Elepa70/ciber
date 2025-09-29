@@ -2,7 +2,7 @@
 title: Gestión de bases de datos
 description: 
 published: true
-date: 2025-09-29T19:39:00.338Z
+date: 2025-09-29T19:39:03.370Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:29:13.322Z
@@ -16,7 +16,7 @@ Bienvenido a la asignatura de base de datos. En esta asignatura, aprenderemos a 
 ## Como está dividido
 Esta asignatura está dividido en 6 temas, cada uno tendra una explicación y ejercicios de interés.
 ## Recomendaciones
-Es recomendable tener conocimientos de lógica
+Es recomendable tener conocimientos de lógica.
 ### Temarios
 A continuación tendrá todos los enlaces hacia los apuntes.
 [Introducción a Base de Datos](introduccion)
