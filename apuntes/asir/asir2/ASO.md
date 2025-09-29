@@ -1,11 +1,11 @@
 ---
 title: Administración de sistemas operativos
 description: 
-published: true
-date: 2024-12-26T16:10:03.035Z
+published: false
+date: 2025-09-29T19:42:00.029Z
 tags: 
 editor: markdown
-dateCreated: 2024-12-20T19:28:08.042Z
+dateCreated: 2025-09-29T19:29:28.554Z
 ---
 
 # Header
