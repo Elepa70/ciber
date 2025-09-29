@@ -2,10 +2,10 @@
 title: Pagina Inicio
 description: Inicio de la página web.
 published: true
-date: 2025-09-27T09:14:49.713Z
+date: 2025-09-29T19:37:47.058Z
 tags: 
 editor: markdown
-dateCreated: 2025-09-25T11:10:49.547Z
+dateCreated: 2025-09-29T19:27:54.366Z
 ---
 
 # ¡Bienvenido!
@@ -25,4 +25,4 @@ Soy Pablo Sánchez Hidalgo, estudiante de la Ingeniería Informática y en ciert
 En esta página va a poder tener apuntes con respecto a Administración de Sistemas Informaticos en Red, de Ciberseguridad en Entornos de la Información y Ingeniería Informática. A su vez, habrá ejercicios planteados y resueltos, y también podrá encontrar algunos proyectos que he hecho o estoy desarrollando.
 ## Enlace interesante
 Os recomiendo enormemente visitar los siguientes enlaces, si quieres más conocimientos.
-- [Sproffes](https://sproffes.github.io/resources/): Página web con recursos relacionas con Hacking o Forense, entre otras cosas.
+- [Sproffes](https://sproffes.github.io/resources/): Página web con recursos relacionas con Hacking o Forense, entre otras cosas
