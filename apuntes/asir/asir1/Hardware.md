@@ -2,10 +2,10 @@
 title: Fundamentos de Hardware
 description: 
 published: true
-date: 2025-01-15T16:52:02.228Z
+date: 2025-09-29T19:39:42.111Z
 tags: 
 editor: markdown
-dateCreated: 2024-12-20T19:27:32.967Z
+dateCreated: 2025-09-29T19:29:18.562Z
 ---
 
 # Hardware
@@ -14,7 +14,7 @@ En este módulo, vamos a ver los todo aquello relacionado con Hardware o la part
 
 
 ## Como está dividido
-Actualemtne solo hay un temario, sin embargo se debe elaborar otro temario relacionado al binario y hexadecimal.
+Actualemtne solo hay un temario, sin embargo se debe elaborar otro temario relacionado al binario y hexadecimal
 ## Recomendaciones
 No es necesario tener conocimientos previos.
 ### Temarios
