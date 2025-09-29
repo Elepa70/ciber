@@ -2,10 +2,10 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-25T19:43:10.570Z
+date: 2025-09-29T19:36:23.097Z
 tags: 
 editor: markdown
-dateCreated: 2025-09-18T13:04:27.935Z
+dateCreated: 2025-09-29T19:32:14.565Z
 ---
 
 # Conjuntos, Aplicaciones y Relaciones
@@ -376,3 +376,50 @@ Sea $(X,\leq)$ un conjunto ordenado,$Y \sybseteq X$ un subconjunto de $X$ no vac
 - Decimos que x es el supremo de Y si es el mínimo del conjunto de las cotas superiores de Y.
 - Decimos que x es cota inferior de $Y$ si $x\leq y$ para cualqueri $y \in Y$.
 - Decimos que x es el ínfimo de Y si es el máximo del conjunto de las cotas inferiores de Y.
+
+#### Ordenes lexicográfico y producto.
+
+Ahora vamos a ver dos formas en las que podemos realizar el diagrama de hasse. Esto lo vveremos con productos cartesianos (Es decir, $(0,0)$ o $X \times X$.
+
+En el lexicográfico debemos prestar atención al primer elemento de la pareja, y ya después al segundo "Como un diccionario". Este tipo de orden es mucho más rápido y sencillo.
+
+Sin embargo con el producto, debemos tener en cuenta ambos elementos de la pareja, si en uno de los elementos tiene menor que el anterior, no podemos asociarlos.
+
+Por eso lo escribimos como:
+$(X,\leq_{1})$,  $(Y,\leq_{1})$
+$(x,y), (x',y') \in X \times Y$
+
+$(x,y)\leq_{lex} (x',y') \text{ si }x<_{1} x' \text{ o } (x=x' \text { e } y\leq_{2}y')$
+
+$(x,y)\leq_{prod} (x',y') \text{ si }x<_{1} x' \text{ e }  y\leq_{2}y')$
+
+Por ejemplo.
+
+Teniendo las parejas $(1,0),(1,2),(2,0) \text{ y } (2,2)$
+
+El orden lexicográfico será el siguiente:
+$$
+  \{2,2\} \\
+     |  \\
+  \{2,0\} \\
+   \  |   \\
+  \{1,2\} \\
+       | \\
+   \{1,0\}
+$$
+
+Sin embargo en producto será:
+$$
+  \text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\{2,2\} \\
+              \text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }/\text{ }\text{ }\text{ }\text{ }\text{ }|   \\
+            \text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }/\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }|   \\
+          \text{ }\text{ }\text{ }\text{ }\text{ }\text{ }/\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }|   \\
+      \text{ }\text{ }\text{ }\text{ }/\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }|   \\
+        \text{ }\text{ }/\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }|   \\
+     / \text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }|   \\
+  \{1,2\}\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }|\text{ }\text{ }\text{ }\text{ }\text{ }    \\
+       |\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\text{ }| \\
+   \{1,0\} \text{ }\text{ }\text{ }\text{ }\text{ }\text{ }\{2,0\}
+$$
+
+Esto es todo de este tema.
