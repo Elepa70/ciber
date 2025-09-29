@@ -2,7 +2,7 @@
 title: Administración de Sistemas Informáticos en Red - Primer año
 description: Página principal de ASIR 1º Año
 published: true
-date: 2025-09-29T19:38:43.254Z
+date: 2025-09-29T19:38:47.684Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:28:44.611Z
@@ -12,7 +12,7 @@ dateCreated: 2025-09-29T19:28:44.611Z
 ## Explicación
 Este es el primer año del curso de ASIR. Es el primer contacto para muchos a la Informatica, tanto como estudio o en general. 
 
-No es necesario acudir de un ciclo medio de Informatica para poder saber que hacer, o haber hecho un Bachillerato Tecnologico para poder comprender los terminos. Estos cursos siempren parten como si no tuvieras conocimiento ninguno de informatica, ya que es normal el acceso desde Bachillerato
+No es necesario acudir de un ciclo medio de Informatica para poder saber que hacer, o haber hecho un Bachillerato Tecnologico para poder comprender los terminos. Estos cursos siempren parten como si no tuvieras conocimiento ninguno de informatica, ya que es normal el acceso desde Bachillerato.
 
 ## Módulos
 A continuación podrá dirigirse a los módulos que prefiera:
