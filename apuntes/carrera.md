@@ -2,15 +2,15 @@
 title: Ingeniería Informática
 description: 
 published: true
-date: 2025-09-27T09:16:19.764Z
+date: 2025-09-29T19:42:42.367Z
 tags: 
 editor: markdown
-dateCreated: 2025-09-25T11:11:12.296Z
+dateCreated: 2025-09-29T19:28:18.082Z
 ---
 
 # Ingeniería Informática
 ## ¿Qué es?
-Son estudios universitarios, donde se enfoca el aprendizaje de la ciencia de la computación, electrónica y software.
+Son estudios universitarios, donde se enfoca el aprendizaje de la ciencia de la computación, electrónica y software
 
 En este caso, los apuntes se harán de la UGR (Universidad de Granada), España.
 > No van a estar todas las asignaturas/módulos disponibles, ya que se han convalidado gracias a la FP
