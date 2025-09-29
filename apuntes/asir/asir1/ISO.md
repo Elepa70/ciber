@@ -2,10 +2,10 @@
 title: Implantación de sistemas operativos
 description: 
 published: true
-date: 2025-01-15T17:08:10.588Z
+date: 2025-09-29T19:40:15.113Z
 tags: 
 editor: markdown
-dateCreated: 2024-12-20T19:27:41.590Z
+dateCreated: 2025-09-29T19:29:21.044Z
 ---
 
 # Implantación de sistemas operativos
@@ -13,7 +13,7 @@ dateCreated: 2024-12-20T19:27:41.590Z
 En este módulo vamos a hablar sobre los sistemas operativos, como funciona un ordenador por dentro, y como funcionan los distintos sistemas operativos existentes.
 
 ## Como está dividido
-El temario está dividido en 4 temas principales, aunque el tema Linux todavía no ha sido explicado.
+El temario está dividido en 4 temas principales, aunque el tema Linux todavía no ha sido explicado
 ## Recomendaciones
 Se recomienda tener conocimientos previos de lógica.
 ### Temarios
