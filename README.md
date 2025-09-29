@@ -2,10 +2,10 @@
 title: README
 description: 
 published: false
-date: 2024-11-04T17:52:07.260Z
+date: 2025-09-29T19:28:09.908Z
 tags: 
 editor: markdown
-dateCreated: 2024-10-30T18:17:10.033Z
+dateCreated: 2025-09-29T19:27:46.641Z
 ---
 
 # Documentación en GitHub
