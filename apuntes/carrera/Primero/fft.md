@@ -2,14 +2,14 @@
 title: Fundamentos Físicos y Tecnológicos
 description: 
 published: true
-date: 2025-09-28T10:53:54.500Z
+date: 2025-09-29T19:43:20.045Z
 tags: 
 editor: markdown
-dateCreated: 2025-09-25T11:12:40.824Z
+dateCreated: 2025-09-29T19:29:48.981Z
 ---
 
 # Fundamentos Físicos y Tecnológicos
-En está página web podrá encontrar los distintos temarios que corresponden a esta asignatura.
+En está página web podrá encontrar los distintos temarios que corresponden a esta asignatura
 
 - [Conceptos básicos](tema0)
 - [Corriente continua](tema1)
