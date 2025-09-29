@@ -2,10 +2,10 @@
 title: Lenguajes de marcas y sistemas de gestión de información
 description: 
 published: false
-date: 2025-01-09T12:54:43.713Z
+date: 2025-09-29T19:40:32.850Z
 tags: 
 editor: markdown
-dateCreated: 2024-12-20T19:27:50.234Z
+dateCreated: 2025-09-29T19:29:23.485Z
 ---
 
 # Header
