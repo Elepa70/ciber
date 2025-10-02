@@ -2,7 +2,7 @@
 title: Sucesiones y series
 description: 
 published: true
-date: 2025-10-02T10:40:20.172Z
+date: 2025-10-02T19:05:20.635Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-01T20:11:42.684Z
@@ -71,3 +71,35 @@ En nuestros ejemplos diremos:
 
 
 Con esto podemos decir que las sucesiones convergentes están acotadas, sin embargo las sucesiones acotadas pueden o no ser convergentes.
+
+### Sucesiones monotomas
+La podemos definir como en una sucesión, siempre encontramos un valor donde dependiendo del puesto que ocupe, tendrá un valor mayor que el anterior. Ejemplo de estas puede ser la 2º del ejemplo.
+
+Es decir, diremos que $\{X_{n}\}$ es creciente si $x_{n}\leq x_{n+1}, \forall \text{ }n \in \mathbb{N}$.
+Pasa de forma similar cuando decimos que $\{X_{n}\}$ es decreciente, solo que $x_{n}\leq x_{n-1}, \forall \text{ }n \in \mathbb{N}$.
+
+
+## Propiedades de los limites / Proposición
+Vamos a ver una serie de propiedades de los limites.
+
+Primero vamos a definir, Sean $\{x_{n}\}$ y $\{y_{n}\}$ dos sucesiones convergentes. Tenemos las siguientes propiedades:
+
+1. $\lim (x_{n}+y_{n}) =\lim x_{n}+\lim y_{n}$,
+2. $\lim (x_{n}*y_{n}) =\lim x_{n}*\lim y_{n}$,
+3. Si $\lim y_{n} \neq 0$ entonces  $\lim\frac{x_{n}}{y_{n}} =\frac{\lim(x_{n})}{\lim(y_{n})}$,
+4. Si $x_{n} \leq y_{n} \forall n$ entonces  $\lim(x_{n}) \leq \lim( y_{n})$
+5. Si $x_{n}\leq y_{n} \leq z_{n}, \forall \text{ }n \in \mathbb{N}$ y $\lim x_{n}=\lim z_{n}$. Entonces $\lim x_{n} = \lim y_{n} = \lim z_{n}$. Esta se conoce como regla del sandwich, donde dado los limites que tienen al mismo lado, entonces cualquier numero intermedio también tiende al mismo limite.
+6. Si $\{X_{n}\}$ esta acotada y $\lim y_{n} = 0$ entonces: $\lim x_{n} * y_{n} = 0$. O lo que es lo mismo, una sucesión acotada multiplicada por un límite que tiende a 0, es 0.
+
+
+## Principio de inducción
+Este principio lo usaremos cuando queremos demostrar que los sucesos pertenecen a un conjunto, vamos a verlo con un ejemplo.
+
+Definimos los números reales como $\mathbb{N} = \{1,2,3,\dots\}$ verificando:
+1. $1\in \mathbb{N}$
+2. Si $n \in \mathbb{N} => n+1 \in \mathbb{N}$
+
+Con los dos primeros elementos de una sucesión cumplan estas propiedades, podemos decir que todos los elementos de la sucesión pertenecen al conjunto $\mathbb{N}$.
+
+> Susceptible a error, se actualizá.
+{.is-warning}
