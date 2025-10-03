@@ -2,7 +2,7 @@
 title: Corriente continua
 description: 
 published: true
-date: 2025-10-03T19:16:32.229Z
+date: 2025-10-03T19:29:49.120Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:25.200Z
@@ -95,3 +95,34 @@ Debido a que la formula de la potencia es: $p=v*i$ y con la ley de ohm $v=i*R$, 
 El condensador es una constante que cumple la relación entre la carga acumulada y la diferencia de potencial. Se denomina capacidad (C).
 $C=\frac{q}{v}$.
 
+
+## Circuitos equivalente
+Un circuito equivalente es aquel circuito ficticio, que se comporta eléctricamente igual que el original.
+
+## Conversiones estrella, triangulo, circuito
+Estas conversiones nos sirve para dar otro punto de vista a los circuitos que se nos plantea. Se usa normalmente con tres elementos, primero debemos designar tres puntos claves, uno donde convergen ambos puntos y los demás.
+
+### Configuración estrella
+Una vez tengamos claro cuales son nuestros puntos, vamos a realizar una diagonal una diagonal desde nuestros puntos inferiores (ejemplo B y C), que contengan los elementos que hemos seleccionado (Resistencias para que sea mas facil). Ambos deben coincidir en un punto donde trazaremos una línea vertical con el otro elemento que nos falta (A).
+
+### Configuración triangulo
+
+En este caso, lo que haremos será trazar un triangulo equilatero, donde cada vertice sea nuestros puntos, entre media colocaremos las resistencias. Este es más simple, sin embargo las formulas pueden llegar a confudir.
+
+### Transormación estrella <-> triangulo
+Ahora vamos a ver una serie de formulas para poder realizar de forma correcta las transformaciones.
+
+#### De Triangulo a Estrella
+$R_{A}=\frac{R_{2}*R_{3}}{R_{1}+R_{2}+R_{3}}$.
+$R_{B}=\frac{R_{1}*R_{3}}{R_{1}+R_{2}+R_{3}}$.
+$R_{C}=\frac{R_{1}*R_{2}}{R_{1}+R_{2}+R_{3}}$.
+
+Por lo tanto:
+$R_{Estrella}=\frac{1}{3}R_{Triangulo}$.
+#### De Estrella a Triangulo
+$R_{1}=\frac{R_{A}*R_{B}+R_{A}*R_{C}+R_{B}*R_{C}}{R_{A}}$.
+$R_{2}=\frac{R_{A}*R_{B}+R_{A}*R_{C}+R_{B}*R_{C}}{R_{B}}$.
+$R_{3}=\frac{R_{A}*R_{B}+R_{A}*R_{C}+R_{B}*R_{C}}{R_{C}}$.
+
+Por lo tanto:
+$R_{Triangulo}=3R_{Estrella}$.
