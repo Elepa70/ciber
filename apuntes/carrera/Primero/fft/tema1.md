@@ -2,10 +2,10 @@
 title: Corriente continua
 description: 
 published: true
-date: 2025-09-28T11:17:06.569Z
+date: 2025-10-03T18:13:57.842Z
 tags: 
 editor: markdown
-dateCreated: 2025-09-28T11:17:06.569Z
+dateCreated: 2025-09-29T19:32:25.200Z
 ---
 
 # Corriente continua
@@ -55,3 +55,18 @@ $v_{1}+v_{2}-v_{3}+v_{4}=0$
 
 
 Esto lo podemos observar a como tenemos el sentido del circuito y las resistencias.
+
+## Clasificación de elementos
+Los elementos dentro de un circuito podemos clasificarlos, según su comportamineto energético.
+- Elementos activos: Son aquellos que aportan un suministro eléctrico o reducen el aportado. Podemos encontrar generadores y semiconductores.
+- Elementos pasivos: A diferencia de los activos, estos se dedican a fluctuar con la energia, pudiendo disiparla (Resitencia), almacenar la energia (Bobina o Condensador).
+
+## Las fuentes
+> Esto puede llegar a ser confuso.
+{.is-warning}
+
+### Fuentes ideales
+Las fuentes ideales, se presentan como esas fuentes donde es independiente a lo que ocurra, es decir, le tenemos un control completo.
+- Fuente Independiente Ideal de Tensión (FIIT): Estas fuentes son como las del laboratorio de prácticas, son las que alteramos o modificamos según lo que deseemos para añadirle más o menos tensión, debemos calcular la intensidad con la que fluctua el circuito.
+
+- Fuente Independiente Ideal de Intensidad (FIII): Estas sin embargo, son aquellas donde manejamos la intensidad de la corriente, y debemos calcular la tensión. Es el contrario de la FIIT
