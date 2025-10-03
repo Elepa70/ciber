@@ -2,7 +2,7 @@
 title: Corriente continua
 description: 
 published: true
-date: 2025-10-03T18:13:57.842Z
+date: 2025-10-03T19:16:32.229Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:25.200Z
@@ -67,6 +67,31 @@ Los elementos dentro de un circuito podemos clasificarlos, según su comportamin
 
 ### Fuentes ideales
 Las fuentes ideales, se presentan como esas fuentes donde es independiente a lo que ocurra, es decir, le tenemos un control completo.
-- Fuente Independiente Ideal de Tensión (FIIT): Estas fuentes son como las del laboratorio de prácticas, son las que alteramos o modificamos según lo que deseemos para añadirle más o menos tensión, debemos calcular la intensidad con la que fluctua el circuito.
+- Fuente Independiente Ideal de Tensión (FIIV): Estas fuentes son como las del laboratorio de prácticas, son las que alteramos o modificamos según lo que deseemos para añadirle más o menos tensión, debemos calcular la intensidad con la que fluctua el circuito.
 
 - Fuente Independiente Ideal de Intensidad (FIII): Estas sin embargo, son aquellas donde manejamos la intensidad de la corriente, y debemos calcular la tensión. Es el contrario de la FIIT
+
+
+### Fuentes reales
+Estas fuentes a diferencia de las ideales, son las que suelen usarse y las que suelen verse en el mundo real.
+- Fuente Independiente Real de Tensión (FIRV): Es similar a FIIV, sin embargo con una resistencia en serie, donde disminuira el potencial a medida que aumenta la intensidad que suministra.
+
+- Fuente Independiente Real de Intensidad (FIRI): Similar a FII, con una intensidad en paralelo, con la misma intención que FIRV.
+
+### Fuentes dependientes
+Las fuentes dependientes son auqellas fuetnes de tensión/intensidad (ideales), donde las magnitudes depende de otra tensión o intensidad existente.
+
+## Resistencia
+La resistencia la definimos como un elemento pasivo que representa la oposición que ofrece un cuerpo al paso de la corriente eléctrica, disipando la energía en calor. La podemos ver con la formula:
+$R = p \frac{l}{A}$, siendo R Resistencia, p potencial de resistencia, l longitud, A diametro. Sin embargo usualmente usamos la ley de Ohm $Resistencia = \frac{Voltaje}{Intensidad}$.
+
+> Es recomendable mirar la guía de colores ya que puede facilitar mucho a la hora de hacer actividades prácticas.
+{.is-info}
+
+
+Debido a que la formula de la potencia es: $p=v*i$ y con la ley de ohm $v=i*R$, podemos juntar las formulas para $p=\frac{v^{2}}{R}$ o $p=i^{2}*R$.
+
+## Condensador
+El condensador es una constante que cumple la relación entre la carga acumulada y la diferencia de potencial. Se denomina capacidad (C).
+$C=\frac{q}{v}$.
+
