@@ -2,7 +2,7 @@
 title: Corriente continua
 description: 
 published: true
-date: 2025-10-03T19:29:49.120Z
+date: 2025-10-03T19:30:08.876Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:25.200Z
@@ -114,14 +114,18 @@ Ahora vamos a ver una serie de formulas para poder realizar de forma correcta la
 
 #### De Triangulo a Estrella
 $R_{A}=\frac{R_{2}*R_{3}}{R_{1}+R_{2}+R_{3}}$.
+
 $R_{B}=\frac{R_{1}*R_{3}}{R_{1}+R_{2}+R_{3}}$.
+
 $R_{C}=\frac{R_{1}*R_{2}}{R_{1}+R_{2}+R_{3}}$.
 
 Por lo tanto:
 $R_{Estrella}=\frac{1}{3}R_{Triangulo}$.
 #### De Estrella a Triangulo
 $R_{1}=\frac{R_{A}*R_{B}+R_{A}*R_{C}+R_{B}*R_{C}}{R_{A}}$.
+
 $R_{2}=\frac{R_{A}*R_{B}+R_{A}*R_{C}+R_{B}*R_{C}}{R_{B}}$.
+
 $R_{3}=\frac{R_{A}*R_{B}+R_{A}*R_{C}+R_{B}*R_{C}}{R_{C}}$.
 
 Por lo tanto:
