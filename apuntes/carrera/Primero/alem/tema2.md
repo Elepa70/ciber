@@ -1,8 +1,8 @@
 ---
 title: Aritmética entera y modular
 description: 
-published: false
-date: 2025-10-02T20:29:37.457Z
+published: true
+date: 2025-10-06T15:30:45.191Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:45:03.771Z
