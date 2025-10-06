@@ -2,7 +2,7 @@
 title: Aritmética entera y modular
 description: 
 published: true
-date: 2025-10-06T15:30:45.191Z
+date: 2025-10-06T18:37:40.117Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:45:03.771Z
@@ -127,4 +127,62 @@ $11001010 + 10100111 = 1\text{ } 0111\text{ } 0001$
 
 Como podemos observar, tenemos 1 bit de más que es desechado entonces el valor que nos da es:
 $01110001$, que le corresponde al número $113$
-# Divisibilidad 
+
+# Divisibilidad
+Divisibilidad o también conocido como Teorema Fundamental de la Aritmetica.
+
+Encontramos la definición de la siguiente manera:
+Sean $a,b$, dos números enteros. Decimos que:
+- $a \text{ divide a } b$.
+- $b \text{ es multiplo de } a$.
+- $a \text{ es divisor de } b$ y por lo tanto lo escribimos como $a|b$.
+
+**SI** existe un número entero $c$ tal que $b=a*c$.
+
+Podemos encontrar entre sus propiedades:
+- Para cualquier $a \in \mathbb{Z}$ se tiene que $1|a$ y $a|0$.
+- Si $a|1$ entonces a = 1 ó a = -1. Pasa alreves con el cero que es $0|a$.
+- Si $a|b$ y $b|a$ entonces $a=\pm b$.
+- Es transitiva.
+
+## Máximo común divisor
+Sean $a,b$ dos números enteros, decimos que d es un máximo común divisor de $a$ y $b$ si:
+- $d|a$ y $d|b$ (d es divisior común de a y b)
+- $c|a$ y $c|b$ entonces $c|d$ (De todos los divisores, es el más grande).
+
+Por ejemplo: $mcd(30,36)=6$
+
+## Mínimo común múltiplo
+Sean $a,b$ dos números enteros, decimos que m es un mínimo común múltiplo de $a$ y $b$ si:
+- $a|m$ y $b|m$ (m es mñultiplo común de a y b)
+- $a|n$ y $b|n$ entonces $m|n$ (De todos los múltiplos es el más pequeño).
+
+Por ejemplo: $mcm(30,36)=180$
+
+## Números primos
+Podemos definir los números primos de dos maneras:
+- La más conocida: Los números primos son aquellos cuyos únicos divisores son 1 y el mismo. (Además de -1 y si mismo pero en negativo.
+- Matématicamente: Un número primo es aquel número entero, distinto de -1,0 y 1, que cumple: $p|ab => p|a \text{ ó } p|b$
+
+## Teorema fundamental de la aritmética
+Nos dice que podemos expresar cualquier número de la siguiente manera:
+Sea $n \geq 2: n=p_{1}^{e_{1}}*p_{2}^{e_{2}}*p_{r}^{e_{r}}$
+
+Ejemplo, podemos expresar el número 700 como $700=2^{2}*3^{0}*5^{2}*7$
+
+Como te has habrá dado cuenta, hemos puesto $3^{0} = 1$, esto es porque podemos añadir cualquier valor, siempre y cuando lo elevemos a 0, excluyendo cuando sea esencial.
+
+Bien con el ejemplo anterior podemos expresar 700 como:
+$2^{0}*5^{0}*7^{0}=1$.
+$2^{0}*5^{1}*7^{0}=5$.
+$2^{0}*5^{2}*7^{0}=25$...
+
+$2^{2}*5^{2}*7^{1}=700$.
+
+Como resultado obtenemos que $D(700)=\{1,2,4,5,7,10,14,20,25,28,35,50,70,100,140,175,350,700\}$.
+
+Todos los valores son los divisores de 700.
+
+Ahora bien, si queremos expresar los divisores comunes entre dos valores, podemos aplicar lo siguiente:
+$mcd(a,b)=p_{1}^{min\{\ e_{1},f_{1}\}}*p_{2}^{min\{\ e_{2},f_{2}\}}...$
+$mcm(a,b)=p_{1}^{max\{\ e_{1},f_{1}\}}*p_{2}^{max\{\ e_{2},f_{2}\}}...$
