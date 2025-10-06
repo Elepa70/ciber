@@ -2,7 +2,7 @@
 title: Aritmética entera y modular
 description: 
 published: true
-date: 2025-10-06T18:37:40.117Z
+date: 2025-10-06T20:04:57.923Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:45:03.771Z
@@ -186,3 +186,52 @@ Todos los valores son los divisores de 700.
 Ahora bien, si queremos expresar los divisores comunes entre dos valores, podemos aplicar lo siguiente:
 $mcd(a,b)=p_{1}^{min\{\ e_{1},f_{1}\}}*p_{2}^{min\{\ e_{2},f_{2}\}}...$
 $mcm(a,b)=p_{1}^{max\{\ e_{1},f_{1}\}}*p_{2}^{max\{\ e_{2},f_{2}\}}...$
+
+# Algoritmo de Euclides y su "extensión".
+Para poder expresar un valor de la siguiente manera: $n \geq 2: n=p_{1}^{e_{1}}*p_{2}^{e_{2}}*p_{r}^{e_{r}}$. Primero debemos conocer cuál es su descomposición.
+
+Para ello podemos realizar el motodo convencional, que consiste ir buscando los primos de cada valor, y tras ellos comparar aquellos elementos que se repiten en ambos valores.
+
+Ejemplo para $a=1575$ y $b=363$, descomponiendo ambos valores obtenemos.
+$a=3^{2}*5^{2}*7$ y $a=2^{4}*3*7$, entonces tomaremos los valores $3*5 \text{ y } 7$.
+
+
+
+Sin embargo podemos usar el algoritmo de euclides, este consiste en ir dividiendo los valores hasta encontrar un resto 0.
+
+Por ejemplo: $mdc(3337,2773)$, lo primero que haremos será dividir $3337/2773$.
+$3337/2773=1 + 564$. Ahora dividremos el cociente entre el resto.
+$2773/564=4 + 517$.
+$564/517=1 + 47$.
+$517/47=11 + 0$.
+
+Por lo tanto el maximo común divisor, es 47.
+
+Bien, esta ampliación, lo que haremos será buscar el coeficiente de Bézout.
+
+> POR CORREGIR.
+> {.is-danger}
+
+Lamentablemente en este entorno no es posible mostrar la tabla guía que se realiza para poder hacerlo. Sin embargo vamos a explicarlo igualmente.
+
+Lo que haremos con la tabla es realizar lo mismo que hemos hecho anteriormente, sin embargo de forma ordenada. Hasta que encontremos un valor que nos haga el resto 0.
+
+Para ello la distribución de la tabla será:
+a
+b
+$r_{1}$   | $c_{1}$
+
+Bien, en $r_{1}$ , pondremos el resto obtenido entre dividir $a/b$, y en $c_{1}$  ponemos el coeficiente usado.
+
+Tras esto, haremos como antes, dividir el $b/$r_{1}$, para obtener $r_{2}$ y $c_{2}$, seguiremos con $r_{1}/r_{2}$, etc etc etc   
+
+Es decir:
+$r_{1}=a-c_{1} *b$.
+$r_{2}=b-c_{2} *r_{1}$.
+$r_{3}=r_{1}-c_{3} *r_{2}$.
+
+Una vez finalicemos, vamos a hacer la segunda parte de la tabla, una extensión.
+
+Esta extensión esta formada por $u$ y $v$.
+
+$$
