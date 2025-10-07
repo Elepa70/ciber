@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2025-10-07T18:36:39.033Z
+date: 2025-10-07T18:41:48.820Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:27.944Z
@@ -129,3 +129,34 @@ Las expresiones relaciones son aquellas que nos dará como resultado verdadero o
 - Mayor igual que (>=)
 - Igual (==)
 - Distinto (!=)
+### Lógicos
+Tenemos 3:
+- No (!)
+- Y (&&)
+- O (||)
+
+
+En todo operación tenemos una preferencia de operadores, esta es:
+- ++, --, -(signo negativo en un valor), !
+- *, /, %
+- +, -(resta) 
+- <, <=, >, >=
+- ==, !=
+- &&
+- ||
+
+### Operadores de entrada y salida
+Es importante saber reconocer cuales son los operadores de entrada y salida, ya que unos nos muestrarán información hacia el usuario, y la otra es información que el usuario aporta al programa.
+```C++
+char nombre;
+int valor1;
+cout <<"Dime tu nombre"<<endl;
+cin >>nombre;
+
+cout << "Dime un número";
+cin >> valor1;
+
+cout << "Te llamas "<< nombre<< " y tu número es el: "<<valor1;
+```
+
+Como podemos observar, **cout**, lo usamos para poder mostrar información al usuario. Sin embargo el **cin**, lo usamos para que el usuario introduzca un valor.
