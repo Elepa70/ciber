@@ -2,10 +2,10 @@
 title: Introducción
 description: 
 published: true
-date: 2025-09-23T19:50:58.575Z
+date: 2025-10-07T18:36:28.144Z
 tags: 
 editor: markdown
-dateCreated: 2025-09-23T18:58:15.193Z
+dateCreated: 2025-09-29T19:32:27.944Z
 ---
 
 # Introducción
@@ -94,4 +94,38 @@ Algunos ejemplos de tipos de datos son:
 - Booleano, este tipo de datos, solo puede tomar dos valores, verdadero (1) o falso (0)
 
 ## Operador y expresión
-> Continuará
+La operación de asignación es el metodo que poseemos para poder almacenar valores en variables. La acción es destructiva, es decir, si ya tenia un valor con anterioridad, con una nueva asignación vamos a pisar lo que teniamos. 
+
+En una asignación, primero lo que hacemos es resolver la ecuación o auqello que esté a la derecha, para poder asignarlo a la variable o a la izquierda.
+
+Poseemos la sintaxis:
+```C++
+nombre_variable = 12;
+```
+
+Las expresiones son una serie de caracteres que nos sirve para obtener un valor. Estos caracteres los definimos como:
+### Aritméticos
+Dentro de las expresiones aritmeticas encontramos:
+- Suma (+)
+- Resta (-)
+- Multiplicación (*)
+- División (/)
+- Resto (%)
+- Incremento (++)
+- Decremento (--)
+
+También podemos usar expresiones especiales para asignarle a una variable un "calculo".
+- Sumarle el valor deseado (+=)
+- Restarle el valor deseado (-=)
+- Multplicar el valor deseado (*=)
+- Dividir el valor deseado (/=)
+- Resultado del modulo el valor deseado (%=)
+
+### Relacionales
+Las expresiones relaciones son aquellas que nos dará como resultado verdadero o falso:
+- Menor que (<)
+- Menor igual que (<=)
+- Mayor que (>)
+- Mayor igual que (>=)
+- Igual (==)
+- Distinto (<>)
