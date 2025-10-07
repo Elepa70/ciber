@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2025-10-07T18:36:28.144Z
+date: 2025-10-07T18:36:39.033Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:27.944Z
@@ -128,4 +128,4 @@ Las expresiones relaciones son aquellas que nos dará como resultado verdadero o
 - Mayor que (>)
 - Mayor igual que (>=)
 - Igual (==)
-- Distinto (<>)
+- Distinto (!=)
