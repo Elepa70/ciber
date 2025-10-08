@@ -2,7 +2,7 @@
 title: Sucesiones y series
 description: 
 published: true
-date: 2025-10-08T20:01:50.725Z
+date: 2025-10-08T20:33:35.002Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-01T20:11:42.684Z
@@ -93,13 +93,23 @@ Primero vamos a definir, Sean $\{x_{n}\}$ y $\{y_{n}\}$ dos sucesiones convergen
 
 
 ## Principio de inducción
-Este principio lo utilizamos para demostrar que se cumplen propiedades para todo $\mathbb{N}$.
 
-Definimos los números naturales como $\mathbb{N} = \{1,2,3,\dots\}$ verificando:
-1. $1\in \mathbb{N}$.
-2. Si $n \in \mathbb{N} \Rightarrow n+1 \in \mathbb{N}$.
+El uso que le vamos a dar al principio de inducción es demostrar una propiedad en $\mathbb{N}$. Para hacer una demostración por inducción, vamos a hacer lo siguiente:
+1. Debemos demostrar que suceda el primer caso. $(n=1)$
+2. Suponemos que se cumplen los n primeros casos. Asumir la hipotesis de la inducción.
+3. Demostrar que a partir del n-ésimo caso, demostrar el siguiente caso. $(n+1)$
 
-Con los dos primeros elementos de una sucesión cumplan estas propiedades, podemos decir que todos los elementos de la sucesión pertenecen al conjunto $\mathbb{N}$.
+Por ejemplo, cuando queremos demostrar que los elementos de una sucesión cumplen una propiedad, demostramos que el elemento $x_{1}$ se cumple, después, suponemos que se cumplen en $x_{1},\dots,x_{n}$ y tenemos que demostrar que si la propiedad se cumple en $x_{n}$, se cumple también en $x_{n+1}$.
 
-> Susceptible a error, se actualizá.
-{.is-warning}
+Al final, de forma intuitiva, podemos ver que una inducción es esencialemte ir probando de manera iterada una propiedad. Vemos que se cumple un caso y a partir de ese, se pueden demostrar los siguientes pasos.
+
+Curiosidad matemática: La inducción se basa fuertemente en la inducctividad de $\mathbb{N}$. Si tenemos que hacer un número infinito no numerable, entonces, la inducción no se puede realizar. En esos casos, tenemos que recurrir a lo que se denomina una inducción transfinita que usa fuertemente el axioma de elección.
+
+## Sucesos divergentes
+Los sucesos divergentes son aquellos donde se encuentra que el limite tiende a $+\infty$ o a $-\infty$. 
+> SE DEBE CUMPLIR UNO DE LOS DOS, NO LOS DOS.
+{.is-danger}
+
+Cuando $\{x_{n}\}\Rightarrow +\infty \text{  ó } \lim x_{n}= +\infty \Leftrightarrow [\forall M \in \mathbb{R}, \exists n_{0} \in \mathbb{N}, n\geq n_{0} \Rightarrow x_{n} \geq M]$.
+
+Esta es la definición matematica, pero esencialmente debemos quedarnos con que si tiende a infinito **positivo** podemos decir que es divergente positivamente. Sin embargo si tiende al infinito **negativo**, diremos que es divergente negativamente.
