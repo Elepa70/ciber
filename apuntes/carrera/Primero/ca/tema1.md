@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-10-08T13:58:13.678Z
+date: 2025-10-08T14:25:16.721Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:19.213Z
@@ -30,10 +30,10 @@ $a+b=b+a\quad\forall a,b\in\mathbb{R}$.
 - Asociativa: Da igual el orden de 3 valores, podemos reorganizarlo para que de el mismo resultado.
 $(a + b) + c = a + (b + c), \forall a, b, c \in \mathbb{R}$.
 - Elemento neutro: Para cualquier valor de *a*, siempre que le sumemos 0 es *a*.
-$a + 0 = a, \forall a \in \mathbb{R}$
+$a + 0 = a, \forall a \in \mathbb{R}$.
 
 - Elemento opuesto: Dado un valor *a*, existe un valor único, *-a*, tal que:
-$a + (-a) = 0$
+$a + (-a) = 0$.
 
 ### Producto
 El producto (a . b), resulta en la operación de multiplicar valores:
@@ -48,53 +48,58 @@ $a · 1 = a, \forall a \in \mathbb{R}$.
 $\frac{1}{a} = a^{−1}, \text{tal que } a{-1} · a = 1$.
 
 - Propiedad distributiva: Un mismo valor puede afectar a ambos lados dentro de un parentesis (Explicación del alumno)
-a(b + c) = ab + ac, ∀ a, b, c ∈ R
+$a(b + c) = ab + ac, \forall a, b, c \in \mathbb{R}$.
 
 ### Orden
 El orden nos sirve para poder determinar que valor es mayor que el otro.
 - Propiedad reflexica: Un valor tiene el mismo orden que si mismo.
-a ⩽ a
+$a \leq a$.
 - Propiedad antisimétrica: Un valor "a" que sea superior a "b", y el mismo valor "b" es superior a "a", podemos decir que ambos valores son iguales.
-a ⩽ b, b ⩽ a =⇒ a = b
+$a \leq b, b \leq a => a = b$.
 
 - Propiedad transitiva: Siendo un valor "a", mayor que "b", y el mismo valor "b", mayor que "c". Podemos decir que el valor "a", también es mayor que "c".
-{a ⩽ b} {b ⩽ c1  }=⇒ a ⩽ c
+$\{a \leq b\} \{b \leq c  \}=⇒ a \leq c$.
 
 - Total: Dados dos valores "a" y "b" pertenecientes a los números reales, podemos decir que "a" es mayor que "b" o que "b" es mayor que "a".
 - Orden y suma: Dado dos valores donde uno es mayor que el otro, si ambos son sumados por el mismo valor, se mantendrá el orden.
-a ⩽ b =⇒ a + c ⩽ b + c
+$a \leq b =⇒ a + c \leq b + c$.
 - Orden y producto:Dado dos valores donde uno es mayor que el otro, si ambos son multiplicados por el mismo valor, se mantendrá el orden.
-a ⩽ b, c ⩾ 0 =⇒ ac ⩽ bc
+$a \leq b, c \geq 0 =⇒ ac \leq bc$.
 
 
-Dados dos subconjuntos "A" y "B", y verificando que a ⩽ b, donde "a" es un valor perteneciente a "A", y "b" es un valor perteneciente a "B", existe un valor "c" perteneciente a los números reales que debe estar entre "a" y "b".
+Dados dos subconjuntos "A" y "B", y verificando que $a \leq b$, donde "a" es un valor perteneciente a "A", y "b" es un valor perteneciente a "B", existe un valor "c" perteneciente a los números reales que debe estar entre "a" y "b".
 
-**Dados A, B ⊂ ℝ verificando que a ⩽ b para cualquier a ∈ A, b ∈ B, existe c ∈ ℝ tal que a ⩽ c ⩽ b, ∀a ∈ A, ∀b ∈ B.**
+**Dados $A, B \in \mathbb{R}$ verificando que $a \leq b$ para cualquier $a \in A, b \in B$, existe $c \in \mathbb{R}$ tal que $a \leq c \leq b, \forall a \in A, \forall b \in B$.**
 
 ## Subconjuntos o conjuntos dentro de ℝ
 Hemos podido analizar algunas propiedades dentro de los números reales, sin embargo es esencial poder describir algunos de sus conjuntos para poder comprender la magnitud de los números reales. Vamos a describir a continuación los subconjuntos más notables de $\mathbb{R}$
 
 ### Importante
 Durante el curso se verá el simbolo ℝ, acompañado de varios números o otros simbolos, para poder entenderlo:
-ℝ^+^ = {x ∈ ℝ : x > 0} : Todos los números reales mayor que 0.
-ℝ^-^ = {x ∈ ℝ : x < 0} : Todos los números reales menores que 0.
-ℝ^*^ U ℝ^-^ U {0}= ℝ     : La unión de todos los números reales mayores que cero, menores que cero y cero, forman todos los números reales.
-ℝ^*^ = {x ∈ ℝ : x ≠ 0} : Todos los números reales distintos de 0.
-ℝ^+^~0~ = {x ∈ ℝ : x ≥ 0} : Todos los números reales mayores que 0, incluyendo el 0.
-$ℝ^{-}_{0}=\{x\in\mathbb{R}: x\leq0\}$  : Todos los números reales menores que 0, incluyendo el 0
+$\mathbb{R}^{+} = \{x \in \mathbb{R} : x > 0\}$ : Todos los números reales mayor que 0.
+
+$\mathbb{R}^{-} = \{x \in \mathbb{R} : x < 0\}$: Todos los números reales menores que 0.
+
+$\mathbb{R}^{+} \cup \mathbb{R}^{-} \cup \{0\} = \mathbb{R}$: La unión de todos los números reales mayores que cero, menores que cero y cero, forman todos los números reales.
+
+$\mathbb{R}^{*} = \{x \in \mathbb{R} : x \neq 0\}$: Todos los números reales distintos de 0.
+
+$\mathbb{R}^{+}_{0} = \{x \in \mathbb{R} : x \geq 0\}$: Todos los números reales mayores que 0, incluyendo el 0.
+
+$\mathbb{R}^{-}_{0} = \{x \in \mathbb{R} : x \leq 0\}$:Todos los números reales menores que 0, incluyendo el 0
 
 Con esto explicado podemos dar paso a los subconjuntos de ℝ
-### Naturales ℕ
+### Naturales $\mathbb{N}$
 De forma intuitiva definimos los números naturales como aquellos que usamos para contar. Cabe destacar que el cero NO está incluido en los naturales. Sin embargo, los algebristas consideran el cero como natural por conveniencia.
 
-$\mathbb{N}=\{1,2,3,4,\dots\}$
+$\mathbb{N}=\{1,2,3,4,\dots\}$.
 
-### Enteros ℤ
+### Enteros $\mathbb{Z}$
 Diremos que los números enteros son los naturales, los opuestos y el cero.
-$\mathbb{Z}=\{\dots,-2,-1,0,1,2,\dots\}$
-### Racionales ℚ
+$\mathbb{Z}=\{\dots,-2,-1,0,1,2,\dots\}$.
+### Racionales $\mathbb{Q}$
 Podemos decir que los numeros racionales son aquellos valores decimales que podemos expresar en forma de fracción.
-ℚ = {p/q : p ∈ ℤ, q ∈ ℕ}.
+$\mathbb{Q} = \{\frac{p}{q} : p \in \mathbb{Z}, q \in \mathbb{N}\}$.
 ### Irracionales ℝ\ℚ
 Podemos decir que son aquellos números que no son racionales.
 Estos números pueden ser: pi (π), raiz de 2 (√2), euler (e) o el número de oro (φ) o (Ø).
@@ -104,9 +109,9 @@ Estos números pueden ser: pi (π), raiz de 2 (√2), euler (e) o el número de 
 Un intervalo con extremos $a$, $b$, con $a\leq b$, es el conjunto de todos los números comprendidos entre ambos valores
 
 Para poder definir los tipos de intervalos, vamos a establecer la siguiente regla:
-- Sean a, b ∈ ℝ, a < b. (Sean a y b, dos valores pertenecientes a los números reales y siendo b mayor que a)
+- Sean $a, b \in \mathbb{R}, a < b$. (Sean a y b, dos valores pertenecientes a los números reales y siendo b mayor que a)
 
-Con la regla mencioanda anteriormente podemos ver los dos tipos de intervalos:
+Con la regla mencionada anteriormente podemos ver los dos tipos de intervalos:
 ### Segmento
 
 En este intervalo encontramos aquellos que están definidos entre dos valores fijos, es decir a y b.
@@ -114,10 +119,10 @@ En este intervalo encontramos aquellos que están definidos entre dos valores fi
 Un ejemplo puede ser [1,3], en este intervalo tenemos a 1 y 3, y todos los números intermedios.
 
 Vamos a poner los distintos intervalos que podemos encontrar en la recta.
-[a, b] = {x ∈ ℝ : a ⩽ x ⩽ b}.
-(a, b] o ]a, b] = {x ∈ ℝ : a ⩽ x ⩽ b}.
-[a, b) o [a, b[ = {x ∈ ℝ : a ⩽ x ⩽ b}.
-(a, b) o ]a, b[ = {x ∈ ℝ : a ⩽ x ⩽ b}.
+$[a, b] = \{x \in \mathbb{R}: a \leq b\}$.
+$(a, b] \text{ o } ]a, b] = \{x \in \mathbb{ℝ}: a < x \leq b\}$.
+$[a, b) \text{ o } [a, b[ = \{x \in \mathbb{R} : a \leq x < b\}$.
+$(a, b) \text{ o } ]a, b[ = \{x \in \mathbb{R} : a < x < b\}$.
 
 
 ### Semirrectas
@@ -127,19 +132,19 @@ Esto pueden ser por ejemplo:
 Un intervalo entre [1, ∞), ya que el valor infinito, no podemos definirlo exactamente.
 
 Podemos encontrar los siguientes intervalos:
-[a, +∞) = {x ∈ ℝ : a ⩽ x}.
-(a, +∞) = {x ∈ ℝ : a < x}.
-(−∞, b] = {x ∈ ℝ : x ⩽ b}.
-(−∞, b) = {x ∈ ℝ : x < b}.
+$[a, +∞) = \{x \in \mathbb{R} : a \leq x}$.
+$(a, +∞) = \{x \in \mathbb{R}: a < x}$.
+$(−∞, b] = \{x \in \mathbb{R} : x \leq b\}$.
+$(−∞, b) = \{x \in \mathbb{R}: x < b\}$.
 
 ### Acotación
 Ahora en vez de decir "definido", vamos a usar la palabra matematica ideal. Acotado.
 
 Cuando un intervalo está acotado superiormente, significa que existe un valor que siempre está debajo de todo el intervalo. Al igual, decimos que un valor está acotado inferiormente, cuando encontramos un valor que siempre está por debajo del intervalo.
 
-*A* tiene una cota superior en ℝ, si y solo si,existe un valor *M*, que pertenece a los números reales que es mayor que *a* para todo el conjunto de *A*.
+*A* tiene una cota superior en $\mathbb{R}$, si y solo si,existe un valor *M*, que pertenece a los números reales que es mayor que *a* para todo el conjunto de *A*.
 
-En lenguaje matemático: A ⊂ ℝ, ∃ M ∈ R, a⩽M, ∀a∈A
+En lenguaje matemático: $A \subset \mathbb{R}, \exist M \in \mathbb{R}, a\leq M, \forall a\in A$
 
 > Ojo también existe la cota inferior, simplemente debemos encontrar un valor que sea siempre menor al conjunto dado.
 {.is-info}
@@ -156,19 +161,19 @@ Por último, podemos decir, que en un intervalo existe un máximo de un conjunto
 
 El valor absoluto de un número real x es su distancia al cero. Algebraicamente es una función a trozos.
 
-|x| = dist(x,0) = { x, si x⩾0, -x, si x<0}.
+$|x| = dist(x,0) = \{ x, si x\geq 0, -x, si x<0\}$.
 
 > Ojito, la raíz de x, es el valor absoluto de x: √x = |x\|
 {.is-warning}
 
 ### Propiedades del valor absoluto
 Tenemos 6 propiedades:
-- |x| ⩾ 0
-- |x| = 0 ⇔ x = 0
-- |x| ⩽ y ⇔ -y ⩽ x ⩽ y 
-- |x + y| ⩽ |x| + |y|  
-- |x - y| ⩽ ||x| - |y||
-- |xy| = |x| · |y|, $\frac{|x|}{|y|}$ = $\frac{|x|}{|y|}$ 
+- $|x| \geq 0$.
+- $|x| = 0 ⇔ x = 0$
+- $|x| \leq y ⇔ -y \leq x \leq y$ 
+- $|x + y| \leq |x| + |y|$  
+- $|x - y| \leq ||x| - |y||$
+- $|xy| = |x| · |y|, \frac{|x|}{|y|} = \frac{|x|}{|y|}$ 
 > Según la profesora, ni la 4 ni la 5, se le debería tomar importancia para lo que daremos en el curso. NO SIGNIFICA QUE NO SEAN IMPORTANTES PARA EL APRENDIZAJE!!!
 >{.is-danger}
 
