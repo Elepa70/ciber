@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-10-08T13:54:05.791Z
+date: 2025-10-08T13:58:13.678Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:19.213Z
@@ -16,7 +16,7 @@ Los números reales consisten en el conjunto de todos los números que pueden re
 
 Definiremos los números reales como la unión de los números racionales y los irracionales. Geométricamente, lo definiremos como una recta numérica, la conocida recta real. Que cumplen axiomáticamente las propiedades de un anillo conmutativo, es decir, un cuerpo, y que tienen una relación de orden.
 
-## Propiedades de ℝ y sus operaciones
+## Propiedades de $\mathbb{R}$ y sus operaciones
 Los números reales poseen dos operaciones fundamentales:
 - Suma
 - Producto
@@ -28,24 +28,24 @@ La suma $a+b$, resulta en una operación "básica", las cuales tienen las siguie
 - Conmutatividad: Da igual el orden de los valores, el resultado es el mismo.
 $a+b=b+a\quad\forall a,b\in\mathbb{R}$.
 - Asociativa: Da igual el orden de 3 valores, podemos reorganizarlo para que de el mismo resultado.
- (a + b) + c = a + (b + c), ∀ a, b, c ∈ R
+$(a + b) + c = a + (b + c), \forall a, b, c \in \mathbb{R}$.
 - Elemento neutro: Para cualquier valor de *a*, siempre que le sumemos 0 es *a*.
-a + 0 = a, ∀ a ∈ R
+$a + 0 = a, \forall a \in \mathbb{R}$
 
 - Elemento opuesto: Dado un valor *a*, existe un valor único, *-a*, tal que:
-a + (-a) = 0
+$a + (-a) = 0$
 
 ### Producto
 El producto (a . b), resulta en la operación de multiplicar valores:
 - Conmutativa: Da igual el orden de los valores, el resultado es el mismo.
-a · b = b · a, ∀ a, b ∈ R
+$a · b = b · a, \forall a, b \in \mathbb{R}$.
 - Asociativa: Da igual el orden de 3 valores, podemos reorganizarlo para que de el mismo resultado.
- (a · b) · c = a · (b · c), ∀ a, b, c ∈ R
+$(a · b) · c = a · (b · c), \forall a, b, c \in \mathbb{R}$.
 - Elemento neutro: Para cualquier valor de *a*, siempre que le multipliquemos 1 es *a*.
-a · 1 = a, ∀ a ∈ R
+$a · 1 = a, \forall a \in \mathbb{R}$.
 
 - Elemento inverso: Si a es un número real distinto de 0, existe el inverso que a por su inverso es 1.
-$\frac{1}{a}$ = a ^−1^, tal que a ^-1^ · a = 1.
+$\frac{1}{a} = a^{−1}, \text{tal que } a{-1} · a = 1$.
 
 - Propiedad distributiva: Un mismo valor puede afectar a ambos lados dentro de un parentesis (Explicación del alumno)
 a(b + c) = ab + ac, ∀ a, b, c ∈ R
