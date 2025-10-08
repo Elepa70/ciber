@@ -2,7 +2,7 @@
 title: Sucesiones y series
 description: 
 published: true
-date: 2025-10-08T14:35:59.589Z
+date: 2025-10-08T20:01:50.725Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-01T20:11:42.684Z
@@ -16,7 +16,7 @@ Por ejemplo, una sucesión de números reales, es una aplicación del conjunto d
 $1,2,3,4\dots$.
 
 Cuando queremos representar una sucesión pondremos:
-$\{X_{n}\}_{n \in \mathbb{N}}$. 
+$\{x_{n}\}_{n \in \mathbb{N}}$. 
 > No es necesario poner que n pertenece a los números reales, sin embargo lo ponemos la primera vez para poder guiarnos.
 {.is-warning}
 
@@ -89,15 +89,15 @@ Primero vamos a definir, Sean $\{x_{n}\}$ y $\{y_{n}\}$ dos sucesiones convergen
 3. Si $\lim y_{n} \neq 0$ entonces  $\lim\frac{x_{n}}{y_{n}} =\frac{\lim(x_{n})}{\lim(y_{n})}$,
 4. Si $x_{n} \leq y_{n} \forall n$ entonces  $\lim(x_{n}) \leq \lim( y_{n})$
 5. Si $x_{n}\leq y_{n} \leq z_{n}, \forall \text{ }n \in \mathbb{N}$ y $\lim x_{n}=\lim z_{n}$. Entonces $\lim x_{n} = \lim y_{n} = \lim z_{n}$. Esta se conoce como regla del sandwich, donde dado los limites que tienen al mismo lado, entonces cualquier numero intermedio también tiende al mismo limite.
-6. Si $\{X_{n}\}$ esta acotada y $\lim y_{n} = 0$ entonces: $\lim x_{n} * y_{n} = 0$. O lo que es lo mismo, una sucesión acotada multiplicada por un límite que tiende a 0, es 0.
+6. Si $\{x_{n}\}$ esta acotada y $\lim y_{n} = 0$ entonces: $\lim x_{n} * y_{n} = 0$. O lo que es lo mismo, una sucesión acotada multiplicada por un límite que tiende a 0, es 0.
 
 
 ## Principio de inducción
-Este principio lo usaremos cuando queremos demostrar que los sucesos pertenecen a un conjunto, vamos a verlo con un ejemplo.
+Este principio lo utilizamos para demostrar que se cumplen propiedades para todo $\mathbb{N}$.
 
-Definimos los números reales como $\mathbb{N} = \{1,2,3,\dots\}$ verificando:
+Definimos los números naturales como $\mathbb{N} = \{1,2,3,\dots\}$ verificando:
 1. $1\in \mathbb{N}$.
-2. Si $n \in \mathbb{N} => n+1 \in \mathbb{N}$.
+2. Si $n \in \mathbb{N} \Rightarrow n+1 \in \mathbb{N}$.
 
 Con los dos primeros elementos de una sucesión cumplan estas propiedades, podemos decir que todos los elementos de la sucesión pertenecen al conjunto $\mathbb{N}$.
 
