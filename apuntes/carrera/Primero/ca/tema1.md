@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-10-08T14:29:30.765Z
+date: 2025-10-08T14:30:56.685Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:19.213Z
@@ -132,8 +132,8 @@ Esto pueden ser por ejemplo:
 Un intervalo entre [1, ∞), ya que el valor infinito, no podemos definirlo exactamente.
 
 Podemos encontrar los siguientes intervalos:
-$[a, +∞) = \{x \in \mathbb{R} : a \leq x}$.
-$(a, +∞) = \{x \in \mathbb{R}: a < x}$.
+$[a, +∞) = \{x \in \mathbb{R} : a \leq x\}$.
+$(a, +∞) = \{x \in \mathbb{R}: a < x\}$.
 $(−∞, b] = \{x \in \mathbb{R} : x \leq b\}$.
 $(−∞, b) = \{x \in \mathbb{R}: x < b\}$.
 
