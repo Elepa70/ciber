@@ -2,7 +2,7 @@
 title: Sucesiones y series
 description: 
 published: true
-date: 2025-10-02T19:05:20.635Z
+date: 2025-10-08T14:35:59.589Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-01T20:11:42.684Z
@@ -96,8 +96,8 @@ Primero vamos a definir, Sean $\{x_{n}\}$ y $\{y_{n}\}$ dos sucesiones convergen
 Este principio lo usaremos cuando queremos demostrar que los sucesos pertenecen a un conjunto, vamos a verlo con un ejemplo.
 
 Definimos los números reales como $\mathbb{N} = \{1,2,3,\dots\}$ verificando:
-1. $1\in \mathbb{N}$
-2. Si $n \in \mathbb{N} => n+1 \in \mathbb{N}$
+1. $1\in \mathbb{N}$.
+2. Si $n \in \mathbb{N} => n+1 \in \mathbb{N}$.
 
 Con los dos primeros elementos de una sucesión cumplan estas propiedades, podemos decir que todos los elementos de la sucesión pertenecen al conjunto $\mathbb{N}$.
 
