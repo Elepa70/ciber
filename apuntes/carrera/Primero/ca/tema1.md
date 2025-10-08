@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-10-08T14:26:01.284Z
+date: 2025-10-08T14:29:30.765Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:19.213Z
@@ -71,7 +71,7 @@ Dados dos subconjuntos "A" y "B", y verificando que $a \leq b$, donde "a" es un 
 
 **Dados $A, B \in \mathbb{R}$ verificando que $a \leq b$ para cualquier $a \in A, b \in B$, existe $c \in \mathbb{R}$ tal que $a \leq c \leq b, \forall a \in A, \forall b \in B$.**
 
-## Subconjuntos o conjuntos dentro de ℝ
+## Subconjuntos o conjuntos dentro de $(\mathbb{R})$
 Hemos podido analizar algunas propiedades dentro de los números reales, sin embargo es esencial poder describir algunos de sus conjuntos para poder comprender la magnitud de los números reales. Vamos a describir a continuación los subconjuntos más notables de $\mathbb{R}$
 
 ### Importante
@@ -89,18 +89,18 @@ $\mathbb{R}^{+}_{0} = \{x \in \mathbb{R} : x \geq 0\}$: Todos los números reale
 $\mathbb{R}^{-}_{0} = \{x \in \mathbb{R} : x \leq 0\}$:Todos los números reales menores que 0, incluyendo el 0
 
 Con esto explicado podemos dar paso a los subconjuntos de ℝ
-### Naturales $\mathbb{N}$
+### Naturales $(\mathbb{N})$
 De forma intuitiva definimos los números naturales como aquellos que usamos para contar. Cabe destacar que el cero NO está incluido en los naturales. Sin embargo, los algebristas consideran el cero como natural por conveniencia.
 
 $\mathbb{N}=\{1,2,3,4,\dots\}$.
 
-### Enteros $\mathbb{Z}$
+### Enteros $(\mathbb{Z})$
 Diremos que los números enteros son los naturales, los opuestos y el cero.
 $\mathbb{Z}=\{\dots,-2,-1,0,1,2,\dots\}$.
-### Racionales $\mathbb{Q}$
+### Racionales $(\mathbb{Q})$
 Podemos decir que los numeros racionales son aquellos valores decimales que podemos expresar en forma de fracción.
 $\mathbb{Q} = \{\frac{p}{q} : p \in \mathbb{Z}, q \in \mathbb{N}\}$.
-### Irracionales ℝ\ℚ
+### Irracionales $(\frac{\mathbb{R}}{\mathbb{Q}})$
 Podemos decir que son aquellos números que no son racionales.
 Estos números pueden ser: pi (π), raiz de 2 (√2), euler (e) o el número de oro (φ) o (Ø).
 
@@ -144,7 +144,7 @@ Cuando un intervalo está acotado superiormente, significa que existe un valor q
 
 *A* tiene una cota superior en $\mathbb{R}$, si y solo si,existe un valor *M*, que pertenece a los números reales que es mayor que *a* para todo el conjunto de *A*.
 
-En lenguaje matemático: $A \subset \mathbb{R}, \exist M \in \mathbb{R}, a\leq M, \forall a\in A$
+En lenguaje matemático: $A \subset \mathbb{R}, \exist M \in \mathbb{R}, a\leq M, \forall a\in A$.
 
 > Ojo también existe la cota inferior, simplemente debemos encontrar un valor que sea siempre menor al conjunto dado.
 {.is-info}
@@ -169,11 +169,11 @@ $|x| = dist(x,0) = \{ x, si x\geq 0, -x, si x<0\}$.
 ### Propiedades del valor absoluto
 Tenemos 6 propiedades:
 - $|x| \geq 0$.
-- $|x| = 0 ⇔ x = 0$
-- $|x| \leq y ⇔ -y \leq x \leq y$ 
-- $|x + y| \leq |x| + |y|$  
-- $|x - y| \leq ||x| - |y||$
-- $|xy| = |x| · |y|, \frac{|x|}{|y|} = \frac{|x|}{|y|}$ 
+- $|x| = 0 ⇔ x = 0$.
+- $|x| \leq y ⇔ -y \leq x \leq y$.
+- $|x + y| \leq |x| + |y|$.
+- $|x - y| \leq ||x| - |y||$.
+- $|xy| = |x| · |y|, \frac{|x|}{|y|} = \frac{|x|}{|y|}$.
 > Según la profesora, ni la 4 ni la 5, se le debería tomar importancia para lo que daremos en el curso. NO SIGNIFICA QUE NO SEAN IMPORTANTES PARA EL APRENDIZAJE!!!
 >{.is-danger}
 
