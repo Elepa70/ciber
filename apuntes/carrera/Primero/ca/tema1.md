@@ -2,10 +2,10 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-09-18T20:02:25.345Z
+date: 2025-10-08T13:54:05.791Z
 tags: 
 editor: markdown
-dateCreated: 2025-09-18T09:14:28.603Z
+dateCreated: 2025-09-29T19:32:19.213Z
 ---
 
 # Tema 1 - Números Reales
@@ -26,7 +26,7 @@ Cada una de estas tienen propiedades que las distinguen de las otras.
 ### Suma
 La suma $a+b$, resulta en una operación "básica", las cuales tienen las siguientes propiedades:
 - Conmutatividad: Da igual el orden de los valores, el resultado es el mismo.
-$a+b=b+a\quad\forall a,b\in\mathbb{R}$
+$a+b=b+a\quad\forall a,b\in\mathbb{R}$.
 - Asociativa: Da igual el orden de 3 valores, podemos reorganizarlo para que de el mismo resultado.
  (a + b) + c = a + (b + c), ∀ a, b, c ∈ R
 - Elemento neutro: Para cualquier valor de *a*, siempre que le sumemos 0 es *a*.
