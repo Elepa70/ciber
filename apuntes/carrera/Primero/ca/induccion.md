@@ -2,7 +2,7 @@
 title: Principio de Inducción - Ejercicio práctico
 description: 
 published: false
-date: 2025-10-09T08:04:11.543Z
+date: 2025-10-09T09:27:49.731Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-08T20:03:21.415Z
@@ -80,3 +80,17 @@ Por lo tanto ahora **seguimos asumiendo**, que si $l=3$, entonces ¿$1\leq x_{n}
 Ahora lo que haremos será de nuevo, aplicar el princpio de inducción, para comprobar que esto es correcto.
 
 ### Principio de inducción en acotado.
+Bien como se ha dicho, vamos a comprobar efectivamente que el límite es correcto o no. Para ello empezamosa  aplicar los tres pasos del princpio de inducción.
+1. Se debe cumplir el orden con n=1. Es correcto ya que $x_{1}=1 \leq 3$.
+2. La hipotesis de la inducción nos dice que entonces, $x_{n}$ debe ser menor a $3$.
+3. Vamos a comprobar ahora que, también se cumple para valores a $n$, es decir $n+1$. Es decir ¿$x_{n+1}\leq 3$?.
+
+$x_{n+1} \leq 3 \Leftrightarrow 3x_{n+1} \leq 3*3 \Leftrightarrow \sqrt{3x_{n+1}} \leq \sqrt{3*3} \Leftrightarrow \sqrt{3x_{n+1}}\leq \sqrt{9} \Leftrightarrow \sqrt{3x_{n+1}} \leq 3$. Por lo tanto, podemos decir que: $x_{n+1} \leq 3$.
+
+Esto implica que efectivamente hay un límite superior en 3, por lo tanto estamos ante una sucesión acotada.
+
+## Conclusión y finalización del ejercicio.
+Debido a que estamos ante una sucesión que es acotada y monotona, podemos decir que estamos ante una sucesión convergente, con limites $\{1,3\}$.
+
+> Hasta que no sea revisado el ejercicio, tenga en cuenta que puede tener faltas ortograficas, erratas o conclusiones/explicaciones poco coherentes matematicamente hablando.
+{.is-danger}
