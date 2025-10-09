@@ -1,8 +1,8 @@
 ---
 title: Principio de Inducción - Ejercicio práctico
 description: 
-published: false
-date: 2025-10-09T09:27:49.731Z
+published: true
+date: 2025-10-09T16:31:14.998Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-08T20:03:21.415Z
