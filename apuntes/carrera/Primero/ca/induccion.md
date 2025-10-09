@@ -2,7 +2,7 @@
 title: Principio de Inducción - Ejercicio práctico
 description: 
 published: true
-date: 2025-10-09T16:31:14.998Z
+date: 2025-10-09T18:09:59.688Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-08T20:03:21.415Z
@@ -90,7 +90,7 @@ $x_{n+1} \leq 3 \Leftrightarrow 3x_{n+1} \leq 3*3 \Leftrightarrow \sqrt{3x_{n+1}
 Esto implica que efectivamente hay un límite superior en 3, por lo tanto estamos ante una sucesión acotada.
 
 ## Conclusión y finalización del ejercicio.
-Debido a que estamos ante una sucesión que es acotada y monotona, podemos decir que estamos ante una sucesión convergente, con limites $\{1,3\}$.
+Debido a que estamos ante una sucesión que es acotada y monotona, podemos decir que estamos ante una sucesión convergente, tomar valores en $\{1,3\}$.
 
 > Hasta que no sea revisado el ejercicio, tenga en cuenta que puede tener faltas ortograficas, erratas o conclusiones/explicaciones poco coherentes matematicamente hablando.
 {.is-danger}
