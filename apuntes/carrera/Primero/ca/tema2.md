@@ -2,7 +2,7 @@
 title: Sucesiones y series
 description: 
 published: true
-date: 2025-10-08T20:33:35.002Z
+date: 2025-10-09T18:25:46.635Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-01T20:11:42.684Z
@@ -113,3 +113,40 @@ Los sucesos divergentes son aquellos donde se encuentra que el limite tiende a $
 Cuando $\{x_{n}\}\Rightarrow +\infty \text{  ó } \lim x_{n}= +\infty \Leftrightarrow [\forall M \in \mathbb{R}, \exists n_{0} \in \mathbb{N}, n\geq n_{0} \Rightarrow x_{n} \geq M]$.
 
 Esta es la definición matematica, pero esencialmente debemos quedarnos con que si tiende a infinito **positivo** podemos decir que es divergente positivamente. Sin embargo si tiende al infinito **negativo**, diremos que es divergente negativamente.
+
+
+### Límites que tienden al infinito
+Bien una sucesión divergente, tenemos que uno de sus límites tiende al infinito. Vamos a ver algunas operaciones básicas con infinitos.
+#### Suma
+No voy a describirla, unicamente se van a escribir las propiedades.
+$L \in \mathbb{R}$.
+$\infty + L = +\infty$.
+$\infty - L = +\infty$.
+$- \infty + L = -\infty$.
+$-\infty - L = -\infty$.
+
+
+$\infty + \infty = \infty$.
+$-\infty - \infty = -\infty$.
+$\infty - \infty = Error!$. Ojo esto es una indeterminación, no sabemos si puede ser finito o infinito.
+> Recordamos que una indeterminación es algo que no está determinado.
+{.is-info}
+
+#### Producto
+$\infty * \infty = \infty$.
+$\infty * -\infty = -\infty$.
+$\infty + L = \infty$ Si $L > 0$
+$\infty + L = -\infty$ Si $L < 0$
+
+#### Inversión
+Una inversión la escribimos como $\frac{x_{n}}{y_{n}}=x_{n}*\frac{1}{y_{n}}$
+
+$\{y_{n}\} \rightarrow L \neq 0 \Rightarrow \{\frac{1}{y_{n}}\} \rightarrow \frac{1}{L}$.
+
+
+$\{y_{n}\} \rightarrow \infty \Rightarrow \{\frac{1}{y_{n}}\} \rightarrow 0$.
+
+
+$\{y_{n}\} \rightarrow 0  \Rightarrow \{\frac{1}{y_{n}}\} \rightarrow \infty \text{ o } -\infty$.
+
+
