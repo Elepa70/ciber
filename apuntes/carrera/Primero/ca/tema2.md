@@ -2,7 +2,7 @@
 title: Sucesiones y series
 description: 
 published: true
-date: 2025-10-09T18:25:46.635Z
+date: 2025-10-09T18:30:20.590Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-01T20:11:42.684Z
@@ -150,3 +150,8 @@ $\{y_{n}\} \rightarrow \infty \Rightarrow \{\frac{1}{y_{n}}\} \rightarrow 0$.
 $\{y_{n}\} \rightarrow 0  \Rightarrow \{\frac{1}{y_{n}}\} \rightarrow \infty \text{ o } -\infty$.
 
 
+#### Escala de infinitos
+Hay veces que llegamos aun cociente entre polinomios y debemos saber cuál de los dos tiende más a infinito con respecto al otro, ya que si no tendriamos un $\frac{\infty}{\infty}$, que es una indeterminación.
+
+El orden de menor a mayor tendencia a infinito es:
+$\log(n) \propto n^{b} \propto a^{n} \propto n^{n}$, con $b > 0$ y $a > 0$
