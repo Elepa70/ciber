@@ -2,7 +2,7 @@
 title: Corriente continua
 description: 
 published: true
-date: 2025-10-03T19:30:08.876Z
+date: 2025-10-10T18:59:10.076Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:25.200Z
@@ -37,7 +37,7 @@ Consiste ne la diferencia de potencia entre dos puntos.
 Se mide con un voltímetro.
 
 ### Potencia
-Es la cantidad de energía intercambiada, según la **ecuación del balance de potencias**, la suma algebraica de las potencias en un circuito eléctrico debe ser 0. $\sum P_{generadas}=\sum P_{consumidas}$
+Es la cantidad de energía intercambiada, según la **ecuación del balance de potencias**, la suma algebraica de las potencias en un circuito eléctrico debe ser 0. $\sum P_{generadas}=\sum P_{consumidas}$.
 
 
 ## Ley de kirchhoff
@@ -91,6 +91,7 @@ $R = p \frac{l}{A}$, siendo R Resistencia, p potencial de resistencia, l longitu
 
 Debido a que la formula de la potencia es: $p=v*i$ y con la ley de ohm $v=i*R$, podemos juntar las formulas para $p=\frac{v^{2}}{R}$ o $p=i^{2}*R$.
 
+Las potencias comunes son de 0.25W, 0.5W, 1W. Si la potencia es superior, corre el riesgo de que a la hora de disipar el calor, se queme la resistencia.
 ## Condensador
 El condensador es una constante que cumple la relación entre la carga acumulada y la diferencia de potencial. Se denomina capacidad (C).
 $C=\frac{q}{v}$.
@@ -130,3 +131,16 @@ $R_{3}=\frac{R_{A}*R_{B}+R_{A}*R_{C}+R_{B}*R_{C}}{R_{C}}$.
 
 Por lo tanto:
 $R_{Triangulo}=3R_{Estrella}$.
+## Elementos topológicos
+En un circutio, podemos encontrar distintos elementos que es importante saber:
+- Rama: Las ramas es un segmento de un circuito, por el que circula la misma intensidad de corriente.
+- Nudo: Conexión multiple de ramas. Si es de 2 es simple, si tiene 3 o más se le llama Nudo principal.
+- Lazo: Conjunto de ramas que definen una trayectoria cerrada. Aquí podemos aplicar la 2º Ley de Kirchhoff
+- Malla: Consiste en a quel lazo que **no**, contiene otro lazo. Es decir, que forma un circuito plano unico.
+
+## Impedancia y admitancia
+La Impedancia (Z), con la siguiente formula: $Z=\frac{v}{i}$, es una medida de oposición que presenta un circuito a una corriente cuando se aplica una tensión.
+
+Sin embargo la Admitancia (Y), es lo contrario, $Y=\frac{i}{v}$.
+
+Podemos conectar ambas formulas con: $Z=\frac{1}{Y}$.
