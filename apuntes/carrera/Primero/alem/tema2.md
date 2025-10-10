@@ -2,7 +2,7 @@
 title: Aritmética entera y modular
 description: 
 published: true
-date: 2025-10-06T20:04:57.923Z
+date: 2025-10-10T09:17:08.398Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:45:03.771Z
@@ -234,4 +234,5 @@ Una vez finalicemos, vamos a hacer la segunda parte de la tabla, una extensión.
 
 Esta extensión esta formada por $u$ y $v$.
 
-$$
+## Aritmetica modular
+## Sistemas de congruencias
