@@ -2,7 +2,7 @@
 title: Bastionado de Redes
 description: 
 published: true
-date: 2025-10-11T18:49:57.532Z
+date: 2025-10-11T18:50:00.741Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:28:55.090Z
@@ -10,7 +10,7 @@ dateCreated: 2025-09-29T19:28:55.090Z
 
 # Bastionado de Redes
 ## Introducción
-Esta materia se encarga, según "Real Decreto 479/2020": Definir e implementar estrategias de seguridad en los sistemas de inforamción realizando diagnósticos de ciberseguridad, identificando vulnerabilidades e implementando las medidas necesarias para mitigarlas
+Esta materia se encarga, según "Real Decreto 479/2020": Definir e implementar estrategias de seguridad en los sistemas de inforamción realizando diagnósticos de ciberseguridad, identificando vulnerabilidades e implementando las medidas necesarias para mitigarlas.
 
 
 ### Temarios
