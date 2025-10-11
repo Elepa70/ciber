@@ -2,7 +2,7 @@
 title: Hacking Etico
 description: 
 published: true
-date: 2025-10-11T18:49:22.507Z
+date: 2025-10-11T18:49:33.716Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:28:57.802Z
@@ -20,7 +20,7 @@ Si desea ampliar conocimiento, le recomiendo adquirir el libro. Puede encontrar 
 
 
 ## Como está dividido
-Esta asignatura está dividido en 7 temas, cada uno tendra una explicación y sus enlaces de intereses
+Esta asignatura está dividido en 7 temas, cada uno tendra una explicación y sus enlaces de intereses.
 ## Recomendaciones
 Se recomienda tener conocimientos en general de Informatica, ya que se hablará de terminos avanzados de informatica y no se hará tanto incapie en las explicaciones.
 ### Temarios
