@@ -2,7 +2,7 @@
 title: Analisis Forense Informatico
 description: 
 published: true
-date: 2025-10-11T18:53:39.943Z
+date: 2025-10-11T18:54:37.940Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:28:52.384Z
