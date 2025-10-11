@@ -2,7 +2,7 @@
 title: Analisis Forense Informatico
 description: 
 published: true
-date: 2025-10-11T18:54:37.940Z
+date: 2025-10-11T18:55:22.966Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:28:52.384Z
@@ -23,7 +23,6 @@ Como se ha mencionado anteriormente, esta asignatura, esta dividida en 7 temas d
 [Análisis de sistemas Windows](Artefactos-Windows)
 [Análisis de sistemas Linux/MACOS](Analisis_ficheros)
 [Análisis de sistemas en Cloud](cloud)
-[Análisis de sistemas en IOT](IOT)
 [Análisis de E-Mails](e-mail)
 
 ### Cheatsheet
