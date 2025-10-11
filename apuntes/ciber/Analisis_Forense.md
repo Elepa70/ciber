@@ -2,7 +2,7 @@
 title: Analisis Forense Informatico
 description: 
 published: true
-date: 2025-10-11T18:50:17.375Z
+date: 2025-10-11T18:51:07.782Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:28:52.384Z
@@ -10,7 +10,7 @@ dateCreated: 2025-09-29T19:28:52.384Z
 
 # Analisis Forense Informaticos
 ## Introducción
-En esta asignatura aprenderemos tanto el analisis de inforamción de los equipos informaticos, como la obtención de pruebas y datos de los mismos.
+En esta asignatura aprenderemos tanto el analisis de inforamción de los equipos informaticos, como la obtención de pruebas y datos de los mismos
 ## Como está dividido
 Esta asignatura está dividido en 8 temas, cada uno tendra una explicación y sus enlaces de intereses.
 ## Recomendaciones
