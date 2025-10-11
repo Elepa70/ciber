@@ -2,10 +2,10 @@
 title: Introducción al Análisis Forense
 description: 
 published: true
-date: 2024-12-26T15:44:18.237Z
+date: 2025-10-11T18:54:25.867Z
 tags: 
 editor: markdown
-dateCreated: 2024-12-20T19:29:12.633Z
+dateCreated: 2025-09-29T19:29:10.701Z
 ---
 
 # Introducción al Análisis Forense Informático
