@@ -2,7 +2,7 @@
 title: Analisis Forense Informatico
 description: 
 published: true
-date: 2025-10-11T18:51:11.311Z
+date: 2025-10-11T18:53:39.943Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:28:52.384Z
@@ -18,10 +18,10 @@ Se recomienda tener conocimientos en general de Informatica, ya que se hablará 
 ### Temarios
 Como se ha mencionado anteriormente, esta asignatura, esta dividida en 7 temas distintos. Vamos a mencionarlos a continuación con su respectiva redirección:
 [Introducción a la informática forense](introduccion)
-[La metodología forense](metodologia)
+[La metodología forense](Metodologia_Forense)
 [Documentación y elaboración de informes de análisis forenses](informes)
-[Análisis de sistemas Windows](windows)
-[Análisis de sistemas Linux/MACOS](linux)
+[Análisis de sistemas Windows](Artefactos-Windows)
+[Análisis de sistemas Linux/MACOS](Analisis_ficheros)
 [Análisis de sistemas en Cloud](cloud)
 [Análisis de sistemas en IOT](IOT)
 [Análisis de E-Mails](e-mail)
