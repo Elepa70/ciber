@@ -2,17 +2,17 @@
 title: Ciberseguridad
 description: Bienvenido
 published: true
-date: 2025-01-07T16:21:00.350Z
+date: 2025-10-11T18:50:57.493Z
 tags: 
 editor: markdown
-dateCreated: 2024-12-20T19:25:44.504Z
+dateCreated: 2025-09-29T19:28:20.633Z
 ---
 
 # Curso de Especialización en Ciberseguridad en Entornos de las Tecnologías de la Información
 ## ¿Qué es?
 Esta FP, es una de las 3 FPs disponibles de la rama de Informática y a nivel de Especialización. Aunqué se tiene pensado ampliar a 4. (Redactado a fecha de Noviembre de 2024).
 
-En este curso va orientado a realizar una actividad en las empresas que requieran de protección de los sistemas de información y redes de comunicaciones. 
+En este curso va orientado a realizar una actividad en las empresas que requieran de protección de los sistemas de información y redes de comunicaciones.
 
 Es decir, asegurar la información de la empresa
 
