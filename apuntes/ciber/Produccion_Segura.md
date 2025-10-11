@@ -2,10 +2,10 @@
 title: Puesta en producción segura
 description: 
 published: false
-date: 2025-01-07T15:29:45.941Z
+date: 2025-10-11T18:48:09.087Z
 tags: 
 editor: markdown
-dateCreated: 2024-12-20T19:27:07.909Z
+dateCreated: 2025-09-29T19:29:05.630Z
 ---
 
 # Header
