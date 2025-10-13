@@ -2,7 +2,7 @@
 title: Aritmética entera y modular
 description: 
 published: true
-date: 2025-10-10T09:17:08.398Z
+date: 2025-10-13T11:18:55.951Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:45:03.771Z
@@ -235,4 +235,94 @@ Una vez finalicemos, vamos a hacer la segunda parte de la tabla, una extensión.
 Esta extensión esta formada por $u$ y $v$.
 
 ## Aritmetica modular
+Para poder tener claro todo lo que viene después, debemos tener en cuenta lo siguiente $a,m \in \mathbb{Z}, m \neq 0. a \text{ mod } m$ Es el resto de la sificisión de $a$ entre $m$.
+
+Por ejemplo $25 \text{ mod }7=5$, ya que $26=7*3+5$.
+
+Dado esto para la congruencia, sea $m \geq 2$, dados $a,b, \in \mathbb{Z}$, decimos que:
+$a \equiv b \text{ mod }m$ si $m|(b-a)$, $a \text{ mod } m = b \text{ mod }m$.
+
+Es decir estamos buscando el minímo común multiplo.
+
+
+Ahora lo que vamos a jugar es con las "bases", recordamos como hemos usado binario, octal, hexadecimal y decimal anteriormente, ahora haremos más o menos lo mismo. 
+Cuando nos salga $\mathbb{Z}_{8}$, significa que estamos en base 8, es decir vamos de: $\{0,1,2,3,4,5,6,7,0,1,2...\}$.
+
+Esto es importante ya que el $mcm$ de un número puede variar si estamos o no en decimal.
+
+
+Y si hacemos cuentas con una modulo que no es 10, debemos tenerlo en cuenta. Por ejemplo, pensemos en un reloj, un reloj es $\mathbb{Z}_{12}$, pero cuando queremos poner las $4$ de la tarde por ejemplo, tenemos el formato digital $16$, o el $4$.
+
+Debemos pensar todo el rato en que base estamos y ir encontrando la diferencia constantemente para poder ir operando en distintos modulos.
+
+
+Aunque podamos operar en otro modulo, tenemos un pequeño problema. En operaciones como $a*x=1$, solemos despejar la x sola para poder calcular su valor. Es decir realmente hacemos $a^{-1}*a*x=1*a^{-1} \Rightarrow x=a^{-1}$.
+
+Cuando estamos en otro modulo, esto no podemos aplicarlo con facilidad, por ello para calcular el inverso ($a^{-1}$), debemos calcular el $mcd(m,a)$ siendo $m$, $\mathbb{Z}_{m}$. Para el calculo de $a^{-1}$, hacemos uso del algoritmo extendido de Euclides.
+
+Por ejemplo $201^{-1}$ en $\mathbb{Z}_{439}$.
+> Deberíamos elaborar la tabla, sin embargo no me es posible en este formato, se irá explicando que calculos hemos hecho para resolverlo.
+{.is-warning}
+
+Lo primero que hacemos es dividir $439$ entre $201$, nos da $2$ y resto $37$. Es decir $439=201*2+37$.
+
+Tras esto calculamos el dividendo entre el resto que nos ha dado, es decir $201$ entre $37$. $201=37*5+16$.
+
+$37=16*2+5$.
+
+$16=5*3+1$. Como el resto es 1, ya no podemos seguir operando.
+
+Bien ahora debemos calcular pa parte extendida, en esta caso haremos lo siguiente:
+$0-2*1=-2$ Lo que hemos hecho, es en la tabla extendida empezar con 0 y 1, tras esto cogemos el primer valor que tenemos (0) y le restamos el primer cociente por el segundo valor (1).
+
+$1-5*(-2)=11$, Ahora nuestro primer valor es 1, que le vamos a restar el cociente del segundo valor (5) por el resultado anterior.
+
+$-2-2*11=-24$.
+$11-3*(-24)=83$, este es el último valor, por lo tanto diremos $201^{-1} \text{ mód }439=83$.
+
+### En caso de Aritmética en $\mathbb{Z}_{p}$.
+
+Cuando estamos ante una aritmetica de un primo, podemos llamarlo cuerpo/field/campo, todos estos nombres sirve. 
+
+
 ## Sistemas de congruencias
+Una congruencia lineal: $ax+b \equiv cx+d \text{ mód }m;\text{ }a,b,c,d,m \in \mathbb{Z}, m \neq 0$. 
+
+Por ejemplo, $5x + 7 \equiv 2x + 3 \text{ mod }11$. Para buscar una solución, debemos obviamente encontrar un valor a ambos lados del igual que de lo mismo. Por ejemplo 6.
+
+$5*6+7 = 37, 2*6+3 = 15$. $37\equiv 15 \text{ mod }11$.
+
+Aunque parezca que no, recordamos que $37$ en modulo $11$ es $4$, y que $15$ en modulo $11$ es $4$.
+
+Vamos a estudiar las congruencias $ax \equiv b \text{ mód }m$, que son equivalentes a las vistas anteriormente.
+
+### Reglas de resolución
+Antes de ponernos a resolver un sistema de congruencia, debemos aprender una serie de propiedades.
+
+1. Podemos reducir una congruencia si es superior al módulo dado en ambos lados. Ejemplo $23x \equiv 17 \text{ mód }9$ es equivalente a $5x \equiv 8 \text{ mod }9$.
+2. Si existe un $mcd$ en toda la congruencia, podemos dividir por ese $mcd$ para reducir la congruencia.  Ejemplo $12x \equiv 8 \text{ mod }22$, es equivalente a $6x \equiv 4 \text{ mod }11$.
+3. Si el minimo común multiplo de la congruencia, no tiene $mcd$ de 1, se puede reducir. $3x \equiv 5 \text{  mod }13$.
+
+Por último la congruencia $ax \equiv b \text{ mod }m$ tiene solución si, y solo sí, $mcd(a,m)|b$.
+
+
+#### Ejemplo
+Bien, vamos a calcular $909x \equiv 516 \text{ mod }321$. Como podemos ver es una congruencia grande, entonces uno de los metodos que tenemos para resolverlo es con el algoritmo de euclides, pero primero usemos las reglas.
+1. Como podemos observar, ambos valores son superiores a 321, por lo que podemos reducirlo y quedarnos con el resto. $909x \equiv 516 \text{ mod }321 \Rightarrow 267x \equiv 195 \text{ mod }321$.
+2. Como podemos observar, tenemos  un minimo común multiplo en 3, por lo que podemos hacer $89\equiv 65\text{ mod }107$.
+3. Aqui no hemos podido aplicar la 3º regla, por lo tanto nos quedamos con la anterior.
+
+
+Bien tras esto, ahora empezaremos a hacer el algoritmo de euclides extendido de la siguiente manera:
+$107/89= 1 + 18$, recordamos dividimos $m$, entre el que está al lado de $x$.
+$89/18= 4 +17$.
+$18/17=1 +1$.
+
+Bien tras esto aplicamos la extendida:
+$0-1*1=-1$.
+$1-4*(-1)=5$.
+$-1-1*5=-6$. Por lo tanto tenemos que $89^{-1} = -6$, en $\text{mod }107$, sin embargo como es negativo vamos a pasarlo al posivito, esto podemos hacer con una suma entre $107$ y $-6$, que da $101$.
+
+Bien ahora tenemos $x \equiv 65 * 101 \text{ mod }101 \Rightarrow x\equiv 6565 \text{ mod }107$. Para terminar el ejercicio, solo debemos saber el módulo de $6565/107$, que nos dá 38.
+
+Por lo tanto ponemos el resultado como $x \equiv 38 \text{ mod }107$, **y** $x=38+107*k : k\in \mathbb{Z}_{107}$.
