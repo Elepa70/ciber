@@ -2,7 +2,7 @@
 title: Aritmética entera y modular
 description: 
 published: true
-date: 2025-10-13T11:18:55.951Z
+date: 2025-10-13T11:24:17.980Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:45:03.771Z
@@ -325,4 +325,4 @@ $-1-1*5=-6$. Por lo tanto tenemos que $89^{-1} = -6$, en $\text{mod }107$, sin e
 
 Bien ahora tenemos $x \equiv 65 * 101 \text{ mod }101 \Rightarrow x\equiv 6565 \text{ mod }107$. Para terminar el ejercicio, solo debemos saber el módulo de $6565/107$, que nos dá 38.
 
-Por lo tanto ponemos el resultado como $x \equiv 38 \text{ mod }107$, **y** $x=38+107*k : k\in \mathbb{Z}_{107}$.
+Por lo tanto ponemos el resultado como $x \equiv 38 \text{ mod }107$, **y** $x=38+107*k : k\in \mathbb{Z}$.
