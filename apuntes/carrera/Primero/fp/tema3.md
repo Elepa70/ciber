@@ -1,14 +1,14 @@
 ---
-title: Estructuras repetitivas
+title: Estructuras de control
 description: 
 published: true
-date: 2025-10-14T15:39:08.081Z
+date: 2025-10-14T15:39:41.133Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-14T15:39:08.081Z
 ---
 
-# Alterar titulo!
+# Estructuras de control
 ## Estructuras repetitivas
 Los ordenadores tienen un diseño donde nos permite repetir una serie de acciones, estas acciones lo llamaremos "bucle". 
 
