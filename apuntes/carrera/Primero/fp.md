@@ -2,7 +2,7 @@
 title: Fundamentos de Programación
 description: 
 published: true
-date: 2025-10-07T18:43:56.353Z
+date: 2025-10-14T15:36:16.302Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:29:51.566Z
@@ -13,7 +13,7 @@ En está página web podrá encontrar los distintos temarios que corresponden a 
 
 - [Introducción](tema1)
 - [Condicionales](tema2)
-
+- [Estructuras de control](tema3)
 
 
 ## Docente
