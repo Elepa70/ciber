@@ -2,7 +2,7 @@
 title: Estructuras de control
 description: 
 published: true
-date: 2025-10-14T16:07:08.415Z
+date: 2025-10-14T16:22:11.255Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-14T15:39:08.081Z
@@ -63,6 +63,36 @@ int main()
     	cout <<"Introduzca el valor";
     	cin >> n;
     } while (n<=0);
+    return 0;
+}
+```
+
+## For
+Este bucle se reptie una cantidad determinada de veces, es decir, **no depende de una condición**.
+
+Suele tener un orden donde:
+- Iniciamos el contador
+- Realizamos la operación
+- Sumamos al contador
+- Revisamos el valor para salir o no del bucle.
+
+
+```C++
+#include <iostream>
+using namespace std;
+int main()
+{
+    const int n = 5;
+    int suma,i;
+    
+    suma=0;
+
+    for (i=0; i < n; i++){
+    	suma+=1;
+        
+    }
+
+    cout << "Has sumado una totalidad de: "<< suma<<endl;
     return 0;
 }
 ```
