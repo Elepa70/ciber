@@ -2,7 +2,7 @@
 title: Estructuras de control
 description: 
 published: true
-date: 2025-10-14T16:47:40.814Z
+date: 2025-10-14T17:15:51.041Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-14T15:39:08.081Z
@@ -117,3 +117,4 @@ Hay que tener en cuenta que estos bucles se pueden realizar un número exagerado
 
 > Debemos ser conscientes de que tenemos que añadir una serie de index para que haya un orden visual claro.
 {.is-warning}
+
