@@ -2,7 +2,7 @@
 title: Estructuras de control
 description: 
 published: true
-date: 2025-10-14T16:35:08.547Z
+date: 2025-10-14T16:46:57.185Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-14T15:39:08.081Z
@@ -26,6 +26,7 @@ Tenemos 3 bucles:
 - While: Estructura de mientas
 - While_do: (Rellenar)
 - For: Forma mas especial
+
 
 
 ## While
@@ -96,3 +97,20 @@ int main()
     return 0;
 }
 ```
+
+## Diseño del bucle
+Recordamos que el bucle tiene 3 partes:
+- El cuerpo del bucle.
+- Sentencias de inicio o condición.
+- Condición de terminar.
+
+Tenemos cuatro métodos para la terminación de un bucle:
+- Lista encabezada por tamaño: Desde/para, suelen ser con un bucle de tiempo.
+- Preguntar antes de intinerar: Al final del bucle, se pregunta si debe o no continuar. 
+- Lista terminada con valor centinela: Es aquel valor que es completamente distinto a todos los valores que se pueden añadir (Ejemplo un valor negativo).
+- Agotamiento de la entrada: Usualmente se hace por archivos.
+
+## Bucles anidados
+Cpnsiste en una estructura donde encontramos más de un bucle o bucle y condición.
+
+Hay que tener en cuenta que estos bucles se pueden realizar un número exagerado de veces, por lo que debemos tener en cuenta que esto puede afectar a la optimización de los recursos y del tiempo.
