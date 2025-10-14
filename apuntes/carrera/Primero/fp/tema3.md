@@ -2,7 +2,7 @@
 title: Estructuras de control
 description: 
 published: true
-date: 2025-10-14T16:46:57.185Z
+date: 2025-10-14T16:47:40.814Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-14T15:39:08.081Z
@@ -114,3 +114,6 @@ Tenemos cuatro métodos para la terminación de un bucle:
 Cpnsiste en una estructura donde encontramos más de un bucle o bucle y condición.
 
 Hay que tener en cuenta que estos bucles se pueden realizar un número exagerado de veces, por lo que debemos tener en cuenta que esto puede afectar a la optimización de los recursos y del tiempo.
+
+> Debemos ser conscientes de que tenemos que añadir una serie de index para que haya un orden visual claro.
+{.is-warning}
