@@ -2,7 +2,7 @@
 title: Estructuras de control
 description: 
 published: true
-date: 2025-10-14T16:22:11.255Z
+date: 2025-10-14T16:35:08.547Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-14T15:39:08.081Z
@@ -22,7 +22,7 @@ Debemos tener en cuenta una serie de cosas a la hroa de diseñar un bucle:
 3. ¿Condición de parada del bucle?
 
 
-Tenemos unos 3 bucles:
+Tenemos 3 bucles:
 - While: Estructura de mientas
 - While_do: (Rellenar)
 - For: Forma mas especial
