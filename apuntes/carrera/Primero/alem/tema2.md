@@ -2,7 +2,7 @@
 title: Aritmética entera y modular
 description: 
 published: true
-date: 2025-10-13T11:24:17.980Z
+date: 2025-10-15T20:10:46.141Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:45:03.771Z
@@ -326,3 +326,37 @@ $-1-1*5=-6$. Por lo tanto tenemos que $89^{-1} = -6$, en $\text{mod }107$, sin e
 Bien ahora tenemos $x \equiv 65 * 101 \text{ mod }101 \Rightarrow x\equiv 6565 \text{ mod }107$. Para terminar el ejercicio, solo debemos saber el módulo de $6565/107$, que nos dá 38.
 
 Por lo tanto ponemos el resultado como $x \equiv 38 \text{ mod }107$, **y** $x=38+107*k : k\in \mathbb{Z}$.
+
+### Sistemas de congruencias lineales
+Un sistema de congruencia es lo sigueinte:
+$a_{1}x \equiv b_{1} \text{ mod }m_{1}$.
+$a_{2}x \equiv b_{2} \text{ mod }m_{2}$.
+.......................................
+$a_{l}x \equiv b_{l} \text{ mod }m_{l}$.
+
+Nuestro objetivo es buscar números enteros que sean soluciones todas las congruencias impuestas, en este caso tenemos un sistema formado por dos congruencias.
+
+Para resolverlo tenemos varias maneras, aunque se explicará una en más detalle.
+#### Teorema chino del resto
+Este teorema nos dice, que dado una congruencia con la anterior forma. Si para cada $i,j$ tales que $1\leq i < j \leq l$, se tiene que $mcd(m_{i},m_{j})=1$, entonces el sistema tiene solución. Y si el sistema tiene soluci´n entonces, debe tener la forma que solemos usar: $x=a+k*M : k\in \mathbb{Z}$, siendo $M=m_{1}*m_{2}\dots$.
+
+Este teorema, realmente no nos ayuda a resolver propiamente dicho, ya que antes debemos resolver ambas congruencias para poder efectivamente aplicar el teorema, y la solución puede ser muy costosa de encontrar.
+#### Generalización del teorema chino del resto
+Dado un congruencia de la forma anterior, decimos que el sistema tendra solución si y solo si, para cada $i,j$ tales que $1\leq i < j \leq l$. Se cumple $mcd(m_{i},m_{j})=1 | (b_{i}-b{j})$.
+
+Lo que nos dice es que vamos a encontrar solución siempre y cuando tenga minímo común divisor el 1 en cada modulo dado, y que sel resultado de $b_{i}-b{j}$, sea multiplo de 1. 
+
+Sin embargo esto tampoco nos ayuda a llegar la solución, solo es una manera que nos indica que va a tener solución.
+
+#### Resolución de sistemas de congruencias
+Ahora vamos a usar un método que si nos va a facilitar el calcular el resultado.
+
+El metodo consiste en resolver la primera congruencia, y la solución que tengamos se la añadiremos a la segunda. Tras esto si tenemos más congruencias, la solución de la anterior se la añadiremos a la proxima.
+
+> Debemos recordar las propiedades de la congruencia, donde si tenemos una congruencia del tipo $ax\equiv b \text{ mod }m$, solo tendrá solución si $mcd(a,m)=1$.
+{.is-warning}
+
+> Hay un caso especial, donde si encontramos una congruencia del tipo $0x\equiv 0 \text{ mod } n$, esto se puede sustituir como $0x\equiv 0 \text{ mod } 1$, y es una congruencia que es una verdad absoluta. Como decir $0x=0$.
+{.is-info}
+
+##### Ejemplo
