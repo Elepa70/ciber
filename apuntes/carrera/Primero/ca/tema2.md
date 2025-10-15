@@ -2,7 +2,7 @@
 title: Sucesiones y series
 description: 
 published: true
-date: 2025-10-09T18:30:20.590Z
+date: 2025-10-15T19:51:01.836Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-01T20:11:42.684Z
@@ -155,3 +155,19 @@ Hay veces que llegamos aun cociente entre polinomios y debemos saber cuál de lo
 
 El orden de menor a mayor tendencia a infinito es:
 $\log(n) \propto n^{b} \propto a^{n} \propto n^{n}$, con $b > 0$ y $a > 0$
+
+
+### Indeterminaciones con sucesiones $\{X_{n}^{y_{n}}\}$.
+Con este tipo sucesiones podemos encontrar una serie de indeterminaciones.
+
+Estas sucesiones usualmente vamos a usar la formula de la $e$, recordamos que es: $X_{n}^{y_{n}}=e^{y_{n}*log(x_{n})}$.
+- "$\infty^{0}$": Este tipo de indeterminación, usaremos la formula de la $e$.
+- "$0^{0}$": En este tipo de indeterminación, también usaremos la formula de la $e$.
+- "$1^{\infty}$" En este tipo de indeterminación usaremos el **teorema** del número $e$, que se va  explicar a continuación.
+
+El teorma del número $e$, nos da las siguiente "propiedad":
+1. El estudio de estos límites son el mismo: $\lim y_{n}(x_{n}-1)= L \Leftrightarrow \lim x_{n}^{y_{n}} = e^{L}$.
+
+Con esta propiedad, según el valor de L, podemos sacar que:
+- Si L, toma el valor de $\infty$, entonces nos vamos hacia el infinito.
+- Si L, toma el valor de $-\infty$, entonces el valor que tomaremos es 0.
