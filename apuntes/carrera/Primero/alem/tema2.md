@@ -2,7 +2,7 @@
 title: Aritmética entera y modular
 description: 
 published: true
-date: 2025-10-15T20:14:32.521Z
+date: 2025-10-15T20:29:47.704Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:45:03.771Z
@@ -368,3 +368,38 @@ $11x \equiv 7 \text{ mod }51$.
 Lo primero que hacemos es resolver: $26x \equiv 22 \text{ mod }44$.
 
 Aplicamos las propiedades que sabemos y reducimos la expresión a $13x \equiv 11 \text{ mod }22$, y comprobamos que $\text{mcd}(13,22)=1; 1|11$. Por lo que hay solución.
+
+Bien pues hacemos los calculos pertinentes para obtener $13^{-1}$ ( Algoritmo extendido de Euclides). Y obtenemos $x \equiv 11 \text{ mod }22$, por lo que la solución es $x = 11 + 22 * k_{1}$.
+> Recordamos nuestra x.
+{.is-warning}
+
+Ahora que tenemos este resultado lo sustituimos en el segundo formando:
+$35x \equiv 49 \text{ mod }78 \Rightarrow 35*(11 + 22 * k_{1}) \equiv 49 \text{ mod }78 = 385+770k_{1}\equiv 49 \text{ mod }78 \Rightarrow 770k_{1}\equiv -336 \text{ mod }78$.
+
+Limpiamos los resultados y obtenemos:
+$68k{1}\equiv 54 \text{ mod }78$. Y comenzamos con las operaciones como antes, $mcd(68,78)=2; 2|54$, por lo tanto hay solución.
+
+$34k_{1}\equiv 27 \text{ mod }39 \Rightarrow 34k^{-1}\text{ mod }39 = 31$.
+$k_{1}\equiv 27*31 \text{ mod }39 \Rightarrow k_{1}\equiv 18 \text{ mod }39$.
+
+Solución:
+$k_{1}= 18 + 39 * k_{2}$.
+Ahora sustituirmos el valor en la $x$ que teneiamos.
+
+$x = 11 + 22 * k_{1} = 11+22(18+39*k_{2})=407+858*k_{2}$
+
+Ahora volveremos a hacer lo mismo que antes.
+
+$11x \equiv 7 \text{ mod }51 \Rightarrow 11*(407+858*k_{2}) \equiv 7 \text{ mod }51 \Rightarrow 4477+9438k_{2}\equiv 7 \text{ mod }51 \Rightarrow 9438k_{2}\equiv -4470 \text{ mod }51$.
+
+Limpiamos todo un poco y obtenemos:
+$3k_{2}\equiv 18 \text{ mod }51$. $mcd(3,51)=3; 3|18.$ Hay solución.
+
+Ahora calcularemos $k_{2}\equiv 6 \text{ mod }17$, como podemos observar, se ha reducido tanto que se ha solucionado solo. Por lo que solo nos queda sustituir en la k que tenemos, ya que la solución es: $k_{2}=6 + 17*k$.
+> Usamos k generica ya que es la última.
+{.is-info}
+
+Ahora sustituimos el valor en la x y obtenemos:
+$x=407+858(6+17*k)=407+5148+14586*k=5555+14586*k$. Por lo tanto nuestra solución es:
+
+$x=5555+14586*k:k\in \mathbb{Z}$.
