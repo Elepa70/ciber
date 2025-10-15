@@ -2,7 +2,7 @@
 title: Aritmética entera y modular
 description: 
 published: true
-date: 2025-10-15T20:10:46.141Z
+date: 2025-10-15T20:14:32.521Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:45:03.771Z
@@ -353,10 +353,18 @@ Ahora vamos a usar un método que si nos va a facilitar el calcular el resultado
 
 El metodo consiste en resolver la primera congruencia, y la solución que tengamos se la añadiremos a la segunda. Tras esto si tenemos más congruencias, la solución de la anterior se la añadiremos a la proxima.
 
-> Debemos recordar las propiedades de la congruencia, donde si tenemos una congruencia del tipo $ax\equiv b \text{ mod }m$, solo tendrá solución si $mcd(a,m)=1$.
+> Debemos recordar las propiedades de la congruencia, donde si tenemos una congruencia del tipo $ax\equiv b \text{ mod }m$, solo tendrá solución si $mcd(a,m)=n$ y $n|b$.
 {.is-warning}
 
 > Hay un caso especial, donde si encontramos una congruencia del tipo $0x\equiv 0 \text{ mod } n$, esto se puede sustituir como $0x\equiv 0 \text{ mod } 1$, y es una congruencia que es una verdad absoluta. Como decir $0x=0$.
 {.is-info}
 
 ##### Ejemplo
+Vamos a resolver un ejemplo puesto por el profesor:
+$26x \equiv 22 \text{ mod }44$.
+$35x \equiv 49 \text{ mod }78$.
+$11x \equiv 7 \text{ mod }51$.
+
+Lo primero que hacemos es resolver: $26x \equiv 22 \text{ mod }44$.
+
+Aplicamos las propiedades que sabemos y reducimos la expresión a $13x \equiv 11 \text{ mod }22$, y comprobamos que $\text{mcd}(13,22)=1; 1|11$. Por lo que hay solución.
