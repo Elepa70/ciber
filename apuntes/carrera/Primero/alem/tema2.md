@@ -2,7 +2,7 @@
 title: Aritmética entera y modular
 description: 
 published: true
-date: 2025-10-16T18:20:17.612Z
+date: 2025-10-16T18:21:01.915Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:45:03.771Z
@@ -326,6 +326,83 @@ $-1-1*5=-6$. Por lo tanto tenemos que $89^{-1} = -6$, en $\text{mod }107$, sin e
 Bien ahora tenemos $x \equiv 65 * 101 \text{ mod }101 \Rightarrow x\equiv 6565 \text{ mod }107$. Para terminar el ejercicio, solo debemos saber el módulo de $6565/107$, que nos dá 38.
 
 Por lo tanto ponemos el resultado como $x \equiv 38 \text{ mod }107$, **y** $x=38+107*k : k\in \mathbb{Z}$.
+
+### Sistemas de congruencias lineales
+Un sistema de congruencia es lo sigueinte:
+$a_{1}x \equiv b_{1} \text{ mod }m_{1}$.
+$a_{2}x \equiv b_{2} \text{ mod }m_{2}$.
+.......................................
+$a_{l}x \equiv b_{l} \text{ mod }m_{l}$.
+
+Nuestro objetivo es buscar números enteros que sean soluciones todas las congruencias impuestas, en este caso tenemos un sistema formado por dos congruencias.
+
+Para resolverlo tenemos varias maneras, aunque se explicará una en más detalle.
+#### Teorema chino del resto
+Este teorema nos dice, que dado una congruencia con la anterior forma. Si para cada $i,j$ tales que $1\leq i < j \leq l$, se tiene que $mcd(m_{i},m_{j})=1$, entonces el sistema tiene solución. Y si el sistema tiene soluci´n entonces, debe tener la forma que solemos usar: $x=a+k*M : k\in \mathbb{Z}$, siendo $M=m_{1}*m_{2}\dots$.
+
+Este teorema, realmente no nos ayuda a resolver propiamente dicho, ya que antes debemos resolver ambas congruencias para poder efectivamente aplicar el teorema, y la solución puede ser muy costosa de encontrar.
+#### Generalización del teorema chino del resto
+Dado un congruencia de la forma anterior, decimos que el sistema tendra solución si y solo si, para cada $i,j$ tales que $1\leq i < j \leq l$. Se cumple $mcd(m_{i},m_{j})=1 | (b_{i}-b{j})$.
+
+Lo que nos dice es que vamos a encontrar solución siempre y cuando tenga minímo común divisor el 1 en cada modulo dado, y que sel resultado de $b_{i}-b{j}$, sea multiplo de 1. 
+
+Sin embargo esto tampoco nos ayuda a llegar la solución, solo es una manera que nos indica que va a tener solución.
+
+#### Resolución de sistemas de congruencias
+Ahora vamos a usar un método que si nos va a facilitar el calcular el resultado.
+
+El metodo consiste en resolver la primera congruencia, y la solución que tengamos se la añadiremos a la segunda. Tras esto si tenemos más congruencias, la solución de la anterior se la añadiremos a la proxima.
+
+> Debemos recordar las propiedades de la congruencia, donde si tenemos una congruencia del tipo $ax\equiv b \text{ mod }m$, solo tendrá solución si $mcd(a,m)=n$ y $n|b$.
+{.is-warning}
+
+> Hay un caso especial, donde si encontramos una congruencia del tipo $0x\equiv 0 \text{ mod } n$, esto se puede sustituir como $0x\equiv 0 \text{ mod } 1$, y es una congruencia que es una verdad absoluta. Como decir $0x=0$.
+{.is-info}
+
+##### Ejemplo
+Vamos a resolver un ejemplo puesto por el profesor:
+$26x \equiv 22 \text{ mod }44$.
+$35x \equiv 49 \text{ mod }78$.
+$11x \equiv 7 \text{ mod }51$.
+
+Lo primero que hacemos es resolver: $26x \equiv 22 \text{ mod }44$.
+
+Aplicamos las propiedades que sabemos y reducimos la expresión a $13x \equiv 11 \text{ mod }22$, y comprobamos que $\text{mcd}(13,22)=1; 1|11$. Por lo que hay solución.
+
+Bien pues hacemos los calculos pertinentes para obtener $13^{-1}$ ( Algoritmo extendido de Euclides). Y obtenemos $x \equiv 11 \text{ mod }22$, por lo que la solución es $x = 11 + 22 * k_{1}$.
+> Recordamos nuestra x.
+{.is-warning}
+
+Ahora que tenemos este resultado lo sustituimos en el segundo formando:
+$35x \equiv 49 \text{ mod }78 \Rightarrow 35*(11 + 22 * k_{1}) \equiv 49 \text{ mod }78 = 385+770k_{1}\equiv 49 \text{ mod }78 \Rightarrow 770k_{1}\equiv -336 \text{ mod }78$.
+
+Limpiamos los resultados y obtenemos:
+$68k{1}\equiv 54 \text{ mod }78$. Y comenzamos con las operaciones como antes, $mcd(68,78)=2; 2|54$, por lo tanto hay solución.
+
+$34k_{1}\equiv 27 \text{ mod }39 \Rightarrow 34k^{-1}\text{ mod }39 = 31$.
+$k_{1}\equiv 27*31 \text{ mod }39 \Rightarrow k_{1}\equiv 18 \text{ mod }39$.
+
+Solución:
+$k_{1}= 18 + 39 * k_{2}$.
+Ahora sustituirmos el valor en la $x$ que teneiamos.
+
+$x = 11 + 22 * k_{1} = 11+22(18+39*k_{2})=407+858*k_{2}$
+
+Ahora volveremos a hacer lo mismo que antes.
+
+$11x \equiv 7 \text{ mod }51 \Rightarrow 11*(407+858*k_{2}) \equiv 7 \text{ mod }51 \Rightarrow 4477+9438k_{2}\equiv 7 \text{ mod }51 \Rightarrow 9438k_{2}\equiv -4470 \text{ mod }51$.
+
+Limpiamos todo un poco y obtenemos:
+$3k_{2}\equiv 18 \text{ mod }51$. $mcd(3,51)=3; 3|18.$ Hay solución.
+
+Ahora calcularemos $k_{2}\equiv 6 \text{ mod }17$, como podemos observar, se ha reducido tanto que se ha solucionado solo. Por lo que solo nos queda sustituir en la k que tenemos, ya que la solución es: $k_{2}=6 + 17*k$.
+> Usamos k generica ya que es la última.
+{.is-info}
+
+Ahora sustituimos el valor en la x y obtenemos:
+$x=407+858(6+17*k)=407+5148+14586*k=5555+14586*k$. Por lo tanto nuestra solución es:
+
+$x=5555+14586*k:k\in \mathbb{Z}$.
 
 ## Ecuaciones diofanticas
 Las ecuaciones diofanticas son del tipo: $ax+by=c$. Aunque este tipo de ecuaciones, las conocemos de bachillerato, si que es verdad que de primeras no podemos darle una solución unica al resultado.
