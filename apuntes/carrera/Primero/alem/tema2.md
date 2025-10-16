@@ -2,7 +2,7 @@
 title: Aritmética entera y modular
 description: 
 published: true
-date: 2025-10-16T18:21:01.915Z
+date: 2025-10-16T18:28:15.256Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:45:03.771Z
@@ -413,4 +413,19 @@ Por ejemplo en la ecucación diofántica $2x+4y=20$, podemos dar como resultado 
 Antes de poder resolver estas ecuaciones, debemos saber si tenemos o no resultado, ya que estamos operando en $\mathbb{Z}$.
 
 ### ¿Tiene resultado?
-Para que la ecuación diofantica $ax+by=c$, tenga resultado, se debe verificar que $\text{mcd}(a,b)|c$. Es decir que el maximo común divisor de "los valores que acompañan a las incognitas", sea múltiplo de c.
+Para que la ecuación diofantica $ax+by=c$, tenga resultado, se debe verificar que $\text{mcd}(a,b)|c$. Es decir que el maximo común divisor de "los valores que acompañan a las incognitas", sea divisor del valor aparte.
+
+### Resolución
+
+Para poder resolver ecuaciones diofánticas, lo que hacemos es expresarla como una congruencia, por ejemplo $29x+38y=94$, lo expresamos como $29x\equiv 94 \text{ mod }38$, y lo resolvemos.
+
+La solución que nos dé ($x=36+38k:k\in \mathbb{Z}$), la vamos a sustituir en nuestra primera función.
+
+Dandonos como resultado: $29(36+38k)+38y=94$, ojo esta operación **NO**, puede dar un radical, ya que estamos operando en $\mathbb{Z}$.
+
+Como resultado, y nos saldrá $y=-25-29k$. Por lo tanto nuestras soluciones serían $x=36+38k$ y $y=-25-29k$, donde $k\in \mathbb{Z}$.
+
+
+### ¿Y si tengo más de dos incognitas?
+Es exactamente igual procedimiento solo que más largo, debemos primero realizar el $mcd(a,b,d)|c$, y si se cumple, es que el sistema de diofanticas tiene solución.
+
