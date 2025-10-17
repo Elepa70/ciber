@@ -2,7 +2,7 @@
 title: Corriente continua
 description: 
 published: true
-date: 2025-10-17T15:23:15.863Z
+date: 2025-10-17T17:12:58.867Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:25.200Z
@@ -178,7 +178,7 @@ Esto se fundamenta con el principio de superposición, ya que intentamos anular 
 La suma de ambas intensidades o tensiónes nos dara el resultado que buscamos.
 
 ## Resistencia equivalente
-La resistencia equivalente, consiste en una conexión entra formada unicamente por resistencias, que la obtenemos normalmente por asociación, conversión y simplificación de elementos pasivos. Usaremos normalemente el principio de superposición.
+La resistencia equivalente, consiste en una conexión entra formada unicamente por resistencias, que la obtenemos normalmente por asociación, conversión y simplificación de elementos pasivos. Usarem	os normalemente el principio de superposición.
 
 ### Equivalencia Thévenin
 Consiste en un teorema, realizada, por un donde en una circuito cerrado, realizamos una simplificación de las resistencias, pero teneiendo en cuenta la fuente de energía (Voltaje o Corriente), que tengamos. En caso de tener una que es independiente, no podemos modificarla.
