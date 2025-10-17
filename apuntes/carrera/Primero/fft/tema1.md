@@ -2,7 +2,7 @@
 title: Corriente continua
 description: 
 published: true
-date: 2025-10-17T14:33:17.221Z
+date: 2025-10-17T15:02:32.520Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:25.200Z
@@ -171,4 +171,8 @@ El teorema de linealidad, nos dice, que si multiplicamos el valor de todas las f
 
 Dentro de este teorema, podemos ver:
 - Cortociuitos, es decir hacer cero su tensión (En una fuente de tensión)
-- Circuito abierto, es decir hacer su intensidad cero (En una fuente de intensidad)
+- Circuito abierto, es decir hacer su intensidad cero (En una fuente de intensidad).
+
+Esto se fundamenta con el principio de superposición, ya que intentamos anular una de las entradsa de corriente o intensidad en el circuito, para calcular la otra, y después haremos lo mismo con lauq enos sobre. 
+
+La suma de ambas intensidades o tensiónes nos dara el resultado que buscamos.
