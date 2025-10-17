@@ -2,7 +2,7 @@
 title: Corriente continua
 description: 
 published: true
-date: 2025-10-17T14:23:15.851Z
+date: 2025-10-17T14:33:17.221Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:25.200Z
@@ -164,3 +164,11 @@ La regla de Cramer, nos permite la resolución de cualquier sistema de n ecuacio
 ### Casos excepcionales
 Hay veces que debido a que tenemos funtes de tensión y una seríe de nodos, si le añadimos una fuente de corriente, nos dificulta muchisimo mas el trabajo. Es por ello que buscamos alterar este último apartado con uno que rentabilice más.
 
+
+
+## Teorema de linealidad
+El teorema de linealidad, nos dice, que si multiplicamos el valor de todas las fuentes independientes, por una constante. La respuesta del circuito estará multiplicada por esa constante también.
+
+Dentro de este teorema, podemos ver:
+- Cortociuitos, es decir hacer cero su tensión (En una fuente de tensión)
+- Circuito abierto, es decir hacer su intensidad cero (En una fuente de intensidad)
