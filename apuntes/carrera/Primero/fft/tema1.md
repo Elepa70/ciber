@@ -2,7 +2,7 @@
 title: Corriente continua
 description: 
 published: true
-date: 2025-10-17T15:02:32.520Z
+date: 2025-10-17T15:19:19.472Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:25.200Z
@@ -176,3 +176,13 @@ Dentro de este teorema, podemos ver:
 Esto se fundamenta con el principio de superposición, ya que intentamos anular una de las entradsa de corriente o intensidad en el circuito, para calcular la otra, y después haremos lo mismo con lauq enos sobre. 
 
 La suma de ambas intensidades o tensiónes nos dara el resultado que buscamos.
+
+## Resistencia equivalente
+La resistencia equivalente, consiste en una conexión entra formada unicamente por resistencias, que la obtenemos normalmente por asociación, conversión y simplificación de elementos pasivos. Usaremos normalemente el principio de superposición.
+
+### Equivalencia Thévenin
+Consiste en un teorema, realizada, por un donde en una circuito cerrado, realizamos una simplificación de las resistencias, pero teneiendo en cuenta la fuente de energía (Voltaje o Corriente), que tengamos. En caso de tener una que es independiente, no podemos modificarla.
+
+Cuando tenemos por ejemplo un circuito cerrado formadocon 3 resistencias y una fuente de tensión independiente, lo que hacemos es cortocircuitar las fuente, y la formula que haremos será:
+- Calcular los valores en paralelo y en serie como lo solemos ahcer de nromal
+- El $V_{TH}$, lo calculamos con la intensidad de la malla, y sustituyendo la intensidad de la malla, con la formula e Ohm.
