@@ -2,7 +2,7 @@
 title: Corriente continua
 description: 
 published: true
-date: 2025-10-17T15:19:19.472Z
+date: 2025-10-17T15:23:15.863Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:25.200Z
@@ -186,3 +186,6 @@ Consiste en un teorema, realizada, por un donde en una circuito cerrado, realiza
 Cuando tenemos por ejemplo un circuito cerrado formadocon 3 resistencias y una fuente de tensión independiente, lo que hacemos es cortocircuitar las fuente, y la formula que haremos será:
 - Calcular los valores en paralelo y en serie como lo solemos ahcer de nromal
 - El $V_{TH}$, lo calculamos con la intensidad de la malla, y sustituyendo la intensidad de la malla, con la formula e Ohm.
+
+### Equivalente Norton
+En este caso, o que hacemos es lo mismo pero con intensidades, es decir. $R_{TH}=R_{N}$, solo que Norton solo se usa en intensidad de cortocircuito y la Thévenin, con circuito abiertos.
