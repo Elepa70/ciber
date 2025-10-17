@@ -2,7 +2,7 @@
 title: Corriente continua
 description: 
 published: true
-date: 2025-10-10T18:59:10.076Z
+date: 2025-10-17T14:23:15.851Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:25.200Z
@@ -138,9 +138,29 @@ En un circutio, podemos encontrar distintos elementos que es importante saber:
 - Lazo: Conjunto de ramas que definen una trayectoria cerrada. Aquí podemos aplicar la 2º Ley de Kirchhoff
 - Malla: Consiste en a quel lazo que **no**, contiene otro lazo. Es decir, que forma un circuito plano unico.
 
+- Tensión del Nudo n: Consiste en la diferencia de potencia entre el nudo n y otro elegido como referencia (Nudo de tierra habitualmente, un icono de un triangulo hacia abajo).
+
+La tensión en un nudo, lo que vamos a comprobar es comprobar los elementos entre los nudos indicados, y el valor será la diferencia que procede entre ambas tensiones.
 ## Impedancia y admitancia
 La Impedancia (Z), con la siguiente formula: $Z=\frac{v}{i}$, es una medida de oposición que presenta un circuito a una corriente cuando se aplica una tensión.
 
 Sin embargo la Admitancia (Y), es lo contrario, $Y=\frac{i}{v}$.
 
 Podemos conectar ambas formulas con: $Z=\frac{1}{Y}$.
+
+## Planteamiento general de resolución de ejercicios
+Cuando nos enfrentamos a los ejercicios, podemos usar las leyes de Kirchhoff, y las ecuaciones que obtenemos de ellos. No spermite realizar un método de análisis. 
+
+Con estos métodos de análisis, podemos resolver con ecuaciones de corriente de mallas (Lo que solemos hacer), o ecucaciones de tensiones de nudos.  Con el método directo, pasamos con las ecucaciones de corriente de mallas en matrices, para poder aplicar la regla de cramer.
+
+Cuando empecemos a analizar las mallas de los casos genericos, lo que vamos a hacer es comprobar el sentido de la corriente conforme a los elemetnos que encontramos. El sentido de la corriente lo imponemos nosotros, pero debe ser el mismo, y tras esto.
+
+
+
+### Regla de Cramer
+La regla de Cramer, nos permite la resolución de cualquier sistema de n ecuaciones con n incógnitas. Es recomendable acudir a fuentes externas para poder revisar como fucnionan
+
+
+### Casos excepcionales
+Hay veces que debido a que tenemos funtes de tensión y una seríe de nodos, si le añadimos una fuente de corriente, nos dificulta muchisimo mas el trabajo. Es por ello que buscamos alterar este último apartado con uno que rentabilice más.
+
