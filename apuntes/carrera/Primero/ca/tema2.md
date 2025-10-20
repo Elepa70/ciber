@@ -2,7 +2,7 @@
 title: Sucesiones y series
 description: 
 published: true
-date: 2025-10-15T19:51:01.836Z
+date: 2025-10-20T18:41:27.117Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-01T20:11:42.684Z
@@ -171,3 +171,28 @@ El teorma del número $e$, nos da las siguiente "propiedad":
 Con esta propiedad, según el valor de L, podemos sacar que:
 - Si L, toma el valor de $\infty$, entonces nos vamos hacia el infinito.
 - Si L, toma el valor de $-\infty$, entonces el valor que tomaremos es 0.
+
+## Series de $\mathbb{N}$.
+Antes de explicar que son las series, es importante saber como funciona el $\varSigma$, o sumatorio.
+
+Cuando tenemos $\varSigma^{n}_{n=1}a_{n} = a_{1}+a_{2}+\dots a_{n}$, tenemos un sumatorio que va desde $n=1$ hasta $n$. Por lo tanto sea la sucesión $\{a_{n}\}$, $S_{1}=a_{1},S_{2}=a_{1}+a_{2},S_{3}=a_{1}+a_{2}+a_{3}\dots S_{n}=\varSigma a_{n}$, esto último lo llamaremos termino general de $a_{n} \text{ o }\varSigma a_{n}$.
+> Las indicaciones en $\varSigma^{n}_{n=1}a_{n}$, n debe estar encima del sumatorio y $n=1$, debe estar debajo del sumatorio. Debido al software que uso, no puedo implementar esto último.
+{.is-warning}
+
+Cuando tenemos una serie, dada por un sumatorio (Lo normal), podemos diferenciar dos partes:
+- Termino general: Lo que está en el sumatorio
+- Suecsión de sumas parciales: Aquello que da el resultado sus sumas parciales, lo veremosc on ejemplos.
+
+#### Ejemplos
+1. $\varSigma \text{ }7$, tenemos el termino general $7$ y la sucesión de sumas parciales $7+7+7+7+7+\dots$. Esta serie se llama **serie constante**.
+
+2. $\varSigma \text{ } \frac{1}{n}$, tenemos el termino general $\frac{1}{n}$ y la sucesión de sumas parciales $1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\dots + \frac{1}{n}$. Esta serie se llama **serie armónica**.
+
+3. $\varSigma \text{ }x^{n}$, tenemos el termino general $x^{n}$ y la sucesión de sumas parciales $1+x+x^{2}+x^{3}+x^{4}+\dots +x^{n}$. Esta serie se llama **serie gemoetrica de razón x**. Donde $x$ es un valor constante. 
+
+### Serie convergente
+Decimos que una serie como $\varSigma a$ es convergente si y solo si, existe un limite ne la sucesión. De forma matemática $\varSigma a \text{ es convergente} \Leftrightarrow \exists \lim(a_{1}+a_{2}+a_{3}+\dots a_{n}) \in \mathbb{R}$.
+
+El apartado de $\lim(a_{1}+a_{2}+a_{3}+\dots a_{n})$, lo podemos llamar suma de la serie. 
+
+Para que una serie sea convergente, es necesario que su termino general deba tender a 0. $\varSigma a_{n} \text{ convergente} \Rightarrow \{a_{n}\}\rightarrow 0$, sin embargo esto no puede ser inverso, es decir. Si el termino general tiende a 0, no tiene porque ser convergente.
