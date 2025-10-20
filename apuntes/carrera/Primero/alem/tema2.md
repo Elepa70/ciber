@@ -2,7 +2,7 @@
 title: Aritmética entera y modular
 description: 
 published: true
-date: 2025-10-16T18:28:15.256Z
+date: 2025-10-20T20:13:27.305Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:45:03.771Z
@@ -429,3 +429,38 @@ Como resultado, y nos saldrá $y=-25-29k$. Por lo tanto nuestras soluciones ser�
 ### ¿Y si tengo más de dos incognitas?
 Es exactamente igual procedimiento solo que más largo, debemos primero realizar el $mcd(a,b,d)|c$, y si se cumple, es que el sistema de diofanticas tiene solución.
 
+## Función de Euler
+Antes de empezar, debemos recordar que $a$ es unidad de $\mathbb{Z}_{n}$, si $a*v=1$. Es decir, existe un valor $v$, que multiplicado por $a$ hace 1.
+
+Por lo tanto $U(\mathbb{Z}_{n}) = \{a\in \mathbb{Z}_{n}:a\text{ es unidad}\}$.
+
+Por ejemplo en el caso de:
+- $\mathbb{Z}_{4}=\{0,1,2,3\}$, tenemos $U(\mathbb{Z}_{2}) = \{1,3\}$, ya que el $2$, nunca hace unidad, si seguimos sumando $2$ en modulo $4$, siempre obtendremos $2$.
+
+Por lo tanto definimos la función de Euler ($\varphi$) como la cantidad de valores que son unitarios en un módulo. Retomando el ejemplo anterior tenemos que $\varphi(4)=2$.
+
+Para los valores primos, debido a que los primos son solo divisibles entre le mismo y el 1, obtenemos que, si $p$ es primo, $\varphi(p)=p-1$. Claro este se cumple con los primos naturales, ¿pero y si es un primo en potencia?.
+
+Aquí tenemos lo siguiente:
+$\varphi(p^{a})=p^{a}-p^{a-1}$. Es decir para el caso de $n=3^3$, la cantidad de valores unidad será $\varphi(3^{3})=3^{3}-3^{2}$.
+
+Claro pero y si ahora lo hacemos con $36$, que es $2^{2}*3^{2}$. Lo que haremos será de cada termino que hayamos obtenido en potencia, restarlo con el anterior y multiplicarlo. Es decir $\varphi(36)=(2^{2}-2^{2-1})*(3^{2}-3^{2-1}) = 2*3=6$.
+
+Este metodo nos es util en baja escala, pero y si queremos calcular algo como $3^{10} mod 7$. En este caso podemos calcular una serie de potencias de 3 en modulo 7 hasta que veamos que cicle.
+- $3^{0} = 1$.
+- $3^{1} = 3$.
+- $3^{2} = 2$.
+- $3^{3} = 6$.
+- $3^{4} = 4$.
+- $3^{5} = 5$.
+- $\dots$.
+
+Si siguieramos, nos daríamos cuenta que estamos en un circulo vicioso entre esos terminos, estamo "ciclando" entre ellos. En ese caso, deberemos simplemente hacer un división de la potencia que tenemos, entre los valores que hemos obtenido al ciclar ($6$), y el resto será la posición que ocupa. Por ejemplo $3^123 mod 7$, pues $123/6=20$, con modulo 3, por lo tanto será $6$.
+
+### Teorema de Fermat
+El teorema de fermat nos dice que dados dos números enteros, donde uno de ellos es mayor que 2. Si el minimó común multiplo es 1, entocnes $a^{\varphi(n)}\equiv 1\text{ mod }n$.
+
+> Por completar.
+{.is-warning}
+
+Si en el seguimos el teorema, cuando nos encontramos dos valores cuyo maximo común divisor sea distinto de 1, no podemos aplicar lo del bucle. Sin embargo es posible que este bucle se produzca más adelante, no indica que no exista.
