@@ -2,7 +2,7 @@
 title: Sucesiones y series
 description: 
 published: true
-date: 2025-10-20T18:41:27.117Z
+date: 2025-10-22T18:26:51.426Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-01T20:11:42.684Z
@@ -186,7 +186,7 @@ Cuando tenemos una serie, dada por un sumatorio (Lo normal), podemos diferenciar
 #### Ejemplos
 1. $\varSigma \text{ }7$, tenemos el termino general $7$ y la sucesión de sumas parciales $7+7+7+7+7+\dots$. Esta serie se llama **serie constante**.
 
-2. $\varSigma \text{ } \frac{1}{n}$, tenemos el termino general $\frac{1}{n}$ y la sucesión de sumas parciales $1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\dots + \frac{1}{n}$. Esta serie se llama **serie armónica**.
+2. $\varSigma \text{ } \frac{1}{n}$, tenemos el termino general $\frac{1}{n}$ y la sucesión de sumas parciales $1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\dots + \frac{1}{n}$. Esta serie se llama **serie armónica**. Existe una variante de serie armónica, llamada **serie armonica generalizada**, que es escribe de la siguiente manera$\varSigma \text{ } \frac{1}{n^{\alpha}}$.
 
 3. $\varSigma \text{ }x^{n}$, tenemos el termino general $x^{n}$ y la sucesión de sumas parciales $1+x+x^{2}+x^{3}+x^{4}+\dots +x^{n}$. Esta serie se llama **serie gemoetrica de razón x**. Donde $x$ es un valor constante. 
 
@@ -196,3 +196,26 @@ Decimos que una serie como $\varSigma a$ es convergente si y solo si, existe un 
 El apartado de $\lim(a_{1}+a_{2}+a_{3}+\dots a_{n})$, lo podemos llamar suma de la serie. 
 
 Para que una serie sea convergente, es necesario que su termino general deba tender a 0. $\varSigma a_{n} \text{ convergente} \Rightarrow \{a_{n}\}\rightarrow 0$, sin embargo esto no puede ser inverso, es decir. Si el termino general tiende a 0, no tiene porque ser convergente.
+
+De los ejemplos que tenemos:
+- Las series constantes nunca serán convergentes.
+- Las series armónicas no convergen, sin embargo las series que sean armonica generalizadas **SI**, convergen, siempre y cuando $\alpha$ tengo un valor mayor a 1, es decir $\alpha > 1$.
+- Las series geometricas de razón, si convergen, pero solo si el termino general, tiene un valor positivo menor a 1. Es decir $|x|<1$.
+
+### Serie cola
+Las series cola consiste en unas series donde partimos desde "otro punto" que no le corresponde a una serie normal. Es decir es nacida de otra.
+
+> Si una serie cola, es parte de una serie convergente, entonces la serie cola también lo será.
+{.is-info}
+
+#### Ejemplo
+$\varSigma^{\infty}_{n\geq 7}a_{n} \Rightarrow \varSigma^{\infty}_{n = 7}a_{n} = \varSigma^{\infty}_{n =1}a_{n} - (a_{1}+a_{2}+a_{3}+a_{4}+a_{5}+a_{6})$. 
+
+> Importante fijarse como están puestas las flechas y los iguales debajo del sumatorio.
+{.is-warning}
+
+### Propiedades de las series / Operaciones de las series
+Las propiedades de las series, o las operaciones que podemos realizar con ellas son dos, y siempre debemos tener una serie convergente, para este ejemplo vamos a tener $\varSigma a_{n} \text { y }\varSigma \text{ }b_{n}$, ambas convergentes.
+
+- $\varSigma (a_{n}+b_{n}) = \varSigma a_{n} +\varSigma b_{n}$.
+- $\varSigma \alpha a_{n} = \alpha \varSigma a_{n}$, siendo $\alpha$ una constante.
