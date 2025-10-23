@@ -2,7 +2,7 @@
 title: Sucesiones y series
 description: 
 published: true
-date: 2025-10-22T18:26:51.426Z
+date: 2025-10-23T18:22:35.335Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-01T20:11:42.684Z
@@ -27,7 +27,7 @@ Sucesión constante o número 1. Es aquella que nunca va a variar por ejemplo:
 $\{7\}, x_{n} = 7, \forall n \in \mathbb{N}$. Si lo representamos gráficamente tenemos una recta donde todos los puntos están concentrados en el 7.
 
 Sucesión número 2. Es aquella sucesión más trivial que podemos imaginarnos:
-$\{n\}, x_{n} = n, \forall n \in \mathbb{N}$. En este caso obtenemos una lista de números que empieza en el $1$ y acabará en el $\infty$
+$\{n\}, x_{n} = n, \forall n \in \mathbb{N}$. En este caso obtenemos una lista de números que empieza en el $1$ y acabará en el $\infty$.
 
 Sucesión número 3. Otra forma de ver una sucesión.
 $\{\frac{1}{n}\}, x_{n} = \frac{1}{n}, \forall n \in \mathbb{N}$. Ahora si lo representamos empezaremos en el 1, sin embargo nos acercaremos lentamente al 0 sin llegar a tocarlo.
@@ -219,3 +219,11 @@ Las propiedades de las series, o las operaciones que podemos realizar con ellas 
 
 - $\varSigma (a_{n}+b_{n}) = \varSigma a_{n} +\varSigma b_{n}$.
 - $\varSigma \alpha a_{n} = \alpha \varSigma a_{n}$, siendo $\alpha$ una constante.
+
+### Criterios de convergencia en series
+Aunque hayamos dicho que aquellas series que son convergente, debe tender su termino general a 0. Sin embargo, no nos es facil evaluar las series dadas, por ello vamosa a prender 3 criterios de convergencias más.
+
+En todos los criterios vamos a tener en cuenta que $\varSigma a_{n} (a_{n} \geq 0, \forall n)$.
+1. Criterio de la Raíz n-esima (También conocido como criterio de Couchy): En este metodo lo que hacemos es: Sea $\varSigma a_{n}$, $\lim \sqrt[n]{a_{n}} = L$, y dependiendo de $L$, tenemos uno o varios resultados.
+
+1. Criterio del cociente (También conocido como criterio de D'Alembert): En este metodo lo que hacemos es: Sea $\varSigma a_{n}$, $\lim \frac{a_{n+1}}{a_{n}} = L$, lo que es lo mismo y  $\lim (a_{n+1})*(\frac{1}{a_{n}}) = L$ dependiendo de $L$, tenemos uno o varios resultados.
