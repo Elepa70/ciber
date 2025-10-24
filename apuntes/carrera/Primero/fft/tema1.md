@@ -2,7 +2,7 @@
 title: Corriente continua
 description: 
 published: true
-date: 2025-10-17T17:12:58.867Z
+date: 2025-10-24T13:25:28.770Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:25.200Z
