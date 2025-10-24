@@ -2,7 +2,7 @@
 title: Cuerpos finitos
 description: 
 published: true
-date: 2025-10-22T19:11:08.623Z
+date: 2025-10-24T11:10:27.745Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-22T19:11:08.623Z
@@ -66,3 +66,57 @@ Consiste en una evaluación, donde el valor resultante es 0, o buscamos que sea 
 
 ## Algoritmo de Horner
 El algoritmo de horner es un metodo que tenemos para poder dividir polinomios, recordamos la definición anteriormente.
+
+El algoritmo de Horner, es un metodo que tenemos para poder dividir polinomios y funciona de la siguiente manera:
+- Escribimos todos los coeficientes del polinomio dividendo, en una fila.
+- En el lateral de la tabla, escribiremos de forma descendiente los valores del divisor. (Aunque el primero de todo no lo usaremos).
+- Tras esto haremos "Ruffini", es decir, bajamos el priver valor y lo multiplicamos por ambos números del latera. Importante: Cuando multipliquemos, usaremos todos los valores del dividendo excluyendo el del mayor grado, y después lo colocaremos según cuando lo hayamos multiplicado, es decir si ha sido el primero lo colocaremos justo para el siguiente, si es el segundo, pues hacia el segundo etc etc
+- Tras esto, los úlltimos valores según nuestro dividendo (Si estamos multiplicando con dos valores, los últimos dos valores), será considerando nuestro resto y lo que sobre será nuestro cociente.
+
+Es importante, cuandoe stemos en $\mathbb{Z}_{n}$, deberemos tener en cuenta que los valores que ponemos a la izquierda son negativos, así que deberemos buscar primero su inverso (Algoritmo extendido de euclides). 
+
+Si el dividendo **NO** es mónico, deberemos dividir todos los valores finales entre $\frac{1}{n}$, siendo $n$, el valor que acompaña a la incognita con mayor grado. Se debe tener especial cuidado si estamos en otra base.
+
+## Polinomios - Divisibilidad
+Cuando hablamos de la divisibilidad, usamos los mismos conceptos que aprendimos con los números enteros, es decir $a|b$. Sin embargo aquí debemos tener en cuenta que usamos cuerpos y que estamos con polinomios.
+
+Los mayores cambios son con algunas propiedades como:
+- Si $a(x)|1$ entonces $a(x) \in K$.
+- Si $a(x)|b(x)$ y $b(x)|a(x)$ entonces $a(x)= \lambda b(x)$ para algún $\lambda \in K$.
+- Si $a(x)|b(x)$ y $a(x)|c(x)$ entonces $a(x)|(b(x)+c(x))$ y $a(x)|(b(x)-c(x)$.
+- Si $a(x)|b(x)$  entonces $a(x)|b(x)  *c(x)$ para cualquier $c(x) \in K$.
+
+Dicho esto vamos a ver el Máximo común divisor.
+### Máximo común divisor
+> Esto puede ser muy confuso, se recomienda enormemente practicarlo.
+{.is-warning}
+
+El máximo común divisor en polinomios, funciona similar que en los enteros, sin embargo puede llegar a ser confuso.
+
+Debemos tener en cuenta una cosa:
+- Vamos a considerar los polinomios mónicos como unica solución.
+
+Esto es debidoa que podemos tener multiplos "máximos común divisor". 
+
+### Mínimo común múltiplo
+Si el máximo es similar, el mínimo no se queda corto, por ello no hay nada que explicar.
+
+## Polinomios irreducibles
+Los polinomios irreducible, son como los números primos. Aquellos polinomios cuyo mcd es $1$ y el mismo polinomio. Estos polinomios no tienen porque ser monicos, sin embargo todos lo mónicos son irreducibles.
+
+Por ende, los polinomios reducibles, son aquellos polinomios que están conformado por varios irreducbiles (Ejemplo: $4=2^{2}$)
+
+### Factorización de polinomios
+La factorización de polinomios es lo mismo que en los números reales (como se ha dicho antes $9=3^{2}$. Sin embargo aquí jugamos una serie de reglas:
+- Un polinomio $q(x)$ se considera irreducible si tiene un divisir grado $1$, y solo tiene una raíz.
+
+Con estas reglas debemos **sabernos** los siguientes polinomios irreducibles en $\mathbb{Z}_{2}$:
+- $x$.
+- $x+1$.
+- $x^2+x+1$.
+- $x^3+x+1$.
+- $x^2+x^{2}+1$.
+
+El resto como $x^{2}$ se escribe como composición de los anteriores, por ejemplo $x^{2}=x*x$ o $x^3+1 = (x+1)(x^2+x+1)$, o $x^{4}+x^{2}+1 = (x^{2}+x+1)^{2}$.
+
+Para poder deducir si es o no irreducible, dependiendo de la base que tengamos, debemos sustituir todas las "$x$", con los valores de esa $Z_{n}$. Por ejemplo si tenemos $Z_{3}$, lo comprobamos sustituyendo cada x por $\{0,1,2\}$, y comprobar si son o no raíz.
