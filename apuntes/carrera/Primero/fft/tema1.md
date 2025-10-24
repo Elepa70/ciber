@@ -2,7 +2,7 @@
 title: Corriente continua
 description: 
 published: true
-date: 2025-10-24T13:25:28.770Z
+date: 2025-10-24T14:05:20.223Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:25.200Z
@@ -189,3 +189,9 @@ Cuando tenemos por ejemplo un circuito cerrado formadocon 3 resistencias y una f
 
 ### Equivalente Norton
 En este caso, o que hacemos es lo mismo pero con intensidades, es decir. $R_{TH}=R_{N}$, solo que Norton solo se usa en intensidad de cortocircuito y la Thévenin, con circuito abiertos.
+
+### Teorema de máxima transferencia de potencia
+Lo que nos preguntan en estos ejercicios, suele ser:
+- ¿Que resistencia hay que poner en el circuito?
+
+Es decir, tenemos que calcular la resistencia Thevenin en un sector indicado, y esa valor obtenido, debe ser igual a la resistencia que hay que poner en el circuito. En otras palabras: $R_{L}=R_{Th}$
