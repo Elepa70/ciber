@@ -2,7 +2,7 @@
 title: Elementos Reactivos
 description: 
 published: true
-date: 2025-10-24T15:13:57.545Z
+date: 2025-10-24T15:30:57.260Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-24T15:13:57.545Z
@@ -60,3 +60,16 @@ Cuando tenemos que las tensiones y corrientes eléctricas en sus elemetnos son c
 - Condensador: Pasa a convertirse en un circuito abierto, ya que V=cte y I=0. 
 - Bobina: Se sustituye por un corto circuito pero por el motivo contrario. I=cte, y V=0.
 
+## Analisis de circuito  en régimen transitorio.
+
+Un régimen permanente, es aquel donde:
+- Las excitaciones llevan mucho tiempo aplicadas.
+- Las características de las fuentes no cambian con el tiempo.
+
+Por lo tanto la respuesta del circuito, sigue las naturalezas regidas por las excitaciones, lo que nos permite un estudio continuo
+
+Por otro lado el régimen transitorio:
+- Las excitaciones se aplican o suprimen de forma brusca.
+Lo que genera una respuesta distinta a la naturaleza de la excitación.
+
+Lo que resulta en un estudio de análisis integro-diferencial.
