@@ -2,7 +2,7 @@
 title: Sucesiones y series
 description: 
 published: true
-date: 2025-10-23T18:22:35.335Z
+date: 2025-10-27T20:01:37.257Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-01T20:11:42.684Z
@@ -227,3 +227,15 @@ En todos los criterios vamos a tener en cuenta que $\varSigma a_{n} (a_{n} \geq 
 1. Criterio de la Raíz n-esima (También conocido como criterio de Couchy): En este metodo lo que hacemos es: Sea $\varSigma a_{n}$, $\lim \sqrt[n]{a_{n}} = L$, y dependiendo de $L$, tenemos uno o varios resultados.
 
 1. Criterio del cociente (También conocido como criterio de D'Alembert): En este metodo lo que hacemos es: Sea $\varSigma a_{n}$, $\lim \frac{a_{n+1}}{a_{n}} = L$, lo que es lo mismo y  $\lim (a_{n+1})*(\frac{1}{a_{n}}) = L$ dependiendo de $L$, tenemos uno o varios resultados.
+
+
+1. Criterio de comparación (por paso al limite): Este método es algo distinto a los anteriores, ya que lo que haremos será fundamentalmente comparar con otras sucesiones que tengamos. Primero lo que haremos será determinar quienes son nuestras sucesiones, sea  $\varSigma a_{n}$ y $\varSigma b_{n}$, donde $\varSigma a_{n}$ solemos usarla como aquella a la que vamos a analizar.
+	a) Si $\lim \frac{\varSigma a_{n}}{\varSigma b_{n}} = L \neq 0 \Rightarrow$ ambas sucesiones hacen lo mismo, es decir convergen o no convergen, dependiendo de con cúal sucesión estemos comparando.
+  b) Si $\lim \frac{\varSigma a_{n}}{\varSigma b_{n}} = 0 \Rightarrow$ tenemos dos opciones, la primera es que $\varSigma b_{n} \text{ conv} \Rightarrow \varSigma a_{n} \text{ conv}$ |||| $\varSigma a_{n}\text{ no conv} \Rightarrow \varSigma b_{n} \text{ no conv}$
+  c) Si $\lim \frac{\varSigma a_{n}}{\varSigma b_{n}} = \infty \Rightarrow$ tenemos dos opciones, la primera es que $\varSigma a_{n} \text{ conv} \Rightarrow \varSigma b_{n} \text{ conv}$ |||| $\varSigma b_{n}\text{ no conv} \Rightarrow \varSigma a_{n} \text{ no conv}$
+  
+Cualquier otra cuestión del criterio de comparación, cuenta como invalido o desconocido.
+  
+Las sucesiones que usaremos para compararlas son:
+- Generica de razón $\varSigma x^{n} \text{ conv}\Leftrightarrow |x|<1$
+- Armónica generica $\varSigma \frac{1}{x^{\alpha}} \text{ conv}\Leftrightarrow \alpha>1$
