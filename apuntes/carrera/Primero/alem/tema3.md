@@ -2,7 +2,7 @@
 title: Cuerpos finitos
 description: 
 published: true
-date: 2025-10-24T11:10:27.745Z
+date: 2025-10-27T20:35:18.726Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-22T19:11:08.623Z
@@ -120,3 +120,19 @@ Con estas reglas debemos **sabernos** los siguientes polinomios irreducibles en 
 El resto como $x^{2}$ se escribe como composición de los anteriores, por ejemplo $x^{2}=x*x$ o $x^3+1 = (x+1)(x^2+x+1)$, o $x^{4}+x^{2}+1 = (x^{2}+x+1)^{2}$.
 
 Para poder deducir si es o no irreducible, dependiendo de la base que tengamos, debemos sustituir todas las "$x$", con los valores de esa $Z_{n}$. Por ejemplo si tenemos $Z_{3}$, lo comprobamos sustituyendo cada x por $\{0,1,2\}$, y comprobar si son o no raíz.
+
+### Raices multiples
+Cuando tenemos raices multiples, nos referimos a que es posible que un polinomio, en vez de estar expresado con una raiz irreducible, la expresemos como esa raiz irreducible, elevada a algo. No es mas que decir que $8=2^3$.
+
+### Raices racionales
+Es una forma de poder resolver raices donde el grado es superior a 4, ya que no existe formula para poder resolverlo. Pero antes debe cumplir una serie de cuestiones.
+
+Si $\frac{a}{b}$ es raíz, entonces $a$, puede tomar todos los valores que son $mcd(a,b)$
+ Sea $q(x)=a_{n}x^{n}+\dots+a_{1}x+a_{0}$, tenemos que debe cumplir:
+ - $a|a_{0}$, es decir que el valor a, debe ser los multiplos del $a_{0}$.
+ - $b|a_{n}$, es decir que el valor de b, debe ser los multiplos de $a_{n}$.
+ - $(b-a)|q(1)$, de todas las raices que tengamos formadas por $\frac{a}{b}$, la cumplen aquellas que sea divisor de $(b-a)$.
+ - $(a+b)|q(-1)$, de todas las raices que tengamos formadas por $\frac{a}{b}$, la cumplen aquellas que sea divisor de $(a+b)$.
+ 
+## Algoritmo de euclides extendido
+Esta parte no tiene mucho cambio con respecto a lo estudiado anteriormente, ya que es lo mismo. Sin embargo debemos tener en cuenta que la solución final siempre debe ser monica (o al menos intentarlo), por ello debemos multiplicarlo (En caso de que no salga 
