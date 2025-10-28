@@ -2,7 +2,7 @@
 title: Vectores, Matrices y Registros
 description: 
 published: true
-date: 2025-10-28T11:07:14.621Z
+date: 2025-10-28T11:10:54.789Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-21T17:00:06.294Z
@@ -108,3 +108,5 @@ Con las terminaciones:
 - s.[indice]: Indicamos el caracter que esta en ese indice.
 - s.empty(): COmprobación de que está vacio.
 - s3 = s1 + s2: La suma de strings, lo que hace es juntar ambos strings sin espacios.
+
+## Registro o Struct
