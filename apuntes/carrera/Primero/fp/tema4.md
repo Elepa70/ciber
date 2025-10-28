@@ -2,7 +2,7 @@
 title: Vectores, Matrices y Registros
 description: 
 published: true
-date: 2025-10-21T17:25:13.246Z
+date: 2025-10-28T11:07:14.621Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-21T17:00:06.294Z
@@ -69,6 +69,25 @@ cin >> vector_solo [2];
 Siempre que tengamos una variable en un array, la declararemos como una constante. 
 
 Al igual que las variables, los vectores, debemos asegurarnos que tienen un valor asignado, si no. Podemos causar un error con que el vector tenga un valor desconocido.
+
+## Matrices
+Las matrices consiste en arrays de dos dimensiones, o más dimensiones. También podemos considerarlo un vector de vectores.
+
+Aunque pueda considerase una "tabla", es decir posea filas y columnas, realmente podemos representarlo como un vecto de vectores, en vez de verlo como un conjunto de vectores (Es decir, una linea recta, que se divide en pocos vectores).
+
+```C++
+\\ Para declarar arrays haremos:
+int v[N][M];
+
+\\ Para acceder al valor del array:
+v[0][0];
+```
+Para comprenderlo, debemos tener en cuenta que el primer valor ([M] e nuestro caso), hace referencia a la fila a la que queramos acceder, y la segunda ([N]), es nuestra columna.
+
+Las acciones que podemos hacer con las matrices, son las mismas que los vectores, añadiendo la posibilidad de recorrido secuencial.
+
+
+Este recorrido, lo solemos usar mediante el uso del bucle for.
 
 ## Dato String
 Este dato es importante y por eso lo volvemos a ver aquí. Se considera un dato primitivo, aunque volvamos a verlo aquí.
