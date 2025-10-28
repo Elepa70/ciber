@@ -2,7 +2,7 @@
 title: Corriente continua
 description: 
 published: true
-date: 2025-10-24T14:05:20.223Z
+date: 2025-10-28T15:41:50.541Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:25.200Z
@@ -194,4 +194,4 @@ En este caso, o que hacemos es lo mismo pero con intensidades, es decir. $R_{TH}
 Lo que nos preguntan en estos ejercicios, suele ser:
 - ¿Que resistencia hay que poner en el circuito?
 
-Es decir, tenemos que calcular la resistencia Thevenin en un sector indicado, y esa valor obtenido, debe ser igual a la resistencia que hay que poner en el circuito. En otras palabras: $R_{L}=R_{Th}$
+Es decir, tenemos que calcular la resistencia Thevenin en un sector indicado, y esa valor obtenido, debe ser igual a la resistencia que hay que poner en el circuito. En otras palabras: $R_{L}=R_{Th}$.
