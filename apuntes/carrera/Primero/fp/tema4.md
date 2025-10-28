@@ -2,7 +2,7 @@
 title: Vectores, Matrices y Registros
 description: 
 published: true
-date: 2025-10-28T11:18:54.173Z
+date: 2025-10-28T11:23:25.823Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-21T17:00:06.294Z
