@@ -2,7 +2,7 @@
 title: Vectores, Matrices y Registros
 description: 
 published: true
-date: 2025-10-28T11:10:54.789Z
+date: 2025-10-28T11:18:54.173Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-21T17:00:06.294Z
@@ -110,3 +110,47 @@ Con las terminaciones:
 - s3 = s1 + s2: La suma de strings, lo que hace es juntar ambos strings sin espacios.
 
 ## Registro o Struct
+Los structs nos permiten solucionar una serie de problemas con respecto a los datos estructurados. Es como "una variable de variables".
+
+```C++
+struct <nombre_registro>{
+	tipo_1 campo1;
+  tipo_2 campo2;
+};
+
+
+
+
+\\ Van fuera del main
+int main(){}
+
+
+\\ Ejemplo
+struct punto3d{
+	double x;
+  double y;
+  double z;
+};
+
+int main(){
+	punto3d p1, p2;
+  
+  cout << "Dime el valor de X del punto 1";
+  cin >> p1.x;
+  cout << "Dime el valor de Y del punto 1";
+  cin >> p1.y;
+  cout << "Dime el valor de Z del punto 1";
+  cin >> p1.z;
+  
+  
+  cout << "Dime el valor de X del punto 2";
+  cin >> p2.x;
+  cout << "Dime el valor de Y del punto 2";
+  cin >> p2.y;
+  cout << "Dime el valor de Z del punto 2";
+  cin >> p2.z;
+	return 0;
+}
+```
+
+ESte tipo de variables son especiales ya que requieres de ser declaradas fueras del main, y para poder acceder a los miembors
