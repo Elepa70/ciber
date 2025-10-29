@@ -2,7 +2,7 @@
 title: Cuerpos finitos
 description: 
 published: true
-date: 2025-10-27T20:35:18.726Z
+date: 2025-10-29T20:40:20.944Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-22T19:11:08.623Z
@@ -135,4 +135,45 @@ Si $\frac{a}{b}$ es raíz, entonces $a$, puede tomar todos los valores que son $
  - $(a+b)|q(-1)$, de todas las raices que tengamos formadas por $\frac{a}{b}$, la cumplen aquellas que sea divisor de $(a+b)$.
  
 ## Algoritmo de euclides extendido
-Esta parte no tiene mucho cambio con respecto a lo estudiado anteriormente, ya que es lo mismo. Sin embargo debemos tener en cuenta que la solución final siempre debe ser monica (o al menos intentarlo), por ello debemos multiplicarlo (En caso de que no salga 
+Esta parte no tiene mucho cambio con respecto a lo estudiado anteriormente, ya que es lo mismo. 
+Sin embargo debemos tener una serie de criterios en cuenta.
+1. La solución siempre debe ser mónica, en caso negativo, deberemos buscar su inverso para que sea 1, (recordamos que al solución es el último resto que nos sale).
+2. SI hemos tenido que hacer la multiplicación para poder reducir el resto a mónico, cuando tengamos la solución u(x) y v(x), también deberemos multiplicarlo.
+
+## Cuerpos finitos
+Un cuerpo lo podemos comparar con el tema anterior a los $Z_{2}[x]_{m(x)}$, es decir vamos factorizar (buscar los polinomios irreducibles), de un conjunto para poder "guardar" los valores que vayamos obteniendo en ese conjunto. 
+
+Ejemplo:
+$K=\mathbb{Z}_{2},m(x)=x^{2}+1$.
+Obtenemos: 
+- $[0]m(x)={0,x^{2}+1,x^{3}+x,\dots}$.
+- $[1]m(x)={1,x^{2},x^{3}+x+1,\dots}$.
+- $[x]m(x)={x,x^{2}+x+1,x^{3},\dots}$.
+- $[x+1]m(x)={x+1,x^{2}+x,x^{3}+1,\dots}$.
+
+Claro, es un poco lioso y es normal, ya que haora mismo lo "estamos agrupando sin criterio", pero ello debemos usar el algoritmo extendido de euclides para saber donde pertenece.
+
+Con estos cuerpos podemos normalmente hacer sumas y productos
+### Suma de cuerpos
+Lo que hacemos es ir cogiendo cada componente y sumarle su $[0]$, etc etc... Este no tiene mucha dificultad.
+
+### Multiplicación de cuerpos
+Este si que tiene más dificultad:
+> Si multiplicamos algo por 0 o por 1, debemos tener en cuenta que el resultado debe ser 0 en el caso de multiplicar por 0, o el valor que teniamos antes, al ser multiplicado por 1.
+{.is-warning}
+
+Cuando multiplicamos por ejemplo $A=\mathbb{Z}_{2}[x]_{x^2+1}=\{0,1,x,x+1\}$, y decidimos multiplicar $x*x$, la forma mas sencilla es calcular el resto de la división entre $x*x$, añadiendo un digito extra a la derecha ????
+> Preguntar página 110
+{.is-danger}
+
+Cuando obtenemos que en un $\mathbb{Z}_{x}$, la tabla formada tiene todos valores, podemos decir que es un cuerpo.
+
+> Via positivas 20!?!?!?!?!? 
+{.is-danger}
+
+## Cuerpos finitos isomorfismos
+En general, consiste en que si $K$ es un cuerpo y $m(x) \in K[x]$ es irreducible, entonces $K[x]_{m(x)}$ es un cuerpo.
+
+Ponemos tener una de polinomios irreducibles dependiento del $\mathbb{Z}_{n}$ en el que se trabaje y el grado que estemos usando, por ejemplo para $\mathbb{Z}_{2}$, en grado 3 tenemos 2 polinomios irreducible.
+
+Sin embargo, aunque podamos expresar los polinomios de un grado de forma distinta, si le hacemos una serie de modificaciones podemos determinar que dos polinomios irreducibles pueden llegar a ser el mismo. Si esto se cumple, se dice que estamos trabajando con cuerpos isomorficos.
