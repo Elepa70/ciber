@@ -2,7 +2,7 @@
 title: Cuerpos finitos
 description: 
 published: true
-date: 2025-10-30T18:25:15.795Z
+date: 2025-10-30T20:20:47.802Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-22T19:11:08.623Z
@@ -162,14 +162,10 @@ Este si que tiene más dificultad:
 > Si multiplicamos algo por 0 o por 1, debemos tener en cuenta que el resultado debe ser 0 en el caso de multiplicar por 0, o el valor que teniamos antes, al ser multiplicado por 1.
 {.is-warning}
 
-Cuando multiplicamos por ejemplo $A=\mathbb{Z}_{2}[x]_{x^2+1}=\{0,1,x,x+1\}$, y decidimos multiplicar $x*x$, la forma mas sencilla es calcular el resto de la división entre $x*x$, añadiendo un digito extra a la derecha ????
-> Preguntar página 110
-{.is-danger}
+Cuando multiplicamos por ejemplo $A=\mathbb{Z}_{2}[x]_{x^2+1}=\{0,1,x,x+1\}$, y decidimos multiplicar $x*x$, la forma mas sencilla es calcular el resto de la división entre $x*x$, añadiendo un digito extra a la derecha.
 
 Cuando obtenemos que en un $\mathbb{Z}_{x}$, la tabla formada tiene todos valores, podemos decir que es un cuerpo.
 
-> Añadir nuevo
-{.is-danger}
 
 ## Cuerpos finitos isomorfismos
 En general, consiste en que si $K$ es un cuerpo y $m(x) \in K[x]$ es irreducible, entonces $K[x]_{m(x)}$ es un cuerpo.
@@ -177,3 +173,4 @@ En general, consiste en que si $K$ es un cuerpo y $m(x) \in K[x]$ es irreducible
 Ponemos tener una de polinomios irreducibles dependiento del $\mathbb{Z}_{n}$ en el que se trabaje y el grado que estemos usando, por ejemplo para $\mathbb{Z}_{2}$, en grado 3 tenemos 2 polinomios irreducible.
 
 Sin embargo, aunque podamos expresar los polinomios de un grado de forma distinta, si le hacemos una serie de modificaciones podemos determinar que dos polinomios irreducibles pueden llegar a ser el mismo. Si esto se cumple, se dice que estamos trabajando con cuerpos isomorficos.
+
