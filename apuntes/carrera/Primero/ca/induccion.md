@@ -2,14 +2,14 @@
 title: Principio de Inducción - Ejercicio práctico
 description: 
 published: true
-date: 2025-10-30T20:45:35.979Z
+date: 2025-10-30T20:46:10.539Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-08T20:03:21.415Z
 ---
 
 # En esta página vamos a resolver un ejercicio de inducción para complementar la teoría del tema 2.
-> Hasta que no sea revisado el ejercicio, tenga en cuenta que puede tener faltas ortograficas, erratas o conclusiones/explicaciones poco coherentes matematicamente hablando.
+> Hasta que no sea revisado el ejercicio, tenga en cuenta que puede tener faltas ortograficas, erratas o conclusiones/explicaciones poco coherentes, tanto gramaticales como matematicas.
 {.is-danger}
 
 Ejercicio en cuestión:
