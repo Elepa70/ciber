@@ -2,7 +2,7 @@
 title: Cuerpos finitos
 description: 
 published: true
-date: 2025-10-29T20:40:20.944Z
+date: 2025-10-30T18:25:15.795Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-22T19:11:08.623Z
@@ -168,7 +168,7 @@ Cuando multiplicamos por ejemplo $A=\mathbb{Z}_{2}[x]_{x^2+1}=\{0,1,x,x+1\}$, y 
 
 Cuando obtenemos que en un $\mathbb{Z}_{x}$, la tabla formada tiene todos valores, podemos decir que es un cuerpo.
 
-> Via positivas 20!?!?!?!?!? 
+> Añadir nuevo
 {.is-danger}
 
 ## Cuerpos finitos isomorfismos
