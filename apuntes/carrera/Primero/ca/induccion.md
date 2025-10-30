@@ -2,13 +2,16 @@
 title: Principio de Inducción - Ejercicio práctico
 description: 
 published: true
-date: 2025-10-09T18:09:59.688Z
+date: 2025-10-30T20:45:35.979Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-08T20:03:21.415Z
 ---
 
 # En esta página vamos a resolver un ejercicio de inducción para complementar la teoría del tema 2.
+> Hasta que no sea revisado el ejercicio, tenga en cuenta que puede tener faltas ortograficas, erratas o conclusiones/explicaciones poco coherentes matematicamente hablando.
+{.is-danger}
+
 Ejercicio en cuestión:
 
 Demuestra que la sucesión $x_{1}=1,x_{n+1}=\sqrt{3x_{n}},\forall n \geq 1$ es convergente y calcula su límite.
