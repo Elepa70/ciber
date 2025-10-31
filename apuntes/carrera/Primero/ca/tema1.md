@@ -2,7 +2,7 @@
 title: Tema 1 - Números Reales
 description: 
 published: true
-date: 2025-10-08T14:30:56.685Z
+date: 2025-10-31T15:10:22.459Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:19.213Z
@@ -47,12 +47,12 @@ $a · 1 = a, \forall a \in \mathbb{R}$.
 - Elemento inverso: Si a es un número real distinto de 0, existe el inverso que a por su inverso es 1.
 $\frac{1}{a} = a^{−1}, \text{tal que } a{-1} · a = 1$.
 
-- Propiedad distributiva: Un mismo valor puede afectar a ambos lados dentro de un parentesis (Explicación del alumno)
+- Propiedad distributiva: Un mismo valor puede afectar a ambos lados dentro de un paréntesis (Explicación del alumno)
 $a(b + c) = ab + ac, \forall a, b, c \in \mathbb{R}$.
 
 ### Orden
 El orden nos sirve para poder determinar que valor es mayor que el otro.
-- Propiedad reflexica: Un valor tiene el mismo orden que si mismo.
+- Propiedad reflexiva: Un valor tiene el mismo orden que si mismo.
 $a \leq a$.
 - Propiedad antisimétrica: Un valor "a" que sea superior a "b", y el mismo valor "b" es superior a "a", podemos decir que ambos valores son iguales.
 $a \leq b, b \leq a => a = b$.
@@ -63,7 +63,7 @@ $\{a \leq b\} \{b \leq c  \}=⇒ a \leq c$.
 - Total: Dados dos valores "a" y "b" pertenecientes a los números reales, podemos decir que "a" es mayor que "b" o que "b" es mayor que "a".
 - Orden y suma: Dado dos valores donde uno es mayor que el otro, si ambos son sumados por el mismo valor, se mantendrá el orden.
 $a \leq b =⇒ a + c \leq b + c$.
-- Orden y producto:Dado dos valores donde uno es mayor que el otro, si ambos son multiplicados por el mismo valor, se mantendrá el orden.
+- Orden y producto: Dado dos valores donde uno es mayor que el otro, si ambos son multiplicados por el mismo valor, se mantendrá el orden.
 $a \leq b, c \geq 0 =⇒ ac \leq bc$.
 
 
@@ -75,7 +75,7 @@ Dados dos subconjuntos "A" y "B", y verificando que $a \leq b$, donde "a" es un 
 Hemos podido analizar algunas propiedades dentro de los números reales, sin embargo es esencial poder describir algunos de sus conjuntos para poder comprender la magnitud de los números reales. Vamos a describir a continuación los subconjuntos más notables de $\mathbb{R}$
 
 ### Importante
-Durante el curso se verá el simbolo ℝ, acompañado de varios números o otros simbolos, para poder entenderlo:
+Durante el curso se verá el símbolo ℝ, acompañado de varios números o otros símbolos, para poder entenderlo:
 $\mathbb{R}^{+} = \{x \in \mathbb{R} : x > 0\}$ : Todos los números reales mayor que 0.
 
 $\mathbb{R}^{-} = \{x \in \mathbb{R} : x < 0\}$: Todos los números reales menores que 0.
@@ -98,11 +98,11 @@ $\mathbb{N}=\{1,2,3,4,\dots\}$.
 Diremos que los números enteros son los naturales, los opuestos y el cero.
 $\mathbb{Z}=\{\dots,-2,-1,0,1,2,\dots\}$.
 ### Racionales $(\mathbb{Q})$
-Podemos decir que los numeros racionales son aquellos valores decimales que podemos expresar en forma de fracción.
+Podemos decir que los números racionales son aquellos valores decimales que podemos expresar en forma de fracción.
 $\mathbb{Q} = \{\frac{p}{q} : p \in \mathbb{Z}, q \in \mathbb{N}\}$.
 ### Irracionales $(\frac{\mathbb{R}}{\mathbb{Q}})$
 Podemos decir que son aquellos números que no son racionales.
-Estos números pueden ser: pi (π), raiz de 2 (√2), euler (e) o el número de oro (φ) o (Ø).
+Estos números pueden ser: pi (π), raíz de 2 (√2), Euler (e) o el número de oro (φ) o (Ø).
 
 
 ## Intervalo y acotar
@@ -138,11 +138,11 @@ $(−∞, b] = \{x \in \mathbb{R} : x \leq b\}$.
 $(−∞, b) = \{x \in \mathbb{R}: x < b\}$.
 
 ### Acotación
-Ahora en vez de decir "definido", vamos a usar la palabra matematica ideal. Acotado.
+Ahora en vez de decir "definido", vamos a usar la palabra matemática ideal. Acotado.
 
 Cuando un intervalo está acotado superiormente, significa que existe un valor que siempre está debajo de todo el intervalo. Al igual, decimos que un valor está acotado inferiormente, cuando encontramos un valor que siempre está por debajo del intervalo.
 
-*A* tiene una cota superior en $\mathbb{R}$, si y solo si,existe un valor *M*, que pertenece a los números reales que es mayor que *a* para todo el conjunto de *A*.
+*A* tiene una cota superior en $\mathbb{R}$, si y solo si, existe un valor *M*, que pertenece a los números reales que es mayor que *a* para todo el conjunto de *A*.
 
 En lenguaje matemático: $A \subset \mathbb{R}, \exist M \in \mathbb{R}, a\leq M, \forall a\in A$.
 
@@ -154,7 +154,7 @@ Al igual, decimos que un intervalo está acotado, si esté está acotado superio
 
 
 Por último, podemos decir, que en un intervalo existe un máximo de un conjunto, cuando un valor perteneciente al conjunto definido es superior a todo los valores del conjunto dado. 
-> Similar a la cota inferior, existe un mínimo del conjunto, debemos dijarnos que está definido.
+> Similar a la cota inferior, existe un mínimo del conjunto, debemos fijarnos que está definido.
 {.is-info}
 
 ## Valor absoluto
