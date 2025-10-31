@@ -2,14 +2,14 @@
 title: Sobre Mí
 description: Información relevante al administrador
 published: true
-date: 2025-09-23T20:20:26.811Z
+date: 2025-10-31T15:25:07.634Z
 tags: 
 editor: markdown
-dateCreated: 2025-03-16T21:41:11.981Z
+dateCreated: 2025-09-29T19:28:04.940Z
 ---
 
 # Sobre Mí
-Mi nombre es Pablo Sánchez Hidalgo, soy actualmente (A fecha de 2024/2025), estudiante del Curso de Especialización de Ciberseguridad, en el centro I.E.S. Zaidín Vergeles.
+Mi nombre es Pablo Sánchez Hidalgo, soy actualmente (A fecha de 2025/2026), estudiante de Ingenería Informática en la Universidad de Granada.
 
 ## Un poco de contexto
 La informatica me empezó a atraer ya de bien pequeño, cuando mi primo comenzo a enseñarme el pequeño mundo de Youtube por aquel entonces. Esto era magia para mi, a la vez que WhatsApp. ¿Como erá posible que pudiera enviar mensajes a otros lados en un cacharro tan pequeño?
@@ -25,8 +25,14 @@ En esos dos años, aprendí muchisimo sobre informatica, redes, seguridad y dem�
 
 Entre está decisión, las practicas que hice en la universidad de Varsovia, Lazarski, hizo que pudiera decantarme en está ultima. Gracias a todo esto y el proyecto que realicé con el manejo de varios Firewalls, servidores de monitorización y el despliege de software (Como está aplicación web), influyo en que me decantará en Ciberseguridad.
 
-Tras finalizar ASIR con una media de 8.85, pudé entrar en el Curso de Especialización de Ciberseguridad (O ciber), actualmente estoy en este curso así que no puedo describir mucho más. Estoy participando en el proyecto Matchmaking IV de IAGranada, y me ha valido para obtener algunas certificaciones
+Tras finalizar ASIR con una media de 8.85, pudé entrar en el Curso de Especialización de Ciberseguridad ( O ciber).
 
+Me tuve que mover a Granada, concretamente al instituto Zaidín Vergeles, para poder realizar el curso de ciber, durante esté tiempo estuve aprendiendo sobre númerosas cosas tanto en defensa como en ataque, y pude sacarme el titulo con una nota de 9.33
+
+Decidí continuar mis estudios con el grado universitario de Ingeniería Informática en la UGR (Universidad de Granada), durante este curso academico han pasado númerosas cosas como:
+- Ser delegado del curso.
+- Pertenecer al grupo de Hackiit.
+- Usar Wazuh y n8n para hacer un SIEM y SOAR sobre este servidor.
 ## Certificaciones 
 Tengo varias certificaciones entre ellas puedo incluir:
 - Google Cloud Cybersecurity Certificate - Google **[Validación](https://www.credly.com/badges/4ccc3bf0-ec63-4c0b-8cc5-da722e35a8c3/linked_in_profile)**
