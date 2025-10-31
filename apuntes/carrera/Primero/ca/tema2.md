@@ -2,7 +2,7 @@
 title: Sucesiones y series
 description: 
 published: true
-date: 2025-10-27T20:01:37.257Z
+date: 2025-10-31T15:18:35.486Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-01T20:11:42.684Z
@@ -38,7 +38,7 @@ $\{-1^{n}\}, x_{n} = -1^{n}, \forall n \in \mathbb{N}$. Si lo representamos en u
 
 Con estos ejemplos vamos poder explicar las sucesiones convergentes y acotadas.
 ### Sucesiones convergentes
-Las podemos definir como, sea $\{x_{n}\}$ es convergente, si solo sí cuando exista un único número x, que verifica que la distancia entre la sucesión y el varlo x sea cercano.
+Las podemos definir como, sea $\{x_{n}\}$ es convergente, si solo sí cuando exista un único número x, que verifica que la distancia entre la sucesión y el valor x sea cercano.
 
 Es decir: Podemos decir que es convergente, cuando podemos encontrar valores que están entre medias de X.
 
@@ -48,7 +48,7 @@ En nuestros ejemplos diremos:
 - Es convergente ya que todos se acercan al 0.
 - No es convergente ya que o están en el -1 o están en el 1.
 
-Una forma muy bulgar de definirlo, es decir que los valores se aperotonan en un unico lugar.
+Una forma muy vulgar de definirlo, es decir que los valores se apelotonan en un único lugar.
 > Es solo para explicarlo, por favor no lo definais asi en los ejercicios.
 {.is-danger}
 
@@ -60,7 +60,7 @@ Como vimos en el anterior tema, las sucesiones acotadas suelen ser las que posee
 Podemos decir que:
 - $\{x_{n}\}$ está acotada superiormente $<=> \exist \text{ }M \in \mathbb{R} \text{ t.q. } x_{n}\leq M, \forall n\in \mathbb{N}$. Existe un valor M perteneciente a los números reales, tal que M sea más grande que la sucesión, para cualquier valor dentro de la sucesión.
 - $\{x_{n}\}$ está acotada inferiormente $<=> \exist \text{ }m \in \mathbb{R} \text{ t.q. } m\leq x_{n}, \forall n\in \mathbb{N}$. Existe un valor m perteneciente a los números reales, tal que m sea más pequeño que la sucesión, para cualquier valor dentro de la sucesión.
-- $\{x_{n}\}$ está acotada $<=> \exist \text{ }m,M \in \mathbb{R} \text{ t.q. } m\leq x_{n}\leq M, \forall n\in \mathbb{N}$. Cuando existe cota superior y cota ínferior
+- $\{x_{n}\}$ está acotada $<=> \exist \text{ }m,M \in \mathbb{R} \text{ t.q. } m\leq x_{n}\leq M, \forall n\in \mathbb{N}$. Cuando existe cota superior y cota inferior
 
 
 En nuestros ejemplos diremos:
@@ -72,7 +72,7 @@ En nuestros ejemplos diremos:
 
 Con esto podemos decir que las sucesiones convergentes están acotadas, sin embargo las sucesiones acotadas pueden o no ser convergentes.
 
-### Sucesiones monotomas
+### Sucesiones monótonas
 La podemos definir como en una sucesión, siempre encontramos un valor donde dependiendo del puesto que ocupe, tendrá un valor mayor que el anterior. Ejemplo de estas puede ser la 2º del ejemplo.
 
 Es decir, diremos que $\{X_{n}\}$ es creciente si $x_{n}\leq x_{n+1}, \forall \text{ }n \in \mathbb{N}$.
@@ -88,7 +88,7 @@ Primero vamos a definir, Sean $\{x_{n}\}$ y $\{y_{n}\}$ dos sucesiones convergen
 2. $\lim (x_{n}*y_{n}) =\lim x_{n}*\lim y_{n}$,
 3. Si $\lim y_{n} \neq 0$ entonces  $\lim\frac{x_{n}}{y_{n}} =\frac{\lim(x_{n})}{\lim(y_{n})}$,
 4. Si $x_{n} \leq y_{n} \forall n$ entonces  $\lim(x_{n}) \leq \lim( y_{n})$
-5. Si $x_{n}\leq y_{n} \leq z_{n}, \forall \text{ }n \in \mathbb{N}$ y $\lim x_{n}=\lim z_{n}$. Entonces $\lim x_{n} = \lim y_{n} = \lim z_{n}$. Esta se conoce como regla del sandwich, donde dado los limites que tienen al mismo lado, entonces cualquier numero intermedio también tiende al mismo limite.
+5. Si $x_{n}\leq y_{n} \leq z_{n}, \forall \text{ }n \in \mathbb{N}$ y $\lim x_{n}=\lim z_{n}$. Entonces $\lim x_{n} = \lim y_{n} = \lim z_{n}$. Esta se conoce como regla del sándwich, donde dado los limites que tienen al mismo lado, entonces cualquier numero intermedio también tiende al mismo limite.
 6. Si $\{x_{n}\}$ esta acotada y $\lim y_{n} = 0$ entonces: $\lim x_{n} * y_{n} = 0$. O lo que es lo mismo, una sucesión acotada multiplicada por un límite que tiende a 0, es 0.
 
 
@@ -96,14 +96,14 @@ Primero vamos a definir, Sean $\{x_{n}\}$ y $\{y_{n}\}$ dos sucesiones convergen
 
 El uso que le vamos a dar al principio de inducción es demostrar una propiedad en $\mathbb{N}$. Para hacer una demostración por inducción, vamos a hacer lo siguiente:
 1. Debemos demostrar que suceda el primer caso. $(n=1)$
-2. Suponemos que se cumplen los n primeros casos. Asumir la hipotesis de la inducción.
+2. Suponemos que se cumplen los n primeros casos. Asumir la hipótesis de la inducción.
 3. Demostrar que a partir del n-ésimo caso, demostrar el siguiente caso. $(n+1)$
 
 Por ejemplo, cuando queremos demostrar que los elementos de una sucesión cumplen una propiedad, demostramos que el elemento $x_{1}$ se cumple, después, suponemos que se cumplen en $x_{1},\dots,x_{n}$ y tenemos que demostrar que si la propiedad se cumple en $x_{n}$, se cumple también en $x_{n+1}$.
 
-Al final, de forma intuitiva, podemos ver que una inducción es esencialemte ir probando de manera iterada una propiedad. Vemos que se cumple un caso y a partir de ese, se pueden demostrar los siguientes pasos.
+Al final, de forma intuitiva, podemos ver que una inducción es esencialmente ir probando de manera iterada una propiedad. Vemos que se cumple un caso y a partir de ese, se pueden demostrar los siguientes pasos.
 
-Curiosidad matemática: La inducción se basa fuertemente en la inducctividad de $\mathbb{N}$. Si tenemos que hacer un número infinito no numerable, entonces, la inducción no se puede realizar. En esos casos, tenemos que recurrir a lo que se denomina una inducción transfinita que usa fuertemente el axioma de elección.
+Curiosidad matemática: La inducción se basa fuertemente en la inductividad  de $\mathbb{N}$. Si tenemos que hacer un número infinito no numerable, entonces, la inducción no se puede realizar. En esos casos, tenemos que recurrir a lo que se denomina una inducción transfinita que usa fuertemente el axioma de elección.
 
 ## Sucesos divergentes
 Los sucesos divergentes son aquellos donde se encuentra que el limite tiende a $+\infty$ o a $-\infty$. 
@@ -112,13 +112,13 @@ Los sucesos divergentes son aquellos donde se encuentra que el limite tiende a $
 
 Cuando $\{x_{n}\}\Rightarrow +\infty \text{  ó } \lim x_{n}= +\infty \Leftrightarrow [\forall M \in \mathbb{R}, \exists n_{0} \in \mathbb{N}, n\geq n_{0} \Rightarrow x_{n} \geq M]$.
 
-Esta es la definición matematica, pero esencialmente debemos quedarnos con que si tiende a infinito **positivo** podemos decir que es divergente positivamente. Sin embargo si tiende al infinito **negativo**, diremos que es divergente negativamente.
+Esta es la definición matemática, pero esencialmente debemos quedarnos con que si tiende a infinito **positivo** podemos decir que es divergente positivamente. Sin embargo si tiende al infinito **negativo**, diremos que es divergente negativamente.
 
 
 ### Límites que tienden al infinito
 Bien una sucesión divergente, tenemos que uno de sus límites tiende al infinito. Vamos a ver algunas operaciones básicas con infinitos.
 #### Suma
-No voy a describirla, unicamente se van a escribir las propiedades.
+No voy a describirla, únicamente se van a escribir las propiedades.
 $L \in \mathbb{R}$.
 $\infty + L = +\infty$.
 $\infty - L = +\infty$.
@@ -151,7 +151,7 @@ $\{y_{n}\} \rightarrow 0  \Rightarrow \{\frac{1}{y_{n}}\} \rightarrow \infty \te
 
 
 #### Escala de infinitos
-Hay veces que llegamos aun cociente entre polinomios y debemos saber cuál de los dos tiende más a infinito con respecto al otro, ya que si no tendriamos un $\frac{\infty}{\infty}$, que es una indeterminación.
+Hay veces que llegamos aun cociente entre polinomios y debemos saber cuál de los dos tiende más a infinito con respecto al otro, ya que si no tendríamos un $\frac{\infty}{\infty}$, que es una indeterminación.
 
 El orden de menor a mayor tendencia a infinito es:
 $\log(n) \propto n^{b} \propto a^{n} \propto n^{n}$, con $b > 0$ y $a > 0$
@@ -165,7 +165,7 @@ Estas sucesiones usualmente vamos a usar la formula de la $e$, recordamos que es
 - "$0^{0}$": En este tipo de indeterminación, también usaremos la formula de la $e$.
 - "$1^{\infty}$" En este tipo de indeterminación usaremos el **teorema** del número $e$, que se va  explicar a continuación.
 
-El teorma del número $e$, nos da las siguiente "propiedad":
+El teorema del número $e$, nos da las siguiente "propiedad":
 1. El estudio de estos límites son el mismo: $\lim y_{n}(x_{n}-1)= L \Leftrightarrow \lim x_{n}^{y_{n}} = e^{L}$.
 
 Con esta propiedad, según el valor de L, podemos sacar que:
@@ -181,17 +181,17 @@ Cuando tenemos $\varSigma^{n}_{n=1}a_{n} = a_{1}+a_{2}+\dots a_{n}$, tenemos un 
 
 Cuando tenemos una serie, dada por un sumatorio (Lo normal), podemos diferenciar dos partes:
 - Termino general: Lo que está en el sumatorio
-- Suecsión de sumas parciales: Aquello que da el resultado sus sumas parciales, lo veremosc on ejemplos.
+- Sucesión de sumas parciales: Aquello que da el resultado sus sumas parciales, lo veremos con ejemplos.
 
 #### Ejemplos
 1. $\varSigma \text{ }7$, tenemos el termino general $7$ y la sucesión de sumas parciales $7+7+7+7+7+\dots$. Esta serie se llama **serie constante**.
 
-2. $\varSigma \text{ } \frac{1}{n}$, tenemos el termino general $\frac{1}{n}$ y la sucesión de sumas parciales $1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\dots + \frac{1}{n}$. Esta serie se llama **serie armónica**. Existe una variante de serie armónica, llamada **serie armonica generalizada**, que es escribe de la siguiente manera$\varSigma \text{ } \frac{1}{n^{\alpha}}$.
+2. $\varSigma \text{ } \frac{1}{n}$, tenemos el termino general $\frac{1}{n}$ y la sucesión de sumas parciales $1+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\dots + \frac{1}{n}$. Esta serie se llama **serie armónica**. Existe una variante de serie armónica, llamada **serie armónica generalizada**, que es escribe de la siguiente manera$\varSigma \text{ } \frac{1}{n^{\alpha}}$.
 
-3. $\varSigma \text{ }x^{n}$, tenemos el termino general $x^{n}$ y la sucesión de sumas parciales $1+x+x^{2}+x^{3}+x^{4}+\dots +x^{n}$. Esta serie se llama **serie gemoetrica de razón x**. Donde $x$ es un valor constante. 
+3. $\varSigma \text{ }x^{n}$, tenemos el termino general $x^{n}$ y la sucesión de sumas parciales $1+x+x^{2}+x^{3}+x^{4}+\dots +x^{n}$. Esta serie se llama **serie geométrica de razón x**. Donde $x$ es un valor constante. 
 
 ### Serie convergente
-Decimos que una serie como $\varSigma a$ es convergente si y solo si, existe un limite ne la sucesión. De forma matemática $\varSigma a \text{ es convergente} \Leftrightarrow \exists \lim(a_{1}+a_{2}+a_{3}+\dots a_{n}) \in \mathbb{R}$.
+Decimos que una serie como $\varSigma a$ es convergente si y solo si, existe un limite en la sucesión. De forma matemática $\varSigma a \text{ es convergente} \Leftrightarrow \exists \lim(a_{1}+a_{2}+a_{3}+\dots a_{n}) \in \mathbb{R}$.
 
 El apartado de $\lim(a_{1}+a_{2}+a_{3}+\dots a_{n})$, lo podemos llamar suma de la serie. 
 
@@ -199,8 +199,8 @@ Para que una serie sea convergente, es necesario que su termino general deba ten
 
 De los ejemplos que tenemos:
 - Las series constantes nunca serán convergentes.
-- Las series armónicas no convergen, sin embargo las series que sean armonica generalizadas **SI**, convergen, siempre y cuando $\alpha$ tengo un valor mayor a 1, es decir $\alpha > 1$.
-- Las series geometricas de razón, si convergen, pero solo si el termino general, tiene un valor positivo menor a 1. Es decir $|x|<1$.
+- Las series armónicas no convergen, sin embargo las series que sean armónica generalizadas **SI**, convergen, siempre y cuando $\alpha$ tengo un valor mayor a 1, es decir $\alpha > 1$.
+- Las series geométricas de razón, si convergen, pero solo si el termino general, tiene un valor positivo menor a 1. Es decir $|x|<1$.
 
 ### Serie cola
 Las series cola consiste en unas series donde partimos desde "otro punto" que no le corresponde a una serie normal. Es decir es nacida de otra.
@@ -221,21 +221,21 @@ Las propiedades de las series, o las operaciones que podemos realizar con ellas 
 - $\varSigma \alpha a_{n} = \alpha \varSigma a_{n}$, siendo $\alpha$ una constante.
 
 ### Criterios de convergencia en series
-Aunque hayamos dicho que aquellas series que son convergente, debe tender su termino general a 0. Sin embargo, no nos es facil evaluar las series dadas, por ello vamosa a prender 3 criterios de convergencias más.
+Aunque hayamos dicho que aquellas series que son convergente, debe tender su termino general a 0. Sin embargo, no nos es fácil evaluar las series dadas, por ello vamos a prender 3 criterios de convergencias más.
 
 En todos los criterios vamos a tener en cuenta que $\varSigma a_{n} (a_{n} \geq 0, \forall n)$.
-1. Criterio de la Raíz n-esima (También conocido como criterio de Couchy): En este metodo lo que hacemos es: Sea $\varSigma a_{n}$, $\lim \sqrt[n]{a_{n}} = L$, y dependiendo de $L$, tenemos uno o varios resultados.
+1. Criterio de la Raíz n-esima (También conocido como criterio de Couchy): En este método lo que hacemos es: Sea $\varSigma a_{n}$, $\lim \sqrt[n]{a_{n}} = L$, y dependiendo de $L$, tenemos uno o varios resultados.
 
-1. Criterio del cociente (También conocido como criterio de D'Alembert): En este metodo lo que hacemos es: Sea $\varSigma a_{n}$, $\lim \frac{a_{n+1}}{a_{n}} = L$, lo que es lo mismo y  $\lim (a_{n+1})*(\frac{1}{a_{n}}) = L$ dependiendo de $L$, tenemos uno o varios resultados.
+1. Criterio del cociente (También conocido como criterio de D'Alembert): En este método lo que hacemos es: Sea $\varSigma a_{n}$, $\lim \frac{a_{n+1}}{a_{n}} = L$, lo que es lo mismo y  $\lim (a_{n+1})*(\frac{1}{a_{n}}) = L$ dependiendo de $L$, tenemos uno o varios resultados.
 
 
 1. Criterio de comparación (por paso al limite): Este método es algo distinto a los anteriores, ya que lo que haremos será fundamentalmente comparar con otras sucesiones que tengamos. Primero lo que haremos será determinar quienes son nuestras sucesiones, sea  $\varSigma a_{n}$ y $\varSigma b_{n}$, donde $\varSigma a_{n}$ solemos usarla como aquella a la que vamos a analizar.
-	a) Si $\lim \frac{\varSigma a_{n}}{\varSigma b_{n}} = L \neq 0 \Rightarrow$ ambas sucesiones hacen lo mismo, es decir convergen o no convergen, dependiendo de con cúal sucesión estemos comparando.
+	a) Si $\lim \frac{\varSigma a_{n}}{\varSigma b_{n}} = L \neq 0 \Rightarrow$ ambas sucesiones hacen lo mismo, es decir convergen o no convergen, dependiendo de con cuál sucesión estemos comparando.
   b) Si $\lim \frac{\varSigma a_{n}}{\varSigma b_{n}} = 0 \Rightarrow$ tenemos dos opciones, la primera es que $\varSigma b_{n} \text{ conv} \Rightarrow \varSigma a_{n} \text{ conv}$ |||| $\varSigma a_{n}\text{ no conv} \Rightarrow \varSigma b_{n} \text{ no conv}$
   c) Si $\lim \frac{\varSigma a_{n}}{\varSigma b_{n}} = \infty \Rightarrow$ tenemos dos opciones, la primera es que $\varSigma a_{n} \text{ conv} \Rightarrow \varSigma b_{n} \text{ conv}$ |||| $\varSigma b_{n}\text{ no conv} \Rightarrow \varSigma a_{n} \text{ no conv}$
   
 Cualquier otra cuestión del criterio de comparación, cuenta como invalido o desconocido.
   
 Las sucesiones que usaremos para compararlas son:
-- Generica de razón $\varSigma x^{n} \text{ conv}\Leftrightarrow |x|<1$
-- Armónica generica $\varSigma \frac{1}{x^{\alpha}} \text{ conv}\Leftrightarrow \alpha>1$
+- Genérica de razón $\varSigma x^{n} \text{ conv}\Leftrightarrow |x|<1$
+- Armónica genérica $\varSigma \frac{1}{x^{\alpha}} \text{ conv}\Leftrightarrow \alpha>1$
