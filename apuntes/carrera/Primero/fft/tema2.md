@@ -2,7 +2,7 @@
 title: Elementos Reactivos
 description: 
 published: true
-date: 2025-10-31T15:49:34.997Z
+date: 2025-10-31T16:17:13.134Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-24T15:13:57.545Z
@@ -73,4 +73,10 @@ Por otro lado el régimen transitorio:
 Lo que genera una respuesta distinta a la naturaleza de la excitación.
 
 Lo que resulta en un estudio de análisis integro-diferencial.
+
+## Osciloscopio - Carga y Descarga 
+Cuando usemos un osciloscopio, podemos tener varios resultados, si el valor es distinto de 0, es que está en carga constante, sin embargo si es 0, es que está descargado.
+El elemento que mediremos será el condensador.
+
+Cuando tengamos un sistema cerrado, nuestro condensador está en carga, y sin embargo si lo tenemos abierto, el condensador comienza a descargarse.
 
