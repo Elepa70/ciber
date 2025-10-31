@@ -2,7 +2,7 @@
 title: Sobre Mí
 description: Información relevante al administrador
 published: true
-date: 2025-10-31T15:25:07.634Z
+date: 2025-10-31T15:26:33.437Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:28:04.940Z
@@ -41,7 +41,7 @@ Tengo varias certificaciones entre ellas puedo incluir:
 - B2 en ingles - Cambridge
 
 ## ¿Qué más?
-Actualmente mi ambición es aprender todo lo posible relacionado al mundo de Nube, sin embargo tengo cierto interes en aprender mas de informatica en general. Es por ello, que es posible que una vez finalice los estudios en Ciberseguridad, comience propiamente dicha la carrera de Informatica o Ciberseguridad, independientemente de ello tengo pensado adquirir más certificaciones.
+Mi ambición actual es saber de informática en todos los aspectos posibles, aunque eso incluya Hardware... Principalmente me estoy centrando en los primeros años en ir aprendiendo sobr ela base de la informática, y después ir tomando un rol de ciberseguridad.
 ## Contactame
 Si quieres contactar conmigo, tienes a continuación mi correo y mi linkedin, el cúal no tengo problema en que useis para contactar conmigo.
 - pablocontacto.next101@slmails.com
