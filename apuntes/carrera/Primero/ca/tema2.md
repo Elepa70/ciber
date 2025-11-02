@@ -2,7 +2,7 @@
 title: Sucesiones y series
 description: 
 published: true
-date: 2025-10-31T15:18:35.486Z
+date: 2025-11-02T19:50:26.858Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-01T20:11:42.684Z
@@ -231,8 +231,8 @@ En todos los criterios vamos a tener en cuenta que $\varSigma a_{n} (a_{n} \geq 
 
 1. Criterio de comparación (por paso al limite): Este método es algo distinto a los anteriores, ya que lo que haremos será fundamentalmente comparar con otras sucesiones que tengamos. Primero lo que haremos será determinar quienes son nuestras sucesiones, sea  $\varSigma a_{n}$ y $\varSigma b_{n}$, donde $\varSigma a_{n}$ solemos usarla como aquella a la que vamos a analizar.
 	a) Si $\lim \frac{\varSigma a_{n}}{\varSigma b_{n}} = L \neq 0 \Rightarrow$ ambas sucesiones hacen lo mismo, es decir convergen o no convergen, dependiendo de con cuál sucesión estemos comparando.
-  b) Si $\lim \frac{\varSigma a_{n}}{\varSigma b_{n}} = 0 \Rightarrow$ tenemos dos opciones, la primera es que $\varSigma b_{n} \text{ conv} \Rightarrow \varSigma a_{n} \text{ conv}$ |||| $\varSigma a_{n}\text{ no conv} \Rightarrow \varSigma b_{n} \text{ no conv}$
-  c) Si $\lim \frac{\varSigma a_{n}}{\varSigma b_{n}} = \infty \Rightarrow$ tenemos dos opciones, la primera es que $\varSigma a_{n} \text{ conv} \Rightarrow \varSigma b_{n} \text{ conv}$ |||| $\varSigma b_{n}\text{ no conv} \Rightarrow \varSigma a_{n} \text{ no conv}$
+  b) Si $\lim \frac{\varSigma a_{n}}{\varSigma b_{n}} = 0 \Rightarrow$ tenemos dos opciones, la primera es que $\varSigma b_{n} \text{ conv} \Rightarrow \varSigma a_{n} \text{ conv}$ |||| $\varSigma a_{n}\text{ no conv} \Rightarrow \varSigma b_{n} \text{ no conv}$.
+  c) Si $\lim \frac{\varSigma a_{n}}{\varSigma b_{n}} = \infty \Rightarrow$ tenemos dos opciones, la primera es que $\varSigma a_{n} \text{ conv} \Rightarrow \varSigma b_{n} \text{ conv}$ |||| $\varSigma b_{n}\text{ no conv} \Rightarrow \varSigma a_{n} \text{ no conv}$.
   
 Cualquier otra cuestión del criterio de comparación, cuenta como invalido o desconocido.
   
