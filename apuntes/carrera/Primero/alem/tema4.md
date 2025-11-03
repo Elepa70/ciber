@@ -2,7 +2,7 @@
 title: Combinatoria
 description: 
 published: true
-date: 2025-11-03T17:35:47.034Z
+date: 2025-11-03T17:41:18.397Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-30T20:43:18.172Z
@@ -67,4 +67,16 @@ Se denota de la siguiente manera: $VR^{m}_{n}$, y simplemente debemos hacer $n^{
 
 
 ## Combinaciones
-Consiste en una seleccion de elementos donde a diferencia de variaciones no tiene importancia el orden
+### Combinaciones sin repetición
+Consiste en una seleccion de elementos donde a diferencia de variaciones no tiene importancia el orden, y no se puede repetir elementos.
+
+
+Ejemplo: Elegir a 3 personas de un grupo de clase para ir a Benidor.
+
+Lo vamos a denotar como $C^{m}_{n}$, donde $m$ es la cantidad de elementos y $n$ son las cantidad de benficiarios.
+
+
+Para poder calcular las posibilidades que tenemos de elegir a cada persona podemos hacer lo siguiente:
+- 
+
+Ojo $C^{n}_{n}=1$ y $C^{1}_{n}=n$.
