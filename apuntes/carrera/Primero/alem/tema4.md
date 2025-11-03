@@ -2,7 +2,7 @@
 title: Combinatoria
 description: 
 published: true
-date: 2025-11-03T17:42:59.418Z
+date: 2025-11-03T17:45:56.937Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-30T20:43:18.172Z
@@ -75,7 +75,7 @@ Ejemplo: Elegir a 3 personas de un grupo de clase para ir a Benidor.
 
 Lo vamos a denotar como $C^{m}_{n}$, donde $m$ es la cantidad de elementos y $n$ son las cantidad de benficiarios.
 
-
+#### Propiedades
 Para poder calcular las posibilidades podemos calcularlo de la siguiente manera:
 - Podemos calcular los elementos seleccionados.
 - Restante de aquellos elementos no seleccionados menos los que iban a serlo.
@@ -83,3 +83,10 @@ Para poder calcular las posibilidades podemos calcularlo de la siguiente manera:
 Es decir: $C^{m}_{n}=C^{n-m}_{n}$
 
 Ojo $C^{n}_{n}=1$ y $C^{1}_{n}=n$.
+
+
+Otra propiedades más dificil, es verlo de manera:
+- Esta $x$ elemento involucrado.
+- No está $x$ elemento involucrado.
+
+$C^{m}_{n}=C^{m-1}_{n-1}+C^{m}_{n-1}$.
