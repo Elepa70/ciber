@@ -2,7 +2,7 @@
 title: Combinatoria
 description: 
 published: true
-date: 2025-11-03T17:45:56.937Z
+date: 2025-11-03T17:56:02.002Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-30T20:43:18.172Z
@@ -90,3 +90,10 @@ Otra propiedades más dificil, es verlo de manera:
 - No está $x$ elemento involucrado.
 
 $C^{m}_{n}=C^{m-1}_{n-1}+C^{m}_{n-1}$.
+
+#### Como realizarlo
+Si tomamos en cuenta las variaciones, podemos ver que que sería las combinaciones multiplicado por las permutaciones que podemos realizar, entonces nuestra formula tiene que ver con estos calculos, es decir:
+
+$V^{m}_{n} = C^{m}_{n}/P_{m}$, que despenjando y escribiendo los valores nos sale: $C^{m}_{n}= \frac{n!}{(n-m)!}$, que podemos escribir como $\binom{n}{m}$
+
+### Permutacion con repetición
