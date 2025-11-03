@@ -2,7 +2,7 @@
 title: Limites Funcional y Continuidad
 description: 
 published: true
-date: 2025-10-30T19:10:41.192Z
+date: 2025-11-03T19:06:09.072Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-30T19:10:41.192Z
@@ -33,3 +33,22 @@ También conocido como asintotas horizontales, es similar a las verticales pero 
 
 ### Limites en el infinito del infinito
 Es una subrama de las asintotas horizontales, donde en vez de que la función tome un valor determinado (como puede ser 0), toma un valor de infinito. El mejor ejemplo puede ser $x$.
+
+## Cálculo de limites
+Antes de hacer los calculos de los limites, vamos a tener en cuenta las indeterminaciones:
+### Calculo con escala de infinitos
+- "$\infty -\infty$"
+- "$0-\infty$"
+- "$\frac{\infty}{\infty}$"
+- "$\frac{0}{0}$"
+### Calculo con la regla del número e
+- "$1^{\infty}$"
+
+Recordamos que la regla del número e, es:
+$(\frac{x+1}{x})^{x}=x((\frac{x+1}{x}-1)$., el resultado es $L$, que es $e^{L}$.
+### Calculo con el teorema del número e (O Formula)
+- "$0^{0}$"
+- "$\infty^{0}$"
+
+Recordamos que el teorema del número e, dice:
+$x^{\frac{1}{x}}=e^{\frac{1}{x}*\log(x)}$
