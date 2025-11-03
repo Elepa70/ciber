@@ -2,7 +2,7 @@
 title: Combinatoria
 description: 
 published: true
-date: 2025-11-03T17:56:02.002Z
+date: 2025-11-03T18:12:52.405Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-30T20:43:18.172Z
@@ -97,3 +97,21 @@ Si tomamos en cuenta las variaciones, podemos ver que que sería las combinacion
 $V^{m}_{n} = C^{m}_{n}/P_{m}$, que despenjando y escribiendo los valores nos sale: $C^{m}_{n}= \frac{n!}{(n-m)!}$, que podemos escribir como $\binom{n}{m}$
 
 ### Permutacion con repetición
+Esto consiste en sasber en cuantas formas queremos ordenar algo, pero hay objetos que se repiten.
+
+Por ejemplo, cuando queremos ordeanr letras A A A A B B B C C, tenemos que elegir donde poner las A, donde tenemos $\binom{9}{4}$, con las B tenemos en cuenta la perdida de las posiciones por A, entonnces son $\binom{5}{3}$, y el resto es C $\binom{2}{2}$.
+
+Multiplicariamos estos valores de forma:
+$\binom{9}{4} * \binom{5}{3} * \binom{2}{2} = \frac{9! * 5! * 2!}{4! * 3! * 2!}$
+
+$P^{n_{1}...n{r}}_{n}= \frac{n!}{n_{1}!... n_{r}!}$
+
+### Combinacion con repeticion
+
+En estas combinaciones, tenemos en cuenta que hay distintos montones de un mismo elementos, como por ejemplo bolas de colores, donde solo tenemos rojas, amarillas o verdes.
+
+Se denota de la siguiente manera $CR^{m}_{n}$. 
+
+Por ejemplo en las bolas, tenemos que sacar 4 bolas y son de 3 montones de colores, $CR^{4}_{3}$. Teniendo en cuenta esto, debemos aplicar las reglas anteriores para poder calcularlo, es decir:
+$CR^{m}_{n}=C^{n-1}_{m+n-1}$, una vez tengamos esto, podemos calcularlo con las reglas de antes.
+
