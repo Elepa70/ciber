@@ -2,7 +2,7 @@
 title: Combinatoria
 description: 
 published: true
-date: 2025-10-30T20:43:18.172Z
+date: 2025-11-03T17:35:47.034Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-30T20:43:18.172Z
@@ -49,7 +49,7 @@ El generalizado, simplemente nos dice que puede haber más de dos elementos.
 > A partir de este punto, es cuando se empieza a complicar el temario.
 {.is-warning}
 
-Las variaciones es un metodo que poseemos para poder elegir el número total de elecciones dentro de un conjunto dado, esto puede ser con o sin repetición.
+Las variaciones es un metodo que poseemos para poder elegir el número total de elecciones dentro de un conjunto dado, esto puede ser con o sin repetición. El orden de eleccion tiene importancia.
 ### Sin repetición
 En este caso, podemos verlo como una carrera y se debe dar 3 medallas, bronce, plata y oro.
 
@@ -64,3 +64,7 @@ Para calcularlo, no es que usar la siguiente formula: $V^{m}_{n}=\frac{n!}{(n-m)
 En este caso, nos queda una situación mucho más simple, ya que al no tener que excluir nada no debemos dividir entre nada, solo debemos jugar entre nuestro espacio muestral.
 
 Se denota de la siguiente manera: $VR^{m}_{n}$, y simplemente debemos hacer $n^{m}$.
+
+
+## Combinaciones
+Consiste en una seleccion de elementos donde a diferencia de variaciones no tiene importancia el orden
