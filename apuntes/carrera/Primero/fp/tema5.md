@@ -2,7 +2,7 @@
 title: Funciones
 description: 
 published: true
-date: 2025-11-04T18:10:25.410Z
+date: 2025-11-04T18:13:39.159Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-04T17:23:19.785Z
@@ -69,3 +69,9 @@ Si una variable la declaramos en el mismo bloque o función dos veces, lo que ha
 La información entre el subprograma y el programa llamador, se establece a través de las lista de parámetros. Existen dos tipos:
 - Paso por valor: Copia del valor de la vairable. "Fotocopia"
 - Paso por referencia: Pasa una referencia de la variable. "Das el documento"
+
+### Paso por valor
+Lo que modifiquemos aquí no afectará al de verdad, simplemente lo usamos en el subprograma.
+
+### Paso por referencia
+Este es mas peligroso, ya que implica que una perdida de información o corrupción en este apartado, hace daño a la variable.
