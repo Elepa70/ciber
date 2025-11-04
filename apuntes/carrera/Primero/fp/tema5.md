@@ -2,7 +2,7 @@
 title: Funciones
 description: 
 published: true
-date: 2025-11-04T17:48:32.674Z
+date: 2025-11-04T17:52:50.481Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-04T17:23:19.785Z
@@ -43,3 +43,13 @@ int suma(int a, int b){
 
 ## Procedimientos
 Los procedimientos no devuelven ningún valor, es simplemente encargado de un proceso específico.
+
+Se declará de la siguiente manera
+```C++
+void nombre_funcion(lista_paramettros){
+	<declaracion_variables>
+  <cuerpo_funcion>
+}
+
+// Como podemos ver, no tenemos un return.
+```
