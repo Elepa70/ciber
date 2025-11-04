@@ -2,7 +2,7 @@
 title: Apuntes para el primer parcial de Calculo
 description: 
 published: true
-date: 2025-11-04T14:04:56.346Z
+date: 2025-11-04T22:56:19.716Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-04T10:19:52.029Z
@@ -106,7 +106,7 @@ Recordamos las propiedades de las series:
 - $\varSigma \alpha a_{n} = \alpha \varSigma a_{n}$, siendo $\alpha$ una constante.
 
 Y las sumas tenemos una formula que es:
-$\varSigma_{n=0} x^{n}=\frac{1}{1-x}$.
+$\varSigma_{n=1} x^{n}=\frac{1}{1-x} - 1$. El (-1), lo obtenemos de $x^{0}$, es decir el primer n.
 
 Ejemplo:
 $\varSigma_{n\geq2} (-\frac{1}{3})^{n}=\varSigma_{n=0}(\frac{-1}{3})^{n}-[(\frac{-1}{3})^{0}+(\frac{-1}{3})^{1}]=\frac{1}{1+\frac{1}{3}}-(1-\frac{1}{3})=\frac{1}{12}$.
