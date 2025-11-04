@@ -2,7 +2,7 @@
 title: Apuntes para el primer parcial de Calculo
 description: 
 published: true
-date: 2025-11-04T10:26:06.565Z
+date: 2025-11-04T10:29:29.519Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-04T10:19:52.029Z
@@ -60,3 +60,28 @@ $y_{n}*\log(x_{n})$.
 Sucesión famosa:
 $\lim[(\frac{n+1}{n})^{n}]=\lim[e^{n*\log(\frac{n+1}{n})}]$, que nos dá como resultado final del límite $e$.
 ## Criterios de convergencia
+En todos los criterios vamos a tener en cuenta que $\varSigma a_{n} (a_{n} \geq 0, \forall n)$.
+1. Criterio de la Raíz n-esima (También conocido como criterio de Couchy): En este método lo que hacemos es: Sea $\varSigma a_{n}$, $\lim \sqrt[n]{a_{n}} = L$.
+
+1. Criterio del cociente (También conocido como criterio de D'Alembert): En este método lo que hacemos es: Sea $\varSigma a_{n}$, $\lim \frac{a_{n+1}}{a_{n}} = L$.
+
+
+En los métodos anteriores vamos a tener solución o no dependiendo de $L$, podemos obtener que:
+- $L < 1$: Por lo tanto es convergente.
+- $L = 1$: No podemos determinar nada, el criterio ha fallado.
+- $L > 1$: No es convergente.
+
+
+
+
+3. Criterio de comparación (por paso al limite): Este método es algo distinto a los anteriores, ya que lo que haremos será fundamentalmente comparar con otras sucesiones que tengamos. Primero lo que haremos será determinar quienes son nuestras sucesiones, sea  $\varSigma a_{n}$ y $\varSigma b_{n}$, donde $\varSigma a_{n}$ solemos usarla como aquella a la que vamos a analizar.
+
+	a) Si $\lim \frac{\varSigma a_{n}}{\varSigma b_{n}} = L \neq 0 \Rightarrow$ ambas sucesiones hacen lo mismo, es decir convergen o no convergen, dependiendo de con cuál sucesión estemos comparando.
+b) Si $\lim \frac{\varSigma a_{n}}{\varSigma b_{n}} = 0 \Rightarrow$ tenemos dos opciones, la primera es que $\varSigma b_{n} \text{ conv} \Rightarrow \varSigma a_{n} \text{ conv}$ |||| $\varSigma a_{n}\text{ no conv} \Rightarrow \varSigma b_{n} \text{ no conv}$.
+c) Si $\lim \frac{\varSigma a_{n}}{\varSigma b_{n}} = \infty \Rightarrow$ tenemos dos opciones, la primera es que $\varSigma a_{n} \text{ conv} \Rightarrow \varSigma b_{n} \text{ conv}$ |||| $\varSigma b_{n}\text{ no conv} \Rightarrow \varSigma a_{n} \text{ no conv}$.
+  
+Cualquier otra cuestión del criterio de comparación, cuenta como invalido o desconocido.
+  
+Las sucesiones que usaremos para compararlas son:
+- Genérica de razón $\varSigma x^{n} \text{ conv}\Leftrightarrow |x|<1$.
+- Armónica genérica $\varSigma \frac{1}{x^{\alpha}} \text{ conv}\Leftrightarrow \alpha>1$.
