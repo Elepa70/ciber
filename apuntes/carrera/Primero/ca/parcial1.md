@@ -2,7 +2,7 @@
 title: Apuntes para el primer parcial de Calculo
 description: 
 published: true
-date: 2025-11-04T10:29:29.519Z
+date: 2025-11-04T13:58:41.289Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-04T10:19:52.029Z
@@ -10,6 +10,9 @@ dateCreated: 2025-11-04T10:19:52.029Z
 
 # Apuntes rápidos para el primer parcial de calculo
 Estos apuntes son para hacer una pasada rapida, no es nada recomendable estudiar de aquí.
+
+> Aprenderse las funciones y comportamientos de las trigonometricas y sus arcos. 
+{.is-warning}
 
 ## Valores en en $\mathbb{R}$.
 
@@ -24,6 +27,16 @@ $\mathbb{R}^{*} = \{x \in \mathbb{R} : x \neq 0\}$: Todos los números reales di
 $\mathbb{R}^{+}_{0} = \{x \in \mathbb{R} : x \geq 0\}$: Todos los números reales mayores que 0, incluyendo el 0.
 
 $\mathbb{R}^{-}_{0} = \{x \in \mathbb{R} : x \leq 0\}$:Todos los números reales menores que 0, incluyendo el 0.
+
+## Otro formato (No principio de inducción)
+### Cálculo de la monotonía
+Lo podemos hacer la interpretación de valores conforme a otro termino ($y$), ejemplo. Imponemos que $x<y$, entonces en la función $f(x)<f(y)$, pero esto no podemos hacerlo directametne, debemos ir paso a paso como si fuera un principio de inducción, ejemplo:
+
+$f(x)= \frac{1}{x+e^{x}}$.
+
+Pues hacemos: $x>y \Rightarrow x+e^{x} > y+e^{y}$, sin embargo al invertirlo, como es una división nos sale que es decreciente. Osea es monotona y decreciente.
+
+
 
 ## Principio de inducción
 Tiene tres principios:
@@ -85,3 +98,15 @@ Cualquier otra cuestión del criterio de comparación, cuenta como invalido o de
 Las sucesiones que usaremos para compararlas son:
 - Genérica de razón $\varSigma x^{n} \text{ conv}\Leftrightarrow |x|<1$.
 - Armónica genérica $\varSigma \frac{1}{x^{\alpha}} \text{ conv}\Leftrightarrow \alpha>1$.
+
+## Suma de Series
+
+Recordamos las propiedades de las series:
+- $\varSigma (a_{n}+b_{n}) = \varSigma a_{n} +\varSigma b_{n}$.
+- $\varSigma \alpha a_{n} = \alpha \varSigma a_{n}$, siendo $\alpha$ una constante.
+
+Y las sumas tenemos una formula que es:
+$\varSigma_{n=0} x^{n}=\frac{1}{1-x}$.
+
+Ejemplo:
+$\varSigma_{n=0} x^{n}=\frac{1}{1-x}$.
