@@ -2,7 +2,7 @@
 title: Funciones
 description: 
 published: true
-date: 2025-11-04T18:06:27.079Z
+date: 2025-11-04T18:10:25.410Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-04T17:23:19.785Z
@@ -64,3 +64,8 @@ Estas últimas no se recomiendan el uso. De hecho es mejor no usarla en absoluto
 Toda variable declarada en una función o bloque, consiste que son locales a esa función, donde no existen fuera del bloque que está declarado.
 
 Si una variable la declaramos en el mismo bloque o función dos veces, lo que hacemos es "machacar" lo que tenemos de antes. 
+
+## Paso a parámetros
+La información entre el subprograma y el programa llamador, se establece a través de las lista de parámetros. Existen dos tipos:
+- Paso por valor: Copia del valor de la vairable. "Fotocopia"
+- Paso por referencia: Pasa una referencia de la variable. "Das el documento"
