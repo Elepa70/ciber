@@ -2,7 +2,7 @@
 title: Funciones
 description: 
 published: true
-date: 2025-11-04T18:16:23.318Z
+date: 2025-11-04T18:18:35.172Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-04T17:23:19.785Z
@@ -81,7 +81,7 @@ Este es mas peligroso, ya que implica que una perdida de información o corrupci
 #include <iostream>
 using namespace std;
 // Cambio de valores con dos valores
-void cambios(int a, int b){
+void cambios(int &a, int &b){
 	int temp;
   temp = a;
   a = b;
@@ -101,3 +101,10 @@ int main(){
   cout << "Vaores finales " << n1 << " y " << n2 <<endl;
 }
 ```
+
+La diferencia viene con el "&", en la lista de referencia. 
+
+- Tener &: Paso por referencia.
+- No tenerlo: Paso por valor.
+
+También existe el "*", consiste en punteros, pero actualmente no lo veremos.
