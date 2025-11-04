@@ -2,7 +2,7 @@
 title: Funciones
 description: 
 published: true
-date: 2025-11-04T17:52:50.481Z
+date: 2025-11-04T18:06:27.079Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-04T17:23:19.785Z
@@ -53,3 +53,14 @@ void nombre_funcion(lista_paramettros){
 
 // Como podemos ver, no tenemos un return.
 ```
+
+## Ámbito de las variables
+Consiste en definir donde existe y donde se declara esa variable, tenemos varios tipos de variables, clasificadas como:
+- Locales: Declaradas y definidas dentro de un subprograma, distintas a las variables definidas en otros subprogramas y si otro subprograma declara una variable con el mismo nombre, este no interferíra.
+- Globales:Están declaradas en el algoritmo principal y para todos los subprogramas, útil para anidadas.
+
+Estas últimas no se recomiendan el uso. De hecho es mejor no usarla en absoluto.
+
+Toda variable declarada en una función o bloque, consiste que son locales a esa función, donde no existen fuera del bloque que está declarado.
+
+Si una variable la declaramos en el mismo bloque o función dos veces, lo que hacemos es "machacar" lo que tenemos de antes. 
