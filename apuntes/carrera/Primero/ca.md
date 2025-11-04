@@ -2,14 +2,14 @@
 title: Cálculo
 description: 
 published: true
-date: 2025-11-04T10:02:12.368Z
+date: 2025-11-04T10:33:54.659Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:29:46.290Z
 ---
 
 # Cálculo
-En está página web podrá encontrar los distintos temarios que corresponden a esta asignatura.
+En está página web podrá encontrar los distintos temarios que corresponden a esta asignatura
 ### Primer parcial
 - [Números Reales](tema1)
 - [Sucesiones y series](tema2)
