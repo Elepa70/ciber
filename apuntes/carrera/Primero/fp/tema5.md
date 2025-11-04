@@ -2,7 +2,7 @@
 title: Funciones
 description: 
 published: true
-date: 2025-11-04T18:13:39.159Z
+date: 2025-11-04T18:16:23.318Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-04T17:23:19.785Z
@@ -75,3 +75,29 @@ Lo que modifiquemos aquí no afectará al de verdad, simplemente lo usamos en el
 
 ### Paso por referencia
 Este es mas peligroso, ya que implica que una perdida de información o corrupción en este apartado, hace daño a la variable.
+
+
+```C++
+#include <iostream>
+using namespace std;
+// Cambio de valores con dos valores
+void cambios(int a, int b){
+	int temp;
+  temp = a;
+  a = b;
+  b = temp;
+}
+
+int main(){
+	int n1,n2;
+  
+  n1 = 2;
+  n2 = 3;
+  
+  cout << "Valores iniciales " << n1 << " y " << n2 <<endl;
+  
+  cambios(n1,n2);
+  
+  cout << "Vaores finales " << n1 << " y " << n2 <<endl;
+}
+```
