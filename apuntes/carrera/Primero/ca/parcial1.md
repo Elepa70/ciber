@@ -2,7 +2,7 @@
 title: Apuntes para el primer parcial de Calculo
 description: 
 published: true
-date: 2025-11-04T10:19:52.029Z
+date: 2025-11-04T10:26:06.565Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-04T10:19:52.029Z
@@ -25,6 +25,25 @@ $\mathbb{R}^{+}_{0} = \{x \in \mathbb{R} : x \geq 0\}$: Todos los números reale
 
 $\mathbb{R}^{-}_{0} = \{x \in \mathbb{R} : x \leq 0\}$:Todos los números reales menores que 0, incluyendo el 0.
 
+## Principio de inducción
+Tiene tres principios:
+1. Se debe cumplir para $x_{1}$.
+2. Nos cuestionamos que es lo que queremos hacer.
+3. Lo haremos con uno más que el anterior $x_{n+1}$.
+
+Lo que vamos haciendo es ir añadiendo los valores de la sucesión de forma que lleguemos al mismo punto o valor.
+
+Ejemplo:
+$x_{1}=1,x_{n+1}=\sqrt{3x_{n}},\forall n \geq 1$. Vamos a ver si es monotona.
+
+Lo primero que haremos será mirar el valor en $x_{2}$ que nos dá (Hacer los cálculos) $\sqrt{3}$.
+
+Y ahora empezamos con el principio de inducción.
+1. ¿Se cumple en $x_{1}$? Sí $x_{1}<x_{2}$.
+2. ¿Qué queremos demostrar? Qué $x_{n}<x_{n+1}$.
+3. Por lo tanto comprobamos que $x_{n+1}<x_{n+2}$.
+
+Ejercicio resuelto en: [Principio de inudcción](/apuntes/carrera/Primero/ca/induccion)
 ## Fórmula o reglas con sucesiones famosas
 ### Regla del número e
 Cuando tenemos una indeterminación del tipo "$1^{\infty}$", usamos la regla del número e.
@@ -40,6 +59,4 @@ $y_{n}*\log(x_{n})$.
 
 Sucesión famosa:
 $\lim[(\frac{n+1}{n})^{n}]=\lim[e^{n*\log(\frac{n+1}{n})}]$, que nos dá como resultado final del límite $e$.
-## Sucesiones famosas
-Son auqellas sucesiones que no es necesario calcularlas ya que se obtienen de forma directa, tenemos dos:
-- Usando la regla de 
+## Criterios de convergencia
