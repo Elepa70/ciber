@@ -2,7 +2,7 @@
 title: Funciones
 description: 
 published: true
-date: 2025-11-04T17:39:34.799Z
+date: 2025-11-04T17:48:32.674Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-04T17:23:19.785Z
@@ -18,11 +18,11 @@ Los programas y los subprogrmaas suelen seguir una guía de comunicación:
 - El subprograma obtiene los contenidos que necesita y realiza las tareas, tras esto envia un retorno que es volver al punto del programa principal con los datos que haya usado o necesitado.
 
 ## Función
-Matemáticamente la conocemos, y es casi igual, debemos tener en cuenta una serie de cosas.
+Matemáticamente la conocemos,  como $f(x)$.
 
 Una función consiste en un "subprograma", que devuelve un único dato.
 
-La invocación depende de los argumentos que le pasemos y deben ser admitidos y cumplir los requisitos.
+La invocación depende de los argumentos que le pasemos y deben ser admitidos.
 
 Los nombres de la funciones deben ser significativo, es decir, debemos ser consciente de saber que hace cada cosa.
 
@@ -40,3 +40,6 @@ int suma(int a, int b){
   return result;
 }
 ```
+
+## Procedimientos
+Los procedimientos no devuelven ningún valor, es simplemente encargado de un proceso específico.
