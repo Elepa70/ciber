@@ -2,7 +2,7 @@
 title: Apuntes para el primer parcial de Calculo
 description: 
 published: true
-date: 2025-11-04T22:56:19.716Z
+date: 2025-11-05T10:15:19.114Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-04T10:19:52.029Z
@@ -30,7 +30,7 @@ $\mathbb{R}^{-}_{0} = \{x \in \mathbb{R} : x \leq 0\}$:Todos los números reales
 
 ## Otro formato (No principio de inducción)
 ### Cálculo de la monotonía
-Lo podemos hacer la interpretación de valores conforme a otro termino ($y$), ejemplo. Imponemos que $x<y$, entonces en la función $f(x)<f(y)$, pero esto no podemos hacerlo directametne, debemos ir paso a paso como si fuera un principio de inducción, ejemplo:
+Lo podemos hacer la interpretación de valores conforme a otro termino ($y$), ejemplo. Imponemos que $x<y$, entonces en la función $f(x)>f(y)$, pero esto no podemos hacerlo directametne, debemos ir paso a paso como si fuera un principio de inducción, ejemplo:
 
 $f(x)= \frac{1}{x+e^{x}}$.
 
