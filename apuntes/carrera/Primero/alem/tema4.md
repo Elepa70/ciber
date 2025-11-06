@@ -2,7 +2,7 @@
 title: Combinatoria
 description: 
 published: true
-date: 2025-11-03T18:12:52.405Z
+date: 2025-11-06T13:32:48.951Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-30T20:43:18.172Z
@@ -115,3 +115,25 @@ Se denota de la siguiente manera $CR^{m}_{n}$.
 Por ejemplo en las bolas, tenemos que sacar 4 bolas y son de 3 montones de colores, $CR^{4}_{3}$. Teniendo en cuenta esto, debemos aplicar las reglas anteriores para poder calcularlo, es decir:
 $CR^{m}_{n}=C^{n-1}_{m+n-1}$, una vez tengamos esto, podemos calcularlo con las reglas de antes.
 
+
+## Triángulo de Pascal
+> En espera de que se suban los apuntes para poder comparar y corregir.
+{.is-warning}
+
+El triangulo de Pascal, no es mñas que una sucesión de elementos ordenados, que nos pueden ayudar a comprender algúnas cosas de las matématicas, como puede ser $(a+b)^{b}$.
+
+Ese triangulo lo formaremos con los elementos $\binom{n}{m}$, partimos desde $\binom{0}{0}$, y continuaremos hasta la que queramos.
+
+### Propiedades
+Este triángulo respeta las propiedades que vimos anteriormente como:
+- $\binom{0}{n}=1$.
+- $\binom{n}{n}=1$.
+
+Y podemos operar con ellos también, de una forma especial. Para cada elemento que creamos nuevo por ejemplo:
+$\binom{1}{0}=1$ $\binom{1}{1}=1$, podemos hacer una suma de ellos para que nos de uno posterior:
+$\binom{2}{1}=1+1 = 2$.
+
+Es decir tenemos la regla de que: $\binom{n-1}{m-1}+ \binom{n-1}{m} = \binom{n}{m}$.
+
+COn esto podemos deducir las propiedades de $(a+b)^{n}$, con la siguiente formula:
+$(a+b)^{n}=\varSigma\binom{n}{0} a^{k-k+b^{n}}$.
