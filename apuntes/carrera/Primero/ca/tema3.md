@@ -2,7 +2,7 @@
 title: Limites Funcional y Continuidad
 description: 
 published: true
-date: 2025-11-03T19:06:09.072Z
+date: 2025-11-06T19:45:56.642Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-30T19:10:41.192Z
@@ -52,3 +52,23 @@ $(\frac{x+1}{x})^{x}=x((\frac{x+1}{x}-1)$., el resultado es $L$, que es $e^{L}$.
 
 Recordamos que el teorema del número e, dice:
 $x^{\frac{1}{x}}=e^{\frac{1}{x}*\log(x)}$
+## Operaciones con funciones continuas
+Al igual que con las series convergentes, podemos operar con funciones continuas siguiendo lo siguiente:
+- La suma de funciones continuas, es una función continua.
+- El producto de funciones continuas, es una función continua.
+- El cociente de funciones es continuo, siempre y cuando el denominador no se anule.
+- La composición de funciones es continua, si ambas lo son.
+
+### Ejemplos:
+- Podemos encontrar como ejemplos que toda las funciones elementales son continuas.
+- La suma de funciones son continuas (funciones = polinomios).
+- Toda función racional es continua en su dominio.
+- La función $f(x)=|\log(1+e^{x})|, \forall x \in \mathbb{R}$ es continua ya que la composición de funciones lo es.
+
+## Teoremas
+Ahora vamos a ver una serie de teoremas importantes.
+### Teoremas de los ceros de Bolzano / Teorema de Bolzano
+El teorema de bolzano nos dice que si una función definida en un intervalo cerrado y acotado ($f:[a,b]\rightarrow \mathbb{R}$), y en este intervalo se puede producir: $f(a)*f(b)<0$. Existe un valor $c$, perteneciente al intervalo $[a.b]$, tal que $f(c)=0$.
+
+Matemáticamente se escribe como:
+$f:[a,b] \rightarrow \mathbb{R}, \text{ siendo f continua y } f(a)*f(b)<0$, entonces $\exist c \in [a,b] \text{ t.q. } f(x)=0$.
