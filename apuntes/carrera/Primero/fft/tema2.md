@@ -2,7 +2,7 @@
 title: Elementos Reactivos
 description: 
 published: true
-date: 2025-11-07T15:53:43.708Z
+date: 2025-11-07T16:35:35.247Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-24T15:13:57.545Z
