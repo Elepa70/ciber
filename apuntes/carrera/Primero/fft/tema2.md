@@ -2,7 +2,7 @@
 title: Elementos Reactivos
 description: 
 published: true
-date: 2025-11-07T15:40:27.660Z
+date: 2025-11-07T15:53:43.708Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-24T15:13:57.545Z
@@ -102,5 +102,21 @@ Cuando el condensador empieza a cargarse, tenemos que $v_{c}=V$, es decir el vol
 
 ### Tiempo de subida o bajada
 Consiste en el tiempo que tarda un condensador hasta llegar a su máximo o desargarse, lo podemos hacer con la formula:
-$V*(1-e^{-\frac{1}{ti}t}$, despejando sale: $\ln(V)=-\frac{1}{ti}t$
+$V*(1-e^{-\frac{1}{ti}t})$, despejando sale: $\ln(V)=-\frac{1}{ti}t$.
 
+### Fórmulas copiadas
+Ecuación de nudo:
+$i_{1}+\frac{v_{c}}{R}+i_{2}=0$.
+$(C_{1}+C_{2})\frac{dv_{c}}{dt}+\frac{v_{c}}{R}=0$.
+$pi x \frac{fx(t)}{dt}+x(t)=K$.
+$Rx(C_{1}+C_{2})\frac{dv_{c}}{dt}+v_{c}=0$.
+$x(t)=K+(x_{o}-K)e^{-1\frac{t}{pi}}$.
+
+Cada cosa es:
+$i_{1-2}$: Intensidad en un nudo
+$v_{c}$: Tensión del condensador.
+$R$: Resistencia.
+$C_{1}$: Valor del condensador.
+$dv_{c}$: Derivada de la tensión conforme al tiempo.
+$ti$: Ni idea todavía.
+$K$: Ni idea todavía.
