@@ -2,7 +2,7 @@
 title: Elementos Reactivos
 description: 
 published: true
-date: 2025-10-31T16:19:08.264Z
+date: 2025-11-07T15:40:27.660Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-24T15:13:57.545Z
@@ -78,4 +78,29 @@ Lo que resulta en un estudio de análisis integro-diferencial.
 Cuando usemos un osciloscopio, podemos tener varios resultados, si el valor es distinto de 0, es que está en carga constante, sin embargo si es 0, es que está descargado. Graficamente, solo deberémos fijarnos de si la tabla está en subida o en bajada, ya que puede significar carga o descarga.
 El elemento que mediremos será el condensador.
 
+
+## Calculos
 Cuando tengamos un sistema cerrado, nuestro condensador está en carga, y sin embargo si lo tenemos abierto, el condensador comienza a descargarse. 
+
+Vamos a tener casos donde el circuito puede perder conectividad o no hay conexión con la fuente.
+En el caso de que el circuito esté abierto, el condensador pasará a estar descargado constantemente ya que no hay voltaje por ese lado.
+
+Por otro lado, si hay circuito cerrado, el condensador estará en carga o descarga, es decir, funcionando.
+
+Hay distintas formulas (Todavía a poner), que usaremos según donde estemos:
+- Justo antes del cambio de estado (Cerrado - Abierto)
+- En cerrado.
+- En abierto.
+
+
+### Carga de condensador, circuito cerrado
+Cuando cargamos un condensador tenemos un tiempo 0, o mayor que 0, ya que empezará a recibir energía a partir del primer segundo.
+
+Cuando $t=0$, tenemos que el interruptor ha cambiado la posición, es decir se ha abierto el circuito, provocando que el $v_{c}=0$, el voltaje del condensador es 0.
+
+Cuando el condensador empieza a cargarse, tenemos que $v_{c}=V$, es decir el voltaje va a tender al voltaje de la tensión, y llegará conforma más tendamos al infinito (Cuando llegue al momento).
+
+### Tiempo de subida o bajada
+Consiste en el tiempo que tarda un condensador hasta llegar a su máximo o desargarse, lo podemos hacer con la formula:
+$V*(1-e^{-\frac{1}{ti}t}$, despejando sale: $\ln(V)=-\frac{1}{ti}t$
+
