@@ -2,7 +2,7 @@
 title: Fundamentos Físicos y Tecnológicos
 description: 
 published: true
-date: 2025-09-29T19:43:23.213Z
+date: 2025-11-07T14:56:08.592Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:29:48.981Z
@@ -13,7 +13,7 @@ En está página web podrá encontrar los distintos temarios que corresponden a 
 
 - [Conceptos básicos](tema0)
 - [Corriente continua](tema1)
-
+- [](tema2)
 
 
 
