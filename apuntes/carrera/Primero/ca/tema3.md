@@ -2,7 +2,7 @@
 title: Limites Funcional y Continuidad
 description: 
 published: true
-date: 2025-11-10T19:49:29.996Z
+date: 2025-11-10T19:56:16.771Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-30T19:10:41.192Z
@@ -81,3 +81,10 @@ Una función continua, que puede estar definida en intervalo abierto, y cuyos $\
 El teorema del valor intermedio dice: "Toda función continua lleva intervalo en intervalos". Es decir, una función continua, dentro de un intervalo (Dominio), lleva otro intervalo (Imagen).
 
 $f:I\rightarrow \mathbb{R} \text{ continua en }I \Rightarrow f(I)=\{f(x):x\in I\}\text{ es otro intervalo}$.
+### Teorema de Weierstrass (Propiedad de compacidad)
+Es primo hermano del anterior, sin embargo hay una diferencia. En este caso debemos tener si o si un intervalo cerrado y acotado inicial.
+
+Por lo que el teorema de Weiestrass: Partiendo de una función con intervalo cerrado y acotado, el conjunto imagen debe ser también un intervalo cerrado y acotado.
+$f:[a,b] \rightarrow \mathbb{R} \text{ continua} \Rightarrow f([a,b])$.
+
+Como resultado podemos obtener que $f([a,b])=[m,M]$, donde m y M son mínimo y máximos absolutos respectivamente, y lo podemos obtener con $m=f(x_{o})$ y $M=f(x_{y})$, no podemos saber con certeza que valores son.
