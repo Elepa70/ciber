@@ -2,7 +2,7 @@
 title: Matrices, sistemas de ecuaciones y detememinantes
 description: 
 published: true
-date: 2025-11-10T20:14:30.372Z
+date: 2025-11-10T20:29:14.627Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-10T14:15:40.092Z
@@ -59,3 +59,23 @@ Las matrices elementales son aquellas matrices que obtenemos a la hora de modifi
 {.is-warning}
 
 Cuando multiplicamos una matriz A por una elemental por la izquierda, lo que amos a obtener es una transformación por filas, sin embargo por la derecha por columnas.
+## Matriz escalonada reducida
+Una matriz escalonada reducia, por filas es una matriz que cumple:
+- Si debajo de una fila nula (hay todos ceros), todas las demás son nulas.
+- El pivote (Aquel primer elemento distinto de 0), tiene un valor de 1.
+- El pivote está más a la derecha que el de la anterior fila.
+- En las columnas donde hay un pivote, todo valor debajo del pivote es 0.
+## Forma escalonada reducida
+> Si no se entiende esto, por palabra del profesor. Hay poca posibilidad de poder aprobar la asignatura.
+{.is-danger}
+
+Dada cualquier matriz, solo existe una única matriz escalonada reducida por filas, que obtenemos a partir de transformaciones elementales por filas. Esto nos permite también ver el rango de la matriz, ya que el rango es aquél número de filas distinto de cero de la forma escaolnada reducida de una matriz.
+
+Una vez tengamos las transformaciones realizadas, si usamos los mismos metodos pero en una matriz identidad, podemos obtener la matriz $P$, que nos dá la siguiente regla: $P*A=H_{A}$. Donde:
+- $P$: Matriz obtenida mediante la multiplicación de transformaciones elementales en una matriz identidad.
+- $A$: Matriz que estamos usando para obtener su matriz escalonada.
+- $H_{A}$: Matriz escaolnada resultante.
+
+Se pueden usar varios metodos para realizar este tipo de ejercicios:
+1. Podemos ir paso a paso y ir apuntando las transformaciones que le estamos haciendo a la matriz, para después operar con la matriz $Id$.
+2. Podemos "añadirle" o ampliar la matriz $A$, con la matriz $Id$ correspondiente, para poder obtener como resultado directamente $H_{A}$ y $P$, respectivamente.
