@@ -2,7 +2,7 @@
 title: Matrices, sistemas de ecuaciones y detememinantes
 description: 
 published: true
-date: 2025-11-10T20:29:14.627Z
+date: 2025-11-10T20:44:47.303Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-10T14:15:40.092Z
