@@ -2,7 +2,7 @@
 title: Cálculo
 description: 
 published: true
-date: 2025-11-04T10:33:58.867Z
+date: 2025-11-10T19:45:00.898Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:29:46.290Z
@@ -10,10 +10,9 @@ dateCreated: 2025-09-29T19:29:46.290Z
 
 # Cálculo
 En está página web podrá encontrar los distintos temarios que corresponden a esta asignatura.
-### Primer parcial
+## Temario
 - [Números Reales](tema1)
 - [Sucesiones y series](tema2)
-### Segundo parcial
 - [Limites Funcional y Continuidad](tema3)
 
 ## Ejericios de ejemplo
