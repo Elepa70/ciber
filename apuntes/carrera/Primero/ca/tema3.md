@@ -2,7 +2,7 @@
 title: Limites Funcional y Continuidad
 description: 
 published: true
-date: 2025-11-06T19:45:56.642Z
+date: 2025-11-10T19:49:29.996Z
 tags: 
 editor: markdown
 dateCreated: 2025-10-30T19:10:41.192Z
@@ -72,3 +72,12 @@ El teorema de bolzano nos dice que si una función definida en un intervalo cerr
 
 Matemáticamente se escribe como:
 $f:[a,b] \rightarrow \mathbb{R}, \text{ siendo f continua y } f(a)*f(b)<0$, entonces $\exist c \in [a,b] \text{ t.q. } f(x)=0$.
+
+Para poder usar mejor el teorema de Bolzano, describiremos su versión general que dice:
+
+Una función continua, que puede estar definida en intervalo abierto, y cuyos $\lim_{x\rightarrow a}f(x)*\lim_{x\rightarrow b}f(x)<0$, entonces existe un punto $c$, que hace 0 la función. ($\exists \text{ c}\in \text{ }]a,b[ \text{ t.q. }f(c)=0$.
+
+### Terorema del valor intermedio (T.V.I.)
+El teorema del valor intermedio dice: "Toda función continua lleva intervalo en intervalos". Es decir, una función continua, dentro de un intervalo (Dominio), lleva otro intervalo (Imagen).
+
+$f:I\rightarrow \mathbb{R} \text{ continua en }I \Rightarrow f(I)=\{f(x):x\in I\}\text{ es otro intervalo}$.
