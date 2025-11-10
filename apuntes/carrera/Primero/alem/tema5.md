@@ -2,7 +2,7 @@
 title: Matrices, sistemas de ecuaciones y detememinantes
 description: 
 published: true
-date: 2025-11-10T14:17:36.356Z
+date: 2025-11-10T20:14:30.372Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-10T14:15:40.092Z
@@ -41,13 +41,21 @@ La transpuesta de una matriz no es más que la matriz es intercambiando los valo
 Son aquellas matrices que cuando se le multiplica una matriz especifica, se consigué la matriz identidad.
 - La matriz identidad es una matriz donde solo tiene en su diagonal principal 1, y en el resto 0.
 
+# Forma escalonada reducida
 ## Operaciones elementales
 A las matrices ademas de estas operaciones normales entre ellas, podemos hacerle transformaciones nosotros mismos para ir obteniendo otras cosas, tenemos.
 ### Transformaciónes elementales por fila
 
 En esta vamos a ver:
-- El intercambio de filas.
-- Multiplicación de una fila por un escalar distinto de 0.
-- Sumarle una fila y multiplicarla por algo.
+- El intercambio de filas. Lo expresaremos como $E_{1,n}$
+- Multiplicación de una fila por un escalar distinto de 0. Expresado como $E_{2}(Valor)$
+- Sumarle una fila y multiplicarla por algo. Expresado como $E_{3,n}(valor)$
 
 En todas estas transformaciones siempre vamos a obtener una manera de revertirlo, pero debemos hacerlo en orden, ya que si no, vmaos a obtener una matriz completamente distinta a la que partimos.
+
+## Matrices elementales
+Las matrices elementales son aquellas matrices que obtenemos a la hora de modificar una matriz identidad con las operaciones elementales. 
+> Se recomienda tener especial cuidado ya que puede llegar a la confusión si estamos operando tanto con estas matrices como con las cuadradas.
+{.is-warning}
+
+Cuando multiplicamos una matriz A por una elemental por la izquierda, lo que amos a obtener es una transformación por filas, sin embargo por la derecha por columnas.
