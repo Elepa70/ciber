@@ -2,7 +2,7 @@
 title: Ordenación y búsqueda en vectores
 description: 
 published: true
-date: 2025-11-11T18:06:02.792Z
+date: 2025-11-11T18:08:40.668Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-11T17:04:55.247Z
@@ -25,12 +25,76 @@ Vamos a usar varios métodos de ordenación.
 
 ### Ordenación - Método de la burbuja
 En este orden lo que hacemos es hacer que los valores "floten" y se vayan comparando con los demás para ir hasta el final. Cuanto mayor sea el valor más lejos del vector va a llegar.
+```C++
+// declarar variables
+// leer vector
+for (i = 1; i < N; i++) {
+ 
+ for (j = 0; j < N - i; j++) {
+ 	if (v[j] > v[j + 1]) {
+ 	aux = v[j];
+ 	v[j] = v[j + 1];
+ 	v[j + 1] = aux;
+ 	}
+ 
+ }
+}
+
+
+\\ El mejorado
+
+i = 1;
+flag = false
+while(i < N && !flag) {
+ flag = true;
+ 
+ for (j = 0; j < N - i; j++) {
+ 	if (v[j] > v[j + 1]) {
+ 	aux = v[j];
+ 	v[j] = v[j + 1];
+ 	v[j + 1] = aux;
+ 	flag = false;
+ 	}
+  
+ }
+ i++;
+}
+```
+
 
 ### Ordenación - Selección y reemplazo
 Es similar al anterior, con la diferencia de que el cambiamos completamente las posiciones. Da igual si acabará siendo mayor o no.
-
+```C++
+for (i = 0; i < N - 1; i++) {
+ k = i;
+ 
+ for (j = i + 1; j < N; j++) {
+ 	if (v[j] < v[k]) {
+ 		k = j;
+ 	}
+ 
+ }
+ 
+ aux = v[i];
+ v[i] = v[k];
+ v[k] = aux;
+}
+```
 ### Ordenación - inserción
-En este metodo partimos con zona ya ordenada, y cuando añadimos valores, lo que hacemos es comparar si esfectivamente es mayor al anterior, en caso negativo se compara con los demás y ya se ordena. 
+En este metodo partimos con zona ya ordenada, y cuando añadimos valores, lo que hacemos es comparar si esfectivamente es mayor al anterior, en caso negativo se compara con los demás y ya se ordena.
+```C++
+for (i = 1; i < N; i++) {
+ aux = v[i];
+ j = i - 1;
+ 
+ 	while (j >= 0 && aux < v[j]) {
+ 	v[j + 1] = v[j];
+ 	j--;
+ 	}
+  
+ v[j + 1] = aux;
+}
+```
 
 ## Búsqueda
 ### Búsqueda secuencial
