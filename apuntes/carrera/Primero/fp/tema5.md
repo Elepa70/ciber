@@ -2,7 +2,7 @@
 title: Funciones
 description: 
 published: true
-date: 2025-11-04T18:18:35.172Z
+date: 2025-11-11T17:04:13.096Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-04T17:23:19.785Z
@@ -108,3 +108,46 @@ La diferencia viene con el "&", en la lista de referencia.
 - No tenerlo: Paso por valor.
 
 También existe el "*", consiste en punteros, pero actualmente no lo veremos.
+
+## Paso de arrays como parámetros
+Recordemos que los arrays realmente son variables, que traducido son referencias en memorias. Si le pasamos esto a una subfunción, vamos a tener un paso por valor siempre y cuando añadimos "const". Al contrario que antes.
+
+```C++
+#include <iostream>
+using namespace std;
+
+void printArray(const int v[], int n){
+	int i;
+  for (i=0; i < n; i++) {
+ 		cout << "Valor en posición " << i <<": " << v[i] <<end;
+  }
+}
+
+void updateArray(int v[], int n){
+	int i;
+  
+  for (i = 0; i < n; i++) {
+ 		v[i]++;
+  }
+}
+
+int main() {
+	const int N = 5;
+  int v1[N] = {0, 1, 2, 3, 4};
+  
+  cout << "Valores iniciales";
+  printArray(v1,N);
+  
+  updateArray(v1,N);
+  
+  cout << "Valores después de actualizarlos" << endl;
+  
+  printArray(v1.N);
+  
+  return 0;
+}
+```
+
+Si nos fijamo en el enunciado anterior tenemos que en uno de las funciones hay un array donde los parametros contiene const, es decir, un paso por referencia.
+
+Cuando queremos pasar un array mayor a una dimension, es obligatorio indicar el tamaño de la dimensión que tenemos en uso.
