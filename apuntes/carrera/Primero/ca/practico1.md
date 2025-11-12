@@ -2,7 +2,7 @@
 title: Apuntes para el examen practico 1
 description: 
 published: true
-date: 2025-11-12T13:03:29.589Z
+date: 2025-11-12T15:34:30.180Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-12T10:13:40.141Z
@@ -365,3 +365,29 @@ romberg(exp(-sin(x^2)),x,0,%pi);
 quad_qags(exp(-sin(x^2)),x,0,%pi);
 ```
 ### Areas y curvas
+Por último vamos a ver como calcular las areas y las curvas, para ello vamos a tener que calcular una integral en un rango especifico por ejemplo.
+
+```
+
+integrate(sqrt(4-x^2)-(-sqrt(4-x^2)),x,-2,2);
+```
+
+Sin embargo cuando nos tenemos que calcular el area entre dos funciones para ello vamos a calcular primero los lugares donde hacen cero ambas funciones con un find_root, ya que solve no se puede usar.
+
+```
+wxdraw2d(
+	explicit(sin(x),x,0,3.14),
+  color=red,
+	explicit(cos(x),x,0,1.14)
+  );
+  a:find_root(sin(x)-cos(2*x),x,0,1);
+  b:find_root(sin(x)-cos(2*x),x,2,3);
+  
+  area:-integrate(sin(x)-cos(2*x),x,0,a) + integrate(sin(x)-cos(2*x),x,a,b) - integrate(sin(x)-cos(2*x),x,b,%pi);
+  float(area);
+  
+  
+ 	romberg(abs(sin(x)-cos(2*x)),x,0,%pi);
+```
+
+Ambos resultados son iguales realmente, asi que podemos escoger uno o otro modelo, el que preferamos.
