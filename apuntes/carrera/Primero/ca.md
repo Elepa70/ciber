@@ -2,7 +2,7 @@
 title: Cálculo
 description: 
 published: true
-date: 2025-11-10T19:45:00.898Z
+date: 2025-11-12T12:51:28.525Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:29:46.290Z
@@ -19,8 +19,8 @@ En está página web podrá encontrar los distintos temarios que corresponden a 
 - [Principio de Inducción](induccion)
 
 ## Apuntes examén
-- [Primer parcial](parcial1)
-
+- [Primer parcial teorico](teoria1)
+- [Primer parcial práctico](practico1)
 ## Docente
 El temario fue dado por María Pilar Muñoz Rivas
 
