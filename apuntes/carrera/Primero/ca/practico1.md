@@ -2,7 +2,7 @@
 title: Apuntes para el examen practico 1
 description: 
 published: true
-date: 2025-11-12T13:03:11.962Z
+date: 2025-11-12T13:03:29.589Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-12T10:13:40.141Z
@@ -364,3 +364,4 @@ Queadpack es mas completo ya que nos devuelve:
 romberg(exp(-sin(x^2)),x,0,%pi);
 quad_qags(exp(-sin(x^2)),x,0,%pi);
 ```
+### Areas y curvas
