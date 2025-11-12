@@ -2,7 +2,7 @@
 title: Apuntes para el examen practico 1
 description: 
 published: true
-date: 2025-11-12T10:46:42.721Z
+date: 2025-11-12T10:56:06.046Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-12T10:13:40.141Z
@@ -174,6 +174,30 @@ wxdraw2d(line_width=2,
         line_width=4,
         color=green,
         implicit(x^2-y^2=1,x,-3,3,y,-3,3),
+        yrange=[-3,3]
+        );
+```
+
+### Puntos
+La estructura de los puntos es la siguiente
+```
+wxdraw2d(
+        points([[x1,y1],[x2,y2]...]),
+        o
+        points([x1,x2,x3...],[y1,y2,y3...])
+)
+```
+Al igual que las graficas, podemos añadirle color y podemos ponerle a su vez:
+- "point_size=": El tamaño del punto.
+- "point_type=": Que tipo de punto, normalmente usamos el 7.
+
+Los puntos lo representamos como:
+```
+wxdraw2d(color=red,
+        point_size=2,
+        point_type=7,
+        points([[-3,0],[1,7],[8,-1]]),
+        xrange=[-4,9],
         yrange=[-3,3]
         );
 ```
