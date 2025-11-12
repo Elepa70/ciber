@@ -2,7 +2,7 @@
 title: Cálculo
 description: 
 published: true
-date: 2025-11-12T12:51:28.525Z
+date: 2025-11-12T19:17:07.307Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:29:46.290Z
@@ -14,6 +14,7 @@ En está página web podrá encontrar los distintos temarios que corresponden a 
 - [Números Reales](tema1)
 - [Sucesiones y series](tema2)
 - [Limites Funcional y Continuidad](tema3)
+- [Derivabilidad](tema4)
 
 ## Ejericios de ejemplo
 - [Principio de Inducción](induccion)
