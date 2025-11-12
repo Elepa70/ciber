@@ -2,7 +2,7 @@
 title: Apuntes para el examen practico 1
 description: 
 published: true
-date: 2025-11-12T10:56:06.046Z
+date: 2025-11-12T13:03:11.962Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-12T10:13:40.141Z
@@ -202,4 +202,165 @@ wxdraw2d(color=red,
         );
 ```
 ## Ecuaciones
+Las ecuaciones las definimos como como su fueran ecuaciones normales, por ejemplo:
+```
+eq:5*x^4-2*x^3+7*x^2-8=x^3-5*x;
+```
+
+Con esto lo podemos nombrar, sin embargo, si solo queremos una parte de la equcación vamos a poner:
+```
+lhs(eq); -> Left Half Solution
+rhs(eq); -> Right Half solution
+```
+
+### Resolver ecuaciones
+Podemos resolver ecuaciones **básicas**, con la orden solve, sin embargo debemos si tenemos un grado mayor que 4, debemos usar otras opciones.
+```
+solve(4*x^2-1=0,x);
+```
+
+En algunas situaciones debemos usar el float para poder obtener el resultado de forma correcta.
+
+```
+solve(4*x^3-2*x^2+5=5*x,x);
+float(%)
+
+float(solve(4*x^3-2*x^2+5=5*x,x));
+```
+
+La orden **subst**, es una orden que nos permite sustituir una expresión en otro lado. Ejemplo
+```
+ec:x=sqrt(x+1);
+subst((ecuacion),incognita,variable);
+subst((sqrt(5)+1/2),x,ec)
+```
+
+Para poder nombrar soluciones a ecuaciones debemos hacer uso del map, por ejemplo:
+```
+soluciones:map(rhs,solve(x^2-3*x+1=0,x));
+nombre-variable:map(rhs,accion a resolver));
+```
+
+### Solución aproximada
+Cuando tenemos una ecuación polinomica cuyo grado sea mayor o igual que 5, debemos usar otor tipo de sentencias, para ello tenemos por ejemplo:
+to_poly_solve
+
+```
+to_poly_solve(4*x^5-2*x^4+3*x^3+18*x-7=0,x);
+
+to_poly_solve(ecuación,variable);
+```
+
+### Find_root
+El comando find_root, usa el teorema de ceros de Bolzando para poder hallar soluciones a ecuaciones no polinómicas, por ejemplo:
+```
+f(x):=sqrt(x)+log(x);
+
+wxplot2f([f(x)],[x,0,2],[y,-2,6]);
+
+find_root(f(x),x,0.2,1);
+
+find_root(funcion,variable a comprobar, inicio, fin);
+```
+
+El proceso que seguiremos es mirar primero la grafica para determinar si hay o no un cambio de imagen, tras esto podemos usar find_root en un intervalo que nosotros deseemos y consideremos ideal.
 ## Derivadas e integrales
+
+Antes de ver ver las derivadas e integrales, vamos a usar el comando limite.
+### Limites
+
+Nos sirve para poder determinar el comportamiento de una función hacia el más infinito (inf) o hacia el menos infinito (minf).
+```
+limit(funcion,x,inf)
+limit(funcion,x,minf)
+```
+Si queremos hacer el limite hacia un valor debemos poner
+```
+limit(funcion,x,0,plus)
+limit(funcion,x,0,minus)
+limit(funcion,x,0)
+```
+
+### Derivadas
+El siguiente comando que vamos a usar se llama diff, nos sirve para poder calcular derivadas, por ejemplo
+```
+diff(funcion,x);
+diff(sin(x),x);
+```
+
+Si queremos la segunda o tercera derivada necesitariamos:
+```
+diff(sin(x),x,3);
+```
+
+### Recta tangente
+Una vez visto la recta normal, para calcular la recta tangente nos debemos acordar de la formula de lar recta tangente que es:
+**$y=mx+n \Leftrightarrow y=f(a)+f'(a)(x-a)$**.
+
+Para poder escribirlo en maxima pondremos
+```
+define(f(x),sin(exp(x)));
+define(df(x),diff(f(x),x));
+define(tangente(x,a),f(a)+df(a)*(x-a)); 
+
+wxdraw2d(
+	explicit(f(x),x,0,3),
+	explicit(tangente(x,1.5),x,0,3),
+	points([[(1.5,f(1.5))]])
+);
+```
+
+Lo que hacemos es definir cada parte por separado para poder calcularlo después todo junto. En este caso estamos representando la recta tangente en el punto 1.5.
+
+### Estudios relativos
+Los estudios relativos nos sirve para determinar el máximo y el mínimo de una función, para ello primero vamos a tener que calcular los puntos criticos de la función. Es decir aquellos valores que hacen que la derivada sea 0.
+```
+define(df(x),diff(f(x),x));
+x1:find_root(df(x),x,0,1);
+x3:find_root(df(x),x,1,2);
+```
+
+Tras esto podemos comprobar si son extremos relativos con la segunda función de la siguiente manera.
+```
+define(df2(x),diff(f(x),x,2));
+df2(x1);
+df2(x2);
+```
+Si el punto obtenido, y el resultado en la segunda derivada es $<0$, entonces es máximo relativo, si es $>0$ entonces es mínimo. Si fuera 0, entonces nos hemos equivocado.
+
+### Polinomio de Taylor - No recuerdo si cae o no
+Los polinomios de taylor, es una función especial que centrado en un punto a, con grado n, podemos encontrar un polinomio que se comporta igual que la función en torno a ese punto hasta la derivada en n.
+```
+taylor(f(x),x,0,8);
+```
+
+Para evitar problemas se recomienda convertirlo en un polinomio normal de la siguiente manera:
+```
+define(f(x),sin(3*x)+tan(x)+1);
+define(p6(x),ratdisrep(taylor(f(x),x,0,6)));
+```
+
+### Integrales y Primitivas
+Antes habiamos calculado la derivadas, ahora vamos a calcular las integrales, para ello simplemente debemos usar el comando integrate:
+```
+integrate(funcion,variable x o y);
+
+integrate(sin(x)*exp(-3*x),x);
+```
+Es posible que nos pregunten sobre un parametro cuando no se sabe el valor, por ejemplo cuando ponemos "integrate(x^n,x);", nos preguntará el valor de n ya que puede variar la integral.
+
+
+Hay veces donde no es viable poder usar integrate, para ello usaremos:
+- romberg: Da como respuesta un número, aproximado a la integral definida.
+- quadpack: Es un paquete con varias órdenes dependiendo de la integral.
+
+Queadpack es mas completo ya que nos devuelve:
+- Valor aproximado de la integral
+- Error absoluto estimado
+- Número de pasos hasta enocntrar el valor
+- Código de error, cuando mas cercano al 0 mejor.
+
+```
+romberg(exp(-sin(x^2)),x,0,%pi);
+quad_qags(exp(-sin(x^2)),x,0,%pi);
+```
