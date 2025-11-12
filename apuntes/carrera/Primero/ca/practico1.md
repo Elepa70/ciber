@@ -2,7 +2,7 @@
 title: Apuntes para el examen practico 1
 description: 
 published: true
-date: 2025-11-12T10:13:40.141Z
+date: 2025-11-12T10:27:30.517Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-12T10:13:40.141Z
@@ -122,5 +122,20 @@ funcion.=valor de la funcion
 f(x):=cos(x^2);
 ```
 ## Graficas
+Vamos a poner de nuevo como definir funciones pero con un extra
+```wxmaxima
+f(x):=2*x-1;
+g(x,y):=x^2*y-2*x*y^2; 
+
+define(h(x),expresión);
+```
+### Representar básico - wxplot2d
+Para poder dibujar una función de forma básica, usaremos el comando:
+```wxmaxima
+wxplot2d(f(x),[x,-5,5]);
+
+wxplot2d(funcion),[x o y, minimo de x o y, maximo de x o y]
+```
+Donde el minimo y el maximo es donde va a ser los limites de donde va a estar representada la función.
 ## Ecuaciones
 ## Derivadas e integrales
