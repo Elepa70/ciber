@@ -2,7 +2,7 @@
 title: Apuntes para el examen practico 1
 description: 
 published: true
-date: 2025-11-12T10:27:30.517Z
+date: 2025-11-12T10:46:42.721Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-12T10:13:40.141Z
@@ -137,5 +137,45 @@ wxplot2d(f(x),[x,-5,5]);
 wxplot2d(funcion),[x o y, minimo de x o y, maximo de x o y]
 ```
 Donde el minimo y el maximo es donde va a ser los limites de donde va a estar representada la función.
+
+### Representar graficas con wxdraw2d
+Ojo antes de representar gracias con este comando, debemos cargar el paquete con
+```wxmaxima
+load("draw");
+```
+
+La ventaja que trae wxdraw2d con respecto a wxplot2d, es que con draw podemos deibujar tanto explicitas como implicitas, es decir podemos representar esferas.
+
+Para poder dibujar una función explicita haremos:
+```wxmaxima
+
+wxdraw2d(explicit(funcion,valor x o y, rango minimo, rango maximo);
+wxdraw2d(explicit(cos(2*x),x,0,4*%pi));
+
+```
+### Representar graficas en implicita
+Por otro lado para poder representar graficas en explicita debemos usar lo siguiente:
+```
+wxdraw2d(implicit(x^2+(y-1)^2=4,x,-2,2,y,-1,3));
+```
+### Colores y completar las graficas
+Una vez sepamos representar las graficas, otra gran ventaja que trar wxdraw2d, sobre wxplot2d, es que podemos añadirle colores y distintas opciones para poder hacerlo más limpio visualmente, estas opciones son:
+- "color=": Nos permite cambiar lo que venga después de un color en especifico.
+- "line_width=": Podemos cambiar el grosor de la grafica a representar.
+- "yrange=[]": Definimos el espacio que vamos a mostrar en y.
+- "xrange=[]": Similar al anterior pero en x.
+- "proportional_axes=xy": Ponemos ambos ejes proporcionados
+
+Ejemplo:
+```
+wxdraw2d(line_width=2,
+        color=red,
+        explicit(x^2-1,x,-2,3),
+        line_width=4,
+        color=green,
+        implicit(x^2-y^2=1,x,-3,3,y,-3,3),
+        yrange=[-3,3]
+        );
+```
 ## Ecuaciones
 ## Derivadas e integrales
