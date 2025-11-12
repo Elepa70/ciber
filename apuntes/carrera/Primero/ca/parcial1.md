@@ -2,7 +2,7 @@
 title: Apuntes para el primer parcial de Calculo
 description: 
 published: true
-date: 2025-11-05T10:15:19.114Z
+date: 2025-11-12T09:43:13.222Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-04T10:19:52.029Z
