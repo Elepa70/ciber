@@ -2,7 +2,7 @@
 title: Apuntes para el examen practico 1
 description: 
 published: true
-date: 2025-11-12T15:34:30.180Z
+date: 2025-11-13T10:50:41.868Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-12T10:13:40.141Z
@@ -256,7 +256,7 @@ El comando find_root, usa el teorema de ceros de Bolzando para poder hallar solu
 ```
 f(x):=sqrt(x)+log(x);
 
-wxplot2f([f(x)],[x,0,2],[y,-2,6]);
+wxplot2d([f(x)],[x,0,2],[y,-2,6]);
 
 find_root(f(x),x,0.2,1);
 
