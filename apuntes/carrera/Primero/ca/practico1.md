@@ -2,7 +2,7 @@
 title: Apuntes para el examen practico 1
 description: 
 published: true
-date: 2025-11-13T10:50:41.868Z
+date: 2025-11-13T11:59:07.192Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-12T10:13:40.141Z
@@ -14,6 +14,11 @@ Realizado para hacerlo en máxima.
 ## Primeros pasos - Cosas esenciales
 Siempre que queramos ejecutar algo, debemos tener en cuenta que debemos poner el ";", y después la combinación de teclas <kbd>shift enter</kbd>, o <kbd>enter</kbd> númerico.
 
+
+Si no carga la cuadra poner:
+```
+grid = true;
+```
 ### Operacioens elementales
 Suma 
 ```maxima
