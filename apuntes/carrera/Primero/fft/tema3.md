@@ -2,7 +2,7 @@
 title: Corriente alterna
 description: 
 published: true
-date: 2025-11-14T15:33:52.217Z
+date: 2025-11-14T15:35:40.014Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-14T14:50:15.753Z
@@ -42,3 +42,4 @@ Normalmente nosotros vamos a investigar una serie alterna normal, donde nos sole
 - Frecuencia (f): Es el número de ciclos por unidad de tiempo.
 
 - Valor medio de la señal $A_{m}$, vale $\frac{1}{T}$.
+- Valor eficaz: $A_{ef}=\frac{A_{max}}{\sqrt{2}}$.
