@@ -2,7 +2,7 @@
 title: Corriente alterna
 description: 
 published: true
-date: 2025-11-14T15:35:40.014Z
+date: 2025-11-14T15:48:28.685Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-14T14:50:15.753Z
@@ -43,3 +43,4 @@ Normalmente nosotros vamos a investigar una serie alterna normal, donde nos sole
 
 - Valor medio de la señal $A_{m}$, vale $\frac{1}{T}$.
 - Valor eficaz: $A_{ef}=\frac{A_{max}}{\sqrt{2}}$.
+- $F_{f}=\frac{A_{ef}}{A_{m}}$
