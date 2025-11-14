@@ -2,7 +2,7 @@
 title: Corriente alterna
 description: 
 published: true
-date: 2025-11-14T15:02:42.565Z
+date: 2025-11-14T15:33:52.217Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-14T14:50:15.753Z
@@ -23,4 +23,22 @@ El trnasporte se hace en corriente altenra, ya que trane una gran facilidad de g
 ## Diferencia con respecto a la continua
 
 En la corriente alterna, debemos tener en cuenta una serie de cosas. Para empezar la formula de OHM pasa a ser:
-$\frac{V(t)}{I(t)}=Z$
+$\frac{V(t)}{I(t)}=Z$.
+
+## Clasificacide las ondas
+Como estamos en alterna, a diferencia de continua podemos ver una serie de ondas, estas ondas las podemos clasificar segun:
+- Simetria: Par o Impar.
+- Tipo: Continua o Alterna.
+- Regularidad.
+
+Dependiendo de cuales elementos y la cantidad de los mismos tengamos en el circuito, esto alterara la manera en la que las ondas se muestra, pudiendo retrasarla, adelantarlas etc etc
+
+## Parametros asociados a la onda
+Normalmente nosotros vamos a investigar una serie alterna normal, donde nos solemos fijar en:
+- Los valores picos, donde podemos calcula $A(t)=A_{max}*sen t$.
+- El inicio de la señal. Si no comienza en el eje debemos cambiar la formula anterior a $A(t)=A_{max}*sen (wt+K)$. Donde $K$ es la diferencia de distancia entre el pico que debería tomar y el que toma.
+
+- Ciclo: Es de la forma de onda comprendida en un período.
+- Frecuencia (f): Es el número de ciclos por unidad de tiempo.
+
+- Valor medio de la señal $A_{m}$, vale $\frac{1}{T}$.
