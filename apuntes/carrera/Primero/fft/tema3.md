@@ -2,7 +2,7 @@
 title: Corriente alterna
 description: 
 published: true
-date: 2025-11-14T15:48:28.685Z
+date: 2025-11-14T15:55:55.599Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-14T14:50:15.753Z
