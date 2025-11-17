@@ -2,7 +2,7 @@
 title: Matrices, sistemas de ecuaciones y detememinantes
 description: 
 published: true
-date: 2025-11-12T19:34:04.498Z
+date: 2025-11-17T19:24:54.587Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-10T14:15:40.092Z
@@ -109,3 +109,24 @@ Es el proceso de ir repitiendo la operación de:
 - En caso de tener $n\geq 2$, entonces el determinante pasa a ser $det(A) \text{ o } |A| = a_{11}*\alpha_{11}+a_{21}*\alpha_{21}\dots +a_{n1}*\alpha_{n1}$. Donde $\alpha=(-1)^{i+j}$, o adjunto.
 
 Con esto en cuenta podemos hacer cualquier matriz mediante el uso de la adjuntos constantemente.
+### Propiedades de los determinantes
+Las propiedades de los determinantes son los siguientes:
+1. Si cambiamos dos filas de lugar, el determinante cambiará de signo.
+2. Multiplicar una fila por un constante distinto de 0, provocará que el determinante también estará multiplicado por esa constante.
+3. Si a una fila le sumas otra multiplicada por un escalar, el determinante no varíara.
+
+La regla número 3 es especialente util, ya que nos servirá en los ejercicios para poder calcular determinantes de matrices con un ordén mayor a 3, sin tener que hacer el determinante de cada columna.
+### Inversa
+Para que haya inversa, el determinante debe ser distinto de 0 y la matriz debe ser regular. Para poder calcular la matriz hay que hacer $A^{-1}=\frac{adj(A)^{t}}{|A|}$.
+### Rango
+El rango de una matriz, consiste en el tamaño de mayor submatriz cuadrada con determinante distinto de cero en una matriz.
+Es decir, vamos haciendo submatrices y con ello vamos comprobando si el determinante es cero o no.
+> Si hemos calculado un determinante $2x2$, podemos usar esa misma submatrices para calcular la de $3x3$, ya que facilitará mucho las cosas.
+{.is-success}
+### Ecucaciones lineales
+Las ecuaciones lineales, no son mas que matrices que están siendo multiplicadas por unas incógnitas para poder resoverlas podemos usar la regla de Cramer.
+
+Estas reglas consisten en:
+- Primero debemos calcular el determinante de todo.
+- Una vez calculado el determinante, y comprobando que es distinto de 0, lo que haremos será sustituir la extendida (terminos independientes), con la columna del valor que queramos resolver, es decir si queremos calcular x, seguramente que sustituir la columna de terminos independientes en la primera columna.
+- Ojo una vez calculado el determinante anterior, deberemos multiplicado por el determinante general.
