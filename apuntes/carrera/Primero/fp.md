@@ -2,14 +2,14 @@
 title: Fundamentos de Programación
 description: 
 published: true
-date: 2025-11-18T19:23:40.336Z
+date: 2025-11-18T19:23:43.473Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:29:51.566Z
 ---
 
 # Fundamentos de Programación
-En está página web podrá encontrar los distintos temarios que corresponden a esta asignatura
+En está página web podrá encontrar los distintos temarios que corresponden a esta asignatura.
 
 - [Introducción](tema1)
 - [Condicionales](tema2)
