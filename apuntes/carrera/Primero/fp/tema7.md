@@ -2,7 +2,7 @@
 title: Clases
 description: 
 published: true
-date: 2025-11-18T18:04:27.144Z
+date: 2025-11-18T18:07:22.936Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-18T16:39:51.836Z
@@ -97,3 +97,5 @@ Los atributos y metodos tienen 3 modso de visibilidad:
 - Protegido: Accesible para clases que hereden, no se verán en este curso.
 
 Lo más normal es que los atributos sean privados, es decir, no sea accesible desde el exterior, con esto evitamos un mal uso de los mismos. Para acceder a los métodos, podemos usar 'getters' (Nos dá la información del metodo) y 'setters' (Establecer información en una variable).
+## Ámbito
+Dentro de una clase, siempre podemos usar cualquier metodo, ya sea público o privados, sin embargo los públicos se pueden usar en cualquier lado.
