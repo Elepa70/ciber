@@ -2,7 +2,7 @@
 title: Clases
 description: 
 published: true
-date: 2025-11-18T17:56:43.732Z
+date: 2025-11-18T18:04:27.144Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-18T16:39:51.836Z
@@ -89,3 +89,11 @@ Point2D punto1;
 //Llamar un método
 punto1.moveUP();
 ```
+
+## Visibilidad
+Los atributos y metodos tienen 3 modso de visibilidad:
+- Privado: Solo accesible desde dentro de la clase.
+- Público: Accesible desde fuera.
+- Protegido: Accesible para clases que hereden, no se verán en este curso.
+
+Lo más normal es que los atributos sean privados, es decir, no sea accesible desde el exterior, con esto evitamos un mal uso de los mismos. Para acceder a los métodos, podemos usar 'getters' (Nos dá la información del metodo) y 'setters' (Establecer información en una variable).
