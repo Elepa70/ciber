@@ -2,7 +2,7 @@
 title: Clases
 description: 
 published: true
-date: 2025-11-18T17:29:39.906Z
+date: 2025-11-18T17:33:54.507Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-18T16:39:51.836Z
@@ -55,9 +55,28 @@ class (nombreclase){
 	(tipo) (atributo);
 	(tipo) (atributo);
   
+private:
+	(tipo) (metodo)((tipo) (nombre_argumento)...){
+  }
+
 //A partir de ahora, todo esto es publico.
 public:
 	(tipo) (metodo)((tipo) (nombre_argumento)...){
   }
+};
+```
+Ejemplo:
+```C++
+class Point2D{
+	int x;
+  int y;
+  
+  public:
+  	void moveUP(){
+    	y++;
+    }
+    void modeDown(){
+    	y--;
+    }
 };
 ```
