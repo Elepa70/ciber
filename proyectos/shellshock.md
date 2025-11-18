@@ -2,7 +2,7 @@
 title: Shellshock
 description: Ataque automatizado hacia esta página.
 published: true
-date: 2025-11-18T13:35:56.702Z
+date: 2025-11-18T13:53:14.226Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-18T12:11:39.089Z
@@ -16,6 +16,7 @@ La infraestructura que aloja este sitio web está monitorizada por un sistema de
 
 En este informe hablaremos sobre la detección, análisis y actuación ante la vulnerabilidad **Shellshock (CVE-2014-6271)** [Información del CVE-2014-6271 aportado por el NIST](https://nvd.nist.gov/vuln/detail/cve-2014-6271).
 
+![Información de nivel critico en Wazuh](/imagenes/imagen_shellshock_1.png)
 ## La vulnerabilidad Shellshock (CVE 2014-6271)
 Aunque esta vulnerabilidad es de hace ya más de 10 años, sigue siendo un vector de entrada crítico con las siguientes puntuaciones:
 - CVSS v3: 9.8
@@ -54,7 +55,7 @@ Wazuh hizo saltar una alerta, que tiene predeterminada, con ID **31168**, donde 
 Desglose del ataque.
 - Exploit: La inyección comienza con  "() {: ;};", como hemos explicado anteriormente hace uso de variables del entorno para poder atacar, aprovechando la vulnerabilidad Shellshock.
 - Ataque: Acto seguido lo que hace es descargar un script externo y ejecutarlo. Hace 3 intentos, para distintos sistemas Linux o IoT, por eso podemos ver "wget" "busybox" o "curl".
-
+![Información de logs en Wazuh](/imagenes/imagen_shellshock_2.png)
 ## Investigación
 Para analizar el comportamiento del malware, sin comprometernos nosotros mismos, se ha extraído el contenido del fichero con una máquina virtual desechable Kali y con la red TOR, para proteger la identidad.
 
@@ -69,7 +70,7 @@ Analizada la información recibida, se han sacado las siguientes conclusiones.
 1. Campaña RondoDox: El nombre del supuesto script, que intenta descargar se llama "rondo.qre.sh", que tiene similitud a la botnet RondoDox.
 2. Correo del actor: Tanto en la fuente de la página como en el ataque, podemos encontrar una dirección de correo.
 3. Posible trolling: El website parece que se creó para hacer trolling y no para difundir un malware.
-
+![Información de VirusTotal.](/imagenes/imagen_shellshock_3.png)
 ## Mitigación y respuesta
 Actualmente, la mitigación se realiza mediante bloqueo proactivo en el firewall.
 
