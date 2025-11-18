@@ -2,7 +2,7 @@
 title: Clases
 description: 
 published: true
-date: 2025-11-18T18:12:39.628Z
+date: 2025-11-18T18:23:38.031Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-18T16:39:51.836Z
@@ -105,3 +105,29 @@ Los atributos son variables al fin al cabo, pero hasta ahora no sabemos que valo
 
 El constructor es un método que se llama al crear la variable, lo empleamos para definir el estado inicial de los atributos, siendo el constructor un método que tiene por nombre, el nombre de la clase exactamente igual (Key sensitive).
 
+```
+	public:
+	(nombre_clase)(){
+  	...
+  }
+  (nombre_clase)((tipo) (arg1),...){
+  	...
+  }
+  
+  
+// Ejemplo
+class Point2D{
+	int x;
+  int y;
+  
+  public:
+  	Point2D(){
+    	x = 0;
+      y = 0;
+    }
+    Point2D(int initial_x, int initial_y){
+    	x=initial_x;
+      y=initial_y;
+    }
+};
+```
