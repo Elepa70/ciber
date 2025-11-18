@@ -2,7 +2,7 @@
 title: Clases
 description: 
 published: true
-date: 2025-11-18T17:33:54.507Z
+date: 2025-11-18T17:56:43.732Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-18T16:39:51.836Z
@@ -79,4 +79,13 @@ class Point2D{
     	y--;
     }
 };
+```
+
+Para poder usar las clases debemos hacer
+```C++
+//Declaración de la variable
+Point2D punto1;
+
+//Llamar un método
+punto1.moveUP();
 ```
