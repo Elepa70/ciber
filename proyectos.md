@@ -1,8 +1,8 @@
 ---
-title: Proyectos
+title: Proyectos e Investigaciones
 description: Información respecto a los proyectos que he realizado
 published: true
-date: 2025-10-11T18:57:14.915Z
+date: 2025-11-18T10:56:30.257Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:28:12.838Z
