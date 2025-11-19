@@ -2,7 +2,7 @@
 title: Derivabilidad
 description: 
 published: true
-date: 2025-11-19T14:10:07.044Z
+date: 2025-11-19T19:44:17.050Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-12T19:17:02.392Z
@@ -52,3 +52,21 @@ Con los mínimos relativos es al contrario, es decir $f(a)\leq f(x)$.
 $f$ alcanza en $a$ un extremo relativo $\Rightarrow f'(a)=0$, o cuando existe un punto a en la derivada que es critico.
 > La existencia de extremos relativos no implica extremos absolutos ni viceversa. Sin embargo un extremo absoluto en $a\in I$ si implica un extremo relativo en $a$.
 {.is-danger}
+
+## Teorema del Valor Medio (T.V.M.)
+Sea $f$ una función continua en un intervalo compacto, que es derivable según el teorema del valor medio, dice que existe un punto $c$ en el intervalor $a,b$ tal que cumple:$f'(c)=\frac{f(b)-f(a)}{b-a}$, esto representado geometricamente, decimos que calculamos un angúlo que en algún punto de la función "roza" la función.
+
+Escrito lo anterior matematicamente es: $f:[a,b]\rightarrow \mathbb{R}, \text{f continua en }[a,b],\text{f derivable en }]a,b[ \Rightarrow \exists c \in ]a,b[ \text{ t.q. }f'(c)=\frac{f(b)-f(a)}{b-a}$.
+
+## Teorema de Rolle
+El teorema de rolle nos dice que:
+Sea f una función en un intervalo compacto, derivable en el intervalo **y** siendo $f(a)=f(b)$, provocando que existe algún punto de la función es igual a cero.
+
+Matematicamente es: $f:[a,b]\rightarrow \mathbb{R}, \text{f continua en }[a,b],\text{f derivable en }]a,b[, f(a)=f(b) \Rightarrow \exists c\in ]a,b[ \text{ t.q }f'(c)=0$.
+
+## Caracterización de monotonía
+$f:I\rightarrow \mathbb{R}$ es una función derivable en el intervalo $I$.
+Tenemos lo siguiente:
+- $f$ es creciente $\Leftrightarrow f'(x)\geq 0$.
+- $f$ es decreciente $\Leftrightarrow f'(x)\leq 0$.
+- $f$ es constante $\Leftrightarrow f'(x)= 0$.
