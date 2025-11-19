@@ -2,7 +2,7 @@
 title: Derivabilidad
 description: 
 published: true
-date: 2025-11-13T20:25:58.222Z
+date: 2025-11-19T14:10:07.044Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-12T19:17:02.392Z
@@ -40,3 +40,15 @@ $(\frac{f}{g})'(a)=\frac{f'(a)+g(a)-f(a)+g'(a)}{(g(a))^{2}}$.
 ### Composición
 La derivada de la suma es la suma de las derivadas.
 $(fog)'(a)=g'(f(a))*f'(a)$.
+
+## Extremos absolutos de relativos
+Decimos que la función $f$ alcanza en $a$ un máximo relativo cuando:
+- $a$ es un punto interior, $a \in I \Leftrightarrow \exists S>0,]a-S,a+S[$.
+- $f(a)\geq f(x), \forall x \in ]a-S,a+S[$.
+
+Con los mínimos relativos es al contrario, es decir $f(a)\leq f(x)$.
+
+### Condición necesaria
+$f$ alcanza en $a$ un extremo relativo $\Rightarrow f'(a)=0$, o cuando existe un punto a en la derivada que es critico.
+> La existencia de extremos relativos no implica extremos absolutos ni viceversa. Sin embargo un extremo absoluto en $a\in I$ si implica un extremo relativo en $a$.
+{.is-danger}
