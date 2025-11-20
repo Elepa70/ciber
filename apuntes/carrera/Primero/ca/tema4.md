@@ -2,7 +2,7 @@
 title: Derivabilidad
 description: 
 published: true
-date: 2025-11-19T19:44:17.050Z
+date: 2025-11-20T19:31:38.626Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-12T19:17:02.392Z
@@ -70,3 +70,5 @@ Tenemos lo siguiente:
 - $f$ es creciente $\Leftrightarrow f'(x)\geq 0$.
 - $f$ es decreciente $\Leftrightarrow f'(x)\leq 0$.
 - $f$ es constante $\Leftrightarrow f'(x)= 0$.
+- $f'(x)>0, \forall x \in I \Leftrightarrow$ f es estrictamente creciente.
+- $f'(x)<0, \forall x \in I \Leftrightarrow$ f es estrictamente decreciente.
