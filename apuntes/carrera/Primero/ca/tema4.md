@@ -2,7 +2,7 @@
 title: Derivabilidad
 description: 
 published: true
-date: 2025-11-20T19:31:38.626Z
+date: 2025-11-20T19:35:36.125Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-12T19:17:02.392Z
@@ -72,3 +72,12 @@ Tenemos lo siguiente:
 - $f$ es constante $\Leftrightarrow f'(x)= 0$.
 - $f'(x)>0, \forall x \in I \Leftrightarrow$ f es estrictamente creciente.
 - $f'(x)<0, \forall x \in I \Leftrightarrow$ f es estrictamente decreciente.
+
+En el caso que tengamos que  $f'(x)\neq 0, \forall x \in I$, entonces f es estrictamente monotona.
+
+## Concavidad y Convexida
+Convexa es "cara feliz" y concava al reves.
+
+Si tenemos una función que es dos veces derivable y $f'(a)=0$:
+- Si $f''(a)>0 \Rightarrow$ f tiene un mínimo relativo en a.
+- Si $f''(a)<0 \Rightarrow$ f tiene un máximo relativo en a.
