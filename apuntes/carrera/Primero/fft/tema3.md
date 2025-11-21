@@ -2,7 +2,7 @@
 title: Corriente alterna
 description: 
 published: true
-date: 2025-11-21T15:10:06.777Z
+date: 2025-11-21T15:15:12.957Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-14T14:50:15.753Z
@@ -59,7 +59,13 @@ $i_{C}(t)=C\frac{dV(t)}{dt}$.
 
 
 Una vez tengamos estas ecuaciones para poder calcular $v(t)=V_{o}*sen(wt)$, debemos despejar donde ponga V, para poder calcular i_{R}.
+
 Con $v(t)=V_{o}*sen (wt)$, tenemos tres funciones distintas
 - $i_{R}(t)=\frac{V_{o}}{R}sen(wt)$.
-- $i_{R}(t)=\frac{V_{o}}{R}sen(wt)$.
-- $i_{R}(t)=\frac{V_{o}}{R}sen(wt)$.
+- $i_{L}(t)=\frac{V_{o}}{wL}sen(wt-90º)$.
+- $i_{c}(t)=V_{o}*cwsen(wt+90º)$.
+
+Aunque esto sea engorroso, nosotros usaremos la forma fasorial, que nos quedaría de las anteriores formulas en orden:
+- $I_{R}=\frac{V_{o}}{R}\text{ "Caja"}0º$
+- $I_{L}=\frac{V_{o}}{wL}\text{ "Caja"}-90º$
+- $I_{C}=V_{o}w\text{ "Caja"}90º$
