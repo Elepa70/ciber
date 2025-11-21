@@ -2,7 +2,7 @@
 title: Corriente alterna
 description: 
 published: true
-date: 2025-11-21T15:15:12.957Z
+date: 2025-11-21T15:15:46.409Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-14T14:50:15.753Z
@@ -66,6 +66,8 @@ Con $v(t)=V_{o}*sen (wt)$, tenemos tres funciones distintas
 - $i_{c}(t)=V_{o}*cwsen(wt+90º)$.
 
 Aunque esto sea engorroso, nosotros usaremos la forma fasorial, que nos quedaría de las anteriores formulas en orden:
-- $I_{R}=\frac{V_{o}}{R}\text{ "Caja"}0º$
-- $I_{L}=\frac{V_{o}}{wL}\text{ "Caja"}-90º$
-- $I_{C}=V_{o}w\text{ "Caja"}90º$
+- $I_{R}=\frac{V_{o}}{R}\text{ "Caja"}0º$.
+- $I_{L}=\frac{V_{o}}{wL}\text{ "Caja"}-90º$.
+- $I_{C}=V_{o}w\text{ "Caja"}90º$.
+
+Lo que llamamos caja, es en verdad el fasor, un conjunto de operaciones que podemos realizar en la calculadora.
