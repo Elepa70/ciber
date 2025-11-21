@@ -2,7 +2,7 @@
 title: Corriente alterna
 description: 
 published: true
-date: 2025-11-21T15:18:03.214Z
+date: 2025-11-21T15:34:14.931Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-14T14:50:15.753Z
@@ -75,3 +75,6 @@ Ya no dependemos del tiempo, ahora dependemos de las fases.
 
 Lo que llamamos caja, es en verdad el fasor, un conjunto de operaciones que podemos realizar en la calculadora.
 
+
+Cuando tenemos una resistencia y bobina, vamos a estar en una fase positiva, si fuera un condensador estariamos negativo.
+Sin embargo, en caso de tener los tres componentes, dependerá de los valores de los 3 elementos el ser positivo o negativo.
