@@ -2,7 +2,7 @@
 title: Corriente alterna
 description: 
 published: true
-date: 2025-11-14T15:55:55.599Z
+date: 2025-11-21T15:10:06.777Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-14T14:50:15.753Z
@@ -43,4 +43,23 @@ Normalmente nosotros vamos a investigar una serie alterna normal, donde nos sole
 
 - Valor medio de la señal $A_{m}$, vale $\frac{1}{T}$.
 - Valor eficaz: $A_{ef}=\frac{A_{max}}{\sqrt{2}}$.
-- $F_{f}=\frac{A_{ef}}{A_{m}}$
+- $F_{f}=\frac{A_{ef}}{A_{m}}$.
+
+## Analisis en el tiempo
+Dependiendo del tipo de circuito debemos usar una u otra formula
+### Resitencia
+$V(t)=i_{R}(t)R$.
+$i_{R}(t)=\frac{V(t)}{R}$.
+### Bobina
+$V(t)=L\frac{di_{L}(t)}{dt}$.
+$i_{L}(t)=\frac{1}{L}\text{ integral}V(t)dt$.
+### Condensador
+$V(t)= \frac{1}{C}\text{ integral}i_{C}(t)dt$.
+$i_{C}(t)=C\frac{dV(t)}{dt}$.
+
+
+Una vez tengamos estas ecuaciones para poder calcular $v(t)=V_{o}*sen(wt)$, debemos despejar donde ponga V, para poder calcular i_{R}.
+Con $v(t)=V_{o}*sen (wt)$, tenemos tres funciones distintas
+- $i_{R}(t)=\frac{V_{o}}{R}sen(wt)$.
+- $i_{R}(t)=\frac{V_{o}}{R}sen(wt)$.
+- $i_{R}(t)=\frac{V_{o}}{R}sen(wt)$.
