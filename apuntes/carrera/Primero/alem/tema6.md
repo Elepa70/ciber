@@ -2,7 +2,7 @@
 title: Espacios vectoriales
 description: 
 published: true
-date: 2025-11-19T19:58:40.899Z
+date: 2025-11-24T11:12:38.681Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-18T19:29:56.655Z
@@ -56,3 +56,16 @@ Una base es aquello es aquello que cumple independencia linealmente y a su vez q
 ## Dimensión
 Podemos definirlo como cuantos datos necesitamos para determinar un elemento.
 El nº de vectores debe tener el mismo nº de vectores, es decir cumplir consigo mismo. Ya que dependiendo del conjunto obtenemos una u otra dimensión.
+## Coordenadas de un vector
+Un vector se escribe de fomra unica, respecto a los vectores de una base. 
+
+Los vectores, los podemos escribir como base canonica de otro $\{(1,0,0),(0,0,1),(0,0,1)\}$, o respecto a otra base, lo cual nos daría algo como $v=x*(1,1,1),y(2,1,2),z(3,1,3)$, siendo la base que teniamos= $\{(1,1,1),(2,1,2),(3,1,3)\}$.
+
+## Cambio de base
+> Por resumir, es confuso todavía.
+{.is-warning}
+
+Basicamente son unas operaciones que realizmaos cuando deseamos cambiar la base de una matriz.
+
+## Subespacios vectoriales
+Decimos que es un subespacio vectorial, cuando tenemos un espacio cerrado de suma o productos, donde podemos obtener vectores ya definidos.
