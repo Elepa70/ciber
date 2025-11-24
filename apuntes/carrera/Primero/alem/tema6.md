@@ -2,7 +2,7 @@
 title: Espacios vectoriales
 description: 
 published: true
-date: 2025-11-24T11:12:38.681Z
+date: 2025-11-24T19:59:07.180Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-18T19:29:56.655Z
@@ -68,4 +68,38 @@ Los vectores, los podemos escribir como base canonica de otro $\{(1,0,0),(0,0,1)
 Basicamente son unas operaciones que realizmaos cuando deseamos cambiar la base de una matriz.
 
 ## Subespacios vectoriales
-Decimos que es un subespacio vectorial, cuando tenemos un espacio cerrado de suma o productos, donde podemos obtener vectores ya definidos.
+Podemos decir que un subespacio vectorial no es mas que un espacio vectorial dentro de otro, que nos permite sumar y hacer el producto, sin necesidad de salir a otro.
+### Ecuaciones del subespacio vectorial
+Las ecuaciones del subespacio vectorial la haremos siguiento el siguiente orden:
+- Dado un vector como generador de vectores, es decir $u=L\{(2,1,-1,3),(1,-1,2,1)\}$, lo primero que haremos será encontrar el rango o que son independientes para poder hacer base.
+- Tras calcular el rango, lo que haremos será llamarlo formalmente como base, es decir: $B_{u}=L\{(2,1,-1,3),(1,-1,2,1)\}$.
+- Podemos decir que: $(x,y,z,t)\in u$, si y solo si $rg\{(2,1,-1,3),(1,-1,2,1),(x,y,z,t)\}=2$, y para que esto se cumpla, se debe cumplir que $det\{(2,1,-1),(1,-1,2),(x,y,z)\}=0$ y $det\{(2,1,3),(1,-1,1),(x,y,t)\}=0$, según nuestro determinante anterior para calcular el rango, añadimos los terminos independientes para poder formar un sistema de ecuaciones.
+
+Una vez hayamos desarrollado el determinante, tenemos:
+$(x,y,z,t)\in u$, si y solo si $\{4x-5y-3z=0||4x+y-3t=0\}$, un sistema de ecuaciones.
+
+Para comprobar que es correcto, simplemente sustituimos los vectores que teniamos al principio en el sistema y debe salir 0.
+### Formar nuevos subespacios vectoriales
+Para poder formar nuevos subespacios vectoriales, debemos operar con la suma y la intersección, similar a los conjuntos con la unión y los intersección.
+
+### Intersección
+Para poder hacer una intersección entre dos subespacios vectoriales, lo que vamos a buscar es hacer los sistemas cartesiano de ambas y unirlas. Ejemplo:
+
+Dado $u_{1}=[(1,1,1),(0,1,2)]$ y $u_{2}=[(1,2,1),(1,0,2)]$ en $(\mathbb{Z}_{3})^{3}$, tenemos primero que pasa sistemas cartesianos, es decir con $u_{1}$, le hacemos forma escalonada reducida $u_{1}=[(1,0,2),(0,1,2)]$, que en un sistema es igual que poner $u_{1}=\{x=\alpha || y=\beta || z=2\alpha + 2 \beta\}$.
+Si resolvemos esto nos sal que $u_{1}=x+y+z$, y si hacemos lo mismo con $u_{2}$ obtenemos:$u_{2}=x+2y+z$.
+
+La intersección será entonces:
+$u_{1}\cap u_{2}=\{x+y+z=0 || x+2y+z=0\}$, si resolvemos (Forma escalonada) nos saldrá que es $u_{1}\cap u_{2}=\{x+z=0 || y=0\}$, es decir cualquier elemento formado por $x=2\alpha,y=0,z=\alpha$, va a estar en la intersección.
+
+### Suma
+Para poder hacer una suma entre dos subespacios vectoriales, lo que vamos a buscar es hacer los sistemas generadores de ambos y unirlos. Ejemplo:
+
+Dado $u_{1}=\{x+z+t=0 || x+y+t+z=0 || y+t=0\}$ y $u_{2}=L[(1,0,1,0,0),(1,1,1,0,1)]$ en $(\mathbb{Z}_{2})^{5}$.
+Debemos pasar $u_{1}$ a sistema de generadores, para ello hacemos la forma escalonada y resolvermos el sistema, como hicimos anteriormente. La unica diferencia es que le daremos valores.
+
+Una vez tengamos ambos como generadores de vectores, lo que haremos será unirnos para poder formar una nueva matriz. $B_{u_{1}+u_{2}}=\{(1,0,0,1,0),(0,1,0,0,0),(0,0,1,1,0),(0,0,0,0,1)\}$, pasamos esta matriz, la resolvemos y obtenemos que $B_{u_{1}+u_{2}}=x+y+t=0$.
+
+## Suma directa
+La suma directa surge cuando unicamente podemos hacer 1 unica forma de obtener cada valor. Se puede resumir en que $u_{1}\cap u_{2}=\{0\}$.
+
+Y si recordamos los conjuntos, tenemos: $dim(u_{1}+u_{2})=dim(u_{1})+dim(u_{2})-dim(u_{1}\cap u_{2})$, por lo tanto sabiendo la dimensiones de los conjuntos y la unión, podemos dar con el de la diferencia.
