@@ -2,7 +2,7 @@
 title: Apuntes rápidos para el segundo parcial de calculo
 description: 
 published: true
-date: 2025-11-26T19:36:19.487Z
+date: 2025-11-26T19:36:34.337Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-26T19:36:19.487Z
@@ -27,9 +27,9 @@ $\lim_{x\rightarrow 0}\frac{tg(x)}{x}=1$.
 $\lim_{x\rightarrow 0}\frac{arctg(x)}{x}=1$.
 ## Ejercicios tipo
 ### Cálculo de la Imagen de la función
-## Comprobar una desigualdad entre funciones 
+### Comprobar una desigualdad entre funciones 
 $[f(x)\leq g(x),\forall\in I]$.
-## determinar el nº de soluciones de una ecuación
+### determinar el nº de soluciones de una ecuación
 $f(x)=g(x)\Leftrightarrow f(x)-g(x)=0$.
-## Calculo de limites
-## Optimización
+### Calculo de limites
+### Optimización
