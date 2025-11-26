@@ -2,7 +2,7 @@
 title: Cálculo
 description: 
 published: true
-date: 2025-11-12T19:17:07.307Z
+date: 2025-11-26T19:36:51.796Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:29:46.290Z
@@ -22,6 +22,7 @@ En está página web podrá encontrar los distintos temarios que corresponden a 
 ## Apuntes examén
 - [Primer parcial teorico](teoria1)
 - [Primer parcial práctico](practico1)
+- [Segundo parcial teorico](teoria2)
 ## Docente
 El temario fue dado por María Pilar Muñoz Rivas
 
