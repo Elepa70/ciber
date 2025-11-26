@@ -2,7 +2,7 @@
 title: Apuntes rápidos para el segundo parcial de calculo
 description: 
 published: true
-date: 2025-11-26T19:36:34.337Z
+date: 2025-11-26T19:37:35.063Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-26T19:36:19.487Z
@@ -32,4 +32,5 @@ $[f(x)\leq g(x),\forall\in I]$.
 ### determinar el nº de soluciones de una ecuación
 $f(x)=g(x)\Leftrightarrow f(x)-g(x)=0$.
 ### Calculo de limites
+Suele haber mucha "morralla", es por elloq ue se recomienda limpiar
 ### Optimización
