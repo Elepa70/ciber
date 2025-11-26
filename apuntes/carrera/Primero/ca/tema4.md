@@ -2,7 +2,7 @@
 title: Derivabilidad
 description: 
 published: true
-date: 2025-11-26T19:28:49.259Z
+date: 2025-11-26T19:29:01.402Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-12T19:17:02.392Z
