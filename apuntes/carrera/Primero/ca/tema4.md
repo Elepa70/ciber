@@ -2,7 +2,7 @@
 title: Derivabilidad
 description: 
 published: true
-date: 2025-11-20T19:35:36.125Z
+date: 2025-11-26T19:28:49.259Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-12T19:17:02.392Z
@@ -81,3 +81,17 @@ Convexa es "cara feliz" y concava al reves.
 Si tenemos una función que es dos veces derivable y $f'(a)=0$:
 - Si $f''(a)>0 \Rightarrow$ f tiene un mínimo relativo en a.
 - Si $f''(a)<0 \Rightarrow$ f tiene un máximo relativo en a.
+## Regla de L' Hôpital
+La regla de L'Hôpital se divide según la indeterminación que tengamos.
+### 1º Regla de L' Hôpital
+La usaremos para resolver la indeterminación del tipo ["$\frac{0}{0}$"], para se debe cumplir:
+Dado un intervalo $I$, y sean $f,g: I/\{a\}\rightarrow \mathbb{R}$.
+- $f\text{ y }g$ son derivables.
+- $\lim_{x\rightarrow a}f(x)=\lim_{x\rightarrow a}g(x)=0$.
+- $g'(x)\neq 0$, cerca de a.
+### 2º Regla de L' Hôpital
+La usaremos para resolver la indeterminación del tipo ["$\frac{\infty}{\infty}$"] o ["$\frac{?}{\infty}$"], donde $?$ es un valor no determinado o dificil de hacerlo, para se debe cumplir:
+Dado un intervalo $I$, y sean $f,g: I/\{a\}\rightarrow \mathbb{R}$.
+- $f\text{ y }g$ son derivables.
+- $\lim_{x\rightarrow a}g(x)=\infty$.
+- $g'(x)\neq 0$, cerca de a.
