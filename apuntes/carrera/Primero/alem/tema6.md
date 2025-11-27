@@ -2,7 +2,7 @@
 title: Espacios vectoriales
 description: 
 published: true
-date: 2025-11-24T19:59:07.180Z
+date: 2025-11-27T20:08:30.271Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-18T19:29:56.655Z
@@ -99,7 +99,28 @@ Debemos pasar $u_{1}$ a sistema de generadores, para ello hacemos la forma escal
 
 Una vez tengamos ambos como generadores de vectores, lo que haremos será unirnos para poder formar una nueva matriz. $B_{u_{1}+u_{2}}=\{(1,0,0,1,0),(0,1,0,0,0),(0,0,1,1,0),(0,0,0,0,1)\}$, pasamos esta matriz, la resolvemos y obtenemos que $B_{u_{1}+u_{2}}=x+y+t=0$.
 
-## Suma directa
+## Suma directa $\oplus$
 La suma directa surge cuando unicamente podemos hacer 1 unica forma de obtener cada valor. Se puede resumir en que $u_{1}\cap u_{2}=\{0\}$.
 
 Y si recordamos los conjuntos, tenemos: $dim(u_{1}+u_{2})=dim(u_{1})+dim(u_{2})-dim(u_{1}\cap u_{2})$, por lo tanto sabiendo la dimensiones de los conjuntos y la unión, podemos dar con el de la diferencia.
+## Subespacio complementario
+Lo podemos definir como aquello que le falta a un espacio. Es decir para formar un subespacio necesitamos $V=u\oplus w$. Donde $w$ es el espacio complementario de $u$.
+
+Para calcularlo, normalmente lo haremos usando generadores de vectores, y le calcularemos aquellos vectores que le faltán para hallar la base del espacio dado.
+
+## Aplicaciones lineales
+Dado que $K$ es un cuerpo, y $V$,$V'$dos espacios vectoriales, tenemos que:
+$f:V \rightarrow V'$ es lineal siempre y cuando cumpla:
+- f preserva sumas, para cualesquiera $u,v \in V$ se tiene que $f(u+v)=f(u)+f(v)$.
+- f presenta producto por escalares. Para cualesquiera $u\in V$, y cualesquiera $\alpha \in K, f(\alpha*u)=\alpha*f(u)$.
+
+Usaremos de momento, que para ser lineales deben ser de grado 1.
+Al haber suma y prodcuto de combinaciones lineales, tenemos una aplicacion lineal.
+
+### Operaciones
+Podemos tanto sumar como hacer el producto de aplicaciones lineales y es exactamente igual que con los vectores. 
+
+Sin embargo tenemos la composiciones lineales, que consiste en:
+$g o f(u)=g(f(u))$, donde aplicaremos lo que hace $g$ a cada vector o parte del $f(u)$.
+### Determinación
+Lo podemos definir como auqellos datos concretos que nos permite conocer el resto de vectores.
