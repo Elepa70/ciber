@@ -2,7 +2,7 @@
 title: Espacios vectoriales
 description: 
 published: true
-date: 2025-11-27T20:08:30.271Z
+date: 2025-11-29T14:25:34.485Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-18T19:29:56.655Z
@@ -102,7 +102,7 @@ Una vez tengamos ambos como generadores de vectores, lo que haremos será unirno
 ## Suma directa $\oplus$
 La suma directa surge cuando unicamente podemos hacer 1 unica forma de obtener cada valor. Se puede resumir en que $u_{1}\cap u_{2}=\{0\}$.
 
-Y si recordamos los conjuntos, tenemos: $dim(u_{1}+u_{2})=dim(u_{1})+dim(u_{2})-dim(u_{1}\cap u_{2})$, por lo tanto sabiendo la dimensiones de los conjuntos y la unión, podemos dar con el de la diferencia.
+Y si recordamos los conjuntos, tenemos: $dim(u_{1}\cup u_{2})=dim(u_{1})+dim(u_{2})-dim(u_{1}\cap u_{2})$, por lo tanto sabiendo la dimensiones de los conjuntos y la unión, podemos dar con el de la diferencia.
 ## Subespacio complementario
 Lo podemos definir como aquello que le falta a un espacio. Es decir para formar un subespacio necesitamos $V=u\oplus w$. Donde $w$ es el espacio complementario de $u$.
 
