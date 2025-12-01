@@ -2,7 +2,7 @@
 title: Espacios vectoriales
 description: 
 published: true
-date: 2025-11-29T14:25:34.485Z
+date: 2025-12-01T20:10:53.313Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-18T19:29:56.655Z
@@ -108,19 +108,3 @@ Lo podemos definir como aquello que le falta a un espacio. Es decir para formar 
 
 Para calcularlo, normalmente lo haremos usando generadores de vectores, y le calcularemos aquellos vectores que le faltán para hallar la base del espacio dado.
 
-## Aplicaciones lineales
-Dado que $K$ es un cuerpo, y $V$,$V'$dos espacios vectoriales, tenemos que:
-$f:V \rightarrow V'$ es lineal siempre y cuando cumpla:
-- f preserva sumas, para cualesquiera $u,v \in V$ se tiene que $f(u+v)=f(u)+f(v)$.
-- f presenta producto por escalares. Para cualesquiera $u\in V$, y cualesquiera $\alpha \in K, f(\alpha*u)=\alpha*f(u)$.
-
-Usaremos de momento, que para ser lineales deben ser de grado 1.
-Al haber suma y prodcuto de combinaciones lineales, tenemos una aplicacion lineal.
-
-### Operaciones
-Podemos tanto sumar como hacer el producto de aplicaciones lineales y es exactamente igual que con los vectores. 
-
-Sin embargo tenemos la composiciones lineales, que consiste en:
-$g o f(u)=g(f(u))$, donde aplicaremos lo que hace $g$ a cada vector o parte del $f(u)$.
-### Determinación
-Lo podemos definir como auqellos datos concretos que nos permite conocer el resto de vectores.
