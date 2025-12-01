@@ -2,7 +2,7 @@
 title: Derivabilidad
 description: 
 published: true
-date: 2025-12-01T19:31:35.676Z
+date: 2025-12-01T19:32:57.919Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-12T19:17:02.392Z
@@ -114,3 +114,5 @@ La diferencia entre la función y la expresión de Taylor nos dará el error.
 Describimos el teorema de taylor como:
 $f:I\rightarrow \mathbb{R},a\in I,n\in \mathbb{N}, \exists f^{n+1}(x)$.
 Sea $x\in I$, entonces $\exists \text{c  t.q  }a\dots c\dots x$, (los puntos que hay entre a, c y x) nos dice que existe un valor c que está entre a y x, pero no sabemos en que orden.
+
+El teorema de Taylor, ($Rn$), tiene la siguiente forma: $Rn=\frac{f^{n+1}(c)}{(n+1)!}(x-a)^{n+1}$, es básicamente buscar uno más que el n.
