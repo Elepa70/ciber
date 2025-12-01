@@ -2,7 +2,7 @@
 title: Derivabilidad
 description: 
 published: true
-date: 2025-11-26T19:29:01.402Z
+date: 2025-12-01T19:31:35.676Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-12T19:17:02.392Z
@@ -95,3 +95,22 @@ Dado un intervalo $I$, y sean $f,g: I/\{a\}\rightarrow \mathbb{R}$.
 - $f\text{ y }g$ son derivables.
 - $\lim_{x\rightarrow a}g(x)=\infty$.
 - $g'(x)\neq 0$, cerca de a.
+## Polinomio de Taylor
+El polinomio de taylor nos sirve para poder aproximar funciones, matematicamente lo escribimos de la siguiente manera:
+$f:I\rightarrow \mathbb{R},a\in I,n\in \mathbb{N} (n\geq 2), \exists f^{n}(a)$.
+Para el polinomio de taylor necesitamos 3 cosas:
+- La función.
+- Un valor.
+- Hasta cuanto vamos a derivar, o también llamado orden de derivación.
+Esto es devido a que el polinomio de taylor toma la siguiente forma:
+$Tn(x)=f(a)+f'(a)(x-1)+\frac{f''(a)}{2!}(x-a)^{2}+\frac{f'''(a)}{3!}(x-a)^{3}+\frac{f^{n}(a)}{n!}(x-a)^{n}$.
+
+Por otro lado tenemos el teorema de taylor
+### Teorema de Taylor
+El teorema de Taylor, nos permite poder controlar el error qu ese comete cuando hacemos el polinomio de Taylor, para ello deberemos hacer:
+$f(x)-Tn(x)$.
+La diferencia entre la función y la expresión de Taylor nos dará el error.
+
+Describimos el teorema de taylor como:
+$f:I\rightarrow \mathbb{R},a\in I,n\in \mathbb{N}, \exists f^{n+1}(x)$.
+Sea $x\in I$, entonces $\exists \text{c  t.q  }a\dots c\dots x$, (los puntos que hay entre a, c y x) nos dice que existe un valor c que está entre a y x, pero no sabemos en que orden.
