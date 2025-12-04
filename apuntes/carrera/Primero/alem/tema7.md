@@ -2,7 +2,7 @@
 title: Aplicaciones lineales
 description: 
 published: true
-date: 2025-12-04T10:52:36.761Z
+date: 2025-12-04T10:59:21.224Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-03T10:48:28.083Z
@@ -62,3 +62,28 @@ Tras hecho lo anterior, vamos a pasarla a cartesianas.
 $x=a ||y=b || z = 2a+b || t=d$. Lo que hemos hecho ha sido declarar las ecuaciones en columnas, tras esto lo pasaremos a cartesianas despejando, donde nos quedaría. $Im(f)=2x+y+4z=0$, hemos sustituido valores y despejado en la 3º ecuación.
 
 Una vez tengamos la función cartesiana, sabremos que su dimensión es 3, ya que solo tenemos 1 función, por lo que $dim(N(f))=dim((\mathbb{Z}_{5})^{3})-dim(Im(f))=3-3=0$.
+
+## Inyectividad, Subyectividad y Biyectividad
+Si recordamos el primer tema, podemos empezar con que:
+- f es inyectiva si no hay dos elementos distintos de x que tengan la misma imagen.
+- f es subyectiva si para cada imagen de Y existe algún elemento de X.
+- f es biyectiva si es inyectiva y subyectiva.
+
+Sin embargo con aplicaciones lineales tenemos:
+### Inyectiva
+Tenemos que para que sea inyectiva se debe cumplir una de las siguientes:
+- $N(f)=0$.
+- $\{f(u_{1},f(u_{2},f(u_{3},\dots,f(u_{n}\}$ son independientes.
+- $rg(A)=n$ Siendo A la matriz y n el número de filas.
+
+### Subyectiva
+Para ello:
+- $Im(f)=v'$.
+- $\{f(u_{1},f(u_{2},f(u_{3},\dots,f(u_{n}\}$ es un sistema de generadores.
+- $rg(A)=m$ Siendo A la matriz y n el número de columnas.
+
+### Biyectiva
+Jutanmos la anteriores:ç
+- $N(f)=0$ y $Im(f)=v'$.
+- $\{f(u_{1},f(u_{2},f(u_{3},\dots,f(u_{n}\}$ es base.
+- A es regular.
