@@ -2,7 +2,7 @@
 title: Álgebra Lineal y Estructuras Matemáticas
 description: 
 published: true
-date: 2025-12-04T10:29:25.024Z
+date: 2025-12-05T10:51:48.190Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:29:43.742Z
@@ -18,7 +18,7 @@ En está página web podrá encontrar los distintos temarios que corresponden a 
 - [Matrices, sistemas de ecuaciones y determinantes](tema5)
 - [Espacios vectoriales](tema6)
 - [Aplicaciones lineales](tema7)
-- [](tema8)
+- [Diagonalización](tema8)
 ## Docente
 El temario fue dado por Jesús García Miranda
 
