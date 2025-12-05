@@ -2,7 +2,7 @@
 title: Integración
 description: 
 published: true
-date: 2025-12-03T19:49:31.175Z
+date: 2025-12-05T10:43:02.552Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-03T19:49:31.175Z
@@ -46,3 +46,5 @@ $f:]a,b[\rightarrow \mathbb{R}$ intervalo y $G$ es una primitiva de $f$, y $\exi
 Entonces: $\int_{a}^{b}f(x)dx=\lim_{x\rightarrow b} G(x) - \lim_{x\rightarrow a} G(x)$.
 
 También se le puede decir Integrales impropias.
+
+## Teorema fundamental del Cálculo ($T.F.C.$)
