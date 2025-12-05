@@ -2,7 +2,7 @@
 title: Integración
 description: 
 published: true
-date: 2025-12-05T10:43:02.552Z
+date: 2025-12-05T10:50:45.459Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-03T19:49:31.175Z
@@ -48,3 +48,16 @@ Entonces: $\int_{a}^{b}f(x)dx=\lim_{x\rightarrow b} G(x) - \lim_{x\rightarrow a}
 También se le puede decir Integrales impropias.
 
 ## Teorema fundamental del Cálculo ($T.F.C.$)
+Para el teorema fundamental del cálculo.
+Sea $f:I \rightarrow \mathbb{R}$ integrable, $a \in I$, se define:
+$F(x) = \int_{a}^{x}f(t)dt,\forall x \in I$. (Función integral indefinida de origen a).
+
+Partimos de lo anterior, ya que va a ser la base para poder usar el $T.F.C.$. Una vez tengamos claro esto, diremos:
+1. $F$ es continua en $I$.
+2. f es continuo en $x \Rightarrow F'(x)=f(x)$.
+
+Y la fórmula es:
+$(\int_{a}^{x}f(t)dt)'=f(x)$.
+
+Y la generla es:
+$F(x)=\int_{h(x)}^{g(x)}f(t)dt=\int_{g(x)}^{a}f(t)dt - \int_{a}^{h(x)}f(t)dt$, donde $a$ es una constante.
