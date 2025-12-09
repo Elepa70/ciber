@@ -2,7 +2,7 @@
 title: Fundamentos de Programación
 description: 
 published: true
-date: 2025-11-18T19:23:43.473Z
+date: 2025-12-09T16:37:28.320Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:29:51.566Z
@@ -18,6 +18,6 @@ En está página web podrá encontrar los distintos temarios que corresponden a 
 - [Funciones](tema5)
 - [Ordenación y búsqueda en vectores](tema6)
 - [Clases](tema7)
-
+- [Recursividad](tema8)
 ## Docente
 El temario fue dado por Manuel Jesús (Manolo) Cobo Martín en teoría y Javier Martínez Baena en prácticas
