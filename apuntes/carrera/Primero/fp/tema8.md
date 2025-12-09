@@ -2,7 +2,7 @@
 title: Recursividad
 description: 
 published: true
-date: 2025-12-09T16:51:13.828Z
+date: 2025-12-09T17:23:45.217Z
 tags: 
 editor: markdown
 dateCreated: 2025-12-09T16:51:13.828Z
@@ -28,4 +28,6 @@ Tenemos dos tipos de recursividad:
 Para resolver un problema, el primer paso será descomponer el problema de forma que su solución quede definida en función de ella misma, pero de un tamaño menor.
 
 - Caso base: Casos del problema que se resuelve con un segmento de código sin recursividad.
-- Casos generales: Se hace llama a si mismo con un subproblema m
+- Casos generales: Se hace llama a si mismo con un subproblema.
+
+
