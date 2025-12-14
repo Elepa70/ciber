@@ -2,7 +2,7 @@
 title: Apuntes rápidos para el segundo parcial de calculo
 description: 
 published: true
-date: 2025-12-14T17:46:33.193Z
+date: 2025-12-14T17:47:01.202Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-26T19:36:19.487Z
@@ -46,7 +46,7 @@ $f(x)=g(x)\Leftrightarrow f(x)-g(x)=0$.
 ### Calculo de limites
 Suele haber mucha "morralla", es por elloq ue se recomienda limpiar
 ### Optimización
-
+Debemos apoyarnos es figuras sencillas para comprobar que todo va bien y saber donde sustituir los elementos.
 # Teoremas obligatorios
 ## Teoremas sobre funciones
 ### Teroema de los ceros de Bolzano / Teorema de Bolzano
