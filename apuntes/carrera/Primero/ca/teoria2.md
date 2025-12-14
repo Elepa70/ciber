@@ -2,13 +2,13 @@
 title: Apuntes rápidos para el segundo parcial de calculo
 description: 
 published: true
-date: 2025-12-14T17:14:41.759Z
+date: 2025-12-14T17:46:33.193Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-26T19:36:19.487Z
 ---
 
-# Apuntes rápidos para el primer parcial de calculo
+# Apuntes rápidos para el segundo parcial de calculo
 ## Limites famosos
 ### Cuando tiende a infinito
 $\lim_{x\rightarrow \infty}x^{\frac{1}{x}}=1$.
@@ -25,15 +25,28 @@ $\lim_{x\rightarrow 0}\frac{sen(x)}{x}=1$.
 $\lim_{x\rightarrow 0}\frac{tg(x)}{x}=1$.
 
 $\lim_{x\rightarrow 0}\frac{arctg(x)}{x}=1$.
+
 ## Ejercicios tipo
-### Cálculo de la Imagen de la función
+### Cálculo de la Imagen de la función.
+Aplicar conocimiento de las funciones que conocemos para saber como se comportan.
+
+Lo primero que haremos será determinar ante que tipo de función estamos, ya que puede ser suma, resta, cociente o composición, que funciones la componen, como es su comportamiento en el infinito, y indicar si existe o no simetria que nos pueda ayudar.
+
+Recordamos que las simetrias son:
+- Par $f(x)=f(-x)$, respecto al eje Y.
+- Impar $f(x)=-f(x)$, respecto a ambos ejes.
+
+
 ### Comprobar una desigualdad entre funciones 
 $[f(x)\leq g(x),\forall\in I]$.
-### determinar el nº de soluciones de una ecuación
+
+### Determinar el nº de soluciones de una ecuación
+
 $f(x)=g(x)\Leftrightarrow f(x)-g(x)=0$.
 ### Calculo de limites
 Suele haber mucha "morralla", es por elloq ue se recomienda limpiar
 ### Optimización
+
 # Teoremas obligatorios
 ## Teoremas sobre funciones
 ### Teroema de los ceros de Bolzano / Teorema de Bolzano
