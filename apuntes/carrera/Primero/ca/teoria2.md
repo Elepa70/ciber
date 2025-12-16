@@ -2,7 +2,7 @@
 title: Apuntes rápidos para el segundo parcial de calculo
 description: 
 published: true
-date: 2025-12-16T15:32:25.951Z
+date: 2025-12-16T19:03:22.557Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-26T19:36:19.487Z
@@ -28,7 +28,7 @@ $\lim_{x\rightarrow 0}\frac{arctg(x)}{x}=1$.
 
 ## Ejercicios tipo
 ### Cálculo de la Imagen de la función.
-Aplicar conocimiento de las funciones que conocemos para saber como se comportan.
+Usualemte lo que vamos a hacer en este tipo de ejercicios es hacer una primera derivada pero sin embargo debemos tener en cuenta lo siguiente:
 
 Lo primero que haremos será determinar ante que tipo de función estamos, ya que puede ser suma, resta, cociente o composición, que funciones la componen, como es su comportamiento en el infinito, y indicar si existe o no simetria que nos pueda ayudar.
 
@@ -37,6 +37,12 @@ Recordamos que las simetrias son:
 - Impar $f(x)=-f(x)$, respecto a ambos ejes.
 
 
+Es recomendable seguir estos pasos.
+1. Explicar la función que tenemos y como es su comportamiento.
+2. Derivarla.
+3. Buscar sus puntos criticos.
+4. Mirar su monotonía si hiciera falta.
+5. Calcular sus valores en puntos criticos.
 ### Comprobar una desigualdad entre funciones 
 $[f(x)\leq g(x),\forall\in I]$.
 
