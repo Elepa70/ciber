@@ -2,7 +2,7 @@
 title: Apuntes rápidos para el segundo parcial de calculo
 description: 
 published: true
-date: 2025-12-16T19:03:22.557Z
+date: 2025-12-16T19:15:25.780Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-26T19:36:19.487Z
@@ -46,6 +46,7 @@ Es recomendable seguir estos pasos.
 ### Comprobar una desigualdad entre funciones 
 $[f(x)\leq g(x),\forall\in I]$.
 
+Haremos lo mismo que es explicar la función que tenemos, y ya después podemos empezar a operar, ojo en este ejercicio lo suyo es pasarlo todo a un lado de la desigualdad, y comprobar puntos critcos y el valor que toma.
 ### Determinar el nº de soluciones de una ecuación
 
 $f(x)=g(x)\Leftrightarrow f(x)-g(x)=0$.
