@@ -2,7 +2,7 @@
 title: Apuntes rápidos para el segundo parcial de calculo
 description: 
 published: true
-date: 2025-12-14T17:47:01.202Z
+date: 2025-12-16T15:32:25.951Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-26T19:36:19.487Z
@@ -13,7 +13,7 @@ dateCreated: 2025-11-26T19:36:19.487Z
 ### Cuando tiende a infinito
 $\lim_{x\rightarrow \infty}x^{\frac{1}{x}}=1$.
 
-$\lim_{x\rightarrow 0?}x^{x}=1$.
+$\lim_{x\rightarrow 0}x^{x}=1$.
 
 $\lim_{x\rightarrow \infty}(1+x)^{\frac{1}{x}}=e$.
 
