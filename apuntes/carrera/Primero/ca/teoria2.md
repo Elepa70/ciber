@@ -2,7 +2,7 @@
 title: Apuntes rápidos para el segundo parcial de calculo
 description: 
 published: true
-date: 2025-12-16T19:15:25.780Z
+date: 2025-12-16T19:16:29.432Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-26T19:36:19.487Z
@@ -48,10 +48,10 @@ $[f(x)\leq g(x),\forall\in I]$.
 
 Haremos lo mismo que es explicar la función que tenemos, y ya después podemos empezar a operar, ojo en este ejercicio lo suyo es pasarlo todo a un lado de la desigualdad, y comprobar puntos critcos y el valor que toma.
 ### Determinar el nº de soluciones de una ecuación
-
+Es literalmente derivar y calcular puntos criticos, podemos usar el teoremad e bolzano desde el principio para indicar que existen.
 $f(x)=g(x)\Leftrightarrow f(x)-g(x)=0$.
 ### Calculo de limites
-Suele haber mucha "morralla", es por elloq ue se recomienda limpiar
+Seguramente encontremos varios factores no importantes, por lo que es recomendable ir quitando "moralla" que no provoque 0, para poder hacer bien el Teorema de L'Hôpital.
 ### Optimización
 Debemos apoyarnos es figuras sencillas para comprobar que todo va bien y saber donde sustituir los elementos.
 # Teoremas obligatorios
