@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2026-01-11T17:55:28.596Z
+date: 2026-01-11T18:12:11.344Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:14.565Z
@@ -181,10 +181,10 @@ Sea $f\colon \mathbb{N} \rightarrow \mathbb{N}$ y $g \colon \mathbb{N} \rightarr
 Si cogemos el número natural $5$, la aplicación $f$ le asocia el número $25$, y tras esto la aplicación $g$ le asociará el número $28$.
 
 Podemos expresarlo también de la siguiente manera:
-$(g \circ f)(5)=g(f(5))=g(25)=28$
+$(g \circ f)(5)=g(f(5))=g(25)=28$.
 
 La expresión de la aplicación la podemos dar como:
-$(g \circ f)(n)=g(f(n))=g(n^{2})=n^{2}+3$
+$(g \circ f)(n)=g(f(n))=g(n^{2})=n^{2}+3$.
 
 > Hay que tener en cuenta que $(f \circ g)$ y $(g \circ f)$, no son lo mismo.
 {.is-warning}
