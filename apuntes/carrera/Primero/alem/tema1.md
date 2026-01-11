@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2026-01-11T17:48:53.514Z
+date: 2026-01-11T17:55:11.715Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:14.565Z
@@ -162,7 +162,7 @@ Imaginaos una aplicación que cuando $f(3)= \frac{0}{0}$, este valor no existe, 
 
 
 Otro ejemplo donde podemos darnos cuenta que falla la aplicación es el siguiente:
-$f\colon \mathbb{Q} \rightarrow \mathbb{Q} \text{ como } f(\frac{a}{b})=\frac{a+b}{2}$
+$f\colon \mathbb{Q} \rightarrow \mathbb{Q} \text{ como } f(\frac{a}{b})=\frac{a+b}{2}$.
 
 En este caso podemos asignar valores como $\frac{1}{2} = 0,5$, sin embargo $0,5$ puede valer también $\frac{2}{4}=\frac{3}{6}=\frac{4}{8}$, y para cada valor de estos, nos cambia el resultado que obtenemos en $f$.
 Ojo, como nuestro codominio es $\mathbb{Q}$, que debe estar dado en fracción con números enteros, en el caso de $f(\frac{2}{4})=3$, por lo tanto no se cumple esta aplicación.
