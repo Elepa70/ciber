@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2026-01-11T17:48:44.231Z
+date: 2026-01-11T17:48:53.514Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:14.565Z
@@ -153,7 +153,7 @@ Y aunque aparienta que no tiene sentido, en realidad si porque hay una expresió
 
 Cuando queremos definir una aplicación. Debemos asegurarnos que lo estamos definiendo realmente es una aplicación.
 
-Un ejemplo $f:\mathbb{N} \rightarrow \mathbb{N}$, la aplicación dada es $f(x)=x^{2}-60x+800$
+Un ejemplo $f:\mathbb{N} \rightarrow \mathbb{N}$, la aplicación dada es $f(x)=x^{2}-60x+800$.
 En este caso, estamos indicando que el codominio es $\mathbb{N}$, es decir los números naturales, sin embargo encontramos varios números como $f(25)=-75$, donde **NO** se cumple la aplicación.
 
 
