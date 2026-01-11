@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2026-01-11T18:12:11.344Z
+date: 2026-01-11T18:50:45.975Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:14.565Z
@@ -332,9 +332,9 @@ O lo que es lo mismo:
 - $[1]_{3} = \{x \in \mathbb{Z} : 1  \equiv x\text{ } mód \text{ } 3\} = \{x \in \mathbb{Z}:x-1 \text{ es múltiplo de }3.\}$.
 - $[2]_{3} = \{x \in \mathbb{Z} : 2  \equiv x\text{ } mód \text{ } 3\} = \{x \in \mathbb{Z}:x-2 \text{ es múltiplo de }3.\}$.
 
-Y para saber donde pertenecerá un valor a uno de estas relaciones, solo deberemos dividir el valor con el número a relacionar, por ejemplo, dividimos $145$ entre $3$ y nos dara cociente $48$ y resto $1$, por lo que pertenece a $[1]_{3}$
+Y para saber donde pertenecerá un valor a uno de estas relaciones, solo deberemos dividir el valor con el número a relacionar, por ejemplo, dividimos $145$ entre $3$ y nos dara cociente $48$ y resto $1$, por lo que pertenece a $[1]_{3}$.
 
-Con esto podemos ver que siempre que tengamos un número, podemos encontrar la relación de congruencia hasta ese mismo valor. Es decir dado n, vamos a tener $[0]_{n},[1]_{n},[2]_{n},[3]_{n},[4]_{n}\dots[n-1]_{n}$
+Con esto podemos ver que siempre que tengamos un número, podemos encontrar la relación de congruencia hasta ese mismo valor. Es decir dado n, vamos a tener $[0]_{n},[1]_{n},[2]_{n},[3]_{n},[4]_{n}\dots[n-1]_{n}$.
 
 ### Relación de orden
 Una relación de orden, la describimos como una relación binaria dodne se comple que es **reflexiva,antisimétrica y transitiva.**
@@ -386,12 +386,12 @@ En el lexicográfico debemos prestar atención al primer elemento de la pareja, 
 Sin embargo con el producto, debemos tener en cuenta ambos elementos de la pareja, si en uno de los elementos tiene menor que el anterior, no podemos asociarlos.
 
 Por eso lo escribimos como:
-$(X,\leq_{1})$,  $(Y,\leq_{1})$
-$(x,y), (x',y') \in X \times Y$
+$(X,\leq_{1})$,  $(Y,\leq_{1})$.
+$(x,y), (x',y') \in X \times Y$.
 
-$(x,y)\leq_{lex} (x',y') \text{ si }x<_{1} x' \text{ o } (x=x' \text { e } y\leq_{2}y')$
+$(x,y)\leq_{lex} (x',y') \text{ si }x<_{1} x' \text{ o } (x=x' \text { e } y\leq_{2}y')$.
 
-$(x,y)\leq_{prod} (x',y') \text{ si }x<_{1} x' \text{ e }  y\leq_{2}y')$
+$(x,y)\leq_{prod} (x',y') \text{ si }x<_{1} x' \text{ e }  y\leq_{2}y')$.
 
 Por ejemplo.
 
