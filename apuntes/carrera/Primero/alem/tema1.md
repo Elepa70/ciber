@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2025-09-29T19:36:23.097Z
+date: 2026-01-11T17:15:24.589Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:14.565Z
@@ -43,22 +43,22 @@ Otro ejemplo podría ser, dado el conjunto $(1,3]$, como: $(1,3]= \{m\in\mathbb{
 
 Dos conjuntos son **iguales** si y solo si, todos los elementos son iguales.
 
-> En una igualdad, no se le da importancia al orden de los elementos en los conjunto. Ejemplo $X = \{3,2,1\}$, sería igual a $Y = \{1,2,3\}$
+> En una igualdad, no se le da importancia al orden de los elementos en los conjunto. Ejemplo $X = \{3,2,1\}$, sería igual a $Y = \{1,2,3\}$.
 {.is-info}
 
 
 Cuando todo elemento de un conjunto está dentro de otro, decimos que es un subconjunto. 
-Ejemplo con la cadena de inclusiones: $\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}\subset\mathbb{C}$
+Ejemplo con la cadena de inclusiones: $\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}\subset\mathbb{C}$.
 
 
-Tal y como hemos definido la igualdad y la inclusión, se tiene que $X=Y\Leftrightarrow X \subseteq Y \text{ e } Y \subseteq X$
+Tal y como hemos definido la igualdad y la inclusión, se tiene que $X=Y\Leftrightarrow X \subseteq Y \text{ e } Y \subseteq X$.
 
 
 ### Conjunto potencia
 Dado un conjunto $X$, definimos el conjunto potencia como el conjunto de **todos** los subconjuntos posibles del conjunto $X$, también llamado las partes de $X$ y se denota por como $\mathcal{P}(X)$.
 
 Como ejemplos calcularemos $\mathcal{P}(X)$, donde $X=\{1,2,3\}$ entonces:
-$\mathcal{P}(X) = \{\emptyset,\{1\},\{2\},\{3\},\{1,2\},\{1,3\},\{2,3\},\{1,2,3\}\}$
+$\mathcal{P}(X) = \{\emptyset,\{1\},\{2\},\{3\},\{1,2\},\{1,3\},\{2,3\},\{1,2,3\}\}$.
 
 Como podemos observar, hemos añadido el conjunto vacío, ya que el conjunto vacío siempre va a ser subconjunto de cualquiera.
 ### Operaciones de conjuntos
