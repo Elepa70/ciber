@@ -2,7 +2,7 @@
 title: Conjuntos, Aplicaciones y Relaciones
 description: 
 published: true
-date: 2026-01-11T18:50:45.975Z
+date: 2026-01-11T18:56:59.525Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:32:14.565Z
@@ -371,7 +371,7 @@ Sea $(X,\leq)$ un conjunto ordenado, y sea $x \in X$.
 
 
 
-Sea $(X,\leq)$ un conjunto ordenado,$Y \sybseteq X$ un subconjunto de $X$ no vacío y $x \in X$.
+Sea $(X,\leq)$ un conjunto ordenado,$Y \subseteq X$ un subconjunto de $X$ no vacío y $x \in X$.
 - Decimos que x es cota superior de $Y$ si $y\leq x$ para cualqueri $y \in Y$.
 - Decimos que x es el supremo de Y si es el mínimo del conjunto de las cotas superiores de Y.
 - Decimos que x es cota inferior de $Y$ si $x\leq y$ para cualqueri $y \in Y$.
