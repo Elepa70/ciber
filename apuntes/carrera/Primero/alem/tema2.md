@@ -2,7 +2,7 @@
 title: Aritmética entera y modular
 description: 
 published: true
-date: 2025-10-20T20:13:27.305Z
+date: 2026-01-12T09:26:41.329Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:45:03.771Z
@@ -29,7 +29,7 @@ Sean $a,b \in \mathbb{N} \text{ con } b \neq 0$. Entonces existen números $c, r
 Es el sistema que conocemos, es decir el que está en base 10. $(0,1,2,3,4,5,6,7,8,9)$. Es decir el número 4853, podemos escribirlo como.
 
 $a = 4853$
-$a = 4 * 10^{3} + 2 * 10^{3} + 5 * 10^{3} + 7 * 10^{0}$
+$a = 4 * 10^{3} + 2 * 10^{3} + 5 * 10^{3} + 7 * 10^{0}$.
 
 Así que podemos decir lo siguiente:
 Sean $a,b \in \mathbb{N} \text{ con } a \neq 0 \text{ y } b \geq 2$. Entonces existen números $m \in \mathbb{N}, m \neq 0 \text{ y } a_{0},a_{1}, \dots ,a_{m} \in \mathbb{N}$  tales que cumplen:
