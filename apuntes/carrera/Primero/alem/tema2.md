@@ -2,7 +2,7 @@
 title: Aritmética entera y modular
 description: 
 published: true
-date: 2026-01-12T09:26:41.329Z
+date: 2026-01-12T09:38:32.131Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:45:03.771Z
@@ -55,7 +55,7 @@ Para hacer este truco, cuando tengamos un número binario y queramos pasarlo a o
 
 Como hemos hecho anteriormente, ahora vamos a describir el algoritmo de la división del conjunto $\mathbb{Z}$.
 
-## Algoritmo de la división de enteros $\mathbb{Z}$
+## Algoritmo de la división de enteros $\mathbb{Z}$.
 Sean $a,b \in \mathbb{Z} \text{ con } b \neq 0$. Entonces existen números $c,r \in \mathbb{Z}$ tales que:
 - $a=b*c+r$.
 - $0 \leq r < |b|$.
