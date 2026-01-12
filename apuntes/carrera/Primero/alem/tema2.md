@@ -2,7 +2,7 @@
 title: Aritmética entera y modular
 description: 
 published: true
-date: 2026-01-12T09:38:32.131Z
+date: 2026-01-12T09:40:36.328Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:45:03.771Z
@@ -66,13 +66,13 @@ Claro, esto es igual que con el conjunto $\mathbb{N}$, sin embargo debemos tener
 {.is-info}
 
 - Ambos son positivos: Esto es una división normal y no jugaremos con ningún valor. 
-147 div 5 = 29 | 147 mód 5= 2 | $29*5+2=147$.
+$147 \text{ div } 5 = 29 | 147 \text{ mód } 5= 2 | 29*5+2=147$.
 - El divisor es negativo, en este caso el cociente también será negativo, para que el resultado sea positivo.
-147 div (-5) = -29 | 147 mód 5= 2 | $(-29)*(-5)+2=147$
+$147 \text{ div } (-5) = -29 | 147 \text{ mód } 5= 2 | (-29)*(-5)+2=147$
 - El cociente es negativo, aquí ya cambia la cosa, en este caso vamos a usar un digito mayor al del cociente y restaremos la diferencia con el divisor para obtener el resto.
--147 div 5 = -30 | -147 mód 5= 3 | $(-30)*5+3=-147$
+$-147 \text{ div } 5 = -30 | -147 \text{ mód } 5= 3 | (-30)*5+3=-147$
 - Tanto cociente como divisor es negativo. Aplicamos la misma logica que antes resultando en un valor negativo.
--147 div -5 = 30 | -147 mód -5= 3 | $30*(-5)+3=-147$
+$-147 \text{ div } -5 = 30 | -147 \text{ mód } -5= 3 | 30*(-5)+3=-147$
 
 
 ## Complementos
