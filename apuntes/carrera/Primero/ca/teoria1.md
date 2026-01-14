@@ -2,7 +2,7 @@
 title: Apuntes para el primer parcial de Calculo
 description: 
 published: true
-date: 2025-11-12T09:43:13.222Z
+date: 2026-01-14T18:18:49.971Z
 tags: 
 editor: markdown
 dateCreated: 2025-11-04T10:19:52.029Z
@@ -56,7 +56,7 @@ Y ahora empezamos con el principio de inducción.
 2. ¿Qué queremos demostrar? Qué $x_{n}<x_{n+1}$.
 3. Por lo tanto comprobamos que $x_{n+1}<x_{n+2}$.
 
-Ejercicio resuelto en: [Principio de inudcción](/apuntes/carrera/Primero/ca/induccion)
+Ejercicio resuelto en: [Principio de inducción](/apuntes/carrera/Primero/ca/induccion)
 ## Fórmula o reglas con sucesiones famosas
 ### Regla del número e
 Cuando tenemos una indeterminación del tipo "$1^{\infty}$", usamos la regla del número e.
