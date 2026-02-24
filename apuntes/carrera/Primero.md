@@ -2,7 +2,7 @@
 title: Primer año de Ingeniería Informática
 description: 
 published: true
-date: 2025-09-29T19:42:57.866Z
+date: 2026-02-24T20:04:31.615Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:28:49.904Z
@@ -24,10 +24,10 @@ En esta sección encontrarás los enlaces hacia las asignaturas dividida en prim
 > Pendientes
 {.is-danger}
 
-[Estadística](es)
-[Lógica y Métodos Discretos](lmd)
-[Metodología de la Programación](mp)
-[Tecnología y Organización de los Computadores](toc)
-
+- [Estadística](es)
+- [Lógica y Métodos Discretos](lmd)
+- [Metodología de la Programación](mp)
+- [Tecnología y Organización de los Computadores](toc)
+  {.links-list}
 ## Información adicional
 Todo los apuntes son tomados en base a lo dado de los profesores, son de apoyo, no se puede considerar sustitución.
