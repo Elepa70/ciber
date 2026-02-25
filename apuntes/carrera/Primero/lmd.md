@@ -1,8 +1,8 @@
 ---
 title: Lógica y Métodos Discretos 
 description: 
-published: false
-date: 2026-02-25T19:11:03.544Z
+published: true
+date: 2026-02-25T19:11:09.072Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T20:23:35.047Z
