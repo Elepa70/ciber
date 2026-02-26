@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T18:18:52.102Z
+date: 2026-02-26T18:19:45.368Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -104,5 +104,7 @@ Se guardan una serie de patrones asociados cuando hay errores o indeterminacione
 - $+\infty$: Tenemos los exponente a 1.
 - $-\infty$: Tenemos el signo y los exponente a 1.
 - Indeterminado: Exponentes a 1, pero no hay mantisa.
+
+
 ## Niveles conceptuales de descripción de un computador
 ## Sistemas analógicos y digitales
