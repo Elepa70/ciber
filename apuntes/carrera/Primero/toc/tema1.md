@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T16:58:21.953Z
+date: 2026-02-26T17:01:42.144Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -11,6 +11,9 @@ dateCreated: 2026-02-26T16:41:21.931Z
 # Introducción
 
 ## Conceptos básicos
+Empezamos el tema describiendo la palabra informática. Esta palabra viene del conjunto de conocimientos científicos y técnicas que habilitan el tratamiento automático de la información por medio de computadoras electrónicas.
+
+Por otro lado computadora o ordenador, es aquella máquina que nos permite efectuar operaciones lógicas con datos de entradas y que resulte en una salida de datos, sin que haya sido intervenido por un humano.
 ## Estructura funcional de un computador
 ## Representación de datos numéricos
 Cuando introducimos datos mediante E/S, son codificados como caracteres de texto. Estas codificaciones suele ser inapropiada cuando se trata de representar números, ya que no hay un sistema de numeración matematico.
