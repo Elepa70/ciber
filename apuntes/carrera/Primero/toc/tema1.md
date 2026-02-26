@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T17:38:53.289Z
+date: 2026-02-26T17:50:30.443Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -86,5 +86,10 @@ En caso de computadoras, se usa la normalización IEEE 754, donde en vez de hace
 Para almacenar los datos de esta manera, debemos tener en cuenta que esta el primer bit con el campo del signo (0 positivo, 1 negativos), luego tenemos el campo del exponente, que está sesgado para saber cuanto debemos elevar, y por último la mantisa.
 
 #### Ejemplo
+Vamos a hacer un ejemplo para poder saber como representar los valores.
+
+Dado cualquier numero primero lo normalizamos (Es decir, pasamos la coma hasta que tenga el valor simbolico o el primer número), con ello modificamos los exponentes.
+
+Tras eso vamos a quitar el base 10, para ello lo que debemos hacer es $x=exp*\frac{log(10)}{log(2)}$, con esto obtenemos el valor del exponente en base 2. Esto se debe porque estamos haciendo la siguiente operación $10^{exp}=2^{x}$.
 ## Niveles conceptuales de descripción de un computador
 ## Sistemas analógicos y digitales
