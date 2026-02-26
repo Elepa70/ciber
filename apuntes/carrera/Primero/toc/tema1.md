@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T16:55:01.312Z
+date: 2026-02-26T16:58:21.953Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -27,6 +27,8 @@ Cuando tenemos signo debemos diferenciar entre:
 - Complemento a 1: EN este caso, cuando es positivo, el número se escribe normal (En binario ojo), sin embargo al ser negativo, lo que hacemos es escribir el complemento a 1 del valor absoluto del valor. Es decir si es negativo, cambiamos los 1 por los 0.
 - Complemento a 2: Este ya es usado, sigue cumpliendo lo mismo, cuando es positivo no lo modificamos, pero cuando es negativo hacemos el "Complemento a 2" del valor absoluto del número. Esto consiste en hacer un complemento a 1, sin embargo le sumamos un 1.
 - Sesgada: Escribimos el valor númerico pero susmandole el sesgo. El seco es un valor fijo con valor de $2^{n-1}$. Siendo n el valor de bits.
+
+Se recomienda antes de hacer cualquier cosa que para convertir un valor de decimal a binario, pasarlo por hexadecimal.
 
 
 ## Niveles conceptuales de descripción de un computador
