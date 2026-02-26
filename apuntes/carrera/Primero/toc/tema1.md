@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T18:19:45.368Z
+date: 2026-02-26T18:22:35.234Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
