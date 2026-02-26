@@ -1,8 +1,8 @@
 ---
 title: Tecnología y Organización de Computadores
 description: 
-published: false
-date: 2026-02-24T20:26:16.629Z
+published: true
+date: 2026-02-26T17:34:40.619Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T20:26:05.293Z
