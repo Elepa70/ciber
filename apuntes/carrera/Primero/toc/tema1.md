@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T16:51:55.424Z
+date: 2026-02-26T16:53:31.637Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -26,6 +26,6 @@ Cuando tenemos signo debemos diferenciar entre:
 - Signo y magnitud: En este caso, guardamos el primer bit, y podemos diferenciar si es positivo o no según el valor (0 positivo o 1 si es negativo).
 - Complemento a 1: EN este caso, cuando es positivo, el número se escribe normal (En binario ojo), sin embargo al ser negativo, lo que hacemos es escribir el complemento a 1 del valor absoluto del valor. Es decir si es negativo, cambiamos los 1 por los 0.
 - Complemento a 2: Este ya es usado, sigue cumpliendo lo mismo, cuando es positivo no lo modificamos, pero cuando es negativo hacemos el "Complemento a 2" del valor absoluto del número. Esto consiste en hacer un complemento a 1, sin embargo le sumamos un 1.
-- Sesgada: Escribimos el valor númerico pero susmandole el seco. El seco es un valor fijo con valor de $2^{n-1}$.
+- Sesgada: Escribimos el valor númerico pero susmandole el seco. El seco es un valor fijo con valor de $2^{n-1}$. Siendo n el valor de bits.
 ## Niveles conceptuales de descripción de un computador
 ## Sistemas analógicos y digitales
