@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-02-25T11:10:30.264Z
+date: 2026-02-26T12:29:21.348Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -75,3 +75,16 @@ Un orden parcial en un conjunto P es una relación binaria ($\leq$), que cumple:
 
 > Tras esto vemos los diagramas de Hasse, debido a la falta de medios para representarlos, recomiendo acudir a fuentes fiables de Internet.
 {.is-info}
+
+## Expresión booleana
+Antes de definirlas, vamos a explicar sus caracteristicas:
+- Literales: Aquellos elementos que toman como valor true or false (1 o 0), pudiendo ser variables, o complementario de variables.
+- Recurrente: Definimos la recurrencia como, si $E_{1}$ y $E_{2}$ son expresiones booleanas, la suma o "or" también lo sera, el producto o "and" también, y el complementario de estos también.
+
+Dada las anteriores definiciones, tenemos entonces que una expresión booleana la construimos en base de las anteriores reglas.
+
+Ejemplo:
+Dado $X=\{a,b\}$, entonces $1,a+b,\overline{AB}+b+0$ son expresiones booleanas, donde los literales son $a,\overline{A},b,\overline{B},0 \text{ y }1$.
+
+La tabla de verdad, nos sirve para poder evaluar las expresiones. Aunque puede ser un proceso lento o tedioso, es el mejor metodo existente hasta el momento, ya que si pudieramos encontrar un algoritmo mejor, entonces habríamos resuelto uno de los problemas del millón.
+
