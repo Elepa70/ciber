@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T17:06:55.980Z
+date: 2026-02-26T17:08:51.419Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -24,6 +24,14 @@ Codificación transformación de unos elementos mediante un metodo para que resu
 Ahora vamos a hablar sobre algunas unidades de información:
 - Bit (b) es aquella unidad más elemental y básica de la informática tomando valores de 0 o 1.
 - Byte (B) conssite en un grupo de 8 bits.
+
+A partir de esto debemos tener en cuenta que existe le kilo, mega, giga, tera...
+
+
+### Programas e instrucciones
+Una instrucción es aquel conjunto de símbolo que nos permite representar un orden de operación en una computadora.
+
+Por otro lado un programa, es auqel conjunto ordenado de instrucciones, donde ya se sabe que operaciones se quiere realizar.
 ## Estructura funcional de un computador
 ## Representación de datos numéricos
 Cuando introducimos datos mediante E/S, son codificados como caracteres de texto. Estas codificaciones suele ser inapropiada cuando se trata de representar números, ya que no hay un sistema de numeración matematico.
