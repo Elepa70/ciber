@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-02-26T12:29:21.348Z
+date: 2026-02-26T12:47:59.017Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -87,4 +87,8 @@ Ejemplo:
 Dado $X=\{a,b\}$, entonces $1,a+b,\overline{AB}+b+0$ son expresiones booleanas, donde los literales son $a,\overline{A},b,\overline{B},0 \text{ y }1$.
 
 La tabla de verdad, nos sirve para poder evaluar las expresiones. Aunque puede ser un proceso lento o tedioso, es el mejor metodo existente hasta el momento, ya que si pudieramos encontrar un algoritmo mejor, entonces habríamos resuelto uno de los problemas del millón.
+
+A un conjunto de funciones booleanas en $n$ variables. (Escrito: $F^{n}=\{f:B^{n}\rightarrow B\text{ es función booleana}\}$. Tambiésn es un álgebra de Boole.
+
+Con la particularidad de $F^{n}$ tiene $2^{2^{n}}$ elementos.
 
