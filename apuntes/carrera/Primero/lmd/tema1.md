@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-02-26T12:47:59.017Z
+date: 2026-02-26T12:54:37.801Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -92,3 +92,19 @@ A un conjunto de funciones booleanas en $n$ variables. (Escrito: $F^{n}=\{f:B^{n
 
 Con la particularidad de $F^{n}$ tiene $2^{2^{n}}$ elementos.
 
+Ahora que estamos hablando de álgebra de Boole del tipo $F^{n}$, debemos tener en cuenta que los átomos, son aquellas funciones donde solo exista un valor 1 para un único elemento de $B^{n}$.
+
+### Minterms
+Los minterms $m$, sobre un conjunto de $X=\{x_{1},x_{2}...\}$ es una expresión que recopila aquella una función de $F^{n}$, una tupla por así decirlo.
+
+Cuando hayamos queremos dar una función por escrito que cumpla una expresión, lo que solemos escribir es la **Forma Normal Disyuntiva**, esta forma escrita de la siguiente manera $xyz+xy\overline{Z}$.
+
+
+### Maxterm
+Por otro lado los maxterms, aunque sea similar, se expresa con una suma, es al contrairo del minterm. Por otro lado aqui escribimos la **Forma Normal Conjuntiva**, donde en vez de ir agrupandolo por multiplicacion y juntarlo en suma, lo que hacemos es juntarlo en suma y ir uniendolo en multiplicaciones, es decir:
+$(x+y+z)(x+y+\overline{z})$.
+
+### Expresión booleana dual
+Recordamos que cuando damos algo dual, es el contrario de la aplicación, en este caso, lo que estamos dando es que en vez de sumar multiplicamos, pero nunca hacemos el contrario.
+
+Decimos que una función booleana $f$ es autodual si $f=f^{d}$.
