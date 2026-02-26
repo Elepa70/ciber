@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T17:51:26.585Z
+date: 2026-02-26T17:55:08.616Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -93,5 +93,7 @@ Dado cualquier numero primero lo normalizamos (Es decir, pasamos la coma hasta q
 Tras eso vamos a quitar el base 10, para ello lo que debemos hacer es $x=exp*\frac{log(10)}{log(2)}$, con esto obtenemos el valor del exponente en base 2. Esto se debe porque estamos haciendo la siguiente operación $10^{exp}=2^{x}$.
 
 Tras esto, si nos ha quedado decimales ( que es lo más común), separamos un exponencial entero y multiplicamos el obtenido con decimales al valor.
+
+Tras esto, ahora lo que hacemos es el primer valor lo pasamos a binario de forma directa. Tras esto, lo que vamos a hacer es multiplicar los decimales por 16 y el valor que está en la parte entera, lo transformamos en binario (teniendo en cuenta que estamos en hexadecimal), una vez hecho esto repetimos el proceso con los decimales que teniamos cuando hemos multiplicado por 16.
 ## Niveles conceptuales de descripción de un computador
 ## Sistemas analógicos y digitales
