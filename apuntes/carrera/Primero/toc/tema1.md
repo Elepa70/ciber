@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T17:03:04.382Z
+date: 2026-02-26T17:03:51.569Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -37,6 +37,6 @@ Cuando tenemos signo debemos diferenciar entre:
 
 Se recomienda antes de hacer cualquier cosa que para convertir un valor de decimal a binario, pasarlo por hexadecimal.
 
-
+Uno de los motivos por el que codificamos en complemento a 2, es por motivo economico a la hora de hacer hardware.
 ## Niveles conceptuales de descripción de un computador
 ## Sistemas analógicos y digitales
