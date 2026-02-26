@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T17:08:51.419Z
+date: 2026-02-26T17:20:34.320Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -29,10 +29,22 @@ A partir de esto debemos tener en cuenta que existe le kilo, mega, giga, tera...
 
 
 ### Programas e instrucciones
-Una instrucción es aquel conjunto de símbolo que nos permite representar un orden de operación en una computadora.
+Una instrucción es aquel conjunto de símbolo que nos permite representar un orden de operación en una computadora. 
 
 Por otro lado un programa, es auqel conjunto ordenado de instrucciones, donde ya se sabe que operaciones se quiere realizar.
+
+### Instrucciones
+Respecto a las instrucciones tenemos:
+- Instrucciones de ransferencias de datos: Donde se transfiere datos de una unidad a otra.
+- Instrucciones de tratamiento: Donde hay reglas aritmético-lógicas.
+- Instrucciones de bifurcación y saltos: Donde se altera el orden secuencial y se hacen saltos o llamadas a otras funciones.
 ## Estructura funcional de un computador
+Sobre la estructura funcioanl de una computadora o equipo, debemos tener en cuenta que hay unidades de:
+- Entrada o $E$, que son aquellos dispositivos que nos habilitan introducir datos a una computadora, mediante la naturaleza eléctrica. Esto puede ser un teclado, un digitalizador, lecto de tarjetas...
+- Salida o $S$, por lógica podemos deducir que estos son los dispotivos que nos permiten obtener resultados de programas o visualizarlos. Como pueden ser monitores, o impresoras.
+
+
+Por otro lado la memoria, es aquella unidad de almacenamiento tanto 
 ## Representación de datos numéricos
 Cuando introducimos datos mediante E/S, son codificados como caracteres de texto. Estas codificaciones suele ser inapropiada cuando se trata de representar números, ya que no hay un sistema de numeración matematico.
 
@@ -52,5 +64,7 @@ Cuando tenemos signo debemos diferenciar entre:
 Se recomienda antes de hacer cualquier cosa que para convertir un valor de decimal a binario, pasarlo por hexadecimal.
 
 Uno de los motivos por el que codificamos en complemento a 2, es por motivo economico a la hora de hacer hardware.
+
+Cuando queremos codificar con un número mayor de bits a un número ya codificado, debemos tener en cuenta la extensión del signo, y es "alargar" el valor del bit simbolico (normalmente aquel que da el signo) a lo largo de la nueva longitud que vayamos a imponer.
 ## Niveles conceptuales de descripción de un computador
 ## Sistemas analógicos y digitales
