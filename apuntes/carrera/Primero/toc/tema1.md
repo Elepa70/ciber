@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T17:32:58.710Z
+date: 2026-02-26T17:34:24.536Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -82,5 +82,7 @@ Normalmente lo que se hace es usar el método de coma o punto flotante $3,213123
 
 En caso de computadoras, se usa la normalización IEEE 754, donde en vez de hacer $10^{n}$, usamos $2^{n}$.
 Para almacenar los datos de esta manera, debemos tener en cuenta que esta el primer bit con el campo del signo (0 positivo, 1 negativos), luego tenemos el campo del exponente, que está sesgado para saber cuanto debemos elevar, y por último la mantisa.
+
+#### Ejemplo
 ## Niveles conceptuales de descripción de un computador
 ## Sistemas analógicos y digitales
