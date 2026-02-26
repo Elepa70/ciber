@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T17:34:24.536Z
+date: 2026-02-26T17:38:53.289Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -44,7 +44,9 @@ Sobre la estructura funcioanl de una computadora o equipo, debemos tener en cuen
 - Salida o $S$, por lógica podemos deducir que estos son los dispotivos que nos permiten obtener resultados de programas o visualizarlos. Como pueden ser monitores, o impresoras.
 
 
-Por otro lado la memoria, es aquella unidad de almacenamiento tanto 
+Por otro lado la memoria, es aquella unidad de almacenamiento que incluye datos y instrucciones. En cuanto a memoria hay memoria principal o memoria secundaria.
+
+La memoria primaria o principal, es aquella memoria que actúa con mayor velocidad, las instrucciones ya deben estar cragadas y suele accederse con dirreciones.
 ## Representación de datos numéricos
 Cuando introducimos datos mediante E/S, son codificados como caracteres de texto. Estas codificaciones suele ser inapropiada cuando se trata de representar números, ya que no hay un sistema de numeración matematico.
 
