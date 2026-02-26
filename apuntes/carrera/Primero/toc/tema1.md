@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T17:20:34.320Z
+date: 2026-02-26T17:32:58.710Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -66,5 +66,21 @@ Se recomienda antes de hacer cualquier cosa que para convertir un valor de decim
 Uno de los motivos por el que codificamos en complemento a 2, es por motivo economico a la hora de hacer hardware.
 
 Cuando queremos codificar con un número mayor de bits a un número ya codificado, debemos tener en cuenta la extensión del signo, y es "alargar" el valor del bit simbolico (normalmente aquel que da el signo) a lo largo de la nueva longitud que vayamos a imponer.
+
+
+### Dato de tipo real, es decir decimal, en binario
+En este caso lo que se hace es indicar un valor fijo de cifras para poder representar la parte entera y otra para la parte fraccionaria (Representado como número fijo de parte entera $p$ y en el caso de fraccionaria $q$).
+
+Para poder convertir un número decimal a binario debemos:
+1. La parte entera se convierte en binario.
+2. La parte fraccionaria la convertimos en binario.
+3. Ahora lo que hacemos es buscar la cantidad de bits para cada lado, donde debe estar con: $2^{p-1}\leq E \leq 2^{p}$, donde $p$ es el número de bits, $E$ es el valor de la parte entera. La parte de fraccionaria será el resto.
+
+Este metodo puede resultar varios problemas ya que no puede dar los suficientes bits para poder hacer los datos.
+
+Normalmente lo que se hace es usar el método de coma o punto flotante $3,2131231*10^{2}$, es decir guardamos los valores más significativo y almacenamos el valor por el que vamos a multiplicar a 10.
+
+En caso de computadoras, se usa la normalización IEEE 754, donde en vez de hacer $10^{n}$, usamos $2^{n}$.
+Para almacenar los datos de esta manera, debemos tener en cuenta que esta el primer bit con el campo del signo (0 positivo, 1 negativos), luego tenemos el campo del exponente, que está sesgado para saber cuanto debemos elevar, y por último la mantisa.
 ## Niveles conceptuales de descripción de un computador
 ## Sistemas analógicos y digitales
