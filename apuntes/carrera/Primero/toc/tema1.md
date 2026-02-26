@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T17:03:51.569Z
+date: 2026-02-26T17:06:55.980Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -17,7 +17,13 @@ Por otro lado computadora o ordenador, es aquella máquina que nos permite efect
 
 Calculadora es aquella máquina capaz de efectuar operaciones aritméticas bajo el control directo del usuario.
 
-Los datos son aquellos conjutno de símbolos utiliados para expresar o representar 
+Los datos son aquellos conjutno de símbolos utiliados para expresar o representar un valor numérico, objeto, idea...
+
+Codificación transformación de unos elementos mediante un metodo para que resulten en otros.
+
+Ahora vamos a hablar sobre algunas unidades de información:
+- Bit (b) es aquella unidad más elemental y básica de la informática tomando valores de 0 o 1.
+- Byte (B) conssite en un grupo de 8 bits.
 ## Estructura funcional de un computador
 ## Representación de datos numéricos
 Cuando introducimos datos mediante E/S, son codificados como caracteres de texto. Estas codificaciones suele ser inapropiada cuando se trata de representar números, ya que no hay un sistema de numeración matematico.
