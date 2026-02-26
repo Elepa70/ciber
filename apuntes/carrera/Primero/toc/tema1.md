@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T17:50:30.443Z
+date: 2026-02-26T17:51:26.585Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -91,5 +91,7 @@ Vamos a hacer un ejemplo para poder saber como representar los valores.
 Dado cualquier numero primero lo normalizamos (Es decir, pasamos la coma hasta que tenga el valor simbolico o el primer número), con ello modificamos los exponentes.
 
 Tras eso vamos a quitar el base 10, para ello lo que debemos hacer es $x=exp*\frac{log(10)}{log(2)}$, con esto obtenemos el valor del exponente en base 2. Esto se debe porque estamos haciendo la siguiente operación $10^{exp}=2^{x}$.
+
+Tras esto, si nos ha quedado decimales ( que es lo más común), separamos un exponencial entero y multiplicamos el obtenido con decimales al valor.
 ## Niveles conceptuales de descripción de un computador
 ## Sistemas analógicos y digitales
