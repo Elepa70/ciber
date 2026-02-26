@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T18:06:51.867Z
+date: 2026-02-26T18:18:52.102Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -97,5 +97,12 @@ Tras esto, si nos ha quedado decimales ( que es lo más común), separamos un ex
 Tras esto, ahora lo que hacemos es el primer valor lo pasamos a binario de forma directa. Tras esto, lo que vamos a hacer es multiplicar los decimales por 16 y el valor que está en la parte entera, lo transformamos en binario (teniendo en cuenta que estamos en hexadecimal), una vez hecho esto repetimos el proceso con los decimales que teniamos cuando hemos multiplicado por 16.
 
 La cantidd de bits a sacar debe ser 23, aunque el ejercicio puede pedir otros.
+
+
+Se guardan una serie de patrones asociados cuando hay errores o indeterminaciones:
+- $0$: Todo los valores a 0.
+- $+\infty$: Tenemos los exponente a 1.
+- $-\infty$: Tenemos el signo y los exponente a 1.
+- Indeterminado: Exponentes a 1, pero no hay mantisa.
 ## Niveles conceptuales de descripción de un computador
 ## Sistemas analógicos y digitales
