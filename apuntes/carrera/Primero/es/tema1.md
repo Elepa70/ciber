@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-02T17:01:18.888Z
+date: 2026-03-02T17:05:04.288Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -113,4 +113,6 @@ Sin embargo si lo datos nos lo dan en datos continuos, entonces tenemos usar $h_
 Para poder saber exactamente cual es la moda exacta es mediante la siguiente formula.
 $M_{o}=I_{i-1}+\frac{h_{i}-h_{i-1}}{(h_{i}-h_{i-1})+(h_{i}-h_{i+1})}a_{i}$.
 
-La mediana es aquel centro posicional del conjunto de los datos. Lo que hacemos es ordenarlos de menor a mayor, 
+La mediana es aquel centro posicional del conjunto de los datos. Lo que hacemos es ordenarlos de menor a mayor, y tras eso hacemos $\frac{n}{2}$, diferenciando dos casos.
+- Si no es entero, redondeamos al entero siguiente, siendo $Me=x_{i}$.
+- Si es entero, entonces $Me=[x_{i},x_{i+1}]$.
