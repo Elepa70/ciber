@@ -1,8 +1,8 @@
 ---
 title: Metodología de la Programación
 description: 
-published: false
-date: 2026-03-02T16:37:51.735Z
+published: true
+date: 2026-03-02T16:38:01.387Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T20:19:23.093Z
