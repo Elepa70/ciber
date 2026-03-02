@@ -2,7 +2,7 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-02T17:40:48.533Z
+date: 2026-03-02T17:41:38.735Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
@@ -22,3 +22,5 @@ La declaración consiste:
 ```C++
 int * ptri; //Declaracion de puntero a entero.
 ```
+
+Lo que hacemos en vez de declarar un valor, simplemente estamos reservando ese espacio para usarlo más adelante, aunque no tenga un valor.
