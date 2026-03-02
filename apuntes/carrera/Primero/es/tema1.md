@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-02T17:10:38.806Z
+date: 2026-03-02T17:12:12.049Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -120,3 +120,6 @@ La mediana es aquel centro posicional del conjunto de los datos. Lo que hacemos 
 En caso de tener datos discretos, nos fijaremos en $F_{o}$ y debemos ver:
 - Si existe un valor exacto que sea $F_{o}=0.5$, la mediana sería la media entre ese valor y el siguiente.
 - Si no existiera ese valor, sería aquel valor que supere por primera vez en 0.5.
+
+En caso de datos continuos, la mediana sera aquel valor que supere $F_{i}$ por primera vez, y se hace la siguiente formula:
+$M_{e}=I_{i-1}+\frac{\frac{n}{2}-N_{i-1}}{n_{i}}a_{i}$.
