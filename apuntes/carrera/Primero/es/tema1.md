@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-02T17:19:54.899Z
+date: 2026-03-02T17:27:33.426Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -131,3 +131,7 @@ Es como dividir los datos, dentro de esto encontramos:
 - Cuartiles: Donde dividimos la distribución en 4 partes iguales.
 - Deciles: DOnde dividimos la distribución en 10 partes iguales.
 - Percentiles: Donde dividimos la distribución en 100 partes iguales.
+
+Para poder cálcular los percentiles lo que hacemos es ordenar los datos de menor a mayor, tras esto calculamos $\frac{kn}{100}$.
+- Si el valor no es un número entero, entonces lo redondeamos al siguiente y $P_{k}=x_{i}$.
+- Si fuera entero, entonces $P_{k}=[x_{i},x_{i+1}]$.
