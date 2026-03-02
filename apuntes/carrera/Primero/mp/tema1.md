@@ -2,7 +2,7 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-02T17:53:22.305Z
+date: 2026-03-02T18:05:33.708Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
@@ -52,3 +52,17 @@ ptrc = &c;
 *ptrc = 'A';
 ```
 Lo que hemos hecho en el ejercicio anterior, es modificar el valor que hay en ese puntero.
+
+Podemos inicializar con la dirección de una variable, o apuntando a un lugar, que es la zona nula.
+```C++
+int a;
+int *ptri=&a;
+
+int *ptrI= 0; // Menos recomendado
+int *PtrI = NULL; //Mas recomendado
+int *pTrI = nullptr; // Igual que el anterior
+```
+
+Con los punteros, podemos hacer uso de las operaciones normales, es decir: <,>,<=,>=,!=,==.
+> Ojo, debemos diferenciar de p1, con *p1, ya que uno compara el contenido y otro la dirección de memoria.
+{.is-warning}
