@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-02T17:05:04.288Z
+date: 2026-03-02T17:10:38.806Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -116,3 +116,7 @@ $M_{o}=I_{i-1}+\frac{h_{i}-h_{i-1}}{(h_{i}-h_{i-1})+(h_{i}-h_{i+1})}a_{i}$.
 La mediana es aquel centro posicional del conjunto de los datos. Lo que hacemos es ordenarlos de menor a mayor, y tras eso hacemos $\frac{n}{2}$, diferenciando dos casos.
 - Si no es entero, redondeamos al entero siguiente, siendo $Me=x_{i}$.
 - Si es entero, entonces $Me=[x_{i},x_{i+1}]$.
+
+En caso de tener datos discretos, nos fijaremos en $F_{o}$ y debemos ver:
+- Si existe un valor exacto que sea $F_{o}=0.5$, la mediana sería la media entre ese valor y el siguiente.
+- Si no existiera ese valor, sería aquel valor que supere por primera vez en 0.5.
