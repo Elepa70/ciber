@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-02-24T19:57:28.469Z
+date: 2026-03-02T16:48:42.197Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -83,10 +83,27 @@ Dependiendo de que tipo de datos tenemos unos o otros modos de gráficas, que so
 - Datos cualitativos: Diagrama de sectores o diagrama de barras.
 - Datos cuantitativos: Diagrama de barras (Discretas) o diagrama histograma (Continuas, decimales)
 
-### DIagrama de sectores
+### Diagrama de sectores
 Para este tipo de diagrama, nos hace falta $\alpha$, que la obtenemos:
 $\alpha_{i}=360*\frac{n_{i}}{n}$ o $360*f_{i}$.
 ### Diagrama de barras
 No es necesario hacer ningun calculo extra.
 ### Histograma
 Consiste realmente en un diagrama de barra, lo unico que todo está junto y se usa de dato
+
+## Representaciones numéricas
+La información presentada en la distribuciones de frecuencia se puede sintentizar en medidas o cantidades numéricas. Tenemos:
+- Medidades de posición y tendencia central: Podemos observar el comportamiento global de los datos observados y localizar el centro de distribución.
+- Medidas de dispersión: Determinan la variabilidad de los datos de distribución y de la maor o menor representatividad de las medidas de posición central.
+- Medidas de forma: Reflejan la distribución.
+
+Ahora explicaremos en detalle las distintas medidas.
+### Medidas de posición.
+Se llaman medidas de posición, tendencia central o centralización, a los valores numéricos donde se agrupan de mayor o menor medida. POdemos encontrar dos clases centrales:
+- Medidas de posición centrales, con medida aritmética (miden el centro), mediana (la mitad) y moda (el valor más frecuente).
+- Medidas de posición no cenrales: Solo tenemos los cuantiles que miden porcentajes.
+
+La media aritmética es aquella media que solemos hacer para saber que nota tenemos en el examen. La forma de calcular la media es: $\overline{X}=\frac{1}{n} \sum x_{i}n_{i}$.
+
+Básicamente es la suma de todos los valores entre el número de casos que hay.
+
