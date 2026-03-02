@@ -2,7 +2,7 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-02T18:05:33.708Z
+date: 2026-03-02T18:23:25.055Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
@@ -66,3 +66,26 @@ int *pTrI = nullptr; // Igual que el anterior
 Con los punteros, podemos hacer uso de las operaciones normales, es decir: <,>,<=,>=,!=,==.
 > Ojo, debemos diferenciar de p1, con *p1, ya que uno compara el contenido y otro la dirección de memoria.
 {.is-warning}
+
+Cuando tengamos arrays, interectuamos igual, y si queremos apuntar a un valor del vector, tenemos que hacer
+```C++
+p=&v[i];
+```
+
+### Operadores aritméticos
+Con los operadores +,-,++,-,+= y -=, los punteros funcionan de una forma casi similar a un número entero.
+
+Cuando sumamos algo a un puntero de forma normal, lo que hacemos es avanzar en dirección de memoria.
+
+## Punteros y arrays
+Los arrays y los punteros tienen una gran relación. Ya que los arrays lo que hacen es reservar memorai para almacenar una serie de elementos del tipo que hemos puesto.
+
+ES decir crea un puntero constantemente como hemos llamado el array, que apunta a la primera posición del mismo.
+
+Es por eso que podemos hacer:
+```C++
+int v[5]={1,2,3,4,5};
+cout << *v << endl; // Esto realmente devuelve 1, ya que siempre apunta a la primera posición.
+cout << *(v+2); // Es equivalente a preguntar por v[2]
+```
+
