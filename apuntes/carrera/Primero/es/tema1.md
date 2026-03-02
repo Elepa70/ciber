@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-02T16:55:57.714Z
+date: 2026-03-02T17:01:18.888Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -110,3 +110,7 @@ Básicamente es la suma de todos los valores entre el número de casos que hay.
 
 La moda por otro lado es el valor que mas se repite o valor más usual en una distribuciión. Normalmente lo haremos gracias a $n_{i}$.
 Sin embargo si lo datos nos lo dan en datos continuos, entonces tenemos usar $h_{i}$ que la obtenemos con $h_{i}=\frac{n_{i}}{a_{i}}$.
+Para poder saber exactamente cual es la moda exacta es mediante la siguiente formula.
+$M_{o}=I_{i-1}+\frac{h_{i}-h_{i-1}}{(h_{i}-h_{i-1})+(h_{i}-h_{i+1})}a_{i}$.
+
+La mediana es aquel centro posicional del conjunto de los datos. Lo que hacemos es ordenarlos de menor a mayor, 
