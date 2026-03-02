@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-02T16:48:42.197Z
+date: 2026-03-02T16:53:34.386Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -106,4 +106,7 @@ Se llaman medidas de posición, tendencia central o centralización, a los valor
 La media aritmética es aquella media que solemos hacer para saber que nota tenemos en el examen. La forma de calcular la media es: $\overline{X}=\frac{1}{n} \sum x_{i}n_{i}$.
 
 Básicamente es la suma de todos los valores entre el número de casos que hay.
+
+
+La moda por otro lado es el valor que mas se repite o valor más usual en una distribuciión. Normalmente lo haremos gracias a $n_{i}$.
 
