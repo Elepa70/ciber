@@ -2,7 +2,7 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-02T17:48:28.083Z
+date: 2026-03-02T17:52:36.689Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
