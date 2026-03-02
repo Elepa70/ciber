@@ -2,7 +2,7 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-02T17:52:36.689Z
+date: 2026-03-02T17:53:22.305Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
@@ -36,7 +36,7 @@ Este operador lo que hace es devolvernos la dirección de la variable.
 
 Por ejemplo:
 ```C++
-int i=5, *ptri;
+int i=5, * ptri;
 ptri = &i;
 ``` 
 
@@ -47,7 +47,7 @@ Este operador de indirección, nos sirve para devolver el valor del objeto apunt
 Con ejemplo:
 
 ```C++
-char c, *ptrc;
+char c, * ptrc;
 ptrc = &c;
 *ptrc = 'A';
 ```
