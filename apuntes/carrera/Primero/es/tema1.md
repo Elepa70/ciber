@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-03T17:31:18.387Z
+date: 2026-03-03T17:37:03.976Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -158,4 +158,5 @@ En las medidas de dispersión absoluta tenemos:
 - Desviación típica: Se define como $\sigma = +\sqrt{ \sigma^{2}}$. Solemos coger 4 decimales.
 
 - El coeficiente de variación de Pearson, $CV$ se calcula con $CV= \frac{\sigma}{|\overline{X}|}$, nos sirve para comparar la homogeneidad de dos o más variables.
+
 
