@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-02-26T12:54:37.801Z
+date: 2026-03-03T14:37:09.976Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -108,3 +108,7 @@ $(x+y+z)(x+y+\overline{z})$.
 Recordamos que cuando damos algo dual, es el contrario de la aplicación, en este caso, lo que estamos dando es que en vez de sumar multiplicamos, pero nunca hacemos el contrario.
 
 Decimos que una función booleana $f$ es autodual si $f=f^{d}$.
+
+
+
+## Circuitos lógicos
