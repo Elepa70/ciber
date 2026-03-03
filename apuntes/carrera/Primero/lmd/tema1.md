@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-03T15:10:21.253Z
+date: 2026-03-03T15:11:45.737Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -132,4 +132,6 @@ Este tipo de suma, es aquel donde sumamos ambos bits, pero cuando ambos valgan u
 Para hacerlo con puertas lógicas primer debemo shacer la parte de la suma normal, pero donde no hay 2 bits positivos, es decir: $\overline{X}y+x\overline{Y}$. Y por otro lado tendremos $xy$. Con esta tecnica podemos abrir el dibujo tanto como queramos.
 
 ### Complemento a dos
-El complemento a dos nos sirve para poder deducir que simbolo lleva el número, es decir, saber si es positivo o negativo
+El complemento a dos nos sirve para poder deducir que simbolo lleva el número, es decir, saber si es positivo o negativo. El complemento a dos, lo que hacemos es con el número binario, añadimos un bit más para poder saber el signo. 
+
+En caso de que el valor sea negativo, lo que hacemos es alternar los valores 0 por los 1 y los 1 por los 0, y tras eso le sumamos 1.
