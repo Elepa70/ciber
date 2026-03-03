@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-03T17:47:19.042Z
+date: 2026-03-03T17:51:57.073Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -168,8 +168,20 @@ Los datos puedes ser simetricos (Es decir que esten repartido de igual manera en
 - Asimetría por la derecha o positiva: Si las frecuencias descienden más rapidamente por la derecha que por la izquierda.
 
 Para medirlo usaremos el coeficiente de asimetría de Fisher:
-$A_{s}=\frac{\frac{1}{n} \sum n_{i}(x_{i}- \overline{X} )^{3}}{\sigma^{3}}$ .
+$A_{s}=\frac{\frac{1}{n} \sum n_{i}(x_{i}- \overline{X} )^{3}}{\sigma^{3}}$.
 Tendiendo en cuenta la formula:
 - Si $A_{s}<0$: Asimetria por la izquierda.
 - Si $A_{s}>0$: Asimetria por la derecha.
 - Si $A_{s}=0$: Simétrica.
+
+### Medidas de forma: Apuntamiento o curtosis
+POdemos determinar también la distribución en relación con su grado de aplastamiento, es decir como de "largo será", normalmente es comparada con la distribución de la Normal.
+
+Para ello normalmente usaremos el coeficiente de curtosis de Fisher:
+
+$C_{s}=\frac{\frac{1}{n} \sum n_{i}(x_{i}- \overline{X} )^{4}}{\sigma^{4}}$.
+
+Tendiendo en cuenta la formula:
+- Si $C_{s}<0$: Platicúrtica, es decir está mas "aplatanada" o menos apuntada que la Normal.
+- Si $C_{s}>0$: Leptocurtica, es decir está mas "afilada" o más apuntada que la Normal.
+- Si $C_{s}=0$: Mesocurtica, es decir es como la Normal.
