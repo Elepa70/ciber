@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-03T14:58:19.917Z
+date: 2026-03-03T15:00:09.251Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -129,4 +129,5 @@ Es 1 cuando una de las dos señales es 1. (Dibujo: Elipse, más picada, cortado 
 ### Suma de dos bits con acarreo
 Este tipo de suma, es aquel donde sumamos ambos bits, pero cuando ambos valgan uno, se hace un acarreo (es decir, aumentar en 1 el siguiente valor).
 
-Para hacerlo con puertas lógicas primer debemo shacer la parte de la suma normal, pero donde no hay 2 bits positivos, es decir: $\overline{X}y+x\overline{Y}$. Y por otro lado tendremos $xy$.
+Para hacerlo con puertas lógicas primer debemo shacer la parte de la suma normal, pero donde no hay 2 bits positivos, es decir: $\overline{X}y+x\overline{Y}$. Y por otro lado tendremos $xy$. Con esta tecnica podemos abrir el dibujo tanto como queramos.
+
