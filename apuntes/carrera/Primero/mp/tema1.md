@@ -2,7 +2,7 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-02T18:23:25.055Z
+date: 2026-03-03T15:50:15.540Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
@@ -80,7 +80,7 @@ Cuando sumamos algo a un puntero de forma normal, lo que hacemos es avanzar en d
 ## Punteros y arrays
 Los arrays y los punteros tienen una gran relación. Ya que los arrays lo que hacen es reservar memorai para almacenar una serie de elementos del tipo que hemos puesto.
 
-ES decir crea un puntero constantemente como hemos llamado el array, que apunta a la primera posición del mismo.
+ES decir crea un puntero constante ( Es decir no podemos modificarlo) como hemos llamado el array, que apunta a la primera posición del mismo.
 
 Es por eso que podemos hacer:
 ```C++
