@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-03T14:46:34.408Z
+date: 2026-03-03T14:53:16.957Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -117,9 +117,9 @@ Las funciones booleanas, nos sirve para modelizar el diseo de circuitos electró
 {.is-warning}
 
 ### NOT
-Invierte los bits.
+Invierte los bits. ( Dibujo: triangulo con final circular)
 ### AND
-Solo es 1 cuando ambas señales es 1.
+Solo es 1 cuando ambas señales es 1. (Dibujo: Elipse cortado por la mitad de forma recta)
 ### OR 
-Es 1 cuando una de las dos señales es 1.
+Es 1 cuando una de las dos señales es 1. (Dibujo: Elipse, más picada, cortado por la mitad de forma ovalada)
 
