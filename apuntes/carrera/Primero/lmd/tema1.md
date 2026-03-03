@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-03T14:37:09.976Z
+date: 2026-03-03T14:42:31.709Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -112,3 +112,10 @@ Decimos que una función booleana $f$ es autodual si $f=f^{d}$.
 
 
 ## Circuitos lógicos
+Las funciones booleanas, nos sirve para modelizar el diseo de circuitos electrónicos. Con esto podemos desarollar las puertas lógicas que son: NOT, AND y OR.
+### NOT
+Invierte los bits.
+### AND
+Solo es 1 cuando ambas señales es 1.
+### OR 
+Es 1 cuando una de las dos señales es 1.
