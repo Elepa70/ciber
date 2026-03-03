@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-03T17:57:13.202Z
+date: 2026-03-03T18:10:17.609Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -196,5 +196,17 @@ Esto puede provocar:
 - Fenomenos naturales poco frecuente
 
 Normalmente lo que se hace es:
+- Un outlier no es un error.
+- Puede indicar información relevante.
+- DEbe analizarse cuidadosamente.
+- Se evalua como hecho aislado o repetible, dependiendo.
+
+### Método de los percentiles de Tukey
+Para detectar los métodos de los percentiles, se suele hacer lo siguiente:
+- Caulculamos percentiles 25 y 75.
+- Calculamos el $RIQ$.
+- Construimos un intervalo $[P_{25}-1.5*RIQ,P_{75}+1.5*RIQ]$, todo aquello fuera de este rango se considerá atípico.
 $RELLENAR$
 
+### Diagrama de Caja y Bigotes
+Tenemos una "caja" formado en altura con el $Q_{1}$ y $Q_{3}$, y luego ponemos los "bigotes" que no es mas que los intervalos anteriores, es decir $Ls=Q_{3}+RIC*1.5$ parte superior, y $Ls=Q_{1}-RIC*1.5$, para la inferior.
