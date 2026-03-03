@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-02T17:28:21.966Z
+date: 2026-03-03T16:53:45.851Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -135,3 +135,8 @@ Es como dividir los datos, dentro de esto encontramos:
 Para poder cálcular los percentiles lo que hacemos es ordenar los datos de menor a mayor, tras esto calculamos $\frac{kn}{100}$.
 - Si el valor no es un número entero, entonces lo redondeamos al siguiente y $P_{k}=x_{i}$.
 - Si fuera entero, entonces $P_{k}=[x_{i},x_{i+1}]$.
+
+
+Para poder calcular los cuartiles lo que podemos hacer es:
+- $\frac{n*k}{100}$, siendo n el número total de variables y k el percentil deseado. Y el valor que nos dé lo buscamos en $N_{i}$, siendo justo el siguiente al valor que tenemos.
+- Directamente buscamos lo buscamos en $F_{i}$, hasta llegar al que deseamos.
