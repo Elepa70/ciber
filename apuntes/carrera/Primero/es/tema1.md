@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-03T17:51:57.073Z
+date: 2026-03-03T17:56:55.386Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -185,3 +185,14 @@ Tendiendo en cuenta la formula:
 - Si $C_{s}<0$: Platicúrtica, es decir está mas "aplatanada" o menos apuntada que la Normal.
 - Si $C_{s}>0$: Leptocurtica, es decir está mas "afilada" o más apuntada que la Normal.
 - Si $C_{s}=0$: Mesocurtica, es decir es como la Normal.
+
+## DEtección de datos anómalos
+Un dato anómalo, atípico o outlier, es una observación que se aleja claramente del patrón general, que puede ser inusualmente grande o pequeño.
+Esto puede provocar:
+- Error de entrada
+- Error de medición
+- Error experimental
+- Valores artifical de prueba
+- Fenomenos naturales poco frecuente
+
+Normalmente lo que se hace es:
