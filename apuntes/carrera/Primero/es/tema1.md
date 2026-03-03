@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-03T18:10:17.609Z
+date: 2026-03-03T18:10:38.964Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
