@@ -2,7 +2,7 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-03T16:11:24.580Z
+date: 2026-03-03T16:22:45.419Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
@@ -108,4 +108,11 @@ alguien.altura=1.50;
 ptr = &alguien;
 ```
 > Recordamos que con & indicamos la posición de memoria.
+{.is-info}
+
+Esto es visto en structs, en clases es igual.
+
+Podemos usar el operador de "->" para que sea más rapido que ahcer (*p). 
+Esto funciona con las clases o struct, y sería de la manera ptr->edad, que sería como hacer (*ptr).edad. 
+> En caso de que sea una clase, debemos poner también el () al final. Es decir: ptr->getEdad()
 {.is-info}
