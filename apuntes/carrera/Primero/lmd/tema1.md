@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-03T15:11:45.737Z
+date: 2026-03-03T15:28:01.507Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -135,3 +135,5 @@ Para hacerlo con puertas lógicas primer debemo shacer la parte de la suma norma
 El complemento a dos nos sirve para poder deducir que simbolo lleva el número, es decir, saber si es positivo o negativo. El complemento a dos, lo que hacemos es con el número binario, añadimos un bit más para poder saber el signo. 
 
 En caso de que el valor sea negativo, lo que hacemos es alternar los valores 0 por los 1 y los 1 por los 0, y tras eso le sumamos 1.
+
+## Simplificación de circuitos
