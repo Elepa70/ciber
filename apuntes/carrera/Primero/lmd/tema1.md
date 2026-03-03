@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-03T14:53:53.745Z
+date: 2026-03-03T14:58:19.917Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -116,6 +116,9 @@ Las funciones booleanas, nos sirve para modelizar el diseo de circuitos electró
 > Es recomendar ver el temario de TOC, para poder entender el diseño de las puertas lógicas.
 {.is-warning}
 
+Los circuitos con varias salidas, indica que al final no caban en ningún lado, simpelmente es puramente continua
+
+
 ### NOT
 Invierte los bits. ( Dibujo: triangulo con final circular)
 ### AND
@@ -123,4 +126,7 @@ Solo es 1 cuando ambas señales es 1. (Dibujo: Elipse cortado por la mitad de fo
 ### OR 
 Es 1 cuando una de las dos señales es 1. (Dibujo: Elipse, más picada, cortado por la mitad de forma ovalada)
 
-Los circuitos con varias salidas, indica que al final no caban en ningún lado, simpelmente es puramente continua
+### Suma de dos bits con acarreo
+Este tipo de suma, es aquel donde sumamos ambos bits, pero cuando ambos valgan uno, se hace un acarreo (es decir, aumentar en 1 el siguiente valor).
+
+Para hacerlo con puertas lógicas primer debemo shacer la parte de la suma normal, pero donde no hay 2 bits positivos, es decir: $\overline{X}y+x\overline{Y}$. Y por otro lado tendremos $xy$.
