@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-03T16:53:45.851Z
+date: 2026-03-03T16:55:50.208Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -137,6 +137,9 @@ Para poder cálcular los percentiles lo que hacemos es ordenar los datos de meno
 - Si fuera entero, entonces $P_{k}=[x_{i},x_{i+1}]$.
 
 
-Para poder calcular los cuartiles lo que podemos hacer es:
+Para poder calcular los cuantiles lo que podemos hacer es:
 - $\frac{n*k}{100}$, siendo n el número total de variables y k el percentil deseado. Y el valor que nos dé lo buscamos en $N_{i}$, siendo justo el siguiente al valor que tenemos.
 - Directamente buscamos lo buscamos en $F_{i}$, hasta llegar al que deseamos.
+
+Debemos tener en cuenta que en k puede ser 25 cuando hablamos de cuartiles, 10 cuando hablamos de deciles o 1 cuando hablamos de percentiles.
+
