@@ -2,7 +2,7 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-03T15:53:51.482Z
+date: 2026-03-03T16:11:24.580Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
@@ -89,3 +89,23 @@ cout << *v << endl; // Esto realmente devuelve 1, ya que siempre apunta a la pri
 cout << *(v+2); // Es equivalente a preguntar por v[2]
 ```
 
+### Cadenas
+Ya hemos visto el comportamiento que tiene en arrays, ahora en cadenas (es decir char), es similar. Ya que al fin al cabo una cadena de caracteres es un array de tipo char. 
+
+## Punteros, struct y class
+Un puntero puede apuntar también a los objetos de estructuras o clases. Es igual que siempre:
+
+```C++
+struct Persona{
+	int edad;
+  double estatura;
+};
+
+Persona alguien;
+Persona *ptr;
+alguien.edad=10;
+alguien.altura=1.50;
+ptr = &alguien;
+```
+> Recordamos que con & indicamos la posición de memoria.
+{.is-info}
