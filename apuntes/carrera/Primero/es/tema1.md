@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-03T16:59:06.833Z
+date: 2026-03-03T17:03:45.445Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -125,7 +125,7 @@ En caso de datos continuos, la mediana sera aquel valor que supere $F_{i}$ por p
 $M_{e}=I_{i-1}+\frac{\frac{n}{2}-N_{i-1}}{n_{i}}a_{i}$ O $M_{e}=I_{i-1}+\frac{\frac{1}{2}-F_{i-1}}{f_{i}}a_{i}$.
 
 
-### Cuantiles
+#### Cuantiles
 Los cuantiles son aquellos variables $X$ como valor de la variable que acumula el $\alpha*100%$ de la distribución.
 Es como dividir los datos, dentro de esto encontramos:
 - Cuartiles: Donde dividimos la distribución en 4 partes iguales.
@@ -146,3 +146,11 @@ Debemos tener en cuenta que en k puede ser 25 cuando hablamos de cuartiles, 10 c
 Cuando ya hemos calculado en el anterior, podemos tener dos situaciones:
 - El valor no está en nuestra tabla, por lo tanto cogemos el siguiente y nuestro percentil será $\overline{X_{i}}$.
 - El valor está en nuestra tabla, por lo tanto nuestro valor será justo la media del mismo y el siguiente.
+### Medidas de dispersión
+Las medidas de dispersión nos sirve para determinar si los datos están muy dispersos o están más juntos. Esto lo podemos clasificar en dos grupos:
+- Medias de dispersión absolutas: La usamos para poder analizar la variabilidad de una única distribución de frecuencias.
+- Medidas de dispersión relativa: Nos sirve para medir la variabilidad de cocientes (proporciones), donde comparamos varias variables.
+
+
+
+Al tener unos datos muy juntos o dispersos, (no lo sabemos), lo que hacemos es hacer una medida que nos permite calcular la medida de dispersión
