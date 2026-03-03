@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-03T14:53:16.957Z
+date: 2026-03-03T14:53:53.745Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -123,3 +123,4 @@ Solo es 1 cuando ambas señales es 1. (Dibujo: Elipse cortado por la mitad de fo
 ### OR 
 Es 1 cuando una de las dos señales es 1. (Dibujo: Elipse, más picada, cortado por la mitad de forma ovalada)
 
+Los circuitos con varias salidas, indica que al final no caban en ningún lado, simpelmente es puramente continua
