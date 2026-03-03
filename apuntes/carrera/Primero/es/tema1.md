@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-03T17:03:45.445Z
+date: 2026-03-03T17:11:15.792Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -151,6 +151,11 @@ Las medidas de dispersión nos sirve para determinar si los datos están muy dis
 - Medias de dispersión absolutas: La usamos para poder analizar la variabilidad de una única distribución de frecuencias.
 - Medidas de dispersión relativa: Nos sirve para medir la variabilidad de cocientes (proporciones), donde comparamos varias variables.
 
+En las medidas de dispersión absoluta tenemos:
+- El rango ($R$ o $max$), que consiste en la diferencia entre $max\{x_{i}\}-min\{x_{i}\}$.
+- El rango intercuartílico ($RIQ$), es igual pero lo que hacemos es $Q_{3}-Q_{1}=P_{75}-P_{25}$.
+- Varianza ($\sigma^{2}$ o $Var(X)$), se define como $\frac{1}{n}\sum (x_{i}-\overline{X})^{2}*n_{i}$ o la mas utilizada que es $\frac{1}{n}\sum x_{i}^{2}*n_{i}-\overline{X}^{2}$.
+- Desviación típica: Se define como $\sigma = +\sqrt{ \sigma^{2}}$.
 
 
 Al tener unos datos muy juntos o dispersos, (no lo sabemos), lo que hacemos es hacer una medida que nos permite calcular la medida de dispersión
