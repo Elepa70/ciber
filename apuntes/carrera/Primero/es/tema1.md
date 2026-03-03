@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-03T16:55:50.208Z
+date: 2026-03-03T16:57:30.252Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -142,4 +142,3 @@ Para poder calcular los cuantiles lo que podemos hacer es:
 - Directamente buscamos lo buscamos en $F_{i}$, hasta llegar al que deseamos.
 
 Debemos tener en cuenta que en k puede ser 25 cuando hablamos de cuartiles, 10 cuando hablamos de deciles o 1 cuando hablamos de percentiles.
-
