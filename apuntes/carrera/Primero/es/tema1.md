@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-03T17:37:03.976Z
+date: 2026-03-03T17:47:19.042Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -147,6 +147,8 @@ Cuando ya hemos calculado en el anterior, podemos tener dos situaciones:
 - El valor no está en nuestra tabla, por lo tanto cogemos el siguiente y nuestro percentil será $\overline{X_{i}}$.
 - El valor está en nuestra tabla, por lo tanto nuestro valor será justo la media del mismo y el siguiente.
 ### Medidas de dispersión
+ESte tipo de medidas suele ser acompañada por la media.
+
 Las medidas de dispersión nos sirve para determinar si los datos están muy dispersos o están más juntos. Esto lo podemos clasificar en dos grupos:
 - Medias de dispersión absolutas: La usamos para poder analizar la variabilidad de una única distribución de frecuencias.
 - Medidas de dispersión relativa: Nos sirve para medir la variabilidad de cocientes (proporciones), donde comparamos varias variables.
@@ -160,3 +162,14 @@ En las medidas de dispersión absoluta tenemos:
 - El coeficiente de variación de Pearson, $CV$ se calcula con $CV= \frac{\sigma}{|\overline{X}|}$, nos sirve para comparar la homogeneidad de dos o más variables.
 
 
+### Medidas de forma: Asimetría
+Los datos puedes ser simetricos (Es decir que esten repartido de igual manera en ambos lados de la media). En caso de asimetria podemos tener:
+- Asimetria por la izquierda o negativa: CUando las frecuencia descienden más lentamente por la izquierda que por la derecha.
+- Asimetría por la derecha o positiva: Si las frecuencias descienden más rapidamente por la derecha que por la izquierda.
+
+Para medirlo usaremos el coeficiente de asimetría de Fisher:
+$A_{s}=\frac{\frac{1}{n} \sum n_{i}(x_{i}- \overline{X} )^{3}}{\sigma^{3}}$ .
+Tendiendo en cuenta la formula:
+- Si $A_{s}<0$: Asimetria por la izquierda.
+- Si $A_{s}>0$: Asimetria por la derecha.
+- Si $A_{s}=0$: Simétrica.
