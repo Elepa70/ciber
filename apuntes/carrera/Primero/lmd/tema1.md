@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-04T15:34:56.545Z
+date: 2026-03-04T15:35:37.806Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
