@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-04T15:07:45.792Z
+date: 2026-03-04T15:08:09.856Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -146,4 +146,4 @@ Para la simplificación de circuitos, vamos a ver dos métodos:
 EN si es un problema complejo, ya que no hay un método eficiente para poder realizarlo.
 ### Mapas de Karnaugh
 Los inventó el ingeniero, matemático y físico Maurice Karnaugh. Para el método de Karnaugh lo que hacemos:
-1. Haremos una tabla o matriz de mintems, donde cada en las columnas tenemos unas variables alternando entre complementarios o no, y en la zona d elas filas igual.
+1. Haremos una tabla o matriz de mintems, donde cada en las columnas tenemos unas variables alternando entre complementarios o no, y en la zona d elas filas igual. Se recomienda poner primero los complementarios y después los "normales".
