@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-04T15:35:37.806Z
+date: 2026-03-04T15:44:38.222Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -151,4 +151,7 @@ Los inventó el ingeniero, matemático y físico Maurice Karnaugh. Para el méto
 3. Cuando hayamos rellenado las casillas, si hay una fila o columna, que sea al completo 1 (NO DIAGONAL), podemos sacar factor común en la expresión ese valor para poder reducirlo.
 4. A su vez, si tenemos un "cuadrado" formado de 1, podemos sacar factor común aquellos valores que NO cambian en el cuadrado formado (Que no tienen complementario en alguna de las dos partes).
 5. Por último si hacemos conectamos un 1 en la primera fila y otro en la última, podemos sacar factor común a aquel valor que se mantiene.
+> A la hora de hacer la tabla, en el momento que coloquelos las variables, es necesario que tengamos de forma adyacente un valor similar al anterior. Es decir si tenemos $xy$, debemos tener o $x\overline{Y}$ o $\overline{X}y$, o puede estar $\overline{XY}$.
+{.is-warning}
+
 En caso de tener cinco variables es necesario tirar por matrices tridimensionales, o dos matrices.
