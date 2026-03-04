@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-03T15:28:01.507Z
+date: 2026-03-04T14:39:00.561Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -136,4 +136,6 @@ El complemento a dos nos sirve para poder deducir que simbolo lleva el número, 
 
 En caso de que el valor sea negativo, lo que hacemos es alternar los valores 0 por los 1 y los 1 por los 0, y tras eso le sumamos 1.
 
+### Resta
+En la resta lo que solemos hacer es volver uno de los dos números en complemento a dos y después hacemos una suma de ambos valores.
 ## Simplificación de circuitos
