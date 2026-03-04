@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-04T14:59:47.245Z
+date: 2026-03-04T15:07:45.792Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -142,3 +142,8 @@ En la resta lo que solemos hacer es volver uno de los dos números en complement
 Para la simplificación de circuitos, vamos a ver dos métodos:
 - Mapas de Karnaugh: Donde se requiera pocas variables.
 - Método de Quine-McCluskey: Es muy largo, sin embargo es general. Cuantas más variables, más pasos, $2^{n}$ variables.
+
+EN si es un problema complejo, ya que no hay un método eficiente para poder realizarlo.
+### Mapas de Karnaugh
+Los inventó el ingeniero, matemático y físico Maurice Karnaugh. Para el método de Karnaugh lo que hacemos:
+1. Haremos una tabla o matriz de mintems, donde cada en las columnas tenemos unas variables alternando entre complementarios o no, y en la zona d elas filas igual.
