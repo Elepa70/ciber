@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-04T14:39:00.561Z
+date: 2026-03-04T14:59:47.245Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -139,3 +139,6 @@ En caso de que el valor sea negativo, lo que hacemos es alternar los valores 0 p
 ### Resta
 En la resta lo que solemos hacer es volver uno de los dos números en complemento a dos y después hacemos una suma de ambos valores.
 ## Simplificación de circuitos
+Para la simplificación de circuitos, vamos a ver dos métodos:
+- Mapas de Karnaugh: Donde se requiera pocas variables.
+- Método de Quine-McCluskey: Es muy largo, sin embargo es general. Cuantas más variables, más pasos, $2^{n}$ variables.
