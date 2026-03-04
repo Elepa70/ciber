@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-04T15:44:38.222Z
+date: 2026-03-04T16:03:08.035Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -154,4 +154,6 @@ Los inventó el ingeniero, matemático y físico Maurice Karnaugh. Para el méto
 > A la hora de hacer la tabla, en el momento que coloquelos las variables, es necesario que tengamos de forma adyacente un valor similar al anterior. Es decir si tenemos $xy$, debemos tener o $x\overline{Y}$ o $\overline{X}y$, o puede estar $\overline{XY}$.
 {.is-warning}
 
+
+Es posible que haciendo los mapas de Karnaugh, encontremos una repetición de valores. Si fuera el caso podemos prescindir de ellos
 En caso de tener cinco variables es necesario tirar por matrices tridimensionales, o dos matrices.
