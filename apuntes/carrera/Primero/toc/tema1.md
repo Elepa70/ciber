@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-02-26T18:22:35.234Z
+date: 2026-03-05T16:47:18.468Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -107,4 +107,25 @@ Se guardan una serie de patrones asociados cuando hay errores o indeterminacione
 
 
 ## Niveles conceptuales de descripción de un computador
+
+Vamos a hacer una diferencia clave para poder entender los computadores.
+- Hardware o parte física, es aquel conjunto de circuitos electrónicos que son fisicos.
+- Software o parte lógica, son los programas como el Sistema Operativo, dentro del equipo que son ejecutables.
+
+Partiendo desde la base, lo que tenemos es:
+- Un conjunto de electrónicos o dispositivos
+- Que tienen una lógica digital
+- DEspués se esta lógica tiene un nivel de transferencia entre registros (llamados RTL).
+- Tras esto tenemos el lenguaje máquina o ensamblador o lenguaje mas terrenal (0 y 1).
+- Gracias al lenguaje máquina ya tenemos el nivel de máquina operativo.
+- Y por último ya tenemos compiladores o editores, que son los programas esencialmente.
+
+
+CUando queremos hacer un sistema digital, tenemos que tener en cuenta el nivel de complejidad dependiendo de que nivel estemos:
+- Nivel de sistema: Identifica los componentes del sistema.
+- Nivel de procesador: Se relaciona mas con los componentes y el rendimiento (CPU, memoria etc)
+- Nivel de registro: Estudia el comportamiento de las unidades funcionales.
+- Nivel lógico: Relaciona los detalles del sistema un punto de vista técnico.
+- Nivel electrónico: Construyen circuitos electrónicos que constituyen bloques diseñados a nivel lógico.
+- Nivel físico: Nivel microscópico mas relacionado a placas o sistemas.
 ## Sistemas analógicos y digitales
