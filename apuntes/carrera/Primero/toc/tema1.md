@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-03-05T16:47:18.468Z
+date: 2026-03-05T16:53:08.733Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-26T16:41:21.931Z
@@ -129,3 +129,16 @@ CUando queremos hacer un sistema digital, tenemos que tener en cuenta el nivel d
 - Nivel electrónico: Construyen circuitos electrónicos que constituyen bloques diseñados a nivel lógico.
 - Nivel físico: Nivel microscópico mas relacionado a placas o sistemas.
 ## Sistemas analógicos y digitales
+
+Para grabar el sonido, tenemos dos metodos analógico o digital. Como sabemos las magnitudes fisicas pueden tomar infinitos valores, por eso tenemos:
+- Señal analógica: Se usan para variables analógicas, donde las variables físicas de la naturaleza varían según el tiempo.
+### Señal analógica
+EN este tipo de señal, lo que hacemos es usar vairables fisicas casi infinitas que varian segun el tiempo, generando un monton de "ruido". Por ejemplo cuando hablamos usando señal analógica, podemos ver como la grafica es más recta.
+
+Un sistema de audio analógico, lo que hacemo es, usar un amplificador, y con una cinta de audio y sistema de transmisión y recepción podemos sacarlo hacia otro lado.
+### Señal digital
+En este caso, los valores son finitos o toamn una serie de valores discretos. En nuestro caso puede tomar 0 o 1. 
+
+Para la transofrmación del sonido a señal binaria, debemos dividir la señal en muestra provocando una perdida de información. Tras eso las muestras las transofrmamos a números, dependiendo de la cantidad de bits uqe deseemos, cuanto más mejor.
+
+EN este caso un sistema de audio digital, parte de un conversor digital, y tras esto podemos almacenar, recuperar o transportar la información. Y cuando la necesitemos, lo que hacemos es usar de nuevo el conversor digital.
