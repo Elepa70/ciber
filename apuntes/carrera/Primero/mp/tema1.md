@@ -2,7 +2,7 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-09T17:55:24.761Z
+date: 2026-03-09T18:11:56.742Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
@@ -134,3 +134,27 @@ int main(){
 Al similar que los arrays y los vectores, no podemos devolver un array o vector con un return.
 ## Punteros a punteros y constantes
 Podemos usar punteros para apuntar a punteros. Ojo, lo que hacemos es saber la posición donde está esta última posición.
+
+Para optener esta última información, debemos ahcer uso de ** como puede ser **q.
+
+Cuando usamos punteros debemos ser conscientes de que estamos trabajando con:
+- El dato puntero, osea la direción.
+- A lo que apunta ese puntero.
+
+Debemos tener en cuenta entonces lo siguiente:
+```
+double *p // Ninguno es const
+const double *p; // SOlo el dato apuntado sea const.
+double *const p; // EL puntero es const
+const double *const p; //Todo es const
+```
+
+Ojo aquellos punteros que no son constantes, no pueden apuntar a un dato que si lo sea.
+
+## Arrays a punteros
+Podemos declarar un array donde los elemento es un puntero. Para hacerlo normalmente lo que haremos será:
+```
+int* arrayPunts[4];
+```
+
+Este tipo de arrays nos sirve para poder modificar los elementos de un array sin necesidad de modificar el array original.
