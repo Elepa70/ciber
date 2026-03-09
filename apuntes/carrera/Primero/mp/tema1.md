@@ -2,7 +2,7 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-09T18:11:56.742Z
+date: 2026-03-09T18:28:15.072Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
@@ -158,3 +158,6 @@ int* arrayPunts[4];
 ```
 
 Este tipo de arrays nos sirve para poder modificar los elementos de un array sin necesidad de modificar el array original.
+
+## Punteros a funciones
+Una función realmente es una dirección de memoria, donde comienza el codigo de instrucción de esa función.
