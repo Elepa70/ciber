@@ -2,13 +2,13 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-03T16:25:36.161Z
+date: 2026-03-09T17:55:24.761Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
 ---
 
-# Punteros y memoria din
+# Punteros y memoria dinámica
 Vamos a hablar sobre un nuevo tipo de dato llamado puntero.
 
 Solemos tener un problema a la hora de conocer el tiempo de compilación la cantidad de memoria que se va a necesitar para almacenar los datos. El uso de arrays grandes supone un desgato de memoria enorme.
@@ -116,3 +116,21 @@ Podemos usar el operador de "->" para que sea más rapido que ahcer (*p).
 Esto funciona con las clases o struct, y sería de la manera ptr->edad, que sería como hacer (*ptr).edad. 
 > En caso de que sea una clase, debemos poner también el () al final. Es decir: ptr->getEdad()
 {.is-info}
+
+## Punteros y funciones
+Los punteros pueden usarse en las funciones, y de hecho era el único metodo que permitia. Un ejemplo es:
+```C++
+void decrecer(int* puntero){
+	(*p)--;
+}
+
+int main(){
+	int variable = 10;
+  cout << variable << endl; //Saldría 10
+  decrecer(&variable);
+  cout << variable < endl; // Saldría 9
+}
+```
+Al similar que los arrays y los vectores, no podemos devolver un array o vector con un return.
+## Punteros a punteros y constantes
+Podemos usar punteros para apuntar a punteros. Ojo, lo que hacemos es saber la posición donde está esta última posición.
