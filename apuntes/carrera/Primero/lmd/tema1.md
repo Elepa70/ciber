@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-10T14:51:43.030Z
+date: 2026-03-10T14:53:22.990Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -166,3 +166,7 @@ Para este metodo lo que hacemos es usar la expresión binaria del minterm, lo qu
 
 Lo que hacemos es ir comprobando en las diferentes filas conforme a las que tenemos justo debajo. Por ejemplo si tenemos una fila de todos unos ($1111$), lo comparamos justo con la de abjo ($1110$), y podemos fijarnos que sacamos factor común $1110$. Lo que hariamos será en otra tabla nueva, ponemos un $_$, cuando encontremos un valor que no es factor común en ellos.
 
+Tras esto comprobamos el que tiene tres unos con el segundo.
+
+> Durante todo el proceso anterior, solo podemos tener en cuenta aquellos valores que se compartán al menos 3 bits.
+{.is-info}
