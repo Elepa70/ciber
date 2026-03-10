@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-10T14:53:22.990Z
+date: 2026-03-10T14:55:50.181Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -170,3 +170,5 @@ Tras esto comprobamos el que tiene tres unos con el segundo.
 
 > Durante todo el proceso anterior, solo podemos tener en cuenta aquellos valores que se compartán al menos 3 bits.
 {.is-info}
+
+Tras esto tenemos una tabla donde queda varios valores donde hay 3 bits y uno con un guión, indicando que no hay.
