@@ -2,7 +2,7 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-09T18:28:15.072Z
+date: 2026-03-10T15:58:33.166Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
@@ -161,3 +161,14 @@ Este tipo de arrays nos sirve para poder modificar los elementos de un array sin
 
 ## Punteros a funciones
 Una función realmente es una dirección de memoria, donde comienza el codigo de instrucción de esa función.
+
+Para pasar una función lo escribiremos como:
+```
+(*puntero) (elementos del puntero)
+```
+## Gestión Dinámica de Memoria
+La memoria en los sistema operativos, podemos observer una estructura que sigue cuando ejecutamos un programa. Que es:
+- Segmento de código: Parte de memoria asociada para las instrucciones.
+- Memoria estática: Reservado antes de la ejecución, permanece fijo y suele ser usado para variabels globales y statics.
+- La pila o Stack: Es aquel espacio reservado por el S.O, que es el encargado de dar espacio para el programa.
+- El montón: Zona de memoria que se reserva y libera durante la ejecución.
