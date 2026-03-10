@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-04T16:04:32.668Z
+date: 2026-03-10T14:50:54.348Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -160,3 +160,8 @@ Es posible que haciendo los mapas de Karnaugh, encontremos una repetición de va
 En caso de tener cinco variables es necesario tirar por matrices tridimensionales, o dos matrices.
 
 ### Método de Quine-McCluskey
+Este metodo siempre funciona pero tiene un problema, es extremadamente lento.
+
+Para este metodo lo que hacemos es usar la expresión binaria del minterm, lo que nos resultará más rapida que hacer el mamap de Karnaugh. Para empezar lo que hacemos es una pequeña tabla donde pondemos a la izquierda la cantidad de unos y a la derecha aquellos minterms que lo cumplen.
+
+Lo que hacemos es ir comprobando en las diferentes filas conforme a las que tenemos justo debajo. Por ejemplo si tenemos una fila de todos unos ($1111$), lo comparamos justo con la de abjo ($1110$), y podemos fijarnos que sacamos factor común $1110$.
