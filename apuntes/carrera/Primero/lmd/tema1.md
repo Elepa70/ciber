@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-10T14:55:50.181Z
+date: 2026-03-10T14:58:19.863Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -172,3 +172,5 @@ Tras esto comprobamos el que tiene tres unos con el segundo.
 {.is-info}
 
 Tras esto tenemos una tabla donde queda varios valores donde hay 3 bits y uno con un guión, indicando que no hay.
+
+Ahora repeteriamos el proceso, pero ojo, debemos tener en cuenta que solo podemos hacer el apartado del guión con aquellos valores donde el guión esté en el mismo lado que el anterior. No podemos juntar dos valores cuyos guiones estén en otros.
