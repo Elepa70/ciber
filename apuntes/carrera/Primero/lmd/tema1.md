@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-10T15:13:36.913Z
+date: 2026-03-10T15:22:09.124Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -163,7 +163,7 @@ En caso de tener cinco variables es necesario tirar por matrices tridimensionale
 Este metodo siempre funciona pero tiene un problema, es extremadamente lento.
 
 Para este metodo lo que hacemos es usar la expresión binaria del minterm, lo que nos resultará más rapida que hacer el mamap de Karnaugh. Para empezar lo que hacemos es una pequeña tabla donde pondemos a la izquierda la cantidad de unos y a la derecha aquellos minterms que lo cumplen.
-#### Primera parte
+#### Primera parte - Obtención de minterns
 Lo que hacemos es ir comprobando en las diferentes filas conforme a las que tenemos justo debajo. Por ejemplo si tenemos una fila de todos unos ($1111$), lo comparamos justo con la de abjo ($1110$), y podemos fijarnos que sacamos factor común $1110$. Lo que hariamos será en otra tabla nueva, ponemos un $_$, cuando encontremos un valor que no es factor común en ellos.
 
 Tras esto comprobamos el que tiene tres unos con el segundo.
@@ -177,7 +177,13 @@ Ahora repeteriamos el proceso, pero ojo, debemos tener en cuenta que solo podemo
 
 > Siempre que usemos una tupla, aunque el resultado sea repetido. Lo marcamos, ya que nos puede venir bien para después.
 {.is-warning}
-#### Segunda parte
+#### Segunda parte - Redución de minterms
 Lo que haremos será hacer una tabla donde la columna esté definida por la función dada y las filas están definidas por aquellos minterns que hemos obtenido tras la primera parte. 
 
 Lo que hacemos es marcar aquellos lugares donde los minterms contiene información de lo dado.
+
+Cuando encontremos en las columnas un unico valor marcado por los minterms, esos valores lo llamaremos implicante primos esenciales y si o si debe estar en la solución.
+
+Sin embargo es posbile que esto no se produzca siempre. Cuando sucede lo que haremos será subrayar aquellas filas y columnas que cumplen la tupla. Cuando terminemos esto nos puede dar una serie de filas y columnas que no esté subrayado, estos lo sacamos a otra fila.
+
+En esta última tabla, seleccionamos aquellos valores que son mas dominante conforme a las otras tuplas.
