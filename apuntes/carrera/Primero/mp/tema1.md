@@ -2,7 +2,7 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-10T15:58:33.166Z
+date: 2026-03-10T16:19:49.777Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
@@ -172,3 +172,23 @@ La memoria en los sistema operativos, podemos observer una estructura que sigue 
 - Memoria estática: Reservado antes de la ejecución, permanece fijo y suele ser usado para variabels globales y statics.
 - La pila o Stack: Es aquel espacio reservado por el S.O, que es el encargado de dar espacio para el programa.
 - El montón: Zona de memoria que se reserva y libera durante la ejecución.
+
+Para usar gestionar dinámica de la memoria, lo que hacemos es lo siguiente:
+1. Se le pide al S.O. un tamaño.
+2. Este comprueba que haya espacio y en caso afirmativo lo que hace es devolver un puntero con la zona reservada. Cuando termina de usarse el S.O. libera ese espacio para el proximo uso.
+
+Para poder reservar memoria lo que hacemos es:
+```C++
+//Declaramos un puntero 
+int *p;
+p = new int // Reservamos un espacio suficiente para reservar un entero.
+```
+
+Lo que hacemos con new, es reservar en el espacio de Heap, para un tamaño suficiente para el tipo que hemos seleccionado por ejemplo hemos puesto int.
+
+Como la declaramos podemos liberar esta memoria. Para ello usaremos el **delete**. Es obligatorio eliminarlo, ya que si no estamos ocupando de forma **permanente** la memoria.
+
+```C++
+delete p;
+```
+
