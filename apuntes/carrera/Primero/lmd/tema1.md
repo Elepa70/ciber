@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-10T15:28:03.335Z
+date: 2026-03-11T15:55:15.275Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -187,3 +187,11 @@ Cuando encontremos en las columnas un unico valor marcado por los minterms, esos
 Sin embargo es posbile que esto no se produzca siempre. Cuando sucede lo que haremos será subrayar aquellas filas y columnas que cumplen la tupla. Cuando terminemos esto nos puede dar una serie de filas y columnas que no esté subrayado, estos lo sacamos a otra fila.
 
 En esta última tabla, seleccionamos aquellos valores que son mas dominante conforme a las otras tuplas.
+
+## Conjuntos funcionalmente completos
+Un conjunto funcionalmente completo es un conjunto de puertas que nos permite construir todos los circuitos lógicos.
+
+También existen las puertas:
+- NAND (Not AND), al contrario del and y si simbolo es una flecha hacia arriba ($\uparrow$).
+- NOR (Not OR), al contrario del or y si simbolo es una flecha hacia abajo ($\downarrow$).
+- XOR (Exclusive OR), consiste en un metodo donde debe haber un 1 uno de los lados pero no en ambos o ninguno. Representado por $\oplus$.
