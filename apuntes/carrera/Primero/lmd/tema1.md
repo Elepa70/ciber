@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-11T15:55:15.275Z
+date: 2026-03-11T15:58:27.210Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -195,3 +195,5 @@ También existen las puertas:
 - NAND (Not AND), al contrario del and y si simbolo es una flecha hacia arriba ($\uparrow$).
 - NOR (Not OR), al contrario del or y si simbolo es una flecha hacia abajo ($\downarrow$).
 - XOR (Exclusive OR), consiste en un metodo donde debe haber un 1 uno de los lados pero no en ambos o ninguno. Representado por $\oplus$.
+
+A un conjunto de puertas logicas que nos permite hacer una serie de puertas logicas, lo podemos llamar conjuntos funcionalmente completos.
