@@ -2,7 +2,7 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-16T17:44:10.920Z
+date: 2026-03-16T17:45:41.561Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
@@ -201,5 +201,9 @@ int *v=0,n;
 cin >> n;
 
 v = new int [n];
+// De esta manera podemos hacer uso normal del vector
+
+delete[] v;
+v = 0; //Liberar memoria y "matar" puntero
 ```
 De esta manera podemos reservar con un vector dinamico sin problema.
