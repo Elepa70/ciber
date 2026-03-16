@@ -2,7 +2,7 @@
 title: Estadística descriptiva bidimensional
 description: 
 published: true
-date: 2026-03-09T16:56:59.624Z
+date: 2026-03-16T16:57:54.072Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-09T16:40:14.952Z
@@ -27,3 +27,10 @@ La marginal de X es la distribución de todas las observaciones que hay en X ind
 
 ## Distribuciones condicionadas
 Las distribuciones condicionadas corresponden al estudio de una variable cuando la otra está presente. Cada distribución condicionada será, por tanto, una distribución unidimensional.
+
+Todo lo tipo de calculos son iguales que los que se han hecho en unidimensional.
+
+## Independencia estadística
+Diremos que $X$ e $Y$ son independientes, si no existe ningún tipo de relación entre ambas variables.
+Para que sean independientes se debe cumpler el **teorema de caracterización de la Independencia**. 
+$X\text{ e }Y \text{ son independientes }\LeftRightarrow n_{ij}=\frac{n_{i}*n_{j}}{n}$, para todo $i$ y para todo $j$.
