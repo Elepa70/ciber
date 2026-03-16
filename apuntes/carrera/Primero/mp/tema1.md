@@ -2,7 +2,7 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-16T17:57:51.265Z
+date: 2026-03-16T17:59:59.510Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
@@ -215,3 +215,10 @@ int *m;
 int nfil, ncol;
 m = new int[nfil*ncol];
 ```
+
+Para acceder a los elementos hay "truco", ya que debemos ser conscientes de donde queremos ir. Debemos saber a que fila ir y después sumarle la columna a la que queremos acceder, de la siguiente manera:
+```C++
+int a;
+a = m[f*ncol+c];
+```
+Siendo f la fila que queremos acceder y c la columna que queramos acceder.
