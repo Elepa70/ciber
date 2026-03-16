@@ -2,7 +2,7 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-16T17:45:41.561Z
+date: 2026-03-16T17:57:51.265Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
@@ -207,3 +207,11 @@ delete[] v;
 v = 0; //Liberar memoria y "matar" puntero
 ```
 De esta manera podemos reservar con un vector dinamico sin problema.
+
+## Matrices dinámicas
+Siguen la misma logica que los arrays. Ya que al final cabo son lo "mismo". Lo que varía es:
+```C++
+int *m;
+int nfil, ncol;
+m = new int[nfil*ncol];
+```
