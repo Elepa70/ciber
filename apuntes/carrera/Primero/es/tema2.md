@@ -2,7 +2,7 @@
 title: Estadística descriptiva bidimensional
 description: 
 published: true
-date: 2026-03-16T16:58:56.916Z
+date: 2026-03-16T17:22:46.580Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-09T16:40:14.952Z
@@ -22,7 +22,7 @@ Para hacer las tablas de frecuencias lo que hacemos es exponer un caso X y uno Y
 
 ## Distribución marginales
 Las distribuciones marginales son las obtenidas al estudiar por separado cada una de las variables que componen la variable bidimensional.
-
+ç
 La marginal de X es la distribución de todas las observaciones que hay en X independientemente de las de Y.
 
 ## Distribuciones condicionadas
@@ -34,3 +34,11 @@ Todo lo tipo de calculos son iguales que los que se han hecho en unidimensional.
 Diremos que $X$ e $Y$ son independientes, si no existe ningún tipo de relación entre ambas variables.
 Para que sean independientes se debe cumpler el **teorema de caracterización de la Independencia**. 
 $X\text{ e }Y \text{ son independientes }\Leftrightarrow n_{ij}=\frac{n_{i}*n_{j}}{n}\text{, para todo }i\text{ y para todo }j$.
+
+Lo que hacemos basicamente es multiplicar cada valor que está en los extremos de filas y columnas y lo dividimos netre n. El valor debe ser el mismo que está antes.
+
+## Covarianza
+La covarianza es un numero que nos permite saber is existe o no una relación lineal entre las variables. En caso de que si exista, no sindica para que crecen o decrecen.
+
+La formula es:
+$\sigma XY=\frac{1}{n}\sum_{i=1} \sum{j=1} x_{i}*yi_{i}*n_{ij}-\overline{X}*\overline{Y}$.
