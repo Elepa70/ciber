@@ -2,7 +2,7 @@
 title: Punteros y memoria dinámica
 description: 
 published: true
-date: 2026-03-10T16:19:49.777Z
+date: 2026-03-16T17:44:10.920Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-02T17:37:25.989Z
@@ -192,3 +192,14 @@ Como la declaramos podemos liberar esta memoria. Para ello usaremos el **delete*
 delete p;
 ```
 
+## Arrays dinámicos
+Cuando declaramos un array, solemos declararlo con un entero, sin embargo podemos hacer uso del del new para poder reservar un espacio de memoria reservado dinamico.
+> Hay que tener en cuenta el delete.
+{.is-danger}
+```C++
+int *v=0,n;
+cin >> n;
+
+v = new int [n];
+```
+De esta manera podemos reservar con un vector dinamico sin problema.
