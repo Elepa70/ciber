@@ -2,7 +2,7 @@
 title: Estadística descriptiva bidimensional
 description: 
 published: true
-date: 2026-03-16T17:24:52.663Z
+date: 2026-03-16T17:30:33.008Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-09T16:40:14.952Z
@@ -47,3 +47,11 @@ Dependiendo el valor podemos saber lo siguiente:
 - Si $\sigma XY>0$ exite relación lineal o positiva. Las dos crecen o decrecen a la vez.
 - Si $\sigma XY <0$, existe relación lineal inversa o negativa. Van en sentido contrario el crecimiento.
 - Si $\sigma XY =0$, entonces no hay relación lineal entre ellas. Puede o no haber relación pero no está incorreladas. 
+
+Propiedades:
+- $\sigma XX=\sigma^{2}$ la covarianza de una variable y de sí misma es igual a la varianza de la variable.
+- $\sigma XY = \sigma YX$ Es la misma covarianza dando igual el orden.
+- Si la variable son independientes entonces $\sigma XY = 0$.
+- Si $\sigma XY \neq 0$ entonces $X$ e $Y$ no son independientes.
+- $\text{Independencia }\Rightarrow \text{ Incorrelación}$.
+- $\text{Incorrelación }\Nrightarrow \text{ Independencia}$.
