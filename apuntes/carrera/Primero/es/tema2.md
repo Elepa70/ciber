@@ -2,7 +2,7 @@
 title: Estadística descriptiva bidimensional
 description: 
 published: true
-date: 2026-03-16T17:22:46.580Z
+date: 2026-03-16T17:24:52.663Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-09T16:40:14.952Z
@@ -42,3 +42,8 @@ La covarianza es un numero que nos permite saber is existe o no una relación li
 
 La formula es:
 $\sigma XY=\frac{1}{n}\sum_{i=1} \sum{j=1} x_{i}*yi_{i}*n_{ij}-\overline{X}*\overline{Y}$.
+
+Dependiendo el valor podemos saber lo siguiente:
+- Si $\sigma XY>0$ exite relación lineal o positiva. Las dos crecen o decrecen a la vez.
+- Si $\sigma XY <0$, existe relación lineal inversa o negativa. Van en sentido contrario el crecimiento.
+- Si $\sigma XY =0$, entonces no hay relación lineal entre ellas. Puede o no haber relación pero no está incorreladas. 
