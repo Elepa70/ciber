@@ -2,7 +2,7 @@
 title: Estadística descriptiva bidimensional
 description: 
 published: true
-date: 2026-03-17T16:57:19.253Z
+date: 2026-03-17T16:57:57.489Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-09T16:40:14.952Z
@@ -78,3 +78,5 @@ Para saber el grado debemos tener en cuenta si está en estos valores:
 -	Perfecta: $+-0.20 , +-0.49$.
 -	Perfecta: $+-0.10 , +-0.19$.
 -	Perfecta: $+-0.09 , +-0.0$.
+  
+  
