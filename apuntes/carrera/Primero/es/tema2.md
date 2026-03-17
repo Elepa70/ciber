@@ -2,7 +2,7 @@
 title: Estadística descriptiva bidimensional
 description: 
 published: true
-date: 2026-03-17T17:26:50.315Z
+date: 2026-03-17T17:44:19.855Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-09T16:40:14.952Z
@@ -75,9 +75,9 @@ Para saber el grado debemos tener en cuenta si está en estos valores:
 -	Fuerte: $+-0.85 , +-0.95$.
 -	Significativa: $+-0.70 , +-0.84$.
 -	Moderada: $+-0.50 , +-0.69$.
--	Perfecta: $+-0.20 , +-0.49$.
--	Perfecta: $+-0.10 , +-0.19$.
--	Perfecta: $+-0.09 , +-0.0$.
+-	Débil: $+-0.20 , +-0.49$.
+-	Muy débil: $+-0.10 , +-0.19$.
+-	Nula: $+-0.09 , +-0.0$.
   
 ## Regresión lineal simple
 Consiste en la busqueda de una relación entre las variables, con forma d erecta donde se aproximen la mayoría de puntos.
@@ -116,5 +116,4 @@ Si:
 - $R^{2} = 1 \Rightarrow \sigma_{e}^{2} = 0$: La variablidad explicada por la regresión es total.
 
 Cuando obtengamos un resultado con $R^{2}$, pondremos a continuación:
-- $R^{2}=X \Rightarrow X% \text{ de la variabilidad de y viene explicada por la variable x}$.
-
+- $R^{2}=X \Rightarrow X\% \text{ de la variabilidad de y viene explicada por la variable x}$.
