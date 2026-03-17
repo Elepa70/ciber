@@ -2,7 +2,7 @@
 title: Estadística descriptiva bidimensional
 description: 
 published: true
-date: 2026-03-17T16:57:57.489Z
+date: 2026-03-17T17:05:20.699Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-09T16:40:14.952Z
@@ -68,7 +68,7 @@ Interpretación del signo:
 - $1$: Relación lineal perfecta positiva.
 
 Cuando hagamos este coeficiente, debemos escribir lo siguiente:
-"Grado de asociación lineal entre las dos variables <grado>, además la relaciçon es <simbolo>."
+"Grado de asociación lineal entre las dos variables (grado), además la relaciçon es (simbolo)."
   
 Para saber el grado debemos tener en cuenta si está en estos valores:
 -	Perfecta: $+-0.96 , +-1.0$.
@@ -79,4 +79,10 @@ Para saber el grado debemos tener en cuenta si está en estos valores:
 -	Perfecta: $+-0.10 , +-0.19$.
 -	Perfecta: $+-0.09 , +-0.0$.
   
-  
+## Regresión lineal simple
+Consiste en la busqueda de una relación entre las variables, con forma d erecta donde se aproximen la mayoría de puntos.
+
+Para ello, lo que se hace es buscar una recta que pase por una distancía mínima entre los puntos. La recta tieen forma de: $y=a+bx$.
+### Métodos de mínimos cuadrados
+ES el metodo que usaremos para poder obtener la recta. TIene la siguiente formula:
+$e_{i}=y_{i}-\ŷ $_{i}$
