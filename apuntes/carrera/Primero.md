@@ -2,7 +2,7 @@
 title: Primer año de Ingeniería Informática
 description: 
 published: true
-date: 2026-02-25T19:11:30.001Z
+date: 2026-03-17T11:44:26.753Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:28:49.904Z
@@ -21,8 +21,6 @@ En esta sección encontrarás los enlaces hacia las asignaturas dividida en prim
 - [Fundamentos de Programación](fp)
   {.links-list}
 ## Segundo cuatrimestre
-> Pendientes
-{.is-danger}
 
 - [Estadística](es)
 - [Lógica y Métodos Discretos](lmd)
