@@ -2,7 +2,7 @@
 title: Estadística descriptiva bidimensional
 description: 
 published: true
-date: 2026-03-16T17:30:33.008Z
+date: 2026-03-17T16:50:16.567Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-09T16:40:14.952Z
@@ -55,3 +55,14 @@ Propiedades:
 - Si $\sigma XY \neq 0$ entonces $X$ e $Y$ no son independientes.
 - $\text{Independencia }\Rightarrow \text{ Incorrelación}$.
 - $\text{Incorrelación }\Nrightarrow \text{ Independencia}$.
+
+## Coeficiente de correlación lineal simple
+Este coeficiente nos sirve para medir el sentido y el grado de intensidad, de la relación dada entre dos variables.
+$r_{XY}=\frac{\sigma XY}{\sigma X * \sigma Y}$.
+
+Interpretación del signo:
+- $-1$: Relación lineal perfecta negativa.
+- $-1<r_{XY}<0$: Relación negativa, cuanto más proximo sea al -1 más perfecta será.
+- $0$: Ausenscia de relación lineal.
+- $0<r_{XY}<1$: Relación positiva, más fuerte cuanto más proximo esté al 1.
+- $1$: Relación lineal perfecta positiva.
