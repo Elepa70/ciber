@@ -2,7 +2,7 @@
 title: Estadística descriptiva bidimensional
 description: 
 published: true
-date: 2026-03-17T17:05:20.699Z
+date: 2026-03-17T17:26:50.315Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-09T16:40:14.952Z
@@ -82,7 +82,39 @@ Para saber el grado debemos tener en cuenta si está en estos valores:
 ## Regresión lineal simple
 Consiste en la busqueda de una relación entre las variables, con forma d erecta donde se aproximen la mayoría de puntos.
 
-Para ello, lo que se hace es buscar una recta que pase por una distancía mínima entre los puntos. La recta tieen forma de: $y=a+bx$.
+Para ello, lo que se hace es buscar una recta que pase por una distancía mínima entre los puntos. La recta tieen forma de: $ŷ=â+ \^b_{aprox}x$.
 ### Métodos de mínimos cuadrados
 ES el metodo que usaremos para poder obtener la recta. TIene la siguiente formula:
-$e_{i}=y_{i}-\ŷ $_{i}$
+$e_{i}=y_{i}-ŷ_{i}= y_{i}-(â+b_{aprox}x_{i})$. 
+Aunque la formula real sea:$\sum e^{2}_{i}=\sum(y_{i}-ŷ_{i})^{2}= \sum(y_{i}-(â+b_{aprox}x_{i}))^{2}$.
+
+Lo que vamos a hacer para sacar los valores será:
+- Pendiente de la recta: $b_{aprox}=\frac{\sigma XY}{\sigma^{2}_{X}}$.
+- Ordenada en el origen: $â=ŷ-b_{aprox}*\overline{X}$.
+
+### Descomposición de la varianza
+Consiste en el ajuste de regresiones lineales en los parámetros. Se escribe:
+$\sigma_{Y}^{2}=\sigma_{Ŷ}^{2}+\sigma_{e}^{2}$.
+
+Donde:
+- $\sigma_{Y}^{2}$: La varianza total.
+- $\sigma_{Ŷ}^{2}$: Varianza de los valores ajustados.
+- $\sigma_{e}^{2}$: Varianza residual.
+
+### Calidad o Bondad del ajuste
+Para medir esa bondad del ajuste, nos debemso fijar en aquella distancia que separa gráfica de la función de la nube de puntos.
+
+- Cuanto peor sea el ajuste, mayores serán los residuos o errores.
+
+El coeficiente de determinación $R^{2}$, nos sirve para medir la bondad de la relación lineal existente entre las variables. 
+
+La obtenemos con la siguiente formula: $1-\frac{\sigma_{e}^{2}}{\sigma_{Y}^{2}} = (\frac{\sigma_{XY}}{\sigma_{X} * \sigma_{Y})}^{2}$, que debe estar entre $0\leq R^{2} \leq 1$.
+
+Si:
+- $R^{2} = 0 \Rightarrow \sigma_{e}^{2} = \sigma_{Y}^{2}$: La recta no explica en absoluto el comportamiento de la variable en función de la otra.
+- $0< R^{2} < 1 \Rightarrow$: Hay relación dependiendo siendo la intensidad la cercanía al 1.
+- $R^{2} = 1 \Rightarrow \sigma_{e}^{2} = 0$: La variablidad explicada por la regresión es total.
+
+Cuando obtengamos un resultado con $R^{2}$, pondremos a continuación:
+- $R^{2}=X \Rightarrow X% \text{ de la variabilidad de y viene explicada por la variable x}$.
+
