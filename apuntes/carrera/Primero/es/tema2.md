@@ -2,7 +2,7 @@
 title: Estadística descriptiva bidimensional
 description: 
 published: true
-date: 2026-03-17T16:50:16.567Z
+date: 2026-03-17T16:57:19.253Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-09T16:40:14.952Z
@@ -66,3 +66,15 @@ Interpretación del signo:
 - $0$: Ausenscia de relación lineal.
 - $0<r_{XY}<1$: Relación positiva, más fuerte cuanto más proximo esté al 1.
 - $1$: Relación lineal perfecta positiva.
+
+Cuando hagamos este coeficiente, debemos escribir lo siguiente:
+"Grado de asociación lineal entre las dos variables <grado>, además la relaciçon es <simbolo>."
+  
+Para saber el grado debemos tener en cuenta si está en estos valores:
+-	Perfecta: $+-0.96 , +-1.0$.
+-	Fuerte: $+-0.85 , +-0.95$.
+-	Significativa: $+-0.70 , +-0.84$.
+-	Moderada: $+-0.50 , +-0.69$.
+-	Perfecta: $+-0.20 , +-0.49$.
+-	Perfecta: $+-0.10 , +-0.19$.
+-	Perfecta: $+-0.09 , +-0.0$.
