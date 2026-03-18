@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-11T15:58:27.210Z
+date: 2026-03-18T14:53:48.160Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -197,3 +197,9 @@ También existen las puertas:
 - XOR (Exclusive OR), consiste en un metodo donde debe haber un 1 uno de los lados pero no en ambos o ninguno. Representado por $\oplus$.
 
 A un conjunto de puertas logicas que nos permite hacer una serie de puertas logicas, lo podemos llamar conjuntos funcionalmente completos.
+
+## Cálculo del mínimo de implicantes primos
+Lo primero que hacemos es calcular una función como producto de sumas de implicantes. Es decir, de cada columna ponemos una suma de auqellos minterms que cumplan.
+
+Tras esto vamos desarrollando los productos poco a poco. Se terminará con una formula que agrupe todo, y de ahí lo único que deberemos hacer es seleccionar aquellos sumandos con menor número de implicantes.
+
