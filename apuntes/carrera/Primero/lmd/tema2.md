@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-03-18T15:25:24.049Z
+date: 2026-03-18T15:48:16.097Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -29,3 +29,15 @@ Por ejemplo, considernado que $X=\{p,q\}$ entonces algunas palabras pueden ser:
 - Negación $\text{simbolo por descubirr...}$, se lee como no $\alpha$.
 - Implicación $\rightarrow$, se lee como $\alpha$ implica a $\beta$.
 - Equivalencia $\leftrightarrow$, se lee como $\alpha$ equivale a $\beta$.
+
+En cuanto a la prioridad de los simbolos, es la siguiente:
+- Primero va la negación ().
+- Segundos va $\cup$ y $\cap$, teniendo la misma prioridad.
+- Después van $\rightarrow$ y $\leftrightarrow$, tienen siempre la misma prioridad, dependiendo parentesis.
+
+Cuando haya más de un $\rightarrow$, va de derecha a izquierda.
+
+### Subfórmulas
+Las subformulas son aquellas formulas que intervienen en otra.
+Por ejemplo:
+- Si $\alpha = \beta_{1} \cup \beta_{2}$, entonces $Sub(\alpha)=\{\alpha\}\cup Sub(\beta_{1}) \cup Sub(\beta_{2}$.
