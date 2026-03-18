@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-03-18T15:19:44.069Z
+date: 2026-03-18T15:24:39.208Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -22,3 +22,10 @@ Por ejemplo, considernado que $X=\{p,q\}$ entonces algunas palabras pueden ser:
 - $p$.
 - $p \cup q$.
 - $p \rightarrow q\cup p$.
+
+### Simbolos:
+- Disyunción $\cap$, se lee como $\alpha$ o $\beta$.
+- Conjunción $\cup$, se lee como $\alpha$ y $\beta$.
+- Negación $\text{simbolo por descubirr...}$, se lee como no $\alpha$.
+- Implicación $\rightarrow$, se lee como $\alpha$ implica a $\beta$.
+- Equivalencia $\leftrightarrow$, se lee como $\alpha$ equivale a $\beta$.
