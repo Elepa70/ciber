@@ -2,7 +2,7 @@
 title: Álgebra de Boole
 description: 
 published: true
-date: 2026-03-18T14:53:48.160Z
+date: 2026-03-18T14:54:59.145Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-25T11:10:30.264Z
@@ -188,6 +188,12 @@ Sin embargo es posbile que esto no se produzca siempre. Cuando sucede lo que har
 
 En esta última tabla, seleccionamos aquellos valores que son mas dominante conforme a las otras tuplas.
 
+## Cálculo del mínimo de implicantes primos
+Lo primero que hacemos es calcular una función como producto de sumas de implicantes. Es decir, de cada columna ponemos una suma de auqellos minterms que cumplan.
+
+Tras esto vamos desarrollando los productos poco a poco. Se terminará con una formula que agrupe todo, y de ahí lo único que deberemos hacer es seleccionar aquellos sumandos con menor número de implicantes.
+
+
 ## Conjuntos funcionalmente completos
 Un conjunto funcionalmente completo es un conjunto de puertas que nos permite construir todos los circuitos lógicos.
 
@@ -198,8 +204,4 @@ También existen las puertas:
 
 A un conjunto de puertas logicas que nos permite hacer una serie de puertas logicas, lo podemos llamar conjuntos funcionalmente completos.
 
-## Cálculo del mínimo de implicantes primos
-Lo primero que hacemos es calcular una función como producto de sumas de implicantes. Es decir, de cada columna ponemos una suma de auqellos minterms que cumplan.
-
-Tras esto vamos desarrollando los productos poco a poco. Se terminará con una formula que agrupe todo, y de ahí lo único que deberemos hacer es seleccionar aquellos sumandos con menor número de implicantes.
 
