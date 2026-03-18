@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-03-18T15:17:06.592Z
+date: 2026-03-18T15:19:44.069Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -16,3 +16,9 @@ La definición es:
 - Una palabra sobre el alfabeto, es una concatenación de letras.
 - Un lenguaje sobre el alfabeto elegido, un conjunto de palabras.
 
+En nuestro caso, el alfabeto que vamos a usar será $X$ con operadores $\cap \cup \rightarrow \leftrightarrow \text{ buscando el simbolo...}$.
+
+Por ejemplo, considernado que $X=\{p,q\}$ entonces algunas palabras pueden ser: 
+- $p$.
+- $p \cup q$.
+- $p \rightarrow q\cup p$.
