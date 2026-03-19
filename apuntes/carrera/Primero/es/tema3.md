@@ -2,7 +2,7 @@
 title: Teoría de la probabilidad
 description: 
 published: true
-date: 2026-03-19T19:21:47.823Z
+date: 2026-03-19T19:27:18.259Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-17T18:08:55.097Z
@@ -82,3 +82,11 @@ $P[\overline{a}]=1-P[A]$.
 
 Para dos sucesos cuales quiera A y B se tiene que:
 $P[A\cup B] = P[A] + P[B] - P[A\cap B]$.
+Si fueran tres:
+$P[A\cup B \cup C] = P[A] + P[B] +P[C] - P[A\cap B] - P[A\cap C] - P[B\cap C] + P[A\cap B \cap C]$.
+
+## Probabilidad condicionada
+Es posible que la ocurrencia de un suceso puede modificar la ocurrencia de otro. Esta situación nos lleva la concepto de probabilidad de ocurrencia de un suceso condicionada al aotra.
+
+Dado un suceso B con $P[B]>0$, se define la probabibilidad de A condicionada a B con la siguiente formula:
+$P[A|B]=\frac{P[A\cup B]}{P[B]}$.
