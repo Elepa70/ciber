@@ -2,7 +2,7 @@
 title: Teoría de la probabilidad
 description: 
 published: true
-date: 2026-03-19T19:18:36.618Z
+date: 2026-03-19T19:21:03.421Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-17T18:08:55.097Z
@@ -69,3 +69,13 @@ Sea $E$ un esacio muestral. Diremos que una función de conjunto $P$, definida s
 - Axioma de no negatividad, la probabilidad de un suceso $A$ no puede ser negativa.
 - Axioma de suceso seguro.
 - Axioma de aditividad completa: La suma de los distintos sucesos es la probabilidad de la suma.
+
+### Propiedades de la probabilidad
+La función de probabilidad verifica que:
+- Para cualquier suceso A, $0 \leq P[A]\leq 1$.
+- $P[E]=1$.
+- Si $A$ y $B$ son sucesos incompatibles, entonces: $P[A \cup B]=P[A]+P[B]$.
+
+De estas se puede comprobar que:
+$P[\emptyset]=0$.
+$P[\overline{a}]=1-P[A]$.
