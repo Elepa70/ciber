@@ -2,7 +2,7 @@
 title: Unidades Funcionales
 description: 
 published: true
-date: 2026-03-19T18:21:14.332Z
+date: 2026-03-19T18:31:26.255Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-05T17:01:26.297Z
@@ -119,3 +119,16 @@ Los periféricos, tienen un controlador por detras encargado de transformar la i
 Hay dos niveles en la relaización de una Entrada/Salida:
 - Transferencias elementales de información: Sirven para la recepción o envío de una información individual.
 - Operaciones de entrada/salida: Donde la transferencia es en un conjunto de datos, que van en bloque. Las operaciones de E/S se componen, por lo tanto en transferencias elementales.
+
+La mayor parte de las variables físicas de la naturaleza, son señales o funciones que varían continuamente con el tiempo. Estas señales podemos traducirla a señales eléctricas analógicas mediante sensores.
+
+## Estructuras básicas de interconexión
+Los compenentes de un equipo suelen comunicarse de alguna manera, y todo ellos es gracias a la placa base, que contiene ranuras para que puedan entrar los distintos elementos.
+
+Los distitnos componentes están conectados trabajan a distinto ritmo, para ello se usa:
+- Buses específicos.
+- Memorais intermedias
+- COntroladores de E/S
+- Controlador de Acceso Directo a memoria
+
+Los distintos elementos de un computador se interconectan por medio de buses, estos buses transportar datos e instrucciones, direcciones y señales de control y de estado
