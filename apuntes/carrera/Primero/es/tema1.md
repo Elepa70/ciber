@@ -2,7 +2,7 @@
 title:  Estadística descriptiva unidimensional
 description: 
 published: true
-date: 2026-03-03T18:11:01.352Z
+date: 2026-03-19T19:04:03.530Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:57:28.469Z
@@ -62,7 +62,7 @@ Es una tabla formada por columnas, donde ponemos las variables y después ponemo
 
 Dentro de esta tabla tenemos cuatro frecuencias, pero solo usaremos 2 si es cualitativas.
 - Frecuencia absoluta ($n_{i}$): Nº de veces que se repita la modalidad $x_{i}$.
-- Frecuencia relativa ($f_{i}$): Proporción de individuos que presentan modalidad $x_{i}$. Es decir hacer= $f_{i}=\frac{n_{i}}{n}$
+- Frecuencia relativa ($f_{i}$): Proporción de individuos que presentan modalidad $x_{i}$. Es decir hacer= $f_{i}=\frac{n_{i}}{n}$.
 
 A partir de aqui añadimos las de cuantitativas.
 - Frecuencia absoluta acumulada ($N_{i}$): Que consiste ne el número de veces que se presenta esta modalidad.
