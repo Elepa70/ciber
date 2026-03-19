@@ -2,7 +2,7 @@
 title: Teoría de la probabilidad
 description: 
 published: true
-date: 2026-03-19T19:48:49.551Z
+date: 2026-03-19T20:01:24.757Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-17T18:08:55.097Z
