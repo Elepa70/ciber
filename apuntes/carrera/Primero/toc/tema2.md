@@ -2,7 +2,7 @@
 title: Unidades Funcionales
 description: 
 published: true
-date: 2026-03-19T18:09:59.734Z
+date: 2026-03-19T18:21:14.332Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-05T17:01:26.297Z
@@ -107,4 +107,15 @@ En cuanto a la jerarquía por velocidad es:
 - DIscos magnéticos
 - Cintas magnéticas
 
+### Memoria externa
+Tenemos los disccos duros, memorias usb... Suelen tener un gran tamaño de almacenamiento a costa de una velocidad más lenta.
+
 ## Perifericos
+Los periféricos, tienen un controlador por detras encargado de transformar la información externa en señales eléctricas. Tenemos dispositivos:
+- De entrada: Donde se transofrma en así para que pueda ser usado.
+- De salida: Donde el proceo es inverso.
+
+
+Hay dos niveles en la relaización de una Entrada/Salida:
+- Transferencias elementales de información: Sirven para la recepción o envío de una información individual.
+- Operaciones de entrada/salida: Donde la transferencia es en un conjunto de datos, que van en bloque. Las operaciones de E/S se componen, por lo tanto en transferencias elementales.
