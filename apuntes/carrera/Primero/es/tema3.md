@@ -2,7 +2,7 @@
 title: Teoría de la probabilidad
 description: 
 published: true
-date: 2026-03-19T19:41:17.088Z
+date: 2026-03-19T19:48:49.551Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-17T18:08:55.097Z
@@ -91,10 +91,15 @@ Es posible que la ocurrencia de un suceso puede modificar la ocurrencia de otro.
 Dado un suceso B con $P[B]>0$, se define la probabibilidad de A condicionada a B con la siguiente formula:
 $P[A|B]=\frac{P[A\cup B]}{P[B]}$.
 
-> Podemos hacer: $P[A\cap B] = P[B|A] * P[A] = P[A|B] * P [B]
+> Podemos hacer: $P[A\cap B] = P[B|A] * P[A] = P[A|B] * P [B]$.
 {.is-success}
 
 Sean los sucesos $A$ y $B$, dos sucesos cualesquiera de un espacio muestral $E$. Se dice que el suceso $B$ es independiente de $A$ si la probabilidad de $B$ no cambia cuando se cuenta con la información de que ha ocurrido $A$.
 
-> Si $A$ y $B$ son independientes $\iff P[A\cap B] = P[A]*P[B]$ 
+> Si $A$ y $B$ son independientes $\iff P[A\cap B] = P[A]*P[B]$ .
 {.is-info}
+
+### Teorema de la probabilidad total
+Sean sucesos $A_{1},A_{2}...,A_{n}$ con $P[A_{i}] >0,\forall i = 1,2,...,n$ tales que forman una partición del espacio muestral $E$, es decir.
+- $A_{i} \caup A_{j} = \emptyset, \forall i \neq j$.
+- $A_{1} \cup ... A_{n} =E$. 
