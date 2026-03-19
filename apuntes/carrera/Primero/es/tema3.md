@@ -2,7 +2,7 @@
 title: Teoría de la probabilidad
 description: 
 published: true
-date: 2026-03-19T19:05:11.765Z
+date: 2026-03-19T19:06:20.795Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-17T18:08:55.097Z
@@ -54,3 +54,7 @@ Podemos definir de forma clásica de la probabilidad como: Es el número de caso
 Es decir: $P[A]=\frac{\text{Nº casos favorables a que ocurra A}}{\text{Nº casosa posibles}}$.
 > Solo es posible cuando el espacio muestra es finito.
 {.is-warning}
+
+> Las posibilidades siempre están entre 0 y 1. Es decir $0\leq P[A] \leq 1$.
+{.is-danger}
+
