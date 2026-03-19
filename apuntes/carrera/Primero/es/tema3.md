@@ -2,7 +2,7 @@
 title: Teoría de la probabilidad
 description: 
 published: true
-date: 2026-03-19T18:50:06.801Z
+date: 2026-03-19T19:05:11.765Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-17T18:08:55.097Z
@@ -43,5 +43,14 @@ Existe:
 - Asociativa: $(A\cup B) \cup C = A \cup (B \cup C)$, con intersección: $(A\cap B) \cap C = A \cap (B \cap C)$.
 - Comutativa: $A\cup B = B \cup A$, con intersección: $A\cap B = B \cap A$.
 - Elemento neutro: $A \cup 0 = A$, con intersección: $A \cap E = A$.
-- Distributiva: $A \cup (B \cap C) = (A\cup B) \cap (A\cup C)$ y $A \cap (B \cup C) = (A\cap B) \cup (A\cap C)$
-- Leyes de Morgan: $\overline{(A\cup B)}= \overline{A}\cap \overline{B}$, con intersección $\overline{(A\cap B)}= \overline{A}\cup \overline{B}$
+- Distributiva: $A \cup (B \cap C) = (A\cup B) \cap (A\cup C)$ y $A \cap (B \cup C) = (A\cap B) \cup (A\cap C)$.
+- Leyes de Morgan: $\overline{(A\cup B)}= \overline{A}\cap \overline{B}$, con intersección $\overline{(A\cap B)}= \overline{A}\cup \overline{B}$.
+
+
+## Concepto de la probabilidad
+Evaluar la posibilidad de que ocurra un suceso al realizar un experimento, calculando su propabilidad de ocurrencia.
+
+Podemos definir de forma clásica de la probabilidad como: Es el número de casos favorables de que ocurra A entre los números de casos.
+Es decir: $P[A]=\frac{\text{Nº casos favorables a que ocurra A}}{\text{Nº casosa posibles}}$.
+> Solo es posible cuando el espacio muestra es finito.
+{.is-warning}
