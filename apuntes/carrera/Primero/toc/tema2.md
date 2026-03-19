@@ -2,7 +2,7 @@
 title: Unidades Funcionales
 description: 
 published: true
-date: 2026-03-19T18:33:04.176Z
+date: 2026-03-19T18:41:07.702Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-05T17:01:26.297Z
