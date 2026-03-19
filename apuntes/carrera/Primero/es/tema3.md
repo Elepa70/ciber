@@ -2,7 +2,7 @@
 title: Teoría de la probabilidad
 description: 
 published: true
-date: 2026-03-19T19:21:03.421Z
+date: 2026-03-19T19:21:47.823Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-17T18:08:55.097Z
@@ -79,3 +79,6 @@ La función de probabilidad verifica que:
 De estas se puede comprobar que:
 $P[\emptyset]=0$.
 $P[\overline{a}]=1-P[A]$.
+
+Para dos sucesos cuales quiera A y B se tiene que:
+$P[A\cup B] = P[A] + P[B] - P[A\cap B]$.
