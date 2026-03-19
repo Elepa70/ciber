@@ -2,7 +2,7 @@
 title: Teoría de la probabilidad
 description: 
 published: true
-date: 2026-03-17T18:13:42.018Z
+date: 2026-03-19T18:50:06.801Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-17T18:08:55.097Z
@@ -38,3 +38,10 @@ Existe:
 - Complementario $(\bar{A})$: Formado por aquellos elementos de $\mathbb{E}$ que no están en A.
 - Diferencia $(A-B)$: Formado por aquellos elementos que cumple $A\cap \bar{B}$.
 - Incompatible: No puede ocurirr a la vez
+
+## Propiedades de las operaciones
+- Asociativa: $(A\cup B) \cup C = A \cup (B \cup C)$, con intersección: $(A\cap B) \cap C = A \cap (B \cap C)$.
+- Comutativa: $A\cup B = B \cup A$, con intersección: $A\cap B = B \cap A$.
+- Elemento neutro: $A \cup 0 = A$, con intersección: $A \cap E = A$.
+- Distributiva: $A \cup (B \cap C) = (A\cup B) \cap (A\cup C)$ y $A \cap (B \cup C) = (A\cap B) \cup (A\cap C)$
+- Leyes de Morgan: $\overline{(A\cup B)}= \overline{A}\cap \overline{B}$, con intersección $\overline{(A\cap B)}= \overline{A}\cup \overline{B}$
