@@ -1,8 +1,8 @@
 ---
 title: Unidades Funcionales
 description: 
-published: false
-date: 2026-03-12T18:15:31.447Z
+published: true
+date: 2026-03-19T16:56:15.245Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-05T17:01:26.297Z
@@ -38,9 +38,11 @@ Estos bits anteriores, se le llama palabras de estados o "flags".
 Esta unidad ya hemos dicho que es la encargada de controlar, mediante señales diciendole a la ALU que sume, reste o haga lo que haga falta. Podríamos decir que es el director de la orquesta.
 
 
+Las instrucciones se realiza en dos fases:
+- Fase de captación de instrucción: Cuando se inciia una instrucción, el procesador capta de la memoria la instrucción a ejecutar.
+- Fase de ejecución: En este momento ya se realiza las operaciones específicas correspondientes a la operación.
 
 
-
-
+Tamaño de la memoria= Nº de posiciones de la memoria * Nº de bits de cada palabra.
 ## Memoria
 ## Perifericos
