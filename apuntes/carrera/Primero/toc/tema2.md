@@ -2,7 +2,7 @@
 title: Unidades Funcionales
 description: 
 published: true
-date: 2026-03-19T18:31:26.255Z
+date: 2026-03-19T18:33:04.176Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-05T17:01:26.297Z
@@ -131,4 +131,12 @@ Los distitnos componentes están conectados trabajan a distinto ritmo, para ello
 - COntroladores de E/S
 - Controlador de Acceso Directo a memoria
 
-Los distintos elementos de un computador se interconectan por medio de buses, estos buses transportar datos e instrucciones, direcciones y señales de control y de estado
+Los distintos elementos de un computador se interconectan por medio de buses, estos buses transportar datos e instrucciones, direcciones y señales de control y de estado. Estos buses pueden ser distitnos para poder adaptarse a la velocidad de aquello que lo necesite, también se establece una jerarquia de velocidades para saber, quien necesia o no velocidad.
+
+Esta jerarquia tradicional:
+- Buses internos.
+- Bus delantero
+- Buses locales
+- Bus del panel posterior
+- Buses de expansión
+- BUses de entrada/salida
