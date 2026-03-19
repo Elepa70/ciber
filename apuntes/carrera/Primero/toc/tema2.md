@@ -2,7 +2,7 @@
 title: Unidades Funcionales
 description: 
 published: true
-date: 2026-03-19T17:39:33.310Z
+date: 2026-03-19T17:57:59.661Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-05T17:01:26.297Z
@@ -85,5 +85,14 @@ Dentro de la memoria RAM, tenemos los buses:
 - Bus de dirección: m bits -> $2^m$ direcciones. Con entrada de datos y salidas.
 - Señales de control: IO/M' -> Entrada salida / memoria, R/W -> Lectura/Escritura, MFC -> Memory Function Completed.
 
-- Memoria interna
+Dentro de la memoria interna tenemos el tiempo de acceso a la memoria o latencia, que es lo que tarda en responder la memoria. Y el ancho de banda, que es el número máximo de bytes que se puede transmitir por segundo entre memoria y procesador.
+
+### Modos de dirección
+Tenemos metodos de direccionamiento:
+- Implícito: El código de operación indica sí mismo donde se encuentra operando.
+- Inmediato: El operadno forma parte de la misma instrucción.
+- Direco o absluto: L ainstrucción contiene la dirección del dato.
+- Indirecto: La instrucción contiene un puntero a un registro o posición de memoria que contiene la dirección del dato a operar.
+- Indexado: Registro índice y registro de referencia.
+- Relativo:  Tenemos a la base, al contador de programa y al segmento.
 ## Perifericos
