@@ -2,7 +2,7 @@
 title: Unidades Funcionales
 description: 
 published: true
-date: 2026-03-19T17:57:59.661Z
+date: 2026-03-19T18:09:59.734Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-05T17:01:26.297Z
@@ -95,4 +95,16 @@ Tenemos metodos de direccionamiento:
 - Indirecto: La instrucción contiene un puntero a un registro o posición de memoria que contiene la dirección del dato a operar.
 - Indexado: Registro índice y registro de referencia.
 - Relativo:  Tenemos a la base, al contador de programa y al segmento.
+### Memoria caché
+La memoria caché suele ser memoria escondida, ya que se crea sin que la persona quiera. Sirve para aumentar el rendimiento y la velocidad de la ejecución.
+
+La memoria caché que es un sistema de almacenamiento de tecnología más rápida de almacenamiento ya que suele tener memoria SRAM. La memoria caché es usada por el sistema de memoria para mantener la información más comúnmente usada por el procesador.
+
+En cuanto a la jerarquía por velocidad es:
+- REgistro de CPU 
+- Cache
+- Memoria principal
+- DIscos magnéticos
+- Cintas magnéticas
+
 ## Perifericos
