@@ -2,7 +2,7 @@
 title: Teoría de la probabilidad
 description: 
 published: true
-date: 2026-03-19T19:09:37.809Z
+date: 2026-03-19T19:18:36.618Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-17T18:08:55.097Z
@@ -61,3 +61,11 @@ Es decir: $P[A]=\frac{\text{Nº casos favorables a que ocurra A}}{\text{Nº caso
 Si un experimento es repetido $n$ veces, lo suficentemente grandes, y $n_A$ son aquellos resultados favorables al suceso A.
 Entonces:
 $P[A]=\lim_{n\rightarrow +\infty} \frac{n_{A}}{n}=\lim_{n\rightarrow +\infty}f_{A}$.
+
+
+La probabilidad de bayes, viene con un grado de creencia sobre un suceso en base a la información previa obtenida. 
+La definimos como:
+Sea $E$ un esacio muestral. Diremos que una función de conjunto $P$, definida sobre los sucesos de $E$ y con valores en $\mathbb{R} (P:E\rightarrow \mathbb{R})$ es una función de probabilidad si satisface:
+- Axioma de no negatividad, la probabilidad de un suceso $A$ no puede ser negativa.
+- Axioma de suceso seguro.
+- Axioma de aditividad completa: La suma de los distintos sucesos es la probabilidad de la suma.
