@@ -2,7 +2,7 @@
 title: Teoría de la probabilidad
 description: 
 published: true
-date: 2026-03-19T19:06:20.795Z
+date: 2026-03-19T19:09:37.809Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-17T18:08:55.097Z
@@ -58,3 +58,6 @@ Es decir: $P[A]=\frac{\text{Nº casos favorables a que ocurra A}}{\text{Nº caso
 > Las posibilidades siempre están entre 0 y 1. Es decir $0\leq P[A] \leq 1$.
 {.is-danger}
 
+Si un experimento es repetido $n$ veces, lo suficentemente grandes, y $n_A$ son aquellos resultados favorables al suceso A.
+Entonces:
+$P[A]=\lim_{n\rightarrow +\infty} \frac{n_{A}}{n}=\lim_{n\rightarrow +\infty}f_{A}$.
