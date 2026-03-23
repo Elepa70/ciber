@@ -2,7 +2,7 @@
 title: Funciones (ampliación)
 description: 
 published: true
-date: 2026-03-23T18:16:34.101Z
+date: 2026-03-23T18:25:16.207Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-23T17:41:11.866Z
@@ -71,3 +71,6 @@ void algo(int b, int c=1){}
 ```
 ## Sobrecarga de funciones
 C++ nos habilita definir una función por nombre, tipo de argumentos, número de argumentos o orden de argumentos. No hace falta diferenciar en nombres.
+
+## Funciones inline
+Una función inline, lo que hace es sustituir la llamad aa la función (reservar memoria etc etc), por directamente poner el código de la función, sin necesidad de reservar memoria extra ni congelar el main.
