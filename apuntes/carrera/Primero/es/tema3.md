@@ -2,7 +2,7 @@
 title: Teoría de la probabilidad
 description: 
 published: true
-date: 2026-03-19T20:01:24.757Z
+date: 2026-03-23T16:58:33.870Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-17T18:08:55.097Z
@@ -103,3 +103,8 @@ Sean los sucesos $A$ y $B$, dos sucesos cualesquiera de un espacio muestral $E$.
 Sean sucesos $A_{1},A_{2}...,A_{n}$ con $P[A_{i}] >0,\forall i = 1,2,...,n$ tales que forman una partición del espacio muestral $E$, es decir.
 - $A_{i} \caup A_{j} = \emptyset, \forall i \neq j$.
 - $A_{1} \cup ... A_{n} =E$. 
+## Teorema de Bayes
+Con el teorema anterior, podemos obtener el teorema de bayes, que nos permite revisar la probabilidad de una hipótesis $A_i$.
+
+La formula es:
+$P[A_i|B]=\frac{P[B\cap A_1]}{P[B]}=\frac{P[B|A_i]*P[A_i]}{P[B]}$
