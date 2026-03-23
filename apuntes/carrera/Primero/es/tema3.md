@@ -2,7 +2,7 @@
 title: Teoría de la probabilidad
 description: 
 published: true
-date: 2026-03-23T16:58:33.870Z
+date: 2026-03-23T17:02:15.943Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-17T18:08:55.097Z
@@ -83,7 +83,9 @@ $P[\overline{a}]=1-P[A]$.
 Para dos sucesos cuales quiera A y B se tiene que:
 $P[A\cup B] = P[A] + P[B] - P[A\cap B]$.
 Si fueran tres:
-$P[A\cup B \cup C] = P[A] + P[B] +P[C] - P[A\cap B] - P[A\cap C] - P[B\cap C] + P[A\cap B \cap C]$.
+> $P[A\cup B \cup C] = P[A] + P[B] +P[C] - P[A\cap B] - P[A\cap C] - P[B\cap C] + P[A\cap B \cap C]$.
+{.is-info}
+
 
 ## Probabilidad condicionada
 Es posible que la ocurrencia de un suceso puede modificar la ocurrencia de otro. Esta situación nos lleva la concepto de probabilidad de ocurrencia de un suceso condicionada al aotra.
@@ -93,6 +95,7 @@ $P[A|B]=\frac{P[A\cup B]}{P[B]}$.
 
 > Podemos hacer: $P[A\cap B] = P[B|A] * P[A] = P[A|B] * P [B]$.
 {.is-success}
+
 
 Sean los sucesos $A$ y $B$, dos sucesos cualesquiera de un espacio muestral $E$. Se dice que el suceso $B$ es independiente de $A$ si la probabilidad de $B$ no cambia cuando se cuenta con la información de que ha ocurrido $A$.
 
@@ -108,3 +111,5 @@ Con el teorema anterior, podemos obtener el teorema de bayes, que nos permite re
 
 La formula es:
 $P[A_i|B]=\frac{P[B\cap A_1]}{P[B]}=\frac{P[B|A_i]*P[A_i]}{P[B]}$
+> Recordamos que en $P[C|A]$ es como decir la probabiliada de C basado en A.
+{.is-info}
