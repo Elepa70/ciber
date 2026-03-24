@@ -2,7 +2,7 @@
 title: Teoría de la probabilidad
 description: 
 published: true
-date: 2026-03-23T17:02:15.943Z
+date: 2026-03-24T16:49:47.533Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-17T18:08:55.097Z
@@ -113,3 +113,11 @@ La formula es:
 $P[A_i|B]=\frac{P[B\cap A_1]}{P[B]}=\frac{P[B|A_i]*P[A_i]}{P[B]}$
 > Recordamos que en $P[C|A]$ es como decir la probabiliada de C basado en A.
 {.is-info}
+
+### Recursividad del Teorema de Bayes
+Queremos estimar la probabilidad de una hipótesis $A$, pero la información llega por varios pasos, como puede ser que primero venga de $B_1$ luego $B_2$ y por último $B_3$.
+
+Entonces paso a paso lo que podemos hacer es:
+- $P[A|B_1]=\frac{P[B_1|A]*P[A]}{P[B_1]}$.
+- Luego añadimos la información de $B_2$. $P[A|B_1,B2]=\frac{P[B_2|A]*P[A|B_1]}{P[B_2|B_1]}$.
+- Por último añadimos $B_3$. $P[A|B_1,B_2,B_3]=\frac{P[B_3|A]*P[A|B_1,B_2]}{P[B_3|B_1,B_2]}$.
