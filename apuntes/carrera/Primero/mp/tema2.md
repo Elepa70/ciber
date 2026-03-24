@@ -2,7 +2,7 @@
 title: Funciones (ampliación)
 description: 
 published: true
-date: 2026-03-23T18:25:16.207Z
+date: 2026-03-24T15:50:01.188Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-23T17:41:11.866Z
@@ -74,3 +74,19 @@ C++ nos habilita definir una función por nombre, tipo de argumentos, número de
 
 ## Funciones inline
 Una función inline, lo que hace es sustituir la llamad aa la función (reservar memoria etc etc), por directamente poner el código de la función, sin necesidad de reservar memoria extra ni congelar el main.
+
+Estas funciones son pequeñas, ya que deben ser llamadas con frecuencia y suele tener estar en un fichero de cabeceras (terminación .h), ya que el compilador necesita su definición para poder expandirlas.
+```
+inline int devolver(){};
+```
+
+
+## Variables locales static
+Es una variable local de una función o método que no se destruye al acabar la función, manteniendo su valor entre llamadas.
+
+```
+static int sumador;
+```
+
+## Variables globales static
+Consiste en variables que se pueden acceder desde funciones globales pero desde el mismo archivo.
