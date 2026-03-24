@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-03-24T15:16:31.251Z
+date: 2026-03-24T15:16:41.507Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -49,4 +49,5 @@ Una interpretación es dar un valor de verdad, a cada una de las proposiciones a
 - Los negativos lo que hacemos es interpretarlo como 1- algo.
 
 Ejemplo:
-$a\cup (b\cap -c$ = I(a)+I(b\cap -c) + I(a)I(b\cap -c) = I(a) + I(b)I(-c) + I(a)I(b)I(c)=I(a) + I(b)(1-I(c)) + I(a)I(b)(1-I(c))
+$a\cup (b\cap -c = I(a)+I(b\cap -c) + I(a)I(b\cap -c) = I(a) + I(b)I(-c) + I(a)I(b)I(c)=I(a) + I(b)(1-I(c)) + I(a)I(b)(1-I(c))$.
+
