@@ -2,7 +2,7 @@
 title: Conceptos básicos de variables aleatorias
 description: 
 published: true
-date: 2026-03-24T18:18:57.177Z
+date: 2026-03-24T18:20:03.469Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-24T16:34:39.538Z
