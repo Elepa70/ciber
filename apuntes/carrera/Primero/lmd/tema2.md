@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-03-24T15:21:36.389Z
+date: 2026-03-24T15:29:21.833Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
