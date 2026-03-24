@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-03-24T15:16:41.507Z
+date: 2026-03-24T15:21:36.389Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -51,3 +51,9 @@ Una interpretación es dar un valor de verdad, a cada una de las proposiciones a
 Ejemplo:
 $a\cup (b\cap -c = I(a)+I(b\cap -c) + I(a)I(b\cap -c) = I(a) + I(b)I(-c) + I(a)I(b)I(c)=I(a) + I(b)(1-I(c)) + I(a)I(b)(1-I(c))$.
 
+Dentro de las interpreatciones tenemos:
+- Tautología: Si $I(\alpha)=1$ para TODA interpretación, siempre es cierto.
+- Contradicción: Si $I(\alpha)=0$ para TODA interpretación, nunca es cierto.
+- Satisface: Si $I(\alpha)=1$ para ALGUNA interpretación, puede o no ser cierto.
+- Refutable: Si $I(\alpha)=0$ para ALGUNA interpretación, puede no ser cierto.
+- Contingente: Se satisface y es refutable.
