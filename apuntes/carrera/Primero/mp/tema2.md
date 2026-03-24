@@ -2,7 +2,7 @@
 title: Funciones (ampliación)
 description: 
 published: true
-date: 2026-03-24T15:50:01.188Z
+date: 2026-03-24T15:50:17.633Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-23T17:41:11.866Z
