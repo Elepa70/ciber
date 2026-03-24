@@ -2,7 +2,7 @@
 title: Conceptos básicos de variables aleatorias
 description: 
 published: true
-date: 2026-03-24T17:42:00.558Z
+date: 2026-03-24T18:18:57.177Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-24T16:34:39.538Z
@@ -27,3 +27,24 @@ En continuas: $F(x)=P[X\leq x]=\int f(t)dt$.
 
 Para poder calcular las probabilidades con una variable aleatoria discreta X, lo que se hace es sumar las probabilidades correspondientes a valores de X comprendido entre A y B. POr otro lado con las continuas, lo que hayq ue hacer es calcular el área bajo la curva acotada entre a y b.
 
+## Esperanza matemática
+Sea $X$ una v.a. discreta con función masa de probabilidad $p(x)$, y sea $g(X)$ una función de dicha v.a. Definimos los valores esperados como:
+$E[X]=\sum x_i *p(x_i)$.
+
+Esto es para discretas para continua es casi igual:
+$E[X]=\int x*f(x)dx$.
+
+Las propiedades son:
+- Siempre es constante.
+- Si está actoada entre dos valores, la esperanza tambien lo estará.
+- Si $X$ es simétrica respecto a un valor, entonces la esperanza es ese valor.
+
+## Varianza
+La varianza es la medida de dispersión que nos permite conocer el grado de dispersión de los valores.
+
+La desviación tipica de una varianza viene con la siguiente formula:
+$\sigma_X =+\sqrt{Var[X]}$.
+
+Para calcular la Varianza, dependemos de si es discreta o continua, como siemmpre.
+Discreta: $Var[X]=E[X-E[X]]^2=\sum (x_i - E[X])^2 *p(x_i)$.
+Continuas: $Var[X]=[X-E[X]]^2=\int (x-E[X])^2 *f(x)dx$.
