@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-03-24T14:41:45.253Z
+date: 2026-03-24T15:14:32.926Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -41,3 +41,7 @@ Cuando haya más de un $\rightarrow$, va de derecha a izquierda.
 Las subformulas son aquellas formulas que intervienen en otra.
 Por ejemplo:
 - Si $\alpha = \beta_{1} \cup \beta_{2}$, entonces $Sub(\alpha)=\{\alpha\}\cup Sub(\beta_{1}) \cup Sub(\beta_{2}$.
+
+### Interpretraciones
+Una interpretación es dar un valor de verdad, a cada una de las proposiciones atómicas que hay. Lo hacemos descomponiendo las premisas que nos dan mediante:
+- Ponemos los valores de cada lado de la unión mediante sumas y después ponemos la multiplicación de todo junto
