@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-03-18T16:29:06.808Z
+date: 2026-03-24T14:41:45.253Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -24,11 +24,11 @@ Por ejemplo, considernado que $X=\{p,q\}$ entonces algunas palabras pueden ser:
 - $p \rightarrow q\cup p$.
 
 ### Simbolos:
-- Disyunción $\cap$, se lee como $\alpha$ o $\beta$.
-- Conjunción $\cup$, se lee como $\alpha$ y $\beta$.
-- Negación $\text{simbolo por descubirr...}$, se lee como no $\alpha$.
-- Implicación $\rightarrow$, se lee como $\alpha$ implica a $\beta$.
-- Equivalencia $\leftrightarrow$, se lee como $\alpha$ equivale a $\beta$.
+- Disyunción $\cap$, se lee como $\alpha$ o $\beta$. Ambas deben ser verdad.
+- Conjunción $\cup$, se lee como $\alpha$ y $\beta$. Una debe ser verdad.
+- Negación $\text{simbolo por descubirr...}$, se lee como no $\alpha$. 
+- Implicación $\rightarrow$, se lee como $\alpha$ implica a $\beta$. Es vedad siempre y cuando no pase que alpha sea verdad y beta no.
+- Equivalencia $\leftrightarrow$, se lee como $\alpha$ equivale a $\beta$. Es verdad cuando ambos valores se cumplen o es verdad o es negación.
 
 En cuanto a la prioridad de los simbolos, es la siguiente:
 - Primero va la negación ().
