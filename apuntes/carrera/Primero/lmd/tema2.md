@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-03-25T15:23:13.719Z
+date: 2026-03-25T16:25:00.071Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -70,6 +70,19 @@ A las fórmulas del conjunto se le llama hipótesis/premisas/antecendentes (El c
 No es recomendable hacer tablas de verdad, ya que no es una solución eficiente al problema.
 
 Hay un teorema que es:
-$simbolo simbolo2 \alpha$ si y sólo si $r \cup \{-\alpha\}$ es insatisfacible.
+$\gamma \vDash \alpha$ si y sólo si $r \cup \{-\alpha\}$ es insatisfacible.
 
+## Forma clausular
+Un literal, es una proposición atómica o su negada, lo representamos con el simboló $\lambda$ y su negado es $\lambda^c$.
+Si $\lamda=p$ entonces $\lambda^c = \neg p$.
 
+Una cláusula es una distyuncion de literales, en la que no pueden estar un literal y su negado a la vez. Es decir un conjuntos de literales.
+
+Los procesos que tenemos que hacer para resolver este tipo de ejericcios es reducir todo a and o or. Para ello debemos saber que:
+$a \rightarrow b = \neg a \cup b$.
+$a \leftrightarrow b = a \rightarrow b \cap b \rightarrow a$.
+
+El SAT nos presenta un problema muy complejo, que es para obtener un algoritmo eficiente que dado un conjunto de cláusulas es satisfacible o no.
+
+### Algoritmo de Davis-Putnam
+Es el que usaremos durante este tema.
