@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-03-24T15:29:21.833Z
+date: 2026-03-25T15:21:22.605Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -57,3 +57,17 @@ Dentro de las interpreatciones tenemos:
 - Satisface: Si $I(\alpha)=1$ para ALGUNA interpretación, puede o no ser cierto.
 - Refutable: Si $I(\alpha)=0$ para ALGUNA interpretación, puede no ser cierto.
 - Contingente: Se satisface y es refutable.
+## Consecuencia lógica
+Un conjunto de formulas, peude ser satisfacible si existe una interpretación que valga 1. Por otro lado, si no se le llamaría insatisfacible.
+
+Aunque cada fórmula se puede satisfacer por ella misma, el conjunto puede no serlo. 
+
+Es hacer tablas de verdad separando en cada apartado los distintos conjuntos y si tenemos en todos un 1, entonces se cumple la consecuencia lógica.
+
+
+A las fórmulas del conjunto se le llama hipótesis/premisas/antecendentes (El conjunto en sí), por otro lado a cada fórmula que pertenezca se le puede llamar conclusión/tesis/consecuente. Si el conjunto es vacío, y solo tenemos $/alpha$ en el conjunto, entonces $/alpha$ es una tautología.
+
+No es recomendable hacer tablas de verdad, ya que no es una solución eficiente al problema.
+
+Hay un teorema que es:
+$simbolo simbolo2 \alpha$ si y sólo si $r \cup \{-\alpha\}$ es insatisfacible.
