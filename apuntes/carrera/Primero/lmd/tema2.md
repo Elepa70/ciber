@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-03-25T15:21:22.605Z
+date: 2026-03-25T15:23:13.719Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -71,3 +71,5 @@ No es recomendable hacer tablas de verdad, ya que no es una solución eficiente 
 
 Hay un teorema que es:
 $simbolo simbolo2 \alpha$ si y sólo si $r \cup \{-\alpha\}$ es insatisfacible.
+
+
