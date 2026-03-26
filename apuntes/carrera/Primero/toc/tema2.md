@@ -2,7 +2,7 @@
 title: Unidades Funcionales
 description: 
 published: true
-date: 2026-03-19T18:41:07.702Z
+date: 2026-03-26T17:14:49.461Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-05T17:01:26.297Z
@@ -135,8 +135,23 @@ Los distintos elementos de un computador se interconectan por medio de buses, es
 
 Esta jerarquia tradicional:
 - Buses internos.
-- Bus delantero
-- Buses locales
-- Bus del panel posterior
-- Buses de expansión
-- BUses de entrada/salida
+- Bus delantero.
+- Buses locales.
+- Bus del panel posterior.
+- Buses de expansión.
+- BUses de entrada/salida.
+
+### Estructuras de puentes
+Los equipos suelen llevar uno o dos "chipset", los chipset, son un conjunto de circuito integrado y que es puente entre memoria y E/S. Tenemos dos:
+- Puente Norte: Sirve de enlace entre procesador y memoria. 
+- Puente Sur: COmunica el procesador con el resto de perifericos.
+
+## Parámetros que caracterizan las prestaciones de un computador
+Parámetros que caracterizan las prestaciones de un equipo:
+1. Frecuencia de Reloj
+2. Capcidad de memoria, o de ancho del bus de direcciones.
+3. Ancho de bus de datos.
+4. Capacidad de datos en ALU
+5. Arquitectura interna.
+
+
