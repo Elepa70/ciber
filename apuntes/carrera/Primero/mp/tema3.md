@@ -2,7 +2,7 @@
 title: Clases en C++ (Ampliación)
 description: 
 published: true
-date: 2026-04-07T15:19:27.740Z
+date: 2026-04-07T15:22:23.366Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-24T15:51:05.523Z
@@ -25,3 +25,10 @@ No suelen ser usadas, y de hecho no es recomendable usarlo, solo en caso muy esp
 
 ## Destructores
 Al igual que los constructores, existen los destructores, que nos sirve para liberar los espacios de los constructores.
+```C++
+~Prueba(){
+//Lo que tenga que hacer)
+}
+```
+
+De esta manera podemos invocar al destructor, que ojo, se hace de forma automatica.
