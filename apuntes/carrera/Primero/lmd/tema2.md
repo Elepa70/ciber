@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-03-25T16:25:14.603Z
+date: 2026-04-07T13:39:01.735Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -83,6 +83,9 @@ $a \rightarrow b = \neg a \cup b$.
 $a \leftrightarrow b = a \rightarrow b \cap b \rightarrow a$.
 
 El SAT nos presenta un problema muy complejo, que es para obtener un algoritmo eficiente que dado un conjunto de cláusulas es satisfacible o no.
+
+
+Cuando tengamos un problema de insatisfacibilidad, podemos separar los distintos $OR$ para poder saber si es o no insatisfacible un problema.
 
 ### Algoritmo de Davis-Putnam
 Es el que usaremos durante este tema.
