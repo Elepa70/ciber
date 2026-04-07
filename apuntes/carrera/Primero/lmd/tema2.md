@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-04-07T13:55:43.782Z
+date: 2026-04-07T13:57:06.557Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -90,7 +90,7 @@ Cuando tengamos un problema de insatisfacibilidad, podemos separar los distintos
 ### Algoritmo de Davis-Putnam
 Es necesario conocer algunos algunos conceptos:
 - Una cláusula unit es aquella formada por un único literal por ejemplo $C=p$ o $C=\neg p$.
-- Un literal puro $\lambda$ es un conjunto de cláusulas.
+- Un literal puro $\lambda$ es un conjunto de cláusulas, donde $\lambda$ solo aparece de una unica manera, o siendo true o siendo false.
 - Si $C$ es una cláusula y $\lambda$ un literal, denotamos por $C-\lamda$ a la cláusula $C$ sin el literal $\lambda$.
 
 Una vez dado un conjunto de cláusulas y obtenido un literal, podemos descompener esas tres clausulas según el literal dado de la siguiente manera:
