@@ -2,7 +2,7 @@
 title: Clases en C++ (Ampliación)
 description: 
 published: true
-date: 2026-04-07T15:22:23.366Z
+date: 2026-04-07T15:34:55.983Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-24T15:51:05.523Z
