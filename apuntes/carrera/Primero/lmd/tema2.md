@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-04-07T13:39:01.735Z
+date: 2026-04-07T13:51:11.142Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -88,4 +88,12 @@ El SAT nos presenta un problema muy complejo, que es para obtener un algoritmo e
 Cuando tengamos un problema de insatisfacibilidad, podemos separar los distintos $OR$ para poder saber si es o no insatisfacible un problema.
 
 ### Algoritmo de Davis-Putnam
-Es el que usaremos durante este tema.
+Es necesario conocer algunos algunos conceptos:
+- Una cláusula unit es aquella formada por un único literal por ejemplo $C=p$ o $C=\neg p$.
+- Un literal puro $\lambda$ es un conjunto de cláusulas.
+- Si $C$ es una cláusula y $\lambda$ un literal, denotamos por $C-\lamda$ a la cláusula $C$ sin el literal $\lambda$.
+
+Una vez dado un conjunto de cláusulas y obtenido un literal, podemos descompener esas tres clausulas según el literal dado de la siguiente manera:
+$A_\lambda$: Cláusulas que tienen a $\lambda$.
+$A_\lambda^c$: Clausulas que tienen a $\lambda^c$.
+$B_\lambda$: Las demás, es decir no tienen ni $\lambda$ ni $\lambda^c$.
