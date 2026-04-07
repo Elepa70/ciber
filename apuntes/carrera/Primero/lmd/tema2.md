@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-04-07T13:51:11.142Z
+date: 2026-04-07T13:55:43.782Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -97,3 +97,6 @@ Una vez dado un conjunto de cláusulas y obtenido un literal, podemos descompene
 $A_\lambda$: Cláusulas que tienen a $\lambda$.
 $A_\lambda^c$: Clausulas que tienen a $\lambda^c$.
 $B_\lambda$: Las demás, es decir no tienen ni $\lambda$ ni $\lambda^c$.
+
+Tras esto podemos obtener el nuevo conjunto de clausuras de la isguiente manera:
+Unimos las clausuras de $B_\lambda$ con aquellas que son $A_\lambda^c$ - \lambda$.
