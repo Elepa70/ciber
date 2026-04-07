@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-04-07T14:06:53.599Z
+date: 2026-04-07T14:07:29.022Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -101,4 +101,4 @@ $B_\lambda$: Las demás, es decir no tienen ni $\lambda$ ni $\lambda^c$.
 Tras esto podemos obtener el nuevo conjunto de clausuras de la isguiente manera:
 Unimos las clausuras de $B_\lambda$ con aquellas que son $A_\lambda^c$ - \lambda$.
 
-Esto seguimos haciendo reduciendo el conjutno de clausuras hasta poder determinar si es o no satisfacible.
+Esto seguimos haciendo reduciendo el conjutno de clausuras hasta poder determinar si es o no satisfacible. (Llegar al conjunto vacío o no)
