@@ -2,7 +2,7 @@
 title: Clases en C++ (Ampliación)
 description: 
 published: true
-date: 2026-04-07T15:15:34.210Z
+date: 2026-04-07T15:19:27.740Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-24T15:51:05.523Z
@@ -21,4 +21,7 @@ Cuando usemos metodos gets, lo suyo es usar un metodo const, ya que a la hora de
 ## Clases friend
 Las clases friend o amigas, son aquellas que permite acceder a la parte privada de otra clase. 
 
-No suelen ser usadas, y de hecho no es recomendable usarlo, solo en caso muy especiales.
+No suelen ser usadas, y de hecho no es recomendable usarlo, solo en caso muy especiales. 
+
+## Destructores
+Al igual que los constructores, existen los destructores, que nos sirve para liberar los espacios de los constructores.
