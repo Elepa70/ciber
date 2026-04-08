@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-04-08T15:09:13.421Z
+date: 2026-04-08T15:24:42.825Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -110,3 +110,14 @@ Por ejemplo:
 $a\cup b$ para a ser $\cup ab$.
 
 Este tipo de notación es util en programación.
+
+## Metodo de resolución
+Dado dos clausulas $C_1$ y $C_2$, y donde un literal $\lambda$ puede aparecer en $C_1$ y $\lambda^c$ aparecer en $C_2$.
+Una resolvente de ambas equivalente es $(C_1 -\lambda) \cup (C_2 - \lambda^c)$.
+
+Podemos deducir entonces que $\{C_1,C_2\} |= R$, lo llamamos modus ponens.
+
+### Ejemplo
+$C_1 = a \cup b$.
+$C_2 = \not a$.
+Entonces $R=b$, donde $\{a\cup b,\not a\} |=b$.
