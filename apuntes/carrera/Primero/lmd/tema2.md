@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-04-08T15:07:06.636Z
+date: 2026-04-08T15:09:13.421Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -104,3 +104,9 @@ Unimos las clausuras de $B_\lambda$ con aquellas que son $A_\lambda^c - \lambda$
 Esto seguimos haciendo reduciendo el conjutno de clausuras hasta poder determinar si es o no satisfacible. (Llegar al conjunto vacío o no).
 
 Si expresamos las formulas como un árbol de expresiones, nos podemos dar cuenta facilmetne que es un conjunto de formulas unidas mediante distintas subformulas, esto nos sirve para guiarnos.
+## Notación Polaca
+La notación polaca, en esta notación se escribe el operador antes que el las fórmulas a las que vamos a aplicar.
+Por ejemplo:
+$a\cup b$ para a ser $\cup ab$.
+
+Este tipo de notación es util en programación.
