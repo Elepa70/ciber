@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-04-07T14:07:29.022Z
+date: 2026-04-08T15:07:06.636Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -99,6 +99,8 @@ $A_\lambda^c$: Clausulas que tienen a $\lambda^c$.
 $B_\lambda$: Las demás, es decir no tienen ni $\lambda$ ni $\lambda^c$.
 
 Tras esto podemos obtener el nuevo conjunto de clausuras de la isguiente manera:
-Unimos las clausuras de $B_\lambda$ con aquellas que son $A_\lambda^c$ - \lambda$.
+Unimos las clausuras de $B_\lambda$ con aquellas que son $A_\lambda^c - \lambda$.
 
-Esto seguimos haciendo reduciendo el conjutno de clausuras hasta poder determinar si es o no satisfacible. (Llegar al conjunto vacío o no)
+Esto seguimos haciendo reduciendo el conjutno de clausuras hasta poder determinar si es o no satisfacible. (Llegar al conjunto vacío o no).
+
+Si expresamos las formulas como un árbol de expresiones, nos podemos dar cuenta facilmetne que es un conjunto de formulas unidas mediante distintas subformulas, esto nos sirve para guiarnos.
