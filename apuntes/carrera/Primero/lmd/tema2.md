@@ -2,7 +2,7 @@
 title: Lógica proposocional
 description: 
 published: true
-date: 2026-04-08T15:24:42.825Z
+date: 2026-04-08T15:28:59.750Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-18T15:17:06.592Z
@@ -121,3 +121,4 @@ Podemos deducir entonces que $\{C_1,C_2\} |= R$, lo llamamos modus ponens.
 $C_1 = a \cup b$.
 $C_2 = \not a$.
 Entonces $R=b$, donde $\{a\cup b,\not a\} |=b$.
+
