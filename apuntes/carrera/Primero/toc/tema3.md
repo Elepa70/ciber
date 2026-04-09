@@ -2,7 +2,7 @@
 title: Estudio de Sistemas combinacionales
 description: 
 published: true
-date: 2026-04-09T16:01:00.946Z
+date: 2026-04-09T16:11:52.404Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-09T15:47:00.614Z
@@ -42,3 +42,18 @@ Cuando intentamos introducir este tipo de circuitos lógicos con los que tenemos
 
 
 Un ejemplo de estos componentes puede ser la ALU del tema anterior, donde las tabla de verdad pueden llegar a tener 16.384 filas, con 8 ecuaciones booleanas y 14 variables.
+
+Existe unos bloques funcionales que relaizan distintas tareas y pueden ser primitivas según su nivel de registro:
+- Componentes combinacionales: No tienen memoria y son lo que vamosa  ver en este tema.
+- Componentes secuenciales: Registro, contadores. Se dará en el tema siguiente.
+### Sumadores
+Consiste en un circuito lógico que nos permite llevarnos acarreos si hiciera falta cuando tenemos que una suma es 2.
+
+El circuito completo lo que hace es sumar 3 cosas:
+- Un primer bit A
+- Un segundo bit B
+- Un tercer bit Acarreo entrante
+
+Esto nos permite hacer usarlo tantas veces como lo necesitemos, sin ningún problema.
+
+Si intentaramos hacer este tipo de sumadores con mapas de karnaugh, tenemos el problema de que no contemplamos correctamente el XOR.
