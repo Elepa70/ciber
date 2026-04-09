@@ -2,7 +2,7 @@
 title: Estudio de Sistemas combinacionales
 description: 
 published: true
-date: 2026-04-09T16:11:52.404Z
+date: 2026-04-09T17:29:24.927Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-09T15:47:00.614Z
@@ -46,7 +46,7 @@ Un ejemplo de estos componentes puede ser la ALU del tema anterior, donde las ta
 Existe unos bloques funcionales que relaizan distintas tareas y pueden ser primitivas según su nivel de registro:
 - Componentes combinacionales: No tienen memoria y son lo que vamosa  ver en este tema.
 - Componentes secuenciales: Registro, contadores. Se dará en el tema siguiente.
-### Sumadores
+#### Sumadores
 Consiste en un circuito lógico que nos permite llevarnos acarreos si hiciera falta cuando tenemos que una suma es 2.
 
 El circuito completo lo que hace es sumar 3 cosas:
@@ -57,3 +57,34 @@ El circuito completo lo que hace es sumar 3 cosas:
 Esto nos permite hacer usarlo tantas veces como lo necesitemos, sin ningún problema.
 
 Si intentaramos hacer este tipo de sumadores con mapas de karnaugh, tenemos el problema de que no contemplamos correctamente el XOR.
+
+El problema de este sistema es que es bastante lento a la hora de encadenar distintos accareos.
+#### Resta
+Lo vamos a hacer mediante Complemento a 2, recordemos del tema 1. Esto lo haremos porque la facilidad que nos otorga es que podemos sumar valores negativos sin necesidad de hacerlos negativos.
+
+Para ello haremos:
+- Invertir los valores A y B
+- Activar el acarreo 1.
+
+Con esto podemos hacer las sumas de acarreo 
+#### Comparadores
+Los comparadores podemos hacerlo de varias maneras con:
+- 1 Salidas: Usadas para comparar directamente dos valores sabiendo que queremos obtener.
+- 3 Salidas: Donde podemos obtener si son iguales o mayores o menos uno respecto al otro.
+
+Sin embargo el problema real viene cuando queremos comprobar valores enteros
+
+### ALU
+Como ya sabemos, la ALU es la Unidad Aritmético Lógica, donde la serie mas conocida es la 74XXX. Por ejemplo las ALU 74181 puede llegar a hacer 16 operaciones lógicas, dependiendo de los bits de selección.
+
+Toda operación airmético-lógica se basan en la suma así que se podría diseñar una ALU modificando entradas al sumador.
+- Un ampliador aritmetico: Lógica de modificación utilizadas en las operaciones aritméticas.
+- Un ampliador lógico: Logica utilizada en las operaciones.
+### Codificador / Decodificador
+Un codificador, consiste en un circuito combinacional con varias entradas y salidas, dodne generalmente en un instante.
+Este tipo de codificadores pueden ser:
+- Con prioridad, donde puede haber mas de una entrada activada existiendo prioridad entre ellas.
+- Sin prioridad, donde solo admite una entrada activada.
+
+
+Por otro lado los decodificadores, lo que hace es según la salida que queramos activar, dejará el resto a 0. Es como si estuvieramos haciendo mapas de karnaugh pero alreves. Este tipo de componentes suele traer una salida llamada Enable, para habilitar el uso del componente.
