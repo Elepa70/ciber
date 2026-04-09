@@ -2,7 +2,7 @@
 title: Estudio de Sistemas combinacionales
 description: 
 published: true
-date: 2026-04-09T15:56:24.977Z
+date: 2026-04-09T15:58:23.910Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-09T15:47:00.614Z
@@ -33,3 +33,4 @@ Gracias a lo anterior podemos implementar un circuito lógico dependiendo de las
 - Expresión mínima del producto de sumas (OR/AND o NOR/NOR)
 
 ## Componentes combinacionales estándar
+Vamos a ver otro tipo de componentes que también sirve para circuitos pero con un nivel más complejos
