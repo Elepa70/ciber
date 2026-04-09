@@ -2,7 +2,7 @@
 title: Estudio de Sistemas combinacionales
 description: 
 published: true
-date: 2026-04-09T17:29:24.927Z
+date: 2026-04-09T17:30:30.325Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-09T15:47:00.614Z
