@@ -2,7 +2,7 @@
 title: Teoría de la probabilidad
 description: 
 published: true
-date: 2026-03-24T16:49:47.533Z
+date: 2026-04-13T09:04:41.843Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-17T18:08:55.097Z
@@ -110,7 +110,7 @@ Sean sucesos $A_{1},A_{2}...,A_{n}$ con $P[A_{i}] >0,\forall i = 1,2,...,n$ tale
 Con el teorema anterior, podemos obtener el teorema de bayes, que nos permite revisar la probabilidad de una hipótesis $A_i$.
 
 La formula es:
-$P[A_i|B]=\frac{P[B\cap A_1]}{P[B]}=\frac{P[B|A_i]*P[A_i]}{P[B]}$
+$P[A_i|B]=\frac{P[B\cap A_1]}{P[B]}=\frac{P[B|A_i]*P[A_i]}{P[B]}$.
 > Recordamos que en $P[C|A]$ es como decir la probabiliada de C basado en A.
 {.is-info}
 
