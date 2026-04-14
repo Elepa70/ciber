@@ -2,7 +2,7 @@
 title: Clases en C++ (Ampliación)
 description: 
 published: true
-date: 2026-04-13T17:23:42.103Z
+date: 2026-04-14T14:52:43.651Z
 tags: 
 editor: markdown
 dateCreated: 2026-03-24T15:51:05.523Z
@@ -37,3 +37,4 @@ De esta manera podemos invocar al destructor, que ojo, se hace de forma automati
 Hay que tener e cuenta que cuando tengamos un tengamos una clase donde exista un parametro que se pueda pasar por copia. Hay que tener en cuenta que cuando llamaos a esta clase para una función, nos damos cuenta que se quiere pasar por copia la algunos de los atributos sin embargo, cuando llega el momento del puntero, podemos observar que es por referencia y no por copia, lo cúal nos permite modificar ese parametro a nivel global de que sea pasado por referencia.
 
 El problema viene que cuando lo pasamos todo por Valor, cuando se termine la ejecución de esa función, esta "copia" se elimina, sin embargo como el puntero apunta al mismo lado, elimina esa sección de memoria, provocando numerosos problemas y errores.
+
