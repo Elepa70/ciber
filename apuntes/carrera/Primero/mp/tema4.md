@@ -2,7 +2,7 @@
 title: Modelos de distribuciones discretas y continuas
 description: 
 published: true
-date: 2026-04-14T16:35:14.267Z
+date: 2026-04-14T16:44:42.821Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-14T15:35:45.347Z
@@ -21,4 +21,9 @@ $P[X=x]=(nx)p^x (1-p)^{n-x}$, y su función de distribución:
 - La esperazna es: $E[X]=np$, y su varianza $Var[X]=np(1-p)=npq$.
 
 ## DIstribución de Poisson
+Mide la probabilidad de un suceso aleatorio a lo largo de un intervalo temporal o espacial. Esto puede ser por ejemplo "Nº de vehículos que llegan a una gasolinera en una hora".
+
+En este caso tenemos que la probabilidad es:
+$P[X=x]=\frac{\lambda^x e^-\lambda}{x!}.
+- La esperanza es $E[X]=\lambda$ y su varianza es $Var[X]=\lambda$.
 ## Distribución de la Normal
