@@ -2,7 +2,7 @@
 title: Lógica de Predicados
 description: 
 published: true
-date: 2026-04-15T15:03:06.025Z
+date: 2026-04-15T15:14:58.223Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-15T13:38:24.930Z
@@ -46,6 +46,12 @@ Es aquel lenguaje que requiere un alfabeto de primer orden, construido por palab
 La interpretaciones de la fórmulas de primer orden es más complicada. Dado un alfabeto de un lenguaje de primer orden, una estructura de este lenguaje tiene los siguientes elementos:
 - Conjunto vacío, o dominio y universo.
 - Aplicaciones $C\rightarrow D$.
+
+> Por resumir
+{.is-danger}
+
+### Valoración
+Son valores libres que odemos asignar donde queramos.
 ## Equivalencia lógica
 ## Consecuencia lógica
 ## Formas normales
