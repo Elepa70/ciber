@@ -2,7 +2,7 @@
 title: Lógica de Predicados
 description: 
 published: true
-date: 2026-04-15T15:15:24.620Z
+date: 2026-04-15T15:18:55.909Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-15T13:38:24.930Z
@@ -52,6 +52,9 @@ La interpretaciones de la fórmulas de primer orden es más complicada. Dado un 
 
 ### Valoración
 Son valores libres que odemos asignar donde queramos. Usualmente se denota con la letra $v$.
+
+### Interpretación
+La interpretación, consiste en evaluar las valoraciones y las estructuras, es decir darle contexto y valores a las variables.
 ## Equivalencia lógica
 ## Consecuencia lógica
 ## Formas normales
