@@ -2,7 +2,7 @@
 title: Lógica de Predicados
 description: 
 published: true
-date: 2026-04-15T15:14:58.223Z
+date: 2026-04-15T15:15:24.620Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-15T13:38:24.930Z
@@ -51,7 +51,7 @@ La interpretaciones de la fórmulas de primer orden es más complicada. Dado un 
 {.is-danger}
 
 ### Valoración
-Son valores libres que odemos asignar donde queramos.
+Son valores libres que odemos asignar donde queramos. Usualmente se denota con la letra $v$.
 ## Equivalencia lógica
 ## Consecuencia lógica
 ## Formas normales
