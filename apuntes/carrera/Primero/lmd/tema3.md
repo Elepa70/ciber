@@ -2,7 +2,7 @@
 title: Lógica de Predicados
 description: 
 published: true
-date: 2026-04-15T14:00:36.139Z
+date: 2026-04-15T15:03:06.025Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-15T13:38:24.930Z
@@ -40,7 +40,12 @@ Sea $(C,V,F,R)$ un alfabeto de un lenguaje de primer orden. Podemos definir el c
 Es aquel lenguaje que requiere un alfabeto de primer orden, construido por palabras con:
 - Fórmula atómica es una palabra de F.
 - Si $\alpha \text{ y } \beta$ están en F, y $x$ es una varibale, entonces su unión, disyunción... también lo estarán.
+
 ## Semántica del lenguaje de primer orden
+
+La interpretaciones de la fórmulas de primer orden es más complicada. Dado un alfabeto de un lenguaje de primer orden, una estructura de este lenguaje tiene los siguientes elementos:
+- Conjunto vacío, o dominio y universo.
+- Aplicaciones $C\rightarrow D$.
 ## Equivalencia lógica
 ## Consecuencia lógica
 ## Formas normales
