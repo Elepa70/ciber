@@ -2,7 +2,7 @@
 title: Estudio de Sistemas combinacionales
 description: 
 published: true
-date: 2026-04-16T16:47:11.691Z
+date: 2026-04-16T16:57:52.147Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-09T15:47:00.614Z
@@ -105,4 +105,9 @@ Estos dispositivos nos permite hacer funciones de computación, hay tres tipos:
 - FPGA: Son los más complejos, que nos permite incluso complementar un procesador entero.
 
 Algunas dispositivos lógicos porgramables pueden ser:
-- La memoria: Con una capacidad de $n$ entradas de dirección, $m$ salidas de datos y $mx2^n$ celdas de memoria (bits). Si estas memorias no se modifican se llaman memorias $ROM$, por otro lado si podemos acceder se llama $RAM$
+- La memoria: Con una capacidad de $n$ entradas de dirección, $m$ salidas de datos y $mx2^n$ celdas de memoria (bits). Si estas memorias no se modifican se llaman memorias $ROM$, por otro lado si podemos acceder se llama $RAM$.
+
+Dentro de las memorias $ROM$ tenemos:
+- $PROM$: No son borrables.
+- $EPROM$: Donde son borrables con luz ultravioleta.
+- $EEPROM$: Son borrables, programables y reporgramables electricamente.
