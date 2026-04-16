@@ -2,7 +2,7 @@
 title: Estudio de Sistemas combinacionales
 description: 
 published: true
-date: 2026-04-16T16:13:26.487Z
+date: 2026-04-16T16:46:28.803Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-09T15:47:00.614Z
@@ -95,3 +95,14 @@ Los multiplexor(MUX) consiste en un bloque combinacional con $p$ entradas de con
 Los multiplexores lo usamos para aplicar una función de complemementación (como los mapas de Karnaugh).
 
 Por otro lado los demultiplexores, son auqellos componentes que hacen lo contrario.
+
+### Dispositivos lógicos programables
+Estos dispoitivos, sustituyen aplicaciones a circuitos como SSI (Pequeños) o MSI (Medianos), ya que ocupan incluso menos, necesitan menos unidades y su coste es menor.
+
+Estos dispositivos nos permite hacer funciones de computación, hay tres tipos:
+- SPLD: Los más antiguos que nos permiten funciones sencillas.
+- CPLD: Nos habilita a complementar funciones más complejas.
+- FPGA: Son los más complejos, que nos permite incluso complementar un procesador entero.
+
+Algunas dispositivos lógicos porgramables pueden ser:
+- La memoria: Con una capacidad de $n$ entradas de dirección, $m$ salidas de datos y $mx2^n$ celdas de memoria (bits). Si estas memorias no se modifican se llaman memorias $ROM$.
