@@ -2,7 +2,7 @@
 title: Estudio de Sistemas combinacionales
 description: 
 published: true
-date: 2026-04-09T17:30:30.325Z
+date: 2026-04-16T16:01:06.978Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-09T15:47:00.614Z
@@ -88,3 +88,8 @@ Este tipo de codificadores pueden ser:
 
 
 Por otro lado los decodificadores, lo que hace es según la salida que queramos activar, dejará el resto a 0. Es como si estuvieramos haciendo mapas de karnaugh pero alreves. Este tipo de componentes suele traer una salida llamada Enable, para habilitar el uso del componente.
+
+### Multiplexores/Demultiplexores
+Los multiplexor(MUX) consiste en un bloque combinacional con $p$ entradas de control, $2^p$ entrada de datos y solo una salida. Lo que hace realmente es de toda las entradas que da, elegir una unica salida. Hace como un control.
+
+Los multiplexores lo usamos para aplicar una función de complemementación (como los mapas de Karnaugh).
