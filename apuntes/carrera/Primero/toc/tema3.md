@@ -2,7 +2,7 @@
 title: Estudio de Sistemas combinacionales
 description: 
 published: true
-date: 2026-04-16T16:01:06.978Z
+date: 2026-04-16T16:13:26.487Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-09T15:47:00.614Z
@@ -93,3 +93,5 @@ Por otro lado los decodificadores, lo que hace es según la salida que queramos 
 Los multiplexor(MUX) consiste en un bloque combinacional con $p$ entradas de control, $2^p$ entrada de datos y solo una salida. Lo que hace realmente es de toda las entradas que da, elegir una unica salida. Hace como un control.
 
 Los multiplexores lo usamos para aplicar una función de complemementación (como los mapas de Karnaugh).
+
+Por otro lado los demultiplexores, son auqellos componentes que hacen lo contrario.
