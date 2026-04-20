@@ -2,7 +2,7 @@
 title: Metodología de la Programación
 description: 
 published: true
-date: 2026-03-24T16:33:19.477Z
+date: 2026-04-20T16:38:37.976Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T20:19:23.093Z
@@ -15,5 +15,6 @@ En está página web podrá encontrar los distintos temarios que corresponden a 
 - [Punteros y memoria dinámica](tema1)
 - [Funciones (Ampliación)](tema2)
 - [Clases en C++ (Ampliación)](tema3)
+- [Sobrecarga de operadores](tema4)
 ## Docente
 El temario fue dado por Francisco Javier Rodríguez Díaz
