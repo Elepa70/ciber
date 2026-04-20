@@ -2,7 +2,7 @@
 title: Metodología de la Programación
 description: 
 published: true
-date: 2026-04-20T16:57:15.099Z
+date: 2026-04-20T16:57:39.851Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T16:39:39.324Z
@@ -47,4 +47,4 @@ Polinomio Polinomio::operator+(const Polinomio &p) const;
 
 p+q // Es igual que p.operator+(q)
 ```
-
+La única limitación que hay, es que no es posible sumar un float antes que el polinomio.
