@@ -2,7 +2,7 @@
 title: Estadística
 description: 
 published: true
-date: 2026-04-07T15:37:20.422Z
+date: 2026-04-20T15:42:24.349Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:52:37.729Z
@@ -15,6 +15,6 @@ En está página web podrá encontrar los distintos temarios que corresponden a 
 - [Estadística descriptiva bidimensional](tema2)
 - [Teoría de la probabilidad](tema3)
 - [Conceptos básicos de variables aleatorias](tema4)
-
+- [TITULO](tema5)
 ## Docente
 El temario fue dado por Antonio Jesús López Montoya
