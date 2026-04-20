@@ -2,7 +2,7 @@
 title: Metodología de la Programación
 description: 
 published: true
-date: 2026-04-20T16:57:39.851Z
+date: 2026-04-20T17:01:49.459Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T16:39:39.324Z
@@ -39,6 +39,8 @@ Polinomio operador+(const Polinomio &p1, const Polinomio &p2);
 //Para llamar a la función
 v =p+q; // Es lo mismo que poner v= operator+(p,q);
 ```
+
+En caso de que el primer operador sea de diferente objeto a la clase, es necesario que la declaremos como función externa.
 ### Sobrecarga como función miembro
 En este caso, añadimos un método a la clase que recibirá un objeto de la case y devolverá el resultado de la operación.
 
@@ -48,3 +50,5 @@ Polinomio Polinomio::operator+(const Polinomio &p) const;
 p+q // Es igual que p.operator+(q)
 ```
 La única limitación que hay, es que no es posible sumar un float antes que el polinomio.
+
+Estas sobrecarga necesitan tener acceos al código fuente de la clase y el primer operador es del tipo de la clase, si no, no se puede.
