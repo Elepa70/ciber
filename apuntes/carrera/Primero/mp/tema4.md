@@ -2,7 +2,7 @@
 title: Metodología de la Programación
 description: 
 published: true
-date: 2026-04-20T17:01:49.459Z
+date: 2026-04-20T17:07:26.346Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T16:39:39.324Z
@@ -52,3 +52,15 @@ p+q // Es igual que p.operator+(q)
 La única limitación que hay, es que no es posible sumar un float antes que el polinomio.
 
 Estas sobrecarga necesitan tener acceos al código fuente de la clase y el primer operador es del tipo de la clase, si no, no se puede.
+
+## Operador de asignación
+Como vimos con el operador copia, debemos hacer lo mismo con el operador de asignación, ya que es posible que resulte a una doble eliminación de datos.
+
+### Primera aproximación
+Usando:
+```C++
+void operator=(const Polinomio &pol); //p =q, entonces p.operator=(q)
+```
+En este caso estamos copiando un polinomio en uno que ya existe, no creandolo.
+
+Por esto es necesario que cuando lo declaremos, eliminemos auqellos valores que tenia.
