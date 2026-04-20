@@ -2,7 +2,7 @@
 title: Modelos de distribuciones discretas y continuas
 description: 
 published: true
-date: 2026-04-20T16:00:26.867Z
+date: 2026-04-20T16:02:15.980Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T15:45:04.104Z
@@ -13,7 +13,8 @@ dateCreated: 2026-04-20T15:45:04.104Z
 
 Este tipo de distribución analiza gran parte de fenomenos aleatorios en la vida real, donde se mide normalmente con la probabilidad de éxito y la probabilidad de fracaso. (Siendo exito $P[éxito]=p$ y la de fracaso $P[fracas]=1-p$. Aquí suele entrar experminetos que se realizan n veces cada una siendo independiente a la anterior.
 
-
+Sea $X \leadsto B(n,p)$ tenemos que se define como:
+$P[X=x] = \frac{n}{m}p^x (1-p)^{n-x}= \frac{n!}{x!(n-x)!}p^x(1-p)^{n-x}$.
 ## Distribución de Poisson
 ## Distribución Normal
 La distribución Normal es la más importante y la más usada. 
