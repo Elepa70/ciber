@@ -2,7 +2,7 @@
 title: Metodología de la Programación
 description: 
 published: true
-date: 2026-04-20T16:49:25.029Z
+date: 2026-04-20T16:57:15.099Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T16:39:39.324Z
@@ -37,5 +37,14 @@ Por ejemplo
 Polinomio operador+(const Polinomio &p1, const Polinomio &p2);
 
 //Para llamar a la función
-p+q;
+v =p+q; // Es lo mismo que poner v= operator+(p,q);
 ```
+### Sobrecarga como función miembro
+En este caso, añadimos un método a la clase que recibirá un objeto de la case y devolverá el resultado de la operación.
+
+```C++
+Polinomio Polinomio::operator+(const Polinomio &p) const;
+
+p+q // Es igual que p.operator+(q)
+```
+
