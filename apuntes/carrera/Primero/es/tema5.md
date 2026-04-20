@@ -2,7 +2,7 @@
 title: Modelos de distribuciones discretas y continuas
 description: 
 published: true
-date: 2026-04-20T16:06:33.017Z
+date: 2026-04-20T16:13:08.819Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T15:45:04.104Z
@@ -36,5 +36,8 @@ Una de los problemas que trae la normal, es que trae infinitos números de distr
 
 La tipificación normalmente la hacemos mediante la siguiente expresión:
 $Z=\frac{X-u}{\sigma}\leadsto N(0,1)$.
+
+Por lo tanto, entonces:
+$Fx(x)=P[X\leq x]=P[\frac{X-u}{\sigma} \leq \frac{x-u}{\sigma}]=P[Z\leq \frac{x-u}{\sigma}]=Fz(\frac{x-u}{\sigma})$.
 ## Aproximaciones entre las distribuciones
 ## Distribuciones asociadas a la ley Normal
