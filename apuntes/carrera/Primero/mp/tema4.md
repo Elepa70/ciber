@@ -2,7 +2,7 @@
 title: Metodología de la Programación
 description: 
 published: true
-date: 2026-04-20T17:07:26.346Z
+date: 2026-04-20T17:17:02.513Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T16:39:39.324Z
@@ -64,3 +64,22 @@ void operator=(const Polinomio &pol); //p =q, entonces p.operator=(q)
 En este caso estamos copiando un polinomio en uno que ya existe, no creandolo.
 
 Por esto es necesario que cuando lo declaremos, eliminemos auqellos valores que tenia.
+
+### Segunda aproximación
+Con esto, podemos hacer que podemos llegar a hacer una serie de iguales seguidos, para poder concatenar varias asignaciones.
+```
+Polinomio& operador=(const Polinomio &pol);
+```
+
+Lo malo de está función es que si hacemos un $p=p$, perdemos la información y accedemeos a inforamción "no disponible", proovcando varios errores.
+
+### Última aproximación
+En este tipo de paroximación, será igual que el anteiror, sin emabrgo comparando primero que esté de forma correcta.
+```
+CLASE& CLASE::operator=(const CLASE &p){
+	if (&p!=this){
+  }
+  return *this;
+}
+```
+Esta es la estructura general.
