@@ -2,7 +2,7 @@
 title: Modelos de distribuciones discretas y continuas
 description: 
 published: true
-date: 2026-04-20T16:02:15.980Z
+date: 2026-04-20T16:04:37.468Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T15:45:04.104Z
@@ -30,5 +30,7 @@ La Varianza es: $Var[X]=\sigma^2$.
 La gráfica de la función de densidad de la Normal, tiene una forma peculiar acampanada (por eso se le llama campana de Gauss), que varía según los valores de sigma o de u.
 
 Una curiosidad de esta distribución es que la Media, la Moda y la Mediana está en el mismo punto, es decir en $u$.
+
+Una de los problemas que trae la normal, es que trae infinitos números de distribuciones normales, por ello se ha hecho la Normal estándar o tipificada, para poder 
 ## Aproximaciones entre las distribuciones
 ## Distribuciones asociadas a la ley Normal
