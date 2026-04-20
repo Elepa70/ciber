@@ -2,7 +2,7 @@
 title: Modelos de distribuciones discretas y continuas
 description: 
 published: true
-date: 2026-04-20T16:14:29.248Z
+date: 2026-04-20T16:37:35.666Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T15:45:04.104Z
