@@ -2,7 +2,7 @@
 title: Modelos de distribuciones discretas y continuas
 description: 
 published: true
-date: 2026-04-20T15:52:32.317Z
+date: 2026-04-20T15:55:04.599Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T15:45:04.104Z
@@ -21,5 +21,7 @@ $f(x)=\frac{1}{\sigma \sqrt{2 \pi}}e^{-\frac{(x-u)^2}{2\sigma ^2}}$.
 
 La esperanza es: $E[X]=u$.
 La Varianza es: $Var[X]=\sigma^2$.
+
+La gráfica de la función de densidad de la Normal, tiene una forma peculiar acampanada (por eso se le llama campana de Gauss), que varía según los valores de sigma o de u.
 ## Aproximaciones entre las distribuciones
 ## Distribuciones asociadas a la ley Normal
