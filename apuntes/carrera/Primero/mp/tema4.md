@@ -2,7 +2,7 @@
 title: Metodología de la Programación
 description: 
 published: true
-date: 2026-04-20T16:48:13.407Z
+date: 2026-04-20T16:49:25.029Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T16:39:39.324Z
@@ -35,4 +35,7 @@ Consiste en añadir una función externa a la clase, que recibirá dos objetos d
 Por ejemplo
 ```C++
 Polinomio operador+(const Polinomio &p1, const Polinomio &p2);
+
+//Para llamar a la función
+p+q;
 ```
