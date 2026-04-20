@@ -2,7 +2,7 @@
 title: Modelos de distribuciones discretas y continuas
 description: 
 published: true
-date: 2026-04-20T16:04:37.468Z
+date: 2026-04-20T16:05:49.223Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T15:45:04.104Z
@@ -16,6 +16,7 @@ Este tipo de distribución analiza gran parte de fenomenos aleatorios en la vida
 Sea $X \leadsto B(n,p)$ tenemos que se define como:
 $P[X=x] = \frac{n}{m}p^x (1-p)^{n-x}= \frac{n!}{x!(n-x)!}p^x(1-p)^{n-x}$.
 ## Distribución de Poisson
+La distribución de Poisson, es similar a la binomial, sin embargo la diferencia viene dada enq ue imponemos un límite de tiempo.
 ## Distribución Normal
 La distribución Normal es la más importante y la más usada. 
 
