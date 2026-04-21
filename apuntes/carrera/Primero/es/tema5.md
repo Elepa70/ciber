@@ -2,21 +2,30 @@
 title: Modelos de distribuciones discretas y continuas
 description: 
 published: true
-date: 2026-04-20T16:38:06.778Z
+date: 2026-04-21T10:04:00.988Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T15:45:04.104Z
 ---
 
 # Modelos de distribuciones discretas y continuas
+## Modelos de distribuciones de probabilidad
+
+Estos modelos son encargados de representar el comportamiento de fenómenos diversos. En este apartado 
 ## Distribución Binomial
+Este modelo se usa bastante en la vida real, ya que presenta dos situaciones "éxito" si ocurre el suceso, y "fracaso" si no ocurre.
 
-Este tipo de distribución analiza gran parte de fenomenos aleatorios en la vida real, donde se mide normalmente con la probabilidad de éxito y la probabilidad de fracaso. (Siendo exito $P[éxito]=p$ y la de fracaso $P[fracas]=1-p$. Aquí suele entrar experminetos que se realizan n veces cada una siendo independiente a la anterior.
+Cuando usamos esta distribución, debemos tener en cuenta que la porbabilidad de exito no puede alterarse ni modificarse. $X ->B(n,o)$, se define la función masa de probabilidad de una esta manera:
+$P[X=x]=(nx)p^x (1-p)^{n-x}$, y su función de distribución:
+- $F(x)=P[X\leq x]= \ 0 si x<0 || \sum(ni)p^i(1-p)^{n-i} si 0\leq x< n || 1 si x\geq n$.
+- La esperazna es: $E[X]=np$, y su varianza $Var[X]=np(1-p)=npq$.
 
-Sea $X \leadsto B(n,p)$ tenemos que se define como:
-$P[X=x] = \frac{n}{m}p^x (1-p)^{n-x}= \frac{n!}{x!(n-x)!}p^x(1-p)^{n-x}$.
-## Distribución de Poisson
-La distribución de Poisson, es similar a la binomial, sin embargo la diferencia viene dada enq ue imponemos un límite de tiempo.
+## DIstribución de Poisson
+Mide la probabilidad de un suceso aleatorio a lo largo de un intervalo temporal o espacial. Esto puede ser por ejemplo "Nº de vehículos que llegan a una gasolinera en una hora".
+
+En este caso tenemos que la probabilidad es:
+$P[X=x]=\frac{\lambda^x e^-\lambda}{x!}$.
+- La esperanza es $E[X]=\lambda$ y su varianza es $Var[X]=\lambda$.
 ## Distribución Normal
 La distribución Normal es la más importante y la más usada. 
 
