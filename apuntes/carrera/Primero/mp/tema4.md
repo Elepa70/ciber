@@ -2,7 +2,7 @@
 title: Sobrecarga de operadores
 description: 
 published: true
-date: 2026-04-21T15:00:48.365Z
+date: 2026-04-21T15:13:33.725Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T16:39:39.324Z
@@ -93,3 +93,9 @@ ostream& operator<<(){
 } 
 ```
 Similar podemos hacer con el cin ">>"
+
+## Operador de indexación ([])
+Este operador lo solemos usar para los arrays, como guia de posición en una array. Podemos usarla para poder cambiar la sintaxis de:
+- x = p.obtenerCoeficiente(i);
+a 
+- x = p[i];
