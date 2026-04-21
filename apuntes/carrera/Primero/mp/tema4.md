@@ -2,7 +2,7 @@
 title: Sobrecarga de operadores
 description: 
 published: true
-date: 2026-04-21T10:05:46.078Z
+date: 2026-04-21T14:47:36.418Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T16:39:39.324Z
@@ -83,3 +83,8 @@ CLASE& CLASE::operator=(const CLASE &p){
 }
 ```
 Esta es la estructura general.
+
+## Operador <<
+Este tipo de operador, es el de salida de flujo, que usamos normalmente para la salida de información en la terminal.
+
+
