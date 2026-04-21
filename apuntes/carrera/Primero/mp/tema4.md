@@ -2,7 +2,7 @@
 title: Sobrecarga de operadores
 description: 
 published: true
-date: 2026-04-21T14:47:36.418Z
+date: 2026-04-21T15:00:48.365Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T16:39:39.324Z
@@ -87,4 +87,9 @@ Esta es la estructura general.
 ## Operador <<
 Este tipo de operador, es el de salida de flujo, que usamos normalmente para la salida de información en la terminal.
 
-
+Debido a que no podemos interectuar con la clase ostream, para poder sobrecargar este operador, usaremos una función externa.
+```C++
+ostream& operator<<(){
+} 
+```
+Similar podemos hacer con el cin ">>"
