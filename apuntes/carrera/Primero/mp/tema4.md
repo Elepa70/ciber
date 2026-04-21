@@ -1,14 +1,14 @@
 ---
-title: Metodología de la Programación
+title: Sobrecarga de operadores
 description: 
 published: true
-date: 2026-04-20T17:17:02.513Z
+date: 2026-04-21T10:05:46.078Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T16:39:39.324Z
 ---
 
-# Metodología de la Programación
+# Sobrecarga de operadores
 En C++ se permite el uso de conjuntos de operadores con los tipos predefinidos que hacen que el código sea leible, esto nos ayuda sobretodo cuando tenemos tantas operaciones que pueden ser más engorrosa.
 
 Cuando tenemos más de un campo en una clase, debemos aprender a sobrecargar los operadores para poder decidir le orden de estas clases.
