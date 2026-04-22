@@ -2,7 +2,7 @@
 title: Lógica de Predicados
 description: 
 published: true
-date: 2026-04-22T14:10:51.842Z
+date: 2026-04-22T14:18:15.497Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-15T13:38:24.930Z
@@ -71,6 +71,6 @@ Si dos valoraciones que coinciden en variables libres dan lo mismo, entonces es 
 Algunas equivalencia que verems será.
 - $\not \forall x \alpha = \exists x \not \alpha$
 - $\not \exists x \alpha = \forall x \not \alpha$
-
+- $\forall x \forall x \alpha = \forall x \alpha$.
 ## Consecuencia lógica
 ## Formas normales
