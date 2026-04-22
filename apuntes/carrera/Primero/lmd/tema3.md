@@ -2,7 +2,7 @@
 title: Lógica de Predicados
 description: 
 published: true
-date: 2026-04-22T13:40:50.650Z
+date: 2026-04-22T14:10:51.842Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-15T13:38:24.930Z
@@ -57,6 +57,20 @@ Son valores libres que odemos asignar donde queramos. Usualmente se denota con l
 La interpretación, consiste en evaluar las valoraciones y las estructuras, es decir darle contexto y valores a las variables.
 
 las interpretaciones son $1$ o $0$, si encontramos formas que puedan contradecir la estructura.
+
+### Lema de Coincidencia
+Si dos valoraciones que coinciden en variables libres dan lo mismo, entonces es lo mismo.
+
+### Clasificación de las formulas
+- Válidas, para toda valoración es verdad.
+- Satisfacible, para algunas valoraciónes es verdad
+- Refutable, para algunas valoraciónes es falsa
+- No válida, para algunas interpretacion es falsa.
+
 ## Equivalencia lógica
+Algunas equivalencia que verems será.
+- $\not \forall x \alpha = \exists x \not \alpha$
+- $\not \exists x \alpha = \forall x \not \alpha$
+
 ## Consecuencia lógica
 ## Formas normales
