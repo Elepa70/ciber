@@ -2,7 +2,7 @@
 title: Lógica de Predicados
 description: 
 published: true
-date: 2026-04-22T15:06:56.531Z
+date: 2026-04-22T15:20:22.000Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-15T13:38:24.930Z
@@ -84,3 +84,5 @@ El metodo que vamos a usar, el algoritmo mejor dicho es:
 2. Mover las negaciones hacia la formula y eliminar dobles negaciones.
 3. Agrupar cuantificadores.
 4. Insertar formulas o aplicar las reglas.
+
+La forma normal de Skolem, son auqellas formulas donde no hay cuantificadores.
