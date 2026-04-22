@@ -2,7 +2,7 @@
 title: Lógica de Predicados
 description: 
 published: true
-date: 2026-04-22T15:03:38.769Z
+date: 2026-04-22T15:06:56.531Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-15T13:38:24.930Z
@@ -78,3 +78,9 @@ Algunas equivalencia que verems será.
 
 
 Realmente el temario es similar al tema anterior, pero esta vez jugamos con $\forall$ y los $\exists$.
+
+El metodo que vamos a usar, el algoritmo mejor dicho es:
+1. Eliminamos conectividades $\rightarrow$, $\leftrightarrow$.
+2. Mover las negaciones hacia la formula y eliminar dobles negaciones.
+3. Agrupar cuantificadores.
+4. Insertar formulas o aplicar las reglas.
