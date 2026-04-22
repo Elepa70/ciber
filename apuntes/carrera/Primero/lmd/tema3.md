@@ -2,7 +2,7 @@
 title: Lógica de Predicados
 description: 
 published: true
-date: 2026-04-15T15:18:55.909Z
+date: 2026-04-22T13:40:50.650Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-15T13:38:24.930Z
@@ -55,6 +55,8 @@ Son valores libres que odemos asignar donde queramos. Usualmente se denota con l
 
 ### Interpretación
 La interpretación, consiste en evaluar las valoraciones y las estructuras, es decir darle contexto y valores a las variables.
+
+las interpretaciones son $1$ o $0$, si encontramos formas que puedan contradecir la estructura.
 ## Equivalencia lógica
 ## Consecuencia lógica
 ## Formas normales
