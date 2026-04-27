@@ -2,7 +2,7 @@
 title: Sobrecarga de operadores
 description: 
 published: true
-date: 2026-04-21T15:13:33.725Z
+date: 2026-04-27T16:43:02.278Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T16:39:39.324Z
@@ -99,3 +99,5 @@ Este operador lo solemos usar para los arrays, como guia de posición en una arr
 - x = p.obtenerCoeficiente(i);
 a 
 - x = p[i];
+
+## Operadores compuestos
