@@ -2,7 +2,7 @@
 title: Sobrecarga de operadores
 description: 
 published: true
-date: 2026-04-27T16:46:52.007Z
+date: 2026-04-27T16:52:50.626Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T16:39:39.324Z
@@ -108,3 +108,5 @@ Polinomio& Polinomio::operator+=(const Polinomio &pol){
 	(*this) = (*this) + pol;
   return *this;
 ```
+## Opreadores realcionales
+Los operadores relacionales son operadores booleanos o lógicos que devuelven true or false si se cumple o no.
