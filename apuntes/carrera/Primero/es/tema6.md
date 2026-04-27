@@ -2,7 +2,7 @@
 title: Interferencia estadística
 description: 
 published: true
-date: 2026-04-27T15:42:31.781Z
+date: 2026-04-27T15:43:24.624Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-27T15:37:10.907Z
@@ -16,6 +16,8 @@ Es por ello que tomamos la Muestra, que es un subconjunto de individuos de la po
 Sobre esta muestra:
 - La describimos sus datos.
 - Extraemos conclusiones sobre la población.
+
+
 ## Muestreo aleatorio simple
 ## Estimación mediante interferencia estadística
 ## Distribuciones en el muestreo de poblaciones Normales
