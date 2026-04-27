@@ -2,7 +2,7 @@
 title: Sobrecarga de operadores
 description: 
 published: true
-date: 2026-04-27T16:43:02.278Z
+date: 2026-04-27T16:45:05.318Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T16:39:39.324Z
@@ -55,7 +55,7 @@ Estas sobrecarga necesitan tener acceos al código fuente de la clase y el prime
 
 ## Operador de asignación
 Como vimos con el operador copia, debemos hacer lo mismo con el operador de asignación, ya que es posible que resulte a una doble eliminación de datos.
-
+La diferencia es que la asignación primero libera y después copia, mientras que el copia unicamente crea y copia después.
 ### Primera aproximación
 Usando:
 ```C++
