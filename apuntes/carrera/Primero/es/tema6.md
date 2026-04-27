@@ -2,7 +2,7 @@
 title: Interferencia estadística
 description: 
 published: true
-date: 2026-04-27T16:15:58.176Z
+date: 2026-04-27T16:24:27.899Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-27T15:37:10.907Z
@@ -37,7 +37,17 @@ Son parametros que no requieren que sean conocidos.
 - Proporción muestral: $p = \frac{x}{n}$, siendo $x$ el número de éxistos y $n$ el tamaño de la muestra.
 
 ## Distribuciones en el muestreo de poblaciones Normales
+A menos que la distribución del muestreo sea similar a la Normal, no podemos hacer una distrubicón de forma sencilla. Sin embargo gracias al Teorema Central del Dímite, nos permite el transformarlo o aproximarloa  una normal.
 
+Ahora vamos a resumir las siguientes distribuciones estadísitcas muestrales:
+- Media muestral
+- Cuasivarianza muestral.
+- Proporción muestral.
+- Diferencia de medias muestrales.
+- Cociente de varianza muestrales.
+- Diferencia de proporciones muestrales.
+
+Todas estas formulas se van a proporcionar en el examen.
 ## Intervalos de confianza mediante interferencia paramétrica
 ### Intervalos de confianza para una distribución Normal
 ### Intervalos de confianza para una distribución Normal
