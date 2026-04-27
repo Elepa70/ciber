@@ -2,7 +2,7 @@
 title: Sobrecarga de operadores
 description: 
 published: true
-date: 2026-04-27T16:52:50.626Z
+date: 2026-04-27T17:03:09.908Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T16:39:39.324Z
@@ -110,3 +110,11 @@ Polinomio& Polinomio::operator+=(const Polinomio &pol){
 ```
 ## Opreadores realcionales
 Los operadores relacionales son operadores booleanos o lógicos que devuelven true or false si se cumple o no.
+
+## Operadores de incremento
+> Importante tener claro la diferencia entre preincremento (++pol) y el postincremento (pol++)
+{.is-warning}
+
+Para poder diferenciar si estamos entre preincremento o pos incremento, lo que hace C++ es:
+- Preincremento: obj.operator++()
+- Postincremento: obj.operator++(0).
