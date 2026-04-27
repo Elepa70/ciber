@@ -2,7 +2,7 @@
 title: Interferencia estadística
 description: 
 published: true
-date: 2026-04-27T16:04:10.280Z
+date: 2026-04-27T16:04:19.247Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-27T15:37:10.907Z
@@ -33,7 +33,7 @@ $Población \rightarrow \text{n individuos} \rightarrow muestra \rightarrow obse
 ### Estadístico muestral
 Son parametros que no requieren que sean conocidos.
 - Media muestral: $x=\frac{1}{n}\sum x_i$. Ojo, $û=x$, ya que û es la medía poblacional.
-- Cuasivarianza muestral: $s²_{n-1}=\frac{\sum x^2_i-nx^2}{n-1}$
+- Cuasivarianza muestral: $s²_{n-1}=\frac{\sum x^2_i-nx^2}{n-1}$, similar a $\sigma$.
 ## Estimación mediante interferencia estadística
 ## Distribuciones en el muestreo de poblaciones Normales
 ## Intervalos de confianza mediante interferencia paramétrica
