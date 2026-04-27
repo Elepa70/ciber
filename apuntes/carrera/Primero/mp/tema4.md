@@ -2,7 +2,7 @@
 title: Sobrecarga de operadores
 description: 
 published: true
-date: 2026-04-27T17:03:09.908Z
+date: 2026-04-27T17:13:47.740Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T16:39:39.324Z
@@ -118,3 +118,6 @@ Los operadores relacionales son operadores booleanos o lógicos que devuelven tr
 Para poder diferenciar si estamos entre preincremento o pos incremento, lo que hace C++ es:
 - Preincremento: obj.operator++()
 - Postincremento: obj.operator++(0).
+
+## Operadores de llamada a función
+Se hace con "operador()".
