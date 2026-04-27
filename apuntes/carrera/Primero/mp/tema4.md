@@ -2,7 +2,7 @@
 title: Sobrecarga de operadores
 description: 
 published: true
-date: 2026-04-27T16:45:05.318Z
+date: 2026-04-27T16:46:52.007Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T16:39:39.324Z
@@ -101,3 +101,10 @@ a
 - x = p[i];
 
 ## Operadores compuestos
+Recordamos que la sobrecarga de los operadores '+' y '=', no provoca que se sobrecargue el '+='.
+Sin embargo podemos hacerlo mediante:
+```C++
+Polinomio& Polinomio::operator+=(const Polinomio &pol){
+	(*this) = (*this) + pol;
+  return *this;
+```
