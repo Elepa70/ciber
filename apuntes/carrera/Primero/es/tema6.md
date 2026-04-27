@@ -2,7 +2,7 @@
 title: Interferencia estadística
 description: 
 published: true
-date: 2026-04-27T16:24:27.899Z
+date: 2026-04-27T16:34:25.522Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-27T15:37:10.907Z
