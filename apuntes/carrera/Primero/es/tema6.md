@@ -2,7 +2,7 @@
 title: Interferencia estadística
 description: 
 published: true
-date: 2026-04-27T15:43:24.624Z
+date: 2026-04-27T15:44:43.388Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-27T15:37:10.907Z
@@ -17,7 +17,10 @@ Sobre esta muestra:
 - La describimos sus datos.
 - Extraemos conclusiones sobre la población.
 
-
+Con la inferencia estadística, lo que hacemos es estimar los valores que queremos sacar sobre esta muestra, mediante unas herramientas como:
+- Estimación puntual: Estimación de un parámetro mediante un valor.
+- Intervalos de confianza: Intervalo donde se encuentra el parámetro con cierta probabilidad.
+- Constrastes de hipótesis: Verificar si una afirmación es plausible sobre la población.
 ## Muestreo aleatorio simple
 ## Estimación mediante interferencia estadística
 ## Distribuciones en el muestreo de poblaciones Normales
