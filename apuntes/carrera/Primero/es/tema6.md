@@ -2,7 +2,7 @@
 title: Interferencia estadística
 description: 
 published: true
-date: 2026-04-27T16:01:32.691Z
+date: 2026-04-27T16:04:10.280Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-27T15:37:10.907Z
@@ -29,6 +29,11 @@ Una muestra aleatoria simple $(m.a.s.)$, debe cumplir:
 
 El plan es:
 $Población \rightarrow \text{n individuos} \rightarrow muestra \rightarrow observaciones$.
+
+### Estadístico muestral
+Son parametros que no requieren que sean conocidos.
+- Media muestral: $x=\frac{1}{n}\sum x_i$. Ojo, $û=x$, ya que û es la medía poblacional.
+- Cuasivarianza muestral: $s²_{n-1}=\frac{\sum x^2_i-nx^2}{n-1}$
 ## Estimación mediante interferencia estadística
 ## Distribuciones en el muestreo de poblaciones Normales
 ## Intervalos de confianza mediante interferencia paramétrica
