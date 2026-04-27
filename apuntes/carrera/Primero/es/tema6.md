@@ -2,7 +2,7 @@
 title: Interferencia estadística
 description: 
 published: true
-date: 2026-04-27T15:44:43.388Z
+date: 2026-04-27T15:52:03.494Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-27T15:37:10.907Z
@@ -22,6 +22,7 @@ Con la inferencia estadística, lo que hacemos es estimar los valores que querem
 - Intervalos de confianza: Intervalo donde se encuentra el parámetro con cierta probabilidad.
 - Constrastes de hipótesis: Verificar si una afirmación es plausible sobre la población.
 ## Muestreo aleatorio simple
+Una muestra aleatoria simple $(m.a.s.)$
 ## Estimación mediante interferencia estadística
 ## Distribuciones en el muestreo de poblaciones Normales
 ## Intervalos de confianza mediante interferencia paramétrica
