@@ -2,7 +2,7 @@
 title: Interferencia estadística
 description: 
 published: true
-date: 2026-04-27T15:59:26.243Z
+date: 2026-04-27T16:01:32.691Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-27T15:37:10.907Z
@@ -26,6 +26,9 @@ Una muestra aleatoria simple $(m.a.s.)$, debe cumplir:
 - Todos los individuos tienen la misma probabilidad de ser seleccionados.
 - La selecciones son independientes.
 - Todas las muestras de tamaño $n$ son equiprobables.
+
+El plan es:
+$Población \rightarrow \text{n individuos} \rightarrow muestra \rightarrow observaciones$.
 ## Estimación mediante interferencia estadística
 ## Distribuciones en el muestreo de poblaciones Normales
 ## Intervalos de confianza mediante interferencia paramétrica
