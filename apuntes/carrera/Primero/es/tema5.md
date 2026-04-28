@@ -2,7 +2,7 @@
 title: Modelos de distribuciones discretas y continuas
 description: 
 published: true
-date: 2026-04-21T10:04:00.988Z
+date: 2026-04-28T15:47:05.782Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T15:45:04.104Z
@@ -51,4 +51,5 @@ $Fx(x)=P[X\leq x]=P[\frac{X-u}{\sigma} \leq \frac{x-u}{\sigma}]=P[Z\leq \frac{x-
 
 
 ## Aproximaciones entre las distribuciones
+
 ## Distribuciones asociadas a la ley Normal
