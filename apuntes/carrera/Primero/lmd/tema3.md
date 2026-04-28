@@ -2,7 +2,7 @@
 title: Lógica de Predicados
 description: 
 published: true
-date: 2026-04-28T14:24:01.680Z
+date: 2026-04-28T15:34:40.892Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-15T13:38:24.930Z
@@ -92,3 +92,4 @@ La utilidad real de esta forma, es que nos permite verificar y tratar el problem
 Es la forma que ya conocemos de antes, donde la hemos estado usando con anterioridad en el tema 2.
 
 La forma clausulada es una conjunción de cláusulas, siendo una cláusula el cierre universal de una disyunción de literales.
+
