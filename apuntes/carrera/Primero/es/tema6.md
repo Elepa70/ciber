@@ -2,7 +2,7 @@
 title: Interferencia estadística
 description: 
 published: true
-date: 2026-04-28T15:58:15.991Z
+date: 2026-04-28T16:55:53.196Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-27T15:37:10.907Z
@@ -55,4 +55,6 @@ En la interferencia paramétrica vamos a ver:
 - Estimación por intervalos.
 - COnstrastes de hipótesis.
 ### Intervalos de confianza para una distribución Normal
+Nuestro objetivo es la construcción de un rango de valores que con cierta probabilidad, contenga al verdadero valor del parámetro. Dada una muestra aleatoria $X_1,X_2,\dots X_n$, de una distribucion $N(u,\sigma)$. El ntervao de confainza al nivel de $1-\alpha$ para le media $u$, siendo $\sigma^2$ desconocida. 
+(Formula de el formulario).
 ### Intervalos de confianza para una distribución Normal
