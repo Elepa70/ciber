@@ -2,7 +2,7 @@
 title: Lógica de Predicados
 description: 
 published: true
-date: 2026-04-28T14:22:44.683Z
+date: 2026-04-28T14:23:15.065Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-15T13:38:24.930Z
@@ -73,8 +73,8 @@ Algunas equivalencia que verems será.
 - $\not \exists x \alpha = \forall x \not \alpha$.
 - $\forall x \forall x \alpha = \forall x \alpha$.
 
-- $\forall x \alpha \cap \forall x \beta = \forall x (\alpha \cap \beta)$
-- $\exits x \alpha \cup \exist x \beta = \exists x (\alpha \cup \beta)$
+- $\forall x \alpha \cap \forall x \beta = \forall x (\alpha \cap \beta)$.
+- $\exist x \alpha \cup \exist x \beta = \exists x (\alpha \cup \beta)$.
 
 
 Realmente el temario es similar al tema anterior, pero esta vez jugamos con $\forall$ y los $\exists$.
