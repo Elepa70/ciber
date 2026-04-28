@@ -2,7 +2,7 @@
 title: Lógica de Predicados
 description: 
 published: true
-date: 2026-04-22T15:20:22.000Z
+date: 2026-04-28T14:22:44.683Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-15T13:38:24.930Z
@@ -85,4 +85,10 @@ El metodo que vamos a usar, el algoritmo mejor dicho es:
 3. Agrupar cuantificadores.
 4. Insertar formulas o aplicar las reglas.
 
+### Forma normal de Skolem
 La forma normal de Skolem, son auqellas formulas donde no hay cuantificadores.
+La utilidad real de esta forma, es que nos permite verificar y tratar el problema de satisficilidad de forma más sencilla.
+### Forma clausulada
+Es la forma que ya conocemos de antes, donde la hemos estado usando con anterioridad en el tema 2.
+
+La forma clausulada es una conjunción de cláusulas, siendo una cláusula el cierre universal de una disyunción de literales.
