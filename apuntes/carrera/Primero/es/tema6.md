@@ -2,7 +2,7 @@
 title: Interferencia estadística
 description: 
 published: true
-date: 2026-04-28T15:47:58.670Z
+date: 2026-04-28T15:58:15.991Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-27T15:37:10.907Z
@@ -49,6 +49,10 @@ Ahora vamos a resumir las siguientes distribuciones estadísitcas muestrales:
 
 Todas estas formulas se van a proporcionar en el examen.
 ## Intervalos de confianza mediante interferencia paramétrica
-
+En la interferencia paramétrica vamos a ver:
+- Problema de estimación
+- Estiamcion Puntual
+- Estimación por intervalos.
+- COnstrastes de hipótesis.
 ### Intervalos de confianza para una distribución Normal
 ### Intervalos de confianza para una distribución Normal
