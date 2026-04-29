@@ -2,7 +2,7 @@
 title: Unificación y resolución
 description: 
 published: true
-date: 2026-04-29T15:12:56.583Z
+date: 2026-04-29T15:24:09.102Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-29T14:32:55.294Z
@@ -37,3 +37,10 @@ Por ejemplo:
 $Q(f(a),y) \cup Q(y,y) \cup \neg R(x,y)$, si aplicamos $(y|f(a)$ obtenemos, $Q(f(a),f(a))\cup \neg R(x,f(a))$.
 
 Sin embargo, es importante recordar. Para unificar dos literales de distintas cláusulas y calcular una resolvente, se debe renombrar las variables.
+
+
+
+### Pasos a resolver
+Debemos considerar que tenemos dos formas de resolver:
+- Resolvente mediante clasuuslas distintas: Buscamos poder unificarla mediante la sustitución.
+- Resolvente mediante misma clausula: Unfiicamos dos clausulas que estén en la misma clausula.
