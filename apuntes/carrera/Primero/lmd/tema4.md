@@ -2,7 +2,7 @@
 title: Unificación y resolución
 description: 
 published: true
-date: 2026-04-29T15:08:51.186Z
+date: 2026-04-29T15:12:56.583Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-29T14:32:55.294Z
@@ -35,3 +35,5 @@ Cuando tengamos el mismo literal ambos predicados, debemos tener en cuenta que p
 
 Por ejemplo:
 $Q(f(a),y) \cup Q(y,y) \cup \neg R(x,y)$, si aplicamos $(y|f(a)$ obtenemos, $Q(f(a),f(a))\cup \neg R(x,f(a))$.
+
+Sin embargo, es importante recordar. Para unificar dos literales de distintas cláusulas y calcular una resolvente, se debe renombrar las variables.
