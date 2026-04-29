@@ -2,7 +2,7 @@
 title: Unificación y resolución
 description: 
 published: true
-date: 2026-04-29T15:06:57.355Z
+date: 2026-04-29T15:08:51.186Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-29T14:32:55.294Z
@@ -27,5 +27,11 @@ Una vez sustituido los literales necesarios, podemos unfiicar estos literales me
 
 La resolución consiste en partiendo de $\alpha \cup \beta, \not \alpha \cup \gammma$, como resolución es $\beta \cup \gamma$. A menos que lleguemos a una contradicción, ya que en tal caso significa que las clausulas de las que hemos partidos no es resoluble o insatisfacible.
 
+### Dificultad 1
+TOda sustitución se aplica a todos los lados.
 
-La segunda dificultad, consiste en saber que pasa en una clausula donde aparece un literal dos veces.
+### Dificultad 2
+Cuando tengamos el mismo literal ambos predicados, debemos tener en cuenta que podemos sustituir cosas.
+
+Por ejemplo:
+$Q(f(a),y) \cup Q(y,y) \cup \neg R(x,y)$, si aplicamos $(y|f(a)$ obtenemos, $Q(f(a),f(a))\cup \neg R(x,f(a))$.
