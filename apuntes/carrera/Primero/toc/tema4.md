@@ -2,7 +2,7 @@
 title: Estudio de sistemas sencuenciales
 description: 
 published: true
-date: 2026-04-30T16:03:17.844Z
+date: 2026-04-30T16:06:34.840Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-30T15:36:58.212Z
@@ -36,3 +36,7 @@ Vamos a usar sobretodos dos tipos de tablas:
 - Tablas de excitación: Entradas que hay que proporcionar para obtener un cambio de estado.
 
 Una señal de reloj, es una señal cuadrada periódica que se suele utilizar para sincronizar el comportamiento de la mayoría de los sistemas digitales. Estas señales las implementamos con un Biestable SR sincronizado, añadiendo una tercera entrada "Clk", que habilita o inhabilita la actualización del valor Q.
+
+A su vez es importante distinguir entre entradas:
+- Sincronas: Dependientes del reloj
+- Asincronas: Dependiente de otros factores, como puede ser el botón de resteo del equipo.
