@@ -2,7 +2,7 @@
 title: Estudio de sistemas sencuenciales
 description: 
 published: true
-date: 2026-04-30T16:06:34.840Z
+date: 2026-04-30T17:01:38.842Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-30T15:36:58.212Z
@@ -40,3 +40,12 @@ Una señal de reloj, es una señal cuadrada periódica que se suele utilizar par
 A su vez es importante distinguir entre entradas:
 - Sincronas: Dependientes del reloj
 - Asincronas: Dependiente de otros factores, como puede ser el botón de resteo del equipo.
+
+
+Las entradas de datos, no deben cambiar después del $t_\text{setup}$ anterior.
+Las frecuencia máima de reloj son aquellas velocidad máxima a la que se dispara el biestable de manera fiable.
+La anchura mínima del pulso, aquella anchura mínima de los pulsos para que funcionen adecuadamente las señales de reloj.
+La Disipación de potencia, es la potencia total consumida por el dispositivo.
+
+## Componentes secuenciales estándar
+Un registro básico de $n$ bits, es una asoacición de $n$ flip-flops tipo $D$ (Solo 1 bit a almacenar).
