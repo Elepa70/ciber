@@ -2,7 +2,7 @@
 title: Estudio de sistemas sencuenciales
 description: 
 published: true
-date: 2026-04-30T15:44:29.410Z
+date: 2026-04-30T15:49:01.625Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-30T15:36:58.212Z
@@ -24,3 +24,6 @@ Los elementos básicos de almacenamiento, que se pueden memorizar en un bit de i
 - Biestables (flip-flops)
 
 Los elementos básicos de almacenamiento coincide la salida con el estados.
+
+- Sistemas secuenciales síncronos: Es aquel en el que los cambios de estado en el sistema se producen únicamente cuando se producen cambios en una señal especial de entrada.
+- Sistemas secuenciales asíncronos: Es aquel en el que los cambios de estado se producen cuando cambia alguna entrada.
