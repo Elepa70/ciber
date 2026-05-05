@@ -2,7 +2,7 @@
 title: Unificación y resolución
 description: 
 published: true
-date: 2026-04-29T15:24:09.102Z
+date: 2026-05-05T14:39:37.767Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-29T14:32:55.294Z
@@ -44,3 +44,11 @@ Sin embargo, es importante recordar. Para unificar dos literales de distintas cl
 Debemos considerar que tenemos dos formas de resolver:
 - Resolvente mediante clasuuslas distintas: Buscamos poder unificarla mediante la sustitución.
 - Resolvente mediante misma clausula: Unfiicamos dos clausulas que estén en la misma clausula.
+
+Las estrategias que tenemos para resolver estos ejercicios son:
+### Fuerza Bruta
+Calcular todas las posibilidades una a una en fuerza bruta.
+### Estrategia lineal
+Cada resolvente se obtiene de una cláusula obtenida en el paso anterior y otrá cláusula.
+### Estrategia lineal-input
+Las clausulas que se implementa siempre pertenece al conjunto incial. Aunque este metood es el mas sencillo, no es completo y puede o no encontrarse.
