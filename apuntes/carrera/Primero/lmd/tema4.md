@@ -2,7 +2,7 @@
 title: Unificación y resolución
 description: 
 published: true
-date: 2026-05-05T14:39:37.767Z
+date: 2026-05-07T17:59:49.548Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-29T14:32:55.294Z
