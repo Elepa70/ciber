@@ -2,7 +2,7 @@
 title: Gestión de E/S Ficheros
 description: 
 published: true
-date: 2026-05-11T17:21:08.471Z
+date: 2026-05-11T17:25:07.086Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-11T16:50:06.739Z
@@ -40,7 +40,18 @@ Lo que hace es extraer caracteres del flujo y los elimina.
 ### FUncion istream::read() y istream::readsome()
 Extrae un bloque de n caracteres del flujo y los almacena, normalmente se usa para archvios binarios. Ojo la unica diferecnia entre read y readsome, con readsome devuelve un número de caracteres extraidos con exito.
 
+Algunas de las restricciones que tenemos en los flujos es:
+- No podemos crear objetos ostream o istream.
+- Los flujos no tienen definidiso ni constructo de copia ni operador=.
+- Por tanto no es posible hacer asignaciones entre flujos.
+- Tampoco es posible crear nuevos flujo smediante constructor de copia.
+- No podemos pasar un flujo como argumento por valor en una función.
+- Los flujos tampoco deben pasarse como argumentos const.
+- Un flujo debe ser pasado por referencia o bien como un puntero al flujo.
+
+
 ## Flujos asociados a ficheros
+
 ## Estados de los flujos
 ## Manejo de ficheros en C
 ## Entrada/Salida con formato
