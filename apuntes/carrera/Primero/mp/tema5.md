@@ -2,7 +2,7 @@
 title: Gestión de E/S Ficheros
 description: 
 published: true
-date: 2026-05-11T17:27:19.074Z
+date: 2026-05-11T17:27:42.103Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-11T16:50:06.739Z
