@@ -2,7 +2,7 @@
 title: Gestión de E/S Ficheros
 description: 
 published: true
-date: 2026-05-11T17:13:17.563Z
+date: 2026-05-11T17:21:08.471Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-11T16:50:06.739Z
@@ -39,6 +39,7 @@ Extrae caracteres del flujo y los almacenas como un string.
 Lo que hace es extraer caracteres del flujo y los elimina.
 ### FUncion istream::read() y istream::readsome()
 Extrae un bloque de n caracteres del flujo y los almacena, normalmente se usa para archvios binarios. Ojo la unica diferecnia entre read y readsome, con readsome devuelve un número de caracteres extraidos con exito.
+
 ## Flujos asociados a ficheros
 ## Estados de los flujos
 ## Manejo de ficheros en C
