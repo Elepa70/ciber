@@ -2,7 +2,7 @@
 title: Gestión de E/S Ficheros
 description: 
 published: true
-date: 2026-05-11T17:27:01.094Z
+date: 2026-05-11T17:27:19.074Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-11T16:50:06.739Z
@@ -53,6 +53,7 @@ Algunas de las restricciones que tenemos en los flujos es:
 ## Flujos asociados a ficheros
 Un fichero es una secuencia de bytes. Es por ello que podemos usar las funciones anteriores aquí.
 
+Usaremos la biblioteca "ofstream".
 Para trabajar con ficheros de texto, normalmente usaremos:
 - >>
 - <<
