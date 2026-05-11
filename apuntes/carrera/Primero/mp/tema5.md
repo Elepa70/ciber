@@ -2,7 +2,7 @@
 title: Gestión de E/S Ficheros
 description: 
 published: true
-date: 2026-05-11T17:10:41.568Z
+date: 2026-05-11T17:13:17.563Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-11T16:50:06.739Z
@@ -37,6 +37,8 @@ Es casi identico a get(), con la diferencia de extraer el delim del flujo.
 Extrae caracteres del flujo y los almacenas como un string.
 ### Funcion istream::ignore()
 Lo que hace es extraer caracteres del flujo y los elimina.
+### FUncion istream::read() y istream::readsome()
+Extrae un bloque de n caracteres del flujo y los almacena, normalmente se usa para archvios binarios. Ojo la unica diferecnia entre read y readsome, con readsome devuelve un número de caracteres extraidos con exito.
 ## Flujos asociados a ficheros
 ## Estados de los flujos
 ## Manejo de ficheros en C
