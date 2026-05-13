@@ -2,7 +2,7 @@
 title: Inducción y recurrencia
 description: 
 published: true
-date: 2026-05-13T13:42:10.757Z
+date: 2026-05-13T15:19:20.099Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-13T13:35:32.770Z
@@ -22,3 +22,7 @@ Por lo tanto $A=\{k,k+1,k+2,\dots\}
 > Lo mismo que en calculo.
 {.is-info}
 
+Demostrar que una propiedad es cierta haciendo:
+- Caso base: DEmostrando que se cumple en P(k).
+- Hipotesis de induccion: Suponer que P(k), P(k+1) es cierto.
+- Paso inductivo: Debemos demostrar que P(k), P(k+1).
