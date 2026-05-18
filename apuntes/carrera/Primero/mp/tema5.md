@@ -2,7 +2,7 @@
 title: Gestión de E/S Ficheros
 description: 
 published: true
-date: 2026-05-18T16:45:59.558Z
+date: 2026-05-18T17:26:11.194Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-11T16:50:06.739Z
@@ -78,6 +78,9 @@ De la misma manera que abrimos un flujo, tenemos el que cierra el flujo con "clo
 Cuando abrimeos el fichero, podemos hacer uso del if([fichero]), para ir usando el fichero como condición de que está abriendo.
 
 ## Estados de los flujos
+Existen varios estado de flujos para saber los bits de estado de fallo, es por esto que podemos ahcer un if(fichero) y seguir funconando.
+
+	
 ## Manejo de ficheros en C
 ## Entrada/Salida con formato
 ## Flujos asociados a strings
