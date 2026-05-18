@@ -2,7 +2,7 @@
 title: Gestión de E/S Ficheros
 description: 
 published: true
-date: 2026-05-11T17:27:42.103Z
+date: 2026-05-18T16:45:59.558Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-11T16:50:06.739Z
@@ -61,6 +61,21 @@ Para trabajar con ficheros de texto, normalmente usaremos:
 - getline()
 - put()
 
+### Apertura de fichero
+Lo hacemos mediante una función llamada "open()". Lo que hace es abrir este flujo para poder trabajar, podemos abrirlo en distinto modo.
+```C++
+open(const char *filenmae, openmode mode);
+mode = in // Lectura de archivo
+mode = out // Salida de archivo
+mode =in|out //Ambas
+```
+
+### Cierre de un fichero
+De la misma manera que abrimos un flujo, tenemos el que cierra el flujo con "close()".
+
+
+### Curiosidad
+Cuando abrimeos el fichero, podemos hacer uso del if([fichero]), para ir usando el fichero como condición de que está abriendo.
 
 ## Estados de los flujos
 ## Manejo de ficheros en C
