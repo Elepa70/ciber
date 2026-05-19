@@ -2,7 +2,7 @@
 title: Inducción y recurrencia
 description: 
 published: true
-date: 2026-05-19T13:37:20.458Z
+date: 2026-05-19T14:07:07.867Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-13T13:35:32.770Z
@@ -29,3 +29,7 @@ Demostrar que una propiedad es cierta haciendo:
 
 ## Recurrencia
 Una función reccurrente ( recursiva) es aquella que se llama a si misma.
+
+Continuamos con el esquema de:
+- Caso base, es el caso número uno.
+- Caso general, a partir de casos más pequeños.
