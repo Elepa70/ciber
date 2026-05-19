@@ -2,7 +2,7 @@
 title: Inducción y recurrencia
 description: 
 published: true
-date: 2026-05-13T15:19:20.099Z
+date: 2026-05-19T13:37:20.458Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-13T13:35:32.770Z
@@ -26,3 +26,6 @@ Demostrar que una propiedad es cierta haciendo:
 - Caso base: DEmostrando que se cumple en P(k).
 - Hipotesis de induccion: Suponer que P(k), P(k+1) es cierto.
 - Paso inductivo: Debemos demostrar que P(k), P(k+1).
+
+## Recurrencia
+Una función reccurrente ( recursiva) es aquella que se llama a si misma.
