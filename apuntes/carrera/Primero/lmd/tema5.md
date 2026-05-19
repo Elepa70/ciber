@@ -2,7 +2,7 @@
 title: Inducción y recurrencia
 description: 
 published: true
-date: 2026-05-19T14:07:07.867Z
+date: 2026-05-19T14:18:54.147Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-13T13:35:32.770Z
@@ -33,3 +33,6 @@ Una función reccurrente ( recursiva) es aquella que se llama a si misma.
 Continuamos con el esquema de:
 - Caso base, es el caso número uno.
 - Caso general, a partir de casos más pequeños.
+
+Una recurrencia lineal, homogénea y de coeficientes constantes es una del tipo:
+$a_0t_n+a_1t_{n-1}+a_2t_{n-2}+a_3t_{n-3}+a_kt_{n-k}=0$
