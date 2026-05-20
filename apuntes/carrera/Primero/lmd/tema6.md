@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-20T15:14:37.089Z
+date: 2026-05-20T15:17:00.639Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -34,6 +34,12 @@ En los examenes nos pueden dar una sucesión de números naturales $d_1...d_n$, 
 > Los grafos solo pueden existir si la suma de sus grados son pares, y si es divisible entre la cantidad de eristas.
 {.is-info}
 
+
+### Teorema HH
+Dado una sucesión, lo que hacemos es ordenarla de mayor a menor.
+Tras esto eliminamos al valor más grande, y quitamos 1 valor hacia la derecha según el valor que hemos quitado. Y tras esto volvemos a reordenadar.
+
+Si obtenemos 00 al final o 10, se considera gráfica.
 ## Estructuras de datos usuales
 ## Algoritmos de caminos mínimos
 ## Algunos tipos de grafos
