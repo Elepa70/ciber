@@ -2,7 +2,7 @@
 title: Inducción y recurrencia
 description: 
 published: true
-date: 2026-05-20T13:58:54.995Z
+date: 2026-05-20T14:40:05.954Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-13T13:35:32.770Z
@@ -55,4 +55,4 @@ Trataremos las de tipo:
 $a_0t_n+a_1t_{n-1}+a_2t_{n-2}+a_3t_{n-3}+a_kt_{n-k}=b^n*q(n)$.
 donde $b,a_0,...,a_k$ son constantes y $q(n)$ un polinomio de grado $d$.
 
-
+Hay situaciones, donde un cambio de variable nos otorga mucha ventaja a la hora de buscar las soluciones.
