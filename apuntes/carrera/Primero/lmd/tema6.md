@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-20T15:17:00.639Z
+date: 2026-05-20T15:18:08.143Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -40,6 +40,8 @@ Dado una sucesión, lo que hacemos es ordenarla de mayor a menor.
 Tras esto eliminamos al valor más grande, y quitamos 1 valor hacia la derecha según el valor que hemos quitado. Y tras esto volvemos a reordenadar.
 
 Si obtenemos 00 al final o 10, se considera gráfica.
+
+Si encontramos valores negativos, significa que no es gráfica.
 ## Estructuras de datos usuales
 ## Algoritmos de caminos mínimos
 ## Algunos tipos de grafos
