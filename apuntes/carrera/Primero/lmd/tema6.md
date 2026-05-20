@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-20T15:07:25.082Z
+date: 2026-05-20T15:14:37.089Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -31,6 +31,9 @@ Un grafo se dice que es conexo si, para todo par de nodos existe un camino entre
 Un grafo es $plano$, siempre que podamos dibujarlo sin necesidad de que las aristas se corten.
 
 En los examenes nos pueden dar una sucesión de números naturales $d_1...d_n$, que significa la cantidad de aristas de unión que tieen los vertices.
+> Los grafos solo pueden existir si la suma de sus grados son pares, y si es divisible entre la cantidad de eristas.
+{.is-info}
+
 ## Estructuras de datos usuales
 ## Algoritmos de caminos mínimos
 ## Algunos tipos de grafos
