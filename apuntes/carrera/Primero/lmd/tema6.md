@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-20T14:55:34.560Z
+date: 2026-05-20T14:59:09.653Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -22,7 +22,9 @@ Con las aristas debemos tener en cuenta que:
 - $\delta$: hacia donde va esa arista.
 
 ## Definicioens básicas
-- Un camino: Consiste en acudir de un vertice hacia otro.
+- Un $camino$: Consiste en acudir de un vertice hacia otro.
+- Un $recorrido$: Es un camino en el que no se repiten aristas, si es cerrado se le demonima $circuito$.
+- Un recorrido en el que no se repiten vértices se le denomina $camino simple$, en caso de que sea cerrado $ciclo$.
 ## Estructuras de datos usuales
 ## Algoritmos de caminos mínimos
 ## Algunos tipos de grafos
