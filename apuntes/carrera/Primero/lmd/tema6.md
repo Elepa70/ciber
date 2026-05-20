@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-20T14:54:28.590Z
+date: 2026-05-20T14:55:34.560Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -14,13 +14,15 @@ Un grafo a nivel de calle es:
 Teniendo unos vertices y una serie de lineas de unión entre esos vertices, todo el conjunto es un grafo.
 
 Tenemos dos conjuntos:
-- $V$ Conjutno de vértices.
+- $V$ Conjunto de vértices.
 - $E$ Conjunto de arista, (lineas de unión entre vertices), normalmente se escribe en pareja: $E=\{\{A,B\},\{A,C\},\{A,D\},\{B,D\},\dots\}$.
 
 Con las aristas debemos tener en cuenta que:
 - $\gamma$: De donde parte esa arista.
 - $\delta$: hacia donde va esa arista.
+
 ## Definicioens básicas
+- Un camino: Consiste en acudir de un vertice hacia otro.
 ## Estructuras de datos usuales
 ## Algoritmos de caminos mínimos
 ## Algunos tipos de grafos
