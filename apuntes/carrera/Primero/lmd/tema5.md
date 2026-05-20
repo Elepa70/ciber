@@ -2,7 +2,7 @@
 title: Inducción y recurrencia
 description: 
 published: true
-date: 2026-05-20T13:51:55.817Z
+date: 2026-05-20T13:58:54.995Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-13T13:35:32.770Z
@@ -37,7 +37,7 @@ Continuamos con el esquema de:
 Una recurrencia lineal, homogénea y de coeficientes constantes es una del tipo:
 $a_0t_n+a_1t_{n-1}+a_2t_{n-2}+a_3t_{n-3}+a_kt_{n-k}=0$.
 
-## Sucesión
+## Sucesión recurrente
 ### Primer metodo
 Lo que podemos hacer es sustituir $t_n$ por $x^n$.
 Algunos ejercicios que tenemos osn un sistema de ecuaciones dado y después en un punto de la expresión, tenemos que toma valores conforme a $tn_1$. Este tipo de ejercicios lo que buscamos es una expresión que sea capaz de simplifar esta sucesión.
@@ -47,3 +47,12 @@ Si no es viable el primeor, cuando tenagmos los raices. Lo que podemos hacer es 
 
 Matematicamente:
 Si  suponemos que cada $\alpha_i$ tiene una multiplicidad $m_i$. Entonces son soluciones $\alpha^n_i p_i (n)$.
+
+#### NO SE QUE ES
+Lineales, no homogéneras y de coeficientes constantes.
+
+Trataremos las de tipo:
+$a_0t_n+a_1t_{n-1}+a_2t_{n-2}+a_3t_{n-3}+a_kt_{n-k}=b^n*q(n)$.
+donde $b,a_0,...,a_k$ son constantes y $q(n)$ un polinomio de grado $d$.
+
+
