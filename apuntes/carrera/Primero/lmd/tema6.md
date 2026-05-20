@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-20T15:01:31.349Z
+date: 2026-05-20T15:04:55.700Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -27,6 +27,8 @@ Con las aristas debemos tener en cuenta que:
 - Un recorrido en el que no se repiten vértices se le denomina $camino \text{ } simple$, en caso de que sea cerrado $ciclo$.
 
 Un grafo se dice que es conexo si, para todo par de nodos existe un camino entre ellos.
+
+Un grafo es $plano$, siempre que podamos dibujarlo sin necesidad de que las aristas se corten.
 ## Estructuras de datos usuales
 ## Algoritmos de caminos mínimos
 ## Algunos tipos de grafos
