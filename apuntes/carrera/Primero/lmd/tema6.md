@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-26T13:48:54.992Z
+date: 2026-05-26T13:49:23.554Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -57,3 +57,4 @@ Hay veces donde tenemos un grafo donde las aristas tienen distancias y en este p
 
 ### Grafos de bipartitos
 Consiste en un grafo donde se pueden separar en dos conjuntos los vertices (izquierda y derecha), donde no existen aristas que se conectan entre los vertices del mismo lado.
+
