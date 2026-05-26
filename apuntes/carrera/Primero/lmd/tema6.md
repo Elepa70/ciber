@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-26T14:11:34.453Z
+date: 2026-05-26T14:18:37.846Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -83,3 +83,15 @@ Dado $G$ un grafo plano y conexo, con $n$ el número de nodos, $l$ el número de
 Entonces siempre sale que:
 - $n-l+c=2$.
 - En caso de que no sea conexo, y $t$ es el número de componentes, conexas, entonces $n-l+c=2+t$.
+- Si no tiene lazos, ni lados positivos, ni vertice de grado 1, se cumple que $3c\leq 2l$ y $l \leq 3n-6$. En caso de que sepamos que las caras tienen como mínimo $r$ lados, $rc \leq 2l$ y  $(r-2)l=r(n-2)$.
+#### Constracción simple
+Dado un grafo $G=(E,V)$ y una arista $e \in E$ que incide en $v_1$ y $v_2$, la contracción simple de $G$ a través de $e$ es el grafo $G'=(E',V')$:
+- $V'$ es $V\ \{v_1\}.
+- $E'$ se construye a partir de $E$ eliminando $e$ y, añadiendo aristas $w-v_2$ no esxiste en $G$.
+
+
+
+Con el teorema de Kuratowski:
+- Un grafo es plano si y solo si ningún subgrafo suyo puede contraerse en $K_5$ o a $K_{3,3}$.
+
+
