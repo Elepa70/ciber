@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-26T13:49:23.554Z
+date: 2026-05-26T13:51:16.646Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -52,6 +52,10 @@ E
 ## Algunos tipos de grafos
 ### Grafos de Eurler
 ### Grafos de Hamilton
+Para poder definir grafos de hamilton, debemos definir primero:
+- Camino de Hamilton: Es un camino que recorre todos los vértices una sola vez.
+- Circuito de Hamilton: En un camino cerrado que recorre todos los vértices una sola vez, excluyendo uno.
+- Un grafo con un circuito de Hamilton, es un grafo de Hamilton.
 ### Grafos de TSP  (Problema del vendedor)
 Hay veces donde tenemos un grafo donde las aristas tienen distancias y en este problema se intenta buscar un ciclo de hamilton cuya suma de pesos sea mínima.
 
