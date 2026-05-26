@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-26T14:05:23.978Z
+date: 2026-05-26T14:11:34.453Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -82,3 +82,4 @@ Dado $G$ un grafo plano y conexo, con $n$ el número de nodos, $l$ el número de
 
 Entonces siempre sale que:
 - $n-l+c=2$.
+- En caso de que no sea conexo, y $t$ es el número de componentes, conexas, entonces $n-l+c=2+t$.
