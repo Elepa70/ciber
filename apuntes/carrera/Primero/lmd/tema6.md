@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-26T13:51:16.646Z
+date: 2026-05-26T13:52:54.443Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -56,6 +56,11 @@ Para poder definir grafos de hamilton, debemos definir primero:
 - Camino de Hamilton: Es un camino que recorre todos los vértices una sola vez.
 - Circuito de Hamilton: En un camino cerrado que recorre todos los vértices una sola vez, excluyendo uno.
 - Un grafo con un circuito de Hamilton, es un grafo de Hamilton.
+
+No hay forma eficiente de saber si hay o no un grafo de hamilton, en general:
+- Si tiene más de $\frac{1}{2} (n-1)(n-2)+2$ aristas, es de Hamilton.
+- Si tiene menos de $n$ aristas, no es de Hamilton.
+- Si $n\geq 3$ y para par de vértices no adyacentes $grafo(v)+grado(w) \geq n$ entonces $G$ es de Hamilton.
 ### Grafos de TSP  (Problema del vendedor)
 Hay veces donde tenemos un grafo donde las aristas tienen distancias y en este problema se intenta buscar un ciclo de hamilton cuya suma de pesos sea mínima.
 
