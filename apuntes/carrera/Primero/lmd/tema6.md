@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-26T13:56:45.603Z
+date: 2026-05-26T14:01:36.541Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -70,3 +70,15 @@ Consiste en un grafo donde se pueden separar en dos conjuntos los vertices (izqu
 Si encontramos una longitud de ciclos impar, entonces es no es bipartitos.
 
 Se puede escribir con $K_{n,n}$ un grafo bipartido completo de $n$ vertices. 
+
+### Grafos Planos
+Se denota por $K_n$ y se llama grafo completo de $n$ vértices, a un grafo donde los vertices y las aristas se unen cada par de vertices.
+
+Se podría dibujar sin necesidad de que sus aritas se crucen.
+
+Este tipo de grafos se puede dividir el plano en varias regiones (siendo cada cara externa una region).
+
+Dado $G$ un grafo plano y conexo, con $n$ el número de nodos, $l$ el número de lados, y $c$ el número de caras de una representación plana.
+
+Entonces siempre sale que:
+- $n-l+c=2$.
