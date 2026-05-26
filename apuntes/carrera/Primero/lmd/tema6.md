@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-20T15:18:08.143Z
+date: 2026-05-26T13:48:54.992Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -43,9 +43,17 @@ Si obtenemos 00 al final o 10, se considera gráfica.
 
 Si encontramos valores negativos, significa que no es gráfica.
 ## Estructuras de datos usuales
+Podemos almacenarlas de dos maneras:
+- Listas de adyacencia: Se representa mediante un vector, donde cada componente i corresponde a un vértice del grafo. 
+E
+
+- Matrices de adyacencia: El grafo se representa mediante una matriz donde cada fila i es un vértice origen, cada columna j es un vértice destino.
 ## Algoritmos de caminos mínimos
 ## Algunos tipos de grafos
 ### Grafos de Eurler
 ### Grafos de Hamilton
-### Grafos de 
-### Grafos de
+### Grafos de TSP  (Problema del vendedor)
+Hay veces donde tenemos un grafo donde las aristas tienen distancias y en este problema se intenta buscar un ciclo de hamilton cuya suma de pesos sea mínima.
+
+### Grafos de bipartitos
+Consiste en un grafo donde se pueden separar en dos conjuntos los vertices (izquierda y derecha), donde no existen aristas que se conectan entre los vertices del mismo lado.
