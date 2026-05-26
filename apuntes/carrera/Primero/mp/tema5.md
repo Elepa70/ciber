@@ -2,7 +2,7 @@
 title: Gestión de E/S Ficheros
 description: 
 published: true
-date: 2026-05-18T17:26:11.194Z
+date: 2026-05-26T14:45:55.270Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-11T16:50:06.739Z
@@ -81,6 +81,14 @@ Cuando abrimeos el fichero, podemos hacer uso del if([fichero]), para ir usando 
 Existen varios estado de flujos para saber los bits de estado de fallo, es por esto que podemos ahcer un if(fichero) y seguir funconando.
 
 	
-## Manejo de ficheros en C
+## Manejo de ficheros en C 
+Usando $printf$, podemos escribir escribir en la misma linea todo lo que deseamos.
 ## Entrada/Salida con formato
 ## Flujos asociados a strings
+Podemos crear flujos de $E/S$ en los que el fuente d elos destino es un string. Esto nos permite manipular el flujo como si fuera string.
+```C++
+istringsream iss;
+string strvalues = "12 13 4 123123";
+iss.str(strvalues);
+```
+
