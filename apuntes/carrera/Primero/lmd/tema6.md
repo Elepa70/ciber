@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-27T15:09:26.729Z
+date: 2026-05-27T15:11:02.756Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -107,4 +107,5 @@ Dado un grafo $G=(E,V)$ y una arista $e \in E$ que incide en $v_1$ y $v_2$, la c
 Con el teorema de Kuratowski:
 - Un grafo es plano si y solo si ningún subgrafo suyo puede contraerse en $K_5$ o a $K_{3,3}$.
 
-
+## Coloración de grafos
+Consiste en darle color a los vértices, de manera que vértices adyacentes no tienen el mismo color. 
