@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-27T15:28:14.181Z
+date: 2026-05-27T15:29:33.589Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -129,3 +129,8 @@ Consiste en un grafo conexo donde no hay ciclos. La mejor manera de dibujar arbo
 Todo árbol es un grafo plano.
 
 Es posible que nos pregunten a partir de un grafo, un árbol generador, que consiste en un grafo, obtener un subgrafo que sea árbol quitando las aristas sobrantes, puede haber más de uno.
+
+### Arboles con ráiz
+Es el metodo más faicl para representar este tipo de grafos, donde tenemos uno principal al que llamaremos raíz y a partir de este salén distintos vértices y aristas a cada uno. Aquellos que no den otro vértice se les llamará hoja.
+
+La profundidad es la dsitancia máxima de profundidad de la raíz.
