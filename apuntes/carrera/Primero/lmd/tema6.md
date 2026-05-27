@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-27T15:11:02.756Z
+date: 2026-05-27T15:13:09.617Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -108,4 +108,9 @@ Con el teorema de Kuratowski:
 - Un grafo es plano si y solo si ningún subgrafo suyo puede contraerse en $K_5$ o a $K_{3,3}$.
 
 ## Coloración de grafos
-Consiste en darle color a los vértices, de manera que vértices adyacentes no tienen el mismo color. 
+Consiste en darle color a los vértices, de manera que vértices adyacentes no tienen el mismo color.
+
+El menor número de colores que necesitamos para colorear un grafo se llama número cromático $x(G)$, es un número muy dificil de calcular en grandes grafos.
+
+En el caso de $K_n$ entonces el número cromático es $K_n$.
+En caso de bipartito, entonces si y solamente si, su número cromático es 2.
