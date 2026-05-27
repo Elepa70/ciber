@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-27T15:19:44.593Z
+date: 2026-05-27T15:20:02.529Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -122,4 +122,4 @@ El polinomio podemos calcular con la formula: $p(x,G)=p(x,G'_e)-p(x,G_e)$.
 - Donde $G'_e$ es el grafo $G$ al que se le han quitado la arista e.
 - Donde $G_e$ es la contracción simple de G en la airsta e.
 
-Este algoritmo es muy lento, es por elloq ue los grafos seguramente sean pequeños.
+Este algoritmo es muy lento, es por ello que los grafos seguramente sean pequeños.
