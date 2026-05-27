@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-27T15:20:02.529Z
+date: 2026-05-27T15:26:46.269Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -123,3 +123,6 @@ El polinomio podemos calcular con la formula: $p(x,G)=p(x,G'_e)-p(x,G_e)$.
 - Donde $G_e$ es la contracción simple de G en la airsta e.
 
 Este algoritmo es muy lento, es por ello que los grafos seguramente sean pequeños.
+
+## Árboles
+Consiste en un grafo conexo donde no hay ciclos. La mejor manera de dibujar arbol es la manera "raíz", donde tenemos un vértice principal y después dle vértice sale aristas hacia los demás.
