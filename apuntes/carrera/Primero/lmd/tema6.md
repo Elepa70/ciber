@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-27T13:42:59.309Z
+date: 2026-05-27T13:50:00.818Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -57,6 +57,7 @@ Para poder definir un grafo de Euler, tenemos primero que definir:
 - Un grafo de Euler, tiene un circuito de Euler.
 
 Existe un circutio de euler, si y sola mente si, si el grado de sus vertices es par.
+Si existe un camino (no cerrado) de euler, entonces si y sólo si, tiene exactamente dos vértices de grado impar, (donde empieza y termina el camino).
 ### Grafos de Hamilton
 Para poder definir grafos de hamilton, debemos definir primero:
 - Camino de Hamilton: Es un camino que recorre todos los vértices una sola vez.
