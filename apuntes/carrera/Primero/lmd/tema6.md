@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-27T14:10:56.892Z
+date: 2026-05-27T14:11:17.504Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -95,7 +95,7 @@ Entonces siempre sale que:
 Redefinición de lo anterior:
 - $G$ es plano, entonces $n-l+c=2$.
 - $G$ es plano, entonces $l\leq 3n-6$.
-- Si $G$ es plano y cada una cara tiene al menos $r$ aristas (lados), entonces $(r-2)l\leq r(n-2)$. (Es similar a la anterior pero con $r=3$, normalmente lo usamos con grafos bipartito.
+- Si $G$ es plano y cada una cara tiene al menos $r$ aristas (lados), entonces $(r-2)l\leq r(n-2)$. (Es similar a la anterior pero con $r=3$, normalmente lo usamos con grafos bipartito, cuando $r=4$).
 - Un grafo plano y bipartito tiene caras con almenos 4 aristas lados $l \leq 2 (n-2)$.
 #### Constracción simple
 Dado un grafo $G=(E,V)$ y una arista $e \in E$ que incide en $v_1$ y $v_2$, la contracción simple de $G$ a través de $e$ es el grafo $G'=(E',V')$:
