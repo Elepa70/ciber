@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-27T15:13:09.617Z
+date: 2026-05-27T15:14:33.047Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -114,3 +114,5 @@ El menor número de colores que necesitamos para colorear un grafo se llama núm
 
 En el caso de $K_n$ entonces el número cromático es $K_n$.
 En caso de bipartito, entonces si y solamente si, su número cromático es 2.
+### Teorema de Appel-Haken
+Consste en que si un grafo es plano, su número cromátoco es menor o igual que 4.
