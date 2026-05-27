@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-26T14:37:37.546Z
+date: 2026-05-27T13:39:54.881Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -51,6 +51,10 @@ E
 ## Algoritmos de caminos mínimos
 ## Algunos tipos de grafos
 ### Grafos de Eurler
+Para poder definir un grafo de Euler, tenemos primero que definir:
+- Un camino de Euler den $G$ es aquel que pasa por todas las aristas.
+- Un circuito de Euler en $G$ es un camino que es cerrado.
+- Un grafo de Euler, tiene un circuito de Euler.
 ### Grafos de Hamilton
 Para poder definir grafos de hamilton, debemos definir primero:
 - Camino de Hamilton: Es un camino que recorre todos los vértices una sola vez.
