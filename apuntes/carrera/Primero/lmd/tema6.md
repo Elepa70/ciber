@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-27T15:26:46.269Z
+date: 2026-05-27T15:27:58.192Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -126,3 +126,6 @@ Este algoritmo es muy lento, es por ello que los grafos seguramente sean pequeñ
 
 ## Árboles
 Consiste en un grafo conexo donde no hay ciclos. La mejor manera de dibujar arbol es la manera "raíz", donde tenemos un vértice principal y después dle vértice sale aristas hacia los demás.
+Todo árbol es un grafo plano.
+
+Es posible que nos pregunten a partir de un grafo, un árbol generador, que consiste en un grafo, obtener un subgrafo que sea árbol quitando las aristas sobrantes.
