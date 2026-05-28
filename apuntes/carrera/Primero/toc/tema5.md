@@ -2,7 +2,7 @@
 title: Sistemas en el nivel de transferencia entre registros (RT)
 description: 
 published: true
-date: 2026-05-28T16:38:09.549Z
+date: 2026-05-28T16:42:54.311Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-28T15:34:43.246Z
