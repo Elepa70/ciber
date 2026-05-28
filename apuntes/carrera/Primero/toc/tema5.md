@@ -2,7 +2,7 @@
 title: Sistemas en el nivel de transferencia entre registros (RT)
 description: 
 published: true
-date: 2026-05-28T16:23:34.511Z
+date: 2026-05-28T16:23:57.570Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-28T15:34:43.246Z
@@ -63,5 +63,5 @@ Ahora tenemos el concepto de "conjunto de microoperaciones de n camino de datos"
 Estas palabars de control están compuestas por:
 - Seleccion de entrada, para saber de donde vienen los datos.
 - El control de la ALU.
-- Si va a usarse R.
-- Si vamos a sobreescribir R.
+- Si va a escribir en  R.
+- Si vamos a leer en R.
