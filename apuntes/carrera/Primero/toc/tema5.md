@@ -2,7 +2,7 @@
 title: Sistemas en el nivel de transferencia entre registros (RT)
 description: 
 published: true
-date: 2026-05-28T16:00:29.796Z
+date: 2026-05-28T16:23:34.511Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-28T15:34:43.246Z
@@ -58,3 +58,10 @@ Este tipo de bus, puede ser similar a un multiplexor, ya que haría la misma fun
 
 La diferencia es que en las señales de control del multiplexor (Lo tipico de C1 y C2), tenemos las ReA ReB ReC..., siendo similar pero no identico.
 
+### Microoperaciones y palabras de control
+Ahora tenemos el concepto de "conjunto de microoperaciones de n camino de datos".
+Estas palabars de control están compuestas por:
+- Seleccion de entrada, para saber de donde vienen los datos.
+- El control de la ALU.
+- Si va a usarse R.
+- Si vamos a sobreescribir R.
