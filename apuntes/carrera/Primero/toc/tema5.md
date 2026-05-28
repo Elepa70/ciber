@@ -2,7 +2,7 @@
 title: Sistemas en el nivel de transferencia entre registros (RT)
 description: 
 published: true
-date: 2026-05-28T16:23:57.570Z
+date: 2026-05-28T16:38:09.549Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-28T15:34:43.246Z
@@ -65,3 +65,7 @@ Estas palabars de control están compuestas por:
 - El control de la ALU.
 - Si va a escribir en  R.
 - Si vamos a leer en R.
+
+## Unidad de Control
+### Misión de la Unidad de Control: Motivación
+La unidad de control es la encargada de secuenciar microoperaciones del camino de datos de acuerdo con un algorítmo del sistema RT a realizar.
