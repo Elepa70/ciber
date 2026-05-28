@@ -2,7 +2,7 @@
 title: Sistemas en el nivel de transferencia entre registros (RT)
 description: 
 published: true
-date: 2026-05-28T15:59:06.427Z
+date: 2026-05-28T16:00:29.796Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-28T15:34:43.246Z
@@ -55,4 +55,6 @@ En este tipo de bus, podemos encontrar los buffer triestados, donde se tiene una
 
 
 Este tipo de bus, puede ser similar a un multiplexor, ya que haría la misma función que el buffer triestado. Y podríamos conectarlo al bus compartido.
+
+La diferencia es que en las señales de control del multiplexor (Lo tipico de C1 y C2), tenemos las ReA ReB ReC..., siendo similar pero no identico.
 
