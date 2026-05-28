@@ -2,7 +2,7 @@
 title: Sistemas en el nivel de transferencia entre registros (RT)
 description: 
 published: true
-date: 2026-05-28T15:55:04.226Z
+date: 2026-05-28T15:59:06.427Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-28T15:34:43.246Z
@@ -43,10 +43,16 @@ Ventajas:
 
 #### Bus compartido
 Consiste en un bus enlazando diferentes fuentes y destinos.
-Tiene las ventajsa de que:
+Tiene las ventajas de que:
 - No son posible transferencias simultaneas donde se tenga más de una fuente.
 - Se requiere lógica de control del bus más compleja.
 Ventajas:
 - Simplifica la interconexión.
 - Fácilmente ampliable.
+En este tipo de bus, podemos encontrar los buffer triestados, donde se tiene una entrada de acceso donde si:
+- Marca 0: no avanza la información.
+- Marca 1: Avanza la información.
+
+
+Este tipo de bus, puede ser similar a un multiplexor, ya que haría la misma función que el buffer triestado. Y podríamos conectarlo al bus compartido.
 
