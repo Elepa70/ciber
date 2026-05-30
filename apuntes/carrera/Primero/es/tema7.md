@@ -2,7 +2,7 @@
 title: Contrastes de hipótesis
 description: 
 published: true
-date: 2026-05-30T09:45:07.342Z
+date: 2026-05-30T10:33:41.364Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-30T09:45:07.342Z
@@ -37,5 +37,6 @@ Donde:
 
 > Existe una "regla" que dice "no se puede rechazar $H_0$, ya que un contraste de hipótesis se buscan evidencias en contra de $H_0$, no para demostrar su veracidad.
 {.is-info}
-
+## P-Valor
+El **p-valor** es el **menor nivel de significación $\alpha$**, donde se rechazaría la hipótesis nula $H_o$.
 ## Constraste de hipótesis no paramétricos
