@@ -2,7 +2,7 @@
 title: Contrastes de hipótesis
 description: 
 published: true
-date: 2026-05-30T10:35:38.343Z
+date: 2026-05-30T10:36:18.891Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-30T09:45:07.342Z
@@ -40,5 +40,7 @@ Donde:
 ## P-Valor
 El **p-valor** es el **menor nivel de significación $\alpha$**, donde se rechazaría la hipótesis nula $H_o$. Se mide:
 - $p-valor=P[\text{resultado tan extremo como el observado} | H_0 \text{ cierta}]$, es decir:
-- $p-valor=P[\text{estadístico de contrastes} \geq \text{valor observado} | H_0 \text{ cierta}]$
+- $p-valor=P[\text{estadístico de contrastes} \geq \text{valor observado} | H_0 \text{ cierta}]$.
+
+Si es valor es pequeño, es poco probable si $H_0$ fuera cierta. en caso contrarío es lo que debería esperar bajo $H_0$.
 ## Constraste de hipótesis no paramétricos
