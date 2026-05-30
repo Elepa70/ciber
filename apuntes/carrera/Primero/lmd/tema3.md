@@ -2,7 +2,7 @@
 title: Lógica de Predicados
 description: 
 published: true
-date: 2026-04-28T15:34:40.892Z
+date: 2026-05-30T10:42:04.555Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-15T13:38:24.930Z
@@ -46,9 +46,9 @@ Es aquel lenguaje que requiere un alfabeto de primer orden, construido por palab
 La interpretaciones de la fórmulas de primer orden es más complicada. Dado un alfabeto de un lenguaje de primer orden, una estructura de este lenguaje tiene los siguientes elementos:
 - Conjunto vacío, o dominio y universo.
 - Aplicaciones $C\rightarrow D$.
+- A cada símbolo de función $n-ario$ $f\in F$ le asignaremos una función $f^E:D^n \rightarrow D$.
+- A cada símbolo de predicado $n-ario$ $P\in R$ le asignaremos un afunción: $P^E : D^n \rightarrow \mathbb{Z}_2$.
 
-> Por resumir
-{.is-danger}
 
 ### Valoración
 Son valores libres que odemos asignar donde queramos. Usualmente se denota con la letra $v$.
