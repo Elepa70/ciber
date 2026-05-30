@@ -2,7 +2,7 @@
 title: Estadística
 description: 
 published: true
-date: 2026-05-30T09:23:30.118Z
+date: 2026-05-30T09:32:20.684Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T19:52:37.729Z
@@ -17,5 +17,7 @@ En está página web podrá encontrar los distintos temarios que corresponden a 
 - [Conceptos básicos de variables aleatorias](tema4)
 - [Modelos de distribuciones discretas y continuas](tema5)
 - [Interferencia estadística. Estimación de parámetros](tema6)
+- [Contrastes de hipótesis](tema7)
+- [Optimización](tema8)
 ## Docente
 El temario fue dado por Antonio Jesús López Montoya
