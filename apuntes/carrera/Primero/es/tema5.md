@@ -2,7 +2,7 @@
 title: Modelos de distribuciones discretas y continuas
 description: 
 published: true
-date: 2026-04-28T15:47:05.782Z
+date: 2026-05-30T09:18:56.400Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T15:45:04.104Z
@@ -51,5 +51,7 @@ $Fx(x)=P[X\leq x]=P[\frac{X-u}{\sigma} \leq \frac{x-u}{\sigma}]=P[Z\leq \frac{x-
 
 
 ## Aproximaciones entre las distribuciones
-
+Dada una $\sum X_i$, una suma de $n$ variables aleatorias independientes de tipo $B(n=1,p)$, es decir, de tipo éxito o fracaso, dicha suma:
+$E[\sum X_i]=np$ y $Var[\sum X_i]=np(1-p)=npq$, si el valor de $n$ es grande:
+$\sum X_i \frac{n\rightarrow + \infty}{D}N(np,\sqrt{npq})$.
 ## Distribuciones asociadas a la ley Normal
