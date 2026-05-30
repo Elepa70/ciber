@@ -2,7 +2,7 @@
 title: Interferencia estadística
 description: 
 published: true
-date: 2026-05-30T09:29:19.685Z
+date: 2026-05-30T09:31:22.613Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-27T15:37:10.907Z
@@ -64,4 +64,8 @@ $u \in (\overline{X}-t_{n-1,1-\alpha/2}*\frac{s_n-1}{\sqrt{n}},\overline{X}+t_{n
 {.is-info}
 
 ### Intervalos de confianza para dos distribuciones Normales
-Dada una muestra aleatoria $X_{n_x}$, de una distribución $N(u_x,\sigma_x^2)$ y una segunda muestra aleatoria $Y_{n_y}$ con una distribución $N(u_y,\sigma_y^2)$
+Dada una muestra aleatoria $X_{n_x}$, de una distribución $N(u_x,\sigma_x^2)$ y una segunda muestra aleatoria $Y_{n_y}$ con una distribución $N(u_y,\sigma_y^2)$, tenemos:
+- Podemos plantear un IC para la diferencia de las dos medias $u_x-u_y$, pero necesitamos conocer si las muestras son independientes o pareadas.
+- En el caso de muestras independientes, se necesita conocer además si las vairanzas son iguales o no.
+- Para muestras independientes debemos obtener el IC $(\frac{\sigma_y^2}{\sigma_x^2})$, si es 1 ambas varianzas son iguales, en cualquier otro caso son distintas.
+
