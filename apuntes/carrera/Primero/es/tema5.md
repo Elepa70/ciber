@@ -2,7 +2,7 @@
 title: Modelos de distribuciones discretas y continuas
 description: 
 published: true
-date: 2026-05-30T09:18:56.400Z
+date: 2026-05-30T09:23:08.977Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T15:45:04.104Z
@@ -55,3 +55,14 @@ Dada una $\sum X_i$, una suma de $n$ variables aleatorias independientes de tipo
 $E[\sum X_i]=np$ y $Var[\sum X_i]=np(1-p)=npq$, si el valor de $n$ es grande:
 $\sum X_i \frac{n\rightarrow + \infty}{D}N(np,\sqrt{npq})$.
 ## Distribuciones asociadas a la ley Normal
+### Distribución de la Chi-cuadrado
+La distribución chi-cuadrado tiene un único parámetro $n$. Si una v.a. continua $X$ sigue una distribución chi-cuadrado con parámetros $n$ se representa como:
+$X ->X^2_n$.
+
+Respecto al cuantil de orden $\alpha$ se representa como $X^2_{n,\alpha}$, siendo éste el valor tal que:
+$P[X\leq X^2_{n,\alpha}]=\alpha$.
+### Distribución de la t-Student
+La distribución t-Student tiene un único parámetro $n$. Si una v.a. continua $T$ sigue una distribución t-Student con parámetros $n$ se representa como:
+$T->t_n$.
+
+El cuantil de orden $\alpha$ se representa como $t_{n,\alpha}=-t_{n,1-\alpha}$.
