@@ -2,7 +2,7 @@
 title: Interferencia estadística
 description: 
 published: true
-date: 2026-04-28T16:55:53.196Z
+date: 2026-05-30T09:29:19.685Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-27T15:37:10.907Z
@@ -55,6 +55,13 @@ En la interferencia paramétrica vamos a ver:
 - Estimación por intervalos.
 - COnstrastes de hipótesis.
 ### Intervalos de confianza para una distribución Normal
-Nuestro objetivo es la construcción de un rango de valores que con cierta probabilidad, contenga al verdadero valor del parámetro. Dada una muestra aleatoria $X_1,X_2,\dots X_n$, de una distribucion $N(u,\sigma)$. El ntervao de confainza al nivel de $1-\alpha$ para le media $u$, siendo $\sigma^2$ desconocida. 
+Nuestro objetivo es la construcción de un rango de valores que con cierta probabilidad, contenga al verdadero valor del parámetro. Dada una muestra aleatoria $X_1,X_2,\dots X_n$, de una distribucion $N(u,\sigma)$. El intervao de confainza al nivel de $1-\alpha$ para le media $u$, siendo $\sigma^2$ desconocida. 
 (Formula de el formulario).
 ### Intervalos de confianza para una distribución Normal
+Dada una muestra aleatoria $X_1,X_2,...,X_n$, de una distribución $N(u,\sigma)$. El intervalo de confianza al nivel $1-\alpha$ para la media poblacional u, es:
+$u \in (\overline{X}-t_{n-1,1-\alpha/2}*\frac{s_n-1}{\sqrt{n}},\overline{X}+t_{n-1,1-\alpha/2}*\frac{s_n-1}{\sqrt{n}})$.
+> Todas estas formulas están disponible en un formulario dado.
+{.is-info}
+
+### Intervalos de confianza para dos distribuciones Normales
+Dada una muestra aleatoria $X_{n_x}$, de una distribución $N(u_x,\sigma_x^2)$ y una segunda muestra aleatoria $Y_{n_y}$ con una distribución $N(u_y,\sigma_y^2)$
