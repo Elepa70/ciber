@@ -2,7 +2,7 @@
 title: Grafos
 description: 
 published: true
-date: 2026-05-27T15:29:54.763Z
+date: 2026-06-05T15:55:01.396Z
 tags: 
 editor: markdown
 dateCreated: 2026-05-20T14:40:38.157Z
@@ -65,6 +65,7 @@ Para poder definir grafos de hamilton, debemos definir primero:
 - Un grafo con un circuito de Hamilton, es un grafo de Hamilton.
 
 No hay forma eficiente de saber si hay o no un grafo de hamilton, en general:
+Siendo $n$ el número de vertices que hay.
 - Si tiene más de $\frac{1}{2} (n-1)(n-2)+2$ aristas, es de Hamilton.
 - Si tiene menos de $n$ aristas, no es de Hamilton.
 - Si $n\geq 3$ y para par de vértices no adyacentes $grafo(v)+grado(w) \geq n$ entonces $G$ es de Hamilton.
