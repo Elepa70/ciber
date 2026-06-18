@@ -2,7 +2,7 @@
 title: Resumen para Examen
 description: 
 published: true
-date: 2026-06-18T13:16:27.216Z
+date: 2026-06-18T13:28:27.269Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-18T10:37:37.720Z
@@ -176,16 +176,33 @@ Simbologia:
 - Aristas: Son las zonas de donde salen los "caminos" hacia otros vertices.
 - Caras: Es el espacio que queda entre las distintas aristas del grafo.
 
+Isomorfo: Dos grafos son isomorfos si tienen el mismo numero de lados, vertices, los vertices son iguales en grados y comparten los mismos vecinos.
 Conexo: Se dice que es conexo cuando por cada par de nodos hay un camino entre ellos, es decir no hay islas flotando.
 Grados: Es la cantidad de aristas que salen de un vértice dado.
+
 
 Para saber la cantidad de lados, en base a grados, lo que hacemos es sumar todos los lados y dividirlo entre 2. $l =\frac{1}{2}\sum g$, siengo $g$ los grados.
 
 Los grafos $K_n$: Son aquellos grafos que tienen tantos vértices como $n$ tenga, y están todos los vértices conectados uno a otro, es decir sus lados son: $l=\frac{n*(n-1)}{2}$.
 
+Una formula que debe cumplir es $n-l+c=2$.
+## Grafos dado por matrices
+Cuando nos dan un grafo por una matriz, debemos tener en cuenta lo siguiente:
+Dada una Matriz A.
+- La Matriz siempre es simetrica respecto a la diagonal principal, es por ello que para saber los valrores de un vértice podemos mirarlo como fila o como columna.
+- Los valores de cada fila o columna, son los aristas que salen de ese vertice hacia los demás.
+Dada una matriz $A^{2}$:
+- En este caso, tenemos una matriz representará los caminos de longitud 2 entre un vértice y los demás, a excepción de la diagonal principal, que nos dirá el grado del vértice.
+
+Dada una matriz $A^{n} siendo \text{ }n\geq 2$:
+- Nos mostrará los caminos de longitud $n$ entre un vértice y los demás.
+
+Para obtener un camino de longitud $x$ entre dos vértices distintos $v_a$ y $v_b$, unicamente debemos multiplicar la fila de $v_a$ por la columna $v_b$, eso sí debemos tener en cuenta que la suma de los exponentes de esas matrices, nos dará la longitud.
+
 ## Grafos bipartitos
 Son aquellos grafos que podemos dibujar de manera que una parte de ellos esté a la izquierda y otros a la derecha, y entre esas partes formadas, no haya ninguna arista que vaya entre ellas.
 
+También podemos definirlo como aquellos grafos donde no hay ciclos de 3.
 ## Cuando tenemos un grafo
 Para deducir si tenemos un grafo tenemos que usar el método de Havel-Hakimi (HH), que consiste en:
 - Ordenamos los grados de mayor a menor.
@@ -216,6 +233,21 @@ Cuando nos pregunten por el **polinomio cromático**, aquí ya comienza a ser un
 El algoritmo es el siguiente:
 $p(x,G) = p(x,G'_e)-p(x,G_e)$.
 Esto es:
-- $p(x,G)$
-- $p(x,G)$
-- $p(x,G)$
+- $p(x,G)$: El polinomio que estamos buscando
+- $p(x,G'_e)$: El grafo resultando si le quitamos una arista. 
+- $p(x,G_e)$: El grafo si unimos los vértices de la arista que hemos quitado.
+
+Claro esto crea un problema de recurrencia, pero debemos saber que:
+Cuando tenemos un grafo que es una linea recta con distitnos vértices puestos en ella, entonces: $p(x,G) = x(x-1)^n$, según la cantidad de linea que tengamos.
+Si llegamos a un cuadrado: $p(x,G) = x(x-1)^3-x(x-1)(x-2)$.
+
+Con esto intentaremos sacar el polinomio.
+> Si cae la coloración, es altamente problable de que sea el ejercicio dificil del examen.
+{.is-warning}
+
+## Arboles
+Los arboles son aquellos grafos donde a partir de un vértice principal, podemos llegar hasta los demás en una forma de arbol invertido. 
+Algunas de las caracteristicas de los arboles es:
+- Siempre tiene vertices con grado 1.
+- Es un grafo que no tiene ciclos.
+- $l=v-1$. Siendo $l$ los lados y $v$ el número de vértices.
