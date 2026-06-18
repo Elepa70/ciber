@@ -2,7 +2,7 @@
 title: Resumen para Examen
 description: 
 published: true
-date: 2026-06-18T11:02:32.705Z
+date: 2026-06-18T11:03:40.459Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-18T10:37:37.720Z
@@ -53,6 +53,7 @@ Es vital saber esta parte:
 - Conjunción $\vee$, se lee como $\alpha$ o $\beta$.
 - Negación $\neg$, se lee como no $\alpha$.
 - Implicación $\rightarrow$, se lee como $\alpha$ implia a $\beta$. Se puede traducir a $\alpha \rightarrow \beta = \neg \alpha \vee \beta$.
+- Equivalencia: $\leftrightarrow$, ambas se implican a si mismo, se traduce como: Se puede traducir a $\alpha \leftrightarrow \beta = (\neg \alpha \vee \beta) \wedge (\neg \beta \vee \alpha)$.
 # Lógica de Predicados
 # Unificación y Resolución
 # Inducción y Recurrencia
