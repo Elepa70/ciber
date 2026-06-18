@@ -2,7 +2,7 @@
 title: Lógica y Métodos Discretos 
 description: 
 published: true
-date: 2026-05-20T14:40:24.101Z
+date: 2026-06-18T10:37:20.396Z
 tags: 
 editor: markdown
 dateCreated: 2026-02-24T20:23:35.047Z
@@ -17,6 +17,8 @@ En está página web podrá encontrar los distintos temarios que corresponden a 
 - [Unificación y Resolución](tema4)
 - [Inducción y recurrencia](tema5)
 - [Grafos](tema6)
+## Dedicado a Examen
+- [Resumenes para examen](ordinaria)
 ## Docente
 El temario fue dado por Andrés Herrera Poyatos
 
