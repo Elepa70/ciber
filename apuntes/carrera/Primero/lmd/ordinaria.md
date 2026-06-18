@@ -2,7 +2,7 @@
 title: Resumen para Examen
 description: 
 published: true
-date: 2026-06-18T11:33:48.822Z
+date: 2026-06-18T12:35:04.807Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-18T10:37:37.720Z
@@ -132,9 +132,22 @@ Los cuantificadores existenciales desaparecen y son interpretados por los para t
 
 ### Forma normal clausulada
 Es lo que hemos estado haciendo en el team anterior, dividir las formuals en $\wedge$.
-> Ojo, los $\forall x $ se pueden juntar con otros $\forall x$ siempre y cuando hay aun $\wedge$ en medio, al igual pasa con $\exists y$ se puede juntar con otros $\exists b$ si hay $\vee$.
+(en este punto ya los $\forall$ no hace falta escribirlo porque se sobre entiende).
+> Ojo, los $\forall x$ se pueden juntar con otros $\forall x$ siempre y cuando hay aun $\wedge$ en medio, al igual pasa con $\exists y$ se puede juntar con otros $\exists b$ si hay $\vee$.
 {.is-warning}
 
 # Unificación y Resolución
+Unificar y resolución suelen pedirnelos tras el punto anterior, y suele ser una vez tenga clasulada la fórmula intentar buscar una interpretación que sea insatisfacible por el método de la reducción a lo absurdo. Sin embargo la diferencia con el tema 2, es que aquí no tenemos literales, sino variables y constantes y el método cambia.
+
+Es por ello que vamos a buscar las Clausulas de Horn
+## Clausulas de Horn
+Las caracteristicas de estas clausulas es que solo hay 1 o menos literales positivos.
+
+Con este tipo de clausulas las resoluciones son mucho más sencilla ya que siempre partiremos de una clausula con todo negativo y tendremos algúna que sea unica positiva, nuestro objetivo.
+
+Mientras resolvamos debemos tener en cuenta una cosa.
+- Las variables (x,y,z,t), podemos cambiarla por otras variables o constantes e incluso aplicarle formulas, por ejemplo $x|f(a)$, todas las que eran x en esa clausula ahora son $f(a)$.
+- Sin embargo las constantes nunca podremos cambiarlas, se quedan fijas.
+
 # Inducción y Recurrencia
 # Grafos
