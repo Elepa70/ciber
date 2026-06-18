@@ -2,7 +2,7 @@
 title: Resumen para Examen
 description: 
 published: true
-date: 2026-06-18T11:03:40.459Z
+date: 2026-06-18T11:17:49.749Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-18T10:37:37.720Z
@@ -54,6 +54,42 @@ Es vital saber esta parte:
 - Negación $\neg$, se lee como no $\alpha$.
 - Implicación $\rightarrow$, se lee como $\alpha$ implia a $\beta$. Se puede traducir a $\alpha \rightarrow \beta = \neg \alpha \vee \beta$.
 - Equivalencia: $\leftrightarrow$, ambas se implican a si mismo, se traduce como: Se puede traducir a $\alpha \leftrightarrow \beta = (\neg \alpha \vee \beta) \wedge (\neg \beta \vee \alpha)$.
+
+La consecuencia logica por lo tanto es, dado una serie de formulas combinadas con los anteriores simbolos, $\gamma \vDash \alpha$, siendo $\gamma$ una serie de formulas.
+
+## Deducción y Reducción a lo absurdo.
+
+Es posible que las fórmulas que nos den tenga muchas implicaciones y sea inviable poder reducirlas en OR y AND (Conjunción y Disyunción), es por ello que debemos tener en cuenta la Deducción.
+### El teorema de deducción
+Con el teorema de la deducción, podemos ir "recortando" partes de la formula dada, para hacerla más sencilla, esto funciona de la siguiente manera:
+
+> Examen Final Julio 2023.
+{.is-info}
+
+Sea $\alpha = (a \rightarrow \neg b) \rightarrow [(\neg a \rightarrow \neg c) \rightarrow (( \neg c \rightarrow b) \rightarrow[ a\vee \neg \vee b \vee c \rightarrow a \neg \wedge b \wedge c ])]$, demuestra sin tabalas de verdad que es tautología.
+
+La mejor forma de operar es ir deducciendo según las implicaciones que tenemos, por ejemplo, para ello vamos a ir "quitando" las premisas de las implicaciones para añadirlas a nuestro conjunto a examinar ejemplo.
+$(a \rightarrow \neg b) \vDash (\neg a \rightarrow \neg c) \rightarrow (( \neg c \rightarrow b) \rightarrow[ a\vee \neg \vee b \vee c \rightarrow a \neg \wedge b \wedge c ])$.
+
+Ahora lo tenemos más sencillo, pero podemos seguir hasta:
+$(a \rightarrow \neg b), (\neg a \rightarrow \neg c), ( \neg c \rightarrow b), a\vee \neg \vee b \vee c   \vDash a \neg \wedge b \wedge c$.
+
+Ahora se nos ha quedado que todo lo anterior debe ser consecuencia logica de lo último.
+
+### Reducción a lo absurdo
+Para poder terminar esta ejercicio, nos hace falta hacer una reducción al absurdo. Para que entender esto, podemos decir que $\vDash = \rightarrow$, la única manera para que esto sea falso es que lo que está antes de la implicación sea verdadero y lo que está después sea falso.
+
+Entonces, si añadimos lo que está después de la implicación dentro de nuestras clausuras, de forma negada, si encontramos una Contradicción, significa que la formula original es verdadera ya que no existe un metodo para hacerla falsa.
+
+En nuestro ejemplo se nos quedaría:
+$(a \rightarrow \neg b), (\neg a \rightarrow \neg c), ( \neg c \rightarrow b), a\vee \neg \vee b \vee c, \neg(a \neg \wedge b \wedge c)   \vDash \square$.
+
+## Resolución de preposiciones
+Para resolverlo únicamente debemos hacer el algoritmo de Davis-Putman. Donde buscamos literales que sean siempre positivos o negativos en todas las clausulas dadas, y jugar con ellas hasta obtener la contradicción. (Ojo debemos clausular antes las formulas y para ello debemos quitar las implicaciones).
+
+> No me es viable poder mostrar un ejemplo en esta plataforma, recomiendo buscarlo en internet.
+{.is-info}
+
 # Lógica de Predicados
 # Unificación y Resolución
 # Inducción y Recurrencia
