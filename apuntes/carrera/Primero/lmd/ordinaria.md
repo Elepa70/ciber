@@ -2,7 +2,7 @@
 title: Resumen para Examen
 description: 
 published: true
-date: 2026-06-18T11:17:49.749Z
+date: 2026-06-18T11:33:48.822Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-18T10:37:37.720Z
@@ -90,7 +90,51 @@ Para resolverlo únicamente debemos hacer el algoritmo de Davis-Putman. Donde bu
 > No me es viable poder mostrar un ejemplo en esta plataforma, recomiendo buscarlo en internet.
 {.is-info}
 
+## Traducir
+Para traducir unicamente debemos entender el lenguaje normal, saber que es una implicación o que es una negación cuando el texto lo presenta.
+
 # Lógica de Predicados
+En este apartado, ya o solo usamos literales, si no que también usamos funciones y cuantificadores.
+
+Para hacer esto debemos entender que son estas cosas
+## Alfabeto
+El alfabeto de primer orden se compone en:
+- C: Simbolos constantes.
+- V: Variables.
+- F: Simbolos de funcion (Devuelver verdadero o falso).
+- R: Simbolos de relación (Como sumar dos numeros o lo que nos diga).
+
+Además tenemos los contectores como antes y los cuantificadores para tdoo ($\forall$) y existe ($\exists$).
+
+## Clasificación
+Al igual que en el anterior tema tenemos otras clasificaciónes:
+- Válidas: Para toda valoración es verdad.
+- Satisfacible: Para algunas valoraciones es verdad.
+- Refutable: Para algunas valoraciones es falsa.
+- No válida, para algunas interpretaciones es falsa.
+
+
+En este tipo de ejercicios, nos suele dar una fórmula y debemos interpretarla según el alfabeto dado o viceversa, dos dan en un enunciado y lo debemos expresar en el lenguaje dado.
+
+Aquí no hay trucos, lo ideal es practicar.
+
+Sin embargo también nos pueden preguntar respecto a Forma Normal de Prenexa, Forma Normal de Skolem y Forma Clausulada.
+
+## Formas normales
+Las formas normales, es dado un fórmula transformarla y reducirla en las formas más simple que nos pidan.
+### Forma normal Prenexa
+Consiste en una formula donde todo los cuantificadores están al principio.
+
+### Forma normal de Skolem
+Los cuantificadores existenciales desaparecen y son interpretados por los para todos anteriores si tuviera.
+- $\forall x \exist y (Q(x,y)) = \forall x (Q(x,f(x))$.
+- $\exist y \forall x (Q(x,y)) = \forall x (Q(x,a))$.
+
+### Forma normal clausulada
+Es lo que hemos estado haciendo en el team anterior, dividir las formuals en $\wedge$.
+> Ojo, los $\forall x $ se pueden juntar con otros $\forall x$ siempre y cuando hay aun $\wedge$ en medio, al igual pasa con $\exists y$ se puede juntar con otros $\exists b$ si hay $\vee$.
+{.is-warning}
+
 # Unificación y Resolución
 # Inducción y Recurrencia
 # Grafos
