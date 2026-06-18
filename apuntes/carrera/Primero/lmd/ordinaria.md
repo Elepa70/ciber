@@ -2,7 +2,7 @@
 title: Resumen para Examen
 description: 
 published: true
-date: 2026-06-18T12:35:04.807Z
+date: 2026-06-18T13:16:27.216Z
 tags: 
 editor: markdown
 dateCreated: 2026-06-18T10:37:37.720Z
@@ -150,4 +150,72 @@ Mientras resolvamos debemos tener en cuenta una cosa.
 - Sin embargo las constantes nunca podremos cambiarlas, se quedan fijas.
 
 # Inducción y Recurrencia
+Este tema suele ser uno de lo más confusos, aquí hay un resumen rapido para intentar aplicar las normas más fundamentales.
+
+Se divide en dos:
+## Inducción
+La parte de inducción se estructura internamente en:
+- Caso base: Según lo que nos pida debemos comprobar que se cumple para el valor más basico posible, normalmente 0 o 1.
+- Hipotesis de inducción: Aquí es recomendable poner: "Suponemos que (lo que queramos comprobar) es verdad, para todo $m \in \{1,2,3\dots n\}$". Con esto tenemos todo listo para empezar.
+- Demostración: Aquí ya debemos cambiar las formulas que teniamos por (normalmente) $n+1$.
+
+> Este tipo de ejercicio me lia personalmente, por lo tanto solo está descrito la parte más "sencilla".
+{.is-info}
+## Recurrencia
+En el caso de Recurrencia tenemos una secuencia y debemos sacar su expresión recurrente, para elo hacemos:
+- Polinomio caracteristicico de la homogenea: Sería esa expresión que es recurrente, pero unicamente aquellas partes donde esté $x_n$.
+- Polinomio característico: Serían las raices del polinomio anterior + aquellas raices que hayamos obtenido de las expresiones que hayamos quitado, por ejemplo: Si teneamos un $A^n$, siendo $A$ una constante, entonces otra "raiz" sería $x-A$.
+- Solución general, aquí debemos hacer una ecuación donde haya tantas incognitas como raices nos haya salido, con la forma de $A*(x)^n$, siendo $x$ la raíz, en caso de que se repite alguna tendriamos $A*(x)^n + B*n*(x)^n$.
+
+Cuando estemos con la solución general, podemos sacar terminos con los valores de la recurrencia ya dados por ejemplo si nos dan $x_0 = 1$, entonces sustituimos con $n=0$ y la expresión la igualamos a 1, nos saldrá un sistema de ecuaciones que deberemos resolver con el metodo que deseamos.
 # Grafos
+Este es el último tema de la asignatura, y es importante este tema ya que se seguirá usando sus principios más adelante en la carrera. Debemos tener en cuenta una serie de cosas.
+## Caracteristicas de los grafos
+Simbologia:
+- Vertices: Aquellos puntos de donde salen las aristas.
+- Aristas: Son las zonas de donde salen los "caminos" hacia otros vertices.
+- Caras: Es el espacio que queda entre las distintas aristas del grafo.
+
+Conexo: Se dice que es conexo cuando por cada par de nodos hay un camino entre ellos, es decir no hay islas flotando.
+Grados: Es la cantidad de aristas que salen de un vértice dado.
+
+Para saber la cantidad de lados, en base a grados, lo que hacemos es sumar todos los lados y dividirlo entre 2. $l =\frac{1}{2}\sum g$, siengo $g$ los grados.
+
+Los grafos $K_n$: Son aquellos grafos que tienen tantos vértices como $n$ tenga, y están todos los vértices conectados uno a otro, es decir sus lados son: $l=\frac{n*(n-1)}{2}$.
+
+## Grafos bipartitos
+Son aquellos grafos que podemos dibujar de manera que una parte de ellos esté a la izquierda y otros a la derecha, y entre esas partes formadas, no haya ninguna arista que vaya entre ellas.
+
+## Cuando tenemos un grafo
+Para deducir si tenemos un grafo tenemos que usar el método de Havel-Hakimi (HH), que consiste en:
+- Ordenamos los grados de mayor a menor.
+- Si devuelve 0 es grafo, en cualquier otro caso no es grafo.
+- Lo que hacemos es eliminar el primer valor que tengamos y restamos 1 en tanto valores como valor tenga el que hemos eliminado. Por ejemplo si teniamos 43322, al quitar el 4, nos queda 2211, pero al quitar el siguiente 2, nos queda 111.
+
+## Euler
+Un grafo de euler es aquel que nos permite ir por todas las aristas.
+Cuando nos pregunten de euler debemos saber que:
+- Los circuitos de Euler solo existen cuando todos los grados son pares.
+- Los caminos de Euler solo existen cuando todos los grados son pares a excepción de 2, que será el comiendo y el fin del circuito.
+## Hamilton
+Por otro lado Hamilton, es aquel que nos permite ir a todos los vértices.
+
+El problema es que no tenemos un algoritmo eficiente para calcularlo, por ello el mejor método es dibujar el grafo e intentar buscar una manera para ir hacia todos.
+Normalmente es recomendable dejar para el final algún grado que tenga lados con todos los demás vertices, pero es un problema $NP$.
+
+## Grafos planos
+Los grafos planos son aquellos que podemos dibujar sin que ninguna arista choque entre ella. Para poder saber si un grafo es o no plano, podemos:
+- Fórmula $l\leq 3n-6$, siendo $l$ el número de lados y $n$ el número de aristas.
+- Teorema de Kuratowski, un grafo es plano si al contraerse no forma ni $K_5$ ni $K_{3,3}$
+
+## Coloración
+Cuando nos pregunten por el **número** cromatico, debemos recordar que este es el valor mínimo de colores con el que podemos dibujar todo el grafo. Podemos hacerlo o bien con el dibujo o bien sabiendo que vértice va a cada vértice.
+
+Por otro lado.
+Cuando nos pregunten por el **polinomio cromático**, aquí ya comienza a ser un problema $NP-Completo$, y solo tenemos un algoritmo para hacerlo aunque no sea eficiente.
+El algoritmo es el siguiente:
+$p(x,G) = p(x,G'_e)-p(x,G_e)$.
+Esto es:
+- $p(x,G)$
+- $p(x,G)$
+- $p(x,G)$
