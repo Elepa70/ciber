@@ -1,8 +1,8 @@
 ---
 title: Estructura de Computadores
 description: 
-published: true
-date: 2026-09-14T15:59:00.140Z
+published: false
+date: 2026-09-14T16:42:28.439Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-14T15:40:11.907Z
