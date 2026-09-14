@@ -2,7 +2,7 @@
 title: Estructura de Computadores
 description: 
 published: true
-date: 2026-09-14T15:56:02.908Z
+date: 2026-09-14T15:59:00.140Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-14T15:40:11.907Z
@@ -15,6 +15,8 @@ En está página web podrá encontrar los distintos temarios que corresponden a 
 - [Representación de programas a nivel máquina](tema2)
 - [Unidad de control](tema3)
 - [Segmentación de cauce](tema4)
+- [Entrada/Salida y buses](tema5)
+- [Memoria](tema6)
 
 ## Docente
 El temario fue dado por Francisco J. Fernández Baldomero
