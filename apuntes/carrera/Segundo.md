@@ -1,8 +1,8 @@
 ---
-title: Segundo Año
+title: Segundo Año de Ingeniería Informática
 description: 
 published: true
-date: 2026-09-14T15:34:33.568Z
+date: 2026-09-14T15:41:08.445Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-14T15:34:33.568Z
