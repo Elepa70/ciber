@@ -2,7 +2,7 @@
 title: Conceptos básicos de la programación y el diseño orientados a objetos
 description: 
 published: true
-date: 2026-09-15T16:24:35.422Z
+date: 2026-09-15T16:31:45.160Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-15T15:43:12.829Z
@@ -38,3 +38,8 @@ La clase nos sirve como "molde" o "plantillas" para definir el resto de objetos,
 
 ### Encapsulación
 La encapuslación nos sirve para poder agrupar diversos elementos en uno solo. 
+
+### UML
+También debemos diseñar y ser capaces de poder expresar nuestros codigos mediante lenguaje visual, para ello vamos a usar UML.
+
+UML consiste en un lenguaje de diseño que nos vas ayudar 
