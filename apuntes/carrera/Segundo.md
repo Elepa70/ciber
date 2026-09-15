@@ -2,7 +2,7 @@
 title: Segundo Año de Ingeniería Informática
 description: 
 published: true
-date: 2026-09-14T15:41:08.445Z
+date: 2026-09-15T15:37:32.591Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-14T15:34:33.568Z
@@ -16,6 +16,7 @@ En esta sección encontrarás los enlaces hacia las asignaturas dividida en prim
 {.is-warning}
 
 - [Estructura de Computadores](ec)
+- [Programación y Diseño Orientado a Objetos](pdoo)
   {.links-list}
 ## Segundo cuatrimestre
 
