@@ -2,7 +2,7 @@
 title: Ingeniería Informática
 description: 
 published: true
-date: 2025-10-31T15:27:29.432Z
+date: 2026-09-16T15:36:49.072Z
 tags: 
 editor: markdown
 dateCreated: 2025-09-29T19:28:18.082Z
@@ -25,7 +25,7 @@ En este caso, los apuntes se harán de la UGR (Universidad de Granada), España.
 {.is-danger}
 
 
-## Acceso a los apuntes.
+## Acceso a los apuntes
 - [1º Año](Primero)
 - [2º Año](Segundo)
 - [3º Año](Tercero)
