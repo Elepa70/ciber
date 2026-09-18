@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-09-18T17:21:41.130Z
+date: 2026-09-18T17:37:27.998Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-18T16:51:55.223Z
@@ -64,7 +64,35 @@ Denominamos a $V(S)$ como las **variables accedidas por una sentencia $S$**.
 Todo los elementos de estados desde el inicio hasta el fin lo vamos a llamar **historia** o **traza**. 
 
 Cuando una sentencia recoge una variable, esta variable debe ser guardada en algún lado llamado **registros**. Definimos registros (r0), son variables especiales que contienen la información de otras variables.
+> Usualmente este tipo de registros no los vamos a necesitar, tanto como los accesos.
+{.is-info}
+
+Para describir una traza vamos a usar una tabla con Sentencia ejecutada y estados.
+
+> Podemos resumir esto como: Un programa secuencial es una lista finita de procesos donde se acceden a las variables, partiendo desde un estado inicial hasta un estado final.
+{.is-success}
+
 
 ### Modelo abstracto de ejecución concurrente
+Un programa concurrente lo vamos a definir como, es un texto fuente donde hay variables y sentencias, donde cada programa se ejecuta concurrentemente, con variables compartidas ya sean locales o accesibles con registros
+> Revisar
+{.is-warning}
+
+
+Una de las caracteristicas de este tipo de programa es que no finaliza hasta que todos los procesos no hayan acabado, y un programa peude estar embebido uno dentro de otro (Tenemos un sistema que efectua unas cuentas y debe intererar en un vector de 1M de elementos, y para hacer esto reparte el calculo de procesos entre las distintas CPU).
+
+Estos procesos puede definir distintos variables propias definidas variables locales, donde cada uno de los procesos posee sus variables y no es posible acceder desde fuera del proceso, similar pasa con el registro, cada uno son independeinte de los demás.
+
+Debido a que ahora tenemos sentencias ejecutadas a la vez o concurrentemente, ahora debemos darle una nueva notación para poder diferenciar.
+- Sentencias ejecutadas de forma secuencial: $S_{A};S_{B}$.
+- Sentencias ejecutadas de forma concurrente:$S_{A}||S_{B}$.
+
+Se pueden concatenar tantas sentencias como deseemos, sin embargo hay que tener en cuenta que $S_{A};S_{B}$ no es igual que $S_{B};S_{A}$.
+
+Los programas concurrentes **SIEMPRE** va a cumplir la propiedad de Consistencia Secuencial Estricta:
+- Cada uno de los programas concurrentes,si  están definido como programas secuenciales. Esto implica que el programa sencuencial 2º de uno de los dos programas concurrentes, JAMAS podra acceder antes que el primer programa secuencial del mismo programa concurrente.
+- Toda ejecución se puede definir como una traza, como una secuencia de accesos.
+
+Al tener accesos, se modifica el estado inicial del programa se modifica también, y al tener estados vamos a tener las trazas que nos habilita ver como ha evolucionado el programa. Sin embargo las trazas ENTRE ejecuciones, pueden variar. 
 ## Exclusión mutua y sincronización
 ## Propiedades
