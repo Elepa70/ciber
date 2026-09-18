@@ -2,7 +2,7 @@
 title: Introducción a la eficiencia de algoritmos
 description: 
 published: true
-date: 2026-09-18T16:07:31.329Z
+date: 2026-09-18T16:31:09.438Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-17T15:40:45.988Z
@@ -103,6 +103,15 @@ Existen las leyes físicas del código que son:
 {.is-info}
 
 Hay casos donde tenemos dos bucles anidados y en alguno de ellos vamos modificando la variable contador.
+
+Cuando incrementamos o decrementamos la variable en multiplicación o división, debemos tener en cuenta que la $O(n)$ pasa a ser $O(log(n))$.
+
+- Interación Simple: $O(n)$, caso de i++.
+- Interación a saltos: $O(log n)$, caso de i*=2.
+- Bucles Anidados (independientes): $O(n^2)$, dos bucles for sin conexión.
+- Bucles Anidados (dependientes): $O(n^2)$, dos bucles con conexión.
+- Anidados mixtos: $O(n log n)$, se modifica una de los dos variables dentro del bucle.
+
 ## Caso peor, caso promedio y análisis amortizado
 
 ## Cálculo del tiempo de ejecución de un algoritmo 
