@@ -2,7 +2,7 @@
 title: Introducción a la eficiencia de algoritmos
 description: 
 published: true
-date: 2026-09-17T17:27:58.537Z
+date: 2026-09-18T16:07:31.329Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-17T15:40:45.988Z
@@ -66,6 +66,43 @@ En este meotodo el algoritmo tiene orden de eficiencia T(n), si existe una imple
 El concepto más importante ses el O-Grande, que se reifere al tiempo de ejecución cuando nos acercamos al peor de los casos (Tendemos al infinito). Para calcular este valor lo que hacemos es en un polinomio obtener el monomio más grande y compararlo junto al polinomio. 
 ## Cotas de eficiencia
 
+En nuestro ordenador teórico, cada operación elemental tiene un coste de tiempo constante. En este ordenador ideal tenemos una lista
+
+> Pendiente de cambio.
+{.is-warning}
+
+### Declaraciones
+Por jeemplo
+```
+int a;
+int b;
+```
+Esto se considera un tick o una **operación elemental**.
+### Asignación
+SImilar que el anterior ya que al darle un valor a una declaración también consume una operación elemental.
+
+### Comparación simple
+En este tipo de comparaciones también su valor de operación elemental.
+### Aritméticas
+```
+int c = a+b; // En este caso son 3 ya que tenemos declaracióm y asignación.
+```
+> Hasta aquí
+{.is-warning}
+
+Todas las operaciones elementales anteriores tienen un coste de O(1) o de 1 tick.
+
+SIn embargo cuando tenemos operaciones elementales donde hay bucles (como un for), esto ya cambiara segun la cantidad de operaciones que van a haber, por ejemplo en un for tenemos:
+- Declaración del i, comparación del i y después el sumatorio de la cantidad de veces que se va a hacer, tendriamos una eficiencia de O(n).
+
+
+Existen las leyes físicas del código que son:
+- La suma: Cuando unimos ambos tiempo, esto pertenece al máximo de f(n),g(n), es decir $O(max(f(n),g(n))$. Por ejemplo, en las sentencias if-else se aplica la regla de la suma.
+- El producto: En este caso tenemos un codigo dentro de otro (un bucle anidado), por lo tanto el tiempo va a ser $O(f(n)xg(n))$ o $O(n²)$.
+> Cuando hamagos los cuenteos de los bucles, debemos tener en cuenta que, es el (fin del bucle -1) - (valor de la variable) + 1
+{.is-info}
+
+Hay casos donde tenemos dos bucles anidados y en alguno de ellos vamos modificando la variable contador.
 ## Caso peor, caso promedio y análisis amortizado
 
 ## Cálculo del tiempo de ejecución de un algoritmo 
