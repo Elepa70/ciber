@@ -2,7 +2,7 @@
 title: Clases, objetos y mensajes
 description: 
 published: true
-date: 2026-09-21T10:17:14.625Z
+date: 2026-09-21T10:41:50.703Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-21T07:50:38.399Z
@@ -123,5 +123,35 @@ Sus caracteristica son:
 - Solo se usan para inicializar los atributos.
 - Pueden haber varios con distintos parámetros.
 - Se debe usar la palabra "new" para construir un objeto.
+> Debido a que todo esto lo sabemos de FP o MP, no voy a poner ejemplos.
+{.is-info}
 
+### Ruby
+- Se llama initialize en vez de constructor
+- Método de instancia privada creado con new
+- Se encarga de crear y inicializar los atributos de instancia
+
+Ejemplo:
+```Ruby
+class Claseando
+
+	@@Atributo_Clase = 100
+  
+  private
+  def metodito(a)
+  	result = [@@Atributo_Clase, a].max
+  end
+  
+  def initialize (x,y,z)
+  	@x = limitacion (x)
+    @y = limitacion (y)
+    @z = limitacion (z)
+  end
+end
+```
 ### Mémoria dinámica y pila
+Tanto en Java como en Ruby, todos los objetos se crean en la memoria dinámica (heap), y en ambos usamos punteros como variables de referencias de objetos.
+
+A la hora de devolver el valor de una variable, se está devolviendo una referencia a un objeto.
+
+Para liberar la memorai, tanto Java como Ruby disponen de un recolector de basura, que limpia automáticamente la memoria utilizada.
