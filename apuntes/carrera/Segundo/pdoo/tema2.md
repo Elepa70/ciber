@@ -2,7 +2,7 @@
 title: Clases, objetos y mensajes
 description: 
 published: true
-date: 2026-09-21T09:34:37.131Z
+date: 2026-09-21T10:17:14.625Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-21T07:50:38.399Z
@@ -112,3 +112,16 @@ Existen niveles de acceso a atributos y métodos, donde nos encontramos:
 > Por buenas praxis, siempre vamos a usar la regla más restrictiva. 
 {.is-danger}
 
+## Construcción de objetos
+### Constructores
+Siempre que vayamos a usar un constructor, primero es obligatorio su creación, y esta creación implica necesariamente reserva de memoria y inicialización.  Como vimos en anteriores asignaturas, los constructores se encargan de inicializar las instancias.
+- Clases-plantillas: Mismo nombre de la clase, invocados automáticamente usando new.
+- Clases-objetos: Pueden tener otro nombre, suelen ser métodos de clase.
+#### En Java
+Sus caracteristica son:
+- Mismo nombre que la clase.
+- Solo se usan para inicializar los atributos.
+- Pueden haber varios con distintos parámetros.
+- Se debe usar la palabra "new" para construir un objeto.
+
+### Mémoria dinámica y pila
