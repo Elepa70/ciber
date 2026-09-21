@@ -2,7 +2,7 @@
 title: Clases, objetos y mensajes
 description: 
 published: true
-date: 2026-09-21T08:46:07.884Z
+date: 2026-09-21T09:34:37.131Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-21T07:50:38.399Z
@@ -62,6 +62,53 @@ El objetivo siempre va a ser tener una alta cohesión y un bajo acoplamiento.
 
 ## Atributos y Métodos
 ### Atributos y métodos de instancia
+Cuando describimos una clase, también debemos incluir los atributos de esa clase, que pertenecerá a cada instancia. Estos atributos son las variables de cada objeto (Nombre, Id...). Y el estado de cada objeto se describe mediante los valores de estos atributos. 
+
+Los métodos, también definidos como funciones, son definidos en una clase y están conectados a los objetos (de esa clase).
 ### Atributos y métodos de clase
+Los atributos de clases, almacenan información que está asociada a la propia clase **NO** a cada instancia.
+
+Por lo tanto son globables y pueden usarla cada instancia de esa clase.
+
+A la hora de diseñar este tipo de atributos, es obligatorio pensar que debe ser un uso **GLOBAL** y que va a ser información **común** a todas las instancias.
+
+Ejemplos:
+```Java
+class Clase{
+	static private int numClases = 0;
+  static int getNumClases (){
+  	return numClases;
+  }
+	private String nombre;
+  Clase (String n){
+  	nombre = n;
+    numClases++;
+  }
+}
+```
+```Ruby
+class Clase
+	@@num_clases = 0 // Atributo de clase
+  def self.num_clases
+  	@@num_clases
+  end
+  
+  def initialize (nom)
+  	@nombre = nom //Atributo de instancia
+    @@num_clases +=1
+  end
+end
+```
 ### Pseudovariables
+Tanto en Java como en Ruby, hay palabras reservadas para referenciar al propio objeto. Estas son:
+- Java: this
+- Ruby: self
 ### Especificaciones de acceso. Visibilidad
+Existen niveles de acceso a atributos y métodos, donde nos encontramos:
+- Privado: Solo la propia instancia o clase puede acceder.
+- Paquete: Sin restricción dentro del mismo paquete.
+- Público: Sin restricciones.
+
+> Por buenas praxis, siempre vamos a usar la regla más restrictiva. 
+{.is-danger}
+
