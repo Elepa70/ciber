@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: false
-date: 2026-09-21T17:16:07.643Z
+date: 2026-09-21T17:16:33.273Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-14T17:25:49.207Z
@@ -75,6 +75,10 @@ Volviendo a las arquitecturas tenemos que ir viendo:
 Hablando sobre formatos de instrucciones:
 - RISC: Sus caracteristicas son las de pocas instrucciones, pocos modos y muchos registros (0-2) y (0/3).
 - CISC: Este es completamente alreves. 
+
+> En casa
+{.is-warning}
+
 ## Estructura de bus
 ## Rendimiento
 ## Prespctiva histórica
