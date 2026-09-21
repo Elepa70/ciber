@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: false
-date: 2026-09-21T17:01:17.554Z
+date: 2026-09-21T17:13:07.045Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-14T17:25:49.207Z
@@ -63,7 +63,18 @@ Por último veremos sobre los repertorios o arquitecturas:
 - ISA: Arquitectura del Repertorio.
 - RISC: Suelen ser las 0/2 o 0/3, pocas instrucciones y pocos modos.
 - CISC: Es más complejo y se supone que es más proximo a lenguajes de alto nivel.
+
 ## Conceptos básicos de funcionamiento
+La captación consiste en leer de una posición y traerlo al registro IR.
+
+Volviendo a las arquitecturas tenemos que ir viendo:
+- Arquitectura M/M: Varia en cuanto a las operaciones de captaciones.
+- Arquitectura R/M: Hace usos de "Add" para acceder a memorias.
+- Arquitectura R/R: Usado para varias instrucciones, y funciona mediante "Load".
+
+Hablando sobre formatos de instrucciones:
+- RISC: Sus caracteristicas son las de pocas instrucciones, pocos modos y muchos registros (0-2) y (0/3).
+- CISC: Este es completamente alreves. 
 ## Estructura de bus
 ## Rendimiento
 ## Prespctiva histórica
