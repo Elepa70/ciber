@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-09-23T16:47:30.177Z
+date: 2026-09-23T17:00:14.463Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -119,7 +119,7 @@ En las interrupción software o llamadas al sistema, cambia un poco con respecto
 Dentro de las interrupciones debemos saber que existe una prioridad de interrupciones donde cuanto menor sea el número mayor es la urgencia que tiene. En caso de intentar solucionar una interrupción de un valor mayor al que acaba de entrar, este se para y deja entrar al mas urgente. Esto se almacena en la pila de control de sistema, y se va a seguir almacenando y extrañendo conforme vaya resolviendo.
 ## Componentes de un SO
 
-
+### Procesos
 
 Lo primero que tenemos que definir una serie de cositas
 - Procesos: Es aquello que necesita un S.O. para poder monitorizar el programa y controlar la su ejecución. La supervisión del los procesos viene encargado del PCB. 
@@ -140,6 +140,23 @@ Es por eso que el *Tiemsharing*, soluciona este problema, ya que te permite volv
 > CPU scheduling y swapping se darán en el tema 2 y la memoria virtual en el tema 3.
 {.is-success}
 
+
+La funcionalidad de los procesos, tenemos la creación del PCB con todo lo explicado anteriormente y la eliminación del mismo a la hora de finalizarse, también el bloqueo (sleep) y desbloqueo (wakeup) que se verá más adelante, y por último la comunicación de procesos también se verá mas adelante.
+
+### En la memoria
+La memoria nos sirve para:
+- Protección de la memoria del kernel y las regiones de programas.
+- Compartición por parte de regiones ocupadas por programas para comunicarse entre ellos.
+- Se encarga también de la jerarquía de la memoria con la asignación y liberación del mismo, mediante la memoria asignada y libre.
+- Algortimos para memoria virtual (Decidir cuanta memoria requiere cada proceso) y para swapping (para liberar toda la memoria asociadas).
+
+### Archivos y Directorios
+Un archivo consiste en una colección de contenidos de información usualmente identificada.
+Alguna de sus funcionalidades:
+- Tiene los archivos de procesamiento (Abrir, cerrar, escribir, leer...) 
+- Creacion, eliminacion...
+
+Los directorios se encargan de la asignación y liberación de los archivos y directorios, mediante los metadatos del Sistema de Archvios
 
 ## Estructuras/Arquitecturas de los SOs
 
