@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-09-23T17:00:14.463Z
+date: 2026-09-23T17:03:49.374Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -157,6 +157,15 @@ Alguna de sus funcionalidades:
 - Creacion, eliminacion...
 
 Los directorios se encargan de la asignación y liberación de los archivos y directorios, mediante los metadatos del Sistema de Archvios
+
+### Dispositivos E/S
+Donde se busca el controlar los funcionamientos de los dispositivos de E/S, la protección de su utilización por parte de las aplicaciones, tener una interfaz independiente y por último los Device Drives o el manejador de dispositivo.
+
+### SO
+Un sistema operativo en su gestión de recursos debe garantizar:
+- Equitatividad: Garantizar el acceso a los recursos para todo proceso.
+- Respuesta diferencial: El SO debe identificar y asignar a cada recursos los recursos que requiere. Esto puede chocar junto a Equitatividad, ya que los procesos en IORBs, peude provocar que algunos procesos se mueran de inanicion (no obtener ningun recurso)
+- Eficiencia: 
 
 ## Estructuras/Arquitecturas de los SOs
 
