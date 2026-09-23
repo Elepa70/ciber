@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-09-23T16:46:39.683Z
+date: 2026-09-23T16:47:30.177Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -137,7 +137,7 @@ La multiprogramación nos habilita que varios programas se ejecuten a la vez, lo
 
 Es por eso que el *Tiemsharing*, soluciona este problema, ya que te permite volver al estado listo, siempre y cuando tu tiempo se haya acabado (Timeout). Esto genera un dato nuevo en nuestra PCB, el contador. 
 
-> CPU scheduling y swapping se darán en el tema 2
+> CPU scheduling y swapping se darán en el tema 2 y la memoria virtual en el tema 3.
 {.is-success}
 
 
