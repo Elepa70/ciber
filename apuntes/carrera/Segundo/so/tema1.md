@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-09-23T16:31:49.565Z
+date: 2026-09-23T16:46:39.683Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -132,6 +132,14 @@ Un proceso al crearse lo que hace es:
 
 > Existen unas consideraciones con Multiprogramación, Compartir tiempo, Calendariod e CPU o memoria virtual por ejemplo.
 {.is-info}
+
+La multiprogramación nos habilita que varios programas se ejecuten a la vez, lo hacemos mediante un context_switch donde cambiamos el estado de ejecutado a bloqueado. Sin embargo esto puede generar problemas ya que la unica de manera de esperar otra E/S es entrar en modo bloqueado y no volver a Listo automaticamente.
+
+Es por eso que el *Tiemsharing*, soluciona este problema, ya que te permite volver al estado listo, siempre y cuando tu tiempo se haya acabado (Timeout). Esto genera un dato nuevo en nuestra PCB, el contador. 
+
+> CPU scheduling y swapping se darán en el tema 2
+{.is-success}
+
 
 ## Estructuras/Arquitecturas de los SOs
 
