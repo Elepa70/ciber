@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-09-23T17:03:49.374Z
+date: 2026-09-23T17:17:19.557Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -165,7 +165,30 @@ Donde se busca el controlar los funcionamientos de los dispositivos de E/S, la p
 Un sistema operativo en su gestión de recursos debe garantizar:
 - Equitatividad: Garantizar el acceso a los recursos para todo proceso.
 - Respuesta diferencial: El SO debe identificar y asignar a cada recursos los recursos que requiere. Esto puede chocar junto a Equitatividad, ya que los procesos en IORBs, peude provocar que algunos procesos se mueran de inanicion (no obtener ningun recurso)
-- Eficiencia: 
+- Eficiencia: Se diferencia entre usuario y para sistema, donde se busca maximizar la productividad según para que este diseñado.
+
+Dentro de un SO tenemos una serie de componentes:
+- Gestor de procesos
+- Gestor de memoria
+- Gestor de archivos
+- Gestor de E/S y gestor de comunicación (que son similares pero donde se diferencia en que, las de comunicación tengan las de red y E/S tiene el sistema de archivos).
+
+
+### Interfaces entre Usuario y SO
+- Tenemos la Shell o CLI (Command Line Interface)
+- Tenemos la GUI (Graphic User Interface), interfaz grafica
+
+Y por último de System Calls o llamada de sistemas que vamos a desarrollar en profundidad. Dentro de una llamada al sistema tenemos que el usuario ejecuta un programa, llamando a la biblioteca y activa la trampa.
+
+La trampa, es ese metodo que se usamos para poder hacer sys_calls. En el manejador de llamadas al sistema, lo que se hace es pasar el ID de la llamada (Para poder identificar que le hace falta) + los parametros que requiere al kernel. 
+
+Para pasar los pasos de parámetros, tenemos varios metodos (En registo de CPU, Parametro en memoria y Parametros en una pila).
+
+Los id de llamadas tienen su propia tabla, cada uno con su numero, y tienen un pequeño puntero a funcion con sys_read, para que empiece a trabajar, en este caso hace la rutina de servicio de la llamada, con sus sys_open una vez identificado.
+
+Una vez fianlizado, se hace un iret para **SALIR** del modo Kernel, y ya finalizar el programa.
+
+
 
 ## Estructuras/Arquitecturas de los SOs
 
