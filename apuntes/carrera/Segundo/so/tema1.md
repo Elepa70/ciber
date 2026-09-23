@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-09-23T16:19:02.080Z
+date: 2026-09-23T16:28:23.457Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -95,7 +95,7 @@ El tratamiento de excepciones parte desde la parte Hardware de la siguiente mane
 - El procesador finaliza la ejecución del proceso actual..
 - El proceso envia una señal informando de la interrupción.
 - El procesador mueve el PSW en modo 0 (modo protegido) y el PC al stack.
-- El proceador busca y carga el nuevo RSI, para identificar cual es el nuevo dispositivo que ha dado error. Este mecanismo se llama: Mecanismo de interrupciones vectorizadas (Consiste en un array, reservado en una zona de RAM intocable del Sistema Operativo, que contiene la dirección de la 1º Instrucción del RSI i, y también la dirección de la 1º Instrucción de la rutina servicio excepción, siendo divididas por el 80h siendo el gestor de general al sistema, cualquiera de estas pueden ser cargadas en memoria).
+- El proceador busca y carga el nuevo RSI(Rutina de Servicio de Interrupción), para identificar cual es el nuevo dispositivo que ha dado error. Este mecanismo se llama: Mecanismo de interrupciones vectorizadas (Consiste en un array, reservado en una zona de RAM intocable del Sistema Operativo, que contiene la dirección de la 1º Instrucción del RSI i, y también la dirección de la 1º Instrucción de la rutina servicio excepción, siendo divididas por el 80h siendo el gestor de general al sistema, cualquiera de estas pueden ser cargadas en memoria).
 > Con esto en cuenta, lo que se hace es que se añade en memoeria (PC), el VI[80h], que es el gestor general de llamadas al sistema.
 {.is-info}
 
@@ -127,7 +127,7 @@ Lo primero que tenemos que definir una serie de cositas
 Un proceso al crearse lo que hace es:
 - Crea o genera un PCB, donde se inicializa sus campos.
 - Se carga el programa en RAM, para ir al gestor de memoria. 
-- Nos establecemos en Listo, donde se generaria un pid_t PID (En unix). Y también se le añade un contexto de registro del procesador (PC, PSW, SP, BR indica la base en la pila y LR indica el fin en la pila). También añadimos el estado (que debe ser Nuevo, Finalizado, Listo, Ejecudandose o Bloqueado). Añadimos la memoria.
+- Nos establecemos en Listo, donde se generaria un pid_t PID (En unix),se le añade un contexto de registro del procesador (PC, PSW, SP, BR indica la base en la pila y LR indica el fin en la pila), añadimos el estado (que debe ser Nuevo, Finalizado, Listo, Ejecudandose o Bloqueado) y por último añadimos la memoria.
 - 
 
 > Existen unas consideraciones con Multiprogramación, Compartir tiempo, Calendariod e CPU o memoria virtual por ejemplo.
