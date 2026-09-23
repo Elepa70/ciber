@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-09-23T15:54:56.661Z
+date: 2026-09-23T15:58:36.237Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -101,7 +101,9 @@ El tratamiento de excepciones parte desde la parte Hardware de la siguiente mane
 
 Ahora tenemos también la parte en Software:
 - Se guarda o graba el resto del estado del procesador. Donde se salva todos los registros del RSI.
-- 
+- El proceso se interrupte.
+- Se reestablece el proceso de estado de la información.
+- Por último lo que se hace el restaurar el antiguo PSW y el PC. Esto se hace con *i ret* (interrupt return). Donde lo que hace es cargar el marco de la pila y cargarlo en el registro (El PC y el PSW).
 ## Componentes de un SO
 
 ## Estructuras/Arquitecturas de los SOs
