@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-09-23T16:00:17.872Z
+date: 2026-09-23T16:19:02.080Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -109,7 +109,29 @@ Existen también las TRAP que es otra interrupción que forzamos nosotros para p
 
 
 A su vez tenemos las excepciones, donde pueden ser recuperables o no recuperables. 
+
+
+
+
+En las interrupción software o llamadas al sistema, cambia un poco con respecto al anterior. El hardware sigue apliando el PSW y el PC, activa modo kernel (0 protegido) y cagar el PC con el contenido del vector dentro del gestor general. 
+
+
+Dentro de las interrupciones debemos saber que existe una prioridad de interrupciones donde cuanto menor sea el número mayor es la urgencia que tiene. En caso de intentar solucionar una interrupción de un valor mayor al que acaba de entrar, este se para y deja entrar al mas urgente. Esto se almacena en la pila de control de sistema, y se va a seguir almacenando y extrañendo conforme vaya resolviendo.
 ## Componentes de un SO
+
+
+
+Lo primero que tenemos que definir una serie de cositas
+- Procesos: Es aquello que necesita un S.O. para poder monitorizar el programa y controlar la su ejecución. La supervisión del los procesos viene encargado del PCB. 
+
+Un proceso al crearse lo que hace es:
+- Crea o genera un PCB, donde se inicializa sus campos.
+- Se carga el programa en RAM, para ir al gestor de memoria. 
+- Nos establecemos en Listo, donde se generaria un pid_t PID (En unix). Y también se le añade un contexto de registro del procesador (PC, PSW, SP, BR indica la base en la pila y LR indica el fin en la pila). También añadimos el estado (que debe ser Nuevo, Finalizado, Listo, Ejecudandose o Bloqueado). Añadimos la memoria.
+- 
+
+> Existen unas consideraciones con Multiprogramación, Compartir tiempo, Calendariod e CPU o memoria virtual por ejemplo.
+{.is-info}
 
 ## Estructuras/Arquitecturas de los SOs
 
