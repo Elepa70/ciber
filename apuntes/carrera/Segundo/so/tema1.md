@@ -2,13 +2,16 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-09-16T17:22:11.047Z
+date: 2026-09-23T15:49:31.087Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
 ---
 
 # Estructuras de sistemas operativos
+> Revisar estructura
+{.is-warning}
+
 ## Recordatorio de TOC y FS
 En este primer apartado, nos dedicamos a recordar lo que hemos dado el año pasado.
 
@@ -84,6 +87,15 @@ Todos estos modulos estan conectadas entre ellas mediante buses donde destacamos
 
 
 
+Si recordamos hablamos de las Entry Points, que son Interrupción, excepción y llamadas. Ahora vamos a hablar sobre el tratamiento de interrupciones:
+
+### Interrupciones
+El tratamiento de excepciones parte desde la parte Hardware de la siguiente manera:
+- El dispositivo controlador detecta un error y lo interrumpe.
+- El procesador finaliza la ejecución del proceso actual..
+- El proceso envia una señal informando de la interrupción.
+- El procesador mueve el PSW y el PC al stack.
+- El proceador busca y carga el nuevo RSI, para identificar cual es el nuevo dispositivo que ha dado error. Este mecanismo se llama: Mecanismo de interrupciones vectorizadas (Consiste en un array
 
 ## Componentes de un SO
 
