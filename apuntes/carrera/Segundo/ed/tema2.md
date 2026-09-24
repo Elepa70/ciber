@@ -2,7 +2,7 @@
 title: Abstractos
 description: 
 published: true
-date: 2026-09-24T16:29:17.706Z
+date: 2026-09-24T16:56:07.938Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-24T14:40:17.180Z
@@ -44,3 +44,4 @@ class Fecha{
 }
 ```
 La transformación de un tipo rep a la especificación, es lo que se denomina **función de abstracción**. Por ejemplo, en el ejemplo anterior lo que hacemos es fijar quien es el dia, quien es el mes y quien es el año. La definimos como: $f_{A}:rep \rightarrow T.D.A. \text{ (definido en la especificacion)}$.
+
