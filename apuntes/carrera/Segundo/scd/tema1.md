@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-09-25T17:41:30.399Z
+date: 2026-09-25T17:41:45.944Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-18T16:51:55.223Z
@@ -146,5 +146,7 @@ Hay puntos del código que no son posible ejectuarse hasta que haya algún otro 
 
 Productor y Consumidor, consiste en ambos procesos, donde uno produce (va a hacer algo) y el otro lo consume (que lo usará para algo). 
 
-El problema que encontramos en este lugar, es que debe haber una gran sincronización, ya que es posible perder información de forma sencilla si leemos información basura o erronea. Es por ello que el proceso siempre será: $\text{Escribo},\text{ Leo}, E, L, E, L...$
+El problema que encontramos en este lugar, es que debe haber una gran sincronización, ya que es posible perder información de forma sencilla si leemos información basura o erronea. Es por ello que el proceso siempre será: $\text{Escribo},\text{ Leo}, E, L, E, L...$.
+
+
 ## Propiedades
