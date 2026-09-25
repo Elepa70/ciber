@@ -2,7 +2,7 @@
 title: Plantillas
 description: 
 published: true
-date: 2026-09-25T16:29:22.428Z
+date: 2026-09-25T16:30:55.325Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-25T15:43:40.237Z
