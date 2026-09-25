@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-09-25T17:01:47.184Z
+date: 2026-09-25T17:05:49.615Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-18T16:51:55.223Z
@@ -126,6 +126,8 @@ La abstracción la vamos a aplicar en esta asignatura, ya que esta asignatura de
 Esto lo vemos por ejemplo con los progresos finitos, ya que sabemos que va a tardar un tiempo finito, aunque no sepamos si es mucho o poco.  Al dar por cierta la hipotesis de progreso finito, debemos dar también por cierto las de punto de vista global (durante una jeecución siempre va a estar listo para entrar después) y la de vista local (una sentencia siempre se ejecuta, nunca se va a quedar congelado).
 
 
-
+### Cobegin-Coend
+Estas palabras las usamos para indicar que aquello que este entre cobegin y coend, se van a ejecutar en parapelelo en vez de manera secuencial.
 ## Exclusión mutua y sincronización
+
 ## Propiedades
