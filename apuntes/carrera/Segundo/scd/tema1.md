@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-09-25T16:42:50.243Z
+date: 2026-09-25T16:49:25.838Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-18T16:51:55.223Z
@@ -110,6 +110,11 @@ Alguna de las sentencias atomicas pueden ser:
 
 Podemos encontrarnos una serie de sentencias que se pueden saltar este termino.
 
+### Sentencias no atómicas
+Son aquellas donde se produce más de un estado intermedio o acceden a mas de una varible compartida.
+
+
+Aunque existan sentencias atomicas, no podemos garantizar que estas sean seguras, ya que es posible "Machacar" estas variables compartidas durante el proceso, provocando un cambio de resultado inesperado.
 
 
 ## Exclusión mutua y sincronización
