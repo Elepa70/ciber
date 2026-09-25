@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-09-25T17:10:57.091Z
+date: 2026-09-25T17:13:12.203Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-18T16:51:55.223Z
@@ -131,8 +131,10 @@ Estas palabras las usamos para indicar que aquello que este entre cobegin y coen
 ## Exclusión mutua y sincronización
 Un programa concurrente se peude ver como una secuencia de accesos, al fin al cabo un programa concurrente es un programa que se va haciendo al unisono (muchas tareas a la vez), existe la posibilidad de que alguna sea erronea, es por ello que los se necesita que una comunicación para que sea concurrente, ya que si no se denominaría paralelos.
 
+Para ello tenemos varias herramienta para poder determinar si una sentencia es correcta o erronea.
 
+- Concepto de exclusión mutua: "Este trozo de código es sagrado y no se debe cambiar".
+- Concepto de sincronización: "Tu no comienzas hasta que X variable no se haya leido en Y proceso".
 ### Concepto de exclusión mutua
-
 ### Condición de sincronización
 ## Propiedades
