@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-09-25T16:39:51.598Z
+date: 2026-09-25T16:42:50.243Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-18T16:51:55.223Z
@@ -96,13 +96,19 @@ Los programas concurrentes **SIEMPRE** va a cumplir la propiedad de Consistencia
 Al tener accesos, se modifica el estado inicial del programa se modifica también, y al tener estados vamos a tener las trazas que nos habilita ver como ha evolucionado el programa. Sin embargo las trazas ENTRE ejecuciones, pueden variar. 
 
 
-
+### Setencias atómicas
 Vamos a definir uno de los conceptos importantes
 Las sentencias atómicas, es una sentencia que desde que comienza hasta que termina, no permite ningun acceso, por lo tanto tampoco produce de estado intermedio. 
 
 Cualquier sentencia que tenga solo un acceso, ya sea escritura o lectura es atómica.
 > Tecnicamente si es posible que cree otro acceso, siempre y cuando sea por el mismo, no permite que otro acceso pueda hacerlo.
 {.is-info}
+Alguna de las sentencias atomicas pueden ser:
+- Dar un valor a una variable.
+- Cargar una variable local en una variable compartida.
+- Aquellas que tienen como mucho un acceso a 1 variable compartida.
+
+Podemos encontrarnos una serie de sentencias que se pueden saltar este termino.
 
 
 
