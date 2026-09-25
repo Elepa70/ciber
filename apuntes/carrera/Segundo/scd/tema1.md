@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-09-25T17:26:54.225Z
+date: 2026-09-25T17:41:30.399Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-18T16:51:55.223Z
@@ -140,5 +140,11 @@ Al tener varios procesos, podemos determianr una sección critica. Estas seccion
 - Cuando un proceso esta haciendo una sección critica, ningun otro proceso puede hacer alguna sección critica hasta que no finalice el primero.
 - Son una serie de sentencias de instrucciones que siempre se debe ejecutar de forma seguida.
 
+Este concepto se aplica muy bien con las atómicas.
 ### Condición de sincronización
+Hay puntos del código que no son posible ejectuarse hasta que haya algún otro punto del código y se haya ejecutado, vamos a usar Prodcutor y Consumidor para ello.
+
+Productor y Consumidor, consiste en ambos procesos, donde uno produce (va a hacer algo) y el otro lo consume (que lo usará para algo). 
+
+El problema que encontramos en este lugar, es que debe haber una gran sincronización, ya que es posible perder información de forma sencilla si leemos información basura o erronea. Es por ello que el proceso siempre será: $\text{Escribo},\text{ Leo}, E, L, E, L...$
 ## Propiedades
