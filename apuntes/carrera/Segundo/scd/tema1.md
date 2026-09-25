@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-09-25T16:49:25.838Z
+date: 2026-09-25T16:58:39.454Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-18T16:51:55.223Z
@@ -114,8 +114,16 @@ Podemos encontrarnos una serie de sentencias que se pueden saltar este termino.
 Son aquellas donde se produce más de un estado intermedio o acceden a mas de una varible compartida.
 
 
-Aunque existan sentencias atomicas, no podemos garantizar que estas sean seguras, ya que es posible "Machacar" estas variables compartidas durante el proceso, provocando un cambio de resultado inesperado.
+Aunque existan sentencias atomicas, no podemos garantizar que estas sean seguras, ya que es posible "Machacar" estas variables compartidas durante el proceso, provocando un cambio de resultado inesperado. Esto se puede llamar Solapamiento de instrucciones atómicas, ya que intercambiamos procesos distintos atómicos dando valores y resultados inesperados.
 
+
+Cuando interfoliaciamos procesos, es posible calcular la cnatidad de números posibles que pueden haber, para ello vamos a poner:
+$P_1$ ejecuta $n_1$ instrucciones atómicas y $P_2$ ejecuta $n_2$, para poder calcularo hacemos $\frac((n_1+n_2)!)(n_1!n_2!)$.
+
+
+La abstracción la vamos a aplicar en esta asignatura, ya que esta asignatura depende de EC en su parte máquina, vamos a ignorar algunos detalles para no repetir temario y centrarnos en las partes características relevantes y vamos a simplicar lo máximo psoible.
+
+Esto lo vemos por ejemplo con los progresos finitos, ya que sabemos que va a tardar un tiempo finito, aunque no sepamos si es mucho o poco. 
 
 ## Exclusión mutua y sincronización
 ## Propiedades
