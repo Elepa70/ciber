@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-09-25T17:05:49.615Z
+date: 2026-09-25T17:10:57.091Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-18T16:51:55.223Z
@@ -110,7 +110,7 @@ Alguna de las sentencias atomicas pueden ser:
 
 Podemos encontrarnos una serie de sentencias que se pueden saltar este termino.
 
-### Sentencias no atómicas
+#### Sentencias no atómicas
 Son aquellas donde se produce más de un estado intermedio o acceden a mas de una varible compartida.
 
 
@@ -126,8 +126,13 @@ La abstracción la vamos a aplicar en esta asignatura, ya que esta asignatura de
 Esto lo vemos por ejemplo con los progresos finitos, ya que sabemos que va a tardar un tiempo finito, aunque no sepamos si es mucho o poco.  Al dar por cierta la hipotesis de progreso finito, debemos dar también por cierto las de punto de vista global (durante una jeecución siempre va a estar listo para entrar después) y la de vista local (una sentencia siempre se ejecuta, nunca se va a quedar congelado).
 
 
-### Cobegin-Coend
+#### Cobegin-Coend
 Estas palabras las usamos para indicar que aquello que este entre cobegin y coend, se van a ejecutar en parapelelo en vez de manera secuencial.
 ## Exclusión mutua y sincronización
+Un programa concurrente se peude ver como una secuencia de accesos, al fin al cabo un programa concurrente es un programa que se va haciendo al unisono (muchas tareas a la vez), existe la posibilidad de que alguna sea erronea, es por ello que los se necesita que una comunicación para que sea concurrente, ya que si no se denominaría paralelos.
 
+
+### Concepto de exclusión mutua
+
+### Condición de sincronización
 ## Propiedades
