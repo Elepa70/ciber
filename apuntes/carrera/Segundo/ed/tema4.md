@@ -2,7 +2,7 @@
 title: Plantillas
 description: 
 published: true
-date: 2026-09-25T16:06:53.147Z
+date: 2026-09-25T16:29:22.428Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-25T15:43:40.237Z
@@ -36,3 +36,59 @@ int main(){
 
 Las plantillas nos ofrecen la ayuda de que no tenemos que declarar el tipo de los valores, ya que es la propia plantilla que identifica que valor tiene sus variables para poder intercambiarlo.
 
+Este tipo de template es realmente útil en numerosos usos por ejemplo:
+### Restructurar un vector
+
+En este caso se nos quedaria:
+```C++
+template <class T>
+void vd<T>::resize(int nuevo){
+	T* aux = new T[nuevo];
+  int limite = (n < nuevo)? n: nuevo;
+  for(int i = 0; i < limite; i++){
+  	aux[i] = datos[i];
+   }
+   delete[] datos;
+   datos = aux;
+   reservados = nuevo;
+}
+```
+
+Como podemos observar es prácticamente igual que como lo conocemos.
+### Sobrecarga de copiar
+Ahora implementaremos el de copia:
+```C++
+template <class T>
+void vd<T>:: copiar(const vd<T> &o) {
+	datos = new T[o.reservados];
+  reservados = o.reservados;
+  n = o.n;
+  for (int i = 0; i<n; i++){
+  	datos[i] = o.datos[i];
+  }
+}
+```
+### Sobrecarga de borrar
+El de eliminar es:
+```C++
+template <class T>
+void vd<T>::borrar() {
+	if (datos != nullptr) {
+  	delete[] datos;
+    datos = nullptr;
+  }
+  n = 0;
+  reserva = 0;
+}
+```
+### Sobrecarga del copia
+```C++
+template <class T>
+vd<T> & vd<T>::operator=(const vd<T> &a){
+	if (this != &a){
+  	borrar();
+    copiar(a);
+  }
+  return *this;
+}
+```
