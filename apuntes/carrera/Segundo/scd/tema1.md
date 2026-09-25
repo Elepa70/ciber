@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-09-25T17:13:12.203Z
+date: 2026-09-25T17:20:41.030Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-18T16:51:55.223Z
@@ -108,8 +108,7 @@ Alguna de las sentencias atomicas pueden ser:
 - Cargar una variable local en una variable compartida.
 - Aquellas que tienen como mucho un acceso a 1 variable compartida.
 
-Podemos encontrarnos una serie de sentencias que se pueden saltar este termino.
-
+La notación de pseudo-código para sentencias atómicos es cerrar la sentencia en menor y mayor que < x = x+1>.
 #### Sentencias no atómicas
 Son aquellas donde se produce más de un estado intermedio o acceden a mas de una varible compartida.
 
@@ -136,5 +135,10 @@ Para ello tenemos varias herramienta para poder determinar si una sentencia es c
 - Concepto de exclusión mutua: "Este trozo de código es sagrado y no se debe cambiar".
 - Concepto de sincronización: "Tu no comienzas hasta que X variable no se haya leido en Y proceso".
 ### Concepto de exclusión mutua
+
+Al tener varios procesos, podemos determianr una sección critica. Estas secciones lo que hace tienen una serie de caracteristicas:
+- Cuando un proceso esta haciendo una sección critica, ningun otro proceso puede hacer alguna sección critica hasta que no finalice el primero.
+- Son una serie de sentencias de instrucciones que siempre se debe ejecutar de forma seguida.
+
 ### Condición de sincronización
 ## Propiedades
