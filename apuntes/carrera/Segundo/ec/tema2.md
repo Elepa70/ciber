@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: true
-date: 2026-09-28T16:34:00.644Z
+date: 2026-09-28T16:46:21.566Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -84,6 +84,21 @@ La conversión de un codigo C en código objeto, los pasos son los siguientes:
 - Este tipo de progrmaas (acabado en s), y este paso nos permite poder ensamblar el programa.
 - En el parto de ensamblado el programa ya es binario (termina en .o), y  por último se le hace un programa en binario que es lo que entiende el equipo para ejecutarse.
 
+Los datos en C, cada uno tiene un espacio a ocupar en bytes por ejemplo los importantes son:
+- int, ocupa 4
+- long int, ocupa 8
+- char, ocupa 1
+- double ocupa 8
+
+Los datos enteros suelen ser de 1,2,4 u 8 bytes, con el valor de dato y direccion, sin embargo los datos son de  punto flotante de 4,8 ó 10 bytes. 
+
+Los ensambladores ejecutan instrucciones, que son operaciones aritmético/lógicas. También transfieren datos entre memoria y registros, y establecen transferencias de controles debido a incondicionales o condicionales (if, bucles...).
+
+Los codigos objetos (terminación .o), el ensamblador los traduce del .s a .o, codificandola en binario, imagen casi completa del codigos ejecutable. Le faltan enlaces entre códigos de firechos diferentes.
+
+Los enlazadores resuelven referencias entre ficheros, combinando con librerias de tiempo ejecutable estáticas.
+
+El desensamblador, son herramientas útiles que examinan código objeto, analizando el patrón de bits de series de instrucción, siendo capaces de producir la versión aproximada del código ensamblado. Cualquier cosa que se pueda interpretar como codigo ejecutable se puede desensamblar, examinando sus bytes y reconstruyendo su fuente.
 
 ### Formato de datos
 ### Aritmetica
