@@ -1,8 +1,8 @@
 ---
 title: Programación a nivel máquina
 description: 
-published: true
-date: 2026-09-28T17:01:35.712Z
+published: false
+date: 2026-09-28T17:01:48.312Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -108,5 +108,7 @@ Los registros enteros de x86-63 son
 
 La primera instrucción que vamos a ver es:
 - Mover datos o  movq: Se opera con movq Source, Dest.  Puede ser de forma inmediata (Datos enteros constantes, con el prefijo $), registros (Usado por % y con un valor válido mencionado anteriormente, jamas usar %rsp.) y si no es ningúno de lo anterior es memoria. 
+
+
 En todas si hay
 ### Aritmetica
