@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: true
-date: 2026-09-28T16:25:44.160Z
+date: 2026-09-28T16:34:00.644Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -58,5 +58,32 @@ Volviendo con Intel, hay varios años claves:
 
 De todo lo anterior vamos a ver sobre todo los x86-64/Intel64.
 ### Lenguaje C, ensamblador
+Debemos explicar:
+- Arquitectura: Es el manual del procesador, lo que te permite entender para escribir en código ensamblador. 
+- Código máquina: Son auqellos programas que ejecuta el procesador.
+- Código ensamblador: Es una representación textual del código máquina. 
+
+- Microarquitectura: Es como está fabricado la CPU. 
+
+Algunos ejemplos de repertorios ISAs:
+- Intel: La familia IA32, lo conocemos por x86.
+- ARM: Usado normalmente en teléfonos.
+- RISC-V: Consiste en un nuevo tipo de ISA open-source, apostado sobretodo por Europa.
+
+
+Un procesador tiene:
+- Contador de programa: Que tiene la dirección del próximo codigo a ejecutar.
+- Archivo de regsitro: Son los datos del programa.
+- Códigos de condición o flags de estado: Que suelen ser señales importantes dependiendo de lo que se haya ejecutado.
+
+Por otro lado tenemos la mmeoria, siendo un array direciconable por bytes que almacena código y datos del usuario.
+
+
+La conversión de un codigo C en código objeto, los pasos son los siguientes:
+- Un programa en terminación c, es puro texto y cuando lo compilamos (gcc -S), pasaremos a un programa asm
+- Este tipo de progrmaas (acabado en s), y este paso nos permite poder ensamblar el programa.
+- En el parto de ensamblado el programa ya es binario (termina en .o), y  por último se le hace un programa en binario que es lo que entiende el equipo para ejecutarse.
+
+
 ### Formato de datos
 ### Aritmetica
