@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: true
-date: 2026-09-28T15:59:41.672Z
+date: 2026-09-28T16:06:02.461Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -30,6 +30,14 @@ Algunos de los hitos signifiativos a mencionar son:
 - Pentium 4E: En el año 2004, fue el primer procesador intel de 64 bits (conocido x86-64).
 - Core 2: En el año 2006, primer procesador multi-core de intel.
 - Core i7: En el año 2008, con cuatro cores y hyperthreading.
+
+Estos modelos obtienen lo que tenian anteriormente y más cosas llamado compatibilidad ascendente, usualmente lo que traen estas mejoras son:
+- Instrucciones multimedia
+- Instrucciones para operaciones condicionales eficientes.
+- El paso al 64 bits
+- Mucho más núcleos.
+
+Esto es debido a que se va mejorando el proceso de forma nanometrica, mediante los procesos fatograficos. 
 ### Lenguaje C, ensamblador
 ### Formato de datos
 ### Aritmetica
