@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: true
-date: 2026-09-28T16:16:35.158Z
+date: 2026-09-28T16:25:44.160Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -47,6 +47,16 @@ Sin embargo recientemente Intel ha evitado esta guerra con una serie de mejoras:
 - En 2018-2024 ha estado en competición con Samsung en facturación.
 
 Ahora AMD esta luchando contra Intel con las nuevas CPUs (Los Ryzen). Sin embargo el mercado de computación esta dominado por NVidia
+
+
+Volviendo con Intel, hay varios años claves:
+- En 2001, se intenta hacer un cambio radical de 32 a 64 bits, pensado para programación en paralelo y fue un fracaso debido a que habia fallo de compilación entre procesadores. 
+- En 2003: AMD saca una evolución satisfactoria con el AMD64.
+- En 2004: Intel anuncia su EM64T, que es practicamente copiando el trabajo de AMD.
+- Todos los procesadores de x86 salvo muy gama baja soportan los x86-64.
+
+
+De todo lo anterior vamos a ver sobre todo los x86-64/Intel64.
 ### Lenguaje C, ensamblador
 ### Formato de datos
 ### Aritmetica
