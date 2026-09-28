@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: false
-date: 2026-09-28T17:15:13.744Z
+date: 2026-09-28T17:23:01.771Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
