@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: true
-date: 2026-09-28T16:06:02.461Z
+date: 2026-09-28T16:16:35.158Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -38,6 +38,15 @@ Estos modelos obtienen lo que tenian anteriormente y más cosas llamado compatib
 - Mucho más núcleos.
 
 Esto es debido a que se va mejorando el proceso de forma nanometrica, mediante los procesos fatograficos. 
+
+Ahora existe los AMD (Advanced Micro Devices), que han estado en la cola de Intel en todo, siendo más lentas y muchisimo mas baratas. Sin embargo decidieron reclutar a los mejores diseñadores y construyendo el Opteron con el pentium 4, y desarrollaron su propia extensión 64 btis.
+
+Sin embargo recientemente Intel ha evitado esta guerra con una serie de mejoras:
+- 1995-2011: Líder en semiconductores
+- 2015: TSMC líder, y en 2019 estuvo por detras de Samsung.
+- En 2018-2024 ha estado en competición con Samsung en facturación.
+
+Ahora AMD esta luchando contra Intel con las nuevas CPUs (Los Ryzen). Sin embargo el mercado de computación esta dominado por NVidia
 ### Lenguaje C, ensamblador
 ### Formato de datos
 ### Aritmetica
