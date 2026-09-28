@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: false
-date: 2026-09-28T09:34:09.163Z
+date: 2026-09-28T09:42:02.853Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-14T17:25:49.207Z
@@ -109,4 +109,9 @@ Respecto a S (Los ciclos que realiza), tenemos:
 - Segmentanción de cauce: Se intenta aproximar a 1, lo que hacemos es dividir la UC en 3 (Fetch: Captación, Exec: Ejecución, Wreite: Escritura o actualización de registro), con esta segmentación se pretende ir reduciendo el tiempo y cuando el cauce se llena, podemos obtener un valor efectivio de $S=1$ ciclo/instr.
 
 - Funcionamiento superescalar: Se consigue con paralelimo a base de reduplicar UFs (unidades funcionales). Lo que hacemos es ir diviendo el UC en distintos ALU para que se ejecuten las instrucciones ahí, el mayor problema que puede dar es emisión desordenada. Es la más común hoy en día en las CPU.
+
+
+Respecto a T:
+- Se intenta que la velocidad del reloj sea mayor. Uno podría pensar que cuanto mayor tecnología mejor al tiempo de reloj, pero esto es falso ya que la memoria también debe ir mejorando con la CPU. Para ello se intenta la supersegmentación, donde se busca reducir la tarea por ciclo reloj. 
+- Otro metodo es usar las técnicas de RISC/CISC, ya que con el RISC se usan instrucciones simples para aumentar el Rendimiento, bajando los ciclos y subiendo el número de instrucciones, y por otro lado se usa el CISC para bajar el número de instrucciones y aumentar los ciclos. Actualmente se hace una mezcla de ambas, un híbrido.
 ## Prespctiva histórica
