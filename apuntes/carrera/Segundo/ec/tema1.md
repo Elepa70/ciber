@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: false
-date: 2026-09-28T09:25:44.295Z
+date: 2026-09-28T09:34:09.163Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-14T17:25:49.207Z
@@ -102,4 +102,11 @@ Un benchmark requiere de 3 elementos para hacer las pruebas:
 Después esta la Frecuencia (R), que son aquellos ciclos de relojs que tarda un UC para ejecutar una instrucción.
 
 La formula para saber el tiempo que tarda ejecutando un benchmark es el siguiente: $T=\frac{NxS}{R}$.
+### Optimizar
+Siempre que queramos optimizar, es reducir al maximo posible tanto N como S, y aumentar R lo máximo que podamos.
+
+Respecto a S (Los ciclos que realiza), tenemos:
+- Segmentanción de cauce: Se intenta aproximar a 1, lo que hacemos es dividir la UC en 3 (Fetch: Captación, Exec: Ejecución, Wreite: Escritura o actualización de registro), con esta segmentación se pretende ir reduciendo el tiempo y cuando el cauce se llena, podemos obtener un valor efectivio de $S=1$ ciclo/instr.
+
+- Funcionamiento superescalar: Se consigue con paralelimo a base de reduplicar UFs (unidades funcionales). Lo que hacemos es ir diviendo el UC en distintos ALU para que se ejecuten las instrucciones ahí, el mayor problema que puede dar es emisión desordenada. Es la más común hoy en día en las CPU.
 ## Prespctiva histórica
