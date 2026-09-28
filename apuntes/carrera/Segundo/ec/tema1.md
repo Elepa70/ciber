@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: false
-date: 2026-09-28T09:00:54.452Z
+date: 2026-09-28T09:25:44.295Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-14T17:25:49.207Z
@@ -90,4 +90,16 @@ En todos los buses, puede suceder que muchos quieran escribir a la vez para envi
 
 Tras esto se explican numerosos apartados que se ven en el primer tema de S.O. por ello no se repite.
 ## Rendimiento
+En este aspecto vamos a ver aspectos muy similares a ED, es por ello que se omitirá algunos apartados.
+
+Para poder medir el rendimiento, se acordo usar los benchmarks, estos rendimientos dependen tanto del diseño de CPU, versión del SO, compilador, librerias y muchas más cosas. En general los Benchmarks pueden ser especificios y probar el rendimiento de una de las partes del equipo, por ejemplo lo sbenchmarks de CPU ejercitan unicamente la PCU, están influidos por las prestaciones de la CPU, Memoria, Chache y buses.
+
+Un benchmark requiere de 3 elementos para hacer las pruebas:
+- T: Tiempo para ejecutar el programa.
+- N: Número de instrucciones.
+- S: Serían los ciclos o instrucciones que realiza.
+
+Después esta la Frecuencia (R), que son aquellos ciclos de relojs que tarda un UC para ejecutar una instrucción.
+
+La formula para saber el tiempo que tarda ejecutando un benchmark es el siguiente: $T=\frac{NxS}{R}$.
 ## Prespctiva histórica
