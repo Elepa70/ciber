@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: false
-date: 2026-09-28T09:42:02.853Z
+date: 2026-09-28T09:53:39.977Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-14T17:25:49.207Z
@@ -114,4 +114,23 @@ Respecto a S (Los ciclos que realiza), tenemos:
 Respecto a T:
 - Se intenta que la velocidad del reloj sea mayor. Uno podría pensar que cuanto mayor tecnología mejor al tiempo de reloj, pero esto es falso ya que la memoria también debe ir mejorando con la CPU. Para ello se intenta la supersegmentación, donde se busca reducir la tarea por ciclo reloj. 
 - Otro metodo es usar las técnicas de RISC/CISC, ya que con el RISC se usan instrucciones simples para aumentar el Rendimiento, bajando los ciclos y subiendo el número de instrucciones, y por otro lado se usa el CISC para bajar el número de instrucciones y aumentar los ciclos. Actualmente se hace una mezcla de ambas, un híbrido.
-## Prespctiva histórica
+- Los compiladores también tienen que ver donde esta los espaciales (Con conocimiento de la arquitectura para bajar el número de instrucciones) o temporales (Donde hay conocimiento de la organización para bajar el NxS).
+
+El valor del rendimiento depende de quienes seamos:
+- Diseñadores de CPU: Evaluar mejoras introducidas
+- Fabricantes: El marketing
+- Compradores: El mejor prestacionesprecio.
+
+## Perspectiva histórica
+Ahora vamos a sumergirnos en la historia de lso componentes y equipos.
+
+Todo comenzo en la segunda guerra mundial, donde la tecnología de relés electromagneticos era el mayor equipo tecnologico obtenido (antes se usaba engranajes, palancas y poleas), esto evoluciono en el 45-55 con la primera generación, donde estaba el concepto de programa almacenado, en esta epocá se empezo a usar los tubos de vacío donde la memoria eran lineas de mercurio y la E/S tarjetas.
+
+Tras esto entramos en la 2º Generación (55-65) con los transistores, la E/S paso a ser procesadores de E/S o cintas en paralelo a la CPU y nace FORTRAN como compilador.
+
+La 3º generación (65-75), se empiezan a ver los circuitos integrados, donde aumentan la velocidad de CPU y memoria, y se empiezan a ver los S.O. multiusuario y memoria virtual.
+
+La 4º generación, se caracteriza por los VLSI o integración a gran escala, donde los microprocesadores se empiezan a ver y se ve una mejoria en segmentación, cauce, cache y memoria virtual, además ya se ver los portátiles, PCs y las redes.
+
+Actualmente, los equipos son asequibles y potentes, y se tiene internet como una gran red de comunicación a nivel global. Además se desarrollan los super computadores como el MareNostrum de Barcelona.
+
