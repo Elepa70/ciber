@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: true
-date: 2026-09-28T16:46:21.566Z
+date: 2026-09-28T17:01:35.712Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -100,5 +100,13 @@ Los enlazadores resuelven referencias entre ficheros, combinando con librerias d
 
 El desensamblador, son herramientas útiles que examinan código objeto, analizando el patrón de bits de series de instrucción, siendo capaces de producir la versión aproximada del código ensamblado. Cualquier cosa que se pueda interpretar como codigo ejecutable se puede desensamblar, examinando sus bytes y reconstruyendo su fuente.
 
-### Formato de datos
+### Formato de datos, conceptos básicos
+Los registros enteros de x86-63 son
+- %rax - %rdx (expansión solo tiene rax con eax)
+- %rsi, %rdi, %rsp, %rbp (expansion con e--)
+- %r8 - %r15 (expansión con r-d)
+
+La primera instrucción que vamos a ver es:
+- Mover datos o  movq: Se opera con movq Source, Dest.  Puede ser de forma inmediata (Datos enteros constantes, con el prefijo $), registros (Usado por % y con un valor válido mencionado anteriormente, jamas usar %rsp.) y si no es ningúno de lo anterior es memoria. 
+En todas si hay
 ### Aritmetica
