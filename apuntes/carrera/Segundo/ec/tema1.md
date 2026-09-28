@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: false
-date: 2026-09-21T17:17:24.835Z
+date: 2026-09-28T09:00:54.452Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-14T17:25:49.207Z
@@ -80,5 +80,14 @@ Hablando sobre formatos de instrucciones:
 {.is-warning}
 
 ## Estructura de bus
+La estructura del bus la vimos en en TOC, de todos modos también la hemos visto tanto en SO como parcialmente en SCD.
+
+Debido a que E/S, memoria y CPU deben estar conectadas para pasar datos, existe los buses en paraletos que permiten una representación binaria de los datos para aumentar la velocidad de transferencia.
+
+Los buses únicos por otro lado, la CPU escribe los buses de dirección y el control del R/W, la E/S y memoria comprueban si esta dirección es la suya. Tiene la ventaja de que es mas sencillo y tiene un coste bajo. Sin embargo los buses múltiples, suelen ser bastante más rapidos y funcionan en paralelo, donde se tiene una conexió entre Memoria y CPU, y otro con E/S y CPU.
+
+En todos los buses, puede suceder que muchos quieran escribir a la vez para enviar mensajes, para evitar esto, un componente se convierte en dispositivo **activo** (Se encargad de escribir) y el resto en **pasivo** (Solo escuchan).
+
+Tras esto se explican numerosos apartados que se ven en el primer tema de S.O. por ello no se repite.
 ## Rendimiento
 ## Prespctiva histórica
