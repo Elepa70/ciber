@@ -2,7 +2,7 @@
 title: Consultores, Modificadores y agrupacion de elementos
 description: 
 published: true
-date: 2026-09-29T09:36:21.631Z
+date: 2026-09-29T09:37:54.970Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-29T09:09:09.136Z
@@ -41,6 +41,13 @@ public class Ejemplo {
   	Instancia = i;
   }
 }
+
+
+// En el Main
+Ejemplo e = new Ejemplo(2);
+e.setInstancia(3);
+System.out.printIn (p.getInstancia());
+System.out.printIn (Ejemplo.getClase());
 ```
 ### Modificadores
 Por otro lado también existen una serie de métodos dedicados a modificar un valor de un atributo, nombrado:
