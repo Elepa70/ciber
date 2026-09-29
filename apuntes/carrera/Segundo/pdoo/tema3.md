@@ -2,7 +2,7 @@
 title: Consultores, Modificadores y agrupacion de elementos
 description: 
 published: true
-date: 2026-09-29T09:54:50.742Z
+date: 2026-09-29T10:02:11.695Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-29T09:09:09.136Z
@@ -92,9 +92,52 @@ Ejemplo.CLASE=5 #Modificador de clase
 ```
 
 ### Devolver o asignar las referencias
-Existe un problema a la hora de asignar o devolver referencias ya que en ambos lenguajes siempre estamos usando punteros, para ello establecemos las siguientes normas:
+Existe un problema a la hora de asignar o devolver referencias ya que en ambos lenguajes siempre estamos usando punteros, para ello debemos tener en cuenta lo siguiente:
 - Crear solo los que sean realmente necesarios.
 - Tener en cuenta si se devuelven (o se asignan) referencias.
 - No hay una regla a aplicar en todos los casos, ya que depende de nuestro interes.
 
-Siempre debemos decirlo nosotros según la situación.
+> Siempre debemos decirlo nosotros según la situación.
+{.is-success}
+
+## Agrupación de elementos
+### Paquetes de Java
+En Java tenemos la posiblidad de agrupar clases, que es un espacio de nombres, sus usos principales son:
+- Debemos poner el nombre del paquete (en minusculas) para indicar lso elementos definidos en el mismo.
+- Indicar que se van a usar los paquetes.
+- En disco, aparece como una carpeta del sistema de ficheros.
+
+Declaración:
+```Java
+package miPaquetito;
+// Todas las funciones...
+
+import miPaquetito.Clasecita //Usamos la clase Clasecita, del paquete miPaquetito
+```
+> Todo paquete en Java es independiente del resto.
+{.is-info}
+### Modulos de Ruby
+Los modulos de Ruby, nos sirven para agrupar una gran variedad de elementos, como son clases, constantes funciones...
+
+Su uso es:
+- Abrimos el módulo para la realizar la definición y se cierra el módulo.
+- Se puede copiar todo el contenido del módulo.
+- Existe la posibilidad de crear módulos en módulos.
+
+Declaración con ejemplo:
+```Ruby
+modulo Modulazo
+	class A
+  end
+  
+  module Modulito
+  	class B
+    end
+  end
+end
+
+class Ejemplo
+	include Modulazo # Copiamos el contenido de Modulazo
+end
+```
+### Ejemplo de Ruby
