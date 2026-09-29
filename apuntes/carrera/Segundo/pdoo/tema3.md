@@ -2,7 +2,7 @@
 title: Consultores, Modificadores y agrupacion de elementos
 description: 
 published: true
-date: 2026-09-29T09:41:57.240Z
+date: 2026-09-29T09:54:50.742Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-29T09:09:09.136Z
@@ -92,3 +92,9 @@ Ejemplo.CLASE=5 #Modificador de clase
 ```
 
 ### Devolver o asignar las referencias
+Existe un problema a la hora de asignar o devolver referencias ya que en ambos lenguajes siempre estamos usando punteros, para ello establecemos las siguientes normas:
+- Crear solo los que sean realmente necesarios.
+- Tener en cuenta si se devuelven (o se asignan) referencias.
+- No hay una regla a aplicar en todos los casos, ya que depende de nuestro interes.
+
+Siempre debemos decirlo nosotros según la situación.
