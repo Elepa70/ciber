@@ -2,7 +2,7 @@
 title: Programación y Diseño Orientado a Objetos
 description: 
 published: true
-date: 2026-09-15T15:42:49.599Z
+date: 2026-09-29T09:07:16.143Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-15T15:39:29.212Z
@@ -13,8 +13,9 @@ En está página web podrá encontrar los distintos temarios que corresponden a 
 
 - [Conceptos básicos de la programación y el diseño orientados a objetos](tema1)
 - [Clases, objetos y mensajes](tema2)
-- [Reutilización y polimorfismo](tema3)
-- [Conceptos Complementarios](tema4)
+- [Consultores, Modificadores y agrupacion de elementos](tema3)
+- []()
+- []()
 - [](tema5)
 - [](tema6)
 
