@@ -2,7 +2,7 @@
 title: Consultores, Modificadores y agrupacion de elementos
 description: 
 published: true
-date: 2026-09-29T10:04:06.607Z
+date: 2026-09-29T10:27:27.416Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-29T09:09:09.136Z
@@ -141,4 +141,11 @@ class Ejemplo
 end
 ```
 ### Proyectos de Ruby
-ss
+Las buenas praxis establecen que cada clase que forma parte de un proyecto, se debe definir en un archivo distinto.
+Los lenguajes compilados como C++, procesan todos los archivos de la fuente antes de ejecutar el programa principal, sin embargo Ruby esta interpretado por si mismo, esto conlleva:
+- No sabe que un proyecto está formado por varios archivos.
+- No realiza un procesamiento previo que sea capaz de identificar las clases.
+
+Para ello, es necesario referenciar los archivos mediante el uso de "require" si es archivo del lenguaje o "require_relative" si es un archivo propio.
+> Unicamente conectar los archivos SI se va a usar en el código, de otra manera producirá un error, ya que no ha sido utilizado.
+{.is-error}
