@@ -2,7 +2,7 @@
 title: Consultores, Modificadores y agrupacion de elementos
 description: 
 published: true
-date: 2026-09-29T10:27:27.416Z
+date: 2026-09-29T10:27:45.628Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-29T09:09:09.136Z
@@ -148,4 +148,4 @@ Los lenguajes compilados como C++, procesan todos los archivos de la fuente ante
 
 Para ello, es necesario referenciar los archivos mediante el uso de "require" si es archivo del lenguaje o "require_relative" si es un archivo propio.
 > Unicamente conectar los archivos SI se va a usar en el código, de otra manera producirá un error, ya que no ha sido utilizado.
-{.is-error}
+{.is-danger}
