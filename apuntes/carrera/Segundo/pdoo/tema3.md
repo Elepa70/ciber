@@ -2,7 +2,7 @@
 title: Consultores, Modificadores y agrupacion de elementos
 description: 
 published: true
-date: 2026-09-29T10:02:11.695Z
+date: 2026-09-29T10:04:06.607Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-29T09:09:09.136Z
@@ -140,4 +140,5 @@ class Ejemplo
 	include Modulazo # Copiamos el contenido de Modulazo
 end
 ```
-### Ejemplo de Ruby
+### Proyectos de Ruby
+ss
