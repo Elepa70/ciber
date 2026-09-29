@@ -2,7 +2,7 @@
 title: Consultores, Modificadores y agrupacion de elementos
 description: 
 published: true
-date: 2026-09-29T09:34:58.178Z
+date: 2026-09-29T09:36:21.631Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-29T09:09:09.136Z
@@ -31,10 +31,14 @@ public class Ejemplo {
   public static int getClase(){
   	return CLASE;
   }
+  // Consultor de Instancia
+  public static int getInstancia(){
+  	return Instancia;
+  }
   
-  //Consultor de Modificador
-  public void int (int i){
-  	instancia = i;
+  //Modificador
+  public int setInstancia(int i){
+  	Instancia = i;
   }
 }
 ```
