@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-09-30T17:21:45.660Z
+date: 2026-09-30T17:22:18.401Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -70,6 +70,8 @@ En el último caso, el hijo obtiene los recursos mediante:
 - Comparte algunos recursos del padre.
 
 Este tipo de procesos pueden ejecutarse o bien concurrentemente o que el hijo termine y el padre este esperando a ello.
+
+Respecto al espacio de direcciones, el hijo obtiene una copia del padre o se le da uno nuevo.
 ## Threads
 
 ## Conceptos fundamentales sobre planificación
