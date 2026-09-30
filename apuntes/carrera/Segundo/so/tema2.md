@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-09-30T17:20:14.140Z
+date: 2026-09-30T17:21:45.660Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -62,7 +62,14 @@ Un proceso se crea:
 - Por sistema batch: Respuesta a la recepción y admisión de un trabajo.
 - "logon" interactivo: Un usuario se autentifica en un terminal, y el SO crea el proceso de intérprete.
 - El SO crea un proceso para llevar a cabo el servicio solicitado por el usuario (El más habitual).
-- El proceso puede crear otros procesos, dando la relación padre-hijo,
+- El proceso puede crear otros procesos, dando la relación padre-hijo.
+
+En el último caso, el hijo obtiene los recursos mediante:
+- El SO sin que venga el padre intervenga.
+- Compartir todo los recursos con el padre.
+- Comparte algunos recursos del padre.
+
+Este tipo de procesos pueden ejecutarse o bien concurrentemente o que el hijo termine y el padre este esperando a ello.
 ## Threads
 
 ## Conceptos fundamentales sobre planificación
