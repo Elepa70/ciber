@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-09-30T15:41:12.028Z
+date: 2026-09-30T15:54:27.153Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -197,4 +197,13 @@ Es la más utilizada, la que se usa ahora o la que "funciona". El SO es el únic
 
 Alguno de los problemas, es que posee una fuerte dependencia de módulos, es por ello que hay dificultad a entender el codigo o realizar cosas. A su vez, si cualquier módulo falla o crashea, se puede provocar la caída del sistema.
 
+### Arquitectura microkernel
+Una pequeña parte de la funcionalidad del SO se implemente como kernel y el resto como procesos del user. 
+Este tipo de arquitectura soporta memoria virtual de bajo nivel. 
+
+En este modelo, no tenemos procesos todo el procesos, propiamente dicho, tenemos mensajes.
+
+Las instrucciones que tiene para hacerlo es:
+- Llama al sys_read, donde envia un mensaje sobre lo que ha pasado al server o kernel, y este recibira su mensaje de respuesta cuando este disponible.
+- El servidor por otro lado, espera el mensaje y prepara la entrada del servicio, una vez le llegue hace un contex_switch (Lo que ya vimos), sin embargo no hace planificador de CPU ni nada, simplemente envia al "buzon" siguiente (PID por asi decirlo), el mensaje.
 ## SOs de propósito específico
