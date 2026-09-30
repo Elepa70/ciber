@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-09-30T17:06:06.310Z
+date: 2026-09-30T17:17:18.836Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -27,6 +27,8 @@ El SO se ejecuta de la siguiente manera:
 - Núcleo fuera de todo proceso, es decir, se ejecuta el núcleo como si fuera un proceso normal y el código del sistema operativo se opera de forma separa al modo kernel.
 - La ejecución de los proceoss d eusuario, donde los software del SO tienen el contexto del proceso de usuario, y un proceso se ejecuta en modo kernel cuando es algo del SO.
 
+A la hora de pensar en proceso, debemos pensar en, una unidad de acividad caracterizada por la ejecución de una secuencia de instrucciones (traza), un esatdo de computación actual (contexto) y un conjunto de recursos (dado por el SO). El SO puede decidir que un proceso se termine, guardando sus datos en el PCB (mas adelante), esta acción se denmonia context_switch (Cambio de contexto).
+
 
 Tenemos que definir PCB ( Process Control Block), es una estrucutra de datos que contiene información relativa al concepto del proceso, ya que es algo creado gestionado y destruido unicamente por el kernel, conteniendo la siguiente información:
 - PID (Process IDentifier)
@@ -37,6 +39,21 @@ Tenemos que definir PCB ( Process Control Block), es una estrucutra de datos que
 
 Por lo tanto un proceso tiene texto y datos asociados, a su vez tiene una pila asociada, y el SO almacena toda esta inforamción en el PCB, es por ello que podemos definir PCB como metadatos en la memoria de los procesos.
 
+
+
+Todos los cambios que se realizan en el proceso, incluso sus datos guardados por detención se salvan en el PCB. 
+
+### Cambio de proceso
+Es un apartado importante, ya que nos permite entender el "multitasking OS" o SO multitareas, esto sucede:
+- Cuando un proceso en ejecución acaba su tiempo en de ejecución (timeout o se acabo su timeslice)
+- Como consecuencia de una llamada que bloqueante del sistema.
+- Debido a una interrupción.
+- El proceso abandona por si mismo la CPU.
+
+Los cambios de contexto lo podemos resumir en el "dispatch" del tema anterior:
+- Dejar en suspenso la ejecución de un proceso, almacenando los datos en el PCB
+- Restaurar el contexto de registro del proceso que se va a ejecutar en CPU.
+- Continuar con el ciclo de captación-ejecución de instrucciones utilizando el nuevo valor de registro PC.
 ## Operaciones sobre procesos
 
 ## Threads
