@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-09-30T16:05:25.561Z
+date: 2026-09-30T16:34:13.468Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -220,3 +220,16 @@ Se suelen utilizar para aplicaciones especializadas, usualmente por sistemas de 
 
 Sin embargo, el planificar los procesos gasta muchisimo tiempo para poder cumplir todos los requisitos, se define como Planificabilidad (Intentar que cada proceso hagan su proceso en un tiempo determinado).
 
+Algunas cosillas extra y caracteristicas:
+- Los RTOS clasifican los procesos en el tiempo real.
+- Los procesos RT tienen de objetivo procesar eventos que se producen regularmente.
+- Los eventos ocurren en tiempo real.
+- Determinismo: Tiene que ver con el tiempo de respuesta frente a Interrupciones y RSI.
+- Reactividad: Los tiempos que tarda el RTOS en la RSI.
+- Control de prioridad de los procesos RT.
+- Fiabilidad: Posee mayor tolerancia a fallos.
+
+### SO para Sistemas Empotrados
+Los SO para sistemas empotrados, esta especializado para utilizar computadores incluidos en sistemas más grandes. Estos computadores pueden ser los de un coche o el GPS
+
+El EOSs viene más limitada que un SO normal. Suelen proporcionar robustez a la ejecución de procesos ya que lidia con restricciones de memorias.
