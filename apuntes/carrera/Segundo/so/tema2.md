@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-09-30T17:22:18.401Z
+date: 2026-09-30T17:27:45.727Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -72,6 +72,17 @@ En el último caso, el hijo obtiene los recursos mediante:
 Este tipo de procesos pueden ejecutarse o bien concurrentemente o que el hijo termine y el padre este esperando a ello.
 
 Respecto al espacio de direcciones, el hijo obtiene una copia del padre o se le da uno nuevo.
+
+
+### UNIX-like OS
+Los procesos UNIX-like OS, funciona de manera especial:
+- Con llamadas al sistema "fork()" (También llamado retval, donde si el pid == 0, es el hijo y en cualquier otro caso es el padre), donde se crea un nuevo proceso (hijo).
+- La llamada "exec()", que se reemplaza 
+
+
+> Información importante sobre PCB hijo-padre
+{.is-info}
+
 ## Threads
 
 ## Conceptos fundamentales sobre planificación
