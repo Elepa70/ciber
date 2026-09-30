@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-09-30T16:04:08.418Z
+date: 2026-09-30T16:05:25.561Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -219,3 +219,4 @@ Tenemos servidores especificos segun el uso.
 Se suelen utilizar para aplicaciones especializadas, usualmente por sistemas de control. Este tipo de SO debe garantizar una corrección tanto del resultado lógico como del tiempo empleado para saber los resultados.
 
 Sin embargo, el planificar los procesos gasta muchisimo tiempo para poder cumplir todos los requisitos, se define como Planificabilidad (Intentar que cada proceso hagan su proceso en un tiempo determinado).
+
