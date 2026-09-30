@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-09-30T16:34:13.468Z
+date: 2026-09-30T16:41:05.605Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
