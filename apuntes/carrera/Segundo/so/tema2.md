@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-09-30T17:17:18.836Z
+date: 2026-09-30T17:20:14.140Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -54,8 +54,15 @@ Los cambios de contexto lo podemos resumir en el "dispatch" del tema anterior:
 - Dejar en suspenso la ejecución de un proceso, almacenando los datos en el PCB
 - Restaurar el contexto de registro del proceso que se va a ejecutar en CPU.
 - Continuar con el ciclo de captación-ejecución de instrucciones utilizando el nuevo valor de registro PC.
-## Operaciones sobre procesos
 
+## Operaciones sobre procesos
+La creación del proceso, consiste en la asignación de espacio de direcciones que se utilizará, y la creación de estructuras de datos para que se administre.
+
+Un proceso se crea:
+- Por sistema batch: Respuesta a la recepción y admisión de un trabajo.
+- "logon" interactivo: Un usuario se autentifica en un terminal, y el SO crea el proceso de intérprete.
+- El SO crea un proceso para llevar a cabo el servicio solicitado por el usuario (El más habitual).
+- El proceso puede crear otros procesos, dando la relación padre-hijo,
 ## Threads
 
 ## Conceptos fundamentales sobre planificación
