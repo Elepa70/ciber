@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-09-30T16:59:10.566Z
+date: 2026-09-30T17:06:06.310Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -22,6 +22,21 @@ Todo proceso requiere de recursos que el SO se encarga de controlar, como puede 
 Vamos a diferenciar:
 - Un usuario puede acceder a los procesos mediante su codigo de usuario, pero JAMÁS podra acceder al contexto de kernel.
 - El kernel puede acceder a los procesos mediante llamadas al sistema y excepción, y también puede acceder al Kernel mediante tratamiento de interrpciones y tareas del sistema.
+
+El SO se ejecuta de la siguiente manera:
+- Núcleo fuera de todo proceso, es decir, se ejecuta el núcleo como si fuera un proceso normal y el código del sistema operativo se opera de forma separa al modo kernel.
+- La ejecución de los proceoss d eusuario, donde los software del SO tienen el contexto del proceso de usuario, y un proceso se ejecuta en modo kernel cuando es algo del SO.
+
+
+Tenemos que definir PCB ( Process Control Block), es una estrucutra de datos que contiene información relativa al concepto del proceso, ya que es algo creado gestionado y destruido unicamente por el kernel, conteniendo la siguiente información:
+- PID (Process IDentifier)
+- Process State (State diagram)
+- Contexto de registro
+- Información de memoria
+- Lista de recursos utilizados
+
+Por lo tanto un proceso tiene texto y datos asociados, a su vez tiene una pila asociada, y el SO almacena toda esta inforamción en el PCB, es por ello que podemos definir PCB como metadatos en la memoria de los procesos.
+
 ## Operaciones sobre procesos
 
 ## Threads
