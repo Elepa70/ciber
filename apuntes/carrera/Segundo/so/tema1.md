@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-09-30T15:54:27.153Z
+date: 2026-09-30T16:04:08.418Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -204,6 +204,18 @@ Este tipo de arquitectura soporta memoria virtual de bajo nivel.
 En este modelo, no tenemos procesos todo el procesos, propiamente dicho, tenemos mensajes.
 
 Las instrucciones que tiene para hacerlo es:
+- Una aplicación solicita un servicio al SO mandando un send, y esperando un receiver de su resolución. El kernel recive la solicitud paasandolo al Server.
 - Llama al sys_read, donde envia un mensaje sobre lo que ha pasado al server o kernel, y este recibira su mensaje de respuesta cuando este disponible.
 - El servidor por otro lado, espera el mensaje y prepara la entrada del servicio, una vez le llegue hace un contex_switch (Lo que ya vimos), sin embargo no hace planificador de CPU ni nada, simplemente envia al "buzon" siguiente (PID por asi decirlo), el mensaje.
+
+Ventajas y desventajas:
+- Fiablidad: Los errores de módulo, no provocan el crasheo del S.O., por lo tanto puede recuperarse.
+- Extensibilidad: Se pueden ir añadiendo nuevos sercivios como usuarios.
+- Peor rendimiento: Lamentablemente este tipo de arquitectura monolítica tiene un rendamiento menor, ya qu ese deben hacer varios cambios de modo y de espacio de direcciones para que sea funcional.
+
 ## SOs de propósito específico
+Tenemos servidores especificos segun el uso.
+### RTOS (SO de Tiempo Real)
+Se suelen utilizar para aplicaciones especializadas, usualmente por sistemas de control. Este tipo de SO debe garantizar una corrección tanto del resultado lógico como del tiempo empleado para saber los resultados.
+
+Sin embargo, el planificar los procesos gasta muchisimo tiempo para poder cumplir todos los requisitos, se define como Planificabilidad (Intentar que cada proceso hagan su proceso en un tiempo determinado).
