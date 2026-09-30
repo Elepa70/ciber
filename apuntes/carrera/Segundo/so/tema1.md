@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-09-23T17:24:59.754Z
+date: 2026-09-30T15:41:12.028Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -191,5 +191,10 @@ Una vez fianlizado, se hace un iret para **SALIR** del modo Kernel, y ya finaliz
 
 
 ## Estructuras/Arquitecturas de los SOs
+Existen dos tipos de arquitecturas principales:
+### Arquitectura monolítica
+Es la más utilizada, la que se usa ahora o la que "funciona". El SO es el único programa que se ejecuta en el modo privilegiado del proceso.
+
+Alguno de los problemas, es que posee una fuerte dependencia de módulos, es por ello que hay dificultad a entender el codigo o realizar cosas. A su vez, si cualquier módulo falla o crashea, se puede provocar la caída del sistema.
 
 ## SOs de propósito específico
