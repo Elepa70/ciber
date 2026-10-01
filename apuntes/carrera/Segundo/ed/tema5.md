@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-01T16:07:40.115Z
+date: 2026-10-01T16:10:54.441Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -37,3 +37,5 @@ Algunos elementos de manipulación que tenemos son:
 
 ## Pilas
 Las pilas es una política que vamos a usar, donde se imponen un orden estricto gracias a LIFO (Last In, First Out). Este tipo de "pilas" debemos pensarlo como si fuera un bote de patatas pringles, donde solo es accesible la última añadida y las primeras añadidas no.
+
+Debido a esta característica, a la hora de trasnladar información de una pila a otra, lo que se hace e sinvertir el orden.
