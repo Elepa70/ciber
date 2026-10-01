@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-01T16:29:52.031Z
+date: 2026-10-01T16:48:01.796Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -72,3 +72,5 @@ stuck<int> UnirPilas(stack <int> &p1, stack <int>	&p2){
   return res;
 }
 ```
+
+Para representar las pilas, también podemos hacer uso de "celdas enlazadas", ya que puede tener una información que almacena y después la información del proximo elemento.
