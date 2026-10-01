@@ -2,7 +2,7 @@
 title: Estructura de datos
 description: 
 published: true
-date: 2026-09-17T15:52:08.114Z
+date: 2026-10-01T15:53:30.870Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T09:17:05.896Z
@@ -15,7 +15,7 @@ En está página web podrá encontrar los distintos temarios que corresponden a 
 - [Tipos de datos abstractos](tema2)
 - [TDA Lineales](tema3)
 - [Generalización: Plantillas](tema4)
-- [Abstracción por iteración](tema5)
+- [Estructura de datos lineales](tema5)
 - [La Standard Template Library (STL) en C++](tema6)
 - [Estructuras de datos no lineales: Árboles](tema7)
 - [Tablas Hash](tema8)
