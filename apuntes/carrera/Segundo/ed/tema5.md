@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-01T16:00:43.150Z
+date: 2026-10-01T16:07:40.115Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -28,3 +28,12 @@ En este ejemplo tenemos un "array" por así decirlo, donde iremos añadiendo nú
 
 > Si intentaramos añadir mediante fisrt[a]=a;, entonces nos daria un error por segmento invalido ya que no existe.
 {.is-warning}
+
+Algunos elementos de manipulación que tenemos son:
+- push_front: Desde el principio.
+- push_back: Desde el final.
+- pop_back: Eliminar desde el final.
+- pop_front: Eliminar desde el inicio
+
+## Pilas
+Las pilas es una política que vamos a usar, donde se imponen un orden estricto gracias a LIFO (Last In, First Out). Este tipo de "pilas" debemos pensarlo como si fuera un bote de patatas pringles, donde solo es accesible la última añadida y las primeras añadidas no.
