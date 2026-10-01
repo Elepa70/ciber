@@ -2,7 +2,7 @@
 title: Plantillas
 description: 
 published: true
-date: 2026-10-01T15:51:21.152Z
+date: 2026-10-01T15:52:46.688Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-25T15:43:40.237Z
@@ -128,5 +128,15 @@ void Conjunto::insert (int x){
   if (r.fisrt==false){
   	d.insert(r.second,x);
   }
+}
+```
+### Eliminación en dinamico
+Para su eliminación tenemos:
+```C++
+void Conjunto::erase (int x){
+	pair <bool,int> r = Esta(x);
+  if (r.first == true){
+  	d.erase (r.second);
+	}
 }
 ```
