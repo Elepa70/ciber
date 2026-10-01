@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-01T16:22:05.804Z
+date: 2026-10-01T16:29:52.031Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -55,3 +55,20 @@ bool controlComillado(const string & texto){
   	}
   return p.empty();
   }
+```
+
+Vamos a hacer otro ejemplo sobre caracterisitcas de LIFO, en este caso tenemos dos pilas del mismo tipo y vamos a crear una pila que contenga primero los de un elemento y después lo del otro.
+```C++
+stuck<int> UnirPilas(stack <int> &p1, stack <int>	&p2){
+	stuck <int> res;
+  while(!p1.empty()){
+  	res.push(p1.top());
+    p1.pop();
+  }
+  while(!p2.empty()){
+  	res.push(p2.top());
+    p2.pop();
+  }
+  return res;
+}
+```
