@@ -2,7 +2,7 @@
 title: Plantillas
 description: 
 published: true
-date: 2026-09-25T16:30:55.325Z
+date: 2026-10-01T15:51:21.152Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-25T15:43:40.237Z
@@ -90,5 +90,43 @@ vd<T> & vd<T>::operator=(const vd<T> &a){
     copiar(a);
   }
   return *this;
+}
+```
+Un objeto T.D.A. de un conjunto de enteros consiste en una colección ordenada de elementos de tipo entero donde no hay repetición.
+### Busqueda en dinamico
+Para un vector dinámico, nosotros usaremos el "pair" para poder delimintar donde los limites. Pair no es mas que una busqueda logica dual definido:
+```C++
+//Conjunto.cpp
+pair <bool,int> Conjunto::Esta(int x) const{
+	pair <bool,int>;
+  int ini = 0, fin = d.size();
+  while (ini < fin){
+  	int m = (ini +fin)/2;
+    if (d[m] == x){
+    	res.first = true;
+      res.second = m;
+      return res;
+    }
+    else {
+    	if(d[m] < x){
+      	ini = m+1;
+      } else {
+      	fin = m;
+      }
+  } //while
+  res.first = false;
+  res.second = ini;
+  return res;
+}
+```
+
+### Insercción en dinamico
+Para poder insertar depende lo que hayamos obtenido en la anterior función tenemos:
+```C++
+void Conjunto::insert (int x){
+	pair <bool, int> r=Esta(x);
+  if (r.fisrt==false){
+  	d.insert(r.second,x);
+  }
 }
 ```
