@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-01T16:10:54.441Z
+date: 2026-10-01T16:22:05.804Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -39,3 +39,19 @@ Algunos elementos de manipulación que tenemos son:
 Las pilas es una política que vamos a usar, donde se imponen un orden estricto gracias a LIFO (Last In, First Out). Este tipo de "pilas" debemos pensarlo como si fuera un bote de patatas pringles, donde solo es accesible la última añadida y las primeras añadidas no.
 
 Debido a esta característica, a la hora de trasnladar información de una pila a otra, lo que se hace e sinvertir el orden.
+
+Dentro de la pila, la especificación, contiene una sencuencia d evalores, diseñadas para la relaización e inserción y borarar por sus extremos o TOPES.
+
+Ejemplo, de un texto
+```C++
+bool controlComillado(const string & texto){
+	Pila p;
+  for ( int i = 0; i<texto.size(); i++){
+  	if(texto[i]==""){
+    	if(p.empty())
+      	p.push("");
+      else
+      	p.pop();
+  	}
+  return p.empty();
+  }
