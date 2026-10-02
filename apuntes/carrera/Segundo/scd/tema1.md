@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-10-02T17:04:36.565Z
+date: 2026-10-02T17:12:28.363Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-18T16:51:55.223Z
@@ -173,4 +173,14 @@ El problema que encontramos en este lugar, es que debe haber una gran sincroniza
 ## Propiedades
 Las propiedades de programas concurrentes podemos dividirla en dos:
 - Seguridad: Siempre se deben cumplir, ya que si no se rompe. Ejemplo: La exclusión mutua, interbloqueo debido a que hay espera mutua y otro ejemplo puede ser que se cumpla siempre la propiedad de productor-consumidor
-- Vivacidad:
+- Vivacidad: Consiste en que al cumplirse significa que va bien. 
+## Verificación de programas concurrentes
+Para poder determianr si una propiedad se cumple:
+- Método simple: Intentar probarlo mil veces para ver si funciona, aunque esto es poco practico.
+- Método analisis exhaustivo: Donde se chequea todas las correción de las posibles historias, sin embargo esto puede hacerse exponencialmente largo
+
+La única manera que tenemos es el enfoque axiomático
+### Enfoque axiomático
+Vamos a hacer repaso de Lógica, ya que vamos a intentar definir un sistema lógico formal, donde las propiedades de programas este en base de axiomas y reglas de inferencia. Vamos a usar las sentencias atómicas que actúan como transofrmadores de predicados. ${P}$.
+
+Este tipo de enfoque porque tiene menor complejidad que comprobar todo y predicado que referencia variable globales siendo cierto, que en el estado inicial de cada proceso y manteniéndose cierto ante cualquier asignación dentro de los procesos.
