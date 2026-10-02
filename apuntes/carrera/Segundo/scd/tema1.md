@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-10-02T16:51:46.691Z
+date: 2026-10-02T17:04:36.565Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-18T16:51:55.223Z
@@ -171,3 +171,6 @@ El problema que encontramos en este lugar, es que debe haber una gran sincroniza
 
 
 ## Propiedades
+Las propiedades de programas concurrentes podemos dividirla en dos:
+- Seguridad: Siempre se deben cumplir, ya que si no se rompe. Ejemplo: La exclusión mutua, interbloqueo debido a que hay espera mutua y otro ejemplo puede ser que se cumpla siempre la propiedad de productor-consumidor
+- Vivacidad:
