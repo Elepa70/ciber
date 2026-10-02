@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-02T15:44:11.135Z
+date: 2026-10-02T15:44:42.550Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -82,7 +82,8 @@ Las colas es otro tipo de estructura de datos que son lineales, sigue una poilit
 - push: Añadir un nuevo elemento al final.
 - Put: Eliminar un del frente.
 - Size: Cuanto elementos hay en cola
-- 
+- Back: Es particular de este tipo, porque consulta el último elemento insertado.
+- Swap: Intercambia contenido de una cola a otra.
 
 La forma en la que opera es sencillo: A la hora de añadir un elemento, se comprueba si ya hay uno al frente y si es el caso, comprueba el que esta justo detras, así hasta encontrar su hueco.
 
