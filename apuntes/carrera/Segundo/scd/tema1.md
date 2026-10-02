@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-10-02T16:47:25.172Z
+date: 2026-10-02T16:51:46.691Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-18T16:51:55.223Z
@@ -142,6 +142,10 @@ begin // Comienzo
 end
 ```
 
+Vamos a usar una serie de palabras claves para hacer una serie de procesos no estructurados con fork-join
+
+- fork: Sentencia que le da comienzo a una rutina nombrada.
+- join: Sentencia que espera la terminación de la rutina nombrada.
 #### Cobegin-Coend
 Estas palabras las usamos para indicar que aquello que este entre cobegin y coend, se van a ejecutar en parapelelo en vez de manera secuencial.
 ## Exclusión mutua y sincronización
