@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-10-02T16:44:36.267Z
+date: 2026-10-02T16:47:25.172Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-18T16:51:55.223Z
@@ -131,7 +131,16 @@ Nosotros vamos a usar uan notación (denominada pseudo-código), para expresar t
 
 Hacemos uso de un Grafo de Sincronización, que consiste ne un grafo dirigido acíclico (DAG) donde cada nodo representa una secuencia del programa. La flecha de los grafos son importantes, ya que no es posible llegar de un lado a otro si la flecha y la señal no lo permiten ( A -> B).
 
+Un metodo para definir en seudo codigo:
+```Pseudo-code
+var {variables compartidas}
 
+process NombreProceso [ind : a..b] //Los indices...
+var ... {vars. locales}
+begin // Comienzo
+
+end
+```
 
 #### Cobegin-Coend
 Estas palabras las usamos para indicar que aquello que este entre cobegin y coend, se van a ejecutar en parapelelo en vez de manera secuencial.
