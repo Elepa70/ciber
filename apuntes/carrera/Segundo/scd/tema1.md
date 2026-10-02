@@ -2,7 +2,7 @@
 title: Introducción
 description: 
 published: true
-date: 2026-09-25T17:43:44.243Z
+date: 2026-10-02T16:44:36.267Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-18T16:51:55.223Z
@@ -123,6 +123,14 @@ $P_1$ ejecuta $n_1$ instrucciones atómicas y $P_2$ ejecuta $n_2$, para poder ca
 La abstracción la vamos a aplicar en esta asignatura, ya que esta asignatura depende de EC en su parte máquina, vamos a ignorar algunos detalles para no repetir temario y centrarnos en las partes características relevantes y vamos a simplicar lo máximo psoible.
 
 Esto lo vemos por ejemplo con los progresos finitos, ya que sabemos que va a tardar un tiempo finito, aunque no sepamos si es mucho o poco.  Al dar por cierta la hipotesis de progreso finito, debemos dar también por cierto las de punto de vista global (durante una jeecución siempre va a estar listo para entrar después) y la de vista local (una sentencia siempre se ejecuta, nunca se va a quedar congelado).
+
+
+Nosotros vamos a usar uan notación (denominada pseudo-código), para expresar tanto el codigo como la sincronización entre procesos secuenciales. Debemos distinguir dos tipos de sistemas concurrente:
+- Sistemas Estáticos: Número de procesos fijado en el fuente del programa y los procesos se activan al lanzar el programa.
+- Sistemas Dinámicos: El número de variable de procesos/hebras que se pueden activar en cualquier momento de la ejecución.
+
+Hacemos uso de un Grafo de Sincronización, que consiste ne un grafo dirigido acíclico (DAG) donde cada nodo representa una secuencia del programa. La flecha de los grafos son importantes, ya que no es posible llegar de un lado a otro si la flecha y la señal no lo permiten ( A -> B).
+
 
 
 #### Cobegin-Coend
