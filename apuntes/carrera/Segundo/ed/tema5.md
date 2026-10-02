@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-01T16:48:01.796Z
+date: 2026-10-02T15:39:51.930Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -74,3 +74,12 @@ stuck<int> UnirPilas(stack <int> &p1, stack <int>	&p2){
 ```
 
 Para representar las pilas, también podemos hacer uso de "celdas enlazadas", ya que puede tener una información que almacena y después la información del proximo elemento.
+
+## Colas
+Las colas es otro tipo de estructura de datos que son lineales, sigue una poilitica FIFO (First Input First Out), las operaciones de colas son:
+- front: Consulta cúal fue el primer elemento consultado (El más antiguo).
+- empty: Evaluar si esta vacia o no la cola.
+- push: Añadir un nuevo elemento al final.
+- Put: Eliminar un del frente.
+
+La forma en la que opera es sencillo: A la hora de añadir un elemento, se comprueba si ya hay uno al frente y si es el caso, comprueba el que esta justo detras, así hasta encontrar su hueco.
