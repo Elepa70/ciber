@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: false
-date: 2026-10-05T16:00:51.981Z
+date: 2026-10-05T16:01:05.149Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -137,7 +137,7 @@ cmpq b,a
 ```
 Lo que hacemos es restar pero sin ajustar por lo tanto:
 - Salta CF si hay acarreo entre operaciones con signo.
-- Salta ZF si a == b
-- Salta SF si (a-b) < 0
+- Salta ZF si $a == b$.
+- Salta SF si $(a-b) < 0$.
 - Salta OF en caso de que restemos dos valores muy grandes.
 
