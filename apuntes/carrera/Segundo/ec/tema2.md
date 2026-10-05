@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: false
-date: 2026-10-05T15:50:38.239Z
+date: 2026-10-05T15:52:02.373Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -129,3 +129,9 @@ Tenemos unos 4 codigos de condición, estos códigos se ponen a 1 cuando se han 
 
 > Estos flags no son afectados por la instrucción "lea"
 {.is-info}
+
+El ajuste explícito consiste en "forzar" que salten estos flags. Esto lo podemos hacer con:
+```
+cmpq Src2,Src1
+cmpq b,a
+```
