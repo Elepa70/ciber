@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: false
-date: 2026-10-05T16:50:13.434Z
+date: 2026-10-05T17:09:12.558Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -163,3 +163,16 @@ El antiguo estilo de salto condicional, pretendia usar %rax, como almacen del va
 Los movimientos condicionales, son usados en procesadores post 1995, debido a que la ramificación provocaba problema de flujo de instrucciones, y estos movimientos no requerían de transferencia de control. 
 
 ### Bucles
+Los bucles, no lo vamos a describir ya que se sobre entiende, pero lo que se hace principalmente es creado una etiqueta, vamos a ir yendo a esa etiqueta constantemente.
+
+```
+.L2: #El .L2 significa que afuera de . no sabe nada y que L es local. Iniciando el bucle
+	movq %rdi, %rdx
+  andl $1, %edx #Lo que hacemos es un t = x & 0x1, mover los valores
+  addq %rdx, %rax #result +=t 
+  shrq %rdi # x >>=1 Añadimos un 0 en x.
+  jne .L2 # Comrpueba el bucle y si no se vuelve
+  ret
+```
+En caso de usar un while, lo que se ahce es un salto a una comprobación y si se cumple se hace un salto a otra linea llamado "jump-to-middle".
+
