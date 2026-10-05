@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: false
-date: 2026-10-05T16:01:05.149Z
+date: 2026-10-05T16:50:13.434Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -130,7 +130,9 @@ Tenemos unos 4 codigos de condición, estos códigos se ponen a 1 cuando se han 
 > Estos flags no son afectados por la instrucción "lea"
 {.is-info}
 
-El ajuste explícito consiste en "forzar" que salten estos flags. Esto lo podemos hacer con:
+El ajuste explícito consiste en "forzar" que salten estos flags. 
+#### cmpq
+Descrito:
 ```
 cmpq Src2,Src1
 cmpq b,a
@@ -141,3 +143,23 @@ Lo que hacemos es restar pero sin ajustar por lo tanto:
 - Salta SF si $(a-b) < 0$.
 - Salta OF en caso de que restemos dos valores muy grandes.
 
+#### Test
+Descrito:
+```
+test Src2,Src1
+test b,a
+```
+Lo expresamos como a&b, sin ajustar.
+Puede saltar:
+- Salta ZF si (a&b)==0
+- Salta SF si  (a&b) <0
+
+### Saltos condicionales
+Los saltos, son movimientos en el código donde usamos la parte del codigo que se le pide.
+Tenemos desde el incondición (jmp) hasta los más especificos como si es igual a cero (je), etc...
+
+El antiguo estilo de salto condicional, pretendia usar %rax, como almacen del valor de retorno.
+
+Los movimientos condicionales, son usados en procesadores post 1995, debido a que la ramificación provocaba problema de flujo de instrucciones, y estos movimientos no requerían de transferencia de control. 
+
+### Bucles
