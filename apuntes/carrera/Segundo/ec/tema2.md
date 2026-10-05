@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: false
-date: 2026-10-05T15:50:13.449Z
+date: 2026-10-05T15:50:38.239Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -127,3 +127,5 @@ Tenemos unos 4 codigos de condición, estos códigos se ponen a 1 cuando se han 
 - SF: Hay que tener en cuenta un signo.
 - OF: Overflow.
 
+> Estos flags no son afectados por la instrucción "lea"
+{.is-info}
