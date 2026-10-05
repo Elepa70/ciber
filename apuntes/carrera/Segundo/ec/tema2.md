@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: false
-date: 2026-10-05T15:45:38.231Z
+date: 2026-10-05T15:47:28.070Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -121,3 +121,9 @@ Otras instrucciones que vamos a aprender son:
 
 ## Segunda parte - Estructuras de Control
 ### Control: Códigos de condición | Flags
+Tenemos unos 4 codigos de condición:
+- CF: Ha casuado acarreo.
+- ZF: El valor es cero.
+- SF: Hay que tener en cuenta un signo.
+- OF: Overflow.
+
