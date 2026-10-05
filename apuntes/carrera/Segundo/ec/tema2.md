@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: false
-date: 2026-10-05T15:52:02.373Z
+date: 2026-10-05T16:00:51.981Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -135,3 +135,9 @@ El ajuste explícito consiste en "forzar" que salten estos flags. Esto lo podemo
 cmpq Src2,Src1
 cmpq b,a
 ```
+Lo que hacemos es restar pero sin ajustar por lo tanto:
+- Salta CF si hay acarreo entre operaciones con signo.
+- Salta ZF si a == b
+- Salta SF si (a-b) < 0
+- Salta OF en caso de que restemos dos valores muy grandes.
+
