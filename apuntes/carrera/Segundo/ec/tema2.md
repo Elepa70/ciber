@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: false
-date: 2026-09-28T17:23:01.771Z
+date: 2026-10-05T15:45:38.231Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -118,3 +118,6 @@ A la hora de direccionamiento a memoria completo, la más general suele ser con 
 ### Aritmetica
 Otras instrucciones que vamos a aprender son:
 - Sacar en referencia , con el formato "leaq Src, Dest", donde Src es una expresión de memoria y Dest, la dirección de destino. Se usa para calcular direcciones sin hacer referencia por memoria o calcular expresiones aritméticas. 
+
+## Segunda parte - Estructuras de Control
+### Control: Códigos de condición | Flags
