@@ -2,7 +2,7 @@
 title: Consultores, Modificadores y agrupacion de elementos
 description: 
 published: true
-date: 2026-10-06T17:07:46.006Z
+date: 2026-10-06T17:13:35.648Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-29T09:09:09.136Z
@@ -174,6 +174,8 @@ Cuando seguimos las líneas de conexión entre las clases, podemos fijarnos que 
 En código esto lo tendremos en cuenta para hacer los atributos de referencia, los atributos los escribiremos de la siguiente manera:
 ```Java
 //En Java
+
+
 // 1 a muchos
 private Arraylist <clase_apuntando> variable_nombre;
 
@@ -188,3 +190,6 @@ def initialize
   @variable
 end
 ```
+
+> Existe la posibilidad que haya una doble relación entre clases (que se conecte por dos lados). Esto implica que por un lado tendremos un Array y por otro lado tendremos un objeto (Si se da el caso que una de las relaciones es 1...*  y el otro sea 1 o níngún nombre.
+{.is-warning}
