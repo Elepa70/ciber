@@ -2,7 +2,7 @@
 title: Consultores, Modificadores y agrupacion de elementos
 description: 
 published: true
-date: 2026-10-06T17:07:33.649Z
+date: 2026-10-06T17:07:46.006Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-29T09:09:09.136Z
@@ -181,8 +181,8 @@ private Arraylist <clase_apuntando> variable_nombre;
 private clase_apuntando variable_nombre;
 ```
 ``` Ruby
-//En Java
-// 1 a muchos
+# En Ruby
+# 1 a muchos y 1 a 1
 def initialize
 	@variable = Array.new
   @variable
