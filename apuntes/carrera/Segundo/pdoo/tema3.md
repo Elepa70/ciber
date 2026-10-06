@@ -2,7 +2,7 @@
 title: Consultores, Modificadores y agrupacion de elementos
 description: 
 published: true
-date: 2026-10-06T16:37:06.196Z
+date: 2026-10-06T17:07:33.649Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-29T09:09:09.136Z
@@ -166,3 +166,25 @@ Las punta de flecha implica que desde donde parte conoce hacia donde la flecha, 
 
 
 En algunos enlaces entre clases, podemos encontrar una clase asociada a esa clase con lineas discontinuas. Esto implica que para la relación entre las dos clases principales, es necesario usar esta última clase que esta en discontinua.
+
+
+#### Valores entre relaciones de clase
+Cuando seguimos las líneas de conexión entre las clases, podemos fijarnos que pueden haber un número como es $(1...*)$ o $(1)$. Esto significa la relación que hay desde donde se parte hasta donde llega la flecha.
+
+En código esto lo tendremos en cuenta para hacer los atributos de referencia, los atributos los escribiremos de la siguiente manera:
+```Java
+//En Java
+// 1 a muchos
+private Arraylist <clase_apuntando> variable_nombre;
+
+//1 a 1
+private clase_apuntando variable_nombre;
+```
+``` Ruby
+//En Java
+// 1 a muchos
+def initialize
+	@variable = Array.new
+  @variable
+end
+```
