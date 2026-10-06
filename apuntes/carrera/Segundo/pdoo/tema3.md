@@ -2,7 +2,7 @@
 title: Consultores, Modificadores y agrupacion de elementos
 description: 
 published: true
-date: 2026-09-29T10:27:45.628Z
+date: 2026-10-06T16:01:44.420Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-29T09:09:09.136Z
@@ -149,3 +149,17 @@ Los lenguajes compilados como C++, procesan todos los archivos de la fuente ante
 Para ello, es necesario referenciar los archivos mediante el uso de "require" si es archivo del lenguaje o "require_relative" si es un archivo propio.
 > Unicamente conectar los archivos SI se va a usar en el código, de otra manera producirá un error, ya que no ha sido utilizado.
 {.is-danger}
+
+## Diagramas
+Los diagramas nos ssirven para poder orientarnos en el código, algunas caracteristicas de los diagramas son:
+### En la clase
+- El símbolo "+" significa que el atributo es público
+- El símbolo "-" significa que el atributo es privado
+- El símbolo "#" significa que el atributo es restringido
+- El símbolo "~" significa que el atributo es paquete
+### Entre las clases
+- Si hay una línea recta entre las clases, tenemos una asociación
+- Si hay un rombo relleno saliendo de una parte hacia otra, tenemos una composición.
+- Si hay un rombo vacío saliendo de una clase a otra, tenemos una agregación.
+
+Las punta de flecha implica que desde donde parte conoce hacia donde la flecha, pero no al reves.
