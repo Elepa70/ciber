@@ -2,7 +2,7 @@
 title: Consultores, Modificadores y agrupacion de elementos
 description: 
 published: true
-date: 2026-10-06T16:01:44.420Z
+date: 2026-10-06T16:11:37.017Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-29T09:09:09.136Z
