@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-07T16:17:11.296Z
+date: 2026-10-07T16:20:14.395Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -106,6 +106,8 @@ Una hebra, es una unidad básica de utilización de CPU, y para poder operar con
 - Contexto del registro: PC, PSW o SP entre otros
 - Pila de ejecución, debido a que tenemos el PC ("prown counter").
 - Un diagrama de estado similar al PCB, pero se denomina TAREA (Son auqellas tareas que requiere para funcionar), tiene: PID, lista de Hebras  , estado, memoria y recursos).
+
+Una hebra comparte con sus hebras pares (procesos familaires por asi decirlo), la información necesaria como es codigos, datos o recursos del SO.
 
 Debido a que una hebra no tiene memoria HDD, es inviable que estas puedan entrar en un estado suspendido. Lo unico que podemos hacer es pasarlo a un estado de memoria SWAD, pero no a memoria HDD.
 
