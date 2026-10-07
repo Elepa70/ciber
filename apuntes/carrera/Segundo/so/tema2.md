@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-07T16:33:02.943Z
+date: 2026-10-07T16:59:50.607Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -119,7 +119,41 @@ Tenemos vairos tipos de S.O.
 - UNIX soporta múltiples procesos, que empezo con Sun Solaris.
 
 Los tipos de threads, teniendo en cuenta la distinción entre single threading y multithreading.
+
+Tenemos dos modelos de hebras
+### ULT
+Toda gestión de hebras se realiza a nivel de usuario, mediante biblioteca de hebras. La biblioteca se encarga de: creación/finalización, gestión de modelos de estado, planificación, savar y cargar el contexto y la comunicación entre hebras.
+
+Sus ventajas son:
+- El cambio de hebra no hay cambio de modo
+- La planificación se adapta a la aplicación.
+- Las aplicaciones se ejecutan en cualquier SO
+
+Por otro lado sus desventajas:
+- La mayoría de lalmadas al sistemas son bloqueantes, debido a que cuando una hebra llama el resto se bloquea.
+- El kernel al asignar procesos a procesadores, no se puede asignar más de un procsador a más de una hebra.
+### KLT
+Toda la gestión se realiza a nivel de kernel, manteniendolo informado de lso procesos y hebras. El SO proporciona un conjunto de llamadas al sistema, la entidad de planificación para el kernel es la hebra.
+
+Sus ventajas son:
+- El kernel planifica distintas hebras de la misma tarea en distintos procesadores
+- El bloqueo de una hebra no provoca el resto de bloqueos evitando el problema de ULT
+- Las rutinas de kernel puede ser multihebras
+Desventajas:
+- El cambio de hebras en una misma tarea se realiza a modo kernel, provoca un cambio de modo.
+### El híbrido
+Existe una versión hibrida creada por Solaris OS y adaptada por los UNIX posteriormente, que tiene de característica su flexibilidad dada principalmente porque es el programador quien decide el número de KLTs. Además puede hacer:
+- Las ULT son proporcionadas por biblioteca de hebras invisibles para el kernel.
+- La creación de hebras viene en modo usuario.
+- Las KLT se usan de unidad de planificación en el kernel.
+- Los procesos ligeros soportan una o más ULT, y se asocian con una KLT.
 ## Conceptos fundamentales sobre planificación
+La planificación viene debido a que tenemos el problema de tener n "clientes" que quieren el mismo recurso y debemos intentar decidir a quien asignarlo.
+
+La definición del problema de planificación de CPU:
+- El SO dispone de "n" procesos/hebras en esatdo "Listo".
+- El SO dispone de varios cores para ejcutar las hebras o procesos.
+- El SO debe decidir que procesos o hebras asignar a qué CPU.
 
 ## Políticas de planificación de la CPU
 
