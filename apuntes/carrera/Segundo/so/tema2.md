@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-07T17:19:43.114Z
+date: 2026-10-07T17:25:01.056Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -154,9 +154,13 @@ La definición del problema de planificación de CPU:
 - El SO dispone de "n" procesos/hebras en esatdo "Listo".
 - El SO dispone de varios cores para ejcutar las hebras o procesos.
 - El SO debe decidir que procesos o hebras asignar a qué CPU.
-> Resumir
-{.is-warning}
 
+Hay un modelo genérico de colas, donde el SO tiene una colección de colas que representan el estado de todos los procesos en el sistema. Típicamente hay una cola por estado del proceso, cada PCB esta encolado en una cola de estado acorde a su estado y conforme un proceso haga un cambio de estado su PCB se va retirando, y enconlando en otra.
+
+Estas colas peuden ser:
+- Cola de trabajos: Conjunto de los trabajos pendiente de ser admitidos en el sistema.
+- Cola de LISTOS: Conjunto de todos los procesos, cuyos programas asociados residen en memoria principal, esperando para poder ejecutar en la CPu.
+- Cola de BLOQUEADOS: Conjunto de todos los procesos esperando por un dispositivo E/S particular.
 Tenemos distintos tipos de planificadores (parte del SO encargado de controlar la utilización de un recurso):
 - Largo plazo: Selecciona lso trabajos que deben llevarse a la cola de preparados, se invoca poco frecuentemente y es más lento, pero permite controlar el grado de multiprogramación.
 - Planificador a corto plazo: Se resumen en el planificado rde CPU. Se invoca frecuentemente por lo que es mas rapido.
