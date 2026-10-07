@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-07T15:58:03.470Z
+date: 2026-10-07T16:17:11.296Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -100,8 +100,16 @@ Al finalizar un proceso, este llama al SO para solicitar un exit(), que provoca:
 > El proceso wait(), es usado por el padre únicamente para poder sincronizarse con sus hijos.
 {.is-info}
 
-## Threads
+## Threads o hebras
+Una hebra, es una unidad básica de utilización de CPU, y para poder operar con ella el kernel requiere:
+- TID, otro tipo de identificador.
+- Contexto del registro: PC, PSW o SP entre otros
+- Pila de ejecución, debido a que tenemos el PC ("prown counter").
+- Un diagrama de estado similar al PCB, pero se denomina TAREA (Son auqellas tareas que requiere para funcionar), tiene: PID, lista de Hebras  , estado, memoria y recursos).
 
+Debido a que una hebra no tiene memoria HDD, es inviable que estas puedan entrar en un estado suspendido. Lo unico que podemos hacer es pasarlo a un estado de memoria SWAD, pero no a memoria HDD.
+
+> Todo el conjunto de datos de los Thread lo llamaremos Thread_CTRL_Block o TCB.
 ## Conceptos fundamentales sobre planificación
 
 ## Políticas de planificación de la CPU
