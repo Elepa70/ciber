@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-07T15:48:57.991Z
+date: 2026-10-07T15:57:01.127Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -93,6 +93,11 @@ En la creación de un proceso, lo hace "program loader" con los siguientes pasos
 Al finalizar un proceso, este llama al SO para solicitar un exit(), que provoca:
 - Un aviso de finalización al padre, guardando su estado. (SIGCHLD)
 - Los recursos son liberados
+- El padre finaliza la ejecución de sus hijos mediante kill()
+- El padre va a finalizar y por lo tanto el SO va terminando los procesos hijos evitando que continuen (Denominado terminación en cascada). En UNIX por otro lado, lo que se hace es dejar "colgados" los procesos, asociandolo al padre en init (systemd).
+- También es posible que el SO termine un proceso por errores o condiciones de fallo.
+
+- 
 ## Threads
 
 ## Conceptos fundamentales sobre planificación
