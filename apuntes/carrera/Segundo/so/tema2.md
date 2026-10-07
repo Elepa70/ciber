@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-07T15:57:01.127Z
+date: 2026-10-07T15:58:03.470Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -97,7 +97,9 @@ Al finalizar un proceso, este llama al SO para solicitar un exit(), que provoca:
 - El padre va a finalizar y por lo tanto el SO va terminando los procesos hijos evitando que continuen (Denominado terminación en cascada). En UNIX por otro lado, lo que se hace es dejar "colgados" los procesos, asociandolo al padre en init (systemd).
 - También es posible que el SO termine un proceso por errores o condiciones de fallo.
 
-- 
+> El proceso wait(), es usado por el padre únicamente para poder sincronizarse con sus hijos.
+{.is-info}
+
 ## Threads
 
 ## Conceptos fundamentales sobre planificación
