@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-09-30T17:27:45.727Z
+date: 2026-10-07T15:37:03.536Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -76,7 +76,7 @@ Respecto al espacio de direcciones, el hijo obtiene una copia del padre o se le 
 
 ### UNIX-like OS
 Los procesos UNIX-like OS, funciona de manera especial:
-- Con llamadas al sistema "fork()" (También llamado retval, donde si el pid == 0, es el hijo y en cualquier otro caso es el padre), donde se crea un nuevo proceso (hijo).
+- Con llamadas al sistema "fork()" (También llamado retval, donde si el pid == 0, es el hijo y en cualquier otro caso es el padre), podemos crear un nuevo hijo, que podrá heredear la memoria del padre o los registros de CPu del padre.
 - La llamada "exec()", que se reemplaza 
 
 
