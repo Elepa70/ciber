@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-07T16:59:50.607Z
+date: 2026-10-07T17:17:09.118Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -154,7 +154,39 @@ La definición del problema de planificación de CPU:
 - El SO dispone de "n" procesos/hebras en esatdo "Listo".
 - El SO dispone de varios cores para ejcutar las hebras o procesos.
 - El SO debe decidir que procesos o hebras asignar a qué CPU.
+> Resumir
+{.is-warning}
 
+Tenemos distintos tipos de planificadores (parte del SO encargado de controlar la utilización de un recurso):
+- Largo plazo: Selecciona lso trabajos que deben llevarse a la cola de preparados, se invoca poco frecuentemente y es más lento, pero permite controlar el grado de multiprogramación.
+- Planificador a corto plazo: Se resumen en el planificado rde CPU. Se invoca frecuentemente por lo que es mas rapido.
+- Planificador medio plazo: Se suele encargar de devolver procesos a memoria, en algunos SO de tiempo compartido, a veces es necesario sacar procesos de la memoria. 
+
+
+Hay dos tipos de procesos (demasiado extremizado):
+- Procesos limitados por E/S o procesos cortos, donde suele estár mas tiempo en E/S que operando en CPU
+- Procesos limitados por la CPU o procesos largos.
+### Dispatcher
+El dispatcher() o despachador, tiene la función de otorgar el control de la CPU al proceso seleccionado por el planificador a corto plazo. Existe el termino de latencia de despacho, que es el tiempo que tarda en deterner un proceso e iniciar otro.
+
+Suele entrar en acción con:
+- Cuando un proceso no quiere finalizar
+- Un elemento del SO determina que ese proceso no puede seguir.
+- El proceso se queda sin tiempo.
+- Un proceso cambia de Bloqueado a Listo.
+
+### Medidas
+Usaremos medidas para poder determinar la productividad y el servicio de los planificadores, estas medidas pueden ser dadas por:
+- Tiempo de respuesta (T): Tiempo transcurrido desde la solicitud hasta la primera respuesta.
+- Tiempo de espera (M): Tiempo que ha estado esperando en cola de Listo.
+- Penalización (P)
+- Indice de respuesta (R): 
+
+
+Las políticas de planificación, se comporta de distintas manera dependiendo de las clases de procesos, se pueden clasificar en:
+- No apropiativas: Una vez que se le asigna un proceso, no se le puede retirar.
+- Apropiativas: El SO puede apropiarse del procesador cuando lo desee.
+Busca dar un buen rendimiento y servicio.
 ## Políticas de planificación de la CPU
 
 ## Implementación de procesos/hebras en Linux: task
