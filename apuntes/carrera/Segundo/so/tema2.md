@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-07T16:20:14.395Z
+date: 2026-10-07T16:33:02.943Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -112,6 +112,13 @@ Una hebra comparte con sus hebras pares (procesos familaires por asi decirlo), l
 Debido a que una hebra no tiene memoria HDD, es inviable que estas puedan entrar en un estado suspendido. Lo unico que podemos hacer es pasarlo a un estado de memoria SWAD, pero no a memoria HDD.
 
 > Todo el conjunto de datos de los Thread lo llamaremos Thread_CTRL_Block o TCB.
+
+Tenemos vairos tipos de S.O.
+- Aquel que no reconoce el concepto de hebra "single threading".
+- Aquel que el kernel es capaz de soportar múltiples hebras de un proceso "multithreading"
+- UNIX soporta múltiples procesos, que empezo con Sun Solaris.
+
+Los tipos de threads, teniendo en cuenta la distinción entre single threading y multithreading.
 ## Conceptos fundamentales sobre planificación
 
 ## Políticas de planificación de la CPU
