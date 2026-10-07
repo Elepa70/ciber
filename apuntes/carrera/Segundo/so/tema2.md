@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-07T15:37:03.536Z
+date: 2026-10-07T15:48:57.991Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -76,13 +76,23 @@ Respecto al espacio de direcciones, el hijo obtiene una copia del padre o se le 
 
 ### UNIX-like OS
 Los procesos UNIX-like OS, funciona de manera especial:
-- Con llamadas al sistema "fork()" (También llamado retval, donde si el pid == 0, es el hijo y en cualquier otro caso es el padre), podemos crear un nuevo hijo, que podrá heredear la memoria del padre o los registros de CPu del padre.
-- La llamada "exec()", que se reemplaza 
+- Con llamadas al sistema "fork()" (También llamado retval que es el PID del hijo, donde si el pid == 0, es el hijo y en cualquier otro caso es el padre), podemos crear un nuevo hijo, que podrá heredear la memoria del padre o los registros de CPU del padre. Esta llamada devuelve un 
+- La llamada "exec()", lo que hace es reemplazar un espacio de direcciones. Es decir eliminará la memoria copia creada para el hijo
 
 
-> Información importante sobre PCB hijo-padre
+> El PCB hijo obtiene: PID único, el registro del padre, el estado será nuevo **NO BLOQUEADO**, la memoria la cpia del padre. 
 {.is-info}
 
+En la creación de un proceso, lo hace "program loader" con los siguientes pasos:
+- Creación de un PID único.
+- Asignar espacio en memoria RAM o SWAP.
+- Crear el PCB e inicializar campos de información.
+- Insertar inforamción del PCB en la tabal de procesos (una lista donde estan todos los procesos).
+
+
+Al finalizar un proceso, este llama al SO para solicitar un exit(), que provoca:
+- Un aviso de finalización al padre, guardando su estado. (SIGCHLD)
+- Los recursos son liberados
 ## Threads
 
 ## Conceptos fundamentales sobre planificación
