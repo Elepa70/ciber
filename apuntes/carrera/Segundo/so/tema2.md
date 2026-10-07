@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-07T17:17:09.118Z
+date: 2026-10-07T17:19:43.114Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -177,11 +177,16 @@ Suele entrar en acción con:
 
 ### Medidas
 Usaremos medidas para poder determinar la productividad y el servicio de los planificadores, estas medidas pueden ser dadas por:
+- Rafaga (r): Conssite el tiempo de servicio que necesita el proceso.
 - Tiempo de respuesta (T): Tiempo transcurrido desde la solicitud hasta la primera respuesta.
 - Tiempo de espera (M): Tiempo que ha estado esperando en cola de Listo.
 - Penalización (P)
-- Indice de respuesta (R): 
+- Indice de respuesta (R): Fracción de tiempo donde la penalización está recibiendo servicio.
 
+Otras medidas interesantes son:
+- Tiempo del núcleo: Tiempo perdido por el SO tomando decisiones.
+- TIempo de inacividad: Tiempo en el que la cola de ejecutables está vacía.
+- Tiempo de retorno: Cantidad de tiempo necesario para ejecutar un proceso completo.
 
 Las políticas de planificación, se comporta de distintas manera dependiendo de las clases de procesos, se pueden clasificar en:
 - No apropiativas: Una vez que se le asigna un proceso, no se le puede retirar.
