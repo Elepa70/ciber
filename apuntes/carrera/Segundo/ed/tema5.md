@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-08T15:42:52.939Z
+date: 2026-10-08T15:56:00.746Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -113,3 +113,28 @@ Colas con prioridad:
 - Su complejidad es de $O(log(n))$.
 
 Luego en vez de usar "front" existe "top".
+
+
+
+## Iteradores
+Los iteladores son clases que nos permiten acceder a elementos de un contenedor para poder modificarlos, ya sea moviendolos o cambiandolos.
+
+Para poder usar los iteradores debemos tener:
+1. El inicio del iterador deberá estar en la posición begin.
+2. Debemos saber como avanza.
+3. Debe saber como acceder a ese elemento.
+4. Debe saber cuando termina.
+```C
+/** Ejemplo tonto **/
+
+#include <vector>
+#include <iostream>
+in main(){
+	vector <int> números = {1,2,3,4};
+  vector <int>::iterator it;
+  for (it = números.begin(); it!=números.end();++i){
+  	cout <<*it<<endl;
+  }
+}
+```
+
