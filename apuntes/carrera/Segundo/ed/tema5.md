@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-08T16:01:44.335Z
+date: 2026-10-08T16:09:57.380Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -141,4 +141,12 @@ for (it = v.begin(); it!=v.end(); i++){
   	(*it)=-1;
 }
 ```
+Algunas caracteristicas de los itirador:
+- iterador.end(): Posición final (no leible o escribible de un vector).
+- iterador.begin(): Posición inicial de un vector.
+
+Otro tipo de iteradores:
+- Tenemos el reverse_iterator(): El cúal funciona igual que el iterador pero con las operaciones rbegin() siendo la última posición del vector, y con un ++ se mueve a uno anterior.
+> Siempre que queramos modificar información de un contenedor, el cúal es constante se debe usar const_iterator, ya que de otra manera no podemos acceder a la información.
+{.is-warning}
 
