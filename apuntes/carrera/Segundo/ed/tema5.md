@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-08T17:03:26.455Z
+date: 2026-10-08T17:08:14.312Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -161,6 +161,20 @@ Las operaciones que tiene son:
 - get: Devolver un elemento de una posición.
 - borrar: Borrar o eliminar un elemento de una posición.
 - insertar: Insertar un elemento de una posición.
+
+Alguna de las caracteristicas de las listas son:
+- l1.size(): Indicamos el tamaño.
+- l1.clear(): Dejar el contenedor vacío.
+```C 
+#include <list> //Vamos a usar listas
+#include <iostream>
+using namespace std;
+int main(){
+	list <int> l1;
+  list <int> l2={3,4,5};
+  ....
+}
+```
 
 
 Las listas podemos implementarlas como celdas enlazadas, y para ello a la hora de insercción en X elementos, se busca el inmediato anterior y hacemos que ese puntero apunte a nuestro nueva celda y está nueva celda hacemos que apunte al que ocupaba la posición que deseamos.
