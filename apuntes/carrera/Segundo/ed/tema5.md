@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-08T16:32:20.197Z
+date: 2026-10-08T17:03:26.455Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -153,3 +153,14 @@ Otro tipo de iteradores:
 > Siempre que queramos modificar información de un contenedor, el cúal es constante se debe usar const_iterator, ya que de otra manera no podemos acceder a la información.
 {.is-warning}
 
+## Listas
+Las listas son una secuencia de elementos dispuestos en una dimensión, diseñadas para hacer inserciones y borrados en cualquier posición.
+
+Las operaciones que tiene son:
+- set: Modificar un elemento de una posición.
+- get: Devolver un elemento de una posición.
+- borrar: Borrar o eliminar un elemento de una posición.
+- insertar: Insertar un elemento de una posición.
+
+
+Las listas podemos implementarlas como celdas enlazadas, y para ello a la hora de insercción en X elementos, se busca el inmediato anterior y hacemos que ese puntero apunte a nuestro nueva celda y está nueva celda hacemos que apunte al que ocupaba la posición que deseamos.
