@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-02T15:54:46.905Z
+date: 2026-10-08T15:39:06.488Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -95,3 +95,24 @@ queue<int> UnirColas (queue <int> &q1, queue <int> &q2){
   }
 }
 ```
+
+## Colas con prioridad
+Anteriormente hemos visto las colas y como funcionan con el modelo FIFO, sin emabrgo ahora vmaos a ver otro tipo de Colas donde existe una prioridad.
+
+Esta prioridad sirve para poder terminar la posición a donde queda los elementos, ya que pueden estar más o menos cerca del elemento indicado con prioridad.
+
+> Las operaciones son las mimas que con las de colas.
+{.is-info}
+
+
+### Diferencias colas simples y colas con prioridad
+En las colas normales:
+- La regla de salida es según la llegada (FIFO), primero que entra primero en salir.
+- Su uso suele ser buffers simple o colas de impresión.
+- Su complejidad es de O(1).
+
+Colas con prioridad:
+- La salida se rigue por el elemento de mayor prioridad, ya que este saldrá primero.
+- El triaje médico se peude ver este tipo de colas o en planificación dentro de un SO.
+- Su complejidad es de $O(log(n))$.
+
