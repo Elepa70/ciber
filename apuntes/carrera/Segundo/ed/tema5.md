@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-08T17:08:14.312Z
+date: 2026-10-08T17:12:46.457Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -165,6 +165,9 @@ Las operaciones que tiene son:
 Alguna de las caracteristicas de las listas son:
 - l1.size(): Indicamos el tamaño.
 - l1.clear(): Dejar el contenedor vacío.
+- l1.empty(): Comrpueba si esta vacio o no, es un boleano.
+- l1.insert(): Inserta un valor en la posicion que deseemos y el valor que deseemos.
+- l1.erase(): Eliminamos el valor que indicamos.
 ```C 
 #include <list> //Vamos a usar listas
 #include <iostream>
