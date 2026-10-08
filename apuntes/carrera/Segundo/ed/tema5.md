@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-08T15:39:06.488Z
+date: 2026-10-08T15:42:52.939Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -101,10 +101,6 @@ Anteriormente hemos visto las colas y como funcionan con el modelo FIFO, sin ema
 
 Esta prioridad sirve para poder terminar la posición a donde queda los elementos, ya que pueden estar más o menos cerca del elemento indicado con prioridad.
 
-> Las operaciones son las mimas que con las de colas.
-{.is-info}
-
-
 ### Diferencias colas simples y colas con prioridad
 En las colas normales:
 - La regla de salida es según la llegada (FIFO), primero que entra primero en salir.
@@ -116,3 +112,4 @@ Colas con prioridad:
 - El triaje médico se peude ver este tipo de colas o en planificación dentro de un SO.
 - Su complejidad es de $O(log(n))$.
 
+Luego en vez de usar "front" existe "top".
