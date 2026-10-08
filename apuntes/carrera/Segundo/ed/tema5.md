@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-08T17:12:46.457Z
+date: 2026-10-08T17:22:50.121Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -166,8 +166,14 @@ Alguna de las caracteristicas de las listas son:
 - l1.size(): Indicamos el tamaño.
 - l1.clear(): Dejar el contenedor vacío.
 - l1.empty(): Comrpueba si esta vacio o no, es un boleano.
-- l1.insert(): Inserta un valor en la posicion que deseemos y el valor que deseemos.
-- l1.erase(): Eliminamos el valor que indicamos.
+- l1.insert(int posicion, var a, int cantidad): Inserta un valor en la posicion que deseemos y el valor que deseemos.
+- l1.erase(int posicion): Eliminamos el valor que indicamos.
+- l1.push_front(var variable): Añadir un elemento al principio.
+- l1.push_back(var variable): Añadir un elemento al final.
+- l1.pop_front(): Eliminar del inicio un elemento.
+- l1.pop_back(): Eliminar del final un elemento.
+- l1.remove(var variable): Comprueba y eliminan todos los valores similares al valor indicado.
+- l1.assign(vector, cantidad): Destruye y reemplaza el contenido actual de la lista por el indicado.
 ```C 
 #include <list> //Vamos a usar listas
 #include <iostream>
