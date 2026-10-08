@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-08T15:56:00.746Z
+date: 2026-10-08T16:01:44.335Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -125,16 +125,20 @@ Para poder usar los iteradores debemos tener:
 3. Debe saber como acceder a ese elemento.
 4. Debe saber cuando termina.
 ```C
-/** Ejemplo tonto **/
-
-#include <vector>
-#include <iostream>
-in main(){
-	vector <int> números = {1,2,3,4};
-  vector <int>::iterator it;
-  for (it = números.begin(); it!=números.end();++i){
-  	cout <<*it<<endl;
+/* Void cambiar por vectores
+void Cambiar (vector <int> &v){
+	for (int i = 0; i < v.size(); i++){
+  	if(v[i]%2 ==0)
+    	v[i]=-1;
   }
+}
+
+/* Cambio con iterador
+
+vector <int>::iterator it;
+for (it = v.begin(); it!=v.end(); i++){
+	if( (*it)%2==0)
+  	(*it)=-1;
 }
 ```
 
