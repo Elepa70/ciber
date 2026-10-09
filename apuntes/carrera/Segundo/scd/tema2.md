@@ -2,7 +2,7 @@
 title: Sincronización en memoria compartida
 description: 
 published: true
-date: 2026-10-09T16:58:04.140Z
+date: 2026-10-09T17:06:06.708Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-09T16:36:44.576Z
@@ -44,7 +44,7 @@ Algunas de las restricciones que vamos a definir en estas secciones criticas son
 ### Propiedad de exclusión mutua
 Tenemos tres propiedades mínimas a cumplir:
 1. Exclusión mutua: Para que un algoritmo de exclusión mutua se efectue, se debe evitar que dos procesos se estén ejecutando una sección critica a la vez.
-2. Progreso: Si hay dos procesos en el PE, uno de ellos deberá entrar si o si.
+2. Progreso: Si hay dos procesos en el PE, uno de ellos deberá entrar si o si. Que un proceso entre o no a la sección critica, debe depender de los procesos.
 3. Espera limitada: Si hay un proceso que esta esperando una sección critica, eventualmente debe poder ser desbloqueado para hacerlo.
 
 Además si se pueden cumplir dos propiedades, es mejor:
