@@ -2,7 +2,7 @@
 title: Sincronización en memoria compartida
 description: 
 published: true
-date: 2026-10-09T16:56:09.379Z
+date: 2026-10-09T16:58:04.140Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-09T16:36:44.576Z
@@ -50,3 +50,7 @@ Tenemos tres propiedades mínimas a cumplir:
 Además si se pueden cumplir dos propiedades, es mejor:
 4. Equidad: No se perjudicar a un proceso de forma consistente.
 5. Eficiencia: El algoritmo debe ser el más eficiente posible.
+
+### Refinamiento sucesivo de Dijkstra
+Partiendo de dos procesos, con un bucle infinito, ejecutando la sección critica y después el resto. Vamos mejorando este algoritmo hasta que cumpla las tres propiedades, llegando a un algoritmo de Dekker (Versión final correcta).
+
