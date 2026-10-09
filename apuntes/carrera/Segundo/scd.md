@@ -2,7 +2,7 @@
 title: Sistemas Concurrentes y Distribuidos
 description: 
 published: true
-date: 2026-09-18T16:45:50.651Z
+date: 2026-10-09T16:35:44.733Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T09:16:15.830Z
@@ -12,7 +12,7 @@ dateCreated: 2026-09-16T09:16:15.830Z
 En está página web podrá encontrar los distintos temarios que corresponden a esta asignatura.
 
 - [Introducción](tema1)
-- [](tema2)
+- [Sincronziación en memoria compartida](tema2)
 - [](tema3)
 - [](tema4)
 - [](tema5)
