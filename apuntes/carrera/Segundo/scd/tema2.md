@@ -2,7 +2,7 @@
 title: Sincronización en memoria compartida
 description: 
 published: true
-date: 2026-10-09T17:14:15.990Z
+date: 2026-10-09T17:15:06.497Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-09T16:36:44.576Z
@@ -55,4 +55,5 @@ Además si se pueden cumplir dos propiedades, es mejor:
 Partiendo de dos procesos, con un bucle infinito, ejecutando la sección critica y después el resto. Vamos mejorando este algoritmo hasta que cumpla las tres propiedades, llegando a un algoritmo de Dekker (Versión final correcta).
 
 ### Algoritmo de Dekker
-Durante el refinamiento sucesivo anterior, se llego a un algoritmo donde uno de los algoritmos hace una pequeña espera, al otro.
+Durante el refinamiento sucesivo anterior, se llego a un algoritmo donde uno de los algoritmos hace una pequeña espera, al otro. Esta espera lo hace mediante un condicional, donde se abre durante unos segundos la posibilidad de que el otro proceso ejecute su sección critica, pero después se cierra.
+
