@@ -2,14 +2,14 @@
 title: Sistemas Operativos
 description: 
 published: true
-date: 2026-10-14T09:45:34.334Z
+date: 2026-10-14T09:45:37.461Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T09:15:14.918Z
 ---
 
 # Sistemas Operativos
-En está página web podrá encontrar los distintos temarios qe corresponden a esta asignatura.
+En está página web podrá encontrar los distintos temarios que corresponden a esta asignatura.
 
 - [Estructuras de sistemas operativos](tema1)
 - [Procesos e hilos](tema2)
