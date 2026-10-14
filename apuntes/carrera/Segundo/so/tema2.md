@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-14T16:04:27.454Z
+date: 2026-10-14T16:16:11.426Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -210,6 +210,7 @@ Dentro de la CPU tenemos distintas politicas:
 - Colas múltiples con realimentación
 
 Vamos a ir describiendo cada una.
+> Toda referencia a tiempo estimado es rafaga estimada.
 ### FCFS (First Come First Served)
 Los procesos se ejecutan segun el orden de llegada, se considera no apropiativo (se ejecuta hasta que termina), es de fácil implementación pero pobre prestación. 
 
@@ -243,6 +244,13 @@ El problema de este método, debemos tener en cuenta que existe la posibilidad d
 - M = tiempo actual - t llegada de listo: Marca el tiempo que lleva actualmente esperando.
 
 Lo que se puede hacer es que cuando M llegue a un umbral deseado, modificamos su supuesto tiempo estimado al mínimo para que sea el primero.
+
+### SRJF (Shortest Remaining Time First)
+Es similar al anterior, pero con una apropiación de la CPU. Donde si el servicio que ha entrado en cola es menor que el tiempo de servicio al que se esta ejecutandose.
+
+En caso de que haya un proceso con menor tiempo, se realiza un cambio de contexto y este pasa a la zona de listos. 
+
+Lo que se hace es calcular el tiempo restante mediante, tiempo estimado - (tiempo de entrada - tiempo actual). 
 ## Implementación de procesos/hebras en Linux: task
 
 ## Planificación de CPU en Linux
