@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-14T09:54:01.053Z
+date: 2026-10-14T09:59:20.622Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -33,17 +33,15 @@ A la hora de pensar en proceso, debemos pensar en, una unidad de actividad carac
 - Un conjunto de recursos (dado por el SO).
 El SO puede decidir que un proceso se termine, guardando sus datos en el PCB, esta acción se denomina context_switch (Cambio de contexto).
 
-
-Tenemos que definir PCB ( Process Control Block), es una estrucutra de datos que contiene información relativa al concepto del proceso, ya que es algo creado gestionado y destruido unicamente por el kernel, conteniendo la siguiente información:
+### PCB Process Control Block
+Tenemos que definir PCB (Process Control Block), es una estructura de datos que contiene información relativa al concepto del proceso, ya que es algo creado gestionado y destruido unicamente por el kernel, conteniendo la siguiente información:
 - PID (Process IDentifier)
-- Process State (State diagram)
+- Process State (Del diagram de estado, Listo, espera, bloqueado...)
 - Contexto de registro
 - Información de memoria
 - Lista de recursos utilizados
 
 Por lo tanto un proceso tiene texto y datos asociados, a su vez tiene una pila asociada, y el SO almacena toda esta inforamción en el PCB, es por ello que podemos definir PCB como metadatos en la memoria de los procesos.
-
-
 
 Todos los cambios que se realizan en el proceso, incluso sus datos guardados por detención se salvan en el PCB. 
 
