@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-14T09:52:40.015Z
+date: 2026-10-14T09:54:01.053Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -27,7 +27,11 @@ El SO se ejecuta de la siguiente manera:
 - "Núcleo fuera de todo proceso", es decir, se ejecuta el núcleo como si fuera un proceso normal y el código del sistema operativo se opera de forma separa al modo kernel.
 - La ejecución de los procesos de usuario, donde los software del SO tienen el contexto del proceso de usuario, y un proceso se ejecuta en modo kernel cuando es algo del SO.
 
-A la hora de pensar en proceso, debemos pensar en, una unidad de acividad caracterizada por la ejecución de una secuencia de instrucciones (traza), un esatdo de computación actual (contexto) y un conjunto de recursos (dado por el SO). El SO puede decidir que un proceso se termine, guardando sus datos en el PCB (mas adelante), esta acción se denmonia context_switch (Cambio de contexto).
+A la hora de pensar en proceso, debemos pensar en, una unidad de actividad caracterizada por:
+- La ejecución de una secuencia de instrucciones (traza).
+- Un estado de computación actual (contexto).
+- Un conjunto de recursos (dado por el SO).
+El SO puede decidir que un proceso se termine, guardando sus datos en el PCB, esta acción se denomina context_switch (Cambio de contexto).
 
 
 Tenemos que definir PCB ( Process Control Block), es una estrucutra de datos que contiene información relativa al concepto del proceso, ya que es algo creado gestionado y destruido unicamente por el kernel, conteniendo la siguiente información:
