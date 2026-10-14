@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-14T15:54:23.999Z
+date: 2026-10-14T16:04:27.454Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -238,6 +238,11 @@ En esta caso se penaliza fuertemente a los largos y se descrimina a los largos.
 > Para determinar el tiempo estimado, tenemos una constante en la PCB. A su vez tenemos dos parametros "tiempo entrada" y "tiempo sale" de la CPU, la rafaga la mediremos entre la diferencia de entrada y salida.
 {.is-info}
 
+El problema de este método, debemos tener en cuenta que existe la posibilidad de inanición, donde un equipo proceso NUNCA va a poder entrar en el equipo. Por ello también se puede hacer dos planificadores:
+- tiempo de llegada a listo: Marca simplemente la hora donde han entrado en listo.
+- M = tiempo actual - t llegada de listo: Marca el tiempo que lleva actualmente esperando.
+
+Lo que se puede hacer es que cuando M llegue a un umbral deseado, modificamos su supuesto tiempo estimado al mínimo para que sea el primero.
 ## Implementación de procesos/hebras en Linux: task
 
 ## Planificación de CPU en Linux
