@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-14T16:36:10.155Z
+date: 2026-10-14T16:59:09.815Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -271,6 +271,27 @@ Ventaja y desventaja que no beneficia a nadie, largo ni corto ya que todos entra
 Los valores del quantum se puede medir en:
 - Muy grandes se convierten en FCFS
 - Muy cortos, el sistema monopoliza la CPU haciendo constantemente cambios de contexto
+### Colas múltiples
+La cola de listos tienen una división en varias colas y cada proceso es asignado **PERMANENTEMENTE** a una de esas colas, cada cola posee un algoritmo propio (Unos usas RR, otros usas FCFS...).
+
+Cada cola se tiene un planificación indicada:
+- Plnaificación con prioridades fijas: Primero se hacen los de batch... (No importante)
+- Tiempo compartido entre colas: (No importante)
+
+### Multilevel Feedback Queue (Colas múltiples con realimentación)
+Se tienen distintas colas, donde en cada cola se ejecuta un algoritmo distinto, su diferencia con el anterior, es que en este podemos fragmentar o indicar las colas cuales son para que cosa. Por ejmplo si tenemos 127 colas, dedicarle los 60 primeros al kernel.
+
+Los procesadores no existen unicamente en una cola a diferencia de las colas múltiples, estos procesadore se pueden mover entre las colas.
+
+Para poder usar esto debemos definir:
+- Número de colas.
+- Algoritmo usado en cada una de las colas.
+- Método para determinar cuando mover de un proceso a una cola o a otra.
+> Consideremos que tenemos 5 colas, y cada una consume un quantum distinto ($q_1,q_2,q_3,q_4,q_5$). Si un proceso es más grande que el quantum, entonces lo movemos a la siguiente cola que tiene un quantum de mayor tiempo, para que no se "divida" o deba usar más de uno.
+- 
+
+
+En la cola, se puede fragmentar en varias colas (Por ejemplo los primeros 60 para el Kernel, como si fuera una memoria)
 ## Implementación de procesos/hebras en Linux: task
 
 ## Planificación de CPU en Linux
