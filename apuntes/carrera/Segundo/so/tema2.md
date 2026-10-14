@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-14T16:35:19.022Z
+date: 2026-10-14T16:36:10.155Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -268,8 +268,9 @@ Dentro de estos tiempos, se puede dar:
 
 Ventaja y desventaja que no beneficia a nadie, largo ni corto ya que todos entrarán y eventualmente se harán. 
 
-Podemos calcular el valor del quantum:
-- Si 
+Los valores del quantum se puede medir en:
+- Muy grandes se convierten en FCFS
+- Muy cortos, el sistema monopoliza la CPU haciendo constantemente cambios de contexto
 ## Implementación de procesos/hebras en Linux: task
 
 ## Planificación de CPU en Linux
