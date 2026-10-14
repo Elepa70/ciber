@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-07T17:27:50.034Z
+date: 2026-10-14T09:52:40.015Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -10,22 +10,22 @@ dateCreated: 2026-09-30T16:41:57.893Z
 
 # Procesos y Hebras
 ## Conceptos fundamentales sobre procesos
-Un proceso se define como un programa que esta en ejecución y la ejecución de este programa debe realizarse sin interferencias. Debido a la ejecución de otros programas.
+Un proceso se define como un programa que esta en ejecución y esta ejecución debe realizarse sin interferencias, provocada por la ejecución de otros programas.
 - Un programa es un fichero estático que se puede ejecutar.
-- Un proceso es lo mismo que un programa que se esta ejecutando, o un programa y su estado de ejecución.
+- Un proceso es lo mismo que un programa que se esta ejecutando.
 
-Toda ejecución de programa es caracterizada por su traza de ejecución. Los distintos procesos peuden ejecutarse el mismo programa.
+Toda ejecución de programa es caracterizada por su traza de ejecución. Distintos procesos pueden ejecutar el mismo programa.
 
 
-Todo proceso requiere de recursos que el SO se encarga de controlar, como puede ser memoria, CPU... Dentro del apartado de ejecución de la CPU, se debe diferenciar entre la ejecución de usuario y la ejecución de kernel, similar pasa a la memoria que este en estado protegido del kernel (Donde solo opera el kernel por logica, el codigo de este espacio es llamado reentrante) y la de continuo o usuario (Donde cada proceso tiene un espacio de direcciones protegido).
+Todo proceso requiere de recursos que el SO se encarga de controlar, como puede ser memoria, CPU... Dentro del apartado de ejecución de la CPU, se debe diferenciar entre la ejecución de usuario y la ejecución de kernel, similar pasa a la memoria que está en estado protegido del kernel (Donde solo opera el kernel y el codigo de este espacio es llamado reentrante) y la de continuo o usuario (Donde cada proceso tiene un espacio de direcciones protegido).
 
 Vamos a diferenciar:
-- Un usuario puede acceder a los procesos mediante su codigo de usuario, pero JAMÁS podra acceder al contexto de kernel.
-- El kernel puede acceder a los procesos mediante llamadas al sistema y excepción, y también puede acceder al Kernel mediante tratamiento de interrpciones y tareas del sistema.
+- Un usuario puede acceder a los procesos mediante su codigo de usuario, pero **JAMÁS** podra acceder al contexto de kernel.
+- El kernel puede acceder a los procesos mediante llamadas al sistema y excepción, y también puede acceder al espacio del núcleo mediante tratamiento de interrupciones y tareas del sistema.
 
 El SO se ejecuta de la siguiente manera:
-- Núcleo fuera de todo proceso, es decir, se ejecuta el núcleo como si fuera un proceso normal y el código del sistema operativo se opera de forma separa al modo kernel.
-- La ejecución de los proceoss d eusuario, donde los software del SO tienen el contexto del proceso de usuario, y un proceso se ejecuta en modo kernel cuando es algo del SO.
+- "Núcleo fuera de todo proceso", es decir, se ejecuta el núcleo como si fuera un proceso normal y el código del sistema operativo se opera de forma separa al modo kernel.
+- La ejecución de los procesos de usuario, donde los software del SO tienen el contexto del proceso de usuario, y un proceso se ejecuta en modo kernel cuando es algo del SO.
 
 A la hora de pensar en proceso, debemos pensar en, una unidad de acividad caracterizada por la ejecución de una secuencia de instrucciones (traza), un esatdo de computación actual (contexto) y un conjunto de recursos (dado por el SO). El SO puede decidir que un proceso se termine, guardando sus datos en el PCB (mas adelante), esta acción se denmonia context_switch (Cambio de contexto).
 
