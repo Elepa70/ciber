@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-14T16:59:09.815Z
+date: 2026-10-14T17:05:31.674Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -288,10 +288,12 @@ Para poder usar esto debemos definir:
 - Algoritmo usado en cada una de las colas.
 - Método para determinar cuando mover de un proceso a una cola o a otra.
 > Consideremos que tenemos 5 colas, y cada una consume un quantum distinto ($q_1,q_2,q_3,q_4,q_5$). Si un proceso es más grande que el quantum, entonces lo movemos a la siguiente cola que tiene un quantum de mayor tiempo, para que no se "divida" o deba usar más de uno.
-- 
+- Método para determinar que cola se introducirá primero
+- Algoritmo de planificación entre las colas. Y si el proceso está en un número menor de cola 
 
+> Se puede dar el caso de inanición, para ello se va moviendo el proceso a una cola inmediatamente superior o una serie de colas superior.
+{.is-danger}
 
-En la cola, se puede fragmentar en varias colas (Por ejemplo los primeros 60 para el Kernel, como si fuera una memoria)
 ## Implementación de procesos/hebras en Linux: task
 
 ## Planificación de CPU en Linux
