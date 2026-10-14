@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-14T10:47:25.650Z
+date: 2026-10-14T10:59:10.001Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -135,9 +135,9 @@ Sus ventajas son:
 
 Por otro lado sus desventajas:
 - La mayoría de llamadas al sistemas son bloqueantes, debido a que cuando una hebra llama el resto se bloquea.
-- El kernel al asignar procesos a procesadores, no se puede asignar más de un procsador a más de una hebra.
+- El kernel al asignar procesos a procesadores, no se puede asignar más de un procesador a más de una hebra.
 ### KLT
-Toda la gestión se realiza a nivel de kernel, manteniendolo informado de lso procesos y hebras. El SO proporciona un conjunto de llamadas al sistema, la entidad de planificación para el kernel es la hebra.
+Toda la gestión se realiza a nivel de kernel, manteniendolo informado de los procesos y hebras. El SO proporciona un conjunto de llamadas al sistema, la entidad de planificación para el kernel es la hebra.
 
 Sus ventajas son:
 - El kernel planifica distintas hebras de la misma tarea en distintos procesadores
@@ -166,8 +166,8 @@ Estas colas peuden ser:
 - Cola de LISTOS: Conjunto de todos los procesos, cuyos programas asociados residen en memoria principal, esperando para poder ejecutar en la CPu.
 - Cola de BLOQUEADOS: Conjunto de todos los procesos esperando por un dispositivo E/S particular.
 Tenemos distintos tipos de planificadores (parte del SO encargado de controlar la utilización de un recurso):
-- Largo plazo: Selecciona lso trabajos que deben llevarse a la cola de preparados, se invoca poco frecuentemente y es más lento, pero permite controlar el grado de multiprogramación.
-- Planificador a corto plazo: Se resumen en el planificado rde CPU. Se invoca frecuentemente por lo que es mas rapido.
+- Largo plazo: Selecciona los trabajos que deben llevarse a la cola de preparados, se invoca poco frecuentemente y es más lento, pero permite controlar el grado de multiprogramación.
+- Planificador a corto plazo: Se resumen en el planificador de CPU. Se invoca frecuentemente por lo que es mas rapido.
 - Planificador medio plazo: Se suele encargar de devolver procesos a memoria, en algunos SO de tiempo compartido, a veces es necesario sacar procesos de la memoria. 
 
 
