@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-09T15:49:54.694Z
+date: 2026-10-14T17:40:03.517Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -177,9 +177,9 @@ Alguna de las caracteristicas de las listas son:
 - l1.splice(): Mover elementos de una lista a otra sin copiar ni reasignar ($O(1)$).
 
 Este último tiene más chica ya que hay varios modos:
-- Lista completa: Cambio de la lista entera de un lado a otro (l1.splice(lugar,lista_otra);)
-- Elemento único: Unicamente mueve un elemento de la lista a la posición indicada (l1.splice(pos,l1,variable);)
-- Rango o reordenación: Extrae un bloque y lo reubica a otro lugar. (l1.splice(destino,lista,inicio,fin);)
+- Lista completa: Cambio de la lista entera de un lado a otro (l1.splice(lugar,lista_otra); )
+- Elemento único: Unicamente mueve un elemento de la lista a la posición indicada (l1.splice(pos,l1,variable); )
+- Rango o reordenación: Extrae un bloque y lo reubica a otro lugar. (l1.splice(destino,lista,inicio,fin); )
 ```C 
 #include <list> //Vamos a usar listas
 #include <iostream>
