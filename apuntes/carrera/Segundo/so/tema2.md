@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-14T10:59:10.001Z
+date: 2026-10-14T15:54:23.999Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -201,6 +201,42 @@ Las políticas de planificación, se comporta de distintas manera dependiendo de
 - Apropiativas: El SO puede apropiarse del procesador cuando lo desee.
 Busca dar un buen rendimiento y servicio.
 ## Políticas de planificación de la CPU
+Dentro de la CPU tenemos distintas politicas:
+- FCFS (First Come First Served)
+- Shortest Job First (SJF): Donde esta apropiativo (SRTF) y no apropiativo
+- Planificación por prioridades
+- Por turnos (Round-Robin)
+- Colas múltiples
+- Colas múltiples con realimentación
+
+Vamos a ir describiendo cada una.
+### FCFS (First Come First Served)
+Los procesos se ejecutan segun el orden de llegada, se considera no apropiativo (se ejecuta hasta que termina), es de fácil implementación pero pobre prestación. 
+
+Penaliza fuertemente a los procesos cortos mientras uqe los largos no tanto.
+
+
+#### Escenario inventado
+Vamos a dar una serie de valores para ver el problema:
+- R (Indice de respuesta)= 1000 mseg (1 seg)
+- r (Rafaga)= 10 mseg
+
+Dado los datos anteriores, vamos a calcular el proceso r (Proceso de E/S), dadas 1000 operaciones de E/S. Se traduce en dar 1000 veces la vuelta de Listro -> Ejecutandose -> Bloqueado...
+
+Cada proceso (r) lee 1 bloque cada segundo, por lo tanto los mil bloques tardara 1000 segundos.
+
+En caso de tener un planificador de timeout 10 mseg, los procesos finalizarían en 10 segundos.
+
+### SJF
+Ahora tenemos el más corta primero, donde se busca aquel servicio con un tiempo de servicio menor, este proceso tampoco es apropiativo. 
+
+En caso de que dos procesos sean igual en tiempo, se usa FCFS.
+
+En esta caso se penaliza fuertemente a los largos y se descrimina a los largos.
+
+
+> Para determinar el tiempo estimado, tenemos una constante en la PCB. A su vez tenemos dos parametros "tiempo entrada" y "tiempo sale" de la CPU, la rafaga la mediremos entre la diferencia de entrada y salida.
+{.is-info}
 
 ## Implementación de procesos/hebras en Linux: task
 
