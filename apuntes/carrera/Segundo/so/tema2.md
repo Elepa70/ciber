@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-14T09:59:20.622Z
+date: 2026-10-14T10:47:25.650Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -67,7 +67,7 @@ Un proceso se crea:
 - El proceso puede crear otros procesos, dando la relación padre-hijo.
 
 En el último caso, el hijo obtiene los recursos mediante:
-- El SO sin que venga el padre intervenga.
+- Del SO sin que el padre intervenga.
 - Compartir todo los recursos con el padre.
 - Comparte algunos recursos del padre.
 
@@ -76,7 +76,7 @@ Este tipo de procesos pueden ejecutarse o bien concurrentemente o que el hijo te
 Respecto al espacio de direcciones, el hijo obtiene una copia del padre o se le da uno nuevo.
 
 
-### UNIX-like OS
+### UNIX-like OS -- Revisar
 Los procesos UNIX-like OS, funciona de manera especial:
 - Con llamadas al sistema "fork()" (También llamado retval que es el PID del hijo, donde si el pid == 0, es el hijo y en cualquier otro caso es el padre), podemos crear un nuevo hijo, que podrá heredear la memoria del padre o los registros de CPU del padre. Esta llamada devuelve un 
 - La llamada "exec()", lo que hace es reemplazar un espacio de direcciones. Es decir eliminará la memoria copia creada para el hijo
@@ -107,32 +107,34 @@ Una hebra, es una unidad básica de utilización de CPU, y para poder operar con
 - TID, otro tipo de identificador.
 - Contexto del registro: PC, PSW o SP entre otros
 - Pila de ejecución, debido a que tenemos el PC ("prown counter").
-- Un diagrama de estado similar al PCB, pero se denomina TAREA (Son auqellas tareas que requiere para funcionar), tiene: PID, lista de Hebras  , estado, memoria y recursos).
+- Un diagrama de estado similar al PCB, pero se denomina TAREA (Son aquellas tareas que requiere para funcionar), tiene: PID, lista de Hebras  , estado, memoria y recursos).
 
-Una hebra comparte con sus hebras pares (procesos familaires por asi decirlo), la información necesaria como es codigos, datos o recursos del SO.
+Una hebra comparte con sus hebras pares (procesos familiares por asi decirlo), la información necesaria como es codigos, datos o recursos del SO.
 
 Debido a que una hebra no tiene memoria HDD, es inviable que estas puedan entrar en un estado suspendido. Lo unico que podemos hacer es pasarlo a un estado de memoria SWAD, pero no a memoria HDD.
 
 > Todo el conjunto de datos de los Thread lo llamaremos Thread_CTRL_Block o TCB.
 
-Tenemos vairos tipos de S.O.
+Tenemos varios tipos de S.O.
 - Aquel que no reconoce el concepto de hebra "single threading".
 - Aquel que el kernel es capaz de soportar múltiples hebras de un proceso "multithreading"
-- UNIX soporta múltiples procesos, que empezo con Sun Solaris.
+> UNIX soporta múltiples procesos, que empezo con Sun Solaris.
+{.is-info}
+
 
 Los tipos de threads, teniendo en cuenta la distinción entre single threading y multithreading.
 
 Tenemos dos modelos de hebras
 ### ULT
-Toda gestión de hebras se realiza a nivel de usuario, mediante biblioteca de hebras. La biblioteca se encarga de: creación/finalización, gestión de modelos de estado, planificación, savar y cargar el contexto y la comunicación entre hebras.
+Toda gestión de hebras se realiza a nivel de usuario, mediante biblioteca de hebras. La biblioteca se encarga de: creación/finalización, gestión de modelos de estado, planificación, salvar y cargar el contexto y la comunicación entre hebras.
 
 Sus ventajas son:
-- El cambio de hebra no hay cambio de modo
+- El cambio de hebra no hay cambio de modo.
 - La planificación se adapta a la aplicación.
-- Las aplicaciones se ejecutan en cualquier SO
+- Las aplicaciones se ejecutan en cualquier SO.
 
 Por otro lado sus desventajas:
-- La mayoría de lalmadas al sistemas son bloqueantes, debido a que cuando una hebra llama el resto se bloquea.
+- La mayoría de llamadas al sistemas son bloqueantes, debido a que cuando una hebra llama el resto se bloquea.
 - El kernel al asignar procesos a procesadores, no se puede asignar más de un procsador a más de una hebra.
 ### KLT
 Toda la gestión se realiza a nivel de kernel, manteniendolo informado de lso procesos y hebras. El SO proporciona un conjunto de llamadas al sistema, la entidad de planificación para el kernel es la hebra.
