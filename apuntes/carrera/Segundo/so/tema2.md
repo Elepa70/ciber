@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-14T16:28:02.382Z
+date: 2026-10-14T16:35:19.022Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -254,10 +254,22 @@ Lo que se hace es calcular el tiempo restante mediante, tiempo estimado - (tiemp
 
 ### Planificación por prioridades
 Aquí se le asocia a cada proceso un número de prioridad (entero), por lo tanto en el PCB en su apartado de planificación ahora hay un entero que indica su prioridad.
-(
+
 Cuanto mayor prioridad menor va a ser el entero (Método tradicional), y también puede ser apropiativa o no paropiativa.
 
 Sin embargo tenemos el mismo problema que antes, la inanición (donde los procesos de baja prioirdad no puede ejecutarse), sin embargo se puede ir dadonle prioridad segun pase el tiempo (La solución es envejecimiento).
+
+### Round-Robin ( O por Turnos)
+La CPU se asigna espacios de tiempo (quatum - timeskips).
+
+Dentro de estos tiempos, se puede dar:
+- El proceso finaliza o bloquea antes de agotar el quantum, por lo tanto se libre de la CPU y se va a la cola.
+- El proceso no termina y se apropia, colocandose al final de la cola de ejecutables.
+
+Ventaja y desventaja que no beneficia a nadie, largo ni corto ya que todos entrarán y eventualmente se harán. 
+
+Podemos calcular el valor del quantum:
+- Si 
 ## Implementación de procesos/hebras en Linux: task
 
 ## Planificación de CPU en Linux
