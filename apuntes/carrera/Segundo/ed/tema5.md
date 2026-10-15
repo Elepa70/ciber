@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-15T16:16:44.488Z
+date: 2026-10-15T16:22:48.093Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -189,6 +189,16 @@ class Clase {
         }
         friend class Clase; //Obligatorio, siempre se debe indicar.
     };
+    iterator begin(){
+    	iterator i;
+      i.it = &(dato[0]);
+      return i;
+    }
+    iterator end(){
+    	iterator i;
+      i.it = &(datos[n]);
+      return i;
+    }
 };
 ```
 Hemos visto su declaración
