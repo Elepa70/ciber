@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-14T17:40:03.517Z
+date: 2026-10-15T16:11:23.201Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -153,7 +153,42 @@ Otro tipo de iteradores:
 > Siempre que queramos modificar información de un contenedor, el cúal es constante se debe usar const_iterator, ya que de otra manera no podemos acceder a la información.
 {.is-warning}
 
-## Listas
+
+### Ampliación
+Los iteradores los podemos consturir de distintas maneras:
+- Desde cero.
+- SObre un tipo subyacente
+- Un iterador con una condición
+
+Los iteradores desde cero:
+```C++
+class Clase {
+	private:
+  	int *dato;
+    int numero;
+  public:
+  	class iterator { 
+    	private:
+      	int *it;
+      public:
+      	iterator():it(nullptr{}
+        
+        int & operator*(){ return *it; } 
+        // Debemos declarar una función de movimiento, para avanzar la posición.
+        iterator & operator++(){
+        	it++;
+         	return *this;
+        }
+        // Comprobación de que los dos iterator son iguales.
+        bool operator ==(const iterator &i) const{
+        	return it==i.it;
+        }
+    };
+};
+```
+Hemos visto su declaración
+
+# Listas
 Las listas son una secuencia de elementos dispuestos en una dimensión, diseñadas para hacer inserciones y borrados en cualquier posición.
 
 Las operaciones que tiene son:
