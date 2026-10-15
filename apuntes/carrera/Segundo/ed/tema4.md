@@ -2,7 +2,7 @@
 title: Plantillas
 description: 
 published: true
-date: 2026-10-01T15:52:46.688Z
+date: 2026-10-15T15:43:07.719Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-25T15:43:40.237Z
@@ -140,3 +140,4 @@ void Conjunto::erase (int x){
 	}
 }
 ```
+
