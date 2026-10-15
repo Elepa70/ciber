@@ -2,7 +2,7 @@
 title: Plantillas
 description: 
 published: true
-date: 2026-10-15T15:43:07.719Z
+date: 2026-10-15T15:50:10.415Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-25T15:43:40.237Z
@@ -141,3 +141,12 @@ void Conjunto::erase (int x){
 }
 ```
 
+### Biblioteca algorithm
+La biblioteca algorithm trae algunas funciones ideales para crear codigo limpio y sencillo.
+```C++
+void mifuncion(int a){
+	cout << a << "\t";
+}
+
+for_each(miv.begin(),miv.end(),funcion);
+```
