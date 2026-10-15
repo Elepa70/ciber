@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-15T16:22:48.093Z
+date: 2026-10-15T16:23:47.937Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -201,7 +201,8 @@ class Clase {
     }
 };
 ```
-Hemos visto su declaración
+> En caso de usar const, el código debe cambiar a const_iterator()
+{.is-warning}
 
 # Listas
 Las listas son una secuencia de elementos dispuestos en una dimensión, diseñadas para hacer inserciones y borrados en cualquier posición.
