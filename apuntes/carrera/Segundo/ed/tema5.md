@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-15T16:15:05.626Z
+date: 2026-10-15T16:16:44.488Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -187,7 +187,7 @@ class Clase {
         bool operator !=(const iterator &i) const{
         	return !(*this ==i);
         }
-        friend class Lista; //Obligatorio, siempre se debe indicar.
+        friend class Clase; //Obligatorio, siempre se debe indicar.
     };
 };
 ```
