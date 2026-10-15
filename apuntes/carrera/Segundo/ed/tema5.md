@@ -2,7 +2,7 @@
 title: Estructura de datos lineales
 description: 
 published: true
-date: 2026-10-15T16:23:47.937Z
+date: 2026-10-15T17:12:27.778Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-01T15:53:53.196Z
@@ -204,6 +204,11 @@ class Clase {
 > En caso de usar const, el código debe cambiar a const_iterator()
 {.is-warning}
 
+
+Los itereadores que creamos basdaos en la clase, obtenemos la ventaja de encapsulación, desarrollo rapido y compatibilidad C++. Su diferencia respecto a la creación de 0, es que ya tenemos una base.
+
+
+Por otro lado donde tenemos un iterador condicional, es aquel que sigue unas normas y reglas particulares, para sus funciones. Por ejemplo, en vez de inclementar directametne, incrementa hasta encontrar el que cumpla X condición.
 # Listas
 Las listas son una secuencia de elementos dispuestos en una dimensión, diseñadas para hacer inserciones y borrados en cualquier posición.
 
