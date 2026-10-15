@@ -2,7 +2,7 @@
 title: Plantillas
 description: 
 published: true
-date: 2026-10-15T15:51:51.090Z
+date: 2026-10-15T15:59:28.867Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-25T15:43:40.237Z
@@ -148,4 +148,6 @@ La biblioteca algorithm trae algunas funciones ideales para crear codigo limpio 
 
 for_each(miv.begin(),miv.end(),funcion()); //Edar todos los elmentos dentro de la función
 sort(miv.begin(),miv.end(),funcion); //Ordena la funcion.
+max_element(miv.begin(),miv.end()); // Obtener el valor máximo de un rango indicado.
+min_element(miv.begin(),miv.end()); // Obtener el valor mínimo de un rango indicado.
 ```
