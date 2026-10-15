@@ -2,7 +2,7 @@
 title: Estructura STL
 description: 
 published: true
-date: 2026-10-15T17:20:00.651Z
+date: 2026-10-15T17:27:13.024Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-15T17:12:54.174Z
