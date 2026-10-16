@@ -2,7 +2,7 @@
 title: Sincronización en memoria compartida
 description: 
 published: true
-date: 2026-10-16T17:24:24.578Z
+date: 2026-10-16T17:25:09.444Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-09T16:36:44.576Z
@@ -113,7 +113,9 @@ Algunas de las reglas que debe cumplir los semaforos es que el número de lectur
 A su vez, podemos comporbar sobre la exclusión mutua lo siguiente:
 - La sección crítica ($n_{sc}$), se ejecutará: $0\leq n_{sc} = n_w - n_s$.
 - Debido a que el valor inicial de $v_0$ es 1, por invariante y las propiedades de los semáforos, el valor $v_t$ de sc_libre es entero no negativ cumpliendo: $0 \leq v_t = 1+n_s - n_w = 1- n_{sc}.
-- Puesto que $
+- Puesto que $ 0 \leq 1 - n_{sc}$, sabemos que $n_{sc}$ por lo tanto;
+
+Se cumple que la exclusión mutua es $0 \leq n_{sc} \leq 1$.
 
 
 
