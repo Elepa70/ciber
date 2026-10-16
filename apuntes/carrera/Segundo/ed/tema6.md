@@ -2,7 +2,7 @@
 title: Estructura STL
 description: 
 published: true
-date: 2026-10-16T16:07:55.844Z
+date: 2026-10-16T16:11:49.118Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-15T17:12:54.174Z
@@ -86,5 +86,13 @@ set <int> Union (const set <int> &s1, const set <int> & s2){
   return s3;
 }
 
-
+/*Unir colas*/
+set <int> UneSCola(queue <set<int>> Q){
+	set <int> output;
+  while (!Q.empty()){
+  	output = Union(output, Q.front());
+    Q.pop();
+  }
+ 	retun output;
+}
 ```
