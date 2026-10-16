@@ -2,7 +2,7 @@
 title: Estructura STL
 description: 
 published: true
-date: 2026-10-16T16:11:49.118Z
+date: 2026-10-16T16:14:03.837Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-15T17:12:54.174Z
@@ -96,3 +96,9 @@ set <int> UneSCola(queue <set<int>> Q){
  	retun output;
 }
 ```
+## Multiset
+El multiset trae la mismas funciones que el set, sin embargo puede haber a la hora de devolver valores. Este lo que permite es múltiple elementos con el mismo valor.
+
+### Diferencias:
+- El count: No devuelve la cantidad de valores similares.
+- equal_range: Nos devuelve dos iteradores, el primero apuntando al mismo valor y el segundo apuntando al último igual.
