@@ -2,7 +2,7 @@
 title: Estructura STL
 description: 
 published: true
-date: 2026-10-15T17:27:13.024Z
+date: 2026-10-16T15:43:00.723Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-15T17:12:54.174Z
@@ -37,3 +37,9 @@ Elimina completamente todos los elementos de forma inmediata.
 Devuelve un iterador del elemento igual o inmediatamente superior del elemento indicado.
 #### upper_bound()
 Devuelve un iterador del elemento estrictamente mayor.
+
+#### insert
+Nos permite insertar una serie de elementos pero de distinta maneras:
+- Podemos insertar un conjunto. (Sin repetir)
+- Insertar un elemento.
+- Mediante un iterador, donde se le suguiere la posición el donde podria insertarlo.
