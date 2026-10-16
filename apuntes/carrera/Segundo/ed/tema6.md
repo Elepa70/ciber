@@ -2,7 +2,7 @@
 title: Estructura STL
 description: 
 published: true
-date: 2026-10-16T16:14:03.837Z
+date: 2026-10-16T16:21:44.794Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-15T17:12:54.174Z
@@ -102,3 +102,50 @@ El multiset trae la mismas funciones que el set, sin embargo puede haber a la ho
 ### Diferencias:
 - El count: No devuelve la cantidad de valores similares.
 - equal_range: Nos devuelve dos iteradores, el primero apuntando al mismo valor y el segundo apuntando al último igual.
+
+#### Ejemplo
+```C++
+/*Crear la clase Red que se forma como una colección de direcciones ip. Para mantener la coleccción de direcciones usar la clase set*/
+#ifndef __RED__H
+#define __RED__H
+#include <set>
+#include <string>
+using namespace std;
+class Red{
+	private:
+  	set <string> ips;
+  public:
+  	Red(){}
+    int size() const{ return ips.size();}
+    void erase(const string & ip){
+    	
+    };
+    iterator find (const string & ip);
+    pair <iterator,bool> insert (const sring &nueva);
+    
+    class iterator{
+    	private:
+      	set <string>::iterator it;
+      public:
+      	iterator(){}
+        bool operator==(const iterator &i) const{
+        	return it==i.it;
+        }
+        bool operator!=(const iterator &i) const{
+        	return it!=i.it;
+        }
+        iterator & operator++(){
+        	++it;
+          return *this;
+        }
+        const string & operator* (){
+        	return *it;
+        }
+        friend class Red;
+    }:
+    iterator find (const string & ip);
+    pair <iterator,bool> insert(const string &nueva);
+    iterator begin();
+    iterator end();
+
+```
