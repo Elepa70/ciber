@@ -2,7 +2,7 @@
 title: Estructura STL
 description: 
 published: true
-date: 2026-10-16T15:58:18.779Z
+date: 2026-10-16T16:07:55.844Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-15T17:12:54.174Z
@@ -74,4 +74,17 @@ set <int> Diferencia (const set<int> & s1, const set <int> &s2){
     }
   }
 }
+
+
+
+
+/*Dada una ocla de conjunto de enteros, obtener la union de los conjuntos.*/
+set <int> Union (const set <int> &s1, const set <int> & s2){
+	set<int> s3(s1);
+  set<int>:: const_iterator it1;
+  s3.insert(s2.begin(),s2.end());
+  return s3;
+}
+
+
 ```
