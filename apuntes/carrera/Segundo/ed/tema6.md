@@ -2,7 +2,7 @@
 title: Estructura STL
 description: 
 published: true
-date: 2026-10-16T15:43:00.723Z
+date: 2026-10-16T15:56:54.506Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-15T17:12:54.174Z
@@ -15,7 +15,7 @@ Ahora vamos a ver una serie de conjuntos (o set), que son aquello contenedores d
 
 Vamos describiendo uno a uno
 #### insert()
-Encargado de copiar o mover un objeto existente al conjunto, permite la insercción de valores individuales o rangos.
+Encargado de copiar o mover un objeto existente al conjunto, permite la insercción de valores individuales o rangos. También puede sugerir la insercción.
 
 #### emplace() & emplace_hint()
 Este directamente coloca el objeto en la ubicación final de la memoria, permitiendo optimizar el rendimiento. El Emplace_hint, es una sugerencia de donde estará.
@@ -38,8 +38,24 @@ Devuelve un iterador del elemento igual o inmediatamente superior del elemento i
 #### upper_bound()
 Devuelve un iterador del elemento estrictamente mayor.
 
-#### insert
-Nos permite insertar una serie de elementos pero de distinta maneras:
-- Podemos insertar un conjunto. (Sin repetir)
-- Insertar un elemento.
-- Mediante un iterador, donde se le suguiere la posición el donde podria insertarlo.
+#### value_comp
+Devuelve un comparador de set que se peude usar para comparar dos objetos del contenedor.
+
+## Ejercicio
+```C++
+/*Dado dos conjuntos crear una función para obtener un nuevo conjunto que sea la intersección. s1={12,15,75} s2={12,75,90}*/
+set <int> Interseccion (const set<int> & s1, const set <int> &s2){
+	set <int> s3;
+  set <int>::const_iterator it1;
+  for (it1=s.cbegin();it1!)s1.cend();++it1){
+  	if (s2.find(*it1) != s2.cend()){
+    	s3.insert(*it1); // También se puede hacer s3.insert(s3.end(),*it1);
+    }
+    
+    // Otro método
+    if (s2.count(*it1)!=0){
+    	s3.insert(*it1);
+    }
+  }
+}
+```
