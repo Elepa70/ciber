@@ -2,7 +2,7 @@
 title: Sincronización en memoria compartida
 description: 
 published: true
-date: 2026-10-09T17:31:11.115Z
+date: 2026-10-16T16:47:54.227Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-09T16:36:44.576Z
@@ -57,3 +57,30 @@ Partiendo de dos procesos, con un bucle infinito, ejecutando la sección critica
 ### Algoritmo de Dekker
 Durante el refinamiento sucesivo anterior, se llego a un algoritmo donde uno de los algoritmos hace una pequeña espera, al otro. Esta espera lo hace mediante un condicional, donde se abre durante unos segundos la posibilidad de que el otro proceso ejecute su sección critica, pero después se cierra.
 
+## Soluciones hardware con espera ocupada (cerrojos) para E.M.
+Un candado lo podemos definir (a mala manera), como un bucle "infinito" hasta que la condición pase a false.
+```C++
+while (true){}
+```
+
+Los cerrojos son una solución hardware basada en esperas ocupadas, esta espera es un bucle que se ejecuta hasta que otro proceso finaliza su sección critica. 
+
+Aunque esto puede ayudarnos a evitar bucles, debemos ser consciente de que debemos bloquear siempre después de que entre uno de los procesos al bucle, para que no haya problematica con la duplicación.
+
+Es por ello que existe la instrucción "**TestAndSet**", instrucción máquina disponible en algunos procesadores, con las caracteristicas:
+- Admitir como argumento la dirección de memoria una variable lógica.
+- Invocar como función desde LLPP a alto nivel y ejecutar, la lecutra del cerrojo, ponerlo en tru y devolver el valor anterior del cerrojo.
+- Durante su ejecución ninguna instrucción ejecutada por otro proceso puede leer ni escribir la variable lógica.
+
+Un ejemplo sencillo en pseudocodigo es:
+```
+var sc_ocuapda : boolean := false;
+begin
+	while true do begin
+  	while TestAndSet (sc_ocupada ) do begin end
+    {critica}
+    sc_ocupada :=false;
+    {demas}
+  end
+end
+```
