@@ -2,7 +2,7 @@
 title: Estructura STL
 description: 
 published: true
-date: 2026-10-16T15:56:54.506Z
+date: 2026-10-16T15:58:18.779Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-15T17:12:54.174Z
@@ -54,6 +54,22 @@ set <int> Interseccion (const set<int> & s1, const set <int> &s2){
     
     // Otro método
     if (s2.count(*it1)!=0){
+    	s3.insert(*it1);
+    }
+  }
+}
+
+// Ahora lo haremos con la diferencia
+set <int> Diferencia (const set<int> & s1, const set <int> &s2){
+	set <int> s3;
+  set <int>::const_iterator it1;
+  for (it1=s.cbegin();it1!)s1.cend();++it1){
+  	if (s2.find(*it1) == s2.cend()){
+    	s3.insert(*it1); // También se puede hacer s3.insert(s3.end(),*it1);
+    }
+    
+    // Otro método
+    if (s2.count(*it1)==0){
     	s3.insert(*it1);
     }
   }
