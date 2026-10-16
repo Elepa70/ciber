@@ -2,7 +2,7 @@
 title: Sincronización en memoria compartida
 description: 
 published: true
-date: 2026-10-16T16:47:54.227Z
+date: 2026-10-16T17:24:24.578Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-09T16:36:44.576Z
@@ -84,3 +84,39 @@ begin
   end
 end
 ```
+### Desventaja de cerrojos
+Debido a que hace espera ocupada, se produce un consumo de tiempo en CPU en procesos inutiles, mientra sque podrian hacer algo.
+
+Otros de sus motivos es que al ser un booleano (true or false), existe la posibilidad de que un equipo malicioso establezca un estado erroneo provocando un bucle infinito.
+
+### Uso
+Sigue siendo uno de los metodos más usados, sobretodo en el kernel de equipos, ya que es muy optimo a lo que respecta a la pérdida de eficiencia. 
+
+## Semaforos
+Los semátoforos traen una serie de mejoras respecto a los candados como pueden ser:
+- La espera bloqueada
+- Resuelve problemas como exclusión mutua con esquemas sencillos.
+- Usado para problemas de sincronización.
+
+Un semaforo es una instancia de una estructura de datos que contiene:
+- Conjunto de procesos bloqueados.
+- Un valor natural, llamado valro de semáforo.
+
+Ambos valores estaran en memoria compartida para que puedan usarse en cualquier lugar.
+
+Dentro de sus operaciones tenemos:
+- sem_wait, donde si el valor es 0, se bloquea el proceso, en caso contrario accede y decrementa el valor.
+- sem_signal, incrementa el valor de la unidad.
+
+Algunas de las reglas que debe cumplir los semaforos es que el número de lecturas ($#L$) debe ser menor al número de escritura ($#E$), es decir: $#L \leq #E$.
+
+A su vez, podemos comporbar sobre la exclusión mutua lo siguiente:
+- La sección crítica ($n_{sc}$), se ejecutará: $0\leq n_{sc} = n_w - n_s$.
+- Debido a que el valor inicial de $v_0$ es 1, por invariante y las propiedades de los semáforos, el valor $v_t$ de sc_libre es entero no negativ cumpliendo: $0 \leq v_t = 1+n_s - n_w = 1- n_{sc}.
+- Puesto que $
+
+
+
+Aunque con los semaforos tenemos una ventaja conrespecto a los cerrojos, también tiene limitaciones:
+- Tiene problemas complejos de sincronzación, no se resuelven de forma facil.
+- Similar a cerrojos problemas malintencionados puede provocar bloqueos indefinidos.
