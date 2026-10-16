@@ -2,7 +2,7 @@
 title: Sincronización en memoria compartida
 description: 
 published: true
-date: 2026-10-16T17:25:09.444Z
+date: 2026-10-16T17:25:49.617Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-09T16:36:44.576Z
