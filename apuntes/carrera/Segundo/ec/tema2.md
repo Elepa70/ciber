@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: false
-date: 2026-10-19T16:10:32.148Z
+date: 2026-10-19T16:36:12.609Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -191,6 +191,7 @@ Cada "sección" del array se divide en varios puntos de memorias reservados, y s
 
 En ensamblador
 ```C++
+# Declaración
 #define ZLEN 5
 typedef int zip_dig[ZLEN];
 
@@ -198,4 +199,15 @@ zip_dig cmu = { 1, 5, 2, 1, 3 };
 zip_dig mit = {0, 2, 1, 3, 9 };
 zip_dig ucb = {9, 4, 7, 2, 0};
 
-equivalente a int cmu[5];
+#equivalente a int cmu[5];
+
+
+# Acceso
+get_digit:
+	movl (%rdi,%rsi,4), %eax
+  ret
+```
+
+Cuando declaramos arrays, realmente estamos creando un puntero y a partir de este puntero indicamos que sección de memoria queremos acceder.
+
+Los arrays multidimensionales (Matrices), tendran un tamaño de filas * columnas* tipo de variable.
