@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: false
-date: 2026-10-19T16:36:12.609Z
+date: 2026-10-19T16:43:48.831Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -210,4 +210,26 @@ get_digit:
 
 Cuando declaramos arrays, realmente estamos creando un puntero y a partir de este puntero indicamos que sección de memoria queremos acceder.
 
-Los arrays multidimensionales (Matrices), tendran un tamaño de filas * columnas* tipo de variable.
+Los arrays multidimensionales (Matrices), tendran un tamaño de filas * columnas* tipo de variable. Se colocan de manera seguida, por lo tanto se le puede considerar un "array de array" o vector de vectores. 
+
+Para poder calcular cual es el vector que queremos mirar, lo que se hace es:
+$A+(i*C*4)$: Sumamos a cual sea el array a el valor a obtener por el número de columnas y por el tipo de tamaño de variable.
+
+En ensamblador:
+```
+# Declaración
+#define PCOUNT 4
+zip_dig pgh[PCOUNT]=
+{{1, 5, 2, 0, 6},
+ {1, 5, 2, 1, 3},
+ {1, 5, 2, 1, 7},
+ {1, 5, 2, 2, 1}};
+ 
+# Obtener los valores
+
+get_pgh_zup:
+	leaq (%rdi,%rdi,4), %rax
+  leaq pgh (,%rax,4), %rax
+  ret
+  
+  
