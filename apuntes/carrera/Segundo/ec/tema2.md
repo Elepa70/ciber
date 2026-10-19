@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: false
-date: 2026-10-05T17:09:12.558Z
+date: 2026-10-19T16:10:32.148Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -176,3 +176,26 @@ Los bucles, no lo vamos a describir ya que se sobre entiende, pero lo que se hac
 ```
 En caso de usar un while, lo que se ahce es un salto a una comprobación y si se cumple se hace un salto a otra linea llamado "jump-to-middle".
 
+> FALTA MUCHO CONTENIDO
+{.is-danger}
+
+## Arrays
+
+Los arrays son un tipo de datos básicos con:
+- Enteros: Almacena y manipulando en registro propósito general, con o sin signo depende de las instrucciones usadas.
+- Punto flotante: Almacenados y manipulados en registro punto flotante.
+
+Depende el tipo de array, podemos almacenar más o menos memoria, es decir si fuera de double almacenará o reserverá más información que uno de int.
+
+Cada "sección" del array se divide en varios puntos de memorias reservados, y según que queremos usar obtenemos un valor u otro de vuelta. (POr ejmeplo si pedimos val, obtendremos el nombre del array).
+
+En ensamblador
+```C++
+#define ZLEN 5
+typedef int zip_dig[ZLEN];
+
+zip_dig cmu = { 1, 5, 2, 1, 3 };
+zip_dig mit = {0, 2, 1, 3, 9 };
+zip_dig ucb = {9, 4, 7, 2, 0};
+
+equivalente a int cmu[5];
