@@ -2,7 +2,7 @@
 title: Programación a nivel máquina
 description: 
 published: false
-date: 2026-10-19T16:43:48.831Z
+date: 2026-10-19T16:48:09.473Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-28T15:41:33.390Z
@@ -231,5 +231,6 @@ get_pgh_zup:
 	leaq (%rdi,%rdi,4), %rax
   leaq pgh (,%rax,4), %rax
   ret
-  
-  
+```
+
+También existen los array multi-nivel, donde tenemos declarado varios arrays, y después un array de punteros, que tiene declarado los punteros de los arrays declarado previamente.
