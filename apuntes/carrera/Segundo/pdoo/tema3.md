@@ -2,7 +2,7 @@
 title: Consultores, Modificadores y agrupacion de elementos
 description: 
 published: true
-date: 2026-10-06T17:13:35.648Z
+date: 2026-10-20T16:35:56.747Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-29T09:09:09.136Z
@@ -193,3 +193,22 @@ end
 
 > Existe la posibilidad que haya una doble relación entre clases (que se conecte por dos lados). Esto implica que por un lado tendremos un Array y por otro lado tendremos un objeto (Si se da el caso que una de las relaciones es 1...*  y el otro sea 1 o níngún nombre.
 {.is-warning}
+## Diagrama de interacción
+### Introducción
+Los diagramas de interacción, nos sirve para mostrar el comportamiento del sistema a través de las interacciones entre elmentos del modelo.
+
+Hay dos tipos básicos:
+- Diagrama de secuencia: Se centran en secuencia temporal de los mensajes enviados entre objetos.
+- Diagramas de colaboración: Se centran en la relación entre los objetos receptores y emisores de los mensajes.
+
+Siempre vamos a tener dos elementos:
+- Participantes: Objetos y clases que forman parte de la interacción.
+> Todo nombre de un objeto debe ir en minúscula y el de la clase empieza en mayuscula. 
+{.is-info}
+- Mensajes: El flujo y su sencuencia entre los participantes.
+
+
+Dentro de los mensajes es posible encontrar distintas partes esenciales:
+- Condicionales: Es posible que encontremos un "alt", esto significa que se cumple uno u otro.
+- Bucles: Es posible a su vez que hayan bucles representado en "loop", usualmente con un mensaje en la primera linea dando la condición del bucle.
+
