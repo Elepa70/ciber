@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-21T16:15:48.226Z
+date: 2026-10-21T16:29:22.594Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -335,6 +335,16 @@ Tenemos una serie de enfoques:
 - Enfoque estaticos expulsivos dirigos por prioridad: Los análisis no generan una planfiifcación, solo se usa para dar prioridad a las tareas. 
 - Enfoques dinámicos basados en un plan: Se determina la viabilidad en tiempo de ejecución, aceptando una nueva tarea si es posible satisfacer sus restricciones de tiempo.
 - Enfoque dinámico de menor esfuerzo: No se hace análisis, el sistema pretende cumplir todos los plazos y abortar ejecuciones si su plazo ha finalizado.
+
+
+Hay un problema en todos los sistemas llamado de Inversión de Prioridad.
+
+Este problema es un problema de condición de carrear (no podemos controlar), una tarea de mayor prioridad espera por una tarea de menor prioridad debido al bloqueo de un recurso de uso exclusivo. 
+> Pongamos 3 procesos, con prioridades 1(high), 60(medium) y 127(low). Los procesos comparten una sección crítica, y el low ha sido quien ha entrado primero, y después viene el high. El high se queda esperando y se bloquea por falta de recursos, pero cuando se libera el low entra el medium, dejando al high desbloqueandose y cuando entre en listo se colará cuando medium termine.
+
+Para evitar esto:
+- Herencia de prioridad: La tarea menos prioritaria hereda la prioridad de la tarea más prioritaria.
+- Techo de prioridad: Se asocia una prioridad a cada recurso de uso exclusivo que es más alta que cualquier tarea, y esa prioridad se le asigna a la tarea que le de ese recurso.
 ## Implementación de procesos/hebras en Linux: task
 
 ## Planificación de CPU en Linux
