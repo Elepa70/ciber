@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-21T16:29:22.594Z
+date: 2026-10-21T16:40:54.999Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -346,5 +346,6 @@ Para evitar esto:
 - Herencia de prioridad: La tarea menos prioritaria hereda la prioridad de la tarea más prioritaria.
 - Techo de prioridad: Se asocia una prioridad a cada recurso de uso exclusivo que es más alta que cualquier tarea, y esa prioridad se le asigna a la tarea que le de ese recurso.
 ## Implementación de procesos/hebras en Linux: task
+
 
 ## Planificación de CPU en Linux
