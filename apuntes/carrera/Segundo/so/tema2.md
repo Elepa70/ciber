@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-21T16:40:54.999Z
+date: 2026-10-21T17:15:22.194Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -346,6 +346,61 @@ Para evitar esto:
 - Herencia de prioridad: La tarea menos prioritaria hereda la prioridad de la tarea más prioritaria.
 - Techo de prioridad: Se asocia una prioridad a cada recurso de uso exclusivo que es más alta que cualquier tarea, y esa prioridad se le asigna a la tarea que le de ese recurso.
 ## Implementación de procesos/hebras en Linux: task
+
+> Vamos a ver muchas cosas repetidas
+{.is-warning}
+Tenemos el PID (**P**rocess **ID**entifier), y el núcleo identifica a cada proceso gracias a esto. En linux, los procesos es la misma entidad que se crea con la llamda del sistema **fork()** y **clone()**.
+
+Los procesos especiales que existen durante la vida del sistema son:
+- Proceoss 0: Creados a mano cuando arranca el sistema
+- Proceso 1 (init): Antecesor a cualquier proceso del sistema.
+
+El kernel almacena la lista de procesos como una lista circular doblemente enlazada (task list), cada elemento e sun descriptor de proceso (PCB).
+
+En los procesos lo que sucede es:
+- Cuando el proceso $P_0$ hace un **fork()**, se genera un proceso $P_1$, por lo tanto $P_0$ es padre de $P_1$ (siendo este el hijo).
+- Si el proceso $P_0$, hace varias llamadas al sistema **fork()**, genera varios procesos hijo y la relación entre ellos es de hermanos.
+- Todo los procesos son descendientes del proceso init (PID 1).
+
+
+A nivel de kernel, no se sabe diferenciar lo que es una hebra y un proceso, linux implementa el concepto de hebra como si fuera un proceso sin más, que simplemente comparte recursos con otros procesos. 
+
+Toda hebra tiene su propia **task_struct**.
+
+Sobre las hebras del kernel, tenemos:
+- A veces es útil que el kernel realice operaciones en segundo plano, para lo cual se crean hebras kernel. 
+- Las hebras kernel no tienen espacio de direcciones.
+- Se ejecutan únicamente en el pesacio del kernel.
+- Son planificadas y pueden ser apropiadas.
+- termina cuando hacen **do_exit()**
+
+Sobre la creación de tasks se hace lo siguiente:
+- Se hace un **fork()**, que invoca el **clone()**, y este hace un **do_fork()** cuya unica función es **copy_process()**.
+
+Esta última hace:
+1. Crear la estructura thread_info (pila kernel) y la task_struct para la nueva tarea.
+1. Asigna valores inciales a los campos de la task_struct de la tarea hija.
+1. Se establece el campo de estado para la trea hija.
+1. Se establece valores adecuados para los flags de la tarea (**PF_SUPERPRIV=0** no es superusuario, **PF_FORKNOEXEC=1** hace fork() pero no exec()).
+1. Se llama a **alloc_pid()** para la nueva PID.
+1. Depende los flags enviados, puede duplicar o compartir recursos.
+1. Se establece el estado de la hija a TASK_RUNNING
+1. Por último **copy_process()** termina devolviendo un puntero a la task_struct de la tarea hija.
+
+
+Para terminar las tareas de task_struct:
+El kernel siempre libera todos sus recursos notificando al padre de la terminación y esto sucede cuando:
+- Se hace una llamada a **exit()**, ya sea explícita (incluido en el programa) o implícita (El compilador añade exit() cuando termina el main()).
+- Se recibe una señal de terminar al proceso (Term).
+
+Por otro lado el do_exit() hace:
+1. Activar el flag **PF_EXITING** de task_struct
+1. Para cada recurso utilizado se crea un contador que va bajando cuando deja de usarse, cuando este llega a cero se destruye el recurso.
+1. El valor que se pasa como argumento a **exit()** se almacenará en exit_code.
+1. Se manda la señal de SIGCHILD a finalización de su hijo.
+1. Si todavía tiene hijos se hace hijos de init
+1. Se establece el campo state a **EXIT_ZOMBIE**.
+1. Se llama schedule()  (O content_switch()) para que el planificador haga otro proceso a ejecutar.
 
 
 ## Planificación de CPU en Linux
