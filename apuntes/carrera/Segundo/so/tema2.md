@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-14T17:05:31.674Z
+date: 2026-10-21T16:15:48.226Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -294,6 +294,47 @@ Para poder usar esto debemos definir:
 > Se puede dar el caso de inanición, para ello se va moviendo el proceso a una cola inmediatamente superior o una serie de colas superior.
 {.is-danger}
 
+
+### Planificación en multiprocesadores
+Dentro del mundo de multiprocesadores tenemos una serie de cosas a tener en cuenta:
+- Granularidad (Que consiste en la frecuencia de sincronización), donde tenemos grano grueso (Procesos con baja sincronización) y grano medio (hebras con alta sincronziación).
+- Planificación de procesos, igual que en monoprocesadores pero tenemos en cuenta (nº de CPUs y asignación liberación de procesos)
+- Planificación de hilos (Permite explotar el paralelismo real dentro de una aplicación)
+
+Algunos aspectos de diseño son:
+- Asignación de procesos a procesadores
+- Uso de multiprogramación en cada procesador individual
+- Activación del proceso: plnif_CPU(), para nuevos aspectos multihebras.
+
+Indagamos un poco más en los diseños
+#### Asignación de procesos a procesadores
+Consiste en una estrategia simple, donde se trata los procesadores como una pool de recursos a asignar (ya sea estatico o dinamico), también asigna estáticamente procesos a un procesador, con una cola dedicada para cada procesador.
+
+Sus soluciones son que asigna dinámicamente proceso a procesador, con cola global para todos los procesadores, y con un balance dinámico de carga.
+
+#### Uso de multiprogramación en cada procesador individual
+En el momento que hay muchos procesadores y granularidad media, el maximizar la utilización de CPU pasa a segundo plano en detrimento de aumentar la productividad de las aplicaciones.
+
+Para ello tenemos:
+1. Compartición de carga, con una cola global de hilos preparados (En modo LISTO), cuando un procesador está ocioso, se selecciona un hilo de la cola.
+2. Planificación en padilla, se planifica un conjunto de hilos afines, para ejecutarse un conjunto de procesadores al mismo tiempo. Suele funcionar bien para aplicaciones.
+3. Asignación de procesadores deidcado, cuando se planifica una aplicación, se asigna un procesador a cada uno de sus hilos hasat que termine la aplicación. Lo que puede provocar que algunos procesadores puede estar ociosos.
+4. Planifificación dinámica, la aplicación permite que varíe dinámicamente el número de hilos en un proceso, donde el SO ajusta la carga para mejorar la utilización.
+
+### Planifiación en sistemas de tiempo real
+La exactitud del sistema no depende sólo del resultado lógico de un cálculo sino también del instante en el que se produce.
+Las tareas intentan controlar o reaccionar ante sucesos que se producen en "tiempo real". 
+
+Los distintos enfoques depende de:
+- Cuándo el sistema realiza un análisis de viabilidad de la planififación, estudia si puede atender a todos los eventos periódicos dado el tiempo necesario para ejecutar la tarea y el periodo.
+- Si éste se realiza estática o dinámicamente.
+- Si el resultado del análisis produce un plan de planificación.
+
+Tenemos una serie de enfoques:
+- Enfoque estatico dirigido por tabla: Análisis estático que genera una planificación que determina cuándo empezará cada tarea.
+- Enfoque estaticos expulsivos dirigos por prioridad: Los análisis no generan una planfiifcación, solo se usa para dar prioridad a las tareas. 
+- Enfoques dinámicos basados en un plan: Se determina la viabilidad en tiempo de ejecución, aceptando una nueva tarea si es posible satisfacer sus restricciones de tiempo.
+- Enfoque dinámico de menor esfuerzo: No se hace análisis, el sistema pretende cumplir todos los plazos y abortar ejecuciones si su plazo ha finalizado.
 ## Implementación de procesos/hebras en Linux: task
 
 ## Planificación de CPU en Linux
