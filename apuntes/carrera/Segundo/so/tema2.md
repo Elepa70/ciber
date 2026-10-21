@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-10-21T17:15:22.194Z
+date: 2026-10-21T17:16:12.941Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
