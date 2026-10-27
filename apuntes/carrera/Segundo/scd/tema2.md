@@ -2,7 +2,7 @@
 title: Sincronización en memoria compartida
 description: 
 published: true
-date: 2026-10-16T17:25:49.617Z
+date: 2026-10-27T18:42:58.106Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-09T16:36:44.576Z
@@ -122,3 +122,35 @@ Se cumple que la exclusión mutua es $0 \leq n_{sc} \leq 1$.
 Aunque con los semaforos tenemos una ventaja conrespecto a los cerrojos, también tiene limitaciones:
 - Tiene problemas complejos de sincronzación, no se resuelven de forma facil.
 - Similar a cerrojos problemas malintencionados puede provocar bloqueos indefinidos.
+## Monitores
+El uso de semáforos tiene una serie de limitaciones y es por ello que en 1974 se planteo un planteo el concepto de Monitor, como mecanismo de alto nivel donde se permite definir objetos abstractos compartidos.
+
+Estos monitores nos dan:
+- Datos: Como una colección de varibales encapsuladas, donde se representan un recurso compartido por varios procesos.
+- Conjunto de procedimientos para poder manipular los datos.
+
+Estos elementos le otorgan al programador:
+- La garantía de cumplir con el acceso en exclusión mutua.
+- Implementación de sincronización requerida.
+
+### Propiedades del monitor
+Un monitor al fin al cabo es un recurso compartido que se usa como un objeo al que se accede de forma concurrente. Este nos otorga:
+- Acceso estructurado y encapsulación: Donde el usuario sólo puede acceder al recurso mediante las operaciones dadas, y el usuario ignorará las variables que representan el recurso y la implementación de las operaciones asociadas.
+- Exclusión mutua en el acceso a los procedimientos: La exclusión mutua en el acceso a los procedimientos del monitor se garantiza por definición, y la implementación del monitor garantiza que no es posible que dos procesos estén ejecutando simultáneamente algún procedimiento del monitor.
+
+```
+monitor nombre_monitor;
+	var
+  export
+  	nom_exp_1,
+    nom_exp2,
+  procedure nom_exp_1
+  	var ;
+   begin
+   end
+```
+Como podemos ver la sintaxis consiste en:
+- Declaración del monitor, donde peude tener variables permanentes como estado interno del monitor.
+- Exportar monitores, donde se le dan los nombre a los procedimientos y el estado interno, pudiendo tener variables y parametros locales.
+- Codigo de incialización, para ejecutar los monitores.
+
