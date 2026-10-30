@@ -2,7 +2,7 @@
 title: Sincronización en memoria compartida
 description: 
 published: true
-date: 2026-10-27T18:42:58.106Z
+date: 2026-10-30T18:20:32.127Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-09T16:36:44.576Z
@@ -154,3 +154,38 @@ Como podemos ver la sintaxis consiste en:
 - Exportar monitores, donde se le dan los nombre a los procedimientos y el estado interno, pudiendo tener variables y parametros locales.
 - Codigo de incialización, para ejecutar los monitores.
 
+# POR CORREGIR Y AÑADIR
+Tenemos dos procesos denominados proceso señalador ( no es espera cola) y proceso señalado (espera la cola y es reactivo).
+
+El proceso señalado:
+- Se supone que hay codigo restante tras el wait y el signal
+- Se ejecuta inmediatamente después de señalar.
+- Uno de los dos puede inmediatamente ejecutar su codigo.
+- Se denomina semántica de señales a la política que establece la forma concreta que resuelve el conflicto.
+VOlvi hoy
+El proceso señalador:
+- Continua su ejecución tras el signal.
+
+## Semantica Señalar y continuar (SC)
+Se hace una espera infinita para ver cuando puede entrar y cuando no, similar a los monitores.
+
+## Semantica señalar y salir (SS)
+En este caso, un signal es similar a un return (no se ejecuta nada o se para), el señalador abandonará el monitor y si queda código posterior al signal no se ejecutará.
+
+Esto implica una carga extra de trabajo, ya que debemos diseñarlo con el signal como código extra. 
+
+## Semantica señalar y esperar (SE)
+En este metodo, en vez de salir y morir. Lo que hace es volver a una cola donde esperara a su entrada para continuar con el código.
+
+Si hay procesos que estuviera esperando a constantemente y ha podido entrar, y ha sido privado de nuevo, este proceso le volverá a tocar esperar siendo dificil que se vuelva a ejecutar al compleo.
+
+## Semantica señalar y espera urgente (SU)9
+Hay dos colas, una de aquellos que todavía no han entrado y aquellas que han sido expulsados de la cola previamente. 
+
+Es uno de los mejores metodos que hay, pero implica que debemos tener una estructura extra de datos, donde estan las cola de urgencia extra. 
+
+Toda la semantica permite resolver cualquier problema pero de mejor o pero manera, sin embargo por facilidad de uso, es posible que sea mas facil implementar uno que otros (como puede ser el de señalar y salir).
+
+# Colas de conciión con prioridad
+Hemos usado habitualmente las FIFO (First In First Out), sin embago también podemos usar las colas de prioridad para cuando saquemos elementos, podemos desbloquear mejor los elementos que deseemos.
+Para hacer eso, a la hora de pasar el wait, le enviamos un parametros donde el que tenga menos valro tendra mayor prioridad.
