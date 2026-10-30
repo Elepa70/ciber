@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-10-30T17:11:02.448Z
+date: 2026-10-30T17:15:02.522Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -32,6 +32,8 @@ Podemos hacer dos tipos de recorridos grandes.
 Los recorridos en profundidad a su vez, se difieren en tres subgrupos:
 - Recorrido prefijo: Lo que hace es analizar la raíz y posteriormente los subarboles de cada uno desde la raíz. (/ es la raíz, subarbol /home /etc /var ...). Se va describiendo cada uno en orden, por ejemplo / /home /home/pablo /home/algo /etc /etc/...
 
-- Recorrido Infijo: Este caso es el más erratico, ya que tenemos que se recorre de forma semi inversa y se escribe como: /home/pablo /home /home/algo / /etc/something...
+- Recorrido Infijo: Este caso es el más erratico, ya que tenemos que se recorre de forma semi inversa y se escribe como: /home/pablo /home /home/algo / /etc/something... Es como si fuera de izquierda a derecha.
+
+- Postfijo: Va desde lo más bajo a lo más alto partiendo de izquierda a derecha.
 
 - Recorrido en Anchura: Se va recorriendo por niveles y listandos según la altura. Partiendo del nivel 0
