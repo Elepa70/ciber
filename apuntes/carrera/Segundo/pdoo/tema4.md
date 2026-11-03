@@ -2,7 +2,7 @@
 title: Herencia
 description: 
 published: true
-date: 2026-11-03T17:01:20.033Z
+date: 2026-11-03T17:03:20.527Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-03T16:39:48.081Z
@@ -48,8 +48,24 @@ class Profesor < Persona
 end
 ```
 ```Java
+# En Java
+class Persona{
+	public String hablar(String mensaje){
+  	return "Digo"+mensaje;
+   }
+}
+
+class Profesor extend Persona{
+	@override
+  Public String hablar(String mensaje){
+  	return super.hablar(mensaje);
+  }
+}
+
+
 int metodo1(int i, int j){
 	int a = super.metodo1(i,j);
   int b = super.metodo2();
   return (a+b);
+}
 ```
