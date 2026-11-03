@@ -2,7 +2,7 @@
 title: Herencia
 description: 
 published: true
-date: 2026-11-03T16:56:26.622Z
+date: 2026-11-03T17:01:20.033Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-03T16:39:48.081Z
@@ -31,3 +31,25 @@ Podemos redefinir métodos (Sobreescribir) cuando una clase proporciona una impl
 {.is-info}
 
 Sin embargo existe la palabra reservada **super**, usada para poder ejecutar la implementación del método del padre.
+
+```Ruby
+class Persona
+	def hablar(mensaje)
+  	"Halloo"+mensaje
+   end
+end
+
+class Profesor < Persona
+	def hablar (mensaje
+  	tmp = super
+    tmp+= ", ahora soy profe."
+    tmp
+  end
+end
+```
+```Java
+int metodo1(int i, int j){
+	int a = super.metodo1(i,j);
+  int b = super.metodo2();
+  return (a+b);
+```
