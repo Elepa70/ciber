@@ -2,7 +2,7 @@
 title: Sincronización en memoria compartida
 description: 
 published: true
-date: 2026-10-30T18:32:51.379Z
+date: 2026-11-03T08:48:49.328Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-09T16:36:44.576Z
@@ -154,6 +154,23 @@ Como podemos ver la sintaxis consiste en:
 - Exportar monitores, donde se le dan los nombre a los procedimientos y el estado interno, pudiendo tener variables y parametros locales.
 - Codigo de incialización, para ejecutar los monitores.
 
+
+Dentro de las ventajas que puede incorporar los monitores sobre los semáforos, son las siguientes:
+- Las variables están protegidas: Sólo pueden leerse o modificarse desde el código del monitor.
+- La exclusión mutua esta garantizada: El programador no tiene que usar mecanismos explícitos de exlcusión mutua.
+- Las operaciones de esperas bloqueadas y de señalización se programan exclusivamente dentro del monitor, permitiendo comprobar el código de forma más sencilla.
+
+> Nos debemos quedar con la idea de que solo podemos usar el monitor mediante procedimientos exportados.
+{.is-success}
+
+### Funcionamiento de los montiroes
+La comunicación monitor-mundo exterior, se realiza mediante los procedimientos exportados. En el caso de que un proceso requiera de un recurso del monitor, este hará una llamada y mientras el proceso está ejecutando algún procedimiento del monitor se dice que **el proceso está dentro del monitor**.
+La exclusión mutua, se cumple ya que un proceso esta dentro de un monitor, ningún otro proceso podrá entrar en el monitor hasta que el primero no finalice.
+
+Cuando sucede lo anterior, los procesos que se quedan esperando o bloqueados entran en una cola del monitor. En caso de que la cola esté vacia el monitor se queda libre y a la espera de algún proceso.
+
+### Sincronización en monitores
+Antes teniamos los *signal* y los *wait*, sin embargo ahora solo tenemos disponible sentencias de bloqueo y de activación, a la vez uqe los valores de las variables de los monitores.
 # POR CORREGIR Y AÑADIR
 Tenemos dos procesos denominados proceso señalador ( no es espera cola) y proceso señalado (espera la cola y es reactivo).
 
