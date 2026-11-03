@@ -2,7 +2,7 @@
 title: Herencia
 description: 
 published: true
-date: 2026-11-03T17:03:20.527Z
+date: 2026-11-03T17:11:38.249Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-03T16:39:48.081Z
