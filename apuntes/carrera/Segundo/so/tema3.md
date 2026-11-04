@@ -2,7 +2,7 @@
 title: Gestión de Memoria
 description: 
 published: true
-date: 2026-11-04T17:00:09.014Z
+date: 2026-11-04T17:05:46.884Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-04T16:34:14.381Z
@@ -42,7 +42,15 @@ Vamos a ver varios apartados durante este tema:
 Entrando en más detalle de organización podemos tener:
 - Organización contigua (No existe o modelo antiguo): La asignación se hace en un único bloque de memmoria.
 - Organización no contigua: Usado habitualmente donde se busca "dividir" el programa. Podemos encontrar paginación, segmentación y segmentación paginada.
+
+La paginación y segmentación sin MV(Memoria Virtual) nos proporciona, que lso programas segmentados no tienen porque estar ubicado de forma contigua, los trozos deben residir en momoria principal durante su ejecución.
 ### Intercambio (Swapping)
+La idea es intercambiar procesos entre memoria principal y auxiliar. Donde el proceso pasará a estado "Suspendido_bloqueado" (dentro del disea más simple) y lo que ocupa espacio en memoria principal, el programa, pasara a disco. 
+
+El planificador (swapper), se encarga de:
+- Retirar procesos de la memoria principal.
+- Incorporar procesos a la memoria principal.
+- Gestionar y asignar espacios de intercambio.
 ## Memoria virtual. Organización
 ## Memoria virtual. Gestión
 ## Gestión de memoria en Linux
