@@ -2,7 +2,7 @@
 title: Gestión de Memoria
 description: 
 published: true
-date: 2026-11-04T16:53:27.798Z
+date: 2026-11-04T16:56:22.981Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-04T16:34:14.381Z
@@ -34,6 +34,10 @@ Cuando representamos un proceso en una imagen, debemos tener en cuenta que se di
 - Tamaño: Lo que ocupa cada apartado anterior.
 - Offset: Donde empieza cada valor del tipo.
 ### Objetivos de la gestión de memoria
+Vamos a ver varios apartados durante este tema:
+- La organización de la memoria, como se divide, con un proceso o varios
+- La gestión dada un esqueleto de organización. Ya que podemos tener varias estrategias a seguir para un mayor rendimiento.
+- Protección y compartición, donde se busca la seguridad entre usuarios del mismo grupo.
 ### Intercambio (Swapping)
 ## Memoria virtual. Organización
 ## Memoria virtual. Gestión
