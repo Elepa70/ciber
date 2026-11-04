@@ -2,7 +2,7 @@
 title: Gestión de Memoria
 description: 
 published: true
-date: 2026-11-04T17:05:46.884Z
+date: 2026-11-04T17:23:38.127Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-04T16:34:14.381Z
@@ -45,12 +45,39 @@ Entrando en más detalle de organización podemos tener:
 
 La paginación y segmentación sin MV(Memoria Virtual) nos proporciona, que lso programas segmentados no tienen porque estar ubicado de forma contigua, los trozos deben residir en momoria principal durante su ejecución.
 ### Intercambio (Swapping)
-La idea es intercambiar procesos entre memoria principal y auxiliar. Donde el proceso pasará a estado "Suspendido_bloqueado" (dentro del disea más simple) y lo que ocupa espacio en memoria principal, el programa, pasara a disco. 
+La idea es intercambiar procesos entre memoria principal y auxiliar. Donde el proceso pasará a estado "Suspendido_bloqueado" (dentro del disea más simple) y lo que ocupa espacio en memoria principal, el programa, pasara a disco. El almacenamiento auxiliar debe ser un disco rápido.
 
 El planificador (swapper), se encarga de:
 - Retirar procesos de la memoria principal.
 - Incorporar procesos a la memoria principal.
 - Gestionar y asignar espacios de intercambio.
 ## Memoria virtual. Organización
+### Concepto de Memoria Virtual
+La memoria virtual, surge debido a la necesidad de paginación o segmentación básica. El tamaño del programa, puede exceder la cantidad de memoria física disponibel para él, el número de proceso ejecutandose en MP (Grado de multiprogramación) aumenta, resuelve también un problema del crecimiento dinámico.
+
+Aunque para llevarlo a cabo se necesita tanto memoria principal como memoria auxiliar.
+
+
+La idea clave que usan dos niveles de jerarquía de memoria para almacenar el programa:
+- Memoria Principal (MP): Residen las partes del programa necesarias en un moemnto dado: conjunto residente.
+- Memoria auxiliar (MA): Reside el espacio de direcciones completo del programa. 
+
+Para que se pueda implementar es necesario:
+- Tener inforamción relacionada con que partes del programa se encuentra en MP y que partes se encuentra en MA.
+- Política para la resolución de un acceso a memoria situado en una parte que en ese momento no reside en MP.
+- Política de movimiento de partes del espacio de direcciones entre MP y MA.
+
+### Unidad de gestión de memoria (MMU)
+Consiste un dispositivo hardware que traduce direcciones virtuales a direcciones físicas. El esquema más simple, el valor del registro de base se suma a cada dirección generada por la ejecución del programa en CPU y este resultado se utiliza en el bus de memoria. 
+
+Tiene unos registros denominado TLB (*Translation Look-aside Buffer*, traducido y de forma correcta es búfer de búsqueda de traducción previa), que mantienen la correspondencia página virtual, página física resueltas con anterioridad.
+
+Alguna de las responsabilidades del MMU son:
+- Si hay acierto de TLB, se realiza la traducción de dirección virtual a física.
+- Si hay fallo de TLB, entocnes se usa el mapa de memoria para realizar la traducción.
+### Memoria Virtual paginada
+### Tabla de páginas. Implementación
+### Memoria Virtual segmentada
+### Segmentación paginada
 ## Memoria virtual. Gestión
 ## Gestión de memoria en Linux
