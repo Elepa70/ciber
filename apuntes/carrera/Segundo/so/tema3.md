@@ -2,7 +2,7 @@
 title: Gestión de Memoria
 description: 
 published: true
-date: 2026-11-04T17:43:33.708Z
+date: 2026-11-04T18:28:48.897Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-04T16:34:14.381Z
@@ -98,7 +98,31 @@ La tabla de ubicación en disco, contiene una entrada por cada página virtual d
 - Identificación del dispositivo lógico que soporta la memoria axuiliar.
 - Identifiación del bloque que contiene su respaldo.
 
+La paginación por demanda es la forma más común de implementar memoria virtual, se basa en el **modelo de localidad**, donde una localidad es el conjunto de páginas que se utilizan durante un tiempo determinado.
 
+Este tipo de paginación los programas residen en el dispositivo de intercambio. Cuando un SO crea un proceso hace una prepaginación antes de pasarlo a LISTO donde se carga en Memoria RAM un subconjunto de páginas del programa.
+
+El error **Page Fault** (Falta de página), surge debido a estos pasos:
+1. Se intenta encontrar la ubicación en disco de la página solicitada mirando la entrada de la TUD.
+2. Encontrar un marco libre, si no hubiera se puede usar por reemplazar una página de memoria RAM.
+3. al cargar la página desde el disco al marco libre el proceso se queda bloqueado.
+4. Fin de E/S
+4. Actualiz ael TP del bit de presencia
+4. Desbloque el proceso a listos
+5. Seleccionna el proceso y reinicia la isntrucción que originó la falta de página.
+
+La implementación de las tabla de página en si se hace con:
+- La tabla de página está en memoria principal (kernel).
+- El registro base de la tabla de página (RBTP) apunta a la TP y forma parte del contexto de registro (PCB)
+- Cada acceso a lo que se contenga requiere acceso a TP para calcular su dirección fisica y acceso a la dirección física real.
+- La solución pasa por el MMU y sus registros TLB.
+- Un problema adicional viene determinado por el tamaño de la tabla.
+
+Cuando vemos un ejemplo sobre los problema de tamaño nos damos cuenta que TP puede ocupar una barbaridad de espacio, es por eso que hay propuestos distintos metodos de paginación para poder continuar.
+#### Pagianción multinivel
+La idea es paginar las tablas de paginación, se divide la tabla de páginas en partes que coincidan con el tamaño de una página, se dejan partes no válidas del espacio de direcciones virtual sin paginar a nivel de página. La idea consiste en que no es necesario hacer explícita la paginación a nivel de páina hasta que se habilite.
+
+Para poder efectuar esto, estamos dividiendo el tamaño de páginas físicas en el tamaño de entrada de TP, y el resultado sería n $2^n=X$, siendo X el resultado de la división anterior. $n$ serían los bits a indexar
 ### Memoria Virtual segmentada
 ### Segmentación paginada
 ## Memoria virtual. Gestión
