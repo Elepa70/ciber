@@ -2,7 +2,7 @@
 title: Gestión de Memoria
 description: 
 published: true
-date: 2026-11-04T16:56:22.981Z
+date: 2026-11-04T17:00:09.014Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-04T16:34:14.381Z
@@ -38,6 +38,10 @@ Vamos a ver varios apartados durante este tema:
 - La organización de la memoria, como se divide, con un proceso o varios
 - La gestión dada un esqueleto de organización. Ya que podemos tener varias estrategias a seguir para un mayor rendimiento.
 - Protección y compartición, donde se busca la seguridad entre usuarios del mismo grupo.
+
+Entrando en más detalle de organización podemos tener:
+- Organización contigua (No existe o modelo antiguo): La asignación se hace en un único bloque de memmoria.
+- Organización no contigua: Usado habitualmente donde se busca "dividir" el programa. Podemos encontrar paginación, segmentación y segmentación paginada.
 ### Intercambio (Swapping)
 ## Memoria virtual. Organización
 ## Memoria virtual. Gestión
