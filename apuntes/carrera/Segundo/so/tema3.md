@@ -2,7 +2,7 @@
 title: Gestión de Memoria
 description: 
 published: true
-date: 2026-11-04T17:23:38.127Z
+date: 2026-11-04T17:43:33.708Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-04T16:34:14.381Z
@@ -76,7 +76,29 @@ Alguna de las responsabilidades del MMU son:
 - Si hay acierto de TLB, se realiza la traducción de dirección virtual a física.
 - Si hay fallo de TLB, entocnes se usa el mapa de memoria para realizar la traducción.
 ### Memoria Virtual paginada
+La organización dentro de direcciones físicas de un proceso jamas es contigua. La memora física son asignadas con tamaños fijos, denominados marcos de página o páginas fisicas que van desde 0.5 a 8 KB.
+
+Las direcciones del espacio lógico de un proceso se interpreta a dos niveles, los bits más significativos determinan la página virtual en la que se encuentra la dirección, y los bits menos significativos se utilizan para completar la dirección física correspondiente.
+
+La correspondencia entre "página virtual" y marco de página la almacena la entrada de la tabla de páginas denominado dirección base del marco de páginas.
+
+Algunos terminos:
+- Dirección virtual: Es la que es generada por la CPU y se interpreta como un par de Número de páginas (Entrada de tablas de págias y que está representada por los bits más significativos) y Offset (permite completar la dirección física correspondiente a la dirección virtual).
+- Dirección física: Es la dirección real de memoria principal y se calcula basado en dirección base del marco de página y el offset.
+
+
 ### Tabla de páginas. Implementación
+La tabla de página contiene una entrada por cada "página virtual" con el sigueinte campo:
+- Dirección base de marco (Escrito en Hexadecimal)
+- Validez/Presencia: Un bit para comprobar que esta
+- Protección o modo de acceos (rwx)
+- Bit de modificación o dirty bit.
+
+La tabla de ubicación en disco, contiene una entrada por cada página virtual del proceso con los campos:
+- Identificación del dispositivo lógico que soporta la memoria axuiliar.
+- Identifiación del bloque que contiene su respaldo.
+
+
 ### Memoria Virtual segmentada
 ### Segmentación paginada
 ## Memoria virtual. Gestión
