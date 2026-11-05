@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T17:47:10.736Z
+date: 2026-11-05T17:54:35.923Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -174,5 +174,22 @@ void level_traversal(nodewrapper <T> *n){
    }
    
 }
-
+```
+Ahora indicando el nivel
+```
+void level_traversal_indicado(nodewrapper <T> *n, int li){
+	queue<pair<nodewrapper<T>*,int>>cola;
+  cola.emplace(n,0);
+  while (!cola.empty()){
+  	auto.aux=cola.front();
+    cola.pop();
+    if (li == aux.second)
+    	cout << aux.first->et;
+    if (aux.first->hijoizq != nullptr)
+    	cola.emplace(aux.first->hijoizq,aux.second+1);
+    if (aux.first->hijoder != nullptr)
+    	cola.emplace(aux.first->hijoder,aux.second+1);
+   }
+   
+}
 ```
