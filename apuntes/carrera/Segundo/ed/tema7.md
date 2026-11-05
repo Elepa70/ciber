@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T18:22:39.196Z
+date: 2026-11-05T18:23:21.953Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -233,7 +233,7 @@ void read (istream &is, nodewrapper<T> * &n){
   c = is.get();
   if(c=='x')
   	n=nullptr;
-  else
+  else{
   	if(c=='n'){
     	T v;
      	is >> v;
@@ -244,3 +244,9 @@ void read (istream &is, nodewrapper<T> * &n){
       	n->hijoizq->padre = n;
       if(n->hijoder !=nullptr)
       	n->hijoder->padre = n;
+    }else {
+    cout << "Entrada corrupta"<<endl;
+    return;
+  }
+}
+    
