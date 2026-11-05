@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T18:23:21.953Z
+date: 2026-11-05T18:26:08.958Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -249,4 +249,19 @@ void read (istream &is, nodewrapper<T> * &n){
     return;
   }
 }
-    
+```
+
+Ahora hacemos el contrario, dado un arbol obtener la secuencia.
+
+```C++
+template <class T>
+void write (ostream & os, nodewrapper <T> * n){
+	if (n == nullptr)
+  	os<<'x';
+  else{
+  	os<<'n'<<n->et;
+    write(os,n->hijoizq);
+    write(os,n->hijoder);
+  }
+}
+```
