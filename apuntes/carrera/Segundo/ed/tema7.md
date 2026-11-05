@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T18:21:35.980Z
+date: 2026-11-05T18:22:39.196Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -240,3 +240,7 @@ void read (istream &is, nodewrapper<T> * &n){
       n = new nodewrapper <T>(v);
       read(is,n->hijoizq);
       read(is,n->hijoder);
+      if(n->hijoizq != nullptr)
+      	n->hijoizq->padre = n;
+      if(n->hijoder !=nullptr)
+      	n->hijoder->padre = n;
