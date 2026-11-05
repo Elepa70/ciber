@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T16:57:16.002Z
+date: 2026-11-05T17:08:34.573Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -77,5 +77,28 @@ void copy (const nodewrapper <T> * ong, nodewrapper<T> *&dest){
     if (dest->hijoder != nullptr)
     	dest->hijoder->padre = dest;
   }
+}
+```
+
+Ahora toca la destrucción o borrar
+```C++
+template <class T>
+void destroy(nodewrapper <T> *n){
+	if(n != nullptr){
+  	destroy (n->hijoizq);
+    destroy (n->hijoder);
+    delete n;
+  }
+}
+```
+
+Insercción de un nodo un subarbol
+```C++
+template <class T>
+void insert_right (nodewrapper <T> *n, nodewrapper <T> * rama){
+	nodewrapper <T> *uax = n->hijoder;
+  if (rama != nullptr){
+  	n->hijoder = rama;
+    
 }
 ```
