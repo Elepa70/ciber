@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-10-30T17:40:07.505Z
+date: 2026-11-05T16:53:21.827Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -37,3 +37,21 @@ Los recorridos en profundidad a su vez, se difieren en tres subgrupos:
 - Postfijo: Va desde lo más bajo a lo más alto partiendo de izquierda a derecha.
 ### Recorrido en anchura
 Se va recorriendo por niveles y listandos según la altura. Partiendo del nivel 0
+
+## Implementación
+Ya hemos descrito a nivel teorico pero ahora toca escribirlo en codigo para ello tenemos que saber implementar varios aspectos importantes.
+
+### Copy
+Para el copy podemos usar la siguiente estructura:
+```C++
+template <class T>
+void copy (const nodewrapper <T> * ong, nodewrapper<T> *&dest){
+	if (ong == nullptr){
+  	dest = nullptr;
+  } else {
+  	dest = new nodewrapper<T>(ong->et);
+    copy (ong->hijoizq, dest->hijoizq);
+    copy (ong->hijoder,dest->hijoder);
+  }
+}
+```
