@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T17:21:16.266Z
+date: 2026-11-05T17:21:48.501Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -107,7 +107,7 @@ void insert_right (nodewrapper <T> *n, nodewrapper <T> * rama){
 }
 ```
 
-Cambio de rama de la izquierda
+Desenlazar rama de la izquierda
 ```C++
 template <class T>
 void prune_left (nodewrapper <T> *n, nodewrapper <T>*&dest){
@@ -115,3 +115,8 @@ void prune_left (nodewrapper <T> *n, nodewrapper <T>*&dest){
   	dest= n->hijoizq;
     dest->padre = nullptr;
     n->hijoizq = nullptr;
+  } else {
+  	dest = nullptr;
+  }
+}
+```
