@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T17:29:38.502Z
+date: 2026-11-05T17:46:54.436Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -158,7 +158,17 @@ void postorden_traversal(nodewrapper<T> *n){
 ```
 
 Por niveles:
+Este tiene truco ya que debemos tirar mediante una cola. 
 ```
 void level_traversal(nodewrapper <T> *n){
-
+	queue<nodewrapper<T>*> cola;
+  cola push(n);
+  while (!cola.empty()){
+  	nodewrapper<T>*aux=cola.front();
+    cola.pop();
+    cout<<aux->et;
+    if(aux->hijoizq != nullptr){
+    	cola.push(aux->hijoizq);
+    if(aux->hijoder != nullptr){
+    	cola.push(aux->hijoder);
 ```
