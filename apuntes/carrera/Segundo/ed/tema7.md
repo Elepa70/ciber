@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T17:21:48.501Z
+date: 2026-11-05T17:25:09.047Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -119,4 +119,13 @@ void prune_left (nodewrapper <T> *n, nodewrapper <T>*&dest){
   	dest = nullptr;
   }
 }
+```
+### Recorridos
+> Recordamos que tenemos dos tipos de recorridos, en profundiad y en anchura, mas sus respectivas ordenaciones.
+{.is-info}
+
+Empezamos por recorrido en profundidad preorden.
+```
+void preorden_trasversal(nodewrapper<T> *n){
+	
 ```
