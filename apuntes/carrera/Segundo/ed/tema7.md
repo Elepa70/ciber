@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T17:29:01.138Z
+date: 2026-11-05T17:29:38.502Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -155,4 +155,10 @@ void postorden_traversal(nodewrapper<T> *n){
     cout << n-> et;
     }
 }
+```
+
+Por niveles:
+```
+void level_traversal(nodewrapper <T> *n){
+
 ```
