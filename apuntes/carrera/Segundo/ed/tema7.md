@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T17:08:34.573Z
+date: 2026-11-05T17:10:34.188Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -99,6 +99,10 @@ void insert_right (nodewrapper <T> *n, nodewrapper <T> * rama){
 	nodewrapper <T> *uax = n->hijoder;
   if (rama != nullptr){
   	n->hijoder = rama;
-    
+    rama->padre = n;
+  } else {
+  	n->hijoder = nullptr;
+  }
+  destroy(aux);
 }
 ```
