@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T17:55:22.041Z
+date: 2026-11-05T18:14:51.305Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -125,7 +125,7 @@ void prune_left (nodewrapper <T> *n, nodewrapper <T>*&dest){
 {.is-info}
 
 Empezamos por recorrido en profundidad preorden.
-```
+```C++
 void preorden_trasversal(nodewrapper<T> *n){
 	if(n!= nullptr){
   	cout <<n->et;
@@ -136,7 +136,7 @@ void preorden_trasversal(nodewrapper<T> *n){
 ```
 
 Ahora toca profundidad inorden
-```
+```C++
 void inorder_traversal(nodewrapper<T> *n){
 	if(n!= nullptr){
   	inorder_traversal(n->hijoizq);
@@ -147,7 +147,7 @@ void inorder_traversal(nodewrapper<T> *n){
 ```
 
 Profundidad postorden:
-```
+```C++
 void postorden_traversal(nodewrapper<T> *n){
 	if(n!= nullptr){
   	postorden_traversal(n->hijoizq);
@@ -159,7 +159,7 @@ void postorden_traversal(nodewrapper<T> *n){
 
 Por niveles:
 Este tiene truco ya que debemos tirar mediante una cola. 
-```
+```C++
 void level_traversal(nodewrapper <T> *n){
 	queue<nodewrapper<T>*> cola;
   cola push(n);
@@ -176,7 +176,7 @@ void level_traversal(nodewrapper <T> *n){
 }
 ```
 Ahora indicando el nivel
-```
+```C++
 void level_traversal_indicado(nodewrapper <T> *n, int li){
 	queue<pair<nodewrapper<T>*,int>>cola;
   cola.emplace(n,0);
@@ -192,3 +192,33 @@ void level_traversal_indicado(nodewrapper <T> *n, int li){
    }
 }
 ```
+
+### Escritura/Lectura
+> No estoy seguro si va a aqui pero vamos a decir que si.
+{.is-danger}
+
+Vmaos a empezar con igualdad entre nodos
+```C++
+template <class T>
+bool equals (nodewrapper <T> *n1, nodewrapper <T> *n2){
+	if (n1 == nullptr && n2==nullptr)
+  	return true;
+  else{
+  	if(n1==nullptr || n2==nullptr)
+    	return false;
+      else {
+      	if (n1->et != n2->et) return false;
+        return equals (n1->hijoizq, n2->hijoizq) && equals(n1->hijoder,n2->hijoder);
+        }
+   }
+}
+```
+
+Contabilizar loa canidad de número de nodos que cuelgan de n más el mismo
+```
+template < class T>
+int count (nodewrapper <T> *n){
+	if (n == nullptr)
+  	return 0;
+  else 
+  	return 1+count(n->hijoizq)+count(n->hijoder);
