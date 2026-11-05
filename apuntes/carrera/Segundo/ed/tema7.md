@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T17:25:49.475Z
+date: 2026-11-05T17:26:31.124Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -129,5 +129,8 @@ Empezamos por recorrido en profundidad preorden.
 void preorden_trasversal(nodewrapper<T> *n){
 	if(n!= nullptr){
   	cout <<n->et;
-    
+    preorden_trasversal(n->hijoizq);
+    preorden_trasversal(n->hijoder);
+  }
+}
 ```
