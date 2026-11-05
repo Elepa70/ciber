@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T17:46:54.436Z
+date: 2026-11-05T17:47:10.736Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -171,4 +171,8 @@ void level_traversal(nodewrapper <T> *n){
     	cola.push(aux->hijoizq);
     if(aux->hijoder != nullptr){
     	cola.push(aux->hijoder);
+   }
+   
+}
+
 ```
