@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T17:28:07.041Z
+date: 2026-11-05T17:29:01.138Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -141,6 +141,18 @@ void inorder_traversal(nodewrapper<T> *n){
 	if(n!= nullptr){
   	inorder_traversal(n->hijoizq);
     cout << n-> et;
-    inorder_traversal(n->hijoder);  }
+    inorder_traversal(n->hijoder);  
+    }
+}
+```
+
+Profundidad postorden:
+```
+void postorden_traversal(nodewrapper<T> *n){
+	if(n!= nullptr){
+  	postorden_traversal(n->hijoizq);
+    postorden_traversal(n->hijoder);
+    cout << n-> et;
+    }
 }
 ```
