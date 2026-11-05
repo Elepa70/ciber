@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T18:14:51.305Z
+date: 2026-11-05T18:20:54.953Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -215,10 +215,26 @@ bool equals (nodewrapper <T> *n1, nodewrapper <T> *n2){
 ```
 
 Contabilizar loa canidad de número de nodos que cuelgan de n más el mismo
-```
+```C++
 template < class T>
 int count (nodewrapper <T> *n){
 	if (n == nullptr)
   	return 0;
   else 
   	return 1+count(n->hijoizq)+count(n->hijoder);
+}
+```
+
+Crear un arbol dado una sencuencia de texto(n1n2n3xxxn4xx)
+```C++
+template <class T>
+void read (istream &is, nodewrapper<T> * &n){
+	char c;
+  c = is.get();
+  if(c=='x')
+  	n=nullptr;
+  else
+  	if(c=='n'){
+    	T v;
+     	is >> v;
+      n = new nodewrapper <T>(v);
