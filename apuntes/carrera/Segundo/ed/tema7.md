@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T16:56:52.182Z
+date: 2026-11-05T16:57:16.002Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -72,8 +72,10 @@ void copy (const nodewrapper <T> * ong, nodewrapper<T> *&dest){
   	dest = new nodewrapper<T>(ong->et);
     copy (ong->hijoizq, dest->hijoizq);
     copy (ong->hijoder,dest->hijoder);
-    if (dest->hijoizq != nullptr){
+    if (dest->hijoizq != nullptr)
     	dest->hijoizq->padre = dest;
+    if (dest->hijoder != nullptr)
+    	dest->hijoder->padre = dest;
   }
 }
 ```
