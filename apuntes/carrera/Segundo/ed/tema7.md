@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T17:10:34.188Z
+date: 2026-11-05T17:21:16.266Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -92,7 +92,7 @@ void destroy(nodewrapper <T> *n){
 }
 ```
 
-Insercción de un nodo un subarbol
+Insercción de un nodo un subarbol (Puesto para la derecha, pero para el de la izq cambiar las palabras)
 ```C++
 template <class T>
 void insert_right (nodewrapper <T> *n, nodewrapper <T> * rama){
@@ -106,3 +106,12 @@ void insert_right (nodewrapper <T> *n, nodewrapper <T> * rama){
   destroy(aux);
 }
 ```
+
+Cambio de rama de la izquierda
+```C++
+template <class T>
+void prune_left (nodewrapper <T> *n, nodewrapper <T>*&dest){
+	if (n->hijoizq != nullptr){
+  	dest= n->hijoizq;
+    dest->padre = nullptr;
+    n->hijoizq = nullptr;
