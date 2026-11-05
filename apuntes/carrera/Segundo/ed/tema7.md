@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T16:53:21.827Z
+date: 2026-11-05T16:55:57.173Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -41,7 +41,27 @@ Se va recorriendo por niveles y listandos según la altura. Partiendo del nivel 
 ## Implementación
 Ya hemos descrito a nivel teorico pero ahora toca escribirlo en codigo para ello tenemos que saber implementar varios aspectos importantes.
 
-### Copy
+TEniendo una representación de codigo así:
+```C++
+template <class T>
+struct nodewrapper{
+	T et;
+  nodewrapper * padre;
+  nodewrapper * hijoizq;
+  nodewrapper * hijoder;
+  nodewrapper(){
+  	padre = 0;
+    hijoizq=hijoder=0;
+  }
+  nodewrapper (const T &e){
+  	et=e;
+    padre=0;
+    hijoizq=hijoder=0;
+  }
+};
+```
+
+### Modificadores
 Para el copy podemos usar la siguiente estructura:
 ```C++
 template <class T>
