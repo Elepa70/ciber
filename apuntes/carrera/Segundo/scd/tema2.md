@@ -2,7 +2,7 @@
 title: Sincronización en memoria compartida
 description: 
 published: true
-date: 2026-11-06T18:08:23.445Z
+date: 2026-11-06T18:27:05.869Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-09T16:36:44.576Z
@@ -229,3 +229,10 @@ Toda la semantica permite resolver cualquier problema pero de mejor o pero maner
 # Colas de conciión con prioridad
 Hemos usado habitualmente las FIFO (First In First Out), sin embago también podemos usar las colas de prioridad para cuando saquemos elementos, podemos desbloquear mejor los elementos que deseemos.
 Para hacer eso, a la hora de pasar el wait, le enviamos un parametros donde el que tenga menos valro tendra mayor prioridad.
+
+
+## Implementación de monitores
+Cada cola tendrá un semáforo asociado:
+- Cola del monitor: Se implementa con un semáforo de exlusión mutua.
+- Colas de variables condición: Cada variable condición será necesairo definir un semáforo.
+- Cola de procesos urgentes: Si usaramos SU, debe haber un entero y un semáforo adicional.
