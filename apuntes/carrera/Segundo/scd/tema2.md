@@ -2,7 +2,7 @@
 title: Sincronización en memoria compartida
 description: 
 published: true
-date: 2026-11-06T18:05:42.398Z
+date: 2026-11-06T18:08:23.445Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-09T16:36:44.576Z
@@ -192,6 +192,8 @@ Para poder ver el uso de monitores, hay una serie de patrones de solución para 
 Similar a como vimos en los semaforos tenemos ciertos parametros para calcularlo.
 - Consideramos #N número de llamas a notificar finalizadas, y #W numero de esperas terminadas.
 - $#N \leq 1\text{ y }#W \leq 1$.
+- El invariante es cierto cuando tenemos que $#N = #W = 0$, es decir hay mismo número de finalizaciónes que de terminadas.
+
 # POR CORREGIR Y AÑADIR
 Tenemos dos procesos denominados proceso señalador ( no es espera cola) y proceso señalado (espera la cola y es reactivo).
 
