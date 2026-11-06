@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-06T17:00:32.913Z
+date: 2026-11-06T17:07:21.955Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -347,6 +347,7 @@ node root(){
   	return node();
 }
 
+// Insercción
 node insert_left(node n, const T&e){
 	int num_nodes_left=count(n-p->hijoizq);
   insert_left(n.p,e);
@@ -359,6 +360,23 @@ node insert_right(node n, const T&e){
   insert_right(n.p,e);
   num_nodes+=1-num_nodes_right;
   return node(n.p->hijoder);
+}
+
+//podar
+void prune_left(node n, bintree<T>& dest){
+	int num_nodes_left=count(n.p->hijoizq);
+  dest=bintree<T>();
+  prune_left(n.p->hijoizq,dest.laraiz);
+  dest.num_nodes=num_nodes_left;
+  num_nodes -= num_nodes_left;
+}
+
+void prune_right(node n, bintree<T>& dest){
+	int num_nodes_right=count(n.p->hijoder);
+  dest=bintree<T>();
+  prune_right(n.p->hijoder,dest.laraiz);
+  dest.num_nodes=num_nodes_right;
+  num_nodes -= num_nodes_right;
 }
 
 
