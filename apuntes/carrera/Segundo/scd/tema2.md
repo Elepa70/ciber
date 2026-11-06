@@ -2,7 +2,7 @@
 title: Sincronización en memoria compartida
 description: 
 published: true
-date: 2026-11-03T10:21:41.557Z
+date: 2026-11-06T18:05:42.398Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-09T16:36:44.576Z
@@ -171,6 +171,27 @@ Cuando sucede lo anterior, los procesos que se quedan esperando o bloqueados ent
 
 ### Sincronización en monitores
 Antes teniamos los *signal* y los *wait*, sin embargo ahora solo tenemos disponible sentencias de bloqueo y de activación, a la vez uqe los valores de las variables de los monitores.
+
+
+### Verificación de monitores
+Para la verificación de monitores, comprobar errores o funcionamiento se usa el invariante de monitor, que consiste en una propiedad verdadera o falsa, la cúal siempre se va a ir cambiando (que sea falso no signfica que este mal).
+
+Esta invariante deberia ser cierta a menos que un proceso esta corriendo código de un monitor, y en el momento que finalice se vuelve verdadero.
+
+Los invariantes siempre deben ser cierto cuando:
+- Estado inicial.
+- Antes y después de llamar a un procedimiento, wait y signal.
+
+### Patrones de uso de monitores
+Para poder ver el uso de monitores, hay una serie de patrones de solución para los mismos tres problemas que vimos en semaforo.
+1. Espera única: Un proceso antes de ejecutar una sentencia debe esperar aque otro proceso finalice (Consumidor y Productor).
+2. Exclusión mutua: Acceso en exlucisión mutua a una sección critica por parte de un número arbitrario.
+3. Problema productor/consumidor: Similar a la espera única pero de forma repetida en un bucle.
+
+
+Similar a como vimos en los semaforos tenemos ciertos parametros para calcularlo.
+- Consideramos #N número de llamas a notificar finalizadas, y #W numero de esperas terminadas.
+- $#N \leq 1\text{ y }#W \leq 1$.
 # POR CORREGIR Y AÑADIR
 Tenemos dos procesos denominados proceso señalador ( no es espera cola) y proceso señalado (espera la cola y es reactivo).
 
