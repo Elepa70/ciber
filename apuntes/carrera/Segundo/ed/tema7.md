@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-05T18:26:08.958Z
+date: 2026-11-06T16:57:44.091Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -265,3 +265,76 @@ void write (ostream & os, nodewrapper <T> * n){
   }
 }
 ```
+## Bintree
+Tenemos otra clase llamada bin tree con la misma estructura que la arboles pero cambiando su forma de representarse ya que es lineal.
+```C++
+template <class T>
+class bintree{
+	private:
+  	struct nodewrapper{
+    	// Ya explicado
+    }
+    nodewrapper <T> * get_father (nodewrapper <T> *n);
+    nodewrapper <T> * get_left (nodewrapper <T> *n);
+    nodewrapper <T> * get_right (nodewrapper <T> *n);
+    
+    nodewrapper *laraiz;
+    unsigned int num_nodes;
+  public:
+  //Constructores
+    bintree():laraiz(nullptr){num_nodes=0;}
+    bintree(const T & e){
+    	laraiz= new nodewrapper<T>(e);
+      num_nodes = 1;
+```
+Copia destructor y igual asignación serían
+```C++
+bintree (const bintree <T> & a){
+	copy(a.laraiz,laraiz);
+  num_nodes = a.num_nodes;
+}
+~bintree(){
+	destroy(laraiz);
+  num_nodes=0;
+}
+bintree<T> & operator=(const bintree<T> &ab){
+	if (this!=&ab){
+  	destroy(laraiz);
+    num_nodes=0;
+    copy(ab.laraiz,laraiz);
+    num_nodes = ab.num_nodes;
+  }
+  return *this;
+}
+```
+Luego dentro de esta clase bintree se tiene una clase node, esta clase actua como iterador.
+```C++
+unsigned int nu_nodes;
+public:
+	class node{
+  	private:
+    	nodewrapper *p;
+    public:
+    	node(nodewrapper <T>*i){ p = 1;}
+      node():p(nullptr){}
+      node(const node <T> &s):p(s.p){}
+      
+      const T & operator*(){return p->et;}
+      const T & operator*() const{return p->et;}
+      
+      //Obtener los hijos y padre.
+      node parent() const {return p->padre;}
+      node left() const{return p->hijoizq;}
+      node right() const{return p->hijoder;}
+      
+      //Comprobación de null
+      bool null()const{return p==nullptr;}
+      
+      //Comprobar si son iguales
+      bool operator!=(const node & s){ return p!=s.p;}
+      bool operator==(const node & s){return p==s.p;}
+      
+      friend class bintree;
+```
+
+Una vez finalizada la clase amiga node, que usaremos como iterador.
