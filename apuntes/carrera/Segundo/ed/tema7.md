@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-06T16:57:44.091Z
+date: 2026-11-06T17:00:32.913Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -337,4 +337,28 @@ public:
       friend class bintree;
 ```
 
-Una vez finalizada la clase amiga node, que usaremos como iterador.
+Una vez finalizada la clase amiga node, que usaremos como iterador, podremos continuar con los demás metodos de la clase bintree
+```C++
+//Dentro de bintree
+node root(){
+	if (laraiz!=0)
+  	return node(laraiz);
+  else
+  	return node();
+}
+
+node insert_left(node n, const T&e){
+	int num_nodes_left=count(n-p->hijoizq);
+  insert_left(n.p,e);
+  num_nodes+=1-num_nodes_left;
+  return node(n.p->hijoizq);
+}
+
+node insert_right(node n, const T&e){
+	int num_nodes_right=count(n-p->hijoder);
+  insert_right(n.p,e);
+  num_nodes+=1-num_nodes_right;
+  return node(n.p->hijoder);
+}
+
+
