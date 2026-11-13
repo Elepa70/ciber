@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-13T17:07:12.013Z
+date: 2026-11-13T17:18:46.427Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -398,3 +398,24 @@ while(pos>0 && datos[pos]<datos[(pos-1)/2]
   pos = (pos-1)/2;
 }
 ```
+Para la eliminación, lo que se hace es que uno de los hijos pasa a ser la raiz.
+```
+datos[0] = datos[nelementos-1];
+nelementos--;
+bool acabar = false;
+int pos = 0;
+int ultimo = nelementos - 1;
+while (pos <= (ultimo-1)/2 && !acabar){
+	int pos_min;
+  if (2*pos+1==ultimo)
+  	pos_min = ultimo;
+  else{
+  	if (datos[2*post1]<datos[2*post2]) pos_min = 2*post1;
+    else {
+    	pos_min = 2*post2;
+      if(datos[pos<datos[pos_min]){
+      	swap(datos[pos],datos[pos_min]);
+        pos = pos_min;
+      } else {
+      	acabar = true;
+}
