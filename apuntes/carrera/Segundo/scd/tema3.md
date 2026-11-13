@@ -2,7 +2,7 @@
 title: Sistemas basados en paso de mensajes
 description: 
 published: true
-date: 2026-11-13T18:29:17.337Z
+date: 2026-11-13T19:21:29.219Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-13T17:54:15.792Z
@@ -56,6 +56,9 @@ Esto puede suponer un problema de espera ociosa o interbloqueo si se gestiona de
 
 ### Asincrono
 Se inicia el envío de los datos designados y espera bloqueados hasta que hayan terminado de copiarse todos los datos de la variabel en un lugar seguro, tras eso ya interactua la recepción síncrona.
+### Valroación
+
+
 ## Paradigmas de interacción de procesos en programas distribuidos
 
 ## Mecanismos de alto nivel en sistemas distribuidos
