@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-13T16:37:43.751Z
+date: 2026-11-13T16:54:52.971Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -381,3 +381,9 @@ void prune_right(node n, bintree<T>& dest){
 
 ```
 Existen las clases amigas preorder_iterator, inorder_iterator y postorder_iterator. Estas clases solo tienen un constructor y un operator++
+
+## APO
+Los APO (Arboles Parcialmente Ordenados), son árbolse binarios que cumplen que cada nodo en el árbol tiene una etiqueta menor o igual a las de sus hijos.
+
+Podemos encontrar un Heap (Montón), que es un vector M en el que guarda por niveles. 
+Tenemos la regla de que M[k] sus descendientes están en M[2*k+1] y M[2*k+2].
