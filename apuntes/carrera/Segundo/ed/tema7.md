@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-13T16:54:52.971Z
+date: 2026-11-13T17:07:12.013Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -387,3 +387,14 @@ Los APO (Arboles Parcialmente Ordenados), son árbolse binarios que cumplen que 
 
 Podemos encontrar un Heap (Montón), que es un vector M en el que guarda por niveles. 
 Tenemos la regla de que M[k] sus descendientes están en M[2*k+1] y M[2*k+2].
+
+Para la insercción:
+```
+datos[nelementos]=nuevo;
+nelementos++;
+int pos = nelementos-1;
+while(pos>0 && datos[pos]<datos[(pos-1)/2]
+	swap(datos[pos],datos[(pos-1)];
+  pos = (pos-1)/2;
+}
+```
