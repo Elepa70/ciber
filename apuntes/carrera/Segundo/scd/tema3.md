@@ -2,7 +2,7 @@
 title: Sistemas basados en paso de mensajes
 description: 
 published: true
-date: 2026-11-13T18:12:02.820Z
+date: 2026-11-13T18:29:17.337Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-13T17:54:15.792Z
@@ -45,6 +45,17 @@ Por otro lado cuando queremos hacer una recepción, lo que hace es solicitar una
 > Es necesario primero que antes de descargar debe haberse subir.
 {.is-info}
 
+Debemos tene ren cuenta que existe una seguridad en las operaicones del paso de mensajes, estas operaciones es porque se ha efectuado cosas no seguras, que puede ser:
+- Operación de envío-recepción segura: Se garantiza el valor de var_orig coinciad con el valor de var_dest. Se devuelve un control para garnatizar seguridad.
+- Operación de envío-recepción insegura: Se peude hacer envio inseguro (Cuando se puede modificar el var_orig) o recepción insegura (cuando se puede modificar var_dest).
+
+### Operación síncrona cita
+Se exige una cita entre emisor y receptor, esta operación "s_send" no devuelve el control hasta que se alcance el "receive" correspondiente del receptor. 
+
+Esto puede suponer un problema de espera ociosa o interbloqueo si se gestiona de manera erronea.
+
+### Asincrono
+Se inicia el envío de los datos designados y espera bloqueados hasta que hayan terminado de copiarse todos los datos de la variabel en un lugar seguro, tras eso ya interactua la recepción síncrona.
 ## Paradigmas de interacción de procesos en programas distribuidos
 
 ## Mecanismos de alto nivel en sistemas distribuidos
