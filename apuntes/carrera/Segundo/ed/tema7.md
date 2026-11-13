@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-06T17:17:58.005Z
+date: 2026-11-13T16:37:43.751Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -379,4 +379,5 @@ void prune_right(node n, bintree<T>& dest){
   num_nodes -= num_nodes_right;
 }
 
-
+```
+Existen las clases amigas preorder_iterator, inorder_iterator y postorder_iterator. Estas clases solo tienen un constructor y un operator++
