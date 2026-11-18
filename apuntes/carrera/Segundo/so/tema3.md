@@ -2,7 +2,7 @@
 title: Gestión de Memoria
 description: 
 published: true
-date: 2026-11-04T18:28:48.897Z
+date: 2026-11-18T17:03:29.236Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-04T16:34:14.381Z
@@ -123,7 +123,16 @@ Cuando vemos un ejemplo sobre los problema de tamaño nos damos cuenta que TP pu
 La idea es paginar las tablas de paginación, se divide la tabla de páginas en partes que coincidan con el tamaño de una página, se dejan partes no válidas del espacio de direcciones virtual sin paginar a nivel de página. La idea consiste en que no es necesario hacer explícita la paginación a nivel de páina hasta que se habilite.
 
 Para poder efectuar esto, estamos dividiendo el tamaño de páginas físicas en el tamaño de entrada de TP, y el resultado sería n $2^n=X$, siendo X el resultado de la división anterior. $n$ serían los bits a indexar
+
+Una págian en memoria que contenga código (texto), peude ser 
 ### Memoria Virtual segmentada
 ### Segmentación paginada
+
+
 ## Memoria virtual. Gestión
+### Conceptos
+En la gestión de memoria virtual paginada, se pueden dar criterios de clasificación respecto a:
+- Políticas de asignación de memoria principal: fija o variable
+- Políticas de búsqueda (recuperación) de páginas alojadas en memoria auxiliar.
+- Políticas de susticución (reemplazo) de páginas de memoria principal.
 ## Gestión de memoria en Linux
