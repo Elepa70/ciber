@@ -2,7 +2,7 @@
 title: Gestión de Memoria
 description: 
 published: true
-date: 2026-11-18T17:03:29.236Z
+date: 2026-11-18T17:21:44.987Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-04T16:34:14.381Z
@@ -135,4 +135,29 @@ En la gestión de memoria virtual paginada, se pueden dar criterios de clasifica
 - Políticas de asignación de memoria principal: fija o variable
 - Políticas de búsqueda (recuperación) de páginas alojadas en memoria auxiliar.
 - Políticas de susticución (reemplazo) de páginas de memoria principal.
+
+Independientemente de que politica de sustitución usemos, deben haber uan serie de criterios.
+- Las páginas limpias frente a las sucias, para minimizar la cantidad de trasnferencia MP-swap.
+- Seleccionar en último lugar páginas compartidas para reducir el número de faltas de págian promedio.
+- Páginas especiales (bloqueadas).
+### Influencia del tamaño de página
+Hay que tener en cuenta una serie de cosas respecto a las páginas.
+Un menor tamaño implica
+1. Un mayor tamaño de las tablas de páginas
+2. Aumento de transferencia de MP-swap
+3. Reduce la fragmentación interna
+Mayor tamaño implica
+1. Grandes cantidades de información que no usan todo el tamaño de MP
+2. Aumenta la fragmentación interna.
+
+Se intenta busca rel equilibrio de tabamño en ambas.
+
+### Algoritmos de sustitución
+Tenemos los siguientes algoritmos:
+- Algoritmos de sustitución: Sustituye la página que no se va a referenciar en un futuro o la que se referencia más tarde.
+- FIFO: Sustituye la página más antigua.
+- LRU: Sustituye la página que fue objeto de la referencia más antigua.
+- Algoritmo de reloj
+
+En el algoritmo de reloj, es similar al de LRU, pero más eficiente donde cada página tiene un bit de referencia "Ref". Se tiene un "puntero" donde se consulta el marco si ese registro tiene una referencia 0 (o la deseada), en caso negativo, entonces continua buscando con el siguiente.
 ## Gestión de memoria en Linux
