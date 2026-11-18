@@ -2,7 +2,7 @@
 title: Gestión de Memoria
 description: 
 published: true
-date: 2026-11-18T17:21:44.987Z
+date: 2026-11-18T18:04:45.426Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-04T16:34:14.381Z
@@ -159,5 +159,40 @@ Tenemos los siguientes algoritmos:
 - LRU: Sustituye la página que fue objeto de la referencia más antigua.
 - Algoritmo de reloj
 
-En el algoritmo de reloj, es similar al de LRU, pero más eficiente donde cada página tiene un bit de referencia "Ref". Se tiene un "puntero" donde se consulta el marco si ese registro tiene una referencia 0 (o la deseada), en caso negativo, entonces continua buscando con el siguiente.
+En el algoritmo de reloj, es similar al de LRU, pero más eficiente donde cada página tiene un bit de referencia "Ref". Se tiene un "puntero" donde se consulta el marco si ese registro tiene una referencia 0 (o la deseada), en caso negativo, entonces continua buscando con el siguiente, no sin antes marcar el que teniamos antes a 0.
+
+En conclusión, la optima es la más rapida (por logica) pero le sigue LRU, ReloJ y FIFO.
+
+### Hiperpaginación
+Un proceso se considera que está thrashing, si está más tiempo haciendo E/S sobre *backing store* (la tasa de faltas de página es alta) y se esta ejecutando.
+
+Si un sistema presenta suficientes procesos estado, se puede dar los siguientes escenarios:
+- Bajo uso de CPU porque falta de páginas.
+- Bajo uso de CPU se crea nuevos procesos para incrementar el uso de CPU
+- Nuevo procesos que incrementan el promedio de faltas de páginas y entran en thrashing.
+
+En un escenario real, la hiperpaginación en el que SO esta resvolviendo fallas de páginación el tiempo de núcleo aumenta y el tiempo útil de computación cae.
+
+Para evitar esto:
+- Se asegura que cada proceso existente tenga asignado un espacio en relación a su comportamiento.
+- Actuar directamente sobre el grado de multiprogramación
+
+El comportamiento de ejecución de un programa se caracteriza por la secuencia de referencias a páginas que realiza el proceso. La caracterización es importante para maximizar el rendimiento del sistema de memoria virtual.
+### Principio de localidad
+Los prograas referencian una pequeña parte del espacio de direcciones durante un tiempo determinado, existen dos tipos de localidad:
+- Temporal: Posición referenciada que peude ser reutilizada proximamente (ciclos)
+- Espacial: Si esta posición de memoria ha sido referenciada recientemente, hay una gran probabilidad de que las adyacentes también hayan sido referenciadas.
+
+### Conjunto de trabajo
+Existe un modelo de conjunto de trabajo, (Working Set) donde un proceso es un instante *t* es el conjunto de páginas referenciados por el proceso durante ese instante. Algunas de las propiedades es:
+- Los conjuntos de datos son transitorios y difiere en su composición sustancialmente.
+- No se puede predecir el tamao ni composicón de un conjunto de trabajo futuro.
+
+Hay dos requisitos:
+1. Un proceso solamente puede ejecutarse si su conjunto de trabajo actual esta en la memoria principal.
+2. Una página no peude retirarse de memoria principal si forma parte del conjutno del trabajo actual.
+### Algoritmo de Frencuencia de Falta de Página
+El ajuste del conjunto de páginas de un proceso, que residen actualmente en memoria principal, usa los intervalos de tiempo entre dos faltas de página consecutivas.
+- Si un intervalo de grande, mayor que un umbral especifico, entonces todas las páginas no referenciadas en dicho intervalos se van de la memoria principal.
+- En otro caso, la nueva página es simplemente incluida en el conjunto de páginas residentes.
 ## Gestión de memoria en Linux
