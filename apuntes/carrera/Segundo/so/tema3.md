@@ -2,7 +2,7 @@
 title: Gestión de Memoria
 description: 
 published: true
-date: 2026-11-18T18:04:45.426Z
+date: 2026-11-18T18:07:11.281Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-04T16:34:14.381Z
