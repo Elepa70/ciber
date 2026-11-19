@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-19T17:15:10.900Z
+date: 2026-11-19T17:26:12.156Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -504,3 +504,56 @@ while (aux->hizq!=nullptr)
 	aux= aux->hizq;
 n->et= aux->et;
 Borrar(aux,aux->et);
+```
+Si juntamos todo esto podemos obtener lo siguiente:
+```C++
+void EliminarRaiz(nodewrapper<T>*n,int x){
+	if(n->hizq==nullptr && n->hder == nullptr){
+  	PutPadre(n,nullptr);
+    delete n;
+  } else {
+  	if (n->hizq==nullptr && n->hder!=nullptr){
+    	PutPadre(n,n->hder);
+      nodewrapper<T>*aux = n;
+      n=n->hder;
+      delete aux;
+   } else {
+   	if (n->hizq!=nullptr && n->hder==nullptr){
+    	PutPadre(n,n->hizq);
+      nodewrapper<T>*aux = n;
+      n=n->hizq;
+      delete aux;
+    } else {
+    nodewrapper<T>*aux = n->hder;
+    while(aux->hizq!=nullptr)
+    	aux = aux->hizq;
+     n->et=aux->et;
+     Borrar(aux,aux->et);
+ }
+}
+```
+Esto requiere de dos funciones una llamada Borrar que es quien la inicia y Put Padre.
+```
+void Borrar(nodewrapper<T>*n,int x){
+	if(n!=nullptr){
+  	if(n->et==x){
+    	EliminarRaiz(n);
+    } else {
+    	if (n->et<x
+      	Borrar(n->hder,x);
+      else 
+      	Borrar(n->hizq,x);
+   }
+}
+
+void PutPadre(nodewrapper<T>*n,nodewrapper<T>*nuevo){
+	nodewrapper<T>*padre=n->padre;
+  if(padre!=nullptr){
+  	if(padre->hder==n)
+    	padre->hder=nuevo;
+    else
+    	padre->hizq=nuevo;
+    nuevo->padre=padre;
+  }
+}
+  
