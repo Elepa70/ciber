@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-19T17:08:58.440Z
+date: 2026-11-19T17:12:47.817Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -463,3 +463,36 @@ bool Insertar(nodewrapper<T>* &n, const T &x){
   else 
   	return false;
 }
+```
+Para poder eliminar una clave en este tipo de arboles, podemos tener 3 casos:
+1. Más sencillo, es una hoja.
+2. Tiene un único hijo.
+3. Tiene un subarbol.
+
+Caso hoja
+```
+nodewrapper <T> *aux = n;
+if (aux->padre!=nullptr){
+	if(aux->padre->hder==n)
+  	aux->padre->hder=nullptr;
+  else
+  	aux->padre->hizq=nullptr;
+}
+delete aux;
+```
+En el caso de tener un hijo, también se podria hacer
+```
+nodewrapper <T> *padre = n->padre;
+if (padre!=nullptr){
+	if(padre->hder==n){
+  	padre->hder=n->hder;
+    n->hder->padre=padre;
+  }
+  else{
+  	padre->hizq=n->hder;
+    n->hder->padre=padre;
+  }
+nodewrapper<T>*aux=n;
+n=n->hder;
+delete aux;
+```
