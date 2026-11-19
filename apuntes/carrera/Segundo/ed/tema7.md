@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-19T17:12:47.817Z
+date: 2026-11-19T17:15:10.900Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -496,3 +496,11 @@ nodewrapper<T>*aux=n;
 n=n->hder;
 delete aux;
 ```
+
+En el caso de tener un subarbol
+```
+nodewrapper <T>*aux=n->hder;
+while (aux->hizq!=nullptr)
+	aux= aux->hizq;
+n->et= aux->et;
+Borrar(aux,aux->et);
