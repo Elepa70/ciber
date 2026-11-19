@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-19T18:08:44.161Z
+date: 2026-11-19T18:19:19.092Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -634,5 +634,53 @@ void Doble_DerechaIzquierda (nodewrapper_AVL<T> * & n){
   SimpleIzquierda(n);
 }
 ```
+
+
 > Si nos fijamos, lo que se hace es una rotación del subarbol donde el padre esta como cabeza y después una rotación del arbol grande general.
 {.is-info}
+
+Con los desbalanceos anteriores, podemos ahora añadir valores en el arbol y equilibarlo para seguir mirando si va todo bien.
+```C++
+bool InsertarAVL (nodewrapper_AVL<T> * & raiz, T x){
+	if (raiz == nullptr){
+  	raiz = new nodewrapper_AVL(x);
+    raiz->altura = 0;
+    return true;
+  }
+  else {
+  	if (x<raiz ->et){
+    	if(InsertarAVL(raiz->hizq,x)){
+      	if(raiz->hizq != nullptr){
+        	raiz->hizq->padre = raiz;
+        switch (Altura(raiz->hizq) - Altura (raiz->hder)){
+        	case 0: 
+          	return false;
+          case 1:
+          	raiz->altura++;
+            return true;
+          case 2:
+          	if(Altura(raiz->hizq->hizq) > Altura (raiz -> hizq -> hder))
+            	SimpleDerecha(raiz);
+            else
+            	Doble_Izquierda(raiz);
+            return false;
+        } else {
+        	if (InsertarAVL(raiz->hder,x)){
+          	if(raiz->hder != nullptr)
+            	raiz->hder->padre = raiz;
+            switch (Altura(raiz->hder) - Altura(raiz->hizq)){
+            	case 0:
+              	return false;
+               case 1:
+               	raiz->altura++;
+                return true;
+               case 2:
+               	if(Altura(raiz->hder->hder) > Altura (raiz->hder->hizq))
+                	SimpleIzquierda(raiz);
+                else
+                	Doble_DerechoIzquierda(raiz);
+                 return false;
+            }
+       }
+  }
+}
