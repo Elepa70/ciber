@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-19T18:04:37.817Z
+date: 2026-11-19T18:05:24.477Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -624,6 +624,14 @@ template <class T>
 void Doble_IzquierdaDerecha (nodewrapper_AVL<T> * & n){
 	SimpleIzquierda(n->hizq);
   SimpleDerecha(n);
+}
+```
+El último caso es similar pero alreves.
+```C++
+template <class T>
+void Doble_IzquierdaDerecha (nodewrapper_AVL<T> * & n){
+	SimpleDerecha(n->hder);
+  SimpleIzquierda(n);
 }
 ```
 > Si nos fijamos, lo que se hace es una rotación del subarbol donde el padre esta como cabeza y después una rotación del arbol grande general.
