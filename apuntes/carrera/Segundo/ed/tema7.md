@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-19T18:03:41.322Z
+date: 2026-11-19T18:04:37.817Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -626,3 +626,5 @@ void Doble_IzquierdaDerecha (nodewrapper_AVL<T> * & n){
   SimpleDerecha(n);
 }
 ```
+> Si nos fijamos, lo que se hace es una rotación del subarbol donde el padre esta como cabeza y después una rotación del arbol grande general.
+{.is-info}
