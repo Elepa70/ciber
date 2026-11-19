@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-19T18:19:19.092Z
+date: 2026-11-19T18:19:33.989Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -684,3 +684,4 @@ bool InsertarAVL (nodewrapper_AVL<T> * & raiz, T x){
        }
   }
 }
+```
