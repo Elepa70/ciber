@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-13T17:29:27.839Z
+date: 2026-11-19T17:08:58.440Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -418,4 +418,48 @@ while (pos <= (ultimo-1)/2 && !acabar){
         pos = pos_min;
       } else {
       	acabar = true;
+}
+```
+
+## Arboles Binarios de Busqueda
+Este tipo de árboles cumplen que la etiqueta de cada nodo es mayor que todos las etiquetas del subárbol hijo izquierda y menor que las etiquetas del subárbol hijo derecha.
+
+Ahora veremos algunos metodos:
+```C++
+template <class T>
+nodewrapper <T> * Buscar(nodewrapper <T>*n, const T &x){
+	if (n==nullptr)
+  	return nullptr;
+   else{
+   	if (x==n->et)
+    	return n;
+    else if(x<n ->et)
+    	return Buscar(n->hizq,x);
+      else
+      	return Buscar(n->hder,x);
+ }
+ }
+ ```
+ 
+Para insertar nuevos elementos, debemos tener en cuenta que debemos ir comparando hasta poder encontrar un espacio acorde al que le corresponde.
+```C++
+bool Insertar(nodewrapper<T>* &n, const T &x){
+	bool res = false;
+  if (n==nullptr){
+  	n=new nodewrapper (x);
+    return true;
+  }
+  else if (x<n->et){
+  	res = Insertar(n->hizq,x);
+    if (res)
+    	n->hizq->padre = n;
+    return res;
+  else if(x>n->et){
+  	res = Insertar(n->hder,x);
+    if (res)
+    	n->hder->padre=n;
+    return res;
+  }
+  else 
+  	return false;
 }
