@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-19T18:05:24.477Z
+date: 2026-11-19T18:08:44.161Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -629,7 +629,7 @@ void Doble_IzquierdaDerecha (nodewrapper_AVL<T> * & n){
 El último caso es similar pero alreves.
 ```C++
 template <class T>
-void Doble_IzquierdaDerecha (nodewrapper_AVL<T> * & n){
+void Doble_DerechaIzquierda (nodewrapper_AVL<T> * & n){
 	SimpleDerecha(n->hder);
   SimpleIzquierda(n);
 }
