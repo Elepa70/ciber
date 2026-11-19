@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-19T18:01:29.856Z
+date: 2026-11-19T18:03:41.322Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -586,7 +586,8 @@ nodewrapper_AVL<t>* Busqueda (nodewrapper_AVL<T>*n,const T &x){
 Para la insercción tenemos que diferenciar en 4 casos.
 1. Caso donde se añade a la izquierda del todo, caso más facil.
 2. Caso donde se añade a la derecha del todo, segundo caso más facil.
-
+3. En el caso de tener un subarbol, tenemos un hijo a la izq y otro a la derecha, queremos añadir un hijo a este ultimo hijo en la derecha.
+4. Similar pero en el lado izq.
 En el primer caso, el código sería:
 ```C++
 void SimpleDerecha (nodewrapper_AVL<T> * & n){
@@ -615,5 +616,13 @@ void SimpleIzquierda (nodewrapper_AVL<T> * & n){
   aux->hizq = n;
   n = aux;
   ActualizarAltura(n->hizq); 
+}
+```
+En el tercer caso, lo que debemos hacer es rotación simple izquierda y después derecha, al tener los códigos ya hecho esto queda mucho más sencillo.
+```C++
+template <class T>
+void Doble_IzquierdaDerecha (nodewrapper_AVL<T> * & n){
+	SimpleIzquierda(n->hizq);
+  SimpleDerecha(n);
 }
 ```
