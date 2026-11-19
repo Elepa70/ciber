@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-19T17:26:12.156Z
+date: 2026-11-19T18:01:29.856Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -556,4 +556,64 @@ void PutPadre(nodewrapper<T>*n,nodewrapper<T>*nuevo){
     nuevo->padre=padre;
   }
 }
-  
+```
+## Arboles Binarios de Busqueda Equilibrados
+Este tipo de arboles es igual que el de ABB, sin embargo se busca que en todos los usbarboles y arboles haya un equilibrio de niveles. No se puede haber una diferencia de altura entre hijos del mismo padre mayor a 1.
+Vamos a ver ahora su busqueda teniendo en cuenta que su representación es:
+```C++
+template <class T>
+struct nodewrapper_AVL{
+	T et:
+  nodewrapper_AVL<T>*padre,*hizq,*hder;
+  int altura;
+};
+```
+Busqueda:
+```C++
+nodewrapper_AVL<t>* Busqueda (nodewrapper_AVL<T>*n,const T &x){
+	if (n==nullptr)
+  	return nullptr;
+  else 
+  	if (n->et==x)
+    	return n;
+    else
+    	if (n->et<x)
+      	return Busqueda(n->hder,x);
+      else
+      	return Busqueda(n->hizq,x);
+```
+
+Para la insercción tenemos que diferenciar en 4 casos.
+1. Caso donde se añade a la izquierda del todo, caso más facil.
+2. Caso donde se añade a la derecha del todo, segundo caso más facil.
+
+En el primer caso, el código sería:
+```C++
+void SimpleDerecha (nodewrapper_AVL<T> * & n){
+	nodewrapper_AVL<T> * aux = n->hizq;
+  nodewrapper_AVL<T> * padre = n->padre;
+  n->hizq = aux->hder;
+  if (n->hizq != nullptr)
+  	n->hizq->padre = n;
+  n->padre = aux;
+  aux->padre = padre;
+  aux->hder = n;
+  n = aux;
+  ActualizarAltura(n->hder); //Funcion para actualizar todas las alturas
+}
+```
+En el segundo caso es similar pero haciendo rotación simple a izquierda.
+```C++
+void SimpleIzquierda (nodewrapper_AVL<T> * & n){
+	nodewrapper_AVL<T> * aux = n->hder;
+  nodewrapper_AVL<T> * padre = n->padre;
+  n->hder = aux->hizq;
+  if (n->hder != nullptr)
+  	n->hder->padre = n;
+  n->padre = aux;
+  aux->padre = padre;
+  aux->hizq = n;
+  n = aux;
+  ActualizarAltura(n->hizq); 
+}
+```
