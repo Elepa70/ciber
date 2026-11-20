@@ -2,7 +2,7 @@
 title: Sistemas basados en paso de mensajes
 description: 
 published: true
-date: 2026-11-13T19:21:29.219Z
+date: 2026-11-20T18:12:51.235Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-13T17:54:15.792Z
@@ -56,8 +56,21 @@ Esto puede suponer un problema de espera ociosa o interbloqueo si se gestiona de
 
 ### Asincrono
 Se inicia el envío de los datos designados y espera bloqueados hasta que hayan terminado de copiarse todos los datos de la variabel en un lugar seguro, tras eso ya interactua la recepción síncrona.
-### Valroación
 
+Para est etipo de operaciones, lo que se hace es usar i_send y i_receive. En este caso no se espera ni si quiera al emparejamiento, directamente envia la información. Aunque sea asincrono también existe el wait_send y wait_recv, donde se bloquea los cambios que se puedan hacer en el SPM.
+### Espera selectiva
+Las esperas selectivas es una operación que permite esperar bloqueada de múltiples emisores. Usan palabras reservadas select y when.
+
+Estas palabras tienen casi la mismas funciones que un switch y case, ya que se busca hacer una acción según lo que llegue.
+```
+select
+	when (condicion a cumplir) receive(variable,proceso) do
+  	//sentencias...
+  when (condicion a cumplir) receive(variable,proceso) do
+  	//sentencias...
+  ...
+end
+```
 
 ## Paradigmas de interacción de procesos en programas distribuidos
 
