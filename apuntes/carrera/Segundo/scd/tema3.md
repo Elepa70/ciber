@@ -2,7 +2,7 @@
 title: Sistemas basados en paso de mensajes
 description: 
 published: true
-date: 2026-11-20T18:26:09.571Z
+date: 2026-11-20T18:26:58.426Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-13T17:54:15.792Z
@@ -84,5 +84,8 @@ for indice := inicial to final
 ```
 Esto lo que hace es que no tengamos que crear los when que necesitemos, si no una especie de "vector" de whens para poder hacer la espera.
 ## Paradigmas de interacción de procesos en programas distribuidos
-
+### Introducción
+### Maestro-Esclavo
+### Iteración síncrona
+### Encauzamiento (pipelining)
 ## Mecanismos de alto nivel en sistemas distribuidos
