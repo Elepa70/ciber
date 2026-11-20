@@ -2,7 +2,7 @@
 title: Sistemas basados en paso de mensajes
 description: 
 published: true
-date: 2026-11-20T18:12:51.235Z
+date: 2026-11-20T18:16:38.932Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-13T17:54:15.792Z
@@ -71,7 +71,10 @@ select
   ...
 end
 ```
-
+Esto siempre va a funcionar cuando:
+- La condición se cumple.
+- Se ha recivido la orden por parte del proceso concreto.
+En caso de que esto no se cumpla, se hace un guarda que se ejecutará cuando corresponda.
 ## Paradigmas de interacción de procesos en programas distribuidos
 
 ## Mecanismos de alto nivel en sistemas distribuidos
