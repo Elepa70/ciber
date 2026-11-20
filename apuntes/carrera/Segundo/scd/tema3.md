@@ -2,7 +2,7 @@
 title: Sistemas basados en paso de mensajes
 description: 
 published: true
-date: 2026-11-20T18:16:38.932Z
+date: 2026-11-20T18:26:09.571Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-13T17:54:15.792Z
@@ -75,6 +75,14 @@ Esto siempre va a funcionar cuando:
 - La condición se cumple.
 - Se ha recivido la orden por parte del proceso concreto.
 En caso de que esto no se cumpla, se hace un guarda que se ejecutará cuando corresponda.
+
+Es posible que necesitemos hacer muchas esperas para cada valor, para ello podemos usar el "for" a modo de utilidad para esperar.
+```
+for indice := inicial to final
+	when condition receive(mensaje,proceso) do
+  	sentencias
+```
+Esto lo que hace es que no tengamos que crear los when que necesitemos, si no una especie de "vector" de whens para poder hacer la espera.
 ## Paradigmas de interacción de procesos en programas distribuidos
 
 ## Mecanismos de alto nivel en sistemas distribuidos
