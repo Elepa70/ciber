@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-11-23T18:15:48.105Z
+date: 2026-11-23T18:44:34.247Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -465,6 +465,16 @@ Por otro lado el do_exit() hace:
 
 
 ## Planificación de CPU en Linux
+
+
+
+
+
+
+
+> No te fies de lo de abajo (yet)
+{.is-danger}
+
 ### Clases y políticas
 Planificador modular con tres clases (tiempo real, CFS e idle). Entre clases hay prioridades apropiativas. Cada clase tiene un rango de prioridades, una cola por número. La entidad de planificación es sched_entity. Políticas CFS: SCHED_NORMAL, SCHED_BATCH, SCHED_IDLE. Políticas de tiempo real: SCHED_RR y SCHED_FIFO. Prioridades: [0,99] tiempo real, [100,139] normales. El proceso en ejecución es siempre el más prioritario.
 ### Planificador periódico: scheduler_tick()
