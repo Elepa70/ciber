@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-11-23T11:37:25.803Z
+date: 2026-11-23T11:38:06.974Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -135,7 +135,7 @@ La memoria nos sirve para:
 - Protección de la memoria del kernel y las regiones de programas.
 - Compartición por parte de regiones ocupadas por programas para comunicarse entre ellos.
 - Se encarga también de la jerarquía de la memoria con la asignación y liberación del mismo, mediante la memoria asignada y libre.
-- Algortimos para memoria virtual (Decidir cuanta memoria requiere cada proceso) y para swapping (para liberar toda la memoria asociadas).
+- Algoritmos para decidir cuánta memoria asignar a cada proceso y cuándo liberar toda la memoria de un proceso manteniéndolo en almacenamiento secundario (Swapping).
 
 ### Archivos y Directorios
 Un archivo consiste en una colección de contenidos de información usualmente identificada.
