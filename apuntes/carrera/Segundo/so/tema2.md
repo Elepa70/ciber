@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-11-23T15:45:24.858Z
+date: 2026-11-23T15:57:07.709Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -35,6 +35,7 @@ A la hora de pensar en proceso, debemos pensar en, una unidad de actividad carac
 - La ejecución de una secuencia de instrucciones (traza).
 - Un estado de computación actual (contexto).
 - Un conjunto de recursos (dado por el SO).
+
 Cuando el SO decide que el proceso en ejecución abandone la CPU, guarda los registros en su PCB. Esa acción de pasar la CPU a otro proceso es el cambio de contexto. Su tiempo va en detrimento de la productividad.
 
 ### PCB Process Control Block
