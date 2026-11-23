@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-11-23T11:38:06.974Z
+date: 2026-11-23T11:46:43.573Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -143,24 +143,38 @@ Alguna de sus funcionalidades:
 - Tiene los archivos de procesamiento (Abrir, cerrar, escribir, leer...) 
 - Creacion, eliminacion...
 
-Los directorios se encargan de la asignación y liberación de los archivos y directorios, mediante los metadatos del Sistema de Archvios
-
+El sistema de archivos gestiona la asignación y liberación de espacio de disco y mantiene la ubicación de los datos y los metadatos (inode en UNIX/LINUX)
 ### Dispositivos E/S
 Donde se busca el controlar los funcionamientos de los dispositivos de E/S, la protección de su utilización por parte de las aplicaciones, tener una interfaz independiente y por último los Device Drives o el manejador de dispositivo.
 
 ### SO
 Un sistema operativo en su gestión de recursos debe garantizar:
 - Equitatividad: Garantizar el acceso a los recursos para todo proceso.
-- Respuesta diferencial: El SO debe identificar y asignar a cada recursos los recursos que requiere. Esto puede chocar junto a Equitatividad, ya que los procesos en IORBs, peude provocar que algunos procesos se mueran de inanicion (no obtener ningun recurso)
-- Eficiencia: Se diferencia entre usuario y para sistema, donde se busca maximizar la productividad según para que este diseñado.
+- Respuesta diferencial: Planificar la asignacuón de recursos teniendo en cuenta las características d elos clientes.
+- Eficiencia: Maximizar la productividad, minimizar el tiempo de respuesta y, en tiempo compartido, permitir que trabajen tatnos usuarios como sea posible.
 
 Dentro de un SO tenemos una serie de componentes:
 - Gestor de procesos
 - Gestor de memoria
 - Gestor de archivos
-- Gestor de E/S y gestor de comunicación (que son similares pero donde se diferencia en que, las de comunicación tengan las de red y E/S tiene el sistema de archivos).
+- Gestor de E/S y gestor de comunicación (que son similares pero donde se diferencia en que, pero componentes separados, ya que el sistema de archivos pertenece al gestor de archivos).
 
+Una interpretación del system call es:
+1. Se meten los nbytes en la pila
+2. Se añade el &bufer en la pila
+3. Se añade el fd en la pila
+4. Se llama a la función read.
+5. Se coloca el código para la lectura en el registro.
+6. Se hace el trap al kernel y pasamos al espacio reservado del kernel (sistema operativo)
+7. El despachador busca y llama al manejador de llamadas al sistema.
+8. Se regresa del espacio del jernel, con el procedimiento llamador
+9. La biblioteca devuelve lo que ha traido el trap
+10. Se incrementa el SP y se hace el read.
 
+Alguno de los identificadores de llamada importante de Linux son:
+- 0: Read
+- 1: Write
+- 60: Exit
 ### Interfaces entre Usuario y SO
 - Tenemos la Shell o CLI (Command Line Interface)
 - Tenemos la GUI (Graphic User Interface), interfaz grafica
