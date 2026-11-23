@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-11-23T16:24:41.740Z
+date: 2026-11-23T18:15:48.105Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -390,6 +390,7 @@ Para evitar esto:
 
 > Vamos a ver muchas cosas repetidas
 {.is-warning}
+
 Tenemos el PID (**P**rocess **ID**entifier), y el núcleo identifica a cada proceso gracias a esto. En linux, los procesos es la misma entidad que se crea con la llamda del sistema **fork()** y **clone()**.
 
 Los procesos especiales que existen durante la vida del sistema son:
