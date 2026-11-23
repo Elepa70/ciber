@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-11-23T11:46:43.573Z
+date: 2026-11-23T11:57:45.436Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -159,6 +159,24 @@ Dentro de un SO tenemos una serie de componentes:
 - Gestor de archivos
 - Gestor de E/S y gestor de comunicación (que son similares pero donde se diferencia en que, pero componentes separados, ya que el sistema de archivos pertenece al gestor de archivos).
 
+
+### Interfaces entre Usuario y SO
+- Tenemos la Shell o CLI (Command Line Interface)
+- Tenemos la GUI (Graphic User Interface), interfaz grafica
+
+Y por último de System Calls o llamada de sistemas que vamos a desarrollar en profundidad. Dentro de una llamada al sistema tenemos que el usuario ejecuta un programa, llamando a la biblioteca y activa la trampa.
+
+La trampa, es ese metodo que se usamos para poder hacer sys_calls. En el manejador de llamadas al sistema, lo que se hace es pasar el ID de la llamada (Para poder identificar que le hace falta) + los parametros que requiere al kernel. 
+
+Para pasar los pasos de parámetros, tenemos varios metodos (En registo de CPU, Parametro en memoria y Parametros en una pila).
+
+Los id de llamadas tienen su propia tabla, cada uno con su numero, y tienen un pequeño puntero a funcion con sys_read, para que empiece a trabajar, en este caso hace la rutina de servicio de la llamada, con sus sys_open una vez identificado.
+
+Una vez fianlizado, se hace un iret para **SALIR** del modo Kernel, y ya finalizar el programa.
+
+> En detalle
+{.is-success}
+
 Una interpretación del system call es:
 1. Se meten los nbytes en la pila
 2. Se añade el &bufer en la pila
@@ -175,60 +193,43 @@ Alguno de los identificadores de llamada importante de Linux son:
 - 0: Read
 - 1: Write
 - 60: Exit
-### Interfaces entre Usuario y SO
-- Tenemos la Shell o CLI (Command Line Interface)
-- Tenemos la GUI (Graphic User Interface), interfaz grafica
-
-Y por último de System Calls o llamada de sistemas que vamos a desarrollar en profundidad. Dentro de una llamada al sistema tenemos que el usuario ejecuta un programa, llamando a la biblioteca y activa la trampa.
-
-La trampa, es ese metodo que se usamos para poder hacer sys_calls. En el manejador de llamadas al sistema, lo que se hace es pasar el ID de la llamada (Para poder identificar que le hace falta) + los parametros que requiere al kernel. 
-
-Para pasar los pasos de parámetros, tenemos varios metodos (En registo de CPU, Parametro en memoria y Parametros en una pila).
-
-Los id de llamadas tienen su propia tabla, cada uno con su numero, y tienen un pequeño puntero a funcion con sys_read, para que empiece a trabajar, en este caso hace la rutina de servicio de la llamada, con sus sys_open una vez identificado.
-
-Una vez fianlizado, se hace un iret para **SALIR** del modo Kernel, y ya finalizar el programa.
-
-
 
 ## Estructuras/Arquitecturas de los SOs
 Existen dos tipos de arquitecturas principales:
 ### Arquitectura monolítica
-Es la más utilizada, la que se usa ahora o la que "funciona". El SO es el único programa que se ejecuta en el modo privilegiado del proceso.
+Es la más utilizada, la que se usa ahora o la que "funciona". El SO es el único programa que se ejecuta en el modo más privilegiado del procesador (ring 0).
 
 Alguno de los problemas, es que posee una fuerte dependencia de módulos, es por ello que hay dificultad a entender el codigo o realizar cosas. A su vez, si cualquier módulo falla o crashea, se puede provocar la caída del sistema.
 
+Los servicios se obtienen por llamadas al procedimiento y los módulos no ocultan información.
 ### Arquitectura microkernel
 Una pequeña parte de la funcionalidad del SO se implemente como kernel y el resto como procesos del user. 
-Este tipo de arquitectura soporta memoria virtual de bajo nivel. 
+Este tipo de arquitectura el microkernel soporta memoria virtual de bajo nivel, creación de procesos (hebras), comunicación y sincronización. 
 
 En este modelo, no tenemos procesos todo el procesos, propiamente dicho, tenemos mensajes.
 
-Las instrucciones que tiene para hacerlo es:
-- Una aplicación solicita un servicio al SO mandando un send, y esperando un receiver de su resolución. El kernel recive la solicitud paasandolo al Server.
-- Llama al sys_read, donde envia un mensaje sobre lo que ha pasado al server o kernel, y este recibira su mensaje de respuesta cuando este disponible.
-- El servidor por otro lado, espera el mensaje y prepara la entrada del servicio, una vez le llegue hace un contex_switch (Lo que ya vimos), sin embargo no hace planificador de CPU ni nada, simplemente envia al "buzon" siguiente (PID por asi decirlo), el mensaje.
+La aplicación hace send(Server, &m) y espera con receive(Server,&r). El microkernel entrega el mensaje al servidor, que genera el resultado y lo envía al kernel para que lo devuelva a la aplicación.
 
 Ventajas y desventajas:
 - Fiablidad: Los errores de módulo, no provocan el crasheo del S.O., por lo tanto puede recuperarse.
 - Extensibilidad: Se pueden ir añadiendo nuevos sercivios como usuarios.
-- Peor rendimiento: Lamentablemente este tipo de arquitectura monolítica tiene un rendamiento menor, ya qu ese deben hacer varios cambios de modo y de espacio de direcciones para que sea funcional.
+- Peor rendimiento: Lamentablemente este tipo de arquitectura microkernel tiene un rendimiento menor, ya qu ese deben hacer varios cambios de modo y de espacio de direcciones para que sea funcional.
 
 ## SOs de propósito específico
 Tenemos servidores especificos segun el uso.
 ### RTOS (SO de Tiempo Real)
 Se suelen utilizar para aplicaciones especializadas, usualmente por sistemas de control. Este tipo de SO debe garantizar una corrección tanto del resultado lógico como del tiempo empleado para saber los resultados.
 
-Sin embargo, el planificar los procesos gasta muchisimo tiempo para poder cumplir todos los requisitos, se define como Planificabilidad (Intentar que cada proceso hagan su proceso en un tiempo determinado).
+Sin embargo, el problema es planificar las actividades para cumplir todos los requisitos de tiempo (planificador).
 
 Algunas cosillas extra y caracteristicas:
 - Los RTOS clasifican los procesos en el tiempo real.
-- Los procesos RT tienen de objetivo procesar eventos que se producen regularmente.
+- Los procesos RT tienen de objetivo procesar eventos que se producen regular o irregularmente, los procesos RT tienen un deadline de inciio o de finalización.
 - Los eventos ocurren en tiempo real.
-- Determinismo: Tiene que ver con el tiempo de respuesta frente a Interrupciones y RSI.
-- Reactividad: Los tiempos que tarda el RTOS en la RSI.
+- Determinismo: Tiempo en reconecer una interrupción.
+- Reactividad: Tiempo que tarda la RSI. Tanto este como el determinismo determinan el tiempo de respuesta.
 - Control de prioridad de los procesos RT.
-- Fiabilidad: Posee mayor tolerancia a fallos.
+- Fiabilidad: Posee mayor tolerancia a fallos, un RTOS es estable si, cuando no puede cumplir todo los plazos, cumple los de los procesos más críticos.
 
 ### SO para Sistemas Empotrados
 Los SO para sistemas empotrados, esta especializado para utilizar computadores incluidos en sistemas más grandes. Estos computadores pueden ser los de un coche o el GPS
