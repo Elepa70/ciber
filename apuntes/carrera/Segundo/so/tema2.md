@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-11-23T15:38:03.821Z
+date: 2026-11-23T15:45:24.858Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -21,16 +21,14 @@ Toda ejecución de programa es caracterizada por su traza de ejecución. Distint
 
 Todo proceso requiere de recursos que el SO se encarga de controlar, como puede ser memoria, CPU... Dentro del apartado de ejecución de la CPU, se debe diferenciar entre la ejecución de usuario y la ejecución de kernel, similar pasa a la memoria que está en estado protegido del kernel (Donde solo opera el kernel y el codigo de este espacio es llamado reentrante) y la de continuo o usuario (Donde cada proceso tiene un espacio de direcciones protegido).
 
-Vamos a diferenciar:
-- Un usuario puede acceder a los procesos mediante su codigo de usuario, pero **JAMÁS** podra acceder al contexto de kernel.
-- El kernel puede acceder a los procesos mediante llamadas al sistema y excepción, y también puede acceder al espacio del núcleo mediante tratamiento de interrupciones y tareas del sistema.
-
-El SO se ejecuta de la siguiente manera:
-- El núcleo se ejcuta como una entidad separada en modo kernel, no como un proceso normal y el código del sistema operativo se opera de forma separa al modo kernel.
 
 Para la ejecución debemos tener en cuenta:
 - Contexto del proceso: Para el modo usuario sería el código del propio usuario, para el modo kernel los syscalls y excepciones
 - Conexto de kernel: En modo usuario no está permitido sin embargo para el modo kernel, es el tratamiento de interrupciones y tareas del sistema.
+
+El SO se ejecuta de la siguiente manera:
+- El núcleo se ejcuta como una entidad separada en modo kernel, no como un proceso normal y el código del sistema operativo se opera de forma separa al modo kernel.
+
 Todos los procesos comparten el mismo espacio de kernel. Cada proceso tiene su propia pila de kernel porque el codigo del kernel es reentrante. La información de memoria de cada proceso se guarda en memoria del kernel.
 
 A la hora de pensar en proceso, debemos pensar en, una unidad de actividad caracterizada por:
