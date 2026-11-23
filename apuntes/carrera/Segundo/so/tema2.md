@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-11-23T16:10:17.379Z
+date: 2026-11-23T16:24:41.740Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -126,6 +126,7 @@ Tenemos varios tipos de S.O.
 - Aquel que el kernel es capaz de soportar múltiples hebras de un proceso "multithreading"
 > UNIX tradicional soporta varios procesos pero una sola hebra por proceso. Fue con Sun Solaris donde se empezo a soportar varias hebras por proceso.
 {.is-info}
+
 Los estados de la hebra son:
 - Nuevo
 - Ejecución
