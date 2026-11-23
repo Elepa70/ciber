@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-11-23T15:57:07.709Z
+date: 2026-11-23T16:10:17.379Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -83,7 +83,7 @@ Este tipo de procesos pueden ejecutarse o bien concurrentemente o que el hijo te
 Respecto al espacio de direcciones, el hijo obtiene una copia del padre o se le da uno nuevo.
 
 
-### UNIX-like OS -- Revisar
+### UNIX-like OS
 Los procesos UNIX-like OS, funciona de manera especial:
 - Las llamadas al sistema "fork()", crea un hijo con una copia idéntica de la memoria y de los registros de CPU del padre. Padre e hijo continúan en el mismo punto, tras el retorno de "fork()", puede valer 0 al hijo y el PID del hijo al padre (puede devover -1 en caso de error).
 - La llamada "exec()", lo que hace es reemplazar un espacio de direcciones. Es decir eliminará la memoria copia creada para el hijo
