@@ -2,7 +2,7 @@
 title: Procesos y Hebras
 description: 
 published: true
-date: 2026-11-23T18:44:34.247Z
+date: 2026-11-23T19:07:06.847Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-30T16:41:57.893Z
@@ -465,26 +465,49 @@ Por otro lado el do_exit() hace:
 
 
 ## Planificación de CPU en Linux
+Cada clase de planificación tienen un rango de prioridad, que determina el número de colas de prioridad. Se usa un algoritmo de planificación entre las clases de planificación con prioridades apropiativos (dado hace dos puntos).
 
+Estas clases usan una o varias políticas para gestionar los procesos. Estas planifificación también afectan a un grupo de procesos como pueden ser la entidad de la planificación (sched_entity)
 
+Por ejemplo las políticas manejadas por el planificador CFS (fair_sched_class) contemplan:
+- SCHED_NORMAL: Aplica a procesos normales de tiempo compartido.
+- SCHED_BATCH: Tareas menos importantes por lo tanto menor prioridad, que usan mucho la CPU.
+- SCHED_IDLE: Apenas tienen prioridad y no tienen mucho consumo.
 
+Las del planificador de tiempo real (rt_sched_class):
+- SCHED_RR: Usa Round-Robin.
+- SCHED_FIFO: Usan FCFS
+- SCHED_(ya vas pillando la dinamica...).
 
+**Siempre** se cumple que el proceso que está en ejecución es el más prioritario, luego tenemos que hay una serie de valores para establecer la prioridad ([0,99] para tiempo real y [100,139] para normales o regulares)
 
+Hay planificadores periódicos, (scheduler_tick()), que se llaman automaticamente por el kernel debido a la frecuencia. SUs tareas son:
+- Actualizar estadísticas del kernel.
+- Activar método de planificación periódico de la clase de planificador al que corresponda.
 
+### Schedule()
+El planificador principal (schedule()), se invoca numerosas veces para tomar decisiones de asignación en la CPU, se peude invocar de forma explicita al bloquear o terminar un proceso.
 
-> No te fies de lo de abajo (yet)
-{.is-danger}
+Actua de manera similar a un dispatcher
+> Hay mucha info mas aquí pero trabaja a un nivel demasiado bajo.
+{.is-info}
 
-### Clases y políticas
-Planificador modular con tres clases (tiempo real, CFS e idle). Entre clases hay prioridades apropiativas. Cada clase tiene un rango de prioridades, una cola por número. La entidad de planificación es sched_entity. Políticas CFS: SCHED_NORMAL, SCHED_BATCH, SCHED_IDLE. Políticas de tiempo real: SCHED_RR y SCHED_FIFO. Prioridades: [0,99] tiempo real, [100,139] normales. El proceso en ejecución es siempre el más prioritario.
-### Planificador periódico: scheduler_tick()
-Se llama con frecuencia HZ constante (100 a 1000 Hz). Actualiza estadísticas y llama a task_tick() de la clase. Si hay que replanificar, activa TIF_NEED_RESCHED en thread_info.
-### schedule()
-Se invoca de forma explícita cuando un proceso se bloquea o termina, y al volver a modo usuario desde syscall, RSI o excepción si TIF_NEED_RESCHED está activo. Pasos: determinar la runqueue y el puntero prev; actualizar estadísticas y limpiar el flag; si prev pasaba a INTERRUPTIBLE y recibió su señal, ponerlo en RUNNING; llamar a pick_next_task() de su clase; si cambia la asignación, context_switch() («nuestro dispatcher»).
 ### CFS
-Reparte la CPU de forma imparcial. Calcula un peso por proceso (a mayor valor de prioridad estática, menor peso). El vruntime es el tiempo virtual consumido, calculado con el tiempo real, la prioridad estática y el peso. Se actualiza periódicamente, al llegar un proceso ejecutable y al bloquearse el actual. Se elige el de menor vruntime, guardados en un árbol rojo-negro con vruntime como clave.
-Bloqueo en CFS: 1) a la cola del motivo; 2) estado INTERRUPTIBLE o UNINTERRUPTIBLE; 3) se quita del rbtree; 4) schedule(). Al desbloquear: 1) estado TASK_RUNNING; 2) se saca de la cola de bloqueo; 3) se añade al rbtree.
-### Tiempo real
-Clase rt_sched_class, siempre antes que los normales. La prioridad se fija al crear y el kernel no la modifica. Con SCHED_RR y SCHED_FIFO, Linux es soft real-time. La política se puede cambiar con una syscall.
+Se intenta repartir el tiempo de CPU de manera imparcial, garantizando que todos los procesos se ejecutarán y dependiendo del número de procesos en cola darle mayor o menor tiempo. "Intenta ser justo"
+
+Para ello, el kernel intenta calcular un peso para cada proceso. Cuanto mayor sea menor prioridad tendrá. Para esto usa **vruntime**, que consiste en el tiempo virtual que un proceso ha consumido y se calcula a partir del tiempo real que el proceso ha hecho uso de la CPU.
+
+Cuando la CPU necesita decidir quien tiene que ejecutarse ahora, comprueba el **vruntime** menor
+
+### Tiempo real (rt_sched_class)
+**Siempre** que haya un proceso de tiempo real, será prioritario con respecto a auqellos que no lo sean. Esta prioridad viene determinada por el kernel en el momento en el que se crea, y no es modificadble a posteriori.
+
+Al crear el proceso, también se especifica la política bajo la cual se va a planificar, y si existe una llamada al sistema para cambiar la política asignada.
+
 ### SMP
-Repartir la carga entre CPUs, respetar la afinidad de la tarea con una CPU y poder migrar procesos (costoso). Periódicamente se comprueba el equilibrio y se reequilibra.
+Para los entornos multiprocesador, el kernel deberá tener en cuenta:
+- Repartir la carga equilibradamente entre todas las CPUs
+- Afinidad de una tarea con una determinada CPU
+- El Kernel debe ser capaz de migrar procesos entre CPU aunque puede ser una operación costosa.
+
+Periodicamente debe haber un espacio del kernel que se dedica a comprobar que este equilibrio se mantenga. En caso de que no exista entonces procede a mover procesos de una CPU a otra.
