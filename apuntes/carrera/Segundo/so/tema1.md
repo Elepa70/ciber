@@ -2,16 +2,13 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-11-23T11:57:45.436Z
+date: 2026-11-23T11:57:53.461Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
 ---
 
 # Estructuras de sistemas operativos
-> Revisar estructura
-{.is-warning}
-
 ## Recordatorio de TOC y FS
 En este primer apartado, nos dedicamos a recordar lo que hemos dado el año pasado.
 
