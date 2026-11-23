@@ -2,7 +2,7 @@
 title: Estructuras de sistemas operativos
 description: 
 published: true
-date: 2026-11-23T11:57:53.461Z
+date: 2026-11-23T11:58:49.206Z
 tags: 
 editor: markdown
 dateCreated: 2026-09-16T15:49:04.526Z
@@ -49,6 +49,7 @@ Tenemos:
 
 > Las interrupciones vienen de un controlador de dispositivos y son asíncronas. Las excepciones las provoca la instrucción en ejecución (división por cero, fallo de página) y puede ser recuperables o no. Las llamadas al sistema (TRAP) son interrupciones software que pide el propio programa.
 {.is-warning}
+
 > El concepto de máquina desnuda es aquel que se define como: Todo repertorio por instrucción microprocesador (NO SIRVE ENSAMBLADOR), puede acceder a toda la memoria y solo permite E/S a bajo nivel.
 
 
