@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-26T17:22:56.495Z
+date: 2026-11-26T17:27:01.884Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
