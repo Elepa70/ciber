@@ -2,7 +2,7 @@
 title: Arboles
 description: 
 published: true
-date: 2026-11-19T18:19:33.989Z
+date: 2026-11-26T17:22:56.495Z
 tags: 
 editor: markdown
 dateCreated: 2026-10-30T16:40:19.312Z
@@ -389,7 +389,7 @@ Podemos encontrar un Heap (Montón), que es un vector M en el que guarda por niv
 Tenemos la regla de que M[k] sus descendientes están en M[2*k+1] y M[2*k+2].
 
 Para la insercción:
-```
+```C++
 datos[nelementos]=nuevo;
 nelementos++;
 int pos = nelementos-1;
@@ -399,7 +399,7 @@ while(pos>0 && datos[pos]<datos[(pos-1)/2]
 }
 ```
 Para la eliminación, lo que se hace es que uno de los hijos pasa a ser la raiz.
-```
+```C++
 datos[0] = datos[nelementos-1];
 nelementos--;
 bool acabar = false;
@@ -470,7 +470,7 @@ Para poder eliminar una clave en este tipo de arboles, podemos tener 3 casos:
 3. Tiene un subarbol.
 
 Caso hoja
-```
+```C++
 nodewrapper <T> *aux = n;
 if (aux->padre!=nullptr){
 	if(aux->padre->hder==n)
@@ -481,7 +481,7 @@ if (aux->padre!=nullptr){
 delete aux;
 ```
 En el caso de tener un hijo, también se podria hacer
-```
+```C++
 nodewrapper <T> *padre = n->padre;
 if (padre!=nullptr){
 	if(padre->hder==n){
@@ -498,7 +498,7 @@ delete aux;
 ```
 
 En el caso de tener un subarbol
-```
+```C++
 nodewrapper <T>*aux=n->hder;
 while (aux->hizq!=nullptr)
 	aux= aux->hizq;
@@ -533,7 +533,7 @@ void EliminarRaiz(nodewrapper<T>*n,int x){
 }
 ```
 Esto requiere de dos funciones una llamada Borrar que es quien la inicia y Put Padre.
-```
+```C++
 void Borrar(nodewrapper<T>*n,int x){
 	if(n!=nullptr){
   	if(n->et==x){
@@ -684,4 +684,129 @@ bool InsertarAVL (nodewrapper_AVL<T> * & raiz, T x){
        }
   }
 }
+```
+## Árbol generales
+Consiste en un tipo de arbol que genera cualquier tipo de hijos (similar a hacer un comando `tree` en la shell de Linux). Este tipo de arboles, lo que hace es nacer de una raiz y después lateralmente cuando son hermanos.
+
+La structura es:
+```C++
+template <class T>
+struct info_nodo {
+	T et info_nodo <T> * padre, * hijoizq, * hermanodcha;
+  info_nodo(){
+  	padre = hijoizq = hermanodcha = 0;
+  }
+  info_nodo(const T & e) {
+  	et = e;
+    padre = hijoizq = hermanodcha = 0;
+  }
+}
+```
+La primera función que vamos a ver, es la de Crear Raíz, que es crera un nuevo nodo con el valor que han pasado.
+```C++
+template <class T>
+info_nodo<T>* CrearRaiz(const T &e){
+	info_nodo<T>* n = new info_nodo<T>(e);
+  return n;
+}
+```
+Ahora veremos la copia.
+```C++
+template <class T>
+void Copiar (info_nodo<T> *s, info_nodo<T>* &d){
+	if (s==0){
+  	d = 0;
+  }
+  else {
+  	d = new info_nodo<T>(s->et);
+    Copiar(s->hijoizq,d->hijoizq);
+    Copiar(s->hermanodch,d->hermanodch);
+    if(d->hijoizq != 0){
+    	info_nodo<T> * aux = d->hijoizq;
+      while (aux != 0){
+      	aux->padre = d;
+        aux = aux->hermanodch;
+      }
+    }
+  }
+}
+```
+
+Con el borrado.
+```C++
+template <class T>
+void Borrar(info_nodo<T> *s){
+	if(s!= 0){
+  	Borrar(s->hijoizq);
+    Borrar(s->hermanodch);
+    delete s;
+  }
+}
+```
+Para la insercción
+```C++
+template <class T>
+void InsertarHijoIzq(info_nodo<T> *n, info_nodo<T>* &T2){
+	info_nodo<T>*aux = h->hijoizq;
+  T2->hermanodch=aux;
+  T2->padre = n;
+  n->hijoizq = T2;
+  T2=0;
+}
+```
+Ahora toca el mismo pero para el otro lado
+
+```C++
+template <class T>
+void InsertarHermanoDrcha(info_nodo<T> *s){
+	info_nodo<T>*aux = n->hermanodch;
+  T2->hermanodch=aux;
+  n->hermanodch=T2;
+  T2->padre = n->padre;
+  T2=0;
+}
+```
+
+Ahora toca los podar
+
+```C++
+template <class T>
+void PodarHermanoIzq(info_nodo<T> *s){
+	info_nodo<T>*aux = n->hijoizq;
+  if(aux!=0){
+  	h->hermanodch=aux->hijoizq;
+    aux->hermanodch=0;
+    aux->padre=0;
+  }
+ 	return aux;
+```
+
+```C++
+template <class T>
+void PodarHermanoDrcha(info_nodo<T> *s){
+	info_nodo<T>*aux = n->hermanodch;
+  if(aux!=0){
+  	h->hermanodch=aux->hermanodch;
+    aux->hermanodch=0;
+    aux->padre=0;
+  }
+ 	return aux;
+```
+
+Por último tenemos el calcular altura
+```C++
+template <class T>
+int Altura(info_nodo<T>* n){
+
+	if(n==0){
+		return -1;
+  } else {
+  	int max = -1;
+    info_nodo<T>*aux;
+    for(aux=n->hijoizq; aux!=0; aux=aux->hermanodch){
+    	int v = Altura(aux);
+      if(v>max)
+      	max = v;
+    }
+    return max +1;
 ```
