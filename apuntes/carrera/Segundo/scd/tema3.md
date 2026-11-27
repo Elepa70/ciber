@@ -2,7 +2,7 @@
 title: Sistemas basados en paso de mensajes
 description: 
 published: true
-date: 2026-11-27T17:47:49.044Z
+date: 2026-11-27T17:59:02.372Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-13T17:54:15.792Z
@@ -101,4 +101,5 @@ Se diseño para resolver problemas concretos, son problemas en los cuales se deb
 {.is-info}
 
 ### Encauzamiento (pipelining)
+Consiste en el paradigma más sencillo, en el cual tenemos un problema y lo dividimos ne varias subtareas, estos problemas se va en correlación y se va resolviendo en cauce.
 ## Mecanismos de alto nivel en sistemas distribuidos
