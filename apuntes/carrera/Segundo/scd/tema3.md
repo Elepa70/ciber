@@ -2,7 +2,7 @@
 title: Sistemas basados en paso de mensajes
 description: 
 published: true
-date: 2026-11-20T18:35:14.849Z
+date: 2026-11-27T17:47:49.044Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-13T17:54:15.792Z
@@ -85,7 +85,20 @@ for indice := inicial to final
 Esto lo que hace es que no tengamos que crear los when que necesitemos, si no una especie de "vector" de whens para poder hacer la espera.
 ## Paradigmas de interacción de procesos en programas distribuidos
 ### Introducción
+El paradigma de interacción define un esquema de interacción entre procesos y estructura de control. Unos pocos paradigmas de interacción se utilizan repetidamente para desarrollar muchos programas distribuidos.
 ### Maestro-Esclavo
+Es una tecnología en desuso, pero ideal para aprender.
+
+Definimos el problema:
+- Proceso maestro: Tiene un "problema" que es troceado en varios subtareas.
+- Proceso esclavo: Ejecuta y resuelve esta subtarea, y se la devuelve al maestro una vez finalizado.
+
+
 ### Iteración síncrona
+Se diseño para resolver problemas concretos, son problemas en los cuales se deben resolver de forma iterativa una serie de cálculo en los mismo cálculos.
+
+> Basicamente los calculos que acabo de hacer, se vuelven a usar
+{.is-info}
+
 ### Encauzamiento (pipelining)
 ## Mecanismos de alto nivel en sistemas distribuidos
