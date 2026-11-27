@@ -2,7 +2,7 @@
 title: Sistemas basados en paso de mensajes
 description: 
 published: true
-date: 2026-11-27T18:03:26.313Z
+date: 2026-11-27T18:15:07.693Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-13T17:54:15.792Z
@@ -103,3 +103,27 @@ Se diseño para resolver problemas concretos, son problemas en los cuales se deb
 ### Encauzamiento (pipelining)
 Consiste en el paradigma más sencillo, en el cual tenemos un problema y lo dividimos ne varias subtareas, estos problemas se va en correlación y se va resolviendo en cauce.
 ## Mecanismos de alto nivel en sistemas distribuidos
+### Introducción
+Todo lo que hemos visto, sigue tiene un nivel bajo de abstracción. Usualmente para trabajar se necesita otros metodos.
+Vamos a ver dos mecanismos de mayor nivel:
+- Llamada a procedimiento remoto (RPC)
+- Invocación remota de métodos (RMI)
+
+Estos métodos estan basados en procedimientos y funciones, por un proceso llamador.
+
+En caso del modelo de invocación remota (RPC), esta llamada la realiza otra máquina y este se quedará bloqueado hasta que se le permita seguir ejecutando.
+### El paradigma Cliente-Servidor
+Es el paradigma más frecuente en programación distribuida, hay una relación asimétrica netre dos procesos:
+- Servidor: Gestiona un recurso y ofrece un servicio a otros procesos, que seran los clientes.
+- Cliente: Necesita el servicio y envía un mensaje de petición al servidor.
+
+Algunos problemas que plantea ese tipo de solución, es que el Servidor falla, el cliente se queda esperando. Luego si un cliente no incova el receive y el servidor realiza el send el servidor se quedará bloqueado.
+
+Para poder solucionarlo, hay dos formas. El par (recepción de petición y envío de respuesta) se debe considerar como uan única operación de comunicación. El mecanismo de llamada a procedimiento remoto (RPC)
+### Llamada a Procedimiento (RPC)
+Debemos tener en cuenta una serie de cosas:
+- Llamada a procedimiento remoto (Remote Procedure Call): Este tipo de mecanismo de comunicación entre procesos que sigue el esquema cliente-servidor.
+- Diferencial ppal respecto a una llamada a procedimiento lcoal: El programa que invoca el procedimiento (cliente) y el procedimiento invocado (proceso servidor) peuden pertenecer a máquinas diferentes del sistema.
+### JAva Remote Method Invocation (RMI)
+
+### Servicios Web
