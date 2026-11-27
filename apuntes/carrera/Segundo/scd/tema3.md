@@ -2,7 +2,7 @@
 title: Sistemas basados en paso de mensajes
 description: 
 published: true
-date: 2026-11-27T17:59:02.372Z
+date: 2026-11-27T18:03:26.313Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-13T17:54:15.792Z
