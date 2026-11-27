@@ -2,7 +2,7 @@
 title: Sistemas basados en paso de mensajes
 description: 
 published: true
-date: 2026-11-27T18:15:07.693Z
+date: 2026-11-27T18:30:52.664Z
 tags: 
 editor: markdown
 dateCreated: 2026-11-13T17:54:15.792Z
@@ -124,6 +124,56 @@ Para poder solucionarlo, hay dos formas. El par (recepción de petición y enví
 Debemos tener en cuenta una serie de cosas:
 - Llamada a procedimiento remoto (Remote Procedure Call): Este tipo de mecanismo de comunicación entre procesos que sigue el esquema cliente-servidor.
 - Diferencial ppal respecto a una llamada a procedimiento lcoal: El programa que invoca el procedimiento (cliente) y el procedimiento invocado (proceso servidor) peuden pertenecer a máquinas diferentes del sistema.
-### JAva Remote Method Invocation (RMI)
+
+La interacción en este esquema es mediante un representante o delegado, que es un procedimiento lcoal que gestiona la comunicación en el lado del cliente. Los proceoss cliente y servidor no se comunican directamente, sino a través de representantes.
+
+Las llamadas RPC funciona con una serie de pasos:
+1. En el nodo cliente se invoca un procedimiento remoto como si se tratara de una llamada a procedimiento local.
+2. El representante del cliente empaqueta todos los datos de la llamada, usando determinado formato para formar el cuerpo del mensaje.
+3. El representante del cliente envía el mensaje con la petición de servicio al nodo.
+4. El programa del cliente se quedará bloqueado esperando la respuesta.
+5. En el nodo servidor, el sistema operativo desbloquea al proceso servidor para que se haga cargo de la petición.
+6. El representante del servidor desempaqueta los datos del mensaje de petición y ejecuta una llamada al procedimiento.
+7. Cuando finaliza la llamada el representante del servidor empaqueta los resultados en un mensaje y loe nvía.
+8. El sistema operativo del nodo cliente desbloquea al proceso que hizo la llamada.
+9. El representante del cliente desempaqueta el mensaje y pasa los resultados al invocador del procedimiento.
+
+Representación de los datos:
+- En un sistema distribuido, los nodos peuden tener diferente hardware y/o sistemas operativos, utilizando diferentes formatos para representar los datos.
+- En estos casos los mensajes se envían usando una representación intermedia.
+
+Paso de parámetros:
+- Por valor en este caso basta con enviar al representante del servidor.
+- Por referencia el bojeto referenciado debe enviarse desde el proceso cliente hacia el servidor.
+### Java Remote Method Invocation (RMI)
+Para poder invocar el método de un objeto, hay que dar una referencia del objeto.
+Esta interfaz del objeto define sus métodos, argumentos, tipos de valores devueltos y expceciones.
+
+La invocación de métodos remotos:
+- En un entorno distribuido, un objeto podria invocar métodos de un objeto.
+- Para invocar métodos de un objeto remoto, el proceso llamador debe de proporcionar el nombre del método y los parametros.
+
+TEnemos que tener en cuenta a su vez:
+- Interfaz remota: Especifica los métodos del objeto remoto que están accesibles para los demás objetos.
+- Remote Method Invocation: Acción de invocar un método de la interfaz remota de un objeto remoto. La invocación de un método en una interfaz remota sigue la misma sintaxis.
+
+El cliente y el servidor deben conocer ambos la interfaz de la clase del objeto remoto:
+- En el cliente: El procesol llamador usa un objeto llamado stub, que es responsable de implementar la comunicación con el servidor.
+- En el servidor: Se utiliza un objeto llamado skeleton, que es responsable de esperar la llamada, recibir los parámetros, invocar la implmentación del método, obtener los resultados y enviarlos de vuelta.
+
+Los stubs usan la definición de interfaz remota.
+Los objetos remotos se residen en el nodo servidor y son gestionados por el mismo. Los procesos clientes manejan referencias remotas.
+> Por rellenar
+{.is-danger}
 
 ### Servicios Web
+En la actualidad, se utiliza para los servicios web, que tienen de caracteristicas:
+- Usan protocolos HTTP o HTTPS sobre TCP/IP.
+- Se usan codificación de datos basados en XML o JSON
+- Se usan protocolos complejos, pero usualmente el sencillo REST.
+
+Las peticiones de recurso o documentos pueden hacerse desde:
+- Una aplicación cualquiera ejecutándose en el cliente, aunque en particular los más frecuente, es usar un programa Javascript.
+Las peticiones pueden ser:
+- Síncrona: El proceso cliente espera bloqueado la llegada de las respuestas. Se considera no aceptable en aplicaciones web interactivas.
+- Asíncronas: El proceso cliente envía la petición y continúa. Cuando se recibe la respuesta, se ejecuta una función designada por el cliente al hacer la petición.
